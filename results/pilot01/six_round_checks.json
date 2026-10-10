@@ -1,0 +1,178 @@
+{
+  "round_1_corpus_and_provenance": {
+    "passed": true,
+    "count": 1713,
+    "groups": 267,
+    "checks": [
+      "formula_filter_revalidation",
+      "canonical_deduplication",
+      "document_family_disjointness",
+      "origin_evidence_nonempty",
+      "corpus_hash"
+    ],
+    "source_checksums_verified": 93
+  },
+  "round_2_algorithm_and_unicode": {
+    "passed": true,
+    "output": ".....................................................                    [100%]\n53 passed in 0.92s\n"
+  },
+  "round_3_smoke_all_adapters": {
+    "passed": true,
+    "method_seed_runs": 14,
+    "test_formula_count": 60,
+    "checks": [
+      "identical_test_ids",
+      "identical_raw_byte_lengths",
+      "no_truncation_or_specials",
+      "train_test_disjoint",
+      "all_lossless"
+    ]
+  },
+  "round_4_full_pilot_three_seeds": {
+    "protocol": {
+      "passed": true,
+      "method_seed_runs": 26,
+      "test_formula_count": 406,
+      "checks": [
+        "identical_test_ids",
+        "identical_raw_byte_lengths",
+        "no_truncation_or_specials",
+        "train_test_disjoint",
+        "all_lossless"
+      ]
+    },
+    "results": {
+      "passed": true,
+      "checks": [
+        "raw_result_reaggregation",
+        "same_trained_capacity_budget",
+        "fixed_tokenizers_separate_reference_group",
+        "timing_five_repeats",
+        "model_hashes"
+      ]
+    }
+  },
+  "round_5_replay_optimization_and_rebuild": {
+    "passed": true,
+    "checkpoints_replayed": 18,
+    "same_formula_ids": 406,
+    "rebuild_sha256": "55e85f60134c7ad10d6efa71204a0a7ed8b47e573e120d562aad4753c11759b5",
+    "speed_benchmark": {
+      "ast_bpe-17.json": {
+        "reference_seconds_median": 0.08927700000094774,
+        "optimized_seconds_median": 0.011597083999731694,
+        "speedup": 7.698228279023694
+      },
+      "ast_bpe-29.json": {
+        "reference_seconds_median": 0.08920012499947916,
+        "optimized_seconds_median": 0.01161054200019862,
+        "speedup": 7.682683977884341
+      },
+      "ast_bpe-43.json": {
+        "reference_seconds_median": 0.08928116700008104,
+        "optimized_seconds_median": 0.011646124999970198,
+        "speedup": 7.66616939113306
+      },
+      "ast_bpe_rl_fit_control-17.json": {
+        "reference_seconds_median": 0.09003562500038242,
+        "optimized_seconds_median": 0.011721708999175462,
+        "speedup": 7.681100512452219
+      },
+      "ast_bpe_rl_fit_control-29.json": {
+        "reference_seconds_median": 0.08965491700109851,
+        "optimized_seconds_median": 0.011612457999945036,
+        "speedup": 7.720580518054219
+      },
+      "ast_bpe_rl_fit_control-43.json": {
+        "reference_seconds_median": 0.08991045799848507,
+        "optimized_seconds_median": 0.011623541999142617,
+        "speedup": 7.735203090857942
+      },
+      "byte_bpe-17.json": {
+        "reference_seconds_median": 0.07147020800039172,
+        "optimized_seconds_median": 0.0054573329998675035,
+        "speedup": 13.096178664949878
+      },
+      "byte_bpe-29.json": {
+        "reference_seconds_median": 0.07175920899862831,
+        "optimized_seconds_median": 0.005471208000017214,
+        "speedup": 13.115788871196735
+      },
+      "byte_bpe-43.json": {
+        "reference_seconds_median": 0.07157141599964234,
+        "optimized_seconds_median": 0.005407208000178798,
+        "speedup": 13.236297918866024
+      },
+      "byte_bpe_rl_fit_control-17.json": {
+        "reference_seconds_median": 0.07163970900001004,
+        "optimized_seconds_median": 0.005421625000963104,
+        "speedup": 13.21369681364607
+      },
+      "byte_bpe_rl_fit_control-29.json": {
+        "reference_seconds_median": 0.07180645799962804,
+        "optimized_seconds_median": 0.005587833000390674,
+        "speedup": 12.850501794632674
+      },
+      "byte_bpe_rl_fit_control-43.json": {
+        "reference_seconds_median": 0.07197074999930919,
+        "optimized_seconds_median": 0.005521917000805843,
+        "speedup": 13.033652984788818
+      },
+      "rl_ast_bpe-17.json": {
+        "reference_seconds_median": 0.09029987500071002,
+        "optimized_seconds_median": 0.011687415999404038,
+        "speedup": 7.726248043649218
+      },
+      "rl_ast_bpe-29.json": {
+        "reference_seconds_median": 0.09032087500054331,
+        "optimized_seconds_median": 0.011366333999831113,
+        "speedup": 7.9463506001042505
+      },
+      "rl_ast_bpe-43.json": {
+        "reference_seconds_median": 0.0902713750001567,
+        "optimized_seconds_median": 0.011537915999724646,
+        "speedup": 7.823889080342675
+      },
+      "rl_bpe-17.json": {
+        "reference_seconds_median": 0.07356308300040837,
+        "optimized_seconds_median": 0.005620249999992666,
+        "speedup": 13.08893430016536
+      },
+      "rl_bpe-29.json": {
+        "reference_seconds_median": 0.07305129099950136,
+        "optimized_seconds_median": 0.00551429100050882,
+        "speedup": 13.247630745776874
+      },
+      "rl_bpe-43.json": {
+        "reference_seconds_median": 0.07291062500007683,
+        "optimized_seconds_median": 0.0055159580006147735,
+        "speedup": 13.218125481004511
+      }
+    }
+  },
+  "round_6_capacity512_three_seeds": {
+    "protocol": {
+      "passed": true,
+      "method_seed_runs": 26,
+      "test_formula_count": 406,
+      "checks": [
+        "identical_test_ids",
+        "identical_raw_byte_lengths",
+        "no_truncation_or_specials",
+        "train_test_disjoint",
+        "all_lossless"
+      ]
+    },
+    "results": {
+      "passed": true,
+      "checks": [
+        "raw_result_reaggregation",
+        "same_trained_capacity_budget",
+        "fixed_tokenizers_separate_reference_group",
+        "timing_five_repeats",
+        "model_hashes"
+      ]
+    },
+    "purpose": "Fixed sensitivity setting; no test-based checkpoint or capacity selection"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "ast_bpe-vs-byte_bpe/seed-17": {
+    "delta_tokens_per_formula": 4.201970443349754,
+    "ci95_group_bootstrap": [
+      0.7834782608695653,
+      4.90499054763947
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_bpe-vs-byte_bpe/seed-17": {
+    "delta_tokens_per_formula": -0.03201970443349754,
+    "ci95_group_bootstrap": [
+      -0.22788106540084388,
+      0.14181769722814497
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe-vs-byte_bpe/seed-17": {
+    "delta_tokens_per_formula": 4.268472906403941,
+    "ci95_group_bootstrap": [
+      0.866416861826698,
+      4.969323099692079
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_bpe-vs-fit-control/seed-17": {
+    "delta_tokens_per_formula": 0.027093596059113302,
+    "ci95_group_bootstrap": [
+      -0.04655254091300603,
+      0.07291914682539682
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe-vs-fit-control/seed-17": {
+    "delta_tokens_per_formula": 0.0665024630541872,
+    "ci95_group_bootstrap": [
+      0.006992397846056383,
+      0.1656557195979529
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "ast_bpe-vs-byte_bpe/seed-29": {
+    "delta_tokens_per_formula": 4.201970443349754,
+    "ci95_group_bootstrap": [
+      0.7834782608695653,
+      4.90499054763947
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_bpe-vs-byte_bpe/seed-29": {
+    "delta_tokens_per_formula": -0.12807881773399016,
+    "ci95_group_bootstrap": [
+      -0.302822236448997,
+      0.11981411637931033
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe-vs-byte_bpe/seed-29": {
+    "delta_tokens_per_formula": 4.204433497536946,
+    "ci95_group_bootstrap": [
+      0.6902173913043479,
+      4.862736760412031
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_bpe-vs-fit-control/seed-29": {
+    "delta_tokens_per_formula": -0.1354679802955665,
+    "ci95_group_bootstrap": [
+      -0.30515197013920076,
+      0.17326815341521218
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe-vs-fit-control/seed-29": {
+    "delta_tokens_per_formula": -0.034482758620689655,
+    "ci95_group_bootstrap": [
+      -0.14014179176135455,
+      0.08276282590412111
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "ast_bpe-vs-byte_bpe/seed-43": {
+    "delta_tokens_per_formula": 4.201970443349754,
+    "ci95_group_bootstrap": [
+      0.7834782608695653,
+      4.90499054763947
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_bpe-vs-byte_bpe/seed-43": {
+    "delta_tokens_per_formula": -0.09113300492610837,
+    "ci95_group_bootstrap": [
+      -0.4355342741935484,
+      -0.0136712087292885
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe-vs-byte_bpe/seed-43": {
+    "delta_tokens_per_formula": 4.20935960591133,
+    "ci95_group_bootstrap": [
+      0.602590587715422,
+      4.947876550180276
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_bpe-vs-fit-control/seed-43": {
+    "delta_tokens_per_formula": -0.007389162561576354,
+    "ci95_group_bootstrap": [
+      -0.11699676019316584,
+      0.10394468670016112
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe-vs-fit-control/seed-43": {
+    "delta_tokens_per_formula": 0.054187192118226604,
+    "ci95_group_bootstrap": [
+      -0.022632700700294325,
+      0.14339060848890453
+    ],
+    "groups": 32,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  }
+}

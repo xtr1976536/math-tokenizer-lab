@@ -1,0 +1,10 @@
+{
+  "dauncey2026": {
+    "repo": "https://github.com/SamD770/bitter-lesson-tokenization",
+    "revision": "8992678ece92f33eb572d6e5fd213ac7510a04c0",
+    "modified": false,
+    "local_clone": "vendor/bitter-lesson-tokenization",
+    "executed": false,
+    "reason": "Official end-to-end LM framework, GPU CUDA/Triton dependencies; not a standalone vocabulary tokenizer."
+  }
+}

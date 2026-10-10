@@ -1,0 +1,35 @@
+{
+  "stage": "first_pilot_complete_full_project_in_progress",
+  "date": "2026-10-10",
+  "completed": [
+    "private_github_repository",
+    "pinned_sources_and_formula_only_exports",
+    "corpus_pilot_1713",
+    "three_standalone_initial_methods",
+    "official_classic_and_pretrained_baselines",
+    "smoke_and_384_and_512_three_seed_experiments",
+    "six_engineering_rounds",
+    "four_fairness_rounds",
+    "53_automated_tests",
+    "lossless_reference_equivalence_and_local_speed_optimization"
+  ],
+  "not_completed": [
+    "verified_human_non_pde_latex_sources",
+    "per_formula_expert_review",
+    "general_semantic_latex_ast",
+    "long_horizon_rl_and_semantic_reward",
+    "recent_paper_standalone_baseline",
+    "arxiv_source_crawling",
+    "balanced_domain_and_origin_test_coverage",
+    "near_duplicate_semantic_deduplication",
+    "downstream_model_task_validation"
+  ],
+  "must_not_claim": [
+    "entire_project_finished",
+    "stable_rl_superiority",
+    "downstream_improvement",
+    "dauncey_end_to_end_replication",
+    "all_latex_is_human_typed",
+    "automatic_filter_is_expert_review"
+  ]
+}

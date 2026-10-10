@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+data/raw/
+references/*.txt
+references/*.xlsx
+references/*tree.json
+references/preprints.json
+vendor/
+*.log
+
+# Current GitHub OAuth credential lacks workflow-write scope.
+.github/workflows/
