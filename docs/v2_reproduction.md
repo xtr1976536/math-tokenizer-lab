@@ -39,3 +39,5 @@ assert rl.decode(rl.encode(s)) == s
 算法训练benchmark与清缓存速度replay顺序执行；不并行训练同时测速度。独立审计 `scripts/audit_v2.py <result_dir>`、官方保存模型重放 `scripts/replay_official_models_v2.py <result_dir>`。审计依赖已下载来源只用于验证源码SHA，测试代码、模型、公式本体不要求下载源全文。数据重建复核 `scripts/verify_v2_rebuild.py`。
 
 所有结果属于本地机器与当前锁定环境，不声称其他操作系统完全相同。时间的自然波动不会影响逐公式token数或固定随机种子训练输出。
+
+首次独立环境安装会构建TokEval及第三方字体缓存，耗时不包含模型训练秒数。正式自动化脚本会下载固定Qwen tokenizer资产；raw源稿未在新checkout下载时，审计加 `--without-raw-sources`，仅复核许可manifest而明确标记源码哈希未再次下载核对。主运行的98篇源码哈希验证已经在原环境完成。

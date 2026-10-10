@@ -18,7 +18,13 @@
     "fungrim_official_renderer",
     "tokeval_official_intrinsic_metrics",
     "sequential_rl_lattice_design",
-    "dev_only_ablation_selection"
+    "dev_only_ablation_selection",
+    "512_1024_76_dev_ablations_and_46_test_runs",
+    "92_tests_and_six_round_audits",
+    "original_official_tokenizer_checkpoints_replayed",
+    "sequential_cold_cache_speed_replay",
+    "fixed_policy_rloo_variance_diagnostic",
+    "git_published_v2"
   ],
   "not_completed": [
     "per_formula_expert_review",
@@ -43,5 +49,16 @@
     "all_rl_ast_improvement_is_caused_by_rl",
     "historical_origin_is_author_attestation",
     "same_vocab_means_same_compute"
-  ]
+  ],
+  "results": {
+    "v2_formulas": 28347,
+    "historical_human": 19675,
+    "arxiv_versions": 98,
+    "train": 21580,
+    "dev": 2808,
+    "test": 3959,
+    "rl_byte_vs_bpe_token_reduction_512": 0.00993,
+    "rl_byte_vs_bpe_token_reduction_1024": 0.00919,
+    "rl_ast_vs_no_rl": "no_improvement"
+  }
 }
