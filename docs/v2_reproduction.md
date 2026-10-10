@@ -40,4 +40,4 @@ assert rl.decode(rl.encode(s)) == s
 
 所有结果属于本地机器与当前锁定环境，不声称其他操作系统完全相同。时间的自然波动不会影响逐公式token数或固定随机种子训练输出。
 
-截至2026-10-11，GitHub全新checkout在独立依赖环境通过92项测试；512预算顺序重跑的91,057条逐公式记录与正式run逐条完全一致。1024预算顺序重跑正在当前验证窗口继续，完成后写入同目录验证记录。首次独立环境安装会构建TokEval及第三方字体缓存，耗时不包含模型训练秒数。正式自动化脚本会下载固定Qwen tokenizer资产；raw源稿未在新checkout下载时，审计加 `--without-raw-sources`，仅复核许可manifest而明确标记源码哈希未再次下载核对。主运行的98篇源码哈希验证已经在原环境完成。
+截至2026-10-11，GitHub全新checkout在独立依赖环境通过92项测试；512预算顺序重跑的91,057条逐公式记录与正式run逐条完全一致。1024预算顺序重跑已完成；两套各91,057条逐公式记录、选择配置和自研JSON checkpoint关键字段均与正式run一致，证据见results/clean_clone_v2_verification.json。首次独立环境安装会构建TokEval及第三方字体缓存，耗时不包含模型训练秒数。正式自动化脚本会下载固定Qwen tokenizer资产；raw源稿未在新checkout下载时，审计加 `--without-raw-sources`，仅复核许可manifest而明确标记源码哈希未再次下载核对。主运行的98篇源码哈希验证已经在原环境完成。
