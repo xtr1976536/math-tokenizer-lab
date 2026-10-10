@@ -24,7 +24,10 @@
     "original_official_tokenizer_checkpoints_replayed",
     "sequential_cold_cache_speed_replay",
     "fixed_policy_rloo_variance_diagnostic",
-    "git_published_v2"
+    "git_published_v2",
+    "clean_github_checkout_independent_environment_full_sequential_reproduction",
+    "both_budgets_91057_rows_exactly_equal",
+    "both_budget_json_checkpoint_critical_fields_exact_equal"
   ],
   "not_completed": [
     "per_formula_expert_review",

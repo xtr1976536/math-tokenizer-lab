@@ -22,5 +22,9 @@
       "json_checkpoints": 54,
       "per_formula_sha256": "66054b55b8e0bcc21ae3f1666185694529561aedc876d902799dfee2e3a40a1c"
     }
-  }
+  },
+  "sequential_pipeline_completed": true,
+  "fairness_audits_both_budgets_passed": true,
+  "raw_source_hashes_reverified_in_clean_checkout": false,
+  "raw_source_hashes_verified_in_primary_run": true
 }
