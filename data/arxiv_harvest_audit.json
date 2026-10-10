@@ -1,0 +1,587 @@
+{
+  "rules": "official OAI metadata discovery; minimum4s; one session; latest pre2020 version; version-page CC BY/CC0 verified; no nonexclusive/NC/ND redistribution",
+  "discovered_permissive_candidates": 103,
+  "requested_papers": 110,
+  "downloaded": 98,
+  "rejected": [
+    {
+      "id": "1701.02859",
+      "version": "v1",
+      "title": "Predicting some physicochemical properties of octane isomers: A topological approach using ev-degree and ve-degree Zagreb indices",
+      "authors": "S\\\"uleyman Ediz",
+      "categories": [
+        "math.CO"
+      ],
+      "domain": "combinatorics",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "version_date": "2017-01-11T06:15:14+00:00",
+      "origin": "human",
+      "origin_basis": "pre2020_arxiv_historical_inference_user_approved",
+      "metadata_snapshot": "data/raw/arxiv_metadata/math-2017-01-01-2017-01-15.xml",
+      "evidence": "Named academic authors; pinned article version before 2020. Historical human-origin classification requested by user; not per-author attestation.",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1906.04125",
+      "version": "v1",
+      "title": "A New One Parameter Bimodal Skew Logistic Distribution and its Applications",
+      "authors": "S. Shah, S. Chakraborty and P. J. Hazarika",
+      "categories": [
+        "math.ST",
+        "stat.TH"
+      ],
+      "domain": "statistics",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "version_date": "2019-06-10T17:01:29+00:00",
+      "origin": "human",
+      "origin_basis": "pre2020_arxiv_historical_inference_user_approved",
+      "metadata_snapshot": "data/raw/arxiv_metadata/math-2019-06-01-2019-06-15.xml",
+      "evidence": "Named academic authors; pinned article version before 2020. Historical human-origin classification requested by user; not per-author attestation.",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1808.10133",
+      "version": "v3",
+      "title": "A real-time reactive framework for the surgical case sequencing problem",
+      "authors": "Belinda Spratt and Erhan Kozan",
+      "categories": [
+        "math.OC",
+        "cs.AI"
+      ],
+      "domain": "optimization",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version_date": "2019-06-07T02:54:00+00:00",
+      "origin": "human",
+      "origin_basis": "pre2020_arxiv_historical_inference_user_approved",
+      "metadata_snapshot": "data/raw/arxiv_metadata/math-2019-06-01-2019-06-15.xml",
+      "evidence": "Named academic authors; pinned article version before 2020. Historical human-origin classification requested by user; not per-author attestation.",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1808.10139",
+      "version": "v3",
+      "title": "An integrated rolling horizon approach to increase operating theatre efficiency",
+      "authors": "Belinda Spratt and Erhan Kozan",
+      "categories": [
+        "math.OC",
+        "cs.AI"
+      ],
+      "domain": "optimization",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version_date": "2019-01-14T07:18:53+00:00",
+      "origin": "human",
+      "origin_basis": "pre2020_arxiv_historical_inference_user_approved",
+      "metadata_snapshot": "data/raw/arxiv_metadata/math-2019-06-01-2019-06-15.xml",
+      "evidence": "Named academic authors; pinned article version before 2020. Historical human-origin classification requested by user; not per-author attestation.",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1901.01658",
+      "version": "v1",
+      "title": "A Ramsey problem related to butterfly graph vs. proper connected subgraphs of K4",
+      "authors": "Chula Jayawardene and Lilanthi Samarasekara",
+      "categories": [
+        "math.CO"
+      ],
+      "domain": "combinatorics",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version_date": "2019-01-07T03:55:41+00:00",
+      "origin": "human",
+      "origin_basis": "pre2020_arxiv_historical_inference_user_approved",
+      "metadata_snapshot": "data/raw/arxiv_metadata/math-2019-01-01-2019-01-15.xml",
+      "evidence": "Named academic authors; pinned article version before 2020. Historical human-origin classification requested by user; not per-author attestation.",
+      "reason": "not_tex_source"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXivRaw&set=math&from=2019-12-01&until=2019-12-15",
+      "status": 200,
+      "duration": 5.807731541000976,
+      "utc": "2026-10-10T15:32:20Z"
+    },
+    {
+      "url": "https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXivRaw&set=math&from=2018-01-01&until=2018-01-15",
+      "status": 200,
+      "duration": 4.752835499999492,
+      "utc": "2026-10-10T15:32:28Z"
+    },
+    {
+      "url": "https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXivRaw&set=math&from=2017-01-01&until=2017-01-15",
+      "status": 200,
+      "duration": 4.69567054199797,
+      "utc": "2026-10-10T15:32:37Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1701.02859v1",
+      "status": 200,
+      "duration": 0.43900920799933374,
+      "utc": "2026-10-10T15:32:41Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1701.02859v1",
+      "status": 200,
+      "duration": 1.9168482080021931,
+      "utc": "2026-10-10T15:32:47Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1801.03720v1",
+      "status": 200,
+      "duration": 0.3254095000011148,
+      "utc": "2026-10-10T15:32:52Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1801.03720v1",
+      "status": 200,
+      "duration": 0.5809183749988733,
+      "utc": "2026-10-10T15:32:56Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1911.10586v1",
+      "status": 200,
+      "duration": 0.3221914169989759,
+      "utc": "2026-10-10T15:33:01Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1911.10586v1",
+      "status": 200,
+      "duration": 0.7430897079975693,
+      "utc": "2026-10-10T15:33:05Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1610.09883v1",
+      "status": 200,
+      "duration": 0.10669962500105612,
+      "utc": "2026-10-10T15:33:10Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1610.09883v1",
+      "status": 200,
+      "duration": 0.5162745830020867,
+      "utc": "2026-10-10T15:33:14Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1701.01282v1",
+      "status": 200,
+      "duration": 0.10730666699964786,
+      "utc": "2026-10-10T15:33:18Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1701.01282v1",
+      "status": 200,
+      "duration": 0.5922757909975189,
+      "utc": "2026-10-10T15:33:23Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1701.01334v1",
+      "status": 200,
+      "duration": 0.4272512919997098,
+      "utc": "2026-10-10T15:33:27Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1701.01334v1",
+      "status": 200,
+      "duration": 0.5378838329997961,
+      "utc": "2026-10-10T15:33:32Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1509.09283v3",
+      "status": 200,
+      "duration": 0.4282251670010737,
+      "utc": "2026-10-10T15:33:36Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1509.09283v3",
+      "status": 200,
+      "duration": 0.322653374998481,
+      "utc": "2026-10-10T15:33:40Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1801.02228v4",
+      "status": 200,
+      "duration": 0.11160916700100643,
+      "utc": "2026-10-10T15:33:45Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1801.02228v4",
+      "status": 200,
+      "duration": 0.32643054100117297,
+      "utc": "2026-10-10T15:33:49Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1701.01479v1",
+      "status": 200,
+      "duration": 0.33131008300188114,
+      "utc": "2026-10-10T15:33:53Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1701.01479v1",
+      "status": 200,
+      "duration": 0.6333352920009929,
+      "utc": "2026-10-10T15:33:58Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1511.07868v3",
+      "status": 200,
+      "duration": 0.3291866250001476,
+      "utc": "2026-10-10T15:34:02Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1511.07868v3",
+      "status": 200,
+      "duration": 1.1302905830016243,
+      "utc": "2026-10-10T15:34:07Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1509.01328v1",
+      "status": 200,
+      "duration": 0.3243538749993604,
+      "utc": "2026-10-10T15:34:12Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1509.01328v1",
+      "status": 200,
+      "duration": 0.5810947079990001,
+      "utc": "2026-10-10T15:34:16Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1801.02231v2",
+      "status": 200,
+      "duration": 0.32139129099959973,
+      "utc": "2026-10-10T15:34:21Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1801.02231v2",
+      "status": 200,
+      "duration": 0.31857445900095627,
+      "utc": "2026-10-10T15:34:25Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1612.08394v2",
+      "status": 200,
+      "duration": 0.32598266700006207,
+      "utc": "2026-10-10T15:34:29Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1612.08394v2",
+      "status": 200,
+      "duration": 0.32992695899883984,
+      "utc": "2026-10-10T15:34:34Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1905.08837v2",
+      "status": 200,
+      "duration": 0.3319242920006218,
+      "utc": "2026-10-10T15:34:38Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1905.08837v2",
+      "status": 200,
+      "duration": 0.32940145899920026,
+      "utc": "2026-10-10T15:34:42Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1801.02232v2",
+      "status": 200,
+      "duration": 0.1159693330009759,
+      "utc": "2026-10-10T15:34:46Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1801.02232v2",
+      "status": 200,
+      "duration": 0.5664029170002323,
+      "utc": "2026-10-10T15:34:51Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1607.04961v2",
+      "status": 200,
+      "duration": 0.10925079200023902,
+      "utc": "2026-10-10T15:34:55Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1607.04961v2",
+      "status": 200,
+      "duration": 0.3356428330007475,
+      "utc": "2026-10-10T15:34:59Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1602.05418v4",
+      "status": 200,
+      "duration": 0.11160175000259187,
+      "utc": "2026-10-10T15:35:04Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1602.05418v4",
+      "status": 200,
+      "duration": 0.633204082998418,
+      "utc": "2026-10-10T15:35:08Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1611.05650v1",
+      "status": 200,
+      "duration": 0.32431516599899624,
+      "utc": "2026-10-10T15:35:12Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1611.05650v1",
+      "status": 200,
+      "duration": 1.106304207998619,
+      "utc": "2026-10-10T15:35:18Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1907.07955v1",
+      "status": 200,
+      "duration": 0.10952125000039814,
+      "utc": "2026-10-10T15:35:22Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1907.07955v1",
+      "status": 200,
+      "duration": 0.3254902500011667,
+      "utc": "2026-10-10T15:35:26Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1905.01462v4",
+      "status": 200,
+      "duration": 0.10350387500147917,
+      "utc": "2026-10-10T15:35:30Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1905.01462v4",
+      "status": 200,
+      "duration": 0.6282345420004276,
+      "utc": "2026-10-10T15:35:35Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1911.13078v1",
+      "status": 200,
+      "duration": 0.32839624999905936,
+      "utc": "2026-10-10T15:35:39Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1911.13078v1",
+      "status": 200,
+      "duration": 0.3321778749996156,
+      "utc": "2026-10-10T15:35:43Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1707.08447v3",
+      "status": 200,
+      "duration": 0.35866195899870945,
+      "utc": "2026-10-10T15:35:48Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1707.08447v3",
+      "status": 200,
+      "duration": 0.6022872079993249,
+      "utc": "2026-10-10T15:35:52Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1707.06098v2",
+      "status": 200,
+      "duration": 0.35178308299873606,
+      "utc": "2026-10-10T15:35:57Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1707.06098v2",
+      "status": 200,
+      "duration": 0.6533093329999247,
+      "utc": "2026-10-10T15:36:01Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1912.01546v1",
+      "status": 200,
+      "duration": 0.3269242500027758,
+      "utc": "2026-10-10T15:36:06Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1912.01546v1",
+      "status": 200,
+      "duration": 0.3672729169993545,
+      "utc": "2026-10-10T15:36:10Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1912.01571v1",
+      "status": 200,
+      "duration": 0.10706924999976764,
+      "utc": "2026-10-10T15:36:14Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1912.01571v1",
+      "status": 200,
+      "duration": 0.5249246249986754,
+      "utc": "2026-10-10T15:36:19Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1801.02083v1",
+      "status": 200,
+      "duration": 0.3282602910003334,
+      "utc": "2026-10-10T15:36:23Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1801.02083v1",
+      "status": 200,
+      "duration": 0.5638132089989085,
+      "utc": "2026-10-10T15:36:28Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1809.08465v2",
+      "status": 200,
+      "duration": 0.3305036249985278,
+      "utc": "2026-10-10T15:36:32Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1809.08465v2",
+      "status": 200,
+      "duration": 0.32441333300084807,
+      "utc": "2026-10-10T15:36:36Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1803.01563v3",
+      "status": 200,
+      "duration": 0.32496241699845996,
+      "utc": "2026-10-10T15:36:41Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1803.01563v3",
+      "status": 200,
+      "duration": 0.6124281250013155,
+      "utc": "2026-10-10T15:36:45Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1611.08469v2",
+      "status": 200,
+      "duration": 0.11433616599970264,
+      "utc": "2026-10-10T15:36:49Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1611.08469v2",
+      "status": 200,
+      "duration": 0.3513444169984723,
+      "utc": "2026-10-10T15:36:54Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1901.05687v2",
+      "status": 200,
+      "duration": 0.3980065410032694,
+      "utc": "2026-10-10T15:36:58Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1901.05687v2",
+      "status": 200,
+      "duration": 1.0120537919974595,
+      "utc": "2026-10-10T15:37:03Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1612.06500v2",
+      "status": 200,
+      "duration": 0.3977683329976571,
+      "utc": "2026-10-10T15:37:08Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1612.06500v2",
+      "status": 200,
+      "duration": 0.581631875000312,
+      "utc": "2026-10-10T15:37:12Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1912.01460v1",
+      "status": 200,
+      "duration": 0.3268945409981825,
+      "utc": "2026-10-10T15:37:16Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1912.01460v1",
+      "status": 200,
+      "duration": 0.3280528340001183,
+      "utc": "2026-10-10T15:37:21Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1911.12795v1",
+      "status": 200,
+      "duration": 0.4273275420018763,
+      "utc": "2026-10-10T15:37:25Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1911.12795v1",
+      "status": 200,
+      "duration": 0.5850512090000848,
+      "utc": "2026-10-10T15:37:30Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1707.03479v2",
+      "status": 200,
+      "duration": 0.33578195799782407,
+      "utc": "2026-10-10T15:37:34Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1707.03479v2",
+      "status": 200,
+      "duration": 0.3296907919975638,
+      "utc": "2026-10-10T15:37:39Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1912.00353v1",
+      "status": 200,
+      "duration": 0.33353387500028475,
+      "utc": "2026-10-10T15:37:43Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1912.00353v1",
+      "status": 200,
+      "duration": 0.3327332919980108,
+      "utc": "2026-10-10T15:37:47Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1912.01162v1",
+      "status": 200,
+      "duration": 0.3296283330018923,
+      "utc": "2026-10-10T15:37:52Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1912.01162v1",
+      "status": 200,
+      "duration": 0.5785107919982693,
+      "utc": "2026-10-10T15:37:56Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1912.03464v1",
+      "status": 200,
+      "duration": 0.49294404199827113,
+      "utc": "2026-10-10T15:38:01Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1912.03464v1",
+      "status": 200,
+      "duration": 0.6486273339978652,
+      "utc": "2026-10-10T15:38:05Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1905.13726v1",
+      "status": 200,
+      "duration": 0.3282362499994633,
+      "utc": "2026-10-10T15:38:10Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1905.13726v1",
+      "status": 200,
+      "duration": 0.33136000000013155,
+      "utc": "2026-10-10T15:38:14Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1906.05183v1",
+      "status": 200,
+      "duration": 0.47684729200045695,
+      "utc": "2026-10-10T15:38:18Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1906.05183v1",
+      "status": 200,
+      "duration": 0.3288655420001305,
+      "utc": "2026-10-10T15:38:23Z"
+    }
+  ],
+  "date": "2026-10-11",
+  "final_successful_sources": 98,
+  "legal_source_manifest": "data/arxiv_sources.json"
+}

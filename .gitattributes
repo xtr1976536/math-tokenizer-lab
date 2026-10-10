@@ -1,2 +1,4 @@
 # Preserve upstream license snapshots byte-for-byte, including their whitespace.
 references/*LICENSE -whitespace
+# Official vocab files contain literal whitespace pieces; preserve unchanged.
+results/**/models/*.vocab -whitespace

@@ -1,0 +1,42 @@
+[
+  {
+    "method": "hf_byte_bpe",
+    "records_replayed": 3959,
+    "token_counts_and_losslessness_equal": true
+  },
+  {
+    "method": "sentencepiece_bpe",
+    "records_replayed": 3959,
+    "token_counts_and_losslessness_equal": true
+  },
+  {
+    "method": "sentencepiece_unigram",
+    "records_replayed": 3959,
+    "token_counts_and_losslessness_equal": true
+  },
+  {
+    "method": "utf8_bytes",
+    "records_replayed": 3959,
+    "token_counts_and_losslessness_equal": true
+  },
+  {
+    "method": "qwen2.5_official",
+    "records_replayed": 3959,
+    "token_counts_and_losslessness_equal": true
+  },
+  {
+    "method": "tiktoken_gpt2",
+    "records_replayed": 3959,
+    "token_counts_and_losslessness_equal": true
+  },
+  {
+    "method": "tiktoken_cl100k_base",
+    "records_replayed": 3959,
+    "token_counts_and_losslessness_equal": true
+  },
+  {
+    "method": "tiktoken_o200k_base",
+    "records_replayed": 3959,
+    "token_counts_and_losslessness_equal": true
+  }
+]

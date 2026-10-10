@@ -1,0 +1,5 @@
+{
+  "status": "interrupted_before_test",
+  "reason": "enforce sequential experiment execution and clean speed measurements; restart after512 completion",
+  "test_accessed": false
+}

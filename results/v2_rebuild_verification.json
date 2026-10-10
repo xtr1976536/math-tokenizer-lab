@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "corpus_sha256": "4ffe6202753593a295c981d665c60a47294a11d012acb579cb48dd68c3768733",
+  "count": 28347,
+  "source_papers": 98,
+  "raw_source_replay": false,
+  "note": "Re-extracted existing pinned local source archives; no fresh network downloads."
+}

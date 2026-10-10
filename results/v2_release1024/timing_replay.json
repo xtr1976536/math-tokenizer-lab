@@ -1,0 +1,232 @@
+[
+  {
+    "method": "byte_bpe",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.059325124999304535,
+      0.057987125001091044,
+      0.061085375000402564
+    ]
+  },
+  {
+    "method": "byte_shortest_path",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.951812916999188,
+      0.9490013750000799,
+      0.9917820829978155
+    ]
+  },
+  {
+    "method": "byte_policy_no_rl",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.4499982919987815,
+      1.4538087079999968,
+      1.4573131249999278
+    ]
+  },
+  {
+    "method": "rl_bpe_v2",
+    "seed": 17,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.445528166997974,
+      1.4505757500010077,
+      1.4637669589974394
+    ]
+  },
+  {
+    "method": "rl_bpe_v2",
+    "seed": 29,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.4464036249992205,
+      1.4498539170017466,
+      1.461144750002859
+    ]
+  },
+  {
+    "method": "rl_bpe_v2",
+    "seed": 43,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.4423806669983605,
+      1.4586488749991986,
+      1.4460195410028973
+    ]
+  },
+  {
+    "method": "ast_bpe_v2",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.28834129200186,
+      0.2888403329998255,
+      0.28933245799998986
+    ]
+  },
+  {
+    "method": "ast_shortest_path",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.2268937090011605,
+      1.2311846670017985,
+      1.225769249998848
+    ]
+  },
+  {
+    "method": "ast_policy_no_rl",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.7241983329986397,
+      1.7428502920010942,
+      1.7336030420010502
+    ]
+  },
+  {
+    "method": "rl_ast_bpe_v2",
+    "seed": 17,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.745893833001901,
+      1.7311717079974187,
+      1.7447511669997766
+    ]
+  },
+  {
+    "method": "rl_ast_bpe_v2",
+    "seed": 29,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.7441189579985803,
+      1.7366765000006126,
+      1.764482999999018
+    ]
+  },
+  {
+    "method": "rl_ast_bpe_v2",
+    "seed": 43,
+    "tokens_unchanged": true,
+    "seconds": [
+      1.727864459000557,
+      1.7270386249983858,
+      1.7266601669980446
+    ]
+  },
+  {
+    "method": "ast_bpe_v1",
+    "seed": 17,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.14409824999893317,
+      0.14459100000021863,
+      0.1426940419987659
+    ]
+  },
+  {
+    "method": "rl_bpe_v1",
+    "seed": 17,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.22343566700146766,
+      0.22539187499933178,
+      0.22453458300151397
+    ]
+  },
+  {
+    "method": "rl_ast_bpe_v1",
+    "seed": 17,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.14381508299993584,
+      0.14330470799905015,
+      0.1415108750006766
+    ]
+  },
+  {
+    "method": "hf_byte_bpe",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.025693542000226444,
+      0.016939499997533858,
+      0.01755300000149873
+    ]
+  },
+  {
+    "method": "sentencepiece_bpe",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.012509166001109406,
+      0.01184004099923186,
+      0.013220749999163672
+    ]
+  },
+  {
+    "method": "sentencepiece_unigram",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.007285290997970151,
+      0.007334000001719687,
+      0.007196541999292094
+    ]
+  },
+  {
+    "method": "utf8_bytes",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.001724958998238435,
+      0.0008796669972070958,
+      0.0018052909981634002
+    ]
+  },
+  {
+    "method": "tiktoken_gpt2",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.015064167000673478,
+      0.013312750001205131,
+      0.014401749998796731
+    ]
+  },
+  {
+    "method": "tiktoken_cl100k_base",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.015457541001524078,
+      0.01357054199979757,
+      0.014500291999866022
+    ]
+  },
+  {
+    "method": "tiktoken_o200k_base",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.011657999999442836,
+      0.010009542002080707,
+      0.009868083001492778
+    ]
+  },
+  {
+    "method": "qwen2.5_official",
+    "seed": 0,
+    "tokens_unchanged": true,
+    "seconds": [
+      0.05266329200094333,
+      0.04856883300089976,
+      0.04988324999794713
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+"h = uf+vg"
+"f_i = S_{n_{i-1}-1}(f,g) \\qquad (2\\le i \\le k)."
+"d = uf + vg\\qquad (u,v \\in K[X])"

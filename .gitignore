@@ -12,3 +12,7 @@ vendor/
 
 # Current GitHub OAuth credential lacks workflow-write scope.
 .github/workflows/
+# Incomplete or invalidated exploratory runs: provenance summaries remain tracked.
+results/v2_512/models/
+results/v2_512_final/models/
+results/v2_1024_final/models/

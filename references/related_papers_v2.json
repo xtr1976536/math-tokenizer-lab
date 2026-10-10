@@ -1,0 +1,143 @@
+[
+  {
+    "title": "You Can Learn Tokenization End-to-End with Reinforcement Learning",
+    "authors": [
+      "Sam Dauncey",
+      "Roger Wattenhofer"
+    ],
+    "year": 2026,
+    "venue": "ICML",
+    "arxiv": "2602.13940",
+    "url": "https://arxiv.org/abs/2602.13940",
+    "usage": "score function, early-exit relative reward, source-byte discounting, batch-relative variance reduction; standalone adaptation explicitly distinct",
+    "published": "2026-02-15T00:31:24Z",
+    "updated": "2026-09-14T03:18:06Z"
+  },
+  {
+    "title": "TokEval: A Tokenizer Evaluation Suite",
+    "authors": [
+      "Clara Meister"
+    ],
+    "year": 2026,
+    "venue": "COLM",
+    "arxiv": "2608.18062",
+    "url": "https://arxiv.org/abs/2608.18062",
+    "usage": "intrinsic metric suite, official unmodified Renyi/bigram/trigram implementation",
+    "published": "2026-08-18T17:52:52Z",
+    "updated": "2026-09-09T17:42:55Z"
+  },
+  {
+    "title": "Tokenization and the Noiseless Channel",
+    "year": 2023,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/2023.acl-long.284/",
+    "usage": "Renyi efficiency normalized by declared vocabulary"
+  },
+  {
+    "title": "Two Counterexamples to Tokenization and the Noiseless Channel",
+    "year": 2024,
+    "venue": "LREC-COLING",
+    "url": "https://aclanthology.org/2024.lrec-main.1469/",
+    "usage": "avoid equating Renyi improvement with downstream improvement"
+  },
+  {
+    "title": "Tokenizer Choice For LLM Training: Negligible or Crucial?",
+    "year": 2023,
+    "arxiv": "2310.08754",
+    "url": "https://arxiv.org/abs/2310.08754",
+    "usage": "limitations of fertility/parity as sole intrinsic scores",
+    "authors": [
+      "Mehdi Ali",
+      "Michael Fromm",
+      "Klaudia Thellmann",
+      "Richard Rutmann",
+      "Max Lübbering",
+      "Johannes Leveling",
+      "Katrin Klug",
+      "Jan Ebert",
+      "Niclas Doll",
+      "Jasper Schulze Buschhoff",
+      "Charvi Jain",
+      "Alexander Arno Weber",
+      "Lena Jurkschat",
+      "Hammam Abdelwahab",
+      "Chelsea John",
+      "Pedro Ortiz Suarez",
+      "Malte Ostendorff",
+      "Samuel Weinbach",
+      "Rafet Sifa",
+      "Stefan Kesselheim",
+      "Nicolas Flores-Herr"
+    ],
+    "published": "2023-10-12T22:44:19Z",
+    "updated": "2024-03-17T14:17:22Z"
+  },
+  {
+    "title": "Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates",
+    "authors": [
+      "Taku Kudo"
+    ],
+    "year": 2018,
+    "venue": "ACL",
+    "doi": "10.18653/v1/P18-1007",
+    "url": "https://aclanthology.org/P18-1007/",
+    "usage": "fixed vocabulary with alternative segmentation paths"
+  },
+  {
+    "title": "BPE-Dropout: Simple and Effective Subword Regularization",
+    "year": 2020,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/2020.acl-main.170/",
+    "usage": "stochastic path baseline concept, not RL"
+  },
+  {
+    "title": "Tokenization with Split Trees",
+    "year": 2026,
+    "arxiv": "2605.22705",
+    "url": "https://arxiv.org/abs/2605.22705",
+    "usage": "split-tree vocabulary/path compression, no verified official implementation found",
+    "authors": [
+      "Craig W. Schmidt",
+      "Michael Krumdick",
+      "Adam Wiemerslage",
+      "Seth Ebner",
+      "Varshini Reddy",
+      "Yuval Pinter",
+      "Chris Tanner"
+    ],
+    "published": "2026-05-21T16:46:23Z",
+    "updated": "2026-05-26T17:59:39Z"
+  },
+  {
+    "title": "Buy 4 REINFORCE Samples, Get a Baseline for Free!",
+    "authors": [
+      "Wouter Kool",
+      "Herke van Hoof",
+      "Max Welling"
+    ],
+    "year": 2019,
+    "venue": "ICLR workshop",
+    "url": "https://wouterkool.github.io/publication/buy-4-samples-free-baseline/",
+    "usage": "multi-sample leave-one-out variance reduction"
+  },
+  {
+    "title": "Back to Basics: Revisiting REINFORCE-Style Optimization for Learning from Human Feedback in LLMs",
+    "year": 2024,
+    "venue": "ACL",
+    "arxiv": "2402.14740",
+    "url": "https://aclanthology.org/2024.acl-long.662/",
+    "usage": "RLOO estimator, standalone tokenizer adaptation",
+    "authors": [
+      "Arash Ahmadian",
+      "Chris Cremer",
+      "Matthias Gallé",
+      "Marzieh Fadaee",
+      "Julia Kreutzer",
+      "Olivier Pietquin",
+      "Ahmet Üstün",
+      "Sara Hooker"
+    ],
+    "published": "2024-02-22T17:52:34Z",
+    "updated": "2024-02-26T18:26:25Z"
+  }
+]

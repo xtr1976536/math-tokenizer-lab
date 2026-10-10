@@ -1,3 +1,18 @@
+# 第二版已更新（2026-10-11）
+
+最新语料和实验请使用 **v2**：28,347条公式（首版的16.55倍），98篇固定在2020年前的arXiv源稿，historical human 19,675条，simple/complex 24,109/4,238。13个主题领域；每条保留来源/许可/版本/位置/复杂度分量。所有arXiv版本经CC BY/CC0核对，缓存源码不上传。
+
+- 当前数据：`data/releases/v2/curated/corpus.jsonl`；纯公式：`data/releases/v2/formula_only/<domain>/<origin>/<simple|complex>.jsonl`。
+- 完整协议、合法获取、复杂度规则：`docs/arxiv_collection_v2.md`。
+- 独立评测指标与文献：`docs/intrinsic_metrics_v2.md`；RL设计和全部消融：`docs/rl_design_v2.md`。
+- 跨预算结果：`docs/v2_findings.md`；正式实验：`results/v2_release512/`和`results/v2_release1024/`。
+- 复现：`docs/v2_reproduction.md`、`scripts/run_v2_all.sh`、`requirements-v2.lock.txt`。
+- 旧v1数据、模型、结果保留，见下面首版记录；不要把v1数字当最新结果。
+
+v2结构前端为语义AST + 明确标注的LaTeX syntax tree回退，不冒称通用语义AST。RL-v2用BPE固定词表上的完整路径REINFORCE策略，实验相对奖励基线、RLOO、折扣、熵、采样数、初始化与训练轮次；每预算38个dev配置/种子run，配置按dev冻结后才统一test。
+
+以下为首版历史记录：
+
 # Math Tokenizer Lab
 
 专门用于数学公式的独立分词器研究。**当前交付是可运行、可审计的第一阶段 pilot，不是整个项目完成或下游性能提升的证明。**
