@@ -1,0 +1,22 @@
+{
+  "repo": "https://github.com/xtr1976536/math-tokenizer-lab",
+  "source_commit": "c3f46b41b9dd4bab29cced8eec8bc9eba5d6be7a",
+  "environment": "Fresh GitHub checkout, original pinned Python dependency environment reused via symlink; not an independent OS/environment test.",
+  "command": "PYTHONPATH=src bash scripts/run_all.sh results/clean_clone_reproduce",
+  "tests_passed": 53,
+  "sequential_pipeline_completed": true,
+  "comparisons": {
+    "pilot01": {
+      "exact_per_formula_records_equal": true,
+      "records": 10556,
+      "sha256": "8bb83b168ac8adc80216ef73e91793efff00594311170ae87a979d2531305d73",
+      "fairness_audit_passed": true
+    },
+    "sensitivity512": {
+      "exact_per_formula_records_equal": true,
+      "records": 10556,
+      "sha256": "6c074bc7ddf12d17bdb748645fa6ba6a38ed19924e390111fd8f0016df68a03c",
+      "fairness_audit_passed": true
+    }
+  }
+}
