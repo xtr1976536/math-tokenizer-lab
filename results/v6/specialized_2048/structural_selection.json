@@ -1,0 +1,37 @@
+{
+  "inherited_pretest": {
+    "selected": {
+      "tree_weight": 0.5,
+      "score": {
+        "tokens_per_formula": 37.59756097560975,
+        "document_macro_tokens_per_byte": 0.36865778960763906,
+        "command_integrity": 0.9907902554961379,
+        "number_integrity": 0.9570222563315426,
+        "independent_tree_crossing": 0.16566655854686993,
+        "encode_mib_s": 6.736945505188372,
+        "utility": 0.3878952394479591
+      },
+      "train_seconds": 20.185196209000424,
+      "policy": [
+        0.012319337832300435,
+        -0.7990738113436293,
+        -2.2989030209042673,
+        0.0,
+        0.0,
+        -0.42126064746760844,
+        6.588192963711339,
+        10.076268138990372,
+        0.0,
+        0.0,
+        2.020284986915884,
+        -1.0147196982062332
+      ]
+    },
+    "deterministic_expected_gradient": true,
+    "seeds_identical_by_design": true,
+    "test_used": false,
+    "frozen_utc": "2026-10-11T16:53:26Z"
+  },
+  "test_used": false,
+  "deterministic_expected_gradient": true
+}

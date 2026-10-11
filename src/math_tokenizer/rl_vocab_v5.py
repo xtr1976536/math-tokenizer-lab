@@ -41,8 +41,8 @@ class Indexed:
  repeated pairs (a,a). Maintaining both avoids rescanning reward strings for
  each candidate. A versioned heap preserves the old frequency/lexical ordering.
  """
- def __init__(self,texts,cuts=None):
-  self.seqs=[Sequence.make(t,False) for t in texts];self.counts=Counter();self.gains=Counter();self.boundaries=Counter();self.index=defaultdict(set);self.local=[];self.cuts=cuts
+ def __init__(self,texts,cuts=None,sequences=None):
+  self.seqs=sequences if sequences is not None else [Sequence.make(t,False) for t in texts];self.counts=Counter();self.gains=Counter();self.boundaries=Counter();self.index=defaultdict(set);self.local=[];self.cuts=cuts
   if cuts is not None and len(cuts)!=len(self.seqs):raise ValueError('cut/formula count mismatch')
   for i,s in enumerate(self.seqs):
    c,g,b=self.scan(s,None if cuts is None else cuts[i]);self.local.append((c,g,b));self.counts.update(c);self.gains.update(g);self.boundaries.update(b)
@@ -69,6 +69,14 @@ class Indexed:
    pairs.append(pair)
   for item in held:heapq.heappush(self.heap,item)
   return pairs
+ def clone(self):
+  """Independent mutable environment, share only immutable source counters."""
+  obj=object.__new__(type(self))
+  obj.seqs=[Sequence(s.ids.copy(),s.starts.copy(),s.ends.copy(),s.spans) for s in self.seqs]
+  obj.counts=self.counts.copy();obj.gains=self.gains.copy();obj.boundaries=self.boundaries.copy()
+  obj.index=defaultdict(set,{p:indices.copy() for p,indices in self.index.items()})
+  obj.local=self.local.copy();obj.cuts=self.cuts
+  obj.generation=self.generation.copy();obj.heap=self.heap.copy();return obj
  def merge(self,pair,new):
   changed={}
   for i in sorted(self.index[pair].copy()):
@@ -109,13 +117,14 @@ class MergeSession:
   self.fit,self.reward=internal_split(records,self.config)
   if not self.fit or not self.reward:raise ValueError('fit and reward require separate nonempty paper groups')
   self.size={payload:i for i,payload in enumerate(model.vocab)}
-  self.perturbed=Indexed([re.sub(r'\s+','',r['latex']) for r in self.reward]);self.perturbed_total=sum(len(s.ids) for s in self.perturbed.seqs)
+  factory=getattr(model,'indexed_factory',Indexed)
+  self.perturbed=factory([re.sub(r'\s+','',r['latex']) for r in self.reward]);self.perturbed_total=sum(len(s.ids) for s in self.perturbed.seqs)
   self.bytes_count=sum(len(r['latex'].encode()) for r in self.reward);cuts=[]
   for row in self.reward:
    text=row['latex'];offset=[0]
    for c in text:offset.append(offset[-1]+len(c.encode()))
    cuts.append({j for m in LEX.finditer(text) for j in range(offset[m.start()]+1,offset[m.end()])})
-  self.f=Indexed([r['latex'] for r in self.fit]);self.h=Indexed([r['latex'] for r in self.reward],cuts)
+  self.f=factory([r['latex'] for r in self.fit]);self.h=factory([r['latex'] for r in self.reward],cuts)
   self.fitusage=Counter(id for s in self.f.seqs for id in s.ids);self.totalfit=sum(self.fitusage.values());self.totalheld=sum(len(s.ids) for s in self.h.seqs)
  def candidates(self,frequency_only=False):
   pairs=self.f.top(1 if frequency_only else self.config.candidates,self.config.min_pair)

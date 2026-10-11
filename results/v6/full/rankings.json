@@ -1,0 +1,794 @@
+{
+  "weights": {
+    "document_macro_tokens_per_byte": 0.3,
+    "encode_mib_s": 0.25,
+    "independent_tree_crossing": 0.2,
+    "command_integrity": 0.1,
+    "number_integrity": 0.05,
+    "fit_predictive_unigram_bits_per_byte": 0.1
+  },
+  "within_scenario": {
+    "1024/broad": {
+      "primary_ranking": [
+        "v5",
+        "pathpiece_bpe_vocab",
+        "ast_v4",
+        "hf_bpe",
+        "sentencepiece_bpe",
+        "wordpiece_bytes",
+        "sentencepiece_unigram"
+      ],
+      "comprehensive_ranking": [
+        "ast_v4",
+        "v5",
+        "pathpiece_bpe_vocab",
+        "sentencepiece_unigram",
+        "hf_bpe",
+        "sentencepiece_bpe",
+        "wordpiece_bytes"
+      ],
+      "scores": {
+        "ast_v4": 0.14166666666666666,
+        "hf_bpe": 0.6416666666666667,
+        "pathpiece_bpe_vocab": 0.47500000000000003,
+        "sentencepiece_bpe": 0.6583333333333333,
+        "sentencepiece_unigram": 0.6083333333333333,
+        "v5": 0.2,
+        "wordpiece_bytes": 0.7749999999999999
+      },
+      "pareto": [
+        "ast_v4",
+        "pathpiece_bpe_vocab",
+        "sentencepiece_unigram",
+        "v5"
+      ],
+      "metrics": {
+        "ast_v4": {
+          "document_macro_tokens_per_byte": 0.42005296763494043,
+          "encode_mib_s": 30.433563775103053,
+          "independent_tree_crossing": 0.0726643598615917,
+          "command_integrity": 0.9888608870967742,
+          "number_integrity": 0.990294795584132,
+          "fit_predictive_unigram_bits_per_byte": 3.3858169905645714
+        },
+        "hf_bpe": {
+          "document_macro_tokens_per_byte": 0.42304482636660073,
+          "encode_mib_s": 8.141945501513002,
+          "independent_tree_crossing": 0.23452402047134116,
+          "command_integrity": 0.647883064516129,
+          "number_integrity": 0.9887176998665534,
+          "fit_predictive_unigram_bits_per_byte": 3.5821087428954566
+        },
+        "pathpiece_bpe_vocab": {
+          "document_macro_tokens_per_byte": 0.4123077644222252,
+          "encode_mib_s": 5.617620298891619,
+          "independent_tree_crossing": 0.219577088541052,
+          "command_integrity": 0.8205141129032258,
+          "number_integrity": 0.9898095353633386,
+          "fit_predictive_unigram_bits_per_byte": 3.464070139809269
+        },
+        "sentencepiece_bpe": {
+          "document_macro_tokens_per_byte": 0.49403137053873036,
+          "encode_mib_s": 10.91605646237998,
+          "independent_tree_crossing": 0.23131201570772414,
+          "command_integrity": 0.05105846774193548,
+          "number_integrity": 0.9885963848113551,
+          "fit_predictive_unigram_bits_per_byte": 3.8680614617725464
+        },
+        "sentencepiece_unigram": {
+          "document_macro_tokens_per_byte": 0.505557223329913,
+          "encode_mib_s": 21.521177568998844,
+          "independent_tree_crossing": 0.20815216925227473,
+          "command_integrity": 0.02847782258064516,
+          "number_integrity": 0.9915079461361155,
+          "fit_predictive_unigram_bits_per_byte": 3.843453259974506
+        },
+        "v5": {
+          "document_macro_tokens_per_byte": 0.3947460516706094,
+          "encode_mib_s": 9.072360449816722,
+          "independent_tree_crossing": 0.19529338493705237,
+          "command_integrity": 0.9973790322580646,
+          "number_integrity": 0.9885963848113551,
+          "fit_predictive_unigram_bits_per_byte": 3.2557090607492425
+        },
+        "wordpiece_bytes": {
+          "document_macro_tokens_per_byte": 0.5000095201698814,
+          "encode_mib_s": 0.8047997309610944,
+          "independent_tree_crossing": 0.19664667900764374,
+          "command_integrity": 0.1585181451612903,
+          "number_integrity": 0.9885963848113551,
+          "fit_predictive_unigram_bits_per_byte": 3.9078433016309875
+        }
+      },
+      "excluded_nonlossless": []
+    },
+    "1024/specialized": {
+      "primary_ranking": [
+        "v5",
+        "ast_v4",
+        "pathpiece_bpe_vocab",
+        "hf_bpe",
+        "sentencepiece_bpe",
+        "sentencepiece_unigram",
+        "wordpiece_bytes"
+      ],
+      "comprehensive_ranking": [
+        "ast_v4",
+        "v5",
+        "sentencepiece_unigram",
+        "pathpiece_bpe_vocab",
+        "hf_bpe",
+        "sentencepiece_bpe",
+        "wordpiece_bytes"
+      ],
+      "scores": {
+        "ast_v4": 0.07916666666666666,
+        "hf_bpe": 0.5833333333333334,
+        "pathpiece_bpe_vocab": 0.5750000000000001,
+        "sentencepiece_bpe": 0.7,
+        "sentencepiece_unigram": 0.5625,
+        "v5": 0.2333333333333333,
+        "wordpiece_bytes": 0.7666666666666667
+      },
+      "pareto": [
+        "ast_v4",
+        "v5"
+      ],
+      "metrics": {
+        "ast_v4": {
+          "document_macro_tokens_per_byte": 0.4420063544334021,
+          "encode_mib_s": 29.75762197886056,
+          "independent_tree_crossing": 0.07424925529345464,
+          "command_integrity": 0.9819494584837545,
+          "number_integrity": 0.9851444851444852,
+          "fit_predictive_unigram_bits_per_byte": 3.506424790151798
+        },
+        "hf_bpe": {
+          "document_macro_tokens_per_byte": 0.4640399195450651,
+          "encode_mib_s": 7.672572270024932,
+          "independent_tree_crossing": 0.205433509952174,
+          "command_integrity": 0.5891909110214483,
+          "number_integrity": 0.9833129833129833,
+          "fit_predictive_unigram_bits_per_byte": 3.706614446803639
+        },
+        "pathpiece_bpe_vocab": {
+          "document_macro_tokens_per_byte": 0.4543116744498791,
+          "encode_mib_s": 4.278606474340857,
+          "independent_tree_crossing": 0.20592369273390235,
+          "command_integrity": 0.7292418772563177,
+          "number_integrity": 0.9833129833129833,
+          "fit_predictive_unigram_bits_per_byte": 3.6134903283351583
+        },
+        "sentencepiece_bpe": {
+          "document_macro_tokens_per_byte": 0.5133396095080414,
+          "encode_mib_s": 11.136233830778755,
+          "independent_tree_crossing": 0.21340517314873228,
+          "command_integrity": 0.0761308133361648,
+          "number_integrity": 0.9833129833129833,
+          "fit_predictive_unigram_bits_per_byte": 4.0335377499947045
+        },
+        "sentencepiece_unigram": {
+          "document_macro_tokens_per_byte": 0.5279910960751579,
+          "encode_mib_s": 19.910469057883628,
+          "independent_tree_crossing": 0.19261473712338834,
+          "command_integrity": 0.06922913569760034,
+          "number_integrity": 0.9851444851444852,
+          "fit_predictive_unigram_bits_per_byte": 4.019499943968908
+        },
+        "v5": {
+          "document_macro_tokens_per_byte": 0.42326157797318525,
+          "encode_mib_s": 9.177997070100984,
+          "independent_tree_crossing": 0.18114202936152732,
+          "command_integrity": 0.9819494584837545,
+          "number_integrity": 0.9833129833129833,
+          "fit_predictive_unigram_bits_per_byte": 3.397590426804829
+        },
+        "wordpiece_bytes": {
+          "document_macro_tokens_per_byte": 0.5292888427403164,
+          "encode_mib_s": 0.9012077779423358,
+          "independent_tree_crossing": 0.1653133458255257,
+          "command_integrity": 0.26130813336164793,
+          "number_integrity": 0.9833129833129833,
+          "fit_predictive_unigram_bits_per_byte": 4.02109759456941
+        }
+      },
+      "excluded_nonlossless": []
+    },
+    "2048/broad": {
+      "primary_ranking": [
+        "v5",
+        "pathpiece_bpe_vocab",
+        "hf_bpe",
+        "ast_v4",
+        "wordpiece_bytes",
+        "sentencepiece_bpe",
+        "sentencepiece_unigram"
+      ],
+      "comprehensive_ranking": [
+        "ast_v4",
+        "v5",
+        "pathpiece_bpe_vocab",
+        "sentencepiece_unigram",
+        "hf_bpe",
+        "sentencepiece_bpe",
+        "wordpiece_bytes"
+      ],
+      "scores": {
+        "ast_v4": 0.19166666666666665,
+        "hf_bpe": 0.5958333333333334,
+        "pathpiece_bpe_vocab": 0.5083333333333334,
+        "sentencepiece_bpe": 0.6583333333333333,
+        "sentencepiece_unigram": 0.5583333333333333,
+        "v5": 0.22083333333333333,
+        "wordpiece_bytes": 0.7666666666666666
+      },
+      "pareto": [
+        "ast_v4",
+        "pathpiece_bpe_vocab",
+        "sentencepiece_unigram",
+        "v5"
+      ],
+      "metrics": {
+        "ast_v4": {
+          "document_macro_tokens_per_byte": 0.36595752057629993,
+          "encode_mib_s": 29.399166697808997,
+          "independent_tree_crossing": 0.09223737719077266,
+          "command_integrity": 0.9888608870967742,
+          "number_integrity": 0.9928424117432973,
+          "fit_predictive_unigram_bits_per_byte": 3.294993761565855
+        },
+        "hf_bpe": {
+          "document_macro_tokens_per_byte": 0.36210220235942403,
+          "encode_mib_s": 7.8222422222029735,
+          "independent_tree_crossing": 0.287317498365657,
+          "command_integrity": 0.7628528225806451,
+          "number_integrity": 0.9898095353633386,
+          "fit_predictive_unigram_bits_per_byte": 3.398888451793791
+        },
+        "pathpiece_bpe_vocab": {
+          "document_macro_tokens_per_byte": 0.35259276550667906,
+          "encode_mib_s": 3.392330611610212,
+          "independent_tree_crossing": 0.2871694490505816,
+          "command_integrity": 0.8984375,
+          "number_integrity": 0.9904161106393303,
+          "fit_predictive_unigram_bits_per_byte": 3.300242909525196
+        },
+        "sentencepiece_bpe": {
+          "document_macro_tokens_per_byte": 0.4503872384501129,
+          "encode_mib_s": 10.16290327985531,
+          "independent_tree_crossing": 0.26182257507766654,
+          "command_integrity": 0.07752016129032258,
+          "number_integrity": 0.9896882203081402,
+          "fit_predictive_unigram_bits_per_byte": 3.758669292630205
+        },
+        "sentencepiece_unigram": {
+          "document_macro_tokens_per_byte": 0.4704335420482558,
+          "encode_mib_s": 18.222996014142076,
+          "independent_tree_crossing": 0.23578133627829928,
+          "command_integrity": 0.042993951612903224,
+          "number_integrity": 0.9940555622952808,
+          "fit_predictive_unigram_bits_per_byte": 3.749971825029392
+        },
+        "v5": {
+          "document_macro_tokens_per_byte": 0.34646409897821095,
+          "encode_mib_s": 9.183507011277577,
+          "independent_tree_crossing": 0.24653897934818503,
+          "command_integrity": 0.9973790322580646,
+          "number_integrity": 0.9898095353633386,
+          "fit_predictive_unigram_bits_per_byte": 3.1871676373894413
+        },
+        "wordpiece_bytes": {
+          "document_macro_tokens_per_byte": 0.3776227078613574,
+          "encode_mib_s": 0.9609922739536766,
+          "independent_tree_crossing": 0.27947927292961144,
+          "command_integrity": 0.4361391129032258,
+          "number_integrity": 0.9887176998665534,
+          "fit_predictive_unigram_bits_per_byte": 3.5386448162177477
+        }
+      },
+      "excluded_nonlossless": []
+    },
+    "2048/specialized": {
+      "primary_ranking": [
+        "v5",
+        "pathpiece_bpe_vocab",
+        "ast_v4",
+        "hf_bpe",
+        "wordpiece_bytes",
+        "sentencepiece_bpe",
+        "sentencepiece_unigram"
+      ],
+      "comprehensive_ranking": [
+        "ast_v4",
+        "v5",
+        "pathpiece_bpe_vocab",
+        "sentencepiece_unigram",
+        "hf_bpe",
+        "sentencepiece_bpe",
+        "wordpiece_bytes"
+      ],
+      "scores": {
+        "ast_v4": 0.15,
+        "hf_bpe": 0.6208333333333333,
+        "pathpiece_bpe_vocab": 0.5250000000000001,
+        "sentencepiece_bpe": 0.6708333333333334,
+        "sentencepiece_unigram": 0.6083333333333333,
+        "v5": 0.20416666666666666,
+        "wordpiece_bytes": 0.7208333333333332
+      },
+      "pareto": [
+        "ast_v4",
+        "pathpiece_bpe_vocab",
+        "sentencepiece_unigram",
+        "v5"
+      ],
+      "metrics": {
+        "ast_v4": {
+          "document_macro_tokens_per_byte": 0.40055431651165146,
+          "encode_mib_s": 27.414877271134493,
+          "independent_tree_crossing": 0.08128892986440601,
+          "command_integrity": 0.9819494584837545,
+          "number_integrity": 0.9863654863654864,
+          "fit_predictive_unigram_bits_per_byte": 3.461412352735536
+        },
+        "hf_bpe": {
+          "document_macro_tokens_per_byte": 0.4018701125970433,
+          "encode_mib_s": 7.510543457394038,
+          "independent_tree_crossing": 0.25676269813722086,
+          "command_integrity": 0.7157570609471225,
+          "number_integrity": 0.9835164835164835,
+          "fit_predictive_unigram_bits_per_byte": 3.5227311208796097
+        },
+        "pathpiece_bpe_vocab": {
+          "document_macro_tokens_per_byte": 0.39162582938742424,
+          "encode_mib_s": 2.485213670320969,
+          "independent_tree_crossing": 0.26830713794656613,
+          "command_integrity": 0.8629220641325122,
+          "number_integrity": 0.9851444851444852,
+          "fit_predictive_unigram_bits_per_byte": 3.4486985820238956
+        },
+        "sentencepiece_bpe": {
+          "document_macro_tokens_per_byte": 0.468463346184901,
+          "encode_mib_s": 9.860479272205815,
+          "independent_tree_crossing": 0.24222384128229557,
+          "command_integrity": 0.09386281588447654,
+          "number_integrity": 0.9835164835164835,
+          "fit_predictive_unigram_bits_per_byte": 3.910564778170627
+        },
+        "sentencepiece_unigram": {
+          "document_macro_tokens_per_byte": 0.49140171110017367,
+          "encode_mib_s": 19.03850265095471,
+          "independent_tree_crossing": 0.21781858613392632,
+          "command_integrity": 0.07241452537693778,
+          "number_integrity": 0.986975986975987,
+          "fit_predictive_unigram_bits_per_byte": 3.914602585826775
+        },
+        "v5": {
+          "document_macro_tokens_per_byte": 0.3832167801985601,
+          "encode_mib_s": 9.082576717511671,
+          "independent_tree_crossing": 0.21743684974882746,
+          "command_integrity": 0.9819494584837545,
+          "number_integrity": 0.9835164835164835,
+          "fit_predictive_unigram_bits_per_byte": 3.378618384810825
+        },
+        "wordpiece_bytes": {
+          "document_macro_tokens_per_byte": 0.4252667811350908,
+          "encode_mib_s": 1.0106005324339284,
+          "independent_tree_crossing": 0.23813452603239393,
+          "command_integrity": 0.48566574644298155,
+          "number_integrity": 0.9835164835164835,
+          "fit_predictive_unigram_bits_per_byte": 3.759336513134287
+        }
+      },
+      "excluded_nonlossless": []
+    }
+  },
+  "combined": {
+    "1024": {
+      "ranking": [
+        "ast_v4",
+        "v5",
+        "pathpiece_bpe_vocab",
+        "sentencepiece_unigram",
+        "hf_bpe",
+        "sentencepiece_bpe",
+        "wordpiece_bytes"
+      ],
+      "scores": {
+        "ast_v4": 0.11041666666666666,
+        "hf_bpe": 0.6125,
+        "pathpiece_bpe_vocab": 0.525,
+        "sentencepiece_bpe": 0.6791666666666667,
+        "sentencepiece_unigram": 0.5854166666666667,
+        "v5": 0.21666666666666667,
+        "wordpiece_bytes": 0.7708333333333333
+      }
+    },
+    "2048": {
+      "ranking": [
+        "ast_v4",
+        "v5",
+        "pathpiece_bpe_vocab",
+        "sentencepiece_unigram",
+        "hf_bpe",
+        "sentencepiece_bpe",
+        "wordpiece_bytes"
+      ],
+      "scores": {
+        "ast_v4": 0.17083333333333334,
+        "hf_bpe": 0.6083333333333334,
+        "pathpiece_bpe_vocab": 0.5166666666666668,
+        "sentencepiece_bpe": 0.6645833333333333,
+        "sentencepiece_unigram": 0.5833333333333333,
+        "v5": 0.2125,
+        "wordpiece_bytes": 0.7437499999999999
+      }
+    }
+  },
+  "weight_sensitivity": [
+    {
+      "speed_weight": 0.1,
+      "ranking": {
+        "1024": {
+          "ranking": [
+            "ast_v4",
+            "v5",
+            "pathpiece_bpe_vocab",
+            "hf_bpe",
+            "sentencepiece_unigram",
+            "wordpiece_bytes",
+            "sentencepiece_bpe"
+          ],
+          "scores": {
+            "ast_v4": 0.1325,
+            "hf_bpe": 0.6016666666666667,
+            "pathpiece_bpe_vocab": 0.4633333333333333,
+            "sentencepiece_bpe": 0.7483333333333334,
+            "sentencepiece_unigram": 0.6691666666666667,
+            "v5": 0.16,
+            "wordpiece_bytes": 0.7250000000000001
+          }
+        },
+        "2048": {
+          "ranking": [
+            "v5",
+            "ast_v4",
+            "pathpiece_bpe_vocab",
+            "hf_bpe",
+            "sentencepiece_unigram",
+            "wordpiece_bytes",
+            "sentencepiece_bpe"
+          ],
+          "scores": {
+            "ast_v4": 0.20500000000000002,
+            "hf_bpe": 0.5966666666666667,
+            "pathpiece_bpe_vocab": 0.45333333333333337,
+            "sentencepiece_bpe": 0.7308333333333334,
+            "sentencepiece_unigram": 0.6666666666666667,
+            "v5": 0.15500000000000003,
+            "wordpiece_bytes": 0.6925
+          }
+        }
+      }
+    },
+    {
+      "speed_weight": 0.2,
+      "ranking": {
+        "1024": {
+          "ranking": [
+            "ast_v4",
+            "v5",
+            "pathpiece_bpe_vocab",
+            "hf_bpe",
+            "sentencepiece_unigram",
+            "sentencepiece_bpe",
+            "wordpiece_bytes"
+          ],
+          "scores": {
+            "ast_v4": 0.11777777777777779,
+            "hf_bpe": 0.608888888888889,
+            "pathpiece_bpe_vocab": 0.5044444444444446,
+            "sentencepiece_bpe": 0.7022222222222223,
+            "sentencepiece_unigram": 0.6133333333333334,
+            "v5": 0.1977777777777778,
+            "wordpiece_bytes": 0.7555555555555555
+          }
+        },
+        "2048": {
+          "ranking": [
+            "ast_v4",
+            "v5",
+            "pathpiece_bpe_vocab",
+            "hf_bpe",
+            "sentencepiece_unigram",
+            "sentencepiece_bpe",
+            "wordpiece_bytes"
+          ],
+          "scores": {
+            "ast_v4": 0.18222222222222223,
+            "hf_bpe": 0.6044444444444446,
+            "pathpiece_bpe_vocab": 0.49555555555555564,
+            "sentencepiece_bpe": 0.6866666666666668,
+            "sentencepiece_unigram": 0.6111111111111112,
+            "v5": 0.19333333333333336,
+            "wordpiece_bytes": 0.7266666666666667
+          }
+        }
+      }
+    },
+    {
+      "speed_weight": 0.3,
+      "ranking": {
+        "1024": {
+          "ranking": [
+            "ast_v4",
+            "v5",
+            "pathpiece_bpe_vocab",
+            "sentencepiece_unigram",
+            "hf_bpe",
+            "sentencepiece_bpe",
+            "wordpiece_bytes"
+          ],
+          "scores": {
+            "ast_v4": 0.10305555555555554,
+            "hf_bpe": 0.616111111111111,
+            "pathpiece_bpe_vocab": 0.5455555555555556,
+            "sentencepiece_bpe": 0.6561111111111111,
+            "sentencepiece_unigram": 0.5575,
+            "v5": 0.23555555555555552,
+            "wordpiece_bytes": 0.786111111111111
+          }
+        },
+        "2048": {
+          "ranking": [
+            "ast_v4",
+            "v5",
+            "pathpiece_bpe_vocab",
+            "sentencepiece_unigram",
+            "hf_bpe",
+            "sentencepiece_bpe",
+            "wordpiece_bytes"
+          ],
+          "scores": {
+            "ast_v4": 0.15944444444444442,
+            "hf_bpe": 0.6122222222222222,
+            "pathpiece_bpe_vocab": 0.5377777777777778,
+            "sentencepiece_bpe": 0.6425,
+            "sentencepiece_unigram": 0.5555555555555556,
+            "v5": 0.23166666666666663,
+            "wordpiece_bytes": 0.7608333333333333
+          }
+        }
+      }
+    },
+    {
+      "speed_weight": 0.4,
+      "ranking": {
+        "1024": {
+          "ranking": [
+            "ast_v4",
+            "v5",
+            "sentencepiece_unigram",
+            "pathpiece_bpe_vocab",
+            "sentencepiece_bpe",
+            "hf_bpe",
+            "wordpiece_bytes"
+          ],
+          "scores": {
+            "ast_v4": 0.08833333333333332,
+            "hf_bpe": 0.6233333333333333,
+            "pathpiece_bpe_vocab": 0.5866666666666667,
+            "sentencepiece_bpe": 0.6099999999999999,
+            "sentencepiece_unigram": 0.5016666666666667,
+            "v5": 0.2733333333333333,
+            "wordpiece_bytes": 0.8166666666666667
+          }
+        },
+        "2048": {
+          "ranking": [
+            "ast_v4",
+            "v5",
+            "sentencepiece_unigram",
+            "pathpiece_bpe_vocab",
+            "sentencepiece_bpe",
+            "hf_bpe",
+            "wordpiece_bytes"
+          ],
+          "scores": {
+            "ast_v4": 0.13666666666666666,
+            "hf_bpe": 0.6199999999999999,
+            "pathpiece_bpe_vocab": 0.5800000000000001,
+            "sentencepiece_bpe": 0.5983333333333334,
+            "sentencepiece_unigram": 0.5,
+            "v5": 0.27,
+            "wordpiece_bytes": 0.7949999999999999
+          }
+        }
+      }
+    }
+  ],
+  "paired_paper_bootstraps": {
+    "1024/broad/ast_v4-vs-ast_v4_previous_dictionary/0": {
+      "paper_macro_tokens_per_byte_difference": 0.0027008607129058466,
+      "ci95": [
+        -0.0020031932493082398,
+        0.007260606068564545
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/broad/ast_v4-vs-hf_bpe/0": {
+      "paper_macro_tokens_per_byte_difference": -0.0029918587316603647,
+      "ci95": [
+        -0.014623363107280123,
+        0.008037779780296161
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/broad/v5_structural-vs-v5_previous_local/0": {
+      "paper_macro_tokens_per_byte_difference": -0.02705840143039627,
+      "ci95": [
+        -0.03558367948841745,
+        -0.019668084880360117
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/broad/v5_structural-vs-v5_atomic_frequency/0": {
+      "paper_macro_tokens_per_byte_difference": -0.0013051470303466564,
+      "ci95": [
+        -0.003119007862389625,
+        0.0004946804177584649
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/broad/v5_structural-vs-v5_previous_trajectory/0": {
+      "paper_macro_tokens_per_byte_difference": -0.02935689694364882,
+      "ci95": [
+        -0.03855651468522232,
+        -0.021914762070283447
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/specialized/ast_v4-vs-ast_v4_previous_dictionary/0": {
+      "paper_macro_tokens_per_byte_difference": -0.003380660903909887,
+      "ci95": [
+        -0.012000397160540731,
+        0.007331960719621298
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/specialized/ast_v4-vs-hf_bpe/0": {
+      "paper_macro_tokens_per_byte_difference": -0.022033565111663062,
+      "ci95": [
+        -0.043691819395332135,
+        -0.003528721896166878
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/specialized/v5_structural-vs-v5_previous_local/0": {
+      "paper_macro_tokens_per_byte_difference": -0.034101854248528796,
+      "ci95": [
+        -0.04626425284979153,
+        -0.024313510188109608
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/specialized/v5_structural-vs-v5_atomic_frequency/0": {
+      "paper_macro_tokens_per_byte_difference": 6.884253396102328e-05,
+      "ci95": [
+        -0.0034383031216296696,
+        0.0032859047892549445
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "1024/specialized/v5_structural-vs-v5_previous_trajectory/0": {
+      "paper_macro_tokens_per_byte_difference": -0.0368030047757579,
+      "ci95": [
+        -0.05003515803716098,
+        -0.02563284678636886
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "2048/broad/ast_v4-vs-ast_v4_previous_dictionary/0": {
+      "paper_macro_tokens_per_byte_difference": 0.010235444613557307,
+      "ci95": [
+        0.00523320055260626,
+        0.015366443263843371
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "2048/broad/ast_v4-vs-hf_bpe/0": {
+      "paper_macro_tokens_per_byte_difference": 0.003855318216875938,
+      "ci95": [
+        -0.0025738873445437845,
+        0.010111961732020594
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "2048/broad/v5_structural-vs-v5_previous_local/0": {
+      "paper_macro_tokens_per_byte_difference": -0.013181830049614323,
+      "ci95": [
+        -0.017705195946207102,
+        -0.009365600297059103
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "2048/broad/v5_structural-vs-v5_atomic_frequency/0": {
+      "paper_macro_tokens_per_byte_difference": 0.0005808316615834634,
+      "ci95": [
+        -0.0005567782585735614,
+        0.0017948854737426603
+      ],
+      "papers": 25,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "2048/specialized/ast_v4-vs-ast_v4_previous_dictionary/0": {
+      "paper_macro_tokens_per_byte_difference": 0.0027426847004381125,
+      "ci95": [
+        -0.005948412723387489,
+        0.01216018477101886
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "2048/specialized/ast_v4-vs-hf_bpe/0": {
+      "paper_macro_tokens_per_byte_difference": -0.0013157960853916926,
+      "ci95": [
+        -0.019734463853578035,
+        0.014027336358184143
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "2048/specialized/v5_structural-vs-v5_previous_local/0": {
+      "paper_macro_tokens_per_byte_difference": -0.01905814447029688,
+      "ci95": [
+        -0.03285667855998372,
+        -0.008436817244435593
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    },
+    "2048/specialized/v5_structural-vs-v5_atomic_frequency/0": {
+      "paper_macro_tokens_per_byte_difference": -0.0032043423204094717,
+      "ci95": [
+        -0.005449519552950945,
+        -0.0011021705873077003
+      ],
+      "papers": 13,
+      "resamples": 2000,
+      "negative_favors_left": true
+    }
+  },
+  "scope": "Matched training and ID budget, broad/extreme scenarios equal weight; fixed pretrained references not in causal algorithm ranking.",
+  "uncertainty": "Paper-cluster CIs condition on the realized trained vocabulary; stochastic seed spread is separately reported; deterministic seeds are not independent replications."
+}

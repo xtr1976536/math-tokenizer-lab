@@ -1,0 +1,25 @@
+{
+  "same_atoms": true,
+  "same_no_update_rollout_budget": 9,
+  "fixed_terminal": {
+    "document_macro_tokens_per_byte": 0.3528286106106974,
+    "fit_predictive_unigram_bits_per_byte": 3.2197347683480015,
+    "command_integrity": 0.9903452311293154,
+    "number_integrity": 0.991180461329715,
+    "tree_crossing": 0.1918624104932075,
+    "layout_content_token_variation": 0.006973351219939671,
+    "fit_rare_token_rate": 0.006089807936826608,
+    "utility": 0.41900641877398465
+  },
+  "search_terminal": {
+    "document_macro_tokens_per_byte": 0.35391160987418024,
+    "fit_predictive_unigram_bits_per_byte": 3.227081478603294,
+    "command_integrity": 0.9903452311293154,
+    "number_integrity": 0.991180461329715,
+    "tree_crossing": 0.18866164812470854,
+    "layout_content_token_variation": 0.006200228462351577,
+    "fit_rare_token_rate": 0.006062221037905536,
+    "utility": 0.4192944843483372
+  },
+  "frequency_train_seconds": 14.467036499991082
+}

@@ -1,3 +1,31 @@
+# 当前版本 v6：数学公式 benchmark 与独立分词器（2026-10-12）
+
+主库 **47,773 条**，本轮新增60篇许可可核验、2020年前固定版本的 arXiv 源稿；共277篇取得源码、225篇贡献合格公式。本轮加入6,707条新增论文公式，保留多行方程/方程组、来源证据、宏展开与独立参考树。主库人工历史来源43,002、unknown1,961、possible_mixed2,810；AI基础模板和EqGPT结构串作为补充材料，不补进主benchmark。13领域、两档复杂度，纯字符串分区见 `data/releases/v6/formula_only/`。
+
+四轮语料审查、原始宏/展开MathML比对、明确的source-topic排除和7轮实验公平性审查已经完成。新论文测试3,465式、极端领域1,666式、语法/长输入压力测试521式；极端训练只用9,693条可核验arXiv记录，排除混合库及目标/相邻交叉学科。
+
+只保留AST-v4/v5两个活动家族。AST-v4原生算术AST+明确CST回退、大幅加速完整编码；v5离线学习合并策略，默认为独立结构奖励的精确期望梯度，上线是固定词表及原版Rust BPE。完整轨迹RLOO、RL屏障及频率/贪心/关闭更新/搜索对照均有实验，屏障为空时不宣称RL增益。
+
+在1,024和2,048相同词表预算下，压缩第一均为v5；预先冻结综合权重下均为AST-v4第一、v5第二、PathPiece第三。所有224组结果精确还原率100%；不同偏好会改变综合名次，不能据此宣称下游任务已获胜。
+
+- 完整排名、指标、对照与边界：[v6结果](docs/v6_results_and_rankings.md)。
+- 数据质量、两个路线与复现：[v6设计](docs/v6_design_and_reproduction.md)。
+- 指标论文、定义及权重：[v6指标](docs/metrics_v6.md)。
+- 固定数据/划分/许可：[v6 release](data/releases/v6/manifest.json)。
+- 逐式重放、全量独立汇总和计时审查：[7轮公平性](results/v6/full/fairness_audit.json)。
+- 主统计：[metrics.json](results/v6/full/metrics.json)；[rankings.json](results/v6/full/rankings.json)；逐式结果为 `per_formula.jsonl.gz`。
+- 当前API/模型注册：[registry.json](models/current/registry.json)。默认1024，也可2048；512仅为历史兼容。
+- 顺序重放现成模型：`sh scripts/run_v6_replay.sh`；环境及第三方安装说明见设计文档。
+
+```python
+from math_tokenizer.current_models import load_current
+model = load_current("v5", scenario="broad", capacity=1024)
+text = r"\frac{\partial u}{\partial t}=\Delta u"
+assert model.decode(model.encode(text)) == text
+```
+
+数学条件和教育难度未由专家逐条认证；研究来源/语法/保真与数学真理不同。human使用用户批准的2020年前历史推断。语料/权重为下游阶段准备，本轮没有训练下游模型。下面均为历史阶段记录，不是当前入口或当前结果。
+
 # 当前活动模型：AST-v4与v5（2026-10-11）
 
 已按用户要求删除604个旧/重复模型文件（527个已跟踪、77个原忽略文件），仅保留AST-v4/v5家族及其父快照/内部控制。历史实验结果保留，清单见`models/retirement_manifest.json`；旧模型完整重放需清理前Git revision `c75de3c`。语料仍为53,858式，哈希未变。

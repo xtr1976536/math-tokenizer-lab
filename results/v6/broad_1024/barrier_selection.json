@@ -1,0 +1,18 @@
+{
+  "selected": "barrier_tree025",
+  "config": {
+    "epochs": 10,
+    "samples": 4,
+    "learning_rate": 0.3,
+    "candidates": 48,
+    "initial_probability": 0.1,
+    "atom_budget": 384,
+    "tree_weight": 0.25
+  },
+  "mean_dev_utility": {
+    "barrier_tree025": 0.4023212167697794,
+    "barrier_tree050": 0.4023212167697794
+  },
+  "test_used": false,
+  "frozen_utc": "2026-10-11T16:55:53Z"
+}

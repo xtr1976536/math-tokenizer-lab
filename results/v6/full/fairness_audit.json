@@ -1,0 +1,27 @@
+{
+  "rounds": [
+    {
+      "round": 5,
+      "review": "whole_result_coverage_unique_ids_no_drops_and_independent_aggregate",
+      "rows": 358776,
+      "passed": true
+    },
+    {
+      "round": 6,
+      "review": "independent_all_checkpoint_and_official_encoder_full_input_replay",
+      "rows": 358776,
+      "passed": true
+    },
+    {
+      "round": 7,
+      "review": "all_natural_official_entropy_recomputation_and_uniform_isolated_interleaved_timing",
+      "natural_metric_records": 136,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "preflight_rounds": 4,
+  "total_fairness_rounds": 7,
+  "corpus_sha256": "972ada427ecb69f38aa2359b7f10fcfbf13f6896a1da7986656ee1321ec24bc7",
+  "per_formula_gz_sha256": "a57a867b3a5ed4e2e2808202c81a7a82402aa815639a97bbe76079580e7649ef"
+}

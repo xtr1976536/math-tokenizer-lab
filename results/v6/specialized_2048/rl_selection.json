@@ -1,0 +1,17 @@
+{
+  "inherited_pretest": {
+    "selected": "atomic_explore",
+    "option": {
+      "atom_budget": 384,
+      "temperature": 3.0,
+      "tree_weight": 0.25
+    },
+    "mean_dev_utility": {
+      "atomic_terminal": 0.38850560429416137,
+      "atomic_explore": 0.3880664663230384
+    },
+    "test_used": false,
+    "frozen_utc": "2026-10-11T17:03:10Z"
+  },
+  "test_used": false
+}

@@ -1,0 +1,15 @@
+{
+  "reason": "Source audit found unverified mixed formula libraries and adjacent target crosslists in transfer pool. All formula strings/IDs and broad train/dev/test pools unchanged. No partial test scores inspected or used for model choice. Partial evaluation invalidated. Specialized corpus/model training restarted with fixed pre-test hyperparameters.",
+  "old_master_sha256": "97b704065d0649f17b12c6980d322f652faa42d7760cd2f760ad5ada6ac6cccc",
+  "new_master_sha256": "972ada427ecb69f38aa2359b7f10fcfbf13f6896a1da7986656ee1321ec24bc7",
+  "old_transfer_counts": {
+    "transfer_train": 12341,
+    "transfer_dev": 3643
+  },
+  "new_transfer_counts": {
+    "transfer_train": 9693,
+    "transfer_dev": 3393
+  },
+  "formula_content_unchanged": true,
+  "broad_scopes_unchanged": true
+}

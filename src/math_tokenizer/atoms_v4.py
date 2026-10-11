@@ -9,11 +9,24 @@ from .ast_v3 import AtomicASTBPE
 from .merge_v2 import HybridSequence
 from .structure_v3 import structure_fast
 
+class FastSpanSequence(HybridSequence):
+ def __init__(self,ids,starts,ends,spans):
+  super().__init__(ids,starts,ends,spans)
+  n=ends[-1] if ends else 0
+  self.maxend=[0]*(n+1);self.minstart=[n+1]*(n+1)
+  for a,b in spans or ():
+   self.maxend[a]=max(self.maxend[a],b);self.minstart[b]=min(self.minstart[b],a)
+ def legal(self,i):
+  if self.spans is None:return False
+  if not self.spans:return True
+  a,b=self.starts[i],self.ends[i+1]
+  return max(self.maxend[a+1:b],default=0)<=b and min(self.minstart[a+1:b],default=b)>=a
+
 class GrammarBPE(AtomicASTBPE):
- def train(self,texts,vocab_size=512,seed=17,atom_budget=256,include_numbers=False,subtree_budget=0,max_subtree_bytes=48,atom_score='frequency'):
+ def train(self,texts,vocab_size=512,seed=17,atom_budget=256,include_numbers=False,subtree_budget=0,max_subtree_bytes=48,atom_score='frequency',structure_fn=None):
   if vocab_size<256 or atom_budget<0 or subtree_budget<0:raise ValueError('invalid vocabulary budget')
   if atom_score not in ('frequency','gain'):raise ValueError('invalid atom selection criterion')
-  start=time.perf_counter();atoms=Counter();subtrees=Counter();structures=[structure_fast(t) for t in texts]
+  start=time.perf_counter();atoms=Counter();subtrees=Counter();structures=[(structure_fn or structure_fast)(t) for t in texts]
   for text,s in zip(texts,structures):
    for a,b,t in s.lexemes:
     if t.startswith('\\') or (include_numbers and t[0:1].isdigit()):atoms[t.encode()]+=1
@@ -31,7 +44,7 @@ class GrammarBPE(AtomicASTBPE):
   self.vocab=[bytes([i]) for i in range(256)]+selected+fragments;self.merges=[];idsmap={t:i for i,t in enumerate(self.vocab)};seqs=[]
   for text,s in zip(texts,structures):
    raw=text.encode();spans=None if self.structural and s.kind=='byte_fallback' else s.spans if self.structural else ()
-   seq=HybridSequence(list(raw),list(range(len(raw))),list(range(1,len(raw)+1)),spans);ranges=[]
+   seq=FastSpanSequence(list(raw),list(range(len(raw))),list(range(1,len(raw)+1)),spans);ranges=[]
    for a,b,t in s.lexemes:
     if t.encode() in idsmap and len(t.encode())>1:ranges.append((a,b,idsmap[t.encode()]))
    offset=0

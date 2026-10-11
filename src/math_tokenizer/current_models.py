@@ -8,6 +8,18 @@ from .corpus import ROOT
 def load_checkpoint(path):
     path = Path(path)
     saved = json.loads(path.read_text())
+    if saved.get('format')=='ast-v4-native-binding-v6':
+        from .ast_route_v6 import NativeASTV4
+        return NativeASTV4.load(path)
+    if saved.get('format')=='v5-atomic-trajectory-v6':
+        from .rl_route_v6 import AtomicTrajectoryV5
+        return AtomicTrajectoryV5.load(path)
+    if saved.get('format')=='v5-atomic-bpe-v6':
+        from .rl_route_v6 import AtomicVocab
+        return AtomicVocab.load(path)
+    if saved.get('format')=='v5-rl-merge-barrier-v6':
+        from .rl_mask_v6 import FrozenBarrierV5
+        return FrozenBarrierV5.load(path)
     if saved.get('format') in ('ast-v4-constrained', 'masked-rl-math-v4'):
         from .constrained_v4 import ConstrainedTokenizer
         model = ConstrainedTokenizer.load(path)
@@ -28,6 +40,12 @@ def load_current(family, scenario='broad', capacity=1024):
     if scenario not in ('broad', 'specialized'):
         raise ValueError('scenario must be broad or specialized')
     registry = json.loads((ROOT / 'models/current/registry.json').read_text())
+    if family in registry.get('by_scenario',{}):
+        relative=registry['by_scenario'][family][scenario].get(str(capacity))
+        if relative:
+            model=load_checkpoint(ROOT/relative)
+            assert model.capacity==capacity
+            return model
     if family == 'ast_v4':
         if scenario == 'specialized':
             if capacity != 1024 or 'ast_v4_specialized' not in registry:

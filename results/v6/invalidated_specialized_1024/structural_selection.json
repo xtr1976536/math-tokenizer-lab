@@ -1,0 +1,33 @@
+{
+  "selected": {
+    "tree_weight": 1.0,
+    "score": {
+      "tokens_per_formula": 37.56707317073171,
+      "document_macro_tokens_per_byte": 0.3682922535122493,
+      "command_integrity": 0.9907902554961379,
+      "number_integrity": 0.9570222563315426,
+      "independent_tree_crossing": 0.16393442622950818,
+      "encode_mib_s": 3.6650778906131087,
+      "utility": 0.38735649012083323
+    },
+    "train_seconds": 23.663544750001165,
+    "policy": [
+      -0.18656515138360188,
+      -0.8556049152378605,
+      -1.4718930441243452,
+      0.0,
+      0.0,
+      -2.4016153256337147,
+      3.685099936287022,
+      8.156651428759691,
+      0.0,
+      0.0,
+      2.979025045523606,
+      5.7320789736000695
+    ]
+  },
+  "deterministic_expected_gradient": true,
+  "seeds_identical_by_design": true,
+  "test_used": false,
+  "frozen_utc": "2026-10-11T16:30:22Z"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "hf_bpe",
+    "path": "results/v6/broad_2048/models/hf_bpe.json",
+    "vocab_actual": 2048,
+    "train_seconds": 1.9400483339995844,
+    "fit_id_count": 30100,
+    "upstream_modified": false
+  },
+  {
+    "name": "sentencepiece_bpe",
+    "path": "results/v6/broad_2048/models/sentencepiece_bpe.model",
+    "vocab_actual": 2048,
+    "train_seconds": 1.5621015000069747,
+    "fit_id_count": 30100,
+    "upstream_modified": false
+  },
+  {
+    "name": "sentencepiece_unigram",
+    "path": "results/v6/broad_2048/models/sentencepiece_unigram.model",
+    "vocab_actual": 2048,
+    "train_seconds": 18.620275416993536,
+    "fit_id_count": 30100,
+    "upstream_modified": false
+  },
+  {
+    "name": "wordpiece_bytes",
+    "path": "results/v6/broad_2048/models/wordpiece_bytes.json",
+    "vocab_actual": 2048,
+    "train_seconds": 2.0472732080088463,
+    "fit_id_count": 30100,
+    "upstream_modified": false
+  },
+  {
+    "name": "pathpiece_bpe_vocab",
+    "path": "results/v6/broad_2048/models/pathpiece.vocab",
+    "vocab_actual": 2048,
+    "train_seconds": 1.9400483339995844,
+    "fit_id_count": 30100,
+    "upstream_modified": false
+  }
+]

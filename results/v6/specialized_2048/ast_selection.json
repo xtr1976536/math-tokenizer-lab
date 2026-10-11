@@ -1,0 +1,67 @@
+{
+  "inherited_pretest": {
+    "selected": {
+      "name": "native_0",
+      "option": {
+        "atom_budget": 256,
+        "subtree_budget": 0
+      },
+      "score": {
+        "tokens_per_formula": 39.69207317073171,
+        "document_macro_tokens_per_byte": 0.3899762752996045,
+        "command_integrity": 0.9907902554961379,
+        "number_integrity": 0.9631619339984651,
+        "independent_tree_crossing": 0.08771795068745679,
+        "encode_mib_s": 23.292306989395914,
+        "utility": 0.4012346740239756
+      },
+      "train_seconds": 11.63502033399709
+    },
+    "test_used": false,
+    "frozen_utc": "2026-10-11T17:21:58Z",
+    "dictionary_refinement": {
+      "before": {
+        "tokens_per_formula": 39.69207317073171,
+        "document_macro_tokens_per_byte": 0.3899762752996045,
+        "command_integrity": 0.9907902554961379,
+        "number_integrity": 0.9631619339984651,
+        "independent_tree_crossing": 0.08771795068745679,
+        "encode_mib_s": 22.32117182182393,
+        "utility": 0.4012346740239756
+      },
+      "variants": [
+        {
+          "extra": 256,
+          "score": {
+            "tokens_per_formula": 39.61280487804878,
+            "document_macro_tokens_per_byte": 0.3884888904153951,
+            "command_integrity": 0.9907902554961379,
+            "number_integrity": 0.9631619339984651,
+            "independent_tree_crossing": 0.086892942353575,
+            "encode_mib_s": 22.388395316131167,
+            "utility": 0.399664788306378
+          },
+          "train_seconds": 12.260143375999178
+        },
+        {
+          "extra": 768,
+          "score": {
+            "tokens_per_formula": 39.59146341463415,
+            "document_macro_tokens_per_byte": 0.38753295808294863,
+            "command_integrity": 0.9907902554961379,
+            "number_integrity": 0.9631619339984651,
+            "independent_tree_crossing": 0.08609271523178808,
+            "encode_mib_s": 23.849925349114333,
+            "utility": 0.3986288332617528
+          },
+          "train_seconds": 12.277736333984649
+        }
+      ],
+      "promoted": true,
+      "selected_extra": 768,
+      "test_used": false
+    }
+  },
+  "test_used": false,
+  "fixed_hyperparameters_after_source_repair": true
+}

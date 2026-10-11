@@ -1,0 +1,45 @@
+{
+  "capacity": 1024,
+  "scenario": "specialized",
+  "ast_options": [
+    {
+      "atom_budget": 256,
+      "subtree_budget": 0
+    },
+    {
+      "atom_budget": 384,
+      "subtree_budget": 0
+    },
+    {
+      "atom_budget": 256,
+      "subtree_budget": 128
+    }
+  ],
+  "rl_options": {
+    "atomic_terminal": {
+      "atom_budget": 384,
+      "temperature": 1.0,
+      "tree_weight": 0.25
+    },
+    "atomic_explore": {
+      "atom_budget": 384,
+      "temperature": 3.0,
+      "tree_weight": 0.25
+    }
+  },
+  "rl_selection_seeds": [
+    17,
+    29
+  ],
+  "formal_seeds": [
+    17,
+    29,
+    43
+  ],
+  "rl_epochs": 3,
+  "rollouts_per_epoch": 3,
+  "selection": "docmacro tokens/byte+.15 command error+.03 number error+.10 independent KaTeX crossing",
+  "test_loads": 0,
+  "previous_theta_used": false,
+  "creation_utc": "2026-10-11T16:31:01Z"
+}

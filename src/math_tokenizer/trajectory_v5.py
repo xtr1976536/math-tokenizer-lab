@@ -195,12 +195,12 @@ class TrajectoryVocab(RLVocab):
         self.history = []
 
     def rollout(self, records, capacity, seed, theta, rng=None):
-        model = RLVocab(self.config)
+        model = self.make_rollout_model()
         session = MergeSession(model, records)
         score = np.zeros_like(theta)
         score_steps, critic_states = [], []
         entropy = 0.
-        steps = max(0, capacity - 256)
+        steps = max(0, capacity - len(model.vocab))
         for step in range(steps):
             pairs, features, rewards, components = session.candidates()
             if not pairs:
@@ -226,6 +226,9 @@ class TrajectoryVocab(RLVocab):
         session.finish(capacity, seed, "rl_trajectory", 0.)
         return model, score, entropy / max(1, len(model.merges))
 
+    def make_rollout_model(self):
+        return RLVocab(self.config)
+
     def train(self, records, capacity=1024, seed=17, initial_theta=None, update=True, progress=None):
         started = time.perf_counter()
         if capacity < 256:
@@ -239,7 +242,7 @@ class TrajectoryVocab(RLVocab):
             self.theta = value.copy()
         self.initial_theta = self.theta.copy()
         fit, reward = internal_split(records, self.config)
-        objective = TerminalReward(fit, reward, self.trajectory)
+        objective = getattr(self,'terminal_reward_class',TerminalReward)(fit, reward, self.trajectory)
         initial, _, _ = self.rollout(records, capacity, seed, self.theta)
         self.initial_stats = objective.score(initial)
         anchor = max(1e-8, self.initial_stats["utility"])

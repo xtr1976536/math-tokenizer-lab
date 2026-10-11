@@ -1,0 +1,21 @@
+{
+  "v5_branch": "structural",
+  "dev_utility": {
+    "trajectory": 0.3880664663230384,
+    "structural": 0.3878952394479591,
+    "barrier": {
+      "barrier_tree025": 0.3900547876408734,
+      "barrier_tree050": 0.3874258699028132
+    }
+  },
+  "selection_rule": "prefer deterministic structural RL when utility within .002 of trajectory RL; otherwise lower utility; pre-test compute/quality trade",
+  "accepted_dev_utility_loss": 0,
+  "barrier_is_research_only": "All selected masks empty; no improvement attributable to RL over its same-atom frequency control.",
+  "selected_v5_paths": [
+    "results/v6/specialized_1024/models/v5_structural_selected_17.json"
+  ],
+  "test_used": false,
+  "frozen_utc": "2026-10-11T18:03:27Z",
+  "ast": "models/ast_v4_selected.json",
+  "fixed_hyperparameters_after_source_repair": true
+}

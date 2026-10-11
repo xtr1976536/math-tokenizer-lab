@@ -20,3 +20,10 @@ results/v2_1024_final/models/
 results/v3_512/models/
 # v5 master uncompressed size exceeds GitHub per-file limit; lossless archive tracked.
 data/releases/v5/curated/corpus.jsonl
+runtime/katex/node_modules/
+data/releases/v6/curated/corpus.jsonl
+data/raw/metrics_research_v6/
+runtime/rustup-init
+runtime/rustup/
+runtime/cargo/
+runtime/wheels/

@@ -1,0 +1,21 @@
+{
+  "inherited_pretest": {
+    "selected": "barrier_tree050",
+    "config": {
+      "epochs": 10,
+      "samples": 4,
+      "learning_rate": 0.3,
+      "candidates": 48,
+      "initial_probability": 0.1,
+      "atom_budget": 384,
+      "tree_weight": 0.5
+    },
+    "mean_dev_utility": {
+      "barrier_tree025": 0.3900547876408734,
+      "barrier_tree050": 0.3874258699028132
+    },
+    "test_used": false,
+    "frozen_utc": "2026-10-11T16:53:08Z"
+  },
+  "test_used": false
+}

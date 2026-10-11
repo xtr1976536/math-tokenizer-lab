@@ -1,0 +1,12 @@
+{
+  "inherited_from": "results/v6/broad_1024",
+  "capacity": 2048,
+  "selection_seeds": [],
+  "formal_seeds": [
+    17,
+    29,
+    43
+  ],
+  "test_used": false,
+  "configuration_transfer": true
+}

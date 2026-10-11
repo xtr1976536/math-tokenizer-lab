@@ -1,0 +1,14 @@
+{
+  "selected": "atomic_terminal",
+  "option": {
+    "atom_budget": 384,
+    "temperature": 1.0,
+    "tree_weight": 0.25
+  },
+  "mean_dev_utility": {
+    "atomic_terminal": 0.3950763328386997,
+    "atomic_explore": 0.3952369254230692
+  },
+  "test_used": false,
+  "frozen_utc": "2026-10-11T16:27:53Z"
+}

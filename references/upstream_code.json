@@ -20,5 +20,22 @@
     "modified": false,
     "executed": true,
     "role": "formula_export_renderer"
+  },
+  "pathpiece": {
+    "repo": "https://github.com/kensho-technologies/pathpiece",
+    "revision": "1764d9fc91ade17f65edbfe7a54ad4a2c8117e43",
+    "modified": false,
+    "local_clone": "vendor/pathpiece",
+    "executed": true,
+    "implementation": "author Rust library built with pyo3/maturin, public constructor; byte zero special slot",
+    "role": "paper_baseline_controlled_BPE_vocab_shortest_segmentation"
+  },
+  "katex": {
+    "repo": "https://github.com/KaTeX/KaTeX",
+    "version": "0.16.25",
+    "modified": false,
+    "executed": true,
+    "role": "independent bounded source macro rendering and syntax AST reference",
+    "package_lock": "runtime/katex/package-lock.json"
   }
 }

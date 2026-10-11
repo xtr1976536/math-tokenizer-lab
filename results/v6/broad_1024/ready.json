@@ -1,0 +1,6 @@
+{
+  "scenario": "broad",
+  "capacity": 1024,
+  "test_used_for_selection": false,
+  "all_test_experiments_pending": true
+}

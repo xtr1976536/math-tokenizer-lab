@@ -1,0 +1,24 @@
+[
+  {
+    "source_data": "results/v6/full/metrics.json",
+    "script": "scripts/plot_v6.py",
+    "exports": [
+      "results/v6/figures/compression_speed_1024.png",
+      "results/v6/figures/compression_speed_1024.svg"
+    ],
+    "surface_class": "internal_review",
+    "claim": "Compression versus encoding speed under matched training and token ID budget",
+    "self_review": "PNG inspected for labels, units, downscaled readability, muted color and distinct markers. Revised log-y major ticks to1/3/10/30 and fixed style color parsing."
+  },
+  {
+    "source_data": "results/v6/full/metrics.json",
+    "script": "scripts/plot_v6.py",
+    "exports": [
+      "results/v6/figures/compression_speed_2048.png",
+      "results/v6/figures/compression_speed_2048.svg"
+    ],
+    "surface_class": "internal_review",
+    "claim": "Compression versus encoding speed under matched training and token ID budget",
+    "self_review": "PNG inspected for labels, units, downscaled readability, muted color and distinct markers. Revised log-y major ticks to1/3/10/30 and fixed style color parsing."
+  }
+]

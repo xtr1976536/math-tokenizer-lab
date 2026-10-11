@@ -1,0 +1,32 @@
+[
+  {
+    "repository": "https://github.com/kensho-technologies/pathpiece",
+    "revision": "1764d9fc91ade17f65edbfe7a54ad4a2c8117e43",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "readme_url": "https://raw.githubusercontent.com/kensho-technologies/pathpiece/1764d9fc91ade17f65edbfe7a54ad4a2c8117e43/README.md"
+  },
+  {
+    "repository": "https://github.com/MeLeLBGU/SaGe",
+    "revision": "dcc21f6c0dd83efd165d53edf970fa1aee9e5c61",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "readme_url": "https://raw.githubusercontent.com/MeLeLBGU/SaGe/dcc21f6c0dd83efd165d53edf970fa1aee9e5c61/README.md"
+  },
+  {
+    "repository": "https://github.com/Jingjing-NLP/VOLT",
+    "revision": "bf39be538f7146e84fc4ef52d5d621a8a6a536a2",
+    "license": null,
+    "readme_url": "https://raw.githubusercontent.com/Jingjing-NLP/VOLT/bf39be538f7146e84fc4ef52d5d621a8a6a536a2/README.md"
+  }
+]

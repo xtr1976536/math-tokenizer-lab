@@ -1,0 +1,38 @@
+{
+  "formulas": 521,
+  "sha256": "2e07e55a101ba5a1031ac728c64dcc4c826b3bca0ec5acbd4cbda19e47153568",
+  "rejections": [
+    {
+      "id": "e6cfa39900c63bd48396b2e8",
+      "stress": "symbol_renaming",
+      "reason": "KaTeX parse error: No such environment: zlygxed at position 7: \\begin{\u0332z\u0332l\u0332y\u0332g\u0332x\u0332e\u0332d\u0332}\u0332zs_{A,V}(z,w,v)\u2026"
+    },
+    {
+      "id": "02503e4ff00bcea07c4247d3",
+      "stress": "symbol_renaming",
+      "reason": "KaTeX parse error: No such environment: zlygxed at position 7: \\begin{\u0332z\u0332l\u0332y\u0332g\u0332x\u0332e\u0332d\u0332}\u0332&\\overline{\\the\u2026"
+    },
+    {
+      "id": "0fb8e86b5d58326da59057c8",
+      "stress": "symbol_renaming",
+      "reason": "KaTeX parse error: No such environment: zlygxed at position 7: \\begin{\u0332z\u0332l\u0332y\u0332g\u0332x\u0332e\u0332d\u0332}\u03322\\wedge 2&=&f_2\u2026"
+    },
+    {
+      "id": "1e42cb112d5ae0caff503f96",
+      "stress": "symbol_renaming",
+      "reason": "KaTeX parse error: No such environment: zlygxed at position 7: \\begin{\u0332z\u0332l\u0332y\u0332g\u0332x\u0332e\u0332d\u0332}\u03321\\wedge 4 &=&f_\u2026"
+    },
+    {
+      "id": "5b0037b9b762d5154ed7b1dd",
+      "stress": "symbol_renaming",
+      "reason": "KaTeX parse error: No such environment: zlygxed at position 7: \\begin{\u0332z\u0332l\u0332y\u0332g\u0332x\u0332e\u0332d\u0332}\u03322\\wedge 5&=&f_2\u2026"
+    },
+    {
+      "id": "3788654f91622dea2e174085",
+      "stress": "symbol_renaming",
+      "reason": "KaTeX parse error: No such environment: zrrzy at position 59: \u2026         \\begin{\u0332z\u0332r\u0332r\u0332z\u0332y\u0332}\u0332{xx}\n          \u2026"
+    }
+  ],
+  "purpose": "controlled syntax/length generalization, not mathematically certified equivalent transformations",
+  "source_parents": 192
+}

@@ -1,0 +1,176 @@
+[
+  {
+    "name": "v5_previous_local",
+    "seed": 17,
+    "score": {
+      "tokens_per_formula": 35.98238341968912,
+      "document_macro_tokens_per_byte": 0.4014417593609771,
+      "command_integrity": 0.6898651068401576,
+      "number_integrity": 0.9758759333716255,
+      "independent_tree_crossing": 0.19517322811969012,
+      "encode_mib_s": 3.127499058943434,
+      "utility": 0.4682030381457737
+    },
+    "train_seconds": 112.45115587499458
+  },
+  {
+    "name": "atomic_terminal",
+    "seed": 17,
+    "option": {
+      "atom_budget": 384,
+      "temperature": 1.0,
+      "tree_weight": 0.25
+    },
+    "score": {
+      "tokens_per_formula": 34.391709844559585,
+      "document_macro_tokens_per_byte": 0.3831820531870611,
+      "command_integrity": 0.9924794079025904,
+      "number_integrity": 0.9758759333716255,
+      "independent_tree_crossing": 0.16409545618898397,
+      "encode_mib_s": 6.3958796693959865,
+      "utility": 0.4014434096194222
+    },
+    "train_seconds": 315.7251177089929,
+    "initial_terminal": {
+      "document_macro_tokens_per_byte": 0.38462222782678956,
+      "fit_predictive_unigram_bits_per_byte": 3.210951397085259,
+      "command_integrity": 0.9982363315696648,
+      "number_integrity": 0.987012987012987,
+      "tree_crossing": 0.17951440503999433,
+      "layout_content_token_variation": 0.004260569641167996,
+      "fit_rare_token_rate": 0.0007078643731860976,
+      "utility": 0.44639432679948554
+    },
+    "final_terminal": {
+      "document_macro_tokens_per_byte": 0.38574261093587014,
+      "fit_predictive_unigram_bits_per_byte": 3.2135016332606985,
+      "command_integrity": 0.9982363315696648,
+      "number_integrity": 0.987012987012987,
+      "tree_crossing": 0.18130973451327434,
+      "layout_content_token_variation": 0.004199732847924461,
+      "fit_rare_token_rate": 0.0007079646017699115,
+      "utility": 0.44797386199060524
+    },
+    "policy_change_norm": 1.6655314022864458
+  },
+  {
+    "name": "atomic_terminal",
+    "seed": 29,
+    "option": {
+      "atom_budget": 384,
+      "temperature": 1.0,
+      "tree_weight": 0.25
+    },
+    "score": {
+      "tokens_per_formula": 34.328497409326424,
+      "document_macro_tokens_per_byte": 0.38240239121570957,
+      "command_integrity": 0.9924794079025904,
+      "number_integrity": 0.9758759333716255,
+      "independent_tree_crossing": 0.16590696410782746,
+      "encode_mib_s": 3.316372369343549,
+      "utility": 0.400844898439955
+    },
+    "train_seconds": 400.40503329200146,
+    "initial_terminal": {
+      "document_macro_tokens_per_byte": 0.38462222782678956,
+      "fit_predictive_unigram_bits_per_byte": 3.210951397085259,
+      "command_integrity": 0.9982363315696648,
+      "number_integrity": 0.987012987012987,
+      "tree_crossing": 0.17951440503999433,
+      "layout_content_token_variation": 0.004260569641167996,
+      "fit_rare_token_rate": 0.0007078643731860976,
+      "utility": 0.44639432679948554
+    },
+    "final_terminal": {
+      "document_macro_tokens_per_byte": 0.3855592888856697,
+      "fit_predictive_unigram_bits_per_byte": 3.2042701519406704,
+      "command_integrity": 0.9982363315696648,
+      "number_integrity": 0.987012987012987,
+      "tree_crossing": 0.18315252074026803,
+      "layout_content_token_variation": 0.004564811409969228,
+      "fit_rare_token_rate": 0.0007090689924129618,
+      "utility": 0.4482197043208478
+    },
+    "policy_change_norm": 1.583343579227861
+  },
+  {
+    "name": "atomic_explore",
+    "seed": 17,
+    "option": {
+      "atom_budget": 384,
+      "temperature": 3.0,
+      "tree_weight": 0.25
+    },
+    "score": {
+      "tokens_per_formula": 34.0300518134715,
+      "document_macro_tokens_per_byte": 0.3817826925920518,
+      "command_integrity": 0.9924794079025904,
+      "number_integrity": 0.9758759333716255,
+      "independent_tree_crossing": 0.16681384938640031,
+      "encode_mib_s": 6.259512007627816,
+      "utility": 0.4003158883441545
+    },
+    "train_seconds": 381.85791695800435,
+    "initial_terminal": {
+      "document_macro_tokens_per_byte": 0.38462222782678956,
+      "fit_predictive_unigram_bits_per_byte": 3.210951397085259,
+      "command_integrity": 0.9982363315696648,
+      "number_integrity": 0.987012987012987,
+      "tree_crossing": 0.17951440503999433,
+      "layout_content_token_variation": 0.004260569641167996,
+      "fit_rare_token_rate": 0.0007078643731860976,
+      "utility": 0.44639432679948554
+    },
+    "final_terminal": {
+      "document_macro_tokens_per_byte": 0.38512041741381514,
+      "fit_predictive_unigram_bits_per_byte": 3.214146531523829,
+      "command_integrity": 0.9982363315696648,
+      "number_integrity": 0.987012987012987,
+      "tree_crossing": 0.1860680233385513,
+      "layout_content_token_variation": 0.0041575428787756896,
+      "fit_rare_token_rate": 0.0007115411982353779,
+      "utility": 0.4485428490993485
+    },
+    "policy_change_norm": 1.5404913109412635
+  },
+  {
+    "name": "atomic_explore",
+    "seed": 29,
+    "option": {
+      "atom_budget": 384,
+      "temperature": 3.0,
+      "tree_weight": 0.25
+    },
+    "score": {
+      "tokens_per_formula": 34.42901554404145,
+      "document_macro_tokens_per_byte": 0.38330060199187027,
+      "command_integrity": 0.9924794079025904,
+      "number_integrity": 0.9758759333716255,
+      "independent_tree_crossing": 0.16867324825427402,
+      "encode_mib_s": 6.242703476598147,
+      "utility": 0.4020197376307604
+    },
+    "train_seconds": 246.97067258300376,
+    "initial_terminal": {
+      "document_macro_tokens_per_byte": 0.38462222782678956,
+      "fit_predictive_unigram_bits_per_byte": 3.210951397085259,
+      "command_integrity": 0.9982363315696648,
+      "number_integrity": 0.987012987012987,
+      "tree_crossing": 0.17951440503999433,
+      "layout_content_token_variation": 0.004260569641167996,
+      "fit_rare_token_rate": 0.0007078643731860976,
+      "utility": 0.44639432679948554
+    },
+    "final_terminal": {
+      "document_macro_tokens_per_byte": 0.3857423448323731,
+      "fit_predictive_unigram_bits_per_byte": 3.2086331111459137,
+      "command_integrity": 0.9982363315696648,
+      "number_integrity": 0.987012987012987,
+      "tree_crossing": 0.18405951115834218,
+      "layout_content_token_variation": 0.0045649459227102744,
+      "fit_rare_token_rate": 0.0007084661707403471,
+      "utility": 0.4486513159921721
+    },
+    "policy_change_norm": 1.6630215701557431
+  }
+]

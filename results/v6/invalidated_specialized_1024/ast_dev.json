@@ -1,0 +1,79 @@
+[
+  {
+    "name": "ast_v4_previous",
+    "score": {
+      "tokens_per_formula": 39.89939024390244,
+      "document_macro_tokens_per_byte": 0.3878968772040945,
+      "command_integrity": 0.9907902554961379,
+      "number_integrity": 0.9631619339984651,
+      "independent_tree_crossing": 0.11079697409643158,
+      "encode_mib_s": 1.0582762106240389,
+      "utility": 0.401463178269363
+    },
+    "train_seconds": 40.19090875000984
+  },
+  {
+    "name": "ast_v4_previous_dictionary",
+    "score": {
+      "tokens_per_formula": 39.40548780487805,
+      "document_macro_tokens_per_byte": 0.3819419040322688,
+      "command_integrity": 0.9907902554961379,
+      "number_integrity": 0.9631619339984651,
+      "independent_tree_crossing": 0.10081237911025145,
+      "encode_mib_s": 0.9195124418663344,
+      "utility": 0.3945097455989193
+    },
+    "train_seconds": 41.082927792012924
+  },
+  {
+    "name": "native_0",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 0
+    },
+    "score": {
+      "tokens_per_formula": 39.582317073170735,
+      "document_macro_tokens_per_byte": 0.3885021907555341,
+      "command_integrity": 0.9907902554961379,
+      "number_integrity": 0.9631619339984651,
+      "independent_tree_crossing": 0.08927058461064469,
+      "encode_mib_s": 7.477758509096994,
+      "utility": 0.399915852872224
+    },
+    "train_seconds": 14.099750374996802
+  },
+  {
+    "name": "native_1",
+    "option": {
+      "atom_budget": 384,
+      "subtree_budget": 0
+    },
+    "score": {
+      "tokens_per_formula": 39.582317073170735,
+      "document_macro_tokens_per_byte": 0.3885021907555341,
+      "command_integrity": 0.9907902554961379,
+      "number_integrity": 0.9631619339984651,
+      "independent_tree_crossing": 0.08927058461064469,
+      "encode_mib_s": 5.780440666602828,
+      "utility": 0.399915852872224
+    },
+    "train_seconds": 13.800873083993793
+  },
+  {
+    "name": "native_2",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 128
+    },
+    "score": {
+      "tokens_per_formula": 39.579268292682926,
+      "document_macro_tokens_per_byte": 0.38909483594232425,
+      "command_integrity": 0.9907902554961379,
+      "number_integrity": 0.9631619339984651,
+      "independent_tree_crossing": 0.09004775843475582,
+      "encode_mib_s": 6.789097950599356,
+      "utility": 0.40058621544142525
+    },
+    "train_seconds": 8.786208500008797
+  }
+]

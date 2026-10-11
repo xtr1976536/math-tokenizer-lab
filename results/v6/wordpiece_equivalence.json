@@ -1,0 +1,22 @@
+[
+  {
+    "scenario": "broad",
+    "capacity": 1024,
+    "public_official_ids_match": 261
+  },
+  {
+    "scenario": "broad",
+    "capacity": 2048,
+    "public_official_ids_match": 261
+  },
+  {
+    "scenario": "specialized",
+    "capacity": 1024,
+    "public_official_ids_match": 261
+  },
+  {
+    "scenario": "specialized",
+    "capacity": 2048,
+    "public_official_ids_match": 261
+  }
+]

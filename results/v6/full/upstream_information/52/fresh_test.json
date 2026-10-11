@@ -1,0 +1,226 @@
+{
+  "renyi_efficiency": {
+    "per_tokenizer": {
+      "ast_v4": {
+        "renyi_1.0": {
+          "overall": 0.787165972789428,
+          "math": 0.787165972789428
+        },
+        "renyi_2.0": {
+          "overall": 0.654934789630392,
+          "math": 0.654934789630392
+        },
+        "renyi_2.5": {
+          "overall": 0.6109283033878564,
+          "math": 0.6109283033878564
+        },
+        "renyi_3.0": {
+          "overall": 0.579769561879822,
+          "math": 0.579769561879822
+        },
+        "token_counts": {
+          "math": 83361,
+          "overall": 83361
+        }
+      }
+    },
+    "per_language": {
+      "renyi_1.0": {
+        "math": {
+          "ast_v4": 0.787165972789428
+        }
+      },
+      "renyi_2.0": {
+        "math": {
+          "ast_v4": 0.654934789630392
+        }
+      },
+      "renyi_2.5": {
+        "math": {
+          "ast_v4": 0.6109283033878564
+        }
+      },
+      "renyi_3.0": {
+        "math": {
+          "ast_v4": 0.579769561879822
+        }
+      }
+    },
+    "observed_normalization": {
+      "per_tokenizer": {
+        "ast_v4": {
+          "renyi_1.0": {
+            "overall": 0.8321679941940687,
+            "math": 0.8321679941940687
+          },
+          "renyi_2.0": {
+            "overall": 0.6923771975093146,
+            "math": 0.6923771975093146
+          },
+          "renyi_2.5": {
+            "overall": 0.6458548748303896,
+            "math": 0.6458548748303896
+          },
+          "renyi_3.0": {
+            "overall": 0.6129147982535675,
+            "math": 0.6129147982535675
+          }
+        }
+      }
+    },
+    "metadata": {
+      "definition": "Eff_alpha = H_alpha(token distribution) / log2(|V|)",
+      "normalizer": "declared vocabulary size",
+      "reference": "Zouhar, Meister, Gastaldi, Du, Sachan, Cotterell (2023), Tokenization and the Noiseless Channel, ACL",
+      "alphas": [
+        1.0,
+        2.0,
+        2.5,
+        3.0
+      ],
+      "aggregation": "micro_pooled",
+      "count_unit": "tokens",
+      "observed_normalization": "Same entropies divided by log2(observed token types) instead, the pre-1.0 behaviour. Corpus-dependent, and its per-language values each used a different divisor so they were not on a common scale. Spearman 0.678 against the published definition over 37 tokenizers."
+    }
+  },
+  "bigram_entropy": {
+    "per_tokenizer": {
+      "ast_v4": {
+        "global_bigram_entropy": 0.7815686010328515,
+        "global_total_bigrams": 79896,
+        "global_types_evaluated": 1171,
+        "global_types_excluded": 171,
+        "per_language": {
+          "math": {
+            "bigram_entropy": 0.7815686010328515,
+            "total_bigrams": 79896,
+            "types_evaluated": 1171,
+            "types_excluded": 171,
+            "count": 79896
+          }
+        }
+      }
+    },
+    "per_language": {
+      "math": {
+        "ast_v4": 0.7815686010328515
+      }
+    },
+    "metadata": {
+      "description": "Bigram Entropy: frequency-weighted normalized Shannon entropy of right-accessor distributions",
+      "reference": "Poelman et al. 2025, EMNLP (Shannon efficiency \u03b7)",
+      "metric_range": "[0.0, 1.0]",
+      "interpretation": "Higher = more uniform successor distributions",
+      "min_bigram_occurrences": 3,
+      "normalizer": "log2(distinct successors of this context)",
+      "aggregation": "micro_pooled",
+      "context_weighting": "frequency-weighted mean over contexts",
+      "count_unit": "bigrams",
+      "deviations_from_reference": [
+        "Normalizer is this context's own successor count, not the corpus-wide accessor-domain size the reference uses, so eta measures evenness alone and is systematically higher.",
+        "Aggregation is frequency-weighted; the reference is an unweighted mean over types.",
+        "Contexts are filtered on raw occurrence count only; the reference also drops types containing punctuation or digits and types with a boundary ratio at or above 0.95.",
+        "No windowing; the reference computes in 1000-accessor windows, so this value rises as the corpus shrinks."
+      ],
+      "reference_variant": "The sibling 'reference_definition' block of this metric reports the same corpus under the reference normalizer and an unweighted aggregation, for comparison."
+    },
+    "reference_definition": {
+      "per_tokenizer": {
+        "ast_v4": {
+          "bigram_entropy": 0.5492149999046081,
+          "accessor_domain_size": 1343,
+          "types_evaluated": 1171,
+          "per_language": {
+            "math": {
+              "bigram_entropy": 0.5492149999046081,
+              "accessor_domain_size": 1343,
+              "types_evaluated": 1171,
+              "count": 79896
+            }
+          }
+        }
+      },
+      "metadata": {
+        "description": "Successor entropy under the reference normalizer and aggregation, for comparison with bigram_entropy above.",
+        "normalizer": "log2(min(accessor domain, context count))",
+        "accessor_domain_scope": "The top-level value uses the accessor domain of the whole corpus. Each per_language value uses that language's own accessor domain, published beside it as accessor_domain_size, which treats the language as its own corpus and is what applying the reference definition per language means. The divisor therefore differs from one language to the next, so two per_language values are not on a common scale; compare a language against the same language under another tokenizer, not against another language.",
+        "aggregation": "unweighted mean over context types",
+        "reference": "Poelman, Bauwens, de Lhoneux (2025), Confounding Factors in Relating Model Performance to Morphology, EMNLP",
+        "still_deviating": [
+          "The reference also drops types containing punctuation or digits and types with a boundary ratio at or above 0.95. Those filters are not implemented here, so this is the reference normalizer and aggregation, not the full reference pipeline.",
+          "No windowing."
+        ]
+      }
+    }
+  },
+  "trigram_entropy": {
+    "per_tokenizer": {
+      "ast_v4": {
+        "global_trigram_entropy": 0.6447386735450733,
+        "global_total_trigrams": 76431,
+        "global_types_evaluated": 6149,
+        "global_types_excluded": 10864,
+        "per_language": {
+          "math": {
+            "trigram_entropy": 0.6447386735450733,
+            "total_trigrams": 76431,
+            "types_evaluated": 6149,
+            "types_excluded": 10864,
+            "count": 76431
+          }
+        }
+      }
+    },
+    "per_language": {
+      "math": {
+        "ast_v4": 0.6447386735450733
+      }
+    },
+    "metadata": {
+      "description": "Trigram Entropy: frequency-weighted normalized Shannon entropy of right-accessor distributions conditioned on bigram context",
+      "reference": "Extension of Poelman et al. 2025 (Shannon efficiency \u03b7) to trigram contexts",
+      "metric_range": "[0.0, 1.0]",
+      "interpretation": "Higher = more uniform successor distributions given bigram context",
+      "min_trigram_occurrences": 3,
+      "normalizer": "log2(distinct successors of this bigram context)",
+      "aggregation": "micro_pooled",
+      "context_weighting": "frequency-weighted mean over contexts",
+      "count_unit": "trigrams",
+      "deviations_from_reference": [
+        "Poelman et al. define bigram successor entropy; the trigram form is this library extending it, so there is no published value to compare against.",
+        "Normalizer is the context's own successor count, not the corpus-wide accessor-domain size, so eta measures evenness alone and is systematically higher.",
+        "Aggregation is frequency-weighted, not an unweighted mean over types.",
+        "Filtered on raw occurrence count only, and not windowed."
+      ],
+      "threshold_sensitivity": "The ranking moves with min_trigram_occurrences: Spearman 0.728 between thresholds 3 and 25 over 37 tokenizers, against 0.985 for bigram at the same settings. 89 to 90 percent of context types and a median 70 percent of occurrences are discarded at the default."
+    },
+    "reference_definition": {
+      "per_tokenizer": {
+        "ast_v4": {
+          "trigram_entropy": 0.41927275302001105,
+          "accessor_domain_size": 1335,
+          "types_evaluated": 6149,
+          "per_language": {
+            "math": {
+              "trigram_entropy": 0.41927275302001105,
+              "accessor_domain_size": 1335,
+              "types_evaluated": 6149,
+              "count": 76431
+            }
+          }
+        }
+      },
+      "metadata": {
+        "description": "Trigram successor entropy under the reference normalizer and aggregation, for comparison with trigram_entropy above.",
+        "normalizer": "log2(min(accessor domain, context count))",
+        "accessor_domain_scope": "The top-level value uses the accessor domain of the whole corpus. Each per_language value uses that language's own accessor domain, published beside it as accessor_domain_size. The divisor therefore differs from one language to the next, so two per_language values are not on a common scale.",
+        "aggregation": "unweighted mean over context types",
+        "still_deviating": [
+          "Poelman et al. define the bigram form only, so there is no published trigram value; this applies their normalizer and aggregation to the trigram extension.",
+          "Their punctuation, digit and boundary-ratio type filters are not implemented.",
+          "No windowing."
+        ]
+      }
+    }
+  }
+}
