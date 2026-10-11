@@ -1,0 +1,90 @@
+{
+  "reason": "Development candidate checkpoints superseded by frozen selected variants; all full-evaluation registry checkpoints retained.",
+  "removed_in_completed_pass": [
+    {
+      "path": "results/v6/broad_1024/models/atomic_terminal_29.json",
+      "sha256": "316ddfdca63afca4d449a287d853fcaf55e2bb13cbd8d606857b150ae1dbf395"
+    },
+    {
+      "path": "results/v6/broad_1024/models/atomic_terminal_29.tokenizer.json",
+      "sha256": "7c96fd84d53a151f52889480a5ff2104485ed9a030038afebbc6ae48930a59be"
+    },
+    {
+      "path": "results/v6/broad_1024/models/atomic_explore_17.tokenizer.json",
+      "sha256": "d911801989e0de0757dde6f15c6540b10348b3b0bb8eb507e00cad003abfe189"
+    },
+    {
+      "path": "results/v6/broad_1024/models/atomic_explore_29.json",
+      "sha256": "20a71d5e814407689cb648b79293d0b322717fea1079ae0f5cc28e0c4c8f49c7"
+    },
+    {
+      "path": "results/v6/broad_1024/models/atomic_explore_29.tokenizer.json",
+      "sha256": "891cfebf7fc95d055734d88826254fe4d1a0c824569a2733183180c992cf4a34"
+    },
+    {
+      "path": "results/v6/broad_1024/models/atomic_explore_17.json",
+      "sha256": "12c361e824a7e611007f5c79da11da0198ec63d83302522bcb8fabdc39d1beeb"
+    },
+    {
+      "path": "results/v6/broad_1024/models/barrier_tree025_17.json",
+      "sha256": "9261ba748ea023c00684f88bde0e0481f16e53cb0a5b9c634463cb1ac5b6a5f5"
+    },
+    {
+      "path": "results/v6/broad_1024/models/barrier_tree025_17.tokenizer.json",
+      "sha256": "69c48ef28f363f004410f755904eb0f8c618b172d56b0205d3087983fd85caeb"
+    },
+    {
+      "path": "results/v6/broad_1024/models/barrier_tree025_29.tokenizer.json",
+      "sha256": "69c48ef28f363f004410f755904eb0f8c618b172d56b0205d3087983fd85caeb"
+    },
+    {
+      "path": "results/v6/broad_1024/models/barrier_tree025_29.json",
+      "sha256": "990987977141e7502b1dc3bd5be200ddcf79a1b4eb912ed126f57e1ab078b7c1"
+    },
+    {
+      "path": "results/v6/broad_1024/models/barrier_tree050_29.json",
+      "sha256": "1fa4d905babf7f4586197af18d41740aebd3129f10bba2d4773b4320346f845b"
+    },
+    {
+      "path": "results/v6/broad_1024/models/barrier_tree050_29.tokenizer.json",
+      "sha256": "69c48ef28f363f004410f755904eb0f8c618b172d56b0205d3087983fd85caeb"
+    },
+    {
+      "path": "results/v6/broad_1024/models/barrier_tree050_17.tokenizer.json",
+      "sha256": "69c48ef28f363f004410f755904eb0f8c618b172d56b0205d3087983fd85caeb"
+    },
+    {
+      "path": "results/v6/broad_1024/models/barrier_tree050_17.json",
+      "sha256": "e01241f77ab2736e84200f7acac58e7e6f4e78795f9c0603320f30e99647966b"
+    },
+    {
+      "path": "results/v6/broad_1024/models/v5_structural_0.25.json",
+      "sha256": "9c865818c115b888b7c006dcf897bc7809761d177ef197168c8104ab81793c08"
+    },
+    {
+      "path": "results/v6/broad_1024/models/v5_structural_0.25.tokenizer.json",
+      "sha256": "1fbb0a83043c8eba490d7a9fd55d9c362add1387cb0d3f00c423664b1805a355"
+    },
+    {
+      "path": "results/v6/broad_1024/models/v5_structural_0.5.json",
+      "sha256": "be6063f8f4e33363040fe0f9636424cc9fdcd0bbc2485dfba80aefbb2801283b"
+    },
+    {
+      "path": "results/v6/broad_1024/models/v5_structural_0.5.tokenizer.json",
+      "sha256": "a570a8bc42993056f664f3bef24a699a6956468eadd0c115b4f13ef5d0b40d6d"
+    },
+    {
+      "path": "results/v6/broad_1024/models/v5_structural_1.0.json",
+      "sha256": "09942e7ad87c5149050273479506b7794c874ddd06292762443caab791c1da37"
+    },
+    {
+      "path": "results/v6/broad_1024/models/v5_structural_1.0.tokenizer.json",
+      "sha256": "c5630a5bfa7886d464ff1652cc3c7a29e8425a984ebfcd923fc63eab2090758d"
+    },
+    {
+      "path": "results/v6/specialized_1024/models/ast_v4_native_before_dictionary.json",
+      "sha256": "cbca57074d2df21bfd2eb2c23f4b1e49afef6e456f290d5b26e9a47b9547c1e2"
+    }
+  ],
+  "earlier_partial_pass": "Some development headers and matching encoder siblings were removed before this ledger completed; final scientific model/result registry is unchanged."
+}
