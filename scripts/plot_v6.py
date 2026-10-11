@@ -24,6 +24,8 @@ def main():
             ax.set_yticks([1,3,10,30]);ax.yaxis.set_major_formatter(ScalarFormatter())
             ax.text(.02,.02,'Lower x and higher y are preferable',transform=ax.transAxes,fontsize=7.5,color='#6B7280')
         for extension in ('png','svg'):fig.savefig(folder/f'compression_speed_{capacity}.{extension}',dpi=250)
+        svg=folder/f'compression_speed_{capacity}.svg'
+        svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
         plt.close(fig)
         catalog.append({'source_data':'results/v6/full/metrics.json','script':'scripts/plot_v6.py','exports':[f'results/v6/figures/compression_speed_{capacity}.png',f'results/v6/figures/compression_speed_{capacity}.svg'],'surface_class':'internal_review','claim':'Compression versus encoding speed under matched training and token ID budget','self_review':'pending actual PNG inspection'})
     (folder/'figure_catalog.json').write_text(json.dumps(catalog,indent=2)+'\n')
