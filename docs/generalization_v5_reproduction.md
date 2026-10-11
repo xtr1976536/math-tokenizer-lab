@@ -40,3 +40,5 @@ assert m.decode(m.encode(s)) == s
 Test句子只在dev selection已冻结后加载；极端领域需要读specialized分支才构成未见domain评估，broad分支只是新论文泛化。synthetic stress例子是独立鲁棒性套件，不加进自然公式benchmark或reward。新的v5test在首轮开发后也将成为已见benchmark，将来不能继续声称新的publication holdout。
 
 GitHub master corpus未压缩大小约120MiB，超过单文件上传限制，发布corpus.jsonl.gz无损归档（约15MiB）；相关脚本首次访问自动解压并验证summary中的SHA。训练/验证/测试JSONL仍可直接读取。压缩仅是存储方式，不改任何模型输入。
+
+2026-10-11全新GitHub checkout验证：主corpus.gz自动解压后SHA一致，141项测试通过，六个正式RL checkpoint在12个scenario/suite组合的全部新holdout/stress记录重放一致。数据隔离、reward范围和模型哈希审计通过；证据results/v5_clean_clone_verification.json。复用了独立安装的旧依赖环境，本次未重新训练所有配置或再次下载119份源稿，不冒称跨平台完整重训练复现。

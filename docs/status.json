@@ -46,7 +46,9 @@
     "v5_fresh_paper_domain_excluded_stress_suites",
     "v5_multiobjective_rl_merge_table",
     "v5_official_rust_bpe_deployment",
-    "v5_54_method_scenario_suite_runs"
+    "v5_54_method_scenario_suite_runs",
+    "v5_141_tests_and_fresh_domain_reward_scope_audit",
+    "v5_clean_git_archive_hash_and_model_replay"
   ],
   "not_completed": [
     "per_formula_expert_review",

@@ -1,0 +1,16 @@
+{
+  "source_commit": "cf79192",
+  "environment": "Fresh GitHub checkout, reused separately installed v2 Python environment on same macOS host; model inference uses unmodified official Rust tokenizers",
+  "tests_passed": 141,
+  "training_reexecuted": false,
+  "master_corpus_archive_decompressed_and_hash_verified": true,
+  "natural_formulas": 53858,
+  "new_arxiv_papers": 119,
+  "new_test_hashes_unchanged": true,
+  "selected_checkpoint_suite_replays": 12,
+  "all_replay_token_counts_and_losslessness_equal": true,
+  "fresh_and_domain_exclusion_audits_passed": true,
+  "raw_source_archives_redownloaded": false,
+  "raw_source_hashes_checked_during_primary_build": true,
+  "corpus_sha256": "f6e08409b4ddff647420fbb46213fc95f0f1b307240c30a315dc52410e88966e"
+}
