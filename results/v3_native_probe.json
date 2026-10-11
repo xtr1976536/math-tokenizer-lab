@@ -1,0 +1,46 @@
+[
+  {
+    "capacity": 512,
+    "kind": "byte",
+    "timings": {
+      "python": 1.035894291002478,
+      "native": 0.08300579200295033
+    },
+    "speedup": 12.47978322965292,
+    "exact_tokens_equal": true,
+    "scope": "all_dev_formulas"
+  },
+  {
+    "capacity": 512,
+    "kind": "ast",
+    "timings": {
+      "python": 1.2224167499953182,
+      "native": 0.0873069170047529
+    },
+    "speedup": 14.001373452790356,
+    "exact_tokens_equal": true,
+    "scope": "all_dev_formulas"
+  },
+  {
+    "capacity": 1024,
+    "kind": "byte",
+    "timings": {
+      "python": 1.0862444160011364,
+      "native": 0.0860446669976227
+    },
+    "speedup": 12.624192223687121,
+    "exact_tokens_equal": true,
+    "scope": "all_dev_formulas"
+  },
+  {
+    "capacity": 1024,
+    "kind": "ast",
+    "timings": {
+      "python": 1.2922624579950934,
+      "native": 0.08419387500180164
+    },
+    "speedup": 15.348651644403356,
+    "exact_tokens_equal": true,
+    "scope": "all_dev_formulas"
+  }
+]

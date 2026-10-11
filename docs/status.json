@@ -1,5 +1,5 @@
 {
-  "stage": "second_corpus_and_intrinsic_rl_iteration",
+  "stage": "third_optimization_fixed_corpus",
   "date": "2026-10-11",
   "completed": [
     "private_github_repository",
@@ -27,7 +27,12 @@
     "git_published_v2",
     "clean_github_checkout_independent_environment_full_sequential_reproduction",
     "both_budgets_91057_rows_exactly_equal",
-    "both_budget_json_checkpoint_critical_fields_exact_equal"
+    "both_budget_json_checkpoint_critical_fields_exact_equal",
+    "v3_atomic_command_ast_bpe",
+    "v3_native_rl_policy_inference",
+    "v3_full_corpus_parser_exact_differential",
+    "v3_512_1024_three_seed_experiments",
+    "v3_no_corpus_or_baseline_changes"
   ],
   "not_completed": [
     "per_formula_expert_review",
@@ -63,5 +68,15 @@
     "rl_byte_vs_bpe_token_reduction_512": 0.00993,
     "rl_byte_vs_bpe_token_reduction_1024": 0.00919,
     "rl_ast_vs_no_rl": "no_improvement"
+  },
+  "v3": {
+    "corpus_unchanged": true,
+    "new_baselines_run": false,
+    "ast_token_reduction_512": 0.0792,
+    "ast_token_reduction_1024": 0.0524,
+    "rl_token_reduction_512": 0.0741,
+    "rl_token_reduction_1024": 0.0659,
+    "native_rl_speedup": "12x",
+    "all_metrics_improved": false
   }
 }

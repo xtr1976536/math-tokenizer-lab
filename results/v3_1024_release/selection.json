@@ -1,0 +1,52 @@
+{
+  "ast": "atom128",
+  "rl_byte": "atom128-rloo24-cross1.5",
+  "scores": {
+    "atom64-rloo6-cross0.5": 0.2339124406346057,
+    "atom64-rloo6-cross1.5": 0.23158948120387296,
+    "atom64-rloo24-cross0.0": 0.2330823786546558,
+    "atom64-rloo24-cross0.5": 0.23178471808040982,
+    "atom64-rloo24-cross1.5": 0.23167644229912446,
+    "atom64-relative12-cross0.0": 0.23256850750093605,
+    "atom64-relative12-cross0.5": 0.23158877437844677,
+    "atom64-relative12-cross1.5": 0.23368544549364267,
+    "atom64-rloo_symbols-cross0.0": 0.23353168484299947,
+    "atom64-rloo_symbols-cross0.5": 0.23283889661327922,
+    "atom64-rloo_symbols-cross1.5": 0.234438688983311,
+    "atom128-rloo6-cross1.5": 0.2262509260134724,
+    "atom128-rloo24-cross0.0": 0.2251891865636893,
+    "atom128-rloo24-cross0.5": 0.22514638380413587,
+    "atom128-rloo24-cross1.5": 0.22513520259783315,
+    "atom128-relative12-cross0.5": 0.22558321853533742,
+    "atom128-relative12-cross1.5": 0.22639887517562535,
+    "atom128-rloo_symbols-cross0.0": 0.2264644296502287,
+    "atom128-rloo_symbols-cross0.5": 0.2264154015769288,
+    "atom128-rloo_symbols-cross1.5": 0.22835617187222257,
+    "atom192-rloo6-cross1.5": 0.22770435037748182,
+    "atom192-rloo24-cross0.0": 0.22675780972211107,
+    "atom192-rloo24-cross0.5": 0.22670382575625492,
+    "atom192-rloo24-cross1.5": 0.22670382575625492,
+    "atom192-relative12-cross0.5": 0.22730595189226271,
+    "atom192-relative12-cross1.5": 0.22866032675638537,
+    "atom192-rloo_symbols-cross0.0": 0.2279893694258093,
+    "atom192-rloo_symbols-cross0.5": 0.2279403413525094,
+    "atom192-rloo_symbols-cross1.5": 0.22972654877043053
+  },
+  "old_dev_scores": {
+    "ast": {
+      "document_macro_tokens_per_byte": 0.2781601210708457,
+      "tokens_per_formula": 17.4020618556701,
+      "command_integrity": 0.9643947100712106,
+      "number_integrity": 0.9835503769705277,
+      "tree_crossing": 0.0
+    },
+    "rl": {
+      "document_macro_tokens_per_byte": 0.24932752561532637,
+      "tokens_per_formula": 16.042709867452135,
+      "command_integrity": 0.9026788741946422,
+      "number_integrity": 0.9773817683344757,
+      "tree_crossing": 0.2594400442070363
+    }
+  },
+  "test_used_for_selection": false
+}

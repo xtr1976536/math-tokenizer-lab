@@ -1,0 +1,72 @@
+{
+  "rl_bpe_v3-vs-rl_bpe_v2/17": {
+    "delta_tokens_per_formula": -0.9754988633493307,
+    "ci95_group_bootstrap": [
+      -1.312693996388279,
+      -0.7228580319491325
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe_v3-vs-rl_ast_bpe_v2/17": {
+    "delta_tokens_per_formula": -0.6400606213690326,
+    "ci95_group_bootstrap": [
+      -0.9354467207231768,
+      -0.4476508651883351
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_bpe_v3-vs-rl_bpe_v2/29": {
+    "delta_tokens_per_formula": -0.9916645617580196,
+    "ci95_group_bootstrap": [
+      -1.3263559142339951,
+      -0.7439733518631606
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe_v3-vs-rl_ast_bpe_v2/29": {
+    "delta_tokens_per_formula": -0.6345036625410457,
+    "ci95_group_bootstrap": [
+      -0.9297259153604105,
+      -0.4429753821243592
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_bpe_v3-vs-rl_bpe_v2/43": {
+    "delta_tokens_per_formula": -0.9815610002525891,
+    "ci95_group_bootstrap": [
+      -1.3171522443921146,
+      -0.7308213720131769
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_ast_bpe_v3-vs-rl_ast_bpe_v2/43": {
+    "delta_tokens_per_formula": -0.639555443293761,
+    "ci95_group_bootstrap": [
+      -0.9372452086675795,
+      -0.44653382876357195
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "ast_bpe_v3-vs-v2": {
+    "delta_tokens_per_formula": -0.827986865370043,
+    "ci95_group_bootstrap": [
+      -1.3394009261709448,
+      -0.5021636908901563
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "ast": "atom128",
+  "rl_byte": "atom64-relative12-cross1.5",
+  "scores": {
+    "atom64-relative12-cross1.5": 0.3144012022653559,
+    "atom64-rloo_symbols-cross1.5": 0.3165215673622014,
+    "atom192-rloo6-cross0.0": 0.37401604697432533,
+    "atom192-rloo6-cross0.5": 0.37401604697432533,
+    "atom192-rloo6-cross1.5": 0.37401604697432533,
+    "atom192-rloo24-cross0.0": 0.37401604697432533,
+    "atom192-rloo24-cross0.5": 0.37401604697432533,
+    "atom192-rloo24-cross1.5": 0.37401604697432533,
+    "atom192-relative12-cross0.0": 0.37401604697432533,
+    "atom192-relative12-cross0.5": 0.37401604697432533,
+    "atom192-relative12-cross1.5": 0.37401604697432533,
+    "atom192-rloo_symbols-cross0.0": 0.37401604697432533,
+    "atom192-rloo_symbols-cross0.5": 0.37401604697432533,
+    "atom192-rloo_symbols-cross1.5": 0.37401604697432533
+  },
+  "old_dev_scores": {
+    "ast": {
+      "document_macro_tokens_per_byte": 0.4252075464635658,
+      "tokens_per_formula": 23.631811487481592,
+      "command_integrity": 0.8714818582570363,
+      "number_integrity": 0.9773817683344757,
+      "tree_crossing": 0.0
+    },
+    "rl": {
+      "document_macro_tokens_per_byte": 0.359048768595729,
+      "tokens_per_formula": 21.396170839469807,
+      "command_integrity": 0.665988470668023,
+      "number_integrity": 0.9773817683344757,
+      "tree_crossing": 0.19721129288327466
+    }
+  },
+  "test_used_for_selection": false
+}

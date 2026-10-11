@@ -1,0 +1,27 @@
+{
+  "scope": "dev-only exploratory probes, not formal results",
+  "native_exact_speed": "results/v3_native_probe.json",
+  "vocab_refinement512": {
+    "byte_pruned_dev_tokens_per_formula": 18.36111111111111,
+    "byte_rl_swap_dev_tokens_per_formula": 18.29451566951567,
+    "ast_pruned_dev_tokens_per_formula": 18.930555555555557,
+    "ast_rl_swap_dev_tokens_per_formula": 18.983974358974358,
+    "source_scripts": [
+      "scripts/probe_vocab_v3.py"
+    ],
+    "selected_as_main": false
+  },
+  "atomic_probe_scripts": [
+    "scripts/probe_ast_v3.py",
+    "scripts/probe_atomic_byte_v3.py"
+  ],
+  "formal_experiments": "results/v3_512_release and results/v3_1024_release",
+  "full_train_seed_pruning_dev": {
+    "512_2x_tokens_per_formula": 18.72400284900285,
+    "512_4x_tokens_per_formula": 18.81125356125356,
+    "1024_2x_tokens_per_formula": 15.153133903133902,
+    "1024_4x_tokens_per_formula": 15.568732193732194,
+    "selected_as_main": false,
+    "source": "scripts/probe_refine_full_v3.py"
+  }
+}

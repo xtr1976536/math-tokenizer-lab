@@ -1,3 +1,16 @@
+# 第三轮优化已发布（2026-10-11）
+
+数学语料保持第二版28,347条及全部split不变，成熟基准未重跑。第三轮重点优化AST-BPE与RL-BPE：命令原子词表、受结构约束的DP、原生C推断，以及逐token等价的语法前端加速。
+
+- 最新结果：`docs/optimization_v3_findings.md`。
+- 两套正式实验：`results/v3_512_release/`、`results/v3_1024_release/`。
+- 协议/收益归因：`docs/optimization_v3_protocol.md`。
+- 加载模型/顺序复现：`docs/optimization_v3_reproduction.md`。
+
+相对自研v2，AST序列缩短约5–8%、命令完整率约96.5%、速度2.2–2.5倍；RL-BPE序列缩短约6.6–7.4%、速度约12倍，数学命令/树边界明显改善。具体收益和未改善指标以完整报告为准；native速度优化不等同RL训练贡献，same-vocab no-RL控制始终保留。
+
+以下为第二版及首版记录：
+
 # 第二版已更新（2026-10-11）
 
 最新语料和实验请使用 **v2**：28,347条公式（首版的16.55倍），98篇固定在2020年前的arXiv源稿，historical human 19,675条，simple/complex 24,109/4,238。13个主题领域；每条保留来源/许可/版本/位置/复杂度分量。所有arXiv版本经CC BY/CC0核对，缓存源码不上传。
