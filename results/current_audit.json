@@ -1,0 +1,156 @@
+{
+  "round1_cleanup_corpus_and_registry": {
+    "passed": true,
+    "removed_files": 604,
+    "retirement_states": {
+      "retired": 594,
+      "relocated": 10
+    },
+    "corpus_sha256": "f6e08409b4ddff647420fbb46213fc95f0f1b307240c30a315dc52410e88966e",
+    "active_families": [
+      "ast_v4",
+      "v5"
+    ]
+  },
+  "round2_training_scope_and_selection": {
+    "passed": true,
+    "paper_disjoint_internal_rewards": true,
+    "fixed_dev_selection_hashes": true,
+    "test_status": "previously exposed repeated benchmark"
+  },
+  "round3_common_metrics_and_all_checkpoints": {
+    "passed": true,
+    "runs": [
+      {
+        "run": "current_1024",
+        "method_seed_suite_records": 12,
+        "formula_records": 22191,
+        "checkpoint_and_result_replay": true
+      },
+      {
+        "run": "current_ast_dictionary1024",
+        "method_seed_suite_records": 8,
+        "formula_records": 14794,
+        "checkpoint_and_result_replay": true
+      },
+      {
+        "run": "current_rl_1024",
+        "method_seed_suite_records": 28,
+        "formula_records": 51779,
+        "checkpoint_and_result_replay": true
+      },
+      {
+        "run": "current_v5_critic1024",
+        "method_seed_suite_records": 40,
+        "formula_records": 73970,
+        "checkpoint_and_result_replay": true
+      },
+      {
+        "run": "current_reproduce17",
+        "method_seed_suite_records": 8,
+        "formula_records": 14794,
+        "checkpoint_and_result_replay": true
+      }
+    ],
+    "method_seed_suite_records": 96,
+    "formula_records": 177528,
+    "replayed": 177528,
+    "same_raw_ids_no_exclusions_no_truncation": true,
+    "official_export_ids_equal": true
+  },
+  "round4_RL_learning_and_critic_no_self_target": {
+    "passed": true,
+    "policies": [
+      {
+        "scenario": "broad",
+        "seed": 17,
+        "variant": "trajectory",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "broad",
+        "seed": 29,
+        "variant": "trajectory",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "broad",
+        "seed": 43,
+        "variant": "trajectory",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "specialized",
+        "seed": 17,
+        "variant": "trajectory",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "specialized",
+        "seed": 29,
+        "variant": "trajectory",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "specialized",
+        "seed": 43,
+        "variant": "trajectory",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "broad",
+        "seed": 17,
+        "variant": "critic",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "broad",
+        "seed": 29,
+        "variant": "critic",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "broad",
+        "seed": 43,
+        "variant": "critic",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "specialized",
+        "seed": 17,
+        "variant": "critic",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "specialized",
+        "seed": 29,
+        "variant": "critic",
+        "policy_parameters": 22
+      },
+      {
+        "scenario": "specialized",
+        "seed": 43,
+        "variant": "critic",
+        "policy_parameters": 22
+      }
+    ],
+    "variance_and_gradient_proofs": "tests/test_current_routes.py finite differences and full paired-path expectation"
+  },
+  "round5_exact_engineering_and_interleaved_speed": {
+    "passed": true,
+    "evidence": "results/current_engineering/verification.json",
+    "ast_compared_formulas_each_budget": 54551,
+    "two_budgets": [
+      512,
+      1024
+    ],
+    "v5_original_and_optimized_runs_each_scenario": 3
+  },
+  "round6_fixed_config_retraining": {
+    "passed": true,
+    "families_and_scenarios": 4,
+    "exact_vocab_and_policy": true,
+    "reproduction": "results/current_reproduce17"
+  },
+  "tests": "........................................................................ [ 47%]\n........................................................................ [ 94%]\n.........                                                                [100%]\n153 passed in 11.82s\n"
+}

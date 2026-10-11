@@ -1,0 +1,206 @@
+[
+  {
+    "scenario": "broad",
+    "name": "atoms256-subtrees0",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 0
+    },
+    "stats": {
+      "utility": 0.34963585942425446,
+      "document_macro_tokens_per_byte": 0.3482345105336233,
+      "tokens_per_formula": 17.678421494542402,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 4.4126780420047
+  },
+  {
+    "scenario": "broad",
+    "name": "atoms256-subtrees64",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 64
+    },
+    "stats": {
+      "utility": 0.29719578373222644,
+      "document_macro_tokens_per_byte": 0.2957944348415953,
+      "tokens_per_formula": 17.15281276238455,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 3.472339749991079
+  },
+  {
+    "scenario": "broad",
+    "name": "atoms256-subtrees128",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 128
+    },
+    "stats": {
+      "utility": 0.29289645736846637,
+      "document_macro_tokens_per_byte": 0.2914951084778352,
+      "tokens_per_formula": 17.216624685138537,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 3.2600543750013458
+  },
+  {
+    "scenario": "broad",
+    "name": "atoms256-subtrees192",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 192
+    },
+    "stats": {
+      "utility": 0.29531321845550235,
+      "document_macro_tokens_per_byte": 0.2939118695648712,
+      "tokens_per_formula": 17.4735516372796,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 2.774251875001937
+  },
+  {
+    "scenario": "broad",
+    "name": "atoms192-subtrees128",
+    "option": {
+      "atom_budget": 192,
+      "subtree_budget": 128
+    },
+    "stats": {
+      "utility": 0.2926944579393888,
+      "document_macro_tokens_per_byte": 0.2912592030813074,
+      "tokens_per_formula": 17.20067170445004,
+      "command_integrity": 0.9979656419529838,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 3.2474565419979626
+  },
+  {
+    "scenario": "broad",
+    "name": "atoms128-subtrees128",
+    "option": {
+      "atom_budget": 128,
+      "subtree_budget": 128
+    },
+    "stats": {
+      "utility": 0.29203525459175617,
+      "document_macro_tokens_per_byte": 0.2875145566957001,
+      "tokens_per_formula": 17.198992443324936,
+      "command_integrity": 0.9773960216998192,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 3.390047709006467
+  },
+  {
+    "scenario": "specialized",
+    "name": "atoms256-subtrees0",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 0
+    },
+    "stats": {
+      "utility": 0.23076883398838488,
+      "document_macro_tokens_per_byte": 0.23002693501311677,
+      "tokens_per_formula": 20.166324435318277,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 4.313874750005198
+  },
+  {
+    "scenario": "specialized",
+    "name": "atoms256-subtrees64",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 64
+    },
+    "stats": {
+      "utility": 0.20507064762761532,
+      "document_macro_tokens_per_byte": 0.2043287486523472,
+      "tokens_per_formula": 19.73305954825462,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 3.3328249159967527
+  },
+  {
+    "scenario": "specialized",
+    "name": "atoms256-subtrees128",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 128
+    },
+    "stats": {
+      "utility": 0.2006136747142049,
+      "document_macro_tokens_per_byte": 0.1998717757389368,
+      "tokens_per_formula": 19.854209445585216,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 3.032603499988909
+  },
+  {
+    "scenario": "specialized",
+    "name": "atoms256-subtrees192",
+    "option": {
+      "atom_budget": 256,
+      "subtree_budget": 192
+    },
+    "stats": {
+      "utility": 0.19438928426635055,
+      "document_macro_tokens_per_byte": 0.19364738529108244,
+      "tokens_per_formula": 19.80082135523614,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 2.815222082994296
+  },
+  {
+    "scenario": "specialized",
+    "name": "atoms192-subtrees128",
+    "option": {
+      "atom_budget": 192,
+      "subtree_budget": 128
+    },
+    "stats": {
+      "utility": 0.2006136747142049,
+      "document_macro_tokens_per_byte": 0.1998717757389368,
+      "tokens_per_formula": 19.854209445585216,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 3.0645627499907278
+  },
+  {
+    "scenario": "specialized",
+    "name": "atoms128-subtrees128",
+    "option": {
+      "atom_budget": 128,
+      "subtree_budget": 128
+    },
+    "stats": {
+      "utility": 0.20577225795951767,
+      "document_macro_tokens_per_byte": 0.20213629273015418,
+      "tokens_per_formula": 20.2258726899384,
+      "command_integrity": 0.9799781579905351,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 3.2321270420070505
+  }
+]

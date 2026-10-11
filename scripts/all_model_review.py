@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 import statistics
 import subprocess
+from math_tokenizer.checkpoints import verify_saved_hash
 
 ROOT = Path(__file__).resolve().parents[1]
 RUNS = [
@@ -174,15 +175,18 @@ def audit_run(name):
         models.append(summary)
     manifest = json.loads((directory / "manifest.json").read_text())
     model_hashes = manifest.get("models", manifest.get("model_hashes", {}))
+    checkpoint_states = defaultdict(int)
     for filename, expected in model_hashes.items():
-        assert digest(directory / "models" / filename) == expected, (name, filename)
+        checkpoint_states[verify_saved_hash(directory / "models" / filename, expected)] += 1
     for filename in ("protocol", "selection", "metrics"):
         if f"{filename}_sha256" in manifest:
             assert digest(directory / f"{filename}.json") == manifest[f"{filename}_sha256"]
     return {
         "run": name, "passed": True, "method_seed_suite_records": len(metrics),
         "per_formula_records": sum(len(r) for r in grouped.values()),
-        "manifest_model_files_verified": len(model_hashes),
+        "manifest_model_files_verified": checkpoint_states['actual'] + checkpoint_states['relocated'],
+        "checkpoint_evidence_states": dict(checkpoint_states),
+        "retired_checkpoint_hashes_matched_to_cleanup_manifest": checkpoint_states['retired'],
         "test_hashes": {suite: next(iter(hashes)) for suite, hashes in by_suite.items()},
         "artifact_sha256": {filename: digest(directory / filename) for filename in ("metrics.json", "per_formula.jsonl")},
         "models": models,

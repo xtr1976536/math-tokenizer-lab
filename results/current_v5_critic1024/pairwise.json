@@ -1,0 +1,602 @@
+{
+  "broad/fresh_paper_test/critic-vs-v5_trajectory_rloo/17": {
+    "delta_tokens_per_formula": -0.006857142857142857,
+    "ci95_group_bootstrap": [
+      -0.05892620531148854,
+      0.023433662308951456
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_local_parent/17": {
+    "delta_tokens_per_formula": -0.232,
+    "ci95_group_bootstrap": [
+      -0.4732356784548669,
+      0.05958012615054635
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_local_greedy/17": {
+    "delta_tokens_per_formula": -0.05577142857142857,
+    "ci95_group_bootstrap": [
+      -0.15945238967872738,
+      0.0214442446109998
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_fixed_initial_policy/17": {
+    "delta_tokens_per_formula": 0.0018285714285714285,
+    "ci95_group_bootstrap": [
+      -0.1341105856370983,
+      0.15578937015651165
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_equal_budget_search/17": {
+    "delta_tokens_per_formula": 0.1856,
+    "ci95_group_bootstrap": [
+      0.013540003503246927,
+      0.31446140704201486
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_trajectory_rloo/29": {
+    "delta_tokens_per_formula": -0.016457142857142858,
+    "ci95_group_bootstrap": [
+      -0.036969476580039844,
+      0.0010776745944288118
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_local_parent/29": {
+    "delta_tokens_per_formula": -0.15337142857142858,
+    "ci95_group_bootstrap": [
+      -0.36004077990761535,
+      0.04718318615794649
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_local_greedy/29": {
+    "delta_tokens_per_formula": 0.022857142857142857,
+    "ci95_group_bootstrap": [
+      -0.1668769909463784,
+      0.2601461465770288
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_fixed_initial_policy/29": {
+    "delta_tokens_per_formula": 0.08045714285714285,
+    "ci95_group_bootstrap": [
+      -0.16164975362320946,
+      0.4435625274607032
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_equal_budget_search/29": {
+    "delta_tokens_per_formula": 0.2642285714285714,
+    "ci95_group_bootstrap": [
+      -0.008490874009476936,
+      0.5107107110731316
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_trajectory_rloo/43": {
+    "delta_tokens_per_formula": 0.020114285714285713,
+    "ci95_group_bootstrap": [
+      -0.076068877188718,
+      0.09386523202935769
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_local_parent/43": {
+    "delta_tokens_per_formula": -0.06925714285714285,
+    "ci95_group_bootstrap": [
+      -0.4230771201782402,
+      0.17621207160964728
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_local_greedy/43": {
+    "delta_tokens_per_formula": 0.10697142857142856,
+    "ci95_group_bootstrap": [
+      -0.19340837990371113,
+      0.41192600508127736
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_fixed_initial_policy/43": {
+    "delta_tokens_per_formula": 0.16457142857142856,
+    "ci95_group_bootstrap": [
+      0.016321956551769972,
+      0.3236517697956437
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/fresh_paper_test/critic-vs-v5_equal_budget_search/43": {
+    "delta_tokens_per_formula": 0.3483428571428571,
+    "ci95_group_bootstrap": [
+      -0.01374971849834022,
+      0.7557495490512344
+    ],
+    "groups": 30,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_trajectory_rloo/17": {
+    "delta_tokens_per_formula": -0.021645021645021644,
+    "ci95_group_bootstrap": [
+      -0.09336810807810267,
+      0.028349259574327487
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_local_parent/17": {
+    "delta_tokens_per_formula": 0.40404040404040403,
+    "ci95_group_bootstrap": [
+      -0.3519253160345975,
+      1.5127702012639463
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_local_greedy/17": {
+    "delta_tokens_per_formula": 1.1746031746031746,
+    "ci95_group_bootstrap": [
+      -0.3135615373313417,
+      3.716838492541899
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_fixed_initial_policy/17": {
+    "delta_tokens_per_formula": 0.6277056277056277,
+    "ci95_group_bootstrap": [
+      -0.1946518260470102,
+      1.9941733067729082
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_equal_budget_search/17": {
+    "delta_tokens_per_formula": 0.25252525252525254,
+    "ci95_group_bootstrap": [
+      0.03430836749058089,
+      0.43208268552868534
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_trajectory_rloo/29": {
+    "delta_tokens_per_formula": -0.011544011544011544,
+    "ci95_group_bootstrap": [
+      -0.02722086246060115,
+      0.0
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_local_parent/29": {
+    "delta_tokens_per_formula": 0.5396825396825397,
+    "ci95_group_bootstrap": [
+      -0.3686987920168067,
+      1.8838177262061577
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_local_greedy/29": {
+    "delta_tokens_per_formula": 1.3102453102453102,
+    "ci95_group_bootstrap": [
+      -0.27262819246159165,
+      4.035892586234429
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_fixed_initial_policy/29": {
+    "delta_tokens_per_formula": 0.7633477633477633,
+    "ci95_group_bootstrap": [
+      -0.2119967943939168,
+      2.367107184040263
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_equal_budget_search/29": {
+    "delta_tokens_per_formula": 0.38816738816738816,
+    "ci95_group_bootstrap": [
+      0.08677373155411393,
+      0.6305170980335454
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_trajectory_rloo/43": {
+    "delta_tokens_per_formula": -0.020202020202020204,
+    "ci95_group_bootstrap": [
+      -0.07259583043894885,
+      0.021842817115519313
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_local_parent/43": {
+    "delta_tokens_per_formula": 0.7316017316017316,
+    "ci95_group_bootstrap": [
+      -0.004487734487734482,
+      1.7366269599965252
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_local_greedy/43": {
+    "delta_tokens_per_formula": 1.5021645021645023,
+    "ci95_group_bootstrap": [
+      -0.3118368760093469,
+      3.928674356212408
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_fixed_initial_policy/43": {
+    "delta_tokens_per_formula": 0.9552669552669553,
+    "ci95_group_bootstrap": [
+      0.020808777915632754,
+      2.2107802231019753
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "broad/synthetic_stress_test/critic-vs-v5_equal_budget_search/43": {
+    "delta_tokens_per_formula": 0.5800865800865801,
+    "ci95_group_bootstrap": [
+      -0.024490258948829013,
+      1.1322646087776784
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_trajectory_rloo/17": {
+    "delta_tokens_per_formula": 0.11430317848410758,
+    "ci95_group_bootstrap": [
+      -0.0036148945174132464,
+      0.24827924282147706
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_local_parent/17": {
+    "delta_tokens_per_formula": 0.14364303178484109,
+    "ci95_group_bootstrap": [
+      0.0022734093355991462,
+      0.2738208043528475
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_local_greedy/17": {
+    "delta_tokens_per_formula": 0.23166259168704156,
+    "ci95_group_bootstrap": [
+      0.11404857397504456,
+      0.366194459130388
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_fixed_initial_policy/17": {
+    "delta_tokens_per_formula": -0.02567237163814181,
+    "ci95_group_bootstrap": [
+      -0.1632253334393797,
+      0.13302259077279563
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_equal_budget_search/17": {
+    "delta_tokens_per_formula": -0.04339853300733496,
+    "ci95_group_bootstrap": [
+      -0.1805889423076923,
+      0.09171452858362576
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_trajectory_rloo/29": {
+    "delta_tokens_per_formula": -0.04523227383863081,
+    "ci95_group_bootstrap": [
+      -0.09572072781467383,
+      0.015086869290531884
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_local_parent/29": {
+    "delta_tokens_per_formula": 0.11735941320293398,
+    "ci95_group_bootstrap": [
+      -0.08316009239516702,
+      0.3014270506861053
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_local_greedy/29": {
+    "delta_tokens_per_formula": 0.20537897310513448,
+    "ci95_group_bootstrap": [
+      0.110188705619234,
+      0.294984948147747
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_fixed_initial_policy/29": {
+    "delta_tokens_per_formula": -0.0519559902200489,
+    "ci95_group_bootstrap": [
+      -0.1573741634768117,
+      0.05190750675166724
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_equal_budget_search/29": {
+    "delta_tokens_per_formula": -0.06968215158924206,
+    "ci95_group_bootstrap": [
+      -0.21762312542603954,
+      0.039134202576916716
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_trajectory_rloo/43": {
+    "delta_tokens_per_formula": -0.3117359413202934,
+    "ci95_group_bootstrap": [
+      -0.48421264987538654,
+      -0.10411582709503707
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_local_parent/43": {
+    "delta_tokens_per_formula": -0.11430317848410758,
+    "ci95_group_bootstrap": [
+      -0.31513841068969445,
+      0.07567154735598157
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_local_greedy/43": {
+    "delta_tokens_per_formula": -0.02628361858190709,
+    "ci95_group_bootstrap": [
+      -0.12995666320196161,
+      0.10465115469097558
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_fixed_initial_policy/43": {
+    "delta_tokens_per_formula": -0.28361858190709044,
+    "ci95_group_bootstrap": [
+      -0.4206547545786964,
+      -0.143045666987832
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/extreme_domain_test/critic-vs-v5_equal_budget_search/43": {
+    "delta_tokens_per_formula": -0.30134474327628363,
+    "ci95_group_bootstrap": [
+      -0.440155857968598,
+      -0.14165368428824582
+    ],
+    "groups": 14,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_trajectory_rloo/17": {
+    "delta_tokens_per_formula": 0.04329004329004329,
+    "ci95_group_bootstrap": [
+      -0.4865318980414746,
+      0.5865247440424435
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_local_parent/17": {
+    "delta_tokens_per_formula": -0.27705627705627706,
+    "ci95_group_bootstrap": [
+      -1.2917700482187164,
+      0.6225001367540068
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_local_greedy/17": {
+    "delta_tokens_per_formula": -3.7113997113997113,
+    "ci95_group_bootstrap": [
+      -11.15858462287354,
+      0.6466311475409836
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_fixed_initial_policy/17": {
+    "delta_tokens_per_formula": -0.16594516594516595,
+    "ci95_group_bootstrap": [
+      -0.3424406917807849,
+      0.08457607401046988
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_equal_budget_search/17": {
+    "delta_tokens_per_formula": 0.06349206349206349,
+    "ci95_group_bootstrap": [
+      -0.332640376390077,
+      0.5727239603575592
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_trajectory_rloo/29": {
+    "delta_tokens_per_formula": -0.3823953823953824,
+    "ci95_group_bootstrap": [
+      -0.7398827504919061,
+      -0.05585499374973059
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_local_parent/29": {
+    "delta_tokens_per_formula": -0.6002886002886003,
+    "ci95_group_bootstrap": [
+      -1.7446047189639975,
+      0.2284535163776492
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_local_greedy/29": {
+    "delta_tokens_per_formula": -4.034632034632034,
+    "ci95_group_bootstrap": [
+      -11.61771682293545,
+      0.20043469655718388
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_fixed_initial_policy/29": {
+    "delta_tokens_per_formula": -0.48917748917748916,
+    "ci95_group_bootstrap": [
+      -0.6766567684303524,
+      -0.2790677397719652
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_equal_budget_search/29": {
+    "delta_tokens_per_formula": -0.2597402597402597,
+    "ci95_group_bootstrap": [
+      -0.6070764642000633,
+      0.1079089442519568
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_trajectory_rloo/43": {
+    "delta_tokens_per_formula": -0.3665223665223665,
+    "ci95_group_bootstrap": [
+      -0.6562002436159569,
+      -0.11364305491405866
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_local_parent/43": {
+    "delta_tokens_per_formula": -0.7316017316017316,
+    "ci95_group_bootstrap": [
+      -2.1526485076319797,
+      0.2383590733590731
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_local_greedy/43": {
+    "delta_tokens_per_formula": -4.165945165945166,
+    "ci95_group_bootstrap": [
+      -12.174667910560053,
+      0.0985152524959826
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_fixed_initial_policy/43": {
+    "delta_tokens_per_formula": -0.6204906204906205,
+    "ci95_group_bootstrap": [
+      -1.150725952813067,
+      -0.1097055912676679
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "specialized/synthetic_stress_test/critic-vs-v5_equal_budget_search/43": {
+    "delta_tokens_per_formula": -0.39105339105339104,
+    "ci95_group_bootstrap": [
+      -0.9163210645674218,
+      0.03476667997640359
+    ],
+    "groups": 27,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  }
+}

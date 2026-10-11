@@ -1,0 +1,80 @@
+{
+  "families": [
+    "ast_v4",
+    "v5"
+  ],
+  "base_commit": "c75de3cdbb836d5ec765739bb4f56fe05acbe52c",
+  "ast_v4": {
+    "512": "models/current/ast_v4/fast-512.json",
+    "1024": "models/current/ast_v4/broad-dictionary-1024.json"
+  },
+  "ast_v4_specialized": "models/current/ast_v4/specialized-dictionary-1024.json",
+  "v5": {
+    "broad": "models/current/v5/broad-selected.json",
+    "specialized": "models/current/v5/specialized-selected.json"
+  },
+  "base_snapshots": {
+    "ast_v4": {
+      "512": "models/current/ast_v4/base-512.json",
+      "1024": "models/current/ast_v4/base-1024.json"
+    },
+    "v5": {
+      "broad": "models/current/v5/broad-base.json",
+      "specialized": "models/current/v5/specialized-base.json"
+    }
+  },
+  "controls": {
+    "broad": "models/current/v5/controls/broad-greedy.json",
+    "specialized": "models/current/v5/controls/specialized-greedy.json"
+  },
+  "training": {
+    "ast_v4": {
+      "broad": {
+        "atom_budget": 256,
+        "extra_subtrees": 512
+      },
+      "specialized": {
+        "atom_budget": 256,
+        "extra_subtrees": 512
+      }
+    },
+    "v5": {
+      "broad": {
+        "method": "rloo",
+        "trajectory_config": {
+          "epochs": 3,
+          "samples": 3,
+          "learning_rate": 0.25,
+          "temperature": 3.0,
+          "exploration": 0.05,
+          "gradient_clip": 1.0,
+          "code_weight": 0.04,
+          "command_weight": 0.15,
+          "number_weight": 0.03,
+          "tree_weight": 0.1,
+          "robustness_weight": 0.04,
+          "rare_weight": 0.02,
+          "baseline": "rloo",
+          "critic_ridge": 0.1
+        }
+      },
+      "specialized": {
+        "method": "local_parent"
+      }
+    }
+  },
+  "selection_provenance": {
+    "ast_v4": "results/current_ast_dictionary1024/selection.json",
+    "v5": "results/current_v5_critic1024/selection.json"
+  },
+  "deployment_seed": 17,
+  "test_exposure": "previously exposed repeated benchmark",
+  "interpretation": "dev-selected model; no claim of winning every metric or search control",
+  "active_checkpoint_sha256": {
+    "models/current/ast_v4/fast-512.json": "a93355db687a55de41ca04cfff3b3b6543a1f037b4851c7525a002e01c115153",
+    "models/current/ast_v4/broad-dictionary-1024.json": "36717e5cb1177882a1bde6bbc2c41d8de6bca2403d84661e5d9dbbba49d2c4cc",
+    "models/current/ast_v4/specialized-dictionary-1024.json": "205d0e28f2827c728b9c39c4c9ebeb560fab92138bdb94b1e8136e3fec9c1cc5",
+    "models/current/v5/broad-selected.json": "05ee5799d320402e31c62580f242804b3864574d0f61e1aa82e72ff32206a59b",
+    "models/current/v5/specialized-selected.json": "fd6c10c35fff7bfe27f1d443f07618de57ebd57190a8babf42d8e4f4d42f3515"
+  }
+}

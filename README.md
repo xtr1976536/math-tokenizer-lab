@@ -1,4 +1,25 @@
-# 全实验回溯与分类排名（2026-10-11，研究暂停）
+# 当前活动模型：AST-v4与v5（2026-10-11）
+
+已按用户要求删除604个旧/重复模型文件（527个已跟踪、77个原忽略文件），仅保留AST-v4/v5家族及其父快照/内部控制。历史实验结果保留，清单见`models/retirement_manifest.json`；旧模型完整重放需清理前Git revision `c75de3c`。语料仍为53,858式，哈希未变。
+
+AST-v4新增等价最短路径内核，编码快约19%–23%；字典增补在同fit的新论文/域迁移测试上分别缩短约0.31%/1.10%，保留硬零crossing与命令完整性。v5 local训练精确加速1.68–1.87倍；通用默认升级完整轨迹RLOO，在线仍原版Rust BPE。新RL并未全面超越等预算搜索，专用域新策略退化，保留原local。critic试验未晋升。
+
+- [设计、两阶段含义与API](docs/current_models_design.md)。
+- [完整结果、控制、失败及成本解释](docs/current_models_results.md)。
+- 当前模型路径/固定配置：[`models/current/registry.json`](models/current/registry.json)。
+- 六轮审计：[`results/current_audit.json`](results/current_audit.json)；工程等价/交错速度：[`results/current_engineering/verification.json`](results/current_engineering/verification.json)。
+- 顺序运行：`sh scripts/run_current.sh results/my_current_run001`，输出目录必须尚不存在；只训练选定的两条路线，不依赖退休模型。
+
+```python
+from math_tokenizer.current_models import load_current
+tokenizer = load_current("v5", scenario="broad", capacity=1024)
+text = r"\frac{x+y}{z}=\alpha"
+assert tokenizer.decode(tokenizer.encode(text)) == text
+```
+
+以下均为历史阶段记录；早期训练/重放脚本不是当前入口。
+
+# 全实验回溯与分类排名（2026-10-11，当时研究暂停）
 
 本轮仅审计已有结果。9个正式目录、216条方法/种子/场景记录、563,399条逐公式结果独立核对通过。速度/少手工规则以v5离线词表方案领先，硬结构以v4 AST领先，旧测试压缩以v3原子shortest及RL分支领先；RL尚未稳定胜过同奖励greedy或同词表shortest。
 

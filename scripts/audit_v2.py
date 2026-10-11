@@ -10,6 +10,7 @@ from math_tokenizer.evaluate import read_jsonl,file_hash
 from math_tokenizer.merge_v2 import FastBPE
 from math_tokenizer.bpe import MathBPE
 from math_tokenizer.rl_v2 import LatticeTokenizer
+from math_tokenizer.checkpoints import verify_saved_hash
 
 
 def corpus_audit():
@@ -63,8 +64,8 @@ def result_audit(out):
         import math
         p=[v/m['tokens'] for v in c.values()];h=-sum(x*math.log2(x) for x in p)
         assert abs(h-m['shannon_entropy_bits_per_token'])<1e-10
-    for name,digest in manifest['models'].items():assert file_hash(out/'models'/name)==digest
-    return {'passed':True,'test_formulas':len(sets[2]),'method_seed_runs':len(by),'checks':['identical_raw_test','dev_only_selection','selection_hash_frozen','no_test_deletion','metrics_recomputed','same_vocab_budget','same_cache_timing','model_hashes','upstream_renyi_crosscheck']}
+    states=Counter(verify_saved_hash(out/'models'/name,digest) for name,digest in manifest['models'].items())
+    return {'passed':True,'test_formulas':len(sets[2]),'method_seed_runs':len(by),'checkpoint_evidence_states':dict(states),'checks':['identical_raw_test','dev_only_selection','selection_hash_frozen','no_test_deletion','metrics_recomputed','same_vocab_budget','same_cache_timing','current_hashes_or_retired_provenance','upstream_renyi_crosscheck']}
 
 
 def replay(out):

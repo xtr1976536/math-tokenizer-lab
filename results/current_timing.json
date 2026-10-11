@@ -1,0 +1,871 @@
+{
+  "protocol": "same raw test bytes, 5 rotated per-formula public encode repeats, official cache cleared each repeat; no parser metrics in clock, no training jobs",
+  "load_and_compile_excluded": true,
+  "original_metric_files_unchanged": true,
+  "entries": [
+    {
+      "checkpoint": "results/current_ast_dictionary1024/checkpoints/broad-ast_v4_dictionary.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "ast_v4_dictionary",
+      "seed": 0,
+      "encode_seconds_repeats": [
+        0.14849074999801815,
+        0.1506468340085121,
+        0.15075762500055134,
+        0.1506382079969626,
+        0.15050554199842736
+      ],
+      "encode_seconds_median": 0.1506382079969626,
+      "encode_mib_s": 1.6580671030430043,
+      "training_cost_seconds_annotation": 4.653578293000464,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_ast_dictionary1024/checkpoints/broad-ast_v4_dictionary.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "ast_v4_dictionary",
+      "seed": 0,
+      "encode_seconds_repeats": [
+        0.24385400000028312,
+        0.2212624169915216,
+        0.2226744170038728,
+        0.2242997080029454,
+        0.2496634580020327
+      ],
+      "encode_seconds_median": 0.2242997080029454,
+      "encode_mib_s": 0.6847798677269096,
+      "training_cost_seconds_annotation": 4.653578293000464,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_ast_dictionary1024/checkpoints/broad-ast_v4_same_fit_base.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "ast_v4_same_fit_base",
+      "seed": 0,
+      "encode_seconds_repeats": [
+        0.15042379200167488,
+        0.1517114590096753,
+        0.14990133300307207,
+        0.15178320900304243,
+        0.15156366700830404
+      ],
+      "encode_seconds_median": 0.15156366700830404,
+      "encode_mib_s": 1.6479428221239112,
+      "training_cost_seconds_annotation": 4.495242334000068,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_ast_dictionary1024/checkpoints/broad-ast_v4_same_fit_base.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "ast_v4_same_fit_base",
+      "seed": 0,
+      "encode_seconds_repeats": [
+        0.2255027500068536,
+        0.22083058299904224,
+        0.22484633298881818,
+        0.2207482920057373,
+        0.22428595900419168
+      ],
+      "encode_seconds_median": 0.22428595900419168,
+      "encode_mib_s": 0.6848218455555252,
+      "training_cost_seconds_annotation": 4.495242334000068,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_ast_dictionary1024/checkpoints/specialized-ast_v4_dictionary.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "ast_v4_dictionary",
+      "seed": 0,
+      "encode_seconds_repeats": [
+        0.042936208003084175,
+        0.04236154200043529,
+        0.04332250000152271,
+        0.04334083299909253,
+        0.043343334007658996
+      ],
+      "encode_seconds_median": 0.04332250000152271,
+      "encode_mib_s": 1.185288011790023,
+      "training_cost_seconds_annotation": 4.634416709013749,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_ast_dictionary1024/checkpoints/specialized-ast_v4_dictionary.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "ast_v4_dictionary",
+      "seed": 0,
+      "encode_seconds_repeats": [
+        0.22168341600627173,
+        0.21787224999570753,
+        0.21790666700690053,
+        0.22078237499226816,
+        0.21912524999061134
+      ],
+      "encode_seconds_median": 0.21912524999061134,
+      "encode_mib_s": 0.700950366897573,
+      "training_cost_seconds_annotation": 4.634416709013749,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_ast_dictionary1024/checkpoints/specialized-ast_v4_same_fit_base.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "ast_v4_same_fit_base",
+      "seed": 0,
+      "encode_seconds_repeats": [
+        0.04212520900182426,
+        0.042215084002236836,
+        0.04260416699980851,
+        0.04304116700950544,
+        0.042747583996970206
+      ],
+      "encode_seconds_median": 0.04260416699980851,
+      "encode_mib_s": 1.2052727117703985,
+      "training_cost_seconds_annotation": 4.4556127920077415,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_ast_dictionary1024/checkpoints/specialized-ast_v4_same_fit_base.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "ast_v4_same_fit_base",
+      "seed": 0,
+      "encode_seconds_repeats": [
+        0.21858787500241306,
+        0.25161633400421124,
+        0.21957512499648146,
+        0.2241619160049595,
+        0.2191757919936208
+      ],
+      "encode_seconds_median": 0.21957512499648146,
+      "encode_mib_s": 0.6995142294916269,
+      "training_cost_seconds_annotation": 4.4556127920077415,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "models/current/v5/broad-base.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_local_parent",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.040871165998396464,
+        0.0285534589929739,
+        0.02818058400589507,
+        0.028129832993727177,
+        0.02868674999626819
+      ],
+      "encode_seconds_median": 0.0285534589929739,
+      "encode_mib_s": 8.7473905421607,
+      "training_cost_seconds_annotation": 8.984961333000683,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "models/current/v5/broad-base.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_local_parent",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.020101292000617832,
+        0.017800417001126334,
+        0.01743483400787227,
+        0.01756279201072175,
+        0.0176414589950582
+      ],
+      "encode_seconds_median": 0.0176414589950582,
+      "encode_mib_s": 8.706531836197184,
+      "training_cost_seconds_annotation": 8.984961333000683,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "models/current/v5/controls/broad-greedy.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_local_greedy",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.0407040000136476,
+        0.028434499996365048,
+        0.028046459003235213,
+        0.0281360419903649,
+        0.02788787501049228
+      ],
+      "encode_seconds_median": 0.0281360419903649,
+      "encode_mib_s": 8.877163931822594,
+      "training_cost_seconds_annotation": 9.323211082999478,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "models/current/v5/controls/broad-greedy.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_local_greedy",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.02024429099401459,
+        0.017965708000701852,
+        0.017860708001535386,
+        0.01754479199007619,
+        0.017240083005162887
+      ],
+      "encode_seconds_median": 0.017860708001535386,
+      "encode_mib_s": 8.599654860503717,
+      "training_cost_seconds_annotation": 9.323211082999478,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-no-update.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_fixed_initial_policy",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.04105954201077111,
+        0.02877466600330081,
+        0.02814937500806991,
+        0.028118415997596458,
+        0.02844154101330787
+      ],
+      "encode_seconds_median": 0.02844154101330787,
+      "encode_mib_s": 8.78181168257536,
+      "training_cost_seconds_annotation": 51.297373666006024,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-no-update.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_fixed_initial_policy",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.020141250002779998,
+        0.017811709010857157,
+        0.017796458007069305,
+        0.017593665994354524,
+        0.017770166989066638
+      ],
+      "encode_seconds_median": 0.017796458007069305,
+      "encode_mib_s": 8.630701924867765,
+      "training_cost_seconds_annotation": 51.297373666006024,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-search-control.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_equal_budget_search",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.03983895901183132,
+        0.02855766699940432,
+        0.028548165995744057,
+        0.02827033298672177,
+        0.028590208996320143
+      ],
+      "encode_seconds_median": 0.02855766699940432,
+      "encode_mib_s": 8.746101603689237,
+      "training_cost_seconds_annotation": 51.297373666006024,
+      "training_cost_scope": "full no-update matched-budget search job; stored sub-rollout zero is not total training cost"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-search-control.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_equal_budget_search",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.019162583994329907,
+        0.017810416989959776,
+        0.017569959003594704,
+        0.017496166998171248,
+        0.01749050000216812
+      ],
+      "encode_seconds_median": 0.017569959003594704,
+      "encode_mib_s": 8.741962593425326,
+      "training_cost_seconds_annotation": 51.297373666006024,
+      "training_cost_scope": "full no-update matched-budget search job; stored sub-rollout zero is not total training cost"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/broad-v5-critic-17.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_crossfit_critic",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.04009629201027565,
+        0.028870250011095777,
+        0.02835108299041167,
+        0.027885999996215105,
+        0.028522458000225015
+      ],
+      "encode_seconds_median": 0.028522458000225015,
+      "encode_mib_s": 8.75689806043865,
+      "training_cost_seconds_annotation": 49.30593370899442,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/broad-v5-critic-17.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_crossfit_critic",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.0193680419906741,
+        0.017632625007536262,
+        0.01786133299174253,
+        0.01742358400952071,
+        0.01761270800489001
+      ],
+      "encode_seconds_median": 0.017632625007536262,
+      "encode_mib_s": 8.71089382957976,
+      "training_cost_seconds_annotation": 49.30593370899442,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-trajectory-17.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.04017849999945611,
+        0.028343917001620866,
+        0.028295083000557497,
+        0.028741582995280623,
+        0.02863216699915938
+      ],
+      "encode_seconds_median": 0.02863216699915938,
+      "encode_mib_s": 8.723344521860545,
+      "training_cost_seconds_annotation": 51.90091100000427,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-trajectory-17.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.01949070800037589,
+        0.017521290996228345,
+        0.017410417000064626,
+        0.01743137500307057,
+        0.017753624997567385
+      ],
+      "encode_seconds_median": 0.017521290996228345,
+      "encode_mib_s": 8.7662447025453,
+      "training_cost_seconds_annotation": 51.90091100000427,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/broad-v5-critic-29.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_crossfit_critic",
+      "seed": 29,
+      "encode_seconds_repeats": [
+        0.041371667000930756,
+        0.028945375001057982,
+        0.028572499999427237,
+        0.028238874991075136,
+        0.02884316699055489
+      ],
+      "encode_seconds_median": 0.02884316699055489,
+      "encode_mib_s": 8.659529559389352,
+      "training_cost_seconds_annotation": 50.24117770799785,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/broad-v5-critic-29.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_crossfit_critic",
+      "seed": 29,
+      "encode_seconds_repeats": [
+        0.019527917000232264,
+        0.017655375006143004,
+        0.01734937500441447,
+        0.017495708001661114,
+        0.017896959005156532
+      ],
+      "encode_seconds_median": 0.017655375006143004,
+      "encode_mib_s": 8.699669325856817,
+      "training_cost_seconds_annotation": 50.24117770799785,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-trajectory-29.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 29,
+      "encode_seconds_repeats": [
+        0.040347958012716845,
+        0.02840512500551995,
+        0.028277792007429525,
+        0.028463958005886525,
+        0.02841587500006426
+      ],
+      "encode_seconds_median": 0.02841587500006426,
+      "encode_mib_s": 8.789743660561163,
+      "training_cost_seconds_annotation": 50.419710250003845,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-trajectory-29.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 29,
+      "encode_seconds_repeats": [
+        0.019710791995748878,
+        0.017771832994185388,
+        0.017918208002811298,
+        0.017587916998309083,
+        0.017865665999124758
+      ],
+      "encode_seconds_median": 0.017865665999124758,
+      "encode_mib_s": 8.597268323776236,
+      "training_cost_seconds_annotation": 50.419710250003845,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/broad-v5-critic-43.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_crossfit_critic",
+      "seed": 43,
+      "encode_seconds_repeats": [
+        0.04019933400559239,
+        0.028598083008546382,
+        0.028437999993911944,
+        0.02827537500706967,
+        0.028964125012862496
+      ],
+      "encode_seconds_median": 0.028598083008546382,
+      "encode_mib_s": 8.73374124644898,
+      "training_cost_seconds_annotation": 50.5067137080041,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/broad-v5-critic-43.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_crossfit_critic",
+      "seed": 43,
+      "encode_seconds_repeats": [
+        0.019384291997994296,
+        0.017508750010165386,
+        0.01778541698877234,
+        0.01739179099968169,
+        0.017710166997858323
+      ],
+      "encode_seconds_median": 0.017710166997858323,
+      "encode_mib_s": 8.672754152799104,
+      "training_cost_seconds_annotation": 50.5067137080041,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-trajectory-43.json",
+      "scenario": "broad",
+      "suite": "fresh_paper_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 43,
+      "encode_seconds_repeats": [
+        0.04012058299849741,
+        0.028445459000067785,
+        0.028459541004849598,
+        0.028860040998551995,
+        0.028286250002565794
+      ],
+      "encode_seconds_median": 0.028459541004849598,
+      "encode_mib_s": 8.776257392856476,
+      "training_cost_seconds_annotation": 51.16114162499434,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/broad-v5-trajectory-43.json",
+      "scenario": "broad",
+      "suite": "synthetic_stress_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 43,
+      "encode_seconds_repeats": [
+        0.01941745799558703,
+        0.016887292003957555,
+        0.01749425000161864,
+        0.016922250011703,
+        0.017698458992526866
+      ],
+      "encode_seconds_median": 0.01749425000161864,
+      "encode_mib_s": 8.779794753317809,
+      "training_cost_seconds_annotation": 51.16114162499434,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "models/current/v5/specialized-base.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_local_parent",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.01021737499104347,
+        0.007331791988690384,
+        0.007864790997700766,
+        0.007186999995610677,
+        0.007675583998207003
+      ],
+      "encode_seconds_median": 0.007675583998207003,
+      "encode_mib_s": 6.68999777796364,
+      "training_cost_seconds_annotation": 10.313948875002097,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "models/current/v5/specialized-base.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_local_parent",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.01883945899317041,
+        0.016100042004836723,
+        0.01724600000306964,
+        0.016661500005284324,
+        0.017064291998394765
+      ],
+      "encode_seconds_median": 0.017064291998394765,
+      "encode_mib_s": 9.001013601495458,
+      "training_cost_seconds_annotation": 10.313948875002097,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "models/current/v5/controls/specialized-greedy.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_local_greedy",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.010217082992312498,
+        0.007300541998120025,
+        0.007586916006403044,
+        0.007428874989273027,
+        0.007514750002883375
+      ],
+      "encode_seconds_median": 0.007514750002883375,
+      "encode_mib_s": 6.833180062260954,
+      "training_cost_seconds_annotation": 9.952274625000427,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "models/current/v5/controls/specialized-greedy.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_local_greedy",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.01859287499974016,
+        0.01658612499886658,
+        0.01692441701015923,
+        0.016434082994237542,
+        0.016937458000029437
+      ],
+      "encode_seconds_median": 0.01692441701015923,
+      "encode_mib_s": 9.075404150420205,
+      "training_cost_seconds_annotation": 9.952274625000427,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-no-update.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_fixed_initial_policy",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.010066208997159265,
+        0.007142250004108064,
+        0.0076436250092228875,
+        0.007333916000789031,
+        0.0074406250059837475
+      ],
+      "encode_seconds_median": 0.0074406250059837475,
+      "encode_mib_s": 6.901253570940985,
+      "training_cost_seconds_annotation": 64.26551166600257,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-no-update.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_fixed_initial_policy",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.018515000003390014,
+        0.01648162500350736,
+        0.016959708998911083,
+        0.016570167004829273,
+        0.0167280000023311
+      ],
+      "encode_seconds_median": 0.0167280000023311,
+      "encode_mib_s": 9.181965827118443,
+      "training_cost_seconds_annotation": 64.26551166600257,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-search-control.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_equal_budget_search",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.009883417005767114,
+        0.007438250002451241,
+        0.0072191250073956326,
+        0.0077236670040292665,
+        0.007613540990860201
+      ],
+      "encode_seconds_median": 0.007613540990860201,
+      "encode_mib_s": 6.744514799910006,
+      "training_cost_seconds_annotation": 64.26551166600257,
+      "training_cost_scope": "full no-update matched-budget search job; stored sub-rollout zero is not total training cost"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-search-control.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_equal_budget_search",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.018766582987154834,
+        0.016456124998512678,
+        0.01606479100883007,
+        0.01697454099485185,
+        0.016914583000470884
+      ],
+      "encode_seconds_median": 0.016914583000470884,
+      "encode_mib_s": 9.080680521249946,
+      "training_cost_seconds_annotation": 64.26551166600257,
+      "training_cost_scope": "full no-update matched-budget search job; stored sub-rollout zero is not total training cost"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/specialized-v5-critic-17.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_crossfit_critic",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.009678792004706338,
+        0.007074459004797973,
+        0.007153708997066133,
+        0.007354082990786992,
+        0.007247917004860938
+      ],
+      "encode_seconds_median": 0.007247917004860938,
+      "encode_mib_s": 7.084744466325929,
+      "training_cost_seconds_annotation": 63.62005466698611,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/specialized-v5-critic-17.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_crossfit_critic",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.017983041994739324,
+        0.016386417002649978,
+        0.016419209001469426,
+        0.016587125006481074,
+        0.01695437500893604
+      ],
+      "encode_seconds_median": 0.016587125006481074,
+      "encode_mib_s": 9.259948563565235,
+      "training_cost_seconds_annotation": 63.62005466698611,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-trajectory-17.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.009896167000988498,
+        0.0071995000034803525,
+        0.007483583001885563,
+        0.007373583008302376,
+        0.00723308400483802
+      ],
+      "encode_seconds_median": 0.007373583008302376,
+      "encode_mib_s": 6.964001060917111,
+      "training_cost_seconds_annotation": 64.87578124999709,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-trajectory-17.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 17,
+      "encode_seconds_repeats": [
+        0.01857520898920484,
+        0.01655391600797884,
+        0.016353167011402547,
+        0.01654933299869299,
+        0.016212207992793992
+      ],
+      "encode_seconds_median": 0.01654933299869299,
+      "encode_mib_s": 9.281094554661019,
+      "training_cost_seconds_annotation": 64.87578124999709,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/specialized-v5-critic-29.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_crossfit_critic",
+      "seed": 29,
+      "encode_seconds_repeats": [
+        0.010002416995121166,
+        0.007430709010805003,
+        0.007218541999463923,
+        0.0072206670010928065,
+        0.007139041990740225
+      ],
+      "encode_seconds_median": 0.0072206670010928065,
+      "encode_mib_s": 7.111481513384657,
+      "training_cost_seconds_annotation": 64.11528737501067,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/specialized-v5-critic-29.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_crossfit_critic",
+      "seed": 29,
+      "encode_seconds_repeats": [
+        0.018771167000522837,
+        0.016362291004043072,
+        0.016715207995730452,
+        0.016461749997688457,
+        0.016152249998413026
+      ],
+      "encode_seconds_median": 0.016461749997688457,
+      "encode_mib_s": 9.330473637311295,
+      "training_cost_seconds_annotation": 64.11528737501067,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-trajectory-29.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 29,
+      "encode_seconds_repeats": [
+        0.010204417005297728,
+        0.00748070799454581,
+        0.007134667001082562,
+        0.007264833999215625,
+        0.007364874996710569
+      ],
+      "encode_seconds_median": 0.007364874996710569,
+      "encode_mib_s": 6.97223509095712,
+      "training_cost_seconds_annotation": 66.25411158299539,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-trajectory-29.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 29,
+      "encode_seconds_repeats": [
+        0.01899833299103193,
+        0.016515709008672275,
+        0.016543583988095634,
+        0.01657320799131412,
+        0.016541417004191317
+      ],
+      "encode_seconds_median": 0.016543583988095634,
+      "encode_mib_s": 9.284319799625361,
+      "training_cost_seconds_annotation": 66.25411158299539,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/specialized-v5-critic-43.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_crossfit_critic",
+      "seed": 43,
+      "encode_seconds_repeats": [
+        0.01042020799650345,
+        0.0072071250033332035,
+        0.007267082997714169,
+        0.007466708004358225,
+        0.007095583001500927
+      ],
+      "encode_seconds_median": 0.007267082997714169,
+      "encode_mib_s": 7.066059367799975,
+      "training_cost_seconds_annotation": 63.65161566599272,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_v5_critic1024/checkpoints/specialized-v5-critic-43.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_crossfit_critic",
+      "seed": 43,
+      "encode_seconds_repeats": [
+        0.01910154199867975,
+        0.01677233399823308,
+        0.01665508399310056,
+        0.0166846250067465,
+        0.016548915999010205
+      ],
+      "encode_seconds_median": 0.0166846250067465,
+      "encode_mib_s": 9.205836170446398,
+      "training_cost_seconds_annotation": 63.65161566599272,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-trajectory-43.json",
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 43,
+      "encode_seconds_repeats": [
+        0.01028491699253209,
+        0.007714457999099977,
+        0.007453375001205131,
+        0.007927374987048097,
+        0.007199041996500455
+      ],
+      "encode_seconds_median": 0.007714457999099977,
+      "encode_mib_s": 6.656286144609114,
+      "training_cost_seconds_annotation": 64.2248188329977,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    },
+    {
+      "checkpoint": "results/current_rl_1024/checkpoints/specialized-v5-trajectory-43.json",
+      "scenario": "specialized",
+      "suite": "synthetic_stress_test",
+      "method": "v5_trajectory_rloo",
+      "seed": 43,
+      "encode_seconds_repeats": [
+        0.01903995798784308,
+        0.017310499999439344,
+        0.016493415998411365,
+        0.017479166010161862,
+        0.01663791699684225
+      ],
+      "encode_seconds_median": 0.017310499999439344,
+      "encode_mib_s": 8.872991790093648,
+      "training_cost_seconds_annotation": 64.2248188329977,
+      "training_cost_scope": "saved trainer timing; frozen parents retain original recorded training time"
+    }
+  ]
+}

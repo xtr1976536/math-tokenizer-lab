@@ -1,0 +1,140 @@
+[
+  {
+    "scenario": "broad",
+    "extras": 0,
+    "stats": {
+      "utility": 0.34963585942425446,
+      "document_macro_tokens_per_byte": 0.3482345105336233,
+      "tokens_per_formula": 17.678421494542402,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 4.495242334000068
+  },
+  {
+    "scenario": "broad",
+    "extras": 64,
+    "stats": {
+      "utility": 0.34951773160751404,
+      "document_macro_tokens_per_byte": 0.3481163827168829,
+      "tokens_per_formula": 17.6607892527288,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "retained_subtrees": 5,
+    "train_seconds": 4.645012084001792
+  },
+  {
+    "scenario": "broad",
+    "extras": 128,
+    "stats": {
+      "utility": 0.3494063856328158,
+      "document_macro_tokens_per_byte": 0.34800503674218464,
+      "tokens_per_formula": 17.65491183879093,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "retained_subtrees": 9,
+    "train_seconds": 4.653062501005479
+  },
+  {
+    "scenario": "broad",
+    "extras": 256,
+    "stats": {
+      "utility": 0.34897038828783966,
+      "document_macro_tokens_per_byte": 0.3475690393972085,
+      "tokens_per_formula": 17.586062132661628,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9623299616323683,
+      "tree_crossing": 0.0
+    },
+    "retained_subtrees": 17,
+    "train_seconds": 4.655113793007331
+  },
+  {
+    "scenario": "broad",
+    "extras": 512,
+    "stats": {
+      "utility": 0.34732998213936406,
+      "document_macro_tokens_per_byte": 0.3459390971482795,
+      "tokens_per_formula": 17.445843828715365,
+      "command_integrity": 0.9981916817359855,
+      "number_integrity": 0.9626787582839205,
+      "tree_crossing": 0.0
+    },
+    "retained_subtrees": 43,
+    "train_seconds": 4.653578293000464
+  },
+  {
+    "scenario": "specialized",
+    "extras": 0,
+    "stats": {
+      "utility": 0.23076883398838488,
+      "document_macro_tokens_per_byte": 0.23002693501311677,
+      "tokens_per_formula": 20.166324435318277,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "train_seconds": 4.4556127920077415
+  },
+  {
+    "scenario": "specialized",
+    "extras": 64,
+    "stats": {
+      "utility": 0.22811741557851276,
+      "document_macro_tokens_per_byte": 0.22737551660324465,
+      "tokens_per_formula": 20.098562628336754,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "retained_subtrees": 4,
+    "train_seconds": 4.629377917008242
+  },
+  {
+    "scenario": "specialized",
+    "extras": 128,
+    "stats": {
+      "utility": 0.22783317109320003,
+      "document_macro_tokens_per_byte": 0.22709127211793192,
+      "tokens_per_formula": 20.026694045174537,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "retained_subtrees": 8,
+    "train_seconds": 4.634032751011546
+  },
+  {
+    "scenario": "specialized",
+    "extras": 256,
+    "stats": {
+      "utility": 0.22763312234168429,
+      "document_macro_tokens_per_byte": 0.22689122336641618,
+      "tokens_per_formula": 20.010266940451746,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "retained_subtrees": 22,
+    "train_seconds": 4.63856170901272
+  },
+  {
+    "scenario": "specialized",
+    "extras": 512,
+    "stats": {
+      "utility": 0.2271132798826018,
+      "document_macro_tokens_per_byte": 0.2263713809073337,
+      "tokens_per_formula": 19.93839835728953,
+      "command_integrity": 0.9992719330178377,
+      "number_integrity": 0.9789103690685413,
+      "tree_crossing": 0.0
+    },
+    "retained_subtrees": 37,
+    "train_seconds": 4.634416709013749
+  }
+]

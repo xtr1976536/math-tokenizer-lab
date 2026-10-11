@@ -106,6 +106,52 @@ int mt_decode(const uint8_t *data,int n,const int32_t *children,const int32_t *t
     free(longest);free(best);free(choiceend);free(choiceid);free(ends);free(ids);free(logits);free(lnlength);free(crossmask);return count;
 }
 
+/* AST-v4 exact shortest-path specialization. Compatibility accumulates during
+ * actual trie traversal; no n*maxlen crossing table or policy-feature passes.
+ * Ties keep the earliest matching end, as in mt_decode(mode=0). */
+int mt_shortest(const uint8_t *data,int n,const int32_t *children,const int32_t *terminal,
+                int maxlen,const int32_t *spans,int ns,int hard,
+                const uint8_t *allowed,int32_t *output) {
+    if(n==0)return 0;
+    int *maxend=(int*)calloc((size_t)n+1,sizeof(int));
+    int *minstart=(int*)malloc(((size_t)n+1)*sizeof(int));
+    int *best=(int*)malloc(((size_t)n+1)*sizeof(int));
+    int *choiceend=(int*)malloc((size_t)n*sizeof(int));
+    int *choiceid=(int*)malloc((size_t)n*sizeof(int));
+    if(!maxend||!minstart||!best||!choiceend||!choiceid){
+        free(maxend);free(minstart);free(best);free(choiceend);free(choiceid);return -1;
+    }
+    for(int i=0;i<=n;i++)minstart[i]=n+1;
+    if(hard)for(int k=0;k<ns;k++){
+        int a=spans[2*k],b=spans[2*k+1];
+        if(a>=0 && b<=n && a<b){
+            if(b>maxend[a])maxend[a]=b;if(a<minstart[b])minstart[b]=a;
+        }
+    }
+    best[n]=0;
+    for(int a=n-1;a>=0;a--){
+        best[a]=n+1;choiceend[a]=-1;
+        if(!allowed[a])continue;
+        int node=0,mx=0,mn=n+1;
+        for(int b=a;b<n && b-a<maxlen;b++){
+            node=children[(size_t)node*256+data[b]];if(node<0)break;
+            int end=b+1,id=terminal[node];
+            int crossing=mx>end || mn<a;
+            if(id>=0 && allowed[end] && !crossing && best[end]<n+1){
+                int value=1+best[end];
+                if(value<best[a]){best[a]=value;choiceend[a]=end;choiceid[a]=id;}
+            }
+            if(maxend[end]>mx)mx=maxend[end];if(minstart[end]<mn)mn=minstart[end];
+        }
+    }
+    int count=0,pos=0;
+    while(pos<n){
+        if(choiceend[pos]<0){count=-2;break;}
+        output[count++]=choiceid[pos];pos=choiceend[pos];
+    }
+    free(maxend);free(minstart);free(best);free(choiceend);free(choiceid);return count;
+}
+
 /* Single traversal for all matching substring token occurrences. */
 int mt_matches(const uint8_t *data,int n,const int32_t *children,const int32_t *terminal,
                int maxlen,int32_t *starts,int32_t *ends,int32_t *ids,int cap){

@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "8a72308cc2ce0c453a6150030e9bef8e9f51f25e7ddab22fd61526fcf048db7f",
+  "selection_sha256": "4a546454440615d20d5d1045f7d8cca74e3d5d99d81d3377df84762ca85c7098",
+  "records": 22191,
+  "method_seed_suite_runs": 12,
+  "checkpoints": {
+    "specialized-ast-v4-selected.json": "cd644828b488c99a9d7c99c07c95c35b89360ae70025fc5fd46ee505b87ee52b",
+    "broad-ast-v4-selected.json": "fca7b0bcb58c5c1fefa3df76b89b2e6cf38f4eb00fd4721dae7cf3a588230214"
+  }
+}

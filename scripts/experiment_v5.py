@@ -109,15 +109,8 @@ def main():
    for seed in (17,29,43):
     for control,cseed in [('frequency',17),('rl_length_only',17),('reward_greedy',17),('hf_bpe_fulltrain',0),('hf_bpe_matched_fit',0)]:
      pairwise[f'{scenario}/{suite}/rl-vs-{control}/{seed}']=bootstrap_difference(buckets[(scenario,suite,'rl_composite',seed)],buckets[(scenario,suite,control,cseed)])
- # Frozen historical models are references only: trained on prior v2 data,
- # not reselected using the fresh benchmark. They cannot be fair-trained peers.
- from math_tokenizer.native_v3 import NativeTokenizer
- from math_tokenizer.constrained_v4 import ConstrainedTokenizer
- if a.capacity in (512,1024):
-  legacy=[('legacy_v3_rl',NativeTokenizer.load(ROOT/f'results/v3_{a.capacity}_release/models/rl_bpe_v3-17.json')),
-          ('legacy_v4_masked_rl',ConstrainedTokenizer.load(ROOT/f'results/v4_{a.capacity}/models/rl_v4-17.json'))]
-  for name,model in legacy:
-   for suite in ('fresh_paper_test','extreme_domain_test'):evaluate(model,name,17,'prior_data_reference',suite)
+ # Superseded trained models were intentionally retired. Current experiments
+ # use only AST-v4/v5; historical frozen-reference results remain in Git/results.
  # Pretrained byte reference same test strings, never fair vocabulary comparison.
  for name in ('cl100k_base','o200k_base'):
   model=TikToken(name)

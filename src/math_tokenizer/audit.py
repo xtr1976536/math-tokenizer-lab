@@ -4,6 +4,7 @@ import hashlib,json
 from pathlib import Path
 from .corpus import ROOT,canonical,validate
 from .evaluate import read_jsonl,file_hash
+from .checkpoints import verify_saved_hash
 
 def audit_corpus():
     rows=read_jsonl(ROOT/'data/curated/corpus.jsonl');summary=json.loads((ROOT/'data/curated/summary.json').read_text())
@@ -53,9 +54,8 @@ def audit_results(out):
         elif m['comparison_group']=='pretrained_reference':
             assert m['capacity_budget'] is None
     modeldir=out/'models'
-    if modeldir.exists():
-        for filename,digest in manifest['model_hashes'].items():assert file_hash(modeldir/filename)==digest
-    return {'passed':True,'checks':['raw_result_reaggregation','same_trained_capacity_budget','fixed_tokenizers_separate_reference_group','timing_five_repeats','model_hashes']}
+    states=Counter(verify_saved_hash(modeldir/filename,digest) for filename,digest in manifest['model_hashes'].items())
+    return {'passed':True,'checkpoint_evidence_states':dict(states),'checks':['raw_result_reaggregation','same_trained_capacity_budget','fixed_tokenizers_separate_reference_group','timing_five_repeats','actual_or_relocated_hashes_verified_retired_hashes_provenance_only']}
 
 def main():
     import argparse

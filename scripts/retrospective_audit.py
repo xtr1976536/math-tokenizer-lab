@@ -37,7 +37,13 @@ def audit_run(name):
 
 
 def policy_profile(cap):
- path=ROOT/f'results/v4_{cap}/models/rl_v4-17.json';d=json.loads(path.read_text())
+ path=ROOT/f'results/v4_{cap}/models/rl_v4-17.json'
+ if not path.exists():
+  from math_tokenizer.checkpoints import retirement_entry
+  assert retirement_entry(path) is not None
+  previous=json.loads((ROOT/'results/retrospective/evidence.json').read_text())['v4_learning_vs_initial_profile'][str(cap)]
+  return dict(previous,profile_recomputed_this_run=False,profile_origin='preserved pre-retirement audit; retired trained policy was not restored or rerun')
+ d=json.loads(path.read_text())
  from math_tokenizer.rl_v4 import MaskedPolicy,MaskedConfig
  from math_tokenizer.constrained_v4 import ConstrainedTokenizer
  log=d['training_log'][-1];config=MaskedConfig(**log['config']);trainer=MaskedPolicy([bytes.fromhex(x) for x in d['vocab_hex']],config)

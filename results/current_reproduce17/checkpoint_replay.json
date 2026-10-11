@@ -1,0 +1,61 @@
+{
+  "replayed": [
+    {
+      "scenario": "broad",
+      "family": "ast_v4",
+      "suite": "fresh_paper_test",
+      "formulas": 4375,
+      "same_counts_losslessness_and_official_export": true
+    },
+    {
+      "scenario": "broad",
+      "family": "ast_v4",
+      "suite": "synthetic_stress_test",
+      "formulas": 693,
+      "same_counts_losslessness_and_official_export": true
+    },
+    {
+      "scenario": "broad",
+      "family": "v5",
+      "suite": "fresh_paper_test",
+      "formulas": 4375,
+      "same_counts_losslessness_and_official_export": true
+    },
+    {
+      "scenario": "broad",
+      "family": "v5",
+      "suite": "synthetic_stress_test",
+      "formulas": 693,
+      "same_counts_losslessness_and_official_export": true
+    },
+    {
+      "scenario": "specialized",
+      "family": "ast_v4",
+      "suite": "extreme_domain_test",
+      "formulas": 1636,
+      "same_counts_losslessness_and_official_export": true
+    },
+    {
+      "scenario": "specialized",
+      "family": "ast_v4",
+      "suite": "synthetic_stress_test",
+      "formulas": 693,
+      "same_counts_losslessness_and_official_export": true
+    },
+    {
+      "scenario": "specialized",
+      "family": "v5",
+      "suite": "extreme_domain_test",
+      "formulas": 1636,
+      "same_counts_losslessness_and_official_export": true
+    },
+    {
+      "scenario": "specialized",
+      "family": "v5",
+      "suite": "synthetic_stress_test",
+      "formulas": 693,
+      "same_counts_losslessness_and_official_export": true
+    }
+  ],
+  "all_equal": true
+}

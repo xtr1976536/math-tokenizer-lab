@@ -13,15 +13,20 @@ def test_frozen_corpus_sha():
 
 
 def test_native_policy_equivalence_across_real_formula_shapes():
+    # Check the shared C scorer against an independent Python graph without
+    # restoring retired trained models. This is a decoder contract fixture.
+    from types import SimpleNamespace
+    vocab=[bytes([b]) for b in range(256)]+[b'\\alpha',b'\\frac',b'x+y',b'+x',b'(x)']
+    base=SimpleNamespace(vocab=vocab,capacity=len(vocab))
     records=read_jsonl(ROOT/'data/releases/v2/curated/splits/dev.jsonl')
     samples=records[::17]
-    for cap in (512,1024):
-        for arm in ('byte','ast'):
-            slow=LatticeTokenizer.load(ROOT/f'results/v2_release{cap}/models/rl_{arm}_selected-17.json')
-            fast=NativeTokenizer.from_v2(slow)
-            for r in samples:
-                assert fast.encode(r['latex'])==slow.encode(r['latex'])
-                assert fast.decode(fast.encode(r['latex']))==r['latex']
+    for arm in ('byte','ast'):
+        slow=LatticeTokenizer(base,arm=='ast','policy_map')
+        slow.theta[:]=[.4,.1,.2,-.1,0,.1,.2]
+        fast=NativeTokenizer.from_v2(slow)
+        for r in samples:
+            assert fast.encode(r['latex'])==slow.encode(r['latex'])
+            assert fast.decode(fast.encode(r['latex']))==r['latex']
 
 
 def test_native_soft_structure_penalty_respects_cost_definition():
