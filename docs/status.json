@@ -39,7 +39,8 @@
     "v4_train_inference_identical_tree_atom_masks",
     "v4_exact_expected_on_policy_gradient",
     "v4_512_1024_crossing_zero",
-    "v4_matched_initial_and_mask_only_controls"
+    "v4_matched_initial_and_mask_only_controls",
+    "v4_125_tests_full_checkpoint_replay_and_clean_git_native_compile"
   ],
   "not_completed": [
     "per_formula_expert_review",

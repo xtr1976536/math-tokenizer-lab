@@ -1,0 +1,25 @@
+{
+  "source_commit": "48df5ff",
+  "environment": "fresh GitHub clone, native_v4 compiled from cloned source, reused separately installed v2 dependency venv on same macOS host",
+  "tests_passed": 125,
+  "training_reexecuted": false,
+  "native_binary_copied": false,
+  "capacities": {
+    "512": {
+      "replay_runs": 9,
+      "formulas_per_run": 3959,
+      "counts_lossless_match": true,
+      "checkpoint_sample_replay": 72,
+      "audit_passed": true,
+      "source_hash": "13cd85286cde48ae9187282ab88a628fa84ee6823bfb83f02e84c4ddbb1ce1da"
+    },
+    "1024": {
+      "replay_runs": 9,
+      "formulas_per_run": 3959,
+      "counts_lossless_match": true,
+      "checkpoint_sample_replay": 72,
+      "audit_passed": true,
+      "source_hash": "13cd85286cde48ae9187282ab88a628fa84ee6823bfb83f02e84c4ddbb1ce1da"
+    }
+  }
+}

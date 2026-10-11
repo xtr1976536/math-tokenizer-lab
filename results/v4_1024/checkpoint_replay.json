@@ -21,6 +21,12 @@
       "counts_lossless_equal": true
     },
     {
+      "method": "masked_matched_initial_policy",
+      "seed": 0,
+      "formulas": 3959,
+      "counts_lossless_equal": true
+    },
+    {
       "method": "rl_v4",
       "seed": 17,
       "formulas": 3959,
