@@ -36,3 +36,5 @@ assert rl.decode(rl.encode(text)) == text
 模型训练选择保存protocol.json、selection.json、dev_ablations.json，实际run的候选值优先于今后脚本默认值。RL质量和编码速度变化要与atomic_byte_shortest_control及exact-native对照读取：后者不改变旧策略的输出，前者不使用RL。
 
 独立重放新模型的测试结果可以直接比较每公式token IDs/数量、exact decode、结构span，速度有自然波动。C binary存在.native_cache，未上传Git；源hash记录在每个模型。语法前端加速版本未改变v2语料标签或复杂度字段。
+
+2026-10-11已从GitHub全新clone执行113项测试，native C在新checkout重新编译；两预算各11个最终模型在全部3959条test重放，token数量和exact decode全部吻合，并通过六轮审计。证据`results/v3_clean_clone_verification.json`。这次是保存checkpoint的全面重放，没有在新checkout再次训练所有候选，不能称完整重训练复现。

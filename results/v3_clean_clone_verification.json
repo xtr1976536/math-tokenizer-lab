@@ -1,0 +1,25 @@
+{
+  "source_commit": "3445c2c",
+  "environment": "Fresh GitHub checkout with separately installed v2 dependency environment, same macOS host; native library compiled from cloned C source, no binary copied",
+  "tests_passed": 113,
+  "training_reexecuted": false,
+  "verification": "full selected native checkpoint test replay + all-checkpoint stratified replay + six-round audit",
+  "capacities": {
+    "512": {
+      "full_replay_runs": 11,
+      "formulas_per_run": 3959,
+      "all_count_and_lossless_checks_equal": true,
+      "six_round_audit_passed": true,
+      "native_source_sha256": "24d54c0dcaaee8ae71f52e53f5cd89384400dca186ceb5a1b6dc6ee5a9f7428f",
+      "corpus_sha256": "4ffe6202753593a295c981d665c60a47294a11d012acb579cb48dd68c3768733"
+    },
+    "1024": {
+      "full_replay_runs": 11,
+      "formulas_per_run": 3959,
+      "all_count_and_lossless_checks_equal": true,
+      "six_round_audit_passed": true,
+      "native_source_sha256": "24d54c0dcaaee8ae71f52e53f5cd89384400dca186ceb5a1b6dc6ee5a9f7428f",
+      "corpus_sha256": "4ffe6202753593a295c981d665c60a47294a11d012acb579cb48dd68c3768733"
+    }
+  }
+}

@@ -32,7 +32,9 @@
     "v3_native_rl_policy_inference",
     "v3_full_corpus_parser_exact_differential",
     "v3_512_1024_three_seed_experiments",
-    "v3_no_corpus_or_baseline_changes"
+    "v3_no_corpus_or_baseline_changes",
+    "v3_113_tests_and_six_round_audit",
+    "v3_clean_github_native_build_and_full_selected_model_replay"
   ],
   "not_completed": [
     "per_formula_expert_review",
