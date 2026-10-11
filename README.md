@@ -1,3 +1,12 @@
+# 全实验回溯与分类排名（2026-10-11，研究暂停）
+
+本轮仅审计已有结果。9个正式目录、216条方法/种子/场景记录、563,399条逐公式结果独立核对通过。速度/少手工规则以v5离线词表方案领先，硬结构以v4 AST领先，旧测试压缩以v3原子shortest及RL分支领先；RL尚未稳定胜过同奖励greedy或同词表shortest。
+
+- 分类、条件排名、优劣及证据边界：[`docs/all_model_classification_rankings.md`](docs/all_model_classification_rankings.md)。
+- 全版本数值附录：[`docs/all_model_review_numeric_appendix.md`](docs/all_model_review_numeric_appendix.md)。
+- 逐领域/复杂度重算及哈希：[`results/retrospective/all_model_inventory.json`](results/retrospective/all_model_inventory.json)。
+- 只读复核：`.venv/bin/python scripts/all_model_review.py`（仅写审计JSON/附录，不运行分词器）。
+
 # 新一轮：RL词表、扩充语料与未见泛化（2026-10-11）
 
 v5包含 **53,858条自然公式**（新增25,511条、119篇固定许可arXiv稿件，117篇有接受公式），13领域、两档复杂度。旧v2不改。新paper holdout4375条、真正leave-domain-out1636条、独立synthetic stress693条，在算法dev选择前封存。
