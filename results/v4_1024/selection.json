@@ -1,0 +1,15 @@
+{
+  "ast_atoms": 256,
+  "rl_atoms": 256,
+  "rl_config": "expected24_prior",
+  "rl_mode": "policy_map",
+  "dev_scores": {
+    "ast": {
+      "macro_tokens_per_byte": 0.26648878886350363,
+      "tokens_per_formula": 14.133190883190883,
+      "command_integrity": 0.9993812646949635
+    },
+    "rl_macro_tokens_per_byte": 0.2672032025681046
+  },
+  "test_used_for_selection": false
+}

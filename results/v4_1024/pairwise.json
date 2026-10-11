@@ -1,0 +1,162 @@
+{
+  "rl_v4-vs-rl_v3/17": {
+    "delta_tokens_per_formula": 1.0103561505430665,
+    "ci95_group_bootstrap": [
+      0.7412686453995859,
+      1.4165957838709884
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-masked_zero_policy/17": {
+    "delta_tokens_per_formula": -4.396564789088154,
+    "ci95_group_bootstrap": [
+      -5.452924875335597,
+      -3.6742098781267
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-masked_shortest_control/17": {
+    "delta_tokens_per_formula": 0.023490780500126294,
+    "ci95_group_bootstrap": [
+      0.01450202892757987,
+      0.03495470305211738
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-v3_mask_only_control/17": {
+    "delta_tokens_per_formula": -2.1833796413235667,
+    "ci95_group_bootstrap": [
+      -3.2628533210456103,
+      -1.5240756617411586
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-rl_v3/29": {
+    "delta_tokens_per_formula": 1.0106087395807022,
+    "ci95_group_bootstrap": [
+      0.7415322301522219,
+      1.4165957838709884
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-masked_zero_policy/29": {
+    "delta_tokens_per_formula": -4.396564789088154,
+    "ci95_group_bootstrap": [
+      -5.452924875335597,
+      -3.6742098781267
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-masked_shortest_control/29": {
+    "delta_tokens_per_formula": 0.023490780500126294,
+    "ci95_group_bootstrap": [
+      0.01450202892757987,
+      0.03495470305211738
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-v3_mask_only_control/29": {
+    "delta_tokens_per_formula": -2.183127052285931,
+    "ci95_group_bootstrap": [
+      -3.2624249379173147,
+      -1.5238702688614452
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-rl_v3/43": {
+    "delta_tokens_per_formula": 1.0093457943925233,
+    "ci95_group_bootstrap": [
+      0.7403542883157218,
+      1.4144905457848238
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-masked_zero_policy/43": {
+    "delta_tokens_per_formula": -4.396564789088154,
+    "ci95_group_bootstrap": [
+      -5.452924875335597,
+      -3.6742098781267
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-masked_shortest_control/43": {
+    "delta_tokens_per_formula": 0.023490780500126294,
+    "ci95_group_bootstrap": [
+      0.01450202892757987,
+      0.03495470305211738
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-v3_mask_only_control/43": {
+    "delta_tokens_per_formula": -2.1833796413235667,
+    "ci95_group_bootstrap": [
+      -3.2628533210456103,
+      -1.5240756617411586
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "ast_v4-vs-v3": {
+    "delta_tokens_per_formula": -0.052538519828239455,
+    "ci95_group_bootstrap": [
+      -0.278184785615491,
+      0.1360970283622688
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-matched_initial/17": {
+    "delta_tokens_per_formula": 0.002525890376357666,
+    "ci95_group_bootstrap": [
+      0.0,
+      0.007503851202215957
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-matched_initial/29": {
+    "delta_tokens_per_formula": 0.002525890376357666,
+    "ci95_group_bootstrap": [
+      0.0,
+      0.007503851202215957
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  },
+  "rl_v4-vs-matched_initial/43": {
+    "delta_tokens_per_formula": 0.002525890376357666,
+    "ci95_group_bootstrap": [
+      0.0,
+      0.007503851202215957
+    ],
+    "groups": 70,
+    "resamples": 1000,
+    "interpretation": "A minus B; negative favors A; conditional on this training seed/corpus"
+  }
+}

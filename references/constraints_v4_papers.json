@@ -1,0 +1,6 @@
+[
+ {"title":"A Closer Look at Invalid Action Masking in Policy Gradient Algorithms","authors":["Shengyi Huang","Santiago Ontañón"],"venue":"FLAIRS","year":2022,"arxiv":"2006.14171v3","url":"https://arxiv.org/abs/2006.14171","applies_to":"legal action masking for policy gradient; tokenizer adaptation tested locally"},
+ {"title":"Expected Policy Gradients","authors":["Kamil Ciosek","Shimon Whiteson"],"venue":"AAAI","year":2018,"arxiv":"1706.05374v6","url":"https://arxiv.org/abs/1706.05374","applies_to":"integrating over discrete policy actions; full finite-DAG expectation is our adaptation"},
+ {"title":"You Can Learn Tokenization End-to-End with Reinforcement Learning","authors":["Sam Dauncey","Roger Wattenhofer"],"venue":"ICML","year":2026,"arxiv":"2602.13940v4","url":"https://arxiv.org/abs/2602.13940","applies_to":"retained score-function tokenizer learning; no downstream LM early-exit replication"},
+ {"title":"Language Model is Suitable for Correction of Handwritten Mathematical Expressions Recognition","authors":["Zui Chen","Jiaqi Han","Chaofan Yang","Yi Zhou"],"venue":"EMNLP","year":2023,"doi":"10.18653/v1/2023.emnlp-main.247","url":"https://aclanthology.org/2023.emnlp-main.247/","applies_to":"explicit structural symbols and minimal symbol semantics; HMER scope distinguished"}
+]

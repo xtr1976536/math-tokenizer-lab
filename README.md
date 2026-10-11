@@ -1,3 +1,18 @@
+# 第四轮：硬约束与RL主线（2026-10-11）
+
+当前保留两类方案：v3压缩版，以及v4严格结构RL版。数学语料与划分仍冻结，成熟基准未重训。
+
+v4在训练/推断统一屏蔽部分跨树动作，词表覆盖的LaTeX命令/UTF8 codepoint不可内部切分；RL策略通过有限DAG上的全期望on-policy梯度真实学习，未使用最短路径标签。crossing降至0，命令完整率约99.5%，但压缩与速度存在代价，不能说全面胜过v3。
+
+- 研究与约束定义：`docs/constraints_v4_research.md`。
+- 完整结果与控制：`docs/constraints_v4_findings.md`。
+- 两预算结果：`results/v4_512/`、`results/v4_1024/`。
+- 模型加载/顺序复现：`docs/constraints_v4_reproduction.md`。
+
+未知命令/codepoint缺词表项时explicit byte escape，原式无损。数学AST和LaTeX CST分开，zero crossing只对识别的源跨度定义成立；不是完整TeX语义正确性保证。RL仍是主线，手工规则只约束合法动作，不替策略选择每条分词。
+
+以下为v3及以前记录：
+
 # 第三轮优化已发布（2026-10-11）
 
 数学语料保持第二版28,347条及全部split不变，成熟基准未重跑。第三轮重点优化AST-BPE与RL-BPE：命令原子词表、受结构约束的DP、原生C推断，以及逐token等价的语法前端加速。

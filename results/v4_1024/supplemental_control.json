@@ -1,0 +1,8 @@
+{
+  "method": "masked_matched_initial_policy",
+  "added_after_selection": true,
+  "affects_selection": false,
+  "purpose": "separate RL update gains from selected initialization prior and frequency table",
+  "initial_length_prior": 1.5,
+  "test_tuning": false
+}

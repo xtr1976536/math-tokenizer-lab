@@ -1,5 +1,5 @@
 {
-  "stage": "third_optimization_fixed_corpus",
+  "stage": "fourth_masked_RL_iteration",
   "date": "2026-10-11",
   "completed": [
     "private_github_repository",
@@ -34,7 +34,12 @@
     "v3_512_1024_three_seed_experiments",
     "v3_no_corpus_or_baseline_changes",
     "v3_113_tests_and_six_round_audit",
-    "v3_clean_github_native_build_and_full_selected_model_replay"
+    "v3_clean_github_native_build_and_full_selected_model_replay",
+    "v4_research_action_masks",
+    "v4_train_inference_identical_tree_atom_masks",
+    "v4_exact_expected_on_policy_gradient",
+    "v4_512_1024_crossing_zero",
+    "v4_matched_initial_and_mask_only_controls"
   ],
   "not_completed": [
     "per_formula_expert_review",
@@ -58,7 +63,10 @@
     "cst_is_semantic_ast",
     "all_rl_ast_improvement_is_caused_by_rl",
     "historical_origin_is_author_attestation",
-    "same_vocab_means_same_compute"
+    "same_vocab_means_same_compute",
+    "zero_tree_crossing_is_RL_discovery",
+    "all_unknown_atoms_are_single_fixed_ID",
+    "v4_compression_or_speed_dominates_v3"
   ],
   "results": {
     "v2_formulas": 28347,

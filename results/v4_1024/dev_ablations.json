@@ -1,0 +1,815 @@
+[
+  {
+    "arm": "ast",
+    "atoms": 128,
+    "config": "shortest",
+    "seed": 0,
+    "stats": {
+      "macro_tokens_per_byte": 0.2640058851541514,
+      "tokens_per_formula": 14.254985754985755,
+      "command_integrity": 0.9664645464670214
+    }
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected12",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26652990232785473,
+      "tokens_per_formula": 14.280982905982906,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 2.081958875001874
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected12",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26652990232785473,
+      "tokens_per_formula": 14.280982905982906,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 2.081958875001874
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.8382108330042684
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.8382108330042684
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_entropy",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26595885493036664,
+      "tokens_per_formula": 14.279202279202279,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.777928957999393
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_entropy",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.777928957999393
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_rare",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.8085687079947093
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_rare",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.8085687079947093
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_prior",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26423379460409896,
+      "tokens_per_formula": 14.272792022792023,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.791625624995504
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_prior",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26423379460409896,
+      "tokens_per_formula": 14.272792022792023,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.791625624995504
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected12",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26652990232785473,
+      "tokens_per_formula": 14.280982905982906,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 2.0818185419993824
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected12",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26652990232785473,
+      "tokens_per_formula": 14.280982905982906,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 2.0818185419993824
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.7826138750024256
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.7826138750024256
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_entropy",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26595885493036664,
+      "tokens_per_formula": 14.279202279202279,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.8130516249948414
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_entropy",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.8130516249948414
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_rare",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.8003994160026195
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_rare",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2659117739510823,
+      "tokens_per_formula": 14.278846153846153,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.8003994160026195
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_prior",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26423379460409896,
+      "tokens_per_formula": 14.272792022792023,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.779734208001173
+  },
+  {
+    "arm": "rl",
+    "atoms": 128,
+    "config": "expected24_prior",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26423379460409896,
+      "tokens_per_formula": 14.272792022792023,
+      "command_integrity": 0.9664645464670214
+    },
+    "policy_train_seconds": 3.779734208001173
+  },
+  {
+    "arm": "ast",
+    "atoms": 192,
+    "config": "shortest",
+    "seed": 0,
+    "stats": {
+      "macro_tokens_per_byte": 0.26583285831409065,
+      "tokens_per_formula": 14.101139601139602,
+      "command_integrity": 0.9982675411458978
+    }
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected12",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26793507383088294,
+      "tokens_per_formula": 14.123575498575498,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 1.9648389590001898
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected12",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2676572188711719,
+      "tokens_per_formula": 14.123219373219372,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 1.9648389590001898
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.791208832997654
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.791208832997654
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_entropy",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.7514277919981396
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_entropy",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.7514277919981396
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_rare",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.7553363340048236
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_rare",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.7553363340048236
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_prior",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26660181112342207,
+      "tokens_per_formula": 14.120726495726496,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 4.033322957999189
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_prior",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26655473014413766,
+      "tokens_per_formula": 14.12037037037037,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 4.033322957999189
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected12",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26793507383088294,
+      "tokens_per_formula": 14.123575498575498,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 2.036167915997794
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected12",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26793507383088294,
+      "tokens_per_formula": 14.123575498575498,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 2.036167915997794
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.8069970829965314
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.8069970829965314
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_entropy",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.8825926249992335
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_entropy",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.8825926249992335
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_rare",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.780952624998463
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_rare",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26717285852091016,
+      "tokens_per_formula": 14.122507122507123,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.780952624998463
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_prior",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26660181112342207,
+      "tokens_per_formula": 14.120726495726496,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.7819702080014395
+  },
+  {
+    "arm": "rl",
+    "atoms": 192,
+    "config": "expected24_prior",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26655473014413766,
+      "tokens_per_formula": 14.12037037037037,
+      "command_integrity": 0.9982675411458978
+    },
+    "policy_train_seconds": 3.7819702080014395
+  },
+  {
+    "arm": "ast",
+    "atoms": 256,
+    "config": "shortest",
+    "seed": 0,
+    "stats": {
+      "macro_tokens_per_byte": 0.26648878886350363,
+      "tokens_per_formula": 14.133190883190883,
+      "command_integrity": 0.9993812646949635
+    }
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected12",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2685835462548498,
+      "tokens_per_formula": 14.154558404558404,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 1.9402769160005846
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected12",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.26830569129513876,
+      "tokens_per_formula": 14.154202279202279,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 1.9402769160005846
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2678213309448771,
+      "tokens_per_formula": 14.153490028490028,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.790116541000316
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.267680088007024,
+      "tokens_per_formula": 14.153133903133902,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.790116541000316
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_entropy",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2678213309448771,
+      "tokens_per_formula": 14.153490028490028,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.7391207499968004
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_entropy",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2678213309448771,
+      "tokens_per_formula": 14.153490028490028,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.7391207499968004
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_rare",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2678213309448771,
+      "tokens_per_formula": 14.153490028490028,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.7898331670003245
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_rare",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.267680088007024,
+      "tokens_per_formula": 14.153133903133902,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.7898331670003245
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_prior",
+    "mode": "greedy",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2672032025681046,
+      "tokens_per_formula": 14.151353276353277,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.761974790999375
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_prior",
+    "mode": "policy_map",
+    "seed": 17,
+    "stats": {
+      "macro_tokens_per_byte": 0.2672032025681046,
+      "tokens_per_formula": 14.151353276353277,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.761974790999375
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected12",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2685835462548498,
+      "tokens_per_formula": 14.154558404558404,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 1.9653981250012293
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected12",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26830569129513876,
+      "tokens_per_formula": 14.154202279202279,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 1.9653981250012293
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2678213309448771,
+      "tokens_per_formula": 14.153490028490028,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.713343999996141
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2675466301129895,
+      "tokens_per_formula": 14.152777777777779,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.713343999996141
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_entropy",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2678213309448771,
+      "tokens_per_formula": 14.153490028490028,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.704948250000598
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_entropy",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2678213309448771,
+      "tokens_per_formula": 14.153490028490028,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.704948250000598
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_rare",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2678213309448771,
+      "tokens_per_formula": 14.153490028490028,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.771655999997165
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_rare",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2675466301129895,
+      "tokens_per_formula": 14.152777777777779,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.771655999997165
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_prior",
+    "mode": "greedy",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.26725028354738894,
+      "tokens_per_formula": 14.151709401709402,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.814519499996095
+  },
+  {
+    "arm": "rl",
+    "atoms": 256,
+    "config": "expected24_prior",
+    "mode": "policy_map",
+    "seed": 29,
+    "stats": {
+      "macro_tokens_per_byte": 0.2672032025681046,
+      "tokens_per_formula": 14.151353276353277,
+      "command_integrity": 0.9993812646949635
+    },
+    "policy_train_seconds": 3.814519499996095
+  }
+]
