@@ -1,0 +1,123 @@
+{
+  "version": "v5_rl_vocab_fresh_generalization",
+  "capacity": 1024,
+  "corpus_sha256": "f6e08409b4ddff647420fbb46213fc95f0f1b307240c30a315dc52410e88966e",
+  "suite_hashes": {
+    "fresh_paper_test": "0ecc902399ac025082df77736944f498f6da6c71a631890689bb0fb05c32fd75",
+    "extreme_domain_test": "4618f3918b31978ca2fca93410b9e4ab8f875092c1e69ed45ad97aa7ad1c4026",
+    "synthetic_stress_test": "79686b6cb0c902df48a9638b022e0144184ea6b6d623e9cf397848f517caa91a"
+  },
+  "training_scenarios": {
+    "broad": "train/dev; all domains except fresh papers",
+    "specialized": "transfer_train/transfer_dev; PDE/ODE/analysis only; target-domain document exclusion"
+  },
+  "held_domain_targets": [
+    "algebra",
+    "geometry_topology",
+    "number_theory",
+    "combinatorics",
+    "logic"
+  ],
+  "configs": {
+    "composite_balanced": {
+      "objective": "composite",
+      "candidates": 12,
+      "updates": 24,
+      "learning_rate": 0.08,
+      "exploration": 0.05,
+      "mdl_weight": 0.4,
+      "boundary_weight": 0.4,
+      "rare_weight": 0.15,
+      "robustness_weight": 0.25,
+      "reward_limit": 384,
+      "fit_limit": 6000,
+      "min_pair": 2,
+      "initial_frequency_prior": 0.0,
+      "feature_mode": "statistics",
+      "estimator": "expected"
+    },
+    "composite_structure": {
+      "objective": "composite",
+      "candidates": 12,
+      "updates": 24,
+      "learning_rate": 0.08,
+      "exploration": 0.05,
+      "mdl_weight": 0.2,
+      "boundary_weight": 1.0,
+      "rare_weight": 0.15,
+      "robustness_weight": 0.3,
+      "reward_limit": 384,
+      "fit_limit": 6000,
+      "min_pair": 2,
+      "initial_frequency_prior": 0.0,
+      "feature_mode": "statistics",
+      "estimator": "expected"
+    },
+    "composite_code": {
+      "objective": "composite",
+      "candidates": 12,
+      "updates": 24,
+      "learning_rate": 0.08,
+      "exploration": 0.05,
+      "mdl_weight": 0.8,
+      "boundary_weight": 0.2,
+      "rare_weight": 0.3,
+      "robustness_weight": 0.2,
+      "reward_limit": 384,
+      "fit_limit": 6000,
+      "min_pair": 2,
+      "initial_frequency_prior": 0.0,
+      "feature_mode": "statistics",
+      "estimator": "expected"
+    },
+    "composite_robust": {
+      "objective": "composite",
+      "candidates": 12,
+      "updates": 24,
+      "learning_rate": 0.08,
+      "exploration": 0.05,
+      "mdl_weight": 0.3,
+      "boundary_weight": 0.3,
+      "rare_weight": 0.2,
+      "robustness_weight": 0.8,
+      "reward_limit": 384,
+      "fit_limit": 6000,
+      "min_pair": 2,
+      "initial_frequency_prior": 0.0,
+      "feature_mode": "statistics",
+      "estimator": "expected"
+    },
+    "length_only": {
+      "objective": "length",
+      "candidates": 12,
+      "updates": 24,
+      "learning_rate": 0.08,
+      "exploration": 0.05,
+      "mdl_weight": 0.4,
+      "boundary_weight": 0.4,
+      "rare_weight": 0.15,
+      "robustness_weight": 0.25,
+      "reward_limit": 384,
+      "fit_limit": 6000,
+      "min_pair": 2,
+      "initial_frequency_prior": 0.0,
+      "feature_mode": "statistics",
+      "estimator": "expected"
+    }
+  },
+  "dev_seeds": [
+    17,
+    29
+  ],
+  "formal_seeds": [
+    17,
+    29,
+    43
+  ],
+  "selection_rule": "min mean(dev docmacro tokens/byte+.15*(1-command integrity)) across seeds17,29 among composite configs only; length reward ablation never selected main",
+  "reward_scope": "fit/reward paper groups split inside train; neither dev nor fresh/held-domain/stress test in reward",
+  "online_backend": "official HuggingFace Rust byte BPE, unchanged implementation, learned merge table exported; no AST parser at inference",
+  "human_intervention": "no curated command list or formula-level annotations; raw lexer and reward weights/selection/seed budget still explicit design choices",
+  "first_test_load_after_selection": true,
+  "created_utc": "2026-10-11T03:14:59Z"
+}

@@ -1,0 +1,31 @@
+{
+  "automated_gates_passed": true,
+  "new_formulas": 25511,
+  "new_source_papers": 117,
+  "source_records": 119,
+  "formula_only": true,
+  "exact_dedup_new": true,
+  "version_license_and_attribution": true,
+  "suspicious_controls_excluded": true,
+  "origin_counts": {
+    "human": 25511
+  },
+  "domain_counts": {
+    "number_theory": 1650,
+    "ode": 1489,
+    "geometry_topology": 5113,
+    "analysis": 5634,
+    "algebra": 2337,
+    "mathematical_physics": 1917,
+    "probability": 1701,
+    "combinatorics": 3456,
+    "optimization": 719,
+    "statistics": 661,
+    "logic": 690,
+    "pde": 94,
+    "linear_algebra": 50
+  },
+  "review_sample_scope": "96 hash-fixed new-training records only, test text not sampled",
+  "expert_semantic_verification_completed": false,
+  "new_jsonl_sha256": "ee7e2891e2fb1a3a8e0d2c0eedf70aeced62e57c9b851420988abdec58abb007"
+}

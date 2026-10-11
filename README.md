@@ -1,3 +1,20 @@
+# 新一轮：RL词表、扩充语料与未见泛化（2026-10-11）
+
+v5包含 **53,858条自然公式**（新增25,511条、119篇固定许可arXiv稿件，117篇有接受公式），13领域、两档复杂度。旧v2不改。新paper holdout4375条、真正leave-domain-out1636条、独立synthetic stress693条，在算法dev选择前封存。
+
+RL现在离线学习合并表/词表，reward包含编码成本、边界完整、稀有token和变体一致性；在线导出到原版Rust BPE，没有hard AST或手工命令清单。速度达到普通HF BPE量级，复合reward在新paper上改进约2.9%序列长度和命令完整性；仍未稳定优于reward-greedy控制，不能称全自动全面最优。
+
+- 最新结果：`docs/rl_vocab_v5_findings.md`。
+- 完整泛化/分层报告：`results/v5_1024/report.md`。
+- 语料：`data/releases/v5/curated/`、纯字符串：`data/releases/v5/formula_only/`。
+- 主corpus无损归档：`corpus.jsonl.gz`，脚本自动解压并核验SHA；同release split JSONL直接可读。
+- 质量与许可：`docs/benchmark_v5_quality.md`、`data/releases/v5/quality_audit.json`、`arxiv_sources.json`。
+- 协议：`docs/rl_vocab_v5_protocol.md`；复现：`docs/generalization_v5_reproduction.md`。
+
+v5是有来源与自动筛选证据的research candidate benchmark，专家语义/领域双审尚未完成；不是gold mathematical truth dataset。test首次固定评估后也已成为已见benchmark，后续不能继续用它调参却称未见泛化。下游模型仍未训练。
+
+以下为以前阶段记录：
+
 # 第四轮：硬约束与RL主线（2026-10-11）
 
 当前保留两类方案：v3压缩版，以及v4严格结构RL版。数学语料与划分仍冻结，成熟基准未重训。

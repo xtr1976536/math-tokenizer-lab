@@ -1,0 +1,19 @@
+{
+  "fresh_paper_disjoint": true,
+  "exact_and_template_dedup_vs_fit": true,
+  "extreme_source_category_exclusion": true,
+  "licenses_verified": 119,
+  "same_raw_test_ids_all_models": true,
+  "all_lossless": true,
+  "rl_multiobjective_reward_train_only": true,
+  "selected_rl_replayed": 6,
+  "model_hashes_verified": 76,
+  "runs": 54,
+  "records": 106797,
+  "limitations": [
+    "automatic quality screening not expert mathematical verification",
+    "syntax template dedup not semantic equivalence proof",
+    "intrinsic OOD is not downstream generalization"
+  ],
+  "tests": "........................................................................ [ 51%]\n.....................................................................    [100%]\n141 passed in 11.76s\n"
+}

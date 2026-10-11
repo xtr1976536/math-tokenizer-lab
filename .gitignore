@@ -18,3 +18,5 @@ results/v2_512_final/models/
 results/v2_1024_final/models/
 .native_cache/
 results/v3_512/models/
+# v5 master uncompressed size exceeds GitHub per-file limit; lossless archive tracked.
+data/releases/v5/curated/corpus.jsonl
