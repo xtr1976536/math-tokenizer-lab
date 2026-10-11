@@ -112,6 +112,8 @@ v5仍在成熟BPE速度量级，不能将8.747→8.763这种很小差异说成�
 
 `results/current_audit.json`记录六轮：清理及语料/registry；训练内部paper隔离和dev选择；共同metrics及全部checkpoint；真实RL更新/critic无自身目标；工程等价与交错速度；选定配置独立重训。四个当前family/scenario重新训练所得词表完全一致，v5 merge及策略参数也完全一致。数值记录之外没有删除失败公式、方法或seed。
 
+随后在全新本地Git checkout从无损归档解压并核验语料，重新编译原生库，154项测试通过，当前8组/14,794条checkpoint及官方导出重放一致，没有恢复退休模型。证据为`results/current_clean_clone_verification.json`。它是同宿主/依赖runtime的独立源码验证；完整选定配置重训另在`current_reproduce17`完成，不称跨平台独立重训练。
+
 当前入口`sh scripts/run_current.sh <新目录>`依次测试、训练两条选定路线、重放结果；不依赖退休模型。加载例子见设计说明。历史脚本与旧结果保留用于审计，完整旧模型重放应切到清理前revision。
 
 v5测试集在之前及本轮已暴露，属于重复benchmark，当前域排除仍成立但不称新的pristine holdout。组bootstrap条件于这些模型/语料，未作多个比较校正。结构指标来自同parser，语料仍是自动筛选的research candidate benchmark，专家数学语义审核未完成。所有结论限于独立tokenizer，不外推下游数学推理。

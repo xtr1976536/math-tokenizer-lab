@@ -152,5 +152,12 @@
     "exact_vocab_and_policy": true,
     "reproduction": "results/current_reproduce17"
   },
-  "tests": "........................................................................ [ 47%]\n........................................................................ [ 94%]\n.........                                                                [100%]\n153 passed in 11.82s\n"
+  "tests": "........................................................................ [ 47%]\n........................................................................ [ 94%]\n.........                                                                [100%]\n153 passed in 11.82s\n",
+  "independent_checkout_verification": {
+    "artifact": "results/current_clean_clone_verification.json",
+    "checked_commit": "e04ca3c55a3871598a37ace12d41723292bcc8c2",
+    "tests": "........................................................................ [ 46%]\n........................................................................ [ 93%]\n..........                                                               [100%]\n154 passed in 13.00s\n",
+    "current_checkpoint_replay": "current-only replay verified 8 14794\n",
+    "scope": "independent source checkout, corpus archive unpack/hash, all tests and current checkpoint/official export replay; fixed-config full retraining separately in current_reproduce17; same host/dependency runtime"
+  }
 }

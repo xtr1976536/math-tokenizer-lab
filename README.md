@@ -8,6 +8,7 @@ AST-v4新增等价最短路径内核，编码快约19%–23%；字典增补在�
 - [完整结果、控制、失败及成本解释](docs/current_models_results.md)。
 - 当前模型路径/固定配置：[`models/current/registry.json`](models/current/registry.json)。
 - 六轮审计：[`results/current_audit.json`](results/current_audit.json)；工程等价/交错速度：[`results/current_engineering/verification.json`](results/current_engineering/verification.json)。
+- 全新源码checkout：154项测试、14,794条当前checkpoint/官方导出重放通过，见[`results/current_clean_clone_verification.json`](results/current_clean_clone_verification.json)。
 - 顺序运行：`sh scripts/run_current.sh results/my_current_run001`，输出目录必须尚不存在；只训练选定的两条路线，不依赖退休模型。
 
 ```python

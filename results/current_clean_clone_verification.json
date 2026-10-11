@@ -1,0 +1,11 @@
+{
+  "checked_commit": "e04ca3c55a3871598a37ace12d41723292bcc8c2",
+  "clean_local_git_clone": true,
+  "shared_dependency_runtime_new_source_root": true,
+  "new_native_libraries_compiled": true,
+  "no_retired_checkpoint_restored": true,
+  "setup": "clean source and lossless corpus archive verified\n",
+  "tests": "........................................................................ [ 46%]\n........................................................................ [ 93%]\n..........                                                               [100%]\n154 passed in 13.00s\n",
+  "current_checkpoint_replay": "current-only replay verified 8 14794\n",
+  "scope": "independent source checkout, corpus archive unpack/hash, all tests and current checkpoint/official export replay; fixed-config full retraining separately in current_reproduce17; same host/dependency runtime"
+}
