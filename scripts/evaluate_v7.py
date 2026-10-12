@@ -1,10 +1,10 @@
 """Frozen external formal evaluation: one raw-input/metric/calibration protocol."""
 from datetime import datetime,timezone
-import gzip,hashlib,json,time
+import argparse,gzip,hashlib,json,time
 from collections import defaultdict
 from math_tokenizer.corpus import ROOT
 from math_tokenizer.benchmark_v6 import load_split
-from math_tokenizer.experiment_v7 import load_model,read_external,scope
+from math_tokenizer.experiment_v7 import load_model,read_external,scope,evaluation_suites
 from math_tokenizer.measure_v6 import measure,fit_usage
 from math_tokenizer.independent_v7 import additional,source_scopes
 from math_tokenizer.comparison_v6 import calibrate,id_hash
@@ -12,16 +12,14 @@ from math_tokenizer.metrics_v2 import upstream_information
 
 
 def main():
-    folder=ROOT/'results/v7/full';protocol=json.loads((folder/'evaluation_protocol.json').read_text())
+    parser=argparse.ArgumentParser();parser.add_argument('--release',choices=['v7','v8'],default='v7');a=parser.parse_args()
+    folder=ROOT/f'results/{a.release}/full';protocol=json.loads((folder/'evaluation_protocol.json').read_text())
     assert hashlib.sha256((folder/'registry.json').read_bytes()).hexdigest()==protocol['registry_sha256']
     assert json.loads((folder/'preflight_audit.json').read_text())['all_passed']
-    entries=json.loads((folder/'registry.json').read_text());external=read_external()
-    split=json.loads((ROOT/'data/releases/v7/splits.json').read_text());extreme=set(split['extreme_domain_test'])
-    suites={'external_test':external,'extreme_domain_test':[r for r in external if r['id'] in extreme],
-            'stress_test':list(map(json.loads,(ROOT/'results/v6/stress_test.jsonl').open()))}
+    entries=json.loads((folder/'registry.json').read_text());suites=evaluation_suites(a.release)
     cache={name:{r['id']:source_scopes(r['latex']) for r in rows} for name,rows in suites.items()}
     fit_byid={r['id']:r for r in load_split('train')};fit_ids={s:scope(s)['fit_ids'] for s in ('broad','specialized')}
-    manifest=json.loads((ROOT/'data/releases/v7/manifest.json').read_text());metrics=[];first=folder/'first_test_score.json'
+    manifest=json.loads((ROOT/f'data/releases/{a.release}/manifest.json').read_text());metrics=[];first=folder/'first_test_score.json'
     if not first.exists():first.write_text(json.dumps({'utc':datetime.now(timezone.utc).isoformat(),
         'registry_sha256':protocol['registry_sha256'],'models_and_primary_comparisons_frozen_before_external_scores':True},indent=2)+'\n')
     with gzip.open(folder/'per_formula.jsonl.gz','wt',encoding='utf-8') as stream:
@@ -30,8 +28,9 @@ def main():
             scenarios=('broad','specialized') if entry['scenario']=='pretrained' else (entry['scenario'],)
             usages={s:fit_usage(model,[fit_byid[id] for id in fit_ids[s]]) for s in scenarios}
             active=list(suites) if entry['scenario']!='specialized' else ['extreme_domain_test','stress_test']
+            if a.release=='v8' and entry['scenario']=='specialized':active+=['exposed_v7_extreme','exposed_v6_extreme']
             for suite in active:
-                calibration=('specialized' if suite=='extreme_domain_test' else 'broad') if entry['scenario']=='pretrained' else entry['scenario']
+                calibration=('specialized' if suite in ('extreme_domain_test','exposed_v7_extreme','exposed_v6_extreme') else 'broad') if entry['scenario']=='pretrained' else entry['scenario']
                 m,rows=measure(model,suites[suite],entry['name'],entry['seed'],repeats=1,training_usage=usages[calibration])
                 extra,scope_rows=additional(model,suites[suite],usages[calibration],cache[suite],probe_limit=protocol['edit_probe_limit'])
                 scoped={r['id']:r for r in scope_rows}

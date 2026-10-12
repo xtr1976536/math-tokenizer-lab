@@ -1,0 +1,46 @@
+{
+  "pretest_frozen_utc": "2026-10-12T16:03:53.211805+00:00",
+  "registry_sha256": "ca5d7bab2d99a6104043bbbdbaada37d93e29b064a639484a77304a864b0e084",
+  "rl_in_core": false,
+  "deployment_seed": 17,
+  "capacities": [
+    1024,
+    2048
+  ],
+  "math_core": [
+    "ast_boundary",
+    "ast_v4_parent",
+    "official_atomic_bpe"
+  ],
+  "equal_capacity_controls": [
+    "hf_byte_bpe",
+    "sentencepiece_unigram"
+  ],
+  "structural_ablations": [
+    "ast_lexicographic",
+    "pathpiece_atomic_vocab"
+  ],
+  "general_core": [
+    "Qwen2.5-0.5B",
+    "meta-llama/Meta-Llama-3-8B",
+    "tiktoken_o200k_base"
+  ],
+  "extended_general": [
+    "Qwen/Qwen3-0.6B",
+    "deepseek-ai/DeepSeek-V3",
+    "microsoft/Phi-4",
+    "mistralai/Mistral-Nemo-Base-2407",
+    "tiktoken_gpt2",
+    "tiktoken_cl100k_base"
+  ],
+  "diagnostic_only": [
+    "v5_parent",
+    "v5_terminal_transfer",
+    "parameter_rl",
+    "random_search",
+    "cem_search",
+    "no_update_v8"
+  ],
+  "different_pretrained_vocabularies_are_deployment_references": true,
+  "downstream_training_executed": false
+}

@@ -1,0 +1,38 @@
+{
+  "formulas": 4000,
+  "target_capacity": 1024,
+  "actual_capacity": 1024,
+  "config": {
+    "epochs": 4,
+    "samples": 4,
+    "learning_rate": 0.15,
+    "temperature": 0.8,
+    "exploration": 0.08,
+    "fit_task_limit": 1600,
+    "reward_task_limit": 128,
+    "training_capacity": 1024,
+    "tree_weight": 0.5,
+    "candidates": 16
+  },
+  "repeats": 5,
+  "times": {
+    "v7_formula_native": [
+      2.5940723339990654,
+      2.711604125001031,
+      2.7810221670006285,
+      2.7921905830007745,
+      2.7830540830000245
+    ],
+    "v8_corpus_native": [
+      0.6588020000017423,
+      0.6722997090000717,
+      0.6439309590023186,
+      0.6537974170023517,
+      0.6504820420013857
+    ]
+  },
+  "vocabulary_merges_and_policy_scores_identical": true,
+  "median_rollout_speedup": 4.2536450813029525,
+  "scope": "Full fit-vocabulary rollout including codec, candidate features, exact merge index and official BPE construction; excludes terminal reward evaluation",
+  "RL_learning_gain": false
+}

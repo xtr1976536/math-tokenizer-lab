@@ -5,11 +5,12 @@ papers are external test only; no model-dependent selection or replenishment.
 """
 from collections import Counter,defaultdict
 from datetime import datetime,timezone
-import gzip,hashlib,json,subprocess
+import argparse,gzip,hashlib,json,subprocess
 from math_tokenizer.corpus import ROOT,canonical
 from math_tokenizer.quality_v6 import (source_members,build_macros,candidates,normalize,
     formula_gate,classify,template_key,source_macro_reference,TARGET_CATEGORIES)
 from math_tokenizer.structure_v2 import complexity
+from math_tokenizer.benchmark_v6 import master_path
 
 
 def digest(value):return hashlib.sha256(value if isinstance(value,bytes) else value.encode()).hexdigest()
@@ -17,16 +18,24 @@ def write(path,value):path.parent.mkdir(parents=True,exist_ok=True);path.write_t
 
 
 def main():
-    folder=ROOT/'data/releases/v7';rawfolder=ROOT/'data/raw/holdout_v7';rawfolder.mkdir(parents=True,exist_ok=True)
-    sources=json.loads((folder/'arxiv_sources.json').read_text());old=list(map(json.loads,(ROOT/'data/releases/v6/curated/corpus.jsonl').open()))
+    parser=argparse.ArgumentParser();parser.add_argument('--release',choices=['v7','v8'],default='v7');args=parser.parse_args();release=args.release
+    folder=ROOT/f'data/releases/{release}';rawfolder=ROOT/f'data/raw/holdout_{release}';rawfolder.mkdir(parents=True,exist_ok=True)
+    sources=json.loads((folder/'arxiv_sources.json').read_text());old=list(map(json.loads,master_path().open()))
     old_papers={r['source_group'] for r in old};old_exact={r['canonical_sha256'] for r in old};old_templates={r['template_sha256'] for r in old};old_mathml={r['reference']['mathml_sha256'] for r in old}
+    if release=='v8':
+        previous=list(map(json.loads,gzip.decompress((ROOT/'data/releases/v7/external_test.jsonl.gz').read_bytes()).decode().splitlines()))
+        old_papers.update('arxiv:'+r['id'] for r in json.loads((ROOT/'data/releases/v7/arxiv_sources.json').read_text()))
+        old_exact.update(r['canonical_sha256'] for r in previous);old_templates.update(r['template_sha256'] for r in previous);old_mathml.update(r['reference']['mathml_sha256'] for r in previous)
     # Historical corpora were already available during earlier development;
     # templates excluded from v6 by later gates are still previously exposed.
     historical=(ROOT/'data/releases/v5/curated/corpus.jsonl')
-    if historical.exists():
-        for prior in map(json.loads,historical.open()):
+    if historical.exists() or historical.with_suffix('.jsonl.gz').exists():
+        history_stream=historical.open() if historical.exists() else gzip.open(historical.with_suffix('.jsonl.gz'),'rt')
+        with history_stream:
+          for prior in map(json.loads,history_stream):
             old_templates.add(digest(template_key(prior['latex'])))
             old_exact.add(digest(canonical(prior['latex'])))
+    else:raise FileNotFoundError('Historical v5 corpus required for prior exposure exclusions')
     rows=[];rejected=[];members=[]
     for source in sources:
         assert source['license_verified_on_version_page'] and source['version_date'][:4]<'2020'
@@ -88,7 +97,7 @@ def main():
            {'round':2,'scope':'source extraction, bounded macros, independent syntax and source rendering equality','passed':all(r['reference'].get('source_macro_fidelity') is not False for r in curated)},
            {'round':3,'scope':'source-domain/origin/two complexity classes, no prior exact/template/rendered duplicates','passed':not ({r['canonical_sha256'] for r in curated}&old_exact) and not ({r['template_sha256'] for r in curated}&old_templates)},
            {'round':4,'scope':'serialized raw formula fidelity, count/unique IDs and gzip roundtrip','passed':gzip.decompress(destination.read_bytes())==payload and len({r['id'] for r in curated})==len(curated)}]
-    manifest={'release':'v7_external_holdout','formulas':len(curated),'papers_downloaded':len(sources),
+    manifest={'release':release+'_external_holdout','formulas':len(curated),'papers_downloaded':len(sources),
         'papers_with_accepted_formulas':len({r['source_group'] for r in curated}),'domains':dict(Counter(r['domain'] for r in curated)),
         'paper_domains':dict(Counter(r['paper_domain'] for r in curated)),'complexity':dict(Counter(r['complexity']['class'] for r in curated)),
         'splits':{k:len(v) for k,v in splits.items()},'rejections':dict(Counter(r['reason'] for r in rejected)),
@@ -96,6 +105,7 @@ def main():
         'previous_v6_corpus_sha256':json.loads((ROOT/'data/releases/v6/manifest.json').read_text())['corpus_sha256'],
         'all_new_papers_test_only':True,'no_tokenizer_scores_used':True,'human_origin_historical_inference':True,
         'prior_v5_and_v6_templates_excluded':True,
+        'prior_v7_excluded':release=='v8',
         'expert_semantic_dual_review':False,'built_utc':datetime.now(timezone.utc).isoformat()}
     write(folder/'manifest.json',manifest);write(folder/'quality_audit.json',{'rounds':audit,'all_passed':all(a['passed'] for a in audit)})
     write(folder/'seal.json',{'sealed_utc':datetime.now(timezone.utc).isoformat(),'archive_sha256':manifest['archive_sha256'],

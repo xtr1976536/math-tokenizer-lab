@@ -1,17 +1,18 @@
 """Create unreviewed independent-annotation material; never claim human review."""
 from collections import defaultdict
-import hashlib,json
+import argparse,hashlib,json
 from math_tokenizer.corpus import ROOT
 from math_tokenizer.experiment_v7 import read_external
 from math_tokenizer.independent_v7 import source_scopes
 
 
 def main():
-    rows=read_external();buckets=defaultdict(list)
+    parser=argparse.ArgumentParser();parser.add_argument('--release',choices=['v7','v8'],default='v7');args=parser.parse_args()
+    rows=read_external(args.release);buckets=defaultdict(list)
     for r in rows:buckets[(r['paper_domain'],r['complexity']['class'])].append(r)
     chosen=[]
     for key,group in sorted(buckets.items()):
-        chosen.extend(sorted(group,key=lambda r:hashlib.sha256(('v7-review:'+r['id']).encode()).digest())[:8])
+        chosen.extend(sorted(group,key=lambda r:hashlib.sha256((args.release+'-review:'+r['id']).encode()).digest())[:8])
     records=[]
     for row in chosen:
         records.append({'id':row['id'],'latex':row['latex'],'raw_latex':row['raw_latex'],
@@ -22,7 +23,7 @@ def main():
             'reviewer_1':{'source_fidelity':None,'scope_boundaries':None,'domain_agreement':None,'notes':None},
             'reviewer_2':{'source_fidelity':None,'scope_boundaries':None,'domain_agreement':None,'notes':None},
             'adjudication':None})
-    folder=ROOT/'data/releases/v7/review_materials';folder.mkdir(exist_ok=True)
+    folder=ROOT/f'data/releases/{args.release}/review_materials';folder.mkdir(exist_ok=True)
     (folder/'unreviewed_samples.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
     (folder/'status.json').write_text(json.dumps({'samples':len(records),'human_reviews_completed':0,
         'expert_gold':False,'purpose':'Source/domain/scope double-review material only; expert answers deliberately blank, not evaluated as ground truth.',

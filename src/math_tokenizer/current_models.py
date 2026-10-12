@@ -1,4 +1,4 @@
-"""Public entry point: only the two user-selected active model families."""
+"""Legacy two-family reproduction API; final production uses final_models."""
 import json
 from pathlib import Path
 
@@ -8,6 +8,9 @@ from .corpus import ROOT
 def load_checkpoint(path):
     path = Path(path)
     saved = json.loads(path.read_text())
+    if saved.get('format')=='ast-v4-boundary-lattice-v8':
+        from .ast_boundary_v8 import BoundaryAST
+        return BoundaryAST.load(path)
     if saved.get('format')=='ast-v4-balanced-lattice-v7':
         from .ast_balanced_v7 import BalancedAST
         return BalancedAST.load(path)

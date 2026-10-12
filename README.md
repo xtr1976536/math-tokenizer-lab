@@ -1,4 +1,22 @@
-# 最新研究 v7：同先验对照、AST两级路径与终端RL（2026-10-12）
+# 最终本征版本 v8：非RL生产方案与下游冻结名单（2026-10-13）
+
+本轮是进入下游前的最后一次大规模本征工作。新增4,294条封存公式，27篇论文贡献、30篇许可核验源码，来源领域外子集1,428条；以前v5/v6/v7来源、精确式、模板和渲染等价式排除。旧主库与已封存测试不改。完整重跑121配置、682组指标、1,446,368行逐式结果，包含九种成熟tokenizer、新v8、暴露v7/v6自然及领域外测试、521式压力集。
+
+同奖励/同34次终端评分的参数RL、随机搜索与CEM，在三个论文划分×五种子中对照。RL相对随机/CEM平均utility仅改善0.12%/0.20%，胜数7/15、8/15，种子区间跨零且核心非劣界未全通过。未达预定开发晋升门槛，**最终生产与下游核心去掉RL**；旧候选留作负面结果复核，不推导所有RL或语言模型内端到端RL无效。
+
+新的AST参数边界路径共享原版数学原子BPE字典，代价包含token数、native crossing及brace内容边界。四场景相对同原子BPE压缩改善1.09%–2.64%，编码约2.65–3.00倍；相对上一轮两级长度路径，独立参数边界召回提高约9–11个百分点，长度基本保持。严格结构仍由原版硬AST保有优势，部分边界/树指标家族区间跨零。词表构建使用原版HF BPE，生产配方没有RL更新或搜索。
+
+- 完整指标、排名、控制、区间及替代代价：[v8最终报告](docs/v8_final_intrinsic_results.md)。
+- 在新测试评分前登记的选择规则与容忍界：[实验协议](docs/v8_preregistered_protocol.md)。
+- **下游准确检查点和角色**：[final registry](models/final_intrinsic/registry.json)、[交接说明](docs/v8_downstream_handoff.md)。核心8角色：AST边界路径、原版硬AST、同原子BPE、byte BPE、SentencePiece Unigram、Qwen2.5、Llama 3、o200k；结构消融与扩展通用参考另列。
+- 原式与证据：[v8 manifest](data/releases/v8/manifest.json)、[四轮语料检查](data/releases/v8/quality_audit.json)。
+- 全结果：[metrics](results/v8/full/metrics.json)、[CSV](results/v8/full/all_main_metrics.csv)、[rankings](results/v8/full/rankings.json)、[多指标配对区间](results/v8/full/multimetric_paired_effects.json)。
+- 审查：[八轮公平性](results/v8/full/fairness_audit.json)、[三轮代码检查](results/v8/code_reviews.json)、[最终核验](results/v8/verification.json)。
+- 顺序复现与无RL生产训练：[复现说明](docs/v8_reproduction.md)。入口`sh scripts/run_v8_replay.sh`；加载使用`math_tokenizer.final_models.load_final`。
+
+历史`load_current`保留v6复现兼容，最终生产使用`load_final`，RL诊断需要明确opt-in。没有执行下游训练，80条新公式专家双审材料尚未有人审，测速只有一台Mac。新增最终测试现已暴露，不再据它挑新分词配置。
+
+# 历史研究 v7：同先验对照、AST两级路径与终端RL（2026-10-12）
 
 本轮封存新增3,933条2020年前许可核验arXiv公式，包含1,961条来源领域外测试；旧v6主库不变。完成79种配置、204组指标记录、376,996行逐式重放、八轮公平性检查和193项测试。九种成熟tokenizer与自研/经典算法在相同原式上评测，三次来源重划分的12个保存模型也已重载复算。
 

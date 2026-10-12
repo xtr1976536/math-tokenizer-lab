@@ -43,11 +43,11 @@ def features(index,pairs,vocab,step,steps):
     return np.asarray(x,dtype=float)
 
 
-def rollout(fit,atoms,capacity,theta,config,rng=None,method='policy'):
+def rollout(fit,atoms,capacity,theta,config,rng=None,method='policy',index_class=NativeFitIndexed):
     started=time.perf_counter()
     model=AtomicVocab(VocabRLConfig(candidates=config.candidates),atoms)
     sequences=model.codec.indexed([r['latex'] for r in fit]).seqs
-    index=NativeFitIndexed([r['latex'] for r in fit],sequences=sequences);size={p:i for i,p in enumerate(model.vocab)}
+    index=index_class([r['latex'] for r in fit],sequences=sequences);size={p:i for i,p in enumerate(model.vocab)}
     score=np.zeros(24);steps=max(0,capacity-len(atoms));entropy=0.;step=0
     while len(model.vocab)<capacity:
         pairs=index.top(config.candidates)

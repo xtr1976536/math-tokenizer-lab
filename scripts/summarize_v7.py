@@ -1,9 +1,10 @@
 """Same-input direct boards, grouped effects, predeclared paper-cluster pairs."""
 from collections import defaultdict
-import csv,gzip,json,math
+import argparse,csv,gzip,json,math
 import numpy as np
 from scipy.stats import rankdata
 from math_tokenizer.corpus import ROOT
+from math_tokenizer.result_rows import PerFormulaStore
 try:
     from scripts.summarize_full_v6 import aggregate_rows
 except ModuleNotFoundError:
@@ -14,9 +15,14 @@ LOWER={'document_macro_tokens_per_byte','independent_tree_crossing','fit_predict
 
 def build_boards(metrics,weights):
     boards={}
+    conditions=[('broad','external_test','broad'),('specialized','extreme_domain_test','specialized'),
+                ('broad','extreme_domain_test','broad_extreme'),('broad','stress_test','broad_stress'),('specialized','stress_test','specialized_stress')]
+    if any(m['suite']=='exposed_v7_test' for m in metrics):
+        conditions += [('broad','exposed_v7_test','exposed_v7_broad'),('specialized','exposed_v7_extreme','exposed_v7_specialized'),
+                       ('broad','exposed_v6_test','exposed_v6_broad'),('specialized','exposed_v6_extreme','exposed_v6_specialized'),
+                       ('broad','exposed_v7_extreme','exposed_v7_broad_extreme'),('broad','exposed_v6_extreme','exposed_v6_broad_extreme')]
     for capacity in (1024,2048):
-        for scenario,suite,label in [('broad','external_test','broad'),('specialized','extreme_domain_test','specialized'),
-                                     ('broad','extreme_domain_test','broad_extreme'),('broad','stress_test','broad_stress'),('specialized','stress_test','specialized_stress')]:
+        for scenario,suite,label in conditions:
             eligible=[m for m in metrics if m['suite']==suite and (
                 m['group']=='fixed_pretrained_reference' or m['group']=='main' and m['capacity']==capacity and m['scenario']==scenario)]
             assert len({(m['formulas'],m['test_id_sha256'],m['bytes']) for m in eligible})==1
@@ -76,10 +82,10 @@ def paired_effect(left_sets,right_sets,repeats=2000,family_size=1):
 
 
 def main():
-    folder=ROOT/'results/v7/full';assert json.loads((folder/'fairness_audit.json').read_text())['all_passed']
+    parser=argparse.ArgumentParser();parser.add_argument('--release',choices=['v7','v8'],default='v7');a=parser.parse_args()
+    folder=ROOT/f'results/{a.release}/full';assert json.loads((folder/'fairness_audit.json').read_text())['all_passed']
     protocol=json.loads((folder/'evaluation_protocol.json').read_text());weights=protocol['comprehensive_weights'];metrics=json.loads((folder/'metrics.json').read_text())
-    rows=defaultdict(list)
-    for r in map(json.loads,gzip.open(folder/'per_formula.jsonl.gz','rt')):rows[(r['key'],r['suite'])].append(r)
+    rows=PerFormulaStore(folder/'per_formula.jsonl.gz')
     grouped=[]
     for m in metrics:
         rs=rows[(m['key'],m['suite'])]
@@ -93,12 +99,13 @@ def main():
     for capacity in (1024,2048):
         for scenario,suite in [('broad','external_test'),('specialized','extreme_domain_test')]:
             candidates=[m for m in metrics if m['capacity']==capacity and m['scenario']==scenario and m['suite']==suite]
-            for left,right in [('ast_lexicographic','official_atomic_bpe'),('ast_lexicographic','lexical_shortest'),
-                ('v5_terminal_transfer','v5_terminal_no_update'),('v5_terminal_transfer','v5_policy_search')]:
-                l=[rows[(m['key'],suite)] for m in candidates if m['method']==left];r=[rows[(m['key'],suite)] for m in candidates if m['method']==right]
+            pairs_to_run=protocol.get('primary_pairs_explicit') or [('ast_lexicographic','official_atomic_bpe'),('ast_lexicographic','lexical_shortest'),
+                ('v5_terminal_transfer','v5_terminal_no_update'),('v5_terminal_transfer','v5_policy_search')]
+            for left,right in pairs_to_run:
+                l=[(m['key'],suite) for m in candidates if m['method']==left];r=[(m['key'],suite) for m in candidates if m['method']==right]
                 if not l or not r:continue
                 targets.append((f'{capacity}/{scenario}/{left}-vs-{right}',l,r))
-    pairs={name:paired_effect(left,right,protocol['paper_bootstrap_resamples'],len(targets)) for name,left,right in targets}
+    pairs={name:paired_effect([rows[k] for k in left],[rows[k] for k in right],protocol['paper_bootstrap_resamples'],len(targets)) for name,left,right in targets}
     sensitivity=[]
     for speed in (.1,.2,.3,.4):
         alternate={k:v*(1-speed)/(1-weights['encode_mib_s']) for k,v in weights.items() if k!='encode_mib_s'};alternate['encode_mib_s']=speed
@@ -116,6 +123,7 @@ def main():
     fields=sorted(set().union(*(set(r) for r in csv_rows)))
     with (folder/'all_main_metrics.csv').open('w',newline='') as f:
         writer=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');writer.writeheader();writer.writerows(csv_rows)
+    rows.close()
     print('Main combined rankings',json.dumps({k:v['ranking'] for k,v in combined.items()},indent=2),flush=True)
 
 

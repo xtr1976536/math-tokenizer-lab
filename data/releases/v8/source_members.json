@@ -1,0 +1,278 @@
+[
+  {
+    "paper": "1606.06749",
+    "member": "main.tex",
+    "sha256": "017e2918327c8f8f9d87d01ff4d4b85fb22b88586aef415b6139f2e65002c211",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1711.01058",
+    "member": "main.tex",
+    "sha256": "bfde9553f0609d7dafe1795815291a2d62aec291677da94da570e4fc21fd55ec",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1607.05644",
+    "member": "2foldsymmetric.tex",
+    "sha256": "73da0b87c8b78d204f7112b7bb015da265e03de4426ae0e99155fbf6fd1e013d",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1712.02346",
+    "member": "main.tex",
+    "sha256": "399c97dc3a97170ae1759bee94c9f05071499bb6a9bbaebbb7aea5b48f67a0a8",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1610.05722",
+    "member": "aims.cls",
+    "sha256": "2d48cddd60a98bf98446a5f086bf31b1dd23e9eaa7aaad0588a6a49e49d19cf1",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1610.05722",
+    "member": "main.tex",
+    "sha256": "d0aef771b5f5b1b2ca1bc47113f5dbf4b78a8f5262d831e679419a019c2b4ddb",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1902.00366",
+    "member": "main.tex",
+    "sha256": "3eeba35d5515d370a7bb4dc0a455e557910b90219f8297d3b1e51c215d41e7ca",
+    "encoding": "unverified_non_utf8_encoding"
+  },
+  {
+    "paper": "1510.08972",
+    "member": "main.tex",
+    "sha256": "34b83d05223165d19b3179030cd5cac477039f4f03fad970fe790e1931ece832",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1803.02526",
+    "member": "main.tex",
+    "sha256": "5f57f83d682d3de71a67f1befe663747bf81eb963b91c3f6d4aa44672ae1af98",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "0911.5174",
+    "member": "main.tex",
+    "sha256": "cf7194c21bcb4da6c77971114a44fe9f0bb79c6d72138c9f67c91183d6e5ed9f",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1805.07335",
+    "member": "main.tex",
+    "sha256": "2b442203fa7a7338868a21134f1c50937728d3055dfd50e8bd4a989d1531ad18",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1811.03398",
+    "member": "main.tex",
+    "sha256": "4fb2407e4a47c26808d247fa77419e6f8af7fad3c1317b8fbd78766d09e13e9c",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1603.09445",
+    "member": "2pn.tex",
+    "sha256": "026a297780613594bd3284033874d6f57b7204d89a7b1966649b4f44735a8941",
+    "encoding": "unverified_non_utf8_encoding"
+  },
+  {
+    "paper": "1803.02610",
+    "member": "main.tex",
+    "sha256": "620205e8fc475509c4a4cb2d06da2775b4372c31161b73ea779d9a95ffc9bd51",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1803.11298",
+    "member": "main.tex",
+    "sha256": "091877ee81ac7318066dff06f5cfa86d789f9e91ceaef690b6c79a826fb20fd0",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1805.03469",
+    "member": "main.tex",
+    "sha256": "84dbacf553559de502bb712de81ba0b129476ff188aba04eb6d979056e869a1b",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.12432",
+    "member": "abstract.tex",
+    "sha256": "18fc95ffa3d8d6ba1abecab0be1d94953e0963ff57a5f94d371e457aff52e2ae",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.12432",
+    "member": "appendix.tex",
+    "sha256": "d98ce6709ac98a9e09ed71e30411e509e5712accc14e4164359922e9c69562d8",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.12432",
+    "member": "conclusion.tex",
+    "sha256": "7de6d701ae8b0eccb374d9e7246d92977c84c6c49bec6de63e62bf7348665056",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.12432",
+    "member": "definitions.tex",
+    "sha256": "ab1593e007f42e737998cbde89e3bbd537098a4f93a59b9995cce18d10e432bb",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.12432",
+    "member": "directed_graphs.tex",
+    "sha256": "2e635ce5163b853de0631b69ca0c928113c241f42f66bddbbe1716a4bce05d2a",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.12432",
+    "member": "hypergraphs.tex",
+    "sha256": "8998ca40e92cb2283a138e1448dee9c0dda675a86028ff9ed7d3d993a1adb0fe",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.12432",
+    "member": "introduction.tex",
+    "sha256": "2635142bdd0836b81c04776fcf2b84476c254b496c11b9380ba31c39097f83a9",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.12432",
+    "member": "ms.tex",
+    "sha256": "c6ea818f4d917e5ec96476781d0dc9aea72a5b58c4e779302091036aeebf40b1",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1909.03384",
+    "member": "ExamplesCanonicalTopology.tex",
+    "sha256": "c11f76801dfe7a6de60b82e4658fd0a14a97e0a6210693e3797d35b0cd92157e",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1909.03384",
+    "member": "Giraud.tex",
+    "sha256": "c31721d718a4fa2af1b6b04a7611fc4f5d5e1c1bd4db4ecba1f3ca013eb6923d",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1909.03384",
+    "member": "background.tex",
+    "sha256": "314b7112acca77382885535c9fe45e68e3aada30c4928e9da360bb7f52747c31",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1909.03384",
+    "member": "cantopRMod.tex",
+    "sha256": "626045ed79cb72f2bf6212cf45d00537f3c7c57c118d336d29f5872e2a533827",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1909.03384",
+    "member": "cantopTopSet.tex",
+    "sha256": "0ff1a92bc65c9da3aee1534fb5448be37ad6420343f8011dd8883228e80fd3ca",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1909.03384",
+    "member": "intro.tex",
+    "sha256": "53574ced208113c085171579742b8b214b1bfdcaec188ee2ee406b9edd391159",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1909.03384",
+    "member": "natbib.sty",
+    "sha256": "43669688db9505955e74b1beb1539b99b028f75e248311f4919565580031961c",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1904.02706",
+    "member": "main.tex",
+    "sha256": "e3dfd17f6e4479845b509d44ba38b3d104b995f9d07915dc775c60e3bb28b148",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1810.13017",
+    "member": "main.tex",
+    "sha256": "3b0801fee8c7d82399b33e20ee64779ad6e26eab492c76fa636ed3b288e9ba00",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1711.00924",
+    "member": "main.tex",
+    "sha256": "261a384f504e320fc1850f7c4fe28aeee16e9f5b94b69c17fa169ccc4612c145",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1904.03519",
+    "member": "protection_number.tex",
+    "sha256": "d91c4cf7bb2782218c9717052558f42bd126995703d9d36c1c4ab6777b09ed2e",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1903.02968",
+    "member": "main.tex",
+    "sha256": "46e93a2f34a64323a2328df8fc29d1ac038da363457c72ff5f07afc529cb24da",
+    "encoding": "unverified_non_utf8_encoding"
+  },
+  {
+    "paper": "1611.02474",
+    "member": "aims.cls",
+    "sha256": "2d48cddd60a98bf98446a5f086bf31b1dd23e9eaa7aaad0588a6a49e49d19cf1",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1611.02474",
+    "member": "main.tex",
+    "sha256": "53eb7eaf1a3b01534a51a90ba1ea593a960fcaaae1615f77d2a65132c93bb27f",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1511.01662",
+    "member": "main.tex",
+    "sha256": "b32a0bf1c1215470b6e0ef0a661192ef50264fef1d317fc75a0d2803775dd13b",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1901.11018",
+    "member": "main.tex",
+    "sha256": "d3264ce9bb2e15e0973af623652cbc80c0245a96d24ae24902d90fd12b764c8b",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1805.05488",
+    "member": "acmart.cls",
+    "sha256": "f19e4d870c89764cbf8c0165149b717b830430064142a2103d5fc2d49646b70e",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1805.05488",
+    "member": "issac-cgolay.tex",
+    "sha256": "4fb2a8f2d13e0094aee409f0161920a5d47b8ae3abd1eddc06f73eecc2214e84",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1802.01149",
+    "member": "main.tex",
+    "sha256": "fcb7a91979a622f22017cb12bf76425311c02abe16795ad6a6abfdd87566dba6",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1802.06601",
+    "member": "3YVNRL88_Chen-Han-Xia-2018-3-3_edited_KM.tex",
+    "sha256": "d209de9de5ca4fb33adbba6ba27dc12ce386e05b0e4740427c9b80dc116ede7e",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1610.03172",
+    "member": "Cart_Dist.tex",
+    "sha256": "a28330aee8eb287359856c233f8d3a5061beef02c65a8ddf28e10723e00a2ee7",
+    "encoding": "utf-8"
+  },
+  {
+    "paper": "1709.10450",
+    "member": "invariant-divisor-sod-v4.tex",
+    "sha256": "b9208f0ed4341f889de38f3c7f5853a2773ccdf6abfe556e3508478674018d96",
+    "encoding": "utf-8"
+  }
+]

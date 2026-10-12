@@ -1,27 +1,25 @@
 """Post-score coverage, independent full encoder replay and original metrics."""
 from collections import Counter,defaultdict
 from datetime import datetime,timezone
-import bisect,gzip,hashlib,json,math
+import argparse,bisect,gzip,hashlib,json,math
 import numpy as np
 from math_tokenizer.corpus import ROOT
-from math_tokenizer.experiment_v7 import load_model,read_external
+from math_tokenizer.experiment_v7 import load_model,read_external,evaluation_suites
 from math_tokenizer.benchmark_v6 import load_split
 from math_tokenizer.independent_v7 import source_scopes
 from math_tokenizer.metrics_v2 import token_bytes
 from math_tokenizer.frontend_v6 import reference_lex,tree_ranges
 from math_tokenizer.measure_v5 import cross_count
+from math_tokenizer.result_rows import PerFormulaStore
 from summarize_full_v6 import aggregate_rows
 
 
 def main():
-    folder=ROOT/'results/v7/full';metrics=json.loads((folder/'metrics.json').read_text());entries=json.loads((folder/'registry.json').read_text())
-    protocol=json.loads((folder/'evaluation_protocol.json').read_text());external=read_external()
-    extreme=set(json.loads((ROOT/'data/releases/v7/splits.json').read_text())['extreme_domain_test'])
-    suites={'external_test':external,'extreme_domain_test':[r for r in external if r['id'] in extreme],
-            'stress_test':list(map(json.loads,(ROOT/'results/v6/stress_test.jsonl').open()))}
+    parser=argparse.ArgumentParser();parser.add_argument('--release',choices=['v7','v8'],default='v7');a=parser.parse_args()
+    folder=ROOT/f'results/{a.release}/full';metrics=json.loads((folder/'metrics.json').read_text());entries=json.loads((folder/'registry.json').read_text())
+    protocol=json.loads((folder/'evaluation_protocol.json').read_text());suites=evaluation_suites(a.release)
     expected={s:{r['id']:r for r in rs} for s,rs in suites.items()};scope_cache={s:{r['id']:source_scopes(r['latex']) for r in rs} for s,rs in suites.items()}
-    rows=defaultdict(list)
-    for r in map(json.loads,gzip.open(folder/'per_formula.jsonl.gz','rt')):rows[(r['key'],r['suite'])].append(r)
+    rows=PerFormulaStore(folder/'per_formula.jsonl.gz')
     logs=[];count=0
     for m in metrics:
         rr=rows[(m['key'],m['suite'])];want=expected[m['suite']]
@@ -91,7 +89,7 @@ def main():
     report={'rounds':logs,'preflight_rounds':4,'total_rounds':8,'all_passed':True,'corpus_archive_sha256':protocol['external_archive_sha256'],
         'registry_sha256':protocol['registry_sha256'],'per_formula_sha256':hashlib.sha256((folder/'per_formula.jsonl.gz').read_bytes()).hexdigest(),
         'completed_utc':datetime.now(timezone.utc).isoformat()}
-    (folder/'fairness_audit.json').write_text(json.dumps(report,indent=2)+'\n');print('Eight reviews passed',count,'rows',flush=True)
+    (folder/'fairness_audit.json').write_text(json.dumps(report,indent=2)+'\n');rows.close();print('Eight reviews passed',count,'rows',flush=True)
 
 
 if __name__=='__main__':main()

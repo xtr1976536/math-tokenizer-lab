@@ -1,0 +1,90 @@
+{
+  "1024/broad": {
+    "compression_relative_regression": -0.0006161426074040577,
+    "fit_bpb_relative_regression": 0.00019526589320340015,
+    "command_recall_loss": 0.0,
+    "number_recall_loss": 0.0,
+    "scope_recall_loss": 0.01731692050907574,
+    "crossing_increase": -0.005234911088822319,
+    "encode_relative_loss": -0.0012757506852676403,
+    "point_estimate_guards_passed": false,
+    "compression_difference_ci95": [
+      -0.0013197594473593928,
+      0.0008467647492395334
+    ],
+    "compression_difference_familywise_ci95": [
+      -0.0021966969826299767,
+      0.0018056968273419394
+    ],
+    "compression_noninferiority_margin": 0.0039453963044825775,
+    "compression_ci95_within_margin": true,
+    "compression_familywise_ci95_within_margin": true,
+    "statistical_equivalence_of_all_metrics_established": false
+  },
+  "1024/specialized": {
+    "compression_relative_regression": 0.001069553281522806,
+    "fit_bpb_relative_regression": -0.0010799091438855601,
+    "command_recall_loss": 0.0,
+    "number_recall_loss": 0.0,
+    "scope_recall_loss": -0.019864518491395144,
+    "crossing_increase": 0.0037217150472410865,
+    "encode_relative_loss": -0.050018936955929405,
+    "point_estimate_guards_passed": true,
+    "compression_difference_ci95": [
+      -0.00362852169927782,
+      0.004517477363135188
+    ],
+    "compression_difference_familywise_ci95": [
+      -0.006971321546172625,
+      0.007683548910715089
+    ],
+    "compression_noninferiority_margin": 0.004464959197856615,
+    "compression_ci95_within_margin": false,
+    "compression_familywise_ci95_within_margin": false,
+    "statistical_equivalence_of_all_metrics_established": false
+  },
+  "2048/broad": {
+    "compression_relative_regression": -0.004461556626733421,
+    "fit_bpb_relative_regression": -0.0021052869389597273,
+    "command_recall_loss": 0.0,
+    "number_recall_loss": 0.0015654896503739524,
+    "scope_recall_loss": 0.006128729397037347,
+    "crossing_increase": -0.004472532174050053,
+    "encode_relative_loss": 0.00037191974834860364,
+    "point_estimate_guards_passed": true,
+    "compression_difference_ci95": [
+      -0.0030629295241971412,
+      -8.295072406307073e-05
+    ],
+    "compression_difference_familywise_ci95": [
+      -0.004437544624400136,
+      0.0009304688465112742
+    ],
+    "compression_noninferiority_margin": 0.0033870096717512443,
+    "compression_ci95_within_margin": true,
+    "compression_familywise_ci95_within_margin": true,
+    "statistical_equivalence_of_all_metrics_established": false
+  },
+  "2048/specialized": {
+    "compression_relative_regression": 0.000236492847061065,
+    "fit_bpb_relative_regression": -0.0029131941373909953,
+    "command_recall_loss": 0.0,
+    "number_recall_loss": 0.00030892801977144835,
+    "scope_recall_loss": -0.011808861222995182,
+    "crossing_increase": -0.0028970251416292336,
+    "encode_relative_loss": 0.015085009553893358,
+    "point_estimate_guards_passed": true,
+    "compression_difference_ci95": [
+      -0.002446850600081792,
+      0.0027488579691273495
+    ],
+    "compression_difference_familywise_ci95": [
+      -0.004617953008427844,
+      0.005005010708997107
+    ],
+    "compression_noninferiority_margin": 0.004117502103037342,
+    "compression_ci95_within_margin": true,
+    "compression_familywise_ci95_within_margin": false,
+    "statistical_equivalence_of_all_metrics_established": false
+  }
+}

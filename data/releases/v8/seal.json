@@ -1,0 +1,7 @@
+{
+  "sealed_utc": "2026-10-12T15:38:12.728341+00:00",
+  "archive_sha256": "2f02977bdf0e192c9fb9e32c6a02a51359dec92f2d9d9cfdec75850085a5d979",
+  "raw_jsonl_sha256": "07ae5432eed4015774da7e135a735c5753330c80414db356c7994a9bce7dd59b",
+  "splits_sha256": "fec57dce05c1eb382e927824a3b66d20f21f1c8a910eb07feb0ab251eb48fd3e",
+  "scores_must_not_be_read_before_model_freeze": true
+}

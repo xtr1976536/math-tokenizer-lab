@@ -1,0 +1,376 @@
+{
+  "frozen_utc": "2026-10-12T16:03:53.211805+00:00",
+  "external_archive_sha256": "2f02977bdf0e192c9fb9e32c6a02a51359dec92f2d9d9cfdec75850085a5d979",
+  "registry_sha256": "ca5d7bab2d99a6104043bbbdbaada37d93e29b064a639484a77304a864b0e084",
+  "previous_results_used_for_development": true,
+  "new_external_scores_used": false,
+  "capacities": [
+    1024,
+    2048
+  ],
+  "main_scenarios": {
+    "broad": "external_test",
+    "specialized": "extreme_domain_test"
+  },
+  "additional_suites": [
+    "broad_extreme",
+    "stress_test_v6_exposed",
+    "exposed_v7_test",
+    "exposed_v6_test",
+    "exposed_v7_extreme",
+    "exposed_v6_extreme"
+  ],
+  "all_raw_strings": true,
+  "per_model_filter_or_truncation": false,
+  "fit_calibration": "Same fit IDs by scenario, actual vocab and add-half readout; mature models separately calibrated for broad and specialized.",
+  "additional_smoothing": [
+    0.01,
+    0.1,
+    0.5,
+    1.0
+  ],
+  "independent_parser": "pylatexenc2.11 strict groups (source syntax only, not expert semantic gold)",
+  "edit_probe_limit": 256,
+  "edit_probe_sampling": "Common first256 immutable suite records, same-byte lexical-symbol local edit, outside16bytes boundary change",
+  "timing_repeats": 7,
+  "timing": "All configurations shuffled/interleaved, full public encode/decode including frontend, caches clear, no training/network tasks.",
+  "comprehensive_weights": {
+    "document_macro_tokens_per_byte": 0.3,
+    "encode_mib_s": 0.25,
+    "independent_tree_crossing": 0.2,
+    "command_integrity": 0.1,
+    "number_integrity": 0.05,
+    "fit_predictive_unigram_bits_per_byte": 0.1
+  },
+  "rank_scope": "Practical deployed systems on same inputs; matched dictionaries/atoms and causal controls reported separately.",
+  "scenario_weights": {
+    "broad": 0.5,
+    "specialized": 0.5
+  },
+  "paper_bootstrap_resamples": 20000,
+  "primary_pairs": [
+    "ast_lexicographic-vs-official_atomic_bpe",
+    "ast_lexicographic-vs-lexical_shortest",
+    "v5_terminal_transfer-vs-v5_terminal_no_update",
+    "v5_terminal_transfer-vs-v5_policy_search"
+  ],
+  "multiple_comparisons": "Primary paired bootstrap intervals additionally adjusted by Bonferroni familywise 5%; raw CIs descriptive.",
+  "candidate_promotion": "Final downstream roles fixed using dev promotion; terminal RL excluded if controlled gate fails; no test-based hyperparameter selection",
+  "downstream": false,
+  "expert_gold_or_multihardware_claim": false,
+  "scope_limitation": "New source-topic holdout, not guaranteed disjoint mathematical concepts; external pretraining contamination unknown.",
+  "preregistered_document_sha256": "77971ce300be534a66bec05d35e6a53af847557af6e0072f02206e24f7cf5357",
+  "primary_pairs_explicit": [
+    [
+      "ast_boundary",
+      "ast_lexicographic"
+    ],
+    [
+      "ast_boundary",
+      "official_atomic_bpe"
+    ],
+    [
+      "official_atomic_bpe",
+      "v5_parent"
+    ],
+    [
+      "parameter_rl",
+      "random_search"
+    ],
+    [
+      "parameter_rl",
+      "cem_search"
+    ],
+    [
+      "parameter_rl",
+      "no_update_v8"
+    ]
+  ],
+  "rl_development_decision": {
+    "comparisons": {
+      "random_search": {
+        "utility_improvement_mean": 0.0005962401273403602,
+        "relative_improvement_mean": 0.0011616732567372343,
+        "winning_pairs": 7,
+        "pairs": 15,
+        "seed_cluster_ci95": [
+          -0.0022811852287237143,
+          0.0035925211515396662
+        ],
+        "all_noninferiority_guards_passed": false,
+        "regressions": [
+          {
+            "fold": 211,
+            "seed": 17,
+            "compression_relative_regression": -0.0004287032368529564,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.011152416356877304
+          },
+          {
+            "fold": 211,
+            "seed": 29,
+            "compression_relative_regression": -0.0018278360785046743,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.0006195786864931496
+          },
+          {
+            "fold": 211,
+            "seed": 43,
+            "compression_relative_regression": 0.025364039013556328,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.20817843866171004
+          },
+          {
+            "fold": 211,
+            "seed": 59,
+            "compression_relative_regression": -0.0019632591109560726,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.1418835192069393
+          },
+          {
+            "fold": 211,
+            "seed": 71,
+            "compression_relative_regression": 0.00394944174861811,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.028500619578686492
+          },
+          {
+            "fold": 337,
+            "seed": 17,
+            "compression_relative_regression": 0.022664924229099048,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.18882466281310206
+          },
+          {
+            "fold": 337,
+            "seed": 29,
+            "compression_relative_regression": 0.00025315568639916464,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.006743737957610796
+          },
+          {
+            "fold": 337,
+            "seed": 43,
+            "compression_relative_regression": -0.004645751352419958,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.006743737957610851
+          },
+          {
+            "fold": 337,
+            "seed": 59,
+            "compression_relative_regression": -0.0014845254483957238,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.0004816955684007196
+          },
+          {
+            "fold": 337,
+            "seed": 71,
+            "compression_relative_regression": 0.0001081929160531292,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.0014450867052023253
+          },
+          {
+            "fold": 461,
+            "seed": 17,
+            "compression_relative_regression": 0.011642778009908428,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.006430868167202564
+          },
+          {
+            "fold": 461,
+            "seed": 29,
+            "compression_relative_regression": -0.0005774974786789677,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.06591639871382637
+          },
+          {
+            "fold": 461,
+            "seed": 43,
+            "compression_relative_regression": 0.01952088336144553,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.19292604501607724
+          },
+          {
+            "fold": 461,
+            "seed": 59,
+            "compression_relative_regression": -0.004721369398535624,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.13826366559485537
+          },
+          {
+            "fold": 461,
+            "seed": 71,
+            "compression_relative_regression": 0.0018741730337668017,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.13719185423365488
+          }
+        ],
+        "promotion_passed": false,
+        "inference_scope": "five training seeds conditional on three possibly overlapping paper resplits"
+      },
+      "cem_search": {
+        "utility_improvement_mean": 0.0010343106958375296,
+        "relative_improvement_mean": 0.0019945032661608255,
+        "winning_pairs": 8,
+        "pairs": 15,
+        "seed_cluster_ci95": [
+          -0.001963411216946694,
+          0.00398155667050711
+        ],
+        "all_noninferiority_guards_passed": false,
+        "regressions": [
+          {
+            "fold": 211,
+            "seed": 17,
+            "compression_relative_regression": 0.005518377532844898,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.0006195786864931496
+          },
+          {
+            "fold": 211,
+            "seed": 29,
+            "compression_relative_regression": -0.0011102844023850311,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.012391573729863659
+          },
+          {
+            "fold": 211,
+            "seed": 43,
+            "compression_relative_regression": 0.020336166008521728,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.015489467162329629
+          },
+          {
+            "fold": 211,
+            "seed": 59,
+            "compression_relative_regression": -0.0038174186162125423,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.147459727385378
+          },
+          {
+            "fold": 211,
+            "seed": 71,
+            "compression_relative_regression": 0.004513092657002504,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.026022304832713783
+          },
+          {
+            "fold": 337,
+            "seed": 17,
+            "compression_relative_regression": 0.01858135720036258,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.18256262042389204
+          },
+          {
+            "fold": 337,
+            "seed": 29,
+            "compression_relative_regression": 0.005213521525659903,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.016859344894027017
+          },
+          {
+            "fold": 337,
+            "seed": 43,
+            "compression_relative_regression": -0.0031474585939282873,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.034682080924855474
+          },
+          {
+            "fold": 337,
+            "seed": 59,
+            "compression_relative_regression": 3.564459023364108e-05,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.03179190751445082
+          },
+          {
+            "fold": 337,
+            "seed": 71,
+            "compression_relative_regression": -0.0031162301519511715,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.023121387283236983
+          },
+          {
+            "fold": 461,
+            "seed": 17,
+            "compression_relative_regression": 0.01969516080523115,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.18542336548767419
+          },
+          {
+            "fold": 461,
+            "seed": 29,
+            "compression_relative_regression": -0.004204884795364183,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.06109324758842449
+          },
+          {
+            "fold": 461,
+            "seed": 43,
+            "compression_relative_regression": 0.003182179079743497,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.0
+          },
+          {
+            "fold": 461,
+            "seed": 59,
+            "compression_relative_regression": -0.004267119716419132,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": 0.04769560557341901
+          },
+          {
+            "fold": 461,
+            "seed": 71,
+            "compression_relative_regression": -0.007748400284502077,
+            "command_recall_loss": 0.0,
+            "number_recall_loss": 0.0,
+            "scope_recall_loss": -0.17684887459807075
+          }
+        ],
+        "promotion_passed": false,
+        "inference_scope": "five training seeds conditional on three possibly overlapping paper resplits"
+      }
+    },
+    "rl_promoted": false,
+    "total_models": 48,
+    "same_reward_config": true,
+    "same_terminal_evaluation_budget": 34,
+    "new_test_used_for_selection": false,
+    "interpretation": "Practical promotion evidence, not proof all RL is ineffective"
+  },
+  "replacement_tolerances": {
+    "compression_relative": 0.01,
+    "fit_bpb_relative": 0.02,
+    "integrity_and_scope_absolute": 0.01,
+    "crossing_absolute": 0.01,
+    "encode_relative_loss": 0.1
+  }
+}

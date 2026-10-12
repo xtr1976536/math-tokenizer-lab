@@ -1,0 +1,11 @@
+{
+  "configurations": 121,
+  "metric_records": 682,
+  "formula_rows": 1446368,
+  "all_raw_inputs": true,
+  "per_model_exclusions": false,
+  "archive_sha256": "2f02977bdf0e192c9fb9e32c6a02a51359dec92f2d9d9cfdec75850085a5d979",
+  "uniform_retiming_required": false,
+  "completed_utc": "2026-10-12T16:13:00.028819+00:00",
+  "uniform_retiming_completed": true
+}

@@ -1,0 +1,5 @@
+{
+  "phase": "interrupted pretest engineering references only",
+  "used_for_formal_selection": false,
+  "all_formal_optimizers_retrained_with_same_CPP_index": true
+}

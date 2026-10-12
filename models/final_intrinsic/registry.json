@@ -1,0 +1,1101 @@
+{
+  "release": "v8_final_intrinsic",
+  "frozen_utc": "2026-10-12T16:03:53.211805+00:00",
+  "finalized_utc": "2026-10-12T16:25:33.746004+00:00",
+  "roles_frozen_before_test": true,
+  "source_registry_sha256": "ca5d7bab2d99a6104043bbbdbaada37d93e29b064a639484a77304a864b0e084",
+  "shortlist": {
+    "pretest_frozen_utc": "2026-10-12T16:03:53.211805+00:00",
+    "registry_sha256": "ca5d7bab2d99a6104043bbbdbaada37d93e29b064a639484a77304a864b0e084",
+    "rl_in_core": false,
+    "deployment_seed": 17,
+    "capacities": [
+      1024,
+      2048
+    ],
+    "math_core": [
+      "ast_boundary",
+      "ast_v4_parent",
+      "official_atomic_bpe"
+    ],
+    "equal_capacity_controls": [
+      "hf_byte_bpe",
+      "sentencepiece_unigram"
+    ],
+    "structural_ablations": [
+      "ast_lexicographic",
+      "pathpiece_atomic_vocab"
+    ],
+    "general_core": [
+      "Qwen2.5-0.5B",
+      "meta-llama/Meta-Llama-3-8B",
+      "tiktoken_o200k_base"
+    ],
+    "extended_general": [
+      "Qwen/Qwen3-0.6B",
+      "deepseek-ai/DeepSeek-V3",
+      "microsoft/Phi-4",
+      "mistralai/Mistral-Nemo-Base-2407",
+      "tiktoken_gpt2",
+      "tiktoken_cl100k_base"
+    ],
+    "diagnostic_only": [
+      "v5_parent",
+      "v5_terminal_transfer",
+      "parameter_rl",
+      "random_search",
+      "cem_search",
+      "no_update_v8"
+    ],
+    "different_pretrained_vocabularies_are_deployment_references": true,
+    "downstream_training_executed": false
+  },
+  "models": {
+    "ast_boundary": [
+      {
+        "name": "ast_boundary",
+        "path": "results/v8/broad_1024/models/ast_boundary.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "same_official_atomic_dictionary_dev_selected_boundary_weights",
+        "key": "77:ast_boundary:1024:broad:0",
+        "checkpoint_sha256": "b1f79ec91c5a02df225547798be24e756de28aff337a7322cc98b501dbdacc05"
+      },
+      {
+        "name": "ast_boundary",
+        "path": "results/v8/broad_2048/models/ast_boundary.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "same_official_atomic_dictionary_dev_selected_boundary_weights",
+        "key": "88:ast_boundary:2048:broad:0",
+        "checkpoint_sha256": "b07ac3f6f977b8dbac210bbd4ae850f3a1d7b27751935b32cb9dae65c7ce297d"
+      },
+      {
+        "name": "ast_boundary",
+        "path": "results/v8/specialized_1024/models/ast_boundary.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "same_official_atomic_dictionary_dev_selected_boundary_weights",
+        "key": "99:ast_boundary:1024:specialized:0",
+        "checkpoint_sha256": "960cc0afb71615b35ea783510ca77d5772a3cd2b1ad4cbff2e2789566fb857b4"
+      },
+      {
+        "name": "ast_boundary",
+        "path": "results/v8/specialized_2048/models/ast_boundary.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "same_official_atomic_dictionary_dev_selected_boundary_weights",
+        "key": "110:ast_boundary:2048:specialized:0",
+        "checkpoint_sha256": "31fb7e573ce16e1f637e02b34814d20cd62a4d3f5873633e0c5eba3688d941fa"
+      }
+    ],
+    "ast_v4_parent": [
+      {
+        "name": "ast_v4_parent",
+        "path": "models/current/ast_v4/v6-broad-1024.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_with_reward_selection",
+        "key": "0:ast_v4_parent:1024:broad:0",
+        "checkpoint_sha256": "f676d3313bf7483295e632143a9c05eeb255a8dff013c148ce53d2aa6a601e28"
+      },
+      {
+        "name": "ast_v4_parent",
+        "path": "models/current/ast_v4/v6-specialized-1024.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_with_reward_selection",
+        "key": "19:ast_v4_parent:1024:specialized:0",
+        "checkpoint_sha256": "9561bfeee1559e02f2f07838225ce8e840adeb95aac9ed43a7bac877be932623"
+      },
+      {
+        "name": "ast_v4_parent",
+        "path": "models/current/ast_v4/v6-broad-2048.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_with_reward_selection",
+        "key": "36:ast_v4_parent:2048:broad:0",
+        "checkpoint_sha256": "2a69a0e6704451cc9510a3a7d3d9ce69b372519dd2bf4bd81aedf553bfcf442f"
+      },
+      {
+        "name": "ast_v4_parent",
+        "path": "models/current/ast_v4/v6-specialized-2048.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_with_reward_selection",
+        "key": "52:ast_v4_parent:2048:specialized:0",
+        "checkpoint_sha256": "efce5bb6196e619c0faa645e47b630f2a40b684c6b46020ea65c6f7f5c46712f"
+      }
+    ],
+    "official_atomic_bpe": [
+      {
+        "name": "official_atomic_bpe",
+        "path": "results/v7/broad_1024/models/atomic_bpe_fit_reward_union.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 0.9456618330004858,
+        "key": "3:official_atomic_bpe:1024:broad:0",
+        "checkpoint_sha256": "915808d32dbf255237ebb3d2e3c9cb616a69fc82502aba8729f7c4e248ad8f95"
+      },
+      {
+        "name": "official_atomic_bpe",
+        "path": "results/v7/specialized_1024/models/atomic_bpe_fit_reward_union.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 0.6622875839966582,
+        "key": "22:official_atomic_bpe:1024:specialized:0",
+        "checkpoint_sha256": "80c6ce82a2e05c7da25b5ba68856cde4ca016468ff39730bf805b8541cee5a1f"
+      },
+      {
+        "name": "official_atomic_bpe",
+        "path": "results/v7/broad_2048/models/atomic_bpe_fit_reward_union.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 3.0042835420026677,
+        "key": "39:official_atomic_bpe:2048:broad:0",
+        "checkpoint_sha256": "7455294caaabfa469a7d5bb06b1a1aa1d88994f8dae6f3e7bf20cfd4d7a4a464"
+      },
+      {
+        "name": "official_atomic_bpe",
+        "path": "results/v7/specialized_2048/models/atomic_bpe_fit_reward_union.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 1.5299384999962058,
+        "key": "55:official_atomic_bpe:2048:specialized:0",
+        "checkpoint_sha256": "2d38586e0f4db4c43e45e81c828a26480d90728c1b39d3301a42970ccdcfe75b"
+      }
+    ],
+    "hf_byte_bpe": [
+      {
+        "name": "hf_byte_bpe",
+        "path": "results/v7/broad_1024/models/hf_byte_fit_reward_union.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "hf",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 2.257977541987202,
+        "key": "4:hf_byte_bpe:1024:broad:0",
+        "checkpoint_sha256": "ff8b4cc7b672e0d96955790e10b4bf93af7e0719fa5e8a0cddbcdde16a019a6c"
+      },
+      {
+        "name": "hf_byte_bpe",
+        "path": "results/v7/specialized_1024/models/hf_byte_fit_reward_union.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "hf",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 1.2086117500002729,
+        "key": "23:hf_byte_bpe:1024:specialized:0",
+        "checkpoint_sha256": "242c712fe199a0bf91803b69581ba3e5f726930a8df36acf4a36319193635a31"
+      },
+      {
+        "name": "hf_byte_bpe",
+        "path": "results/v7/broad_2048/models/hf_byte_fit_reward_union.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "hf",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 6.211800125005539,
+        "key": "40:hf_byte_bpe:2048:broad:0",
+        "checkpoint_sha256": "4c149f063cf1600bfe28e42512be6d4d2bf11a436c519f62b53d21efa0838b52"
+      },
+      {
+        "name": "hf_byte_bpe",
+        "path": "results/v7/specialized_2048/models/hf_byte_fit_reward_union.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "hf",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 2.2750803340022685,
+        "key": "56:hf_byte_bpe:2048:specialized:0",
+        "checkpoint_sha256": "c7e181698e49400b38ba9d75eec920d3a88d3322dfcd90f6faa87972e9309980"
+      }
+    ],
+    "sentencepiece_unigram": [
+      {
+        "name": "sentencepiece_unigram",
+        "path": "results/v7/broad_1024/models/sentencepiece_unigram_union.model",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "sp",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 43.01499987499983,
+        "key": "8:sentencepiece_unigram:1024:broad:0",
+        "checkpoint_sha256": "a861be3bae4b195d8dcf52fedfa013975057277ff1e3182cb9ef67800e22767a"
+      },
+      {
+        "name": "sentencepiece_unigram",
+        "path": "results/v7/specialized_1024/models/sentencepiece_unigram_union.model",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "sp",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 9.05158666699981,
+        "key": "27:sentencepiece_unigram:1024:specialized:0",
+        "checkpoint_sha256": "1d47e0e9b148188e7a126b416ba0bd7a0a0696b165c5181bec2d2ba17380ba22"
+      },
+      {
+        "name": "sentencepiece_unigram",
+        "path": "results/v7/broad_2048/models/sentencepiece_unigram_union.model",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "sp",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 32.035067959000116,
+        "key": "44:sentencepiece_unigram:2048:broad:0",
+        "checkpoint_sha256": "02658660887c3d274e373089c0fd8063d8b8e56dc9bef154c227158a66cb58a6"
+      },
+      {
+        "name": "sentencepiece_unigram",
+        "path": "results/v7/specialized_2048/models/sentencepiece_unigram_union.model",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "sp",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 3.6879798330000995,
+        "key": "60:sentencepiece_unigram:2048:specialized:0",
+        "checkpoint_sha256": "0a8b80513f5e948f36adf8d45f5e4364ede6f77e368de9b427093a444b01d157"
+      }
+    ],
+    "ast_lexicographic": [
+      {
+        "name": "ast_lexicographic",
+        "path": "results/v7/broad_1024/models/ast_lexicographic.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "same_official_atomic_union_dictionary_no_reward_at_inference",
+        "key": "2:ast_lexicographic:1024:broad:0",
+        "checkpoint_sha256": "28f2e68335cbc5d24dc1182a07e38e8a744e690095f1389ad3bc9bfe19381abc"
+      },
+      {
+        "name": "ast_lexicographic",
+        "path": "results/v7/specialized_1024/models/ast_lexicographic.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "same_official_atomic_union_dictionary_no_reward_at_inference",
+        "key": "21:ast_lexicographic:1024:specialized:0",
+        "checkpoint_sha256": "7b62464d3f52067158b3d4fb942f06a3fdcbd048a114488f40b255426f13dc31"
+      },
+      {
+        "name": "ast_lexicographic",
+        "path": "results/v7/broad_2048/models/ast_lexicographic.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "same_official_atomic_union_dictionary_no_reward_at_inference",
+        "key": "38:ast_lexicographic:2048:broad:0",
+        "checkpoint_sha256": "1974aa80f3d6e762d4a84cad512d3344306e8de77e12e2f15e0783ef1cd4a25d"
+      },
+      {
+        "name": "ast_lexicographic",
+        "path": "results/v7/specialized_2048/models/ast_lexicographic.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "same_official_atomic_union_dictionary_no_reward_at_inference",
+        "key": "54:ast_lexicographic:2048:specialized:0",
+        "checkpoint_sha256": "d21d1ea31186b8a440e5323ec0bee3498f53be1df46b8d3f10ecf7c2a5c8e3ec"
+      }
+    ],
+    "pathpiece_atomic_vocab": [
+      {
+        "name": "pathpiece_atomic_vocab",
+        "path": "results/v7/broad_1024/models/pathpiece_atomic_fit_reward_union.vocab",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "pathpiece",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 0.9456618330004858,
+        "key": "5:pathpiece_atomic_vocab:1024:broad:0",
+        "checkpoint_sha256": "f438729c7190c86db6d8a8115eb88f5b6d6877aca4c3bb3521b01d311a8dc91f"
+      },
+      {
+        "name": "pathpiece_atomic_vocab",
+        "path": "results/v7/specialized_1024/models/pathpiece_atomic_fit_reward_union.vocab",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "pathpiece",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 0.6622875839966582,
+        "key": "24:pathpiece_atomic_vocab:1024:specialized:0",
+        "checkpoint_sha256": "ffa7381f1f8704e8d83a9daf36eaf61ad015acd50926516d29478090e678922c"
+      },
+      {
+        "name": "pathpiece_atomic_vocab",
+        "path": "results/v7/broad_2048/models/pathpiece_atomic_fit_reward_union.vocab",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "pathpiece",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 3.0042835420026677,
+        "key": "41:pathpiece_atomic_vocab:2048:broad:0",
+        "checkpoint_sha256": "36dcf04f1fb8d8fee5731e620f27c8810e3af68d8f993ca6db8f139d58905eea"
+      },
+      {
+        "name": "pathpiece_atomic_vocab",
+        "path": "results/v7/specialized_2048/models/pathpiece_atomic_fit_reward_union.vocab",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "pathpiece",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "train_seconds": 1.5299384999962058,
+        "key": "57:pathpiece_atomic_vocab:2048:specialized:0",
+        "checkpoint_sha256": "615b3e8457ff41d832604d2be916fedad7338ba38b668da0b9b534af6d75d897"
+      }
+    ],
+    "Qwen2.5-0.5B": [
+      {
+        "name": "Qwen2.5-0.5B",
+        "kind": "hf",
+        "path": "data/raw/qwen-tokenizer.json",
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "73:Qwen2.5-0.5B:None:pretrained:0",
+        "checkpoint_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      }
+    ],
+    "meta-llama/Meta-Llama-3-8B": [
+      {
+        "name": "meta-llama/Meta-Llama-3-8B",
+        "kind": "llama3_official",
+        "path": "data/raw/pretrained_v6/NousResearch--Meta-Llama-3-8B.json",
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "72:meta-llama/Meta-Llama-3-8B:None:pretrained:0",
+        "checkpoint_sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+      }
+    ],
+    "tiktoken_o200k_base": [
+      {
+        "name": "tiktoken_o200k_base",
+        "kind": "tiktoken",
+        "encoding": "o200k_base",
+        "path": null,
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "76:tiktoken_o200k_base:None:pretrained:0"
+      }
+    ],
+    "Qwen/Qwen3-0.6B": [
+      {
+        "name": "Qwen/Qwen3-0.6B",
+        "kind": "hf",
+        "path": "data/raw/pretrained_v6/Qwen--Qwen3-0.6B.json",
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "68:Qwen/Qwen3-0.6B:None:pretrained:0",
+        "checkpoint_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+      }
+    ],
+    "deepseek-ai/DeepSeek-V3": [
+      {
+        "name": "deepseek-ai/DeepSeek-V3",
+        "kind": "hf",
+        "path": "data/raw/pretrained_v6/deepseek-ai--DeepSeek-V3.json",
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "69:deepseek-ai/DeepSeek-V3:None:pretrained:0",
+        "checkpoint_sha256": "621ac2e32d0dba658404412318818aaa8ce8cda492e59830109d8da6b517fb41"
+      }
+    ],
+    "microsoft/Phi-4": [
+      {
+        "name": "microsoft/Phi-4",
+        "kind": "hf",
+        "path": "data/raw/pretrained_v6/microsoft--Phi-4.json",
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "70:microsoft/Phi-4:None:pretrained:0",
+        "checkpoint_sha256": "9f38d05d9d25756bb2f181ab5a0cebcd59e638df10336fc7ed1010f7296d0298"
+      }
+    ],
+    "mistralai/Mistral-Nemo-Base-2407": [
+      {
+        "name": "mistralai/Mistral-Nemo-Base-2407",
+        "kind": "hf",
+        "path": "data/raw/pretrained_v6/mistralai--Mistral-Nemo-Base-2407.json",
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "71:mistralai/Mistral-Nemo-Base-2407:None:pretrained:0",
+        "checkpoint_sha256": "e11c71726323d33da7b8d6f6f269f1988931c0a52b7122bcdd8c05042974e0db"
+      }
+    ],
+    "tiktoken_gpt2": [
+      {
+        "name": "tiktoken_gpt2",
+        "kind": "tiktoken",
+        "encoding": "gpt2",
+        "path": null,
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "74:tiktoken_gpt2:None:pretrained:0"
+      }
+    ],
+    "tiktoken_cl100k_base": [
+      {
+        "name": "tiktoken_cl100k_base",
+        "kind": "tiktoken",
+        "encoding": "cl100k_base",
+        "path": null,
+        "group": "fixed_pretrained_reference",
+        "seed": 0,
+        "scenario": "pretrained",
+        "capacity": null,
+        "information": "external_pretraining_unknown",
+        "train_seconds": 0,
+        "key": "75:tiktoken_cl100k_base:None:pretrained:0"
+      }
+    ],
+    "v5_parent": [
+      {
+        "name": "v5_parent",
+        "path": "models/current/v5/v6-broad-1024.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_with_reward_selection",
+        "key": "1:v5_parent:1024:broad:0",
+        "checkpoint_sha256": "be6063f8f4e33363040fe0f9636424cc9fdcd0bbc2485dfba80aefbb2801283b"
+      },
+      {
+        "name": "v5_parent",
+        "path": "models/current/v5/v6-specialized-1024.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_with_reward_selection",
+        "key": "20:v5_parent:1024:specialized:0",
+        "checkpoint_sha256": "a760796717a6630cfd4f7d363705553d28e7c5ebab76d9e04dff6c7618e6183d"
+      },
+      {
+        "name": "v5_parent",
+        "path": "models/current/v5/v6-broad-2048.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_with_reward_selection",
+        "key": "37:v5_parent:2048:broad:0",
+        "checkpoint_sha256": "21af700b38eb8151ba39ce96d7876d324c5d666145548916cc5064cc3330d595"
+      },
+      {
+        "name": "v5_parent",
+        "path": "models/current/v5/v6-specialized-2048.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 0,
+        "information": "fit_with_reward_selection",
+        "key": "53:v5_parent:2048:specialized:0",
+        "checkpoint_sha256": "cbb002624b3b886664f065b4358b537e033fdb2c8681d705b3b0fec246e03a20"
+      }
+    ],
+    "v5_terminal_transfer": [
+      {
+        "name": "v5_terminal_transfer",
+        "path": "results/v7/broad_1024/models/v5_transfer_tree0.5_e4_s17_learned.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "fit_reward_allowed",
+        "key": "15:v5_terminal_transfer:1024:broad:17",
+        "checkpoint_sha256": "db5da510f481fb54b0c5f5456b42ea878c3ce76427b74104eeeeb5a72cd2a250"
+      },
+      {
+        "name": "v5_terminal_transfer",
+        "path": "results/v7/specialized_1024/models/v5_transfer_tree0.5_e4_s17_learned.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "fit_reward_allowed",
+        "key": "33:v5_terminal_transfer:1024:specialized:17",
+        "checkpoint_sha256": "471c86b843d983d6dddbfa572e6265c1c95e0939df94a26fdac7a0a6b85d3c52"
+      },
+      {
+        "name": "v5_terminal_transfer",
+        "path": "results/v7/broad_2048/models/v5_cross_task_learned.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "fit_reward_allowed",
+        "key": "50:v5_terminal_transfer:2048:broad:17",
+        "checkpoint_sha256": "bfc62492cb9de78662d2f64e10bb281480e5ded8047933d37b38ca2e9488f603"
+      },
+      {
+        "name": "v5_terminal_transfer",
+        "path": "results/v7/specialized_2048/models/v5_cross_task_learned_strict.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "fit_reward_allowed",
+        "key": "66:v5_terminal_transfer:2048:specialized:17",
+        "checkpoint_sha256": "27ce88ed9a9f5883ab1470fd6c5d53ceb97a6f589f9814ea3f8cfe83b80f3d88"
+      }
+    ],
+    "parameter_rl": [
+      {
+        "name": "parameter_rl",
+        "path": "results/v8/broad_1024/models/parameter_rl_17.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "79:parameter_rl:1024:broad:17",
+        "checkpoint_sha256": "1dc2d69f54e58bdf08ad5cc1f79b75041aa3e9d4401788035c756f7ecd149c3c"
+      },
+      {
+        "name": "parameter_rl",
+        "path": "results/v8/broad_2048/models/parameter_rl_17.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "90:parameter_rl:2048:broad:17",
+        "checkpoint_sha256": "236de6d8ff73d21e08666e0436c6373212813b0a9e22bac4616e79083cf008d3"
+      },
+      {
+        "name": "parameter_rl",
+        "path": "results/v8/specialized_1024/models/parameter_rl_17.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "101:parameter_rl:1024:specialized:17",
+        "checkpoint_sha256": "29e0e8e41cab191b9918b3697ceabdaefe9eacbdba275fffe9f9ced1617af67d"
+      },
+      {
+        "name": "parameter_rl",
+        "path": "results/v8/specialized_2048/models/parameter_rl_17.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "112:parameter_rl:2048:specialized:17",
+        "checkpoint_sha256": "aab6eaf991d28a7d5384f9bec025915f359ceeabfcd83897db230781b1ea4a6d"
+      }
+    ],
+    "random_search": [
+      {
+        "name": "random_search",
+        "path": "results/v8/broad_1024/models/random_search_17.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "82:random_search:1024:broad:17",
+        "checkpoint_sha256": "522d4be6a5a23355630c4fbdb03f5ca2e47292a0fa0e58d0c4046a05db3d9ce8"
+      },
+      {
+        "name": "random_search",
+        "path": "results/v8/broad_2048/models/random_search_17.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "93:random_search:2048:broad:17",
+        "checkpoint_sha256": "ea751cd94d8385275a74b891a0f19716512f598e1d96b340cfb7dcbf80db2fa2"
+      },
+      {
+        "name": "random_search",
+        "path": "results/v8/specialized_1024/models/random_search_17.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "104:random_search:1024:specialized:17",
+        "checkpoint_sha256": "e3c7c8446a9924588e0d3c3c138c1af2852c01a762a5521c906fb4a5d7947a3c"
+      },
+      {
+        "name": "random_search",
+        "path": "results/v8/specialized_2048/models/random_search_17.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "115:random_search:2048:specialized:17",
+        "checkpoint_sha256": "857a7ed8858dee8c6f5654967e77071257199abe78b8aa950153a60e9c7d7b60"
+      }
+    ],
+    "cem_search": [
+      {
+        "name": "cem_search",
+        "path": "results/v8/broad_1024/models/cem_search_17.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "85:cem_search:1024:broad:17",
+        "checkpoint_sha256": "49b550ae4b8e081f0699276e0ad7b8b01cbbbaf641f6537b2b051c23e24f8752"
+      },
+      {
+        "name": "cem_search",
+        "path": "results/v8/broad_2048/models/cem_search_17.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "96:cem_search:2048:broad:17",
+        "checkpoint_sha256": "9f1f4fd75252528fc1f9c4ac0091186a31a2707331340f3f075cff4b7568e52a"
+      },
+      {
+        "name": "cem_search",
+        "path": "results/v8/specialized_1024/models/cem_search_17.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "107:cem_search:1024:specialized:17",
+        "checkpoint_sha256": "2341e2c07246fdce183f60385f968c3d2e58ae45a61367e5d84543cb6905663e"
+      },
+      {
+        "name": "cem_search",
+        "path": "results/v8/specialized_2048/models/cem_search_17.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "main",
+        "seed": 17,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "118:cem_search:2048:specialized:17",
+        "checkpoint_sha256": "1465c7b2c0e0f52dbf24575621b90bd9a43e516fd944eef236be596cc6491031"
+      }
+    ],
+    "no_update_v8": [
+      {
+        "name": "no_update_v8",
+        "path": "results/v8/broad_1024/models/no_update.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "78:no_update_v8:1024:broad:0",
+        "checkpoint_sha256": "c6598f011e137601efa7852fc2ca7d2a979486642f83bcf5b69c6f37121bb276"
+      },
+      {
+        "name": "no_update_v8",
+        "path": "results/v8/broad_2048/models/no_update.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "89:no_update_v8:2048:broad:0",
+        "checkpoint_sha256": "aa3d6be244ccf2a71bceb12c7a442746767263e1b999afa7c4c28a15e5f8f74b"
+      },
+      {
+        "name": "no_update_v8",
+        "path": "results/v8/specialized_1024/models/no_update.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "100:no_update_v8:1024:specialized:0",
+        "checkpoint_sha256": "16601b446c71a2a4a529501577c3efcee2a96fa3517247e4b00defd904f6ad5c"
+      },
+      {
+        "name": "no_update_v8",
+        "path": "results/v8/specialized_2048/models/no_update.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "same_fit_and_reward_no_validation_at_training",
+        "key": "111:no_update_v8:2048:specialized:0",
+        "checkpoint_sha256": "11a6dbbb3f7e18784b3df34674afd4b8111a188f88fdc707fa8aa7f4f8376604"
+      }
+    ],
+    "hard_tree_atomic_vocab": [
+      {
+        "name": "hard_tree_atomic_vocab",
+        "path": "results/v7/broad_1024/models/native_tree_shortest_fit_reward_union.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "key": "11:hard_tree_atomic_vocab:1024:broad:0",
+        "checkpoint_sha256": "f3926343e2d2530eb7207c9fa4e4bde7dfcd692eace9e955aa10e69e8490b2e4"
+      },
+      {
+        "name": "hard_tree_atomic_vocab",
+        "path": "results/v7/specialized_1024/models/native_tree_shortest_fit_reward_union.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "key": "30:hard_tree_atomic_vocab:1024:specialized:0",
+        "checkpoint_sha256": "98541305f934bd0ab273e7238c9b17f7e077263922a2ddb7d0a5b62833945466"
+      },
+      {
+        "name": "hard_tree_atomic_vocab",
+        "path": "results/v7/broad_2048/models/native_tree_shortest_fit_reward_union.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "key": "47:hard_tree_atomic_vocab:2048:broad:0",
+        "checkpoint_sha256": "6a7ab2e8a8cf727223633782b8ffb35e2ae41f5fa2be0f323adaca2e03fb4f74"
+      },
+      {
+        "name": "hard_tree_atomic_vocab",
+        "path": "results/v7/specialized_2048/models/native_tree_shortest_fit_reward_union.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "key": "63:hard_tree_atomic_vocab:2048:specialized:0",
+        "checkpoint_sha256": "a459e04254a4ed292815c34b3b51091ac8ed6af33ceb4ec29fdb1450bce1b935"
+      }
+    ],
+    "lexical_shortest": [
+      {
+        "name": "lexical_shortest",
+        "path": "results/v7/broad_1024/models/lexical_shortest_fit_reward_union.json",
+        "scenario": "broad",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "key": "10:lexical_shortest:1024:broad:0",
+        "checkpoint_sha256": "7deac9414a35b0737b404a4b231172a87532abd0710d919316415961d69ce771"
+      },
+      {
+        "name": "lexical_shortest",
+        "path": "results/v7/specialized_1024/models/lexical_shortest_fit_reward_union.json",
+        "scenario": "specialized",
+        "capacity": 1024,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "key": "29:lexical_shortest:1024:specialized:0",
+        "checkpoint_sha256": "38cfae4b63bfa414a55673ea567bf6e51ca8505f1b3c9c157c75e0c99f5ef62b"
+      },
+      {
+        "name": "lexical_shortest",
+        "path": "results/v7/broad_2048/models/lexical_shortest_fit_reward_union.json",
+        "scenario": "broad",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "key": "46:lexical_shortest:2048:broad:0",
+        "checkpoint_sha256": "ea0a1d6c95a9534e96afb79d0edccebb1a4e9accca1e0dc001ae88b0767a6bb1"
+      },
+      {
+        "name": "lexical_shortest",
+        "path": "results/v7/specialized_2048/models/lexical_shortest_fit_reward_union.json",
+        "scenario": "specialized",
+        "capacity": 2048,
+        "kind": "checkpoint",
+        "group": "control",
+        "seed": 0,
+        "information": "fit_reward_allowed",
+        "key": "62:lexical_shortest:2048:specialized:0",
+        "checkpoint_sha256": "936bf372d30ac690831269a00f2ad93062583e9b7d4c0fff6536dc5c9edaec24"
+      }
+    ]
+  },
+  "non_RL_replacement_effects": {
+    "1024/broad": {
+      "compression_relative_regression": -0.0006161426074040577,
+      "fit_bpb_relative_regression": 0.00019526589320340015,
+      "command_recall_loss": 0.0,
+      "number_recall_loss": 0.0,
+      "scope_recall_loss": 0.01731692050907574,
+      "crossing_increase": -0.005234911088822319,
+      "encode_relative_loss": -0.0012757506852676403,
+      "point_estimate_guards_passed": false,
+      "compression_difference_ci95": [
+        -0.0013197594473593928,
+        0.0008467647492395334
+      ],
+      "compression_difference_familywise_ci95": [
+        -0.0021966969826299767,
+        0.0018056968273419394
+      ],
+      "compression_noninferiority_margin": 0.0039453963044825775,
+      "compression_ci95_within_margin": true,
+      "compression_familywise_ci95_within_margin": true,
+      "statistical_equivalence_of_all_metrics_established": false
+    },
+    "1024/specialized": {
+      "compression_relative_regression": 0.001069553281522806,
+      "fit_bpb_relative_regression": -0.0010799091438855601,
+      "command_recall_loss": 0.0,
+      "number_recall_loss": 0.0,
+      "scope_recall_loss": -0.019864518491395144,
+      "crossing_increase": 0.0037217150472410865,
+      "encode_relative_loss": -0.050018936955929405,
+      "point_estimate_guards_passed": true,
+      "compression_difference_ci95": [
+        -0.00362852169927782,
+        0.004517477363135188
+      ],
+      "compression_difference_familywise_ci95": [
+        -0.006971321546172625,
+        0.007683548910715089
+      ],
+      "compression_noninferiority_margin": 0.004464959197856615,
+      "compression_ci95_within_margin": false,
+      "compression_familywise_ci95_within_margin": false,
+      "statistical_equivalence_of_all_metrics_established": false
+    },
+    "2048/broad": {
+      "compression_relative_regression": -0.004461556626733421,
+      "fit_bpb_relative_regression": -0.0021052869389597273,
+      "command_recall_loss": 0.0,
+      "number_recall_loss": 0.0015654896503739524,
+      "scope_recall_loss": 0.006128729397037347,
+      "crossing_increase": -0.004472532174050053,
+      "encode_relative_loss": 0.00037191974834860364,
+      "point_estimate_guards_passed": true,
+      "compression_difference_ci95": [
+        -0.0030629295241971412,
+        -8.295072406307073e-05
+      ],
+      "compression_difference_familywise_ci95": [
+        -0.004437544624400136,
+        0.0009304688465112742
+      ],
+      "compression_noninferiority_margin": 0.0033870096717512443,
+      "compression_ci95_within_margin": true,
+      "compression_familywise_ci95_within_margin": true,
+      "statistical_equivalence_of_all_metrics_established": false
+    },
+    "2048/specialized": {
+      "compression_relative_regression": 0.000236492847061065,
+      "fit_bpb_relative_regression": -0.0029131941373909953,
+      "command_recall_loss": 0.0,
+      "number_recall_loss": 0.00030892801977144835,
+      "scope_recall_loss": -0.011808861222995182,
+      "crossing_increase": -0.0028970251416292336,
+      "encode_relative_loss": 0.015085009553893358,
+      "point_estimate_guards_passed": true,
+      "compression_difference_ci95": [
+        -0.002446850600081792,
+        0.0027488579691273495
+      ],
+      "compression_difference_familywise_ci95": [
+        -0.004617953008427844,
+        0.005005010708997107
+      ],
+      "compression_noninferiority_margin": 0.004117502103037342,
+      "compression_ci95_within_margin": true,
+      "compression_familywise_ci95_within_margin": false,
+      "statistical_equivalence_of_all_metrics_established": false
+    }
+  },
+  "frozen_AST_vs_RL_parent_descriptive": {
+    "1024/broad": {
+      "compression_relative_regression": -0.011461520424337124,
+      "fit_bpb_relative_regression": -0.0068547154799379895,
+      "command_recall_loss": 0.0,
+      "number_recall_loss": 0.0,
+      "scope_recall_loss": 0.002034216565825142,
+      "crossing_increase": -0.013499235645715785,
+      "encode_relative_loss": -1.9132170805697433,
+      "point_estimate_guards_passed": true,
+      "comparison_phase": "descriptive after scoring; frozen AST candidate, no new model selection or confirmatory CI"
+    },
+    "1024/specialized": {
+      "compression_relative_regression": -0.02078394470595779,
+      "fit_bpb_relative_regression": -0.013615656616337235,
+      "command_recall_loss": 0.0,
+      "number_recall_loss": -0.0015446400988569087,
+      "scope_recall_loss": -0.025540095203222313,
+      "crossing_increase": -0.012873610049624923,
+      "encode_relative_loss": -2.051982447640062,
+      "point_estimate_guards_passed": true,
+      "comparison_phase": "descriptive after scoring; frozen AST candidate, no new model selection or confirmatory CI"
+    },
+    "2048/broad": {
+      "compression_relative_regression": -0.02690347280623162,
+      "fit_bpb_relative_regression": -0.008762323742723122,
+      "command_recall_loss": 0.0,
+      "number_recall_loss": -0.0015654896503739524,
+      "scope_recall_loss": -0.020707281452117643,
+      "crossing_increase": -0.011456182933662074,
+      "encode_relative_loss": -1.9938936978746793,
+      "point_estimate_guards_passed": true,
+      "comparison_phase": "descriptive after scoring; frozen AST candidate, no new model selection or confirmatory CI"
+    },
+    "2048/specialized": {
+      "compression_relative_regression": -0.026188073175901105,
+      "fit_bpb_relative_regression": -0.015170599349772607,
+      "command_recall_loss": 0.0,
+      "number_recall_loss": -0.0012357120790855713,
+      "scope_recall_loss": -0.008971072867081653,
+      "crossing_increase": -0.020597552915248535,
+      "encode_relative_loss": -1.6072201221250442,
+      "point_estimate_guards_passed": true,
+      "comparison_phase": "descriptive after scoring; frozen AST candidate, no new model selection or confirmatory CI"
+    }
+  },
+  "RL_removed_from_production": true,
+  "legacy_RL_checkpoints_retained_for_negative_result_replay": true,
+  "downstream_executed": false,
+  "default_scenario": "broad",
+  "recommended_capacities": [
+    1024,
+    2048
+  ],
+  "matching_rules": "Equal-capacity intrinsic controls; pretrained full vocabulary references have different embedding costs and must be separately disclosed downstream."
+}

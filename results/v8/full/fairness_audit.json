@@ -1,0 +1,213 @@
+{
+  "rounds": [
+    {
+      "round": 5,
+      "review": "Whole result IDs/raw bytes/source groups and independent paper/micro aggregates, no exclusions or duplicates",
+      "passed": true,
+      "rows": 1446368
+    },
+    {
+      "round": 6,
+      "review": "Every reloaded public encoder, raw payload/decode, independent lexical cuts/KaTeX crossings and pylatexenc scope checks",
+      "passed": true,
+      "rows": 1446368,
+      "independent_parser_rows": 1446049
+    },
+    {
+      "round": 7,
+      "review": "Original author information metrics equal independent formulas, uniform seven-round full-interface timings",
+      "passed": true,
+      "natural_records": 561
+    },
+    {
+      "round": 8,
+      "review": "Every lexicographic formula equals the same-mask shortest primary length; structure external differences reported, no semantic/global-vocab optimum claim",
+      "passed": true,
+      "same_dictionary_checks": [
+        {
+          "capacity": 1024,
+          "scenario": "broad",
+          "suite": "exposed_v6_extreme",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.01955492532534364,
+          "compression_difference_from_official_BPE": -0.004161834316259827
+        },
+        {
+          "capacity": 1024,
+          "scenario": "broad",
+          "suite": "exposed_v6_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.019577838786624058,
+          "compression_difference_from_official_BPE": -0.004779883004424668
+        },
+        {
+          "capacity": 1024,
+          "scenario": "broad",
+          "suite": "exposed_v7_extreme",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.0179162342621057,
+          "compression_difference_from_official_BPE": -0.004171858194303435
+        },
+        {
+          "capacity": 1024,
+          "scenario": "broad",
+          "suite": "exposed_v7_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.021570480634808126,
+          "compression_difference_from_official_BPE": -0.004544888771170097
+        },
+        {
+          "capacity": 1024,
+          "scenario": "broad",
+          "suite": "external_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.02389010867066685,
+          "compression_difference_from_official_BPE": -0.00428039290195853
+        },
+        {
+          "capacity": 1024,
+          "scenario": "broad",
+          "suite": "extreme_domain_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.028455498761658843,
+          "compression_difference_from_official_BPE": -0.004388563371302667
+        },
+        {
+          "capacity": 1024,
+          "scenario": "broad",
+          "suite": "stress_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.01945910770739953,
+          "compression_difference_from_official_BPE": -0.007898818175177624
+        },
+        {
+          "capacity": 1024,
+          "scenario": "specialized",
+          "suite": "exposed_v6_extreme",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.017164541322861077,
+          "compression_difference_from_official_BPE": -0.008062734801995652
+        },
+        {
+          "capacity": 1024,
+          "scenario": "specialized",
+          "suite": "exposed_v7_extreme",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.018352424176932475,
+          "compression_difference_from_official_BPE": -0.0034346801190361376
+        },
+        {
+          "capacity": 1024,
+          "scenario": "specialized",
+          "suite": "extreme_domain_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.02771484669989427,
+          "compression_difference_from_official_BPE": -0.009757497684454275
+        },
+        {
+          "capacity": 1024,
+          "scenario": "specialized",
+          "suite": "stress_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.020046425299414694,
+          "compression_difference_from_official_BPE": -0.01103437395734197
+        },
+        {
+          "capacity": 2048,
+          "scenario": "broad",
+          "suite": "exposed_v6_extreme",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.035601846993388586,
+          "compression_difference_from_official_BPE": -0.008621049101110001
+        },
+        {
+          "capacity": 2048,
+          "scenario": "broad",
+          "suite": "exposed_v6_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.037224246698797064,
+          "compression_difference_from_official_BPE": -0.008596648756533654
+        },
+        {
+          "capacity": 2048,
+          "scenario": "broad",
+          "suite": "exposed_v7_extreme",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.03560974485444948,
+          "compression_difference_from_official_BPE": -0.007062991434710064
+        },
+        {
+          "capacity": 2048,
+          "scenario": "broad",
+          "suite": "exposed_v7_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.03945364665089143,
+          "compression_difference_from_official_BPE": -0.007532088508231838
+        },
+        {
+          "capacity": 2048,
+          "scenario": "broad",
+          "suite": "external_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.04236475432955378,
+          "compression_difference_from_official_BPE": -0.007635015415842439
+        },
+        {
+          "capacity": 2048,
+          "scenario": "broad",
+          "suite": "extreme_domain_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.04150710315009265,
+          "compression_difference_from_official_BPE": -0.008120636675599036
+        },
+        {
+          "capacity": 2048,
+          "scenario": "broad",
+          "suite": "stress_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.04284485839363883,
+          "compression_difference_from_official_BPE": -0.011648099352170371
+        },
+        {
+          "capacity": 2048,
+          "scenario": "specialized",
+          "suite": "exposed_v6_extreme",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.031800999878063646,
+          "compression_difference_from_official_BPE": -0.01043928467576255
+        },
+        {
+          "capacity": 2048,
+          "scenario": "specialized",
+          "suite": "exposed_v7_extreme",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.02932067731166796,
+          "compression_difference_from_official_BPE": -0.004543103932086234
+        },
+        {
+          "capacity": 2048,
+          "scenario": "specialized",
+          "suite": "extreme_domain_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.03437963013773801,
+          "compression_difference_from_official_BPE": -0.010880320617139616
+        },
+        {
+          "capacity": 2048,
+          "scenario": "specialized",
+          "suite": "stress_test",
+          "all_formula_lengths_equal_to_same_mask_shortest": true,
+          "independent_crossing_difference": -0.03351605242510888,
+          "compression_difference_from_official_BPE": -0.011044533052479544
+        }
+      ]
+    }
+  ],
+  "preflight_rounds": 4,
+  "total_rounds": 8,
+  "all_passed": true,
+  "corpus_archive_sha256": "2f02977bdf0e192c9fb9e32c6a02a51359dec92f2d9d9cfdec75850085a5d979",
+  "registry_sha256": "ca5d7bab2d99a6104043bbbdbaada37d93e29b064a639484a77304a864b0e084",
+  "per_formula_sha256": "cd007e09296d2202742736d784fde74904ebd17f51000464b44c021e132e196b",
+  "completed_utc": "2026-10-12T16:22:15.648724+00:00"
+}
