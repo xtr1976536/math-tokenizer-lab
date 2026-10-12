@@ -27,3 +27,18 @@ runtime/rustup-init
 runtime/rustup/
 runtime/cargo/
 runtime/wheels/
+
+# Archived caches and generated presentation previews
+history/**/__pycache__/
+history/data/**/corpus.jsonl
+history/results/**/*.log
+tmp/
+presentations/**/build/
+presentations/**/qa/page-*.png
+
+# Local-only rendered slide inspection artifacts
+presentations/**/qa/pptx_pages/
+presentations/**/qa/*.jpg
+presentations/**/qa/contact-*.png
+presentations/**/qa/final_contact.png
+presentations/**/qa/page_geometry.html

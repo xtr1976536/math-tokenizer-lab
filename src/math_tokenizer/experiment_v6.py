@@ -18,7 +18,8 @@ def load_entry(entry):
     elif kind=='pathpiece':model=PathPieceOfficial(path,entry.get('train_seconds',0))
     elif kind=='tiktoken':model=TikToken(entry['encoding'])
     elif kind=='llama3_official':
-        record=next(r for r in json.loads((ROOT/'data/pretrained_registry_v6.json').read_text()) if r['repo']==entry['name'])
+        provenance=ROOT/'models/baselines/llama3_provenance.json'
+        record=json.loads(provenance.read_text()) if provenance.exists() else next(r for r in json.loads((ROOT/'data/pretrained_registry_v6.json').read_text()) if r['repo']==entry['name'])
         model=Llama3Official(record)
     elif kind=='bytes':model=ByteTokenizer()
     else:raise ValueError('unknown model kind '+kind)

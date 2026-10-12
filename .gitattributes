@@ -2,3 +2,6 @@
 references/*LICENSE -whitespace
 # Official vocab files contain literal whitespace pieces; preserve unchanged.
 results/**/models/*.vocab -whitespace
+# Preserve the exact upstream license bytes and exclude its original whitespace
+# from project-code whitespace diagnostics.
+models/baselines/Meta-Llama-3-8B/LICENSE -whitespace

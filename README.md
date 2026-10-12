@@ -1,259 +1,52 @@
-# 最终本征版本 v8：非RL生产方案与下游冻结名单（2026-10-13）
+# Specialized Tokenizers for Mathematical Text
 
-本轮是进入下游前的最后一次大规模本征工作。新增4,294条封存公式，27篇论文贡献、30篇许可核验源码，来源领域外子集1,428条；以前v5/v6/v7来源、精确式、模板和渲染等价式排除。旧主库与已封存测试不改。完整重跑121配置、682组指标、1,446,368行逐式结果，包含九种成熟tokenizer、新v8、暴露v7/v6自然及领域外测试、521式压力集。
+This repository contains **two active mathematical tokenizer routes** and **five baseline tokenizers**, a classified formula-only benchmark, audited intrinsic experiments, and an academic Beamer presentation. Downstream language-model training has not started.
 
-同奖励/同34次终端评分的参数RL、随机搜索与CEM，在三个论文划分×五种子中对照。RL相对随机/CEM平均utility仅改善0.12%/0.20%，胜数7/15、8/15，种子区间跨零且核心非劣界未全通过。未达预定开发晋升门槛，**最终生产与下游核心去掉RL**；旧候选留作负面结果复核，不推导所有RL或语言模型内端到端RL无效。
+| Current system | Role | Vocabulary |
+|---|---|---|
+| Boundary AST | Source structure and parameter-boundary segmentation | 1,024 / 2,048 IDs |
+| Math-atom BPE | Fit-derived mathematical alphabet + original HF BPE | 1,024 / 2,048 IDs |
+| Byte BPE | Original HF byte BPE baseline | 1,024 / 2,048 IDs |
+| SentencePiece Unigram | Original probabilistic subword baseline | 1,024 / 2,048 IDs |
+| Qwen2.5 | Fixed general tokenizer | 151,665 IDs |
+| Llama 3 | Original Meta tokenizer interface | 128,256 IDs |
+| o200k | Original tiktoken encoding | 200,019 IDs |
 
-新的AST参数边界路径共享原版数学原子BPE字典，代价包含token数、native crossing及brace内容边界。四场景相对同原子BPE压缩改善1.09%–2.64%，编码约2.65–3.00倍；相对上一轮两级长度路径，独立参数边界召回提高约9–11个百分点，长度基本保持。严格结构仍由原版硬AST保有优势，部分边界/树指标家族区间跨零。词表构建使用原版HF BPE，生产配方没有RL更新或搜索。
+The math-atom route is a domain-specific training recipe using established BPE; the AST route changes segmentation over exactly the same dictionary. Neither production route uses RL. Full general vocabularies are deployment references, not equal-parameter causal comparisons.
 
-- 完整指标、排名、控制、区间及替代代价：[v8最终报告](docs/v8_final_intrinsic_results.md)。
-- 在新测试评分前登记的选择规则与容忍界：[实验协议](docs/v8_preregistered_protocol.md)。
-- **下游准确检查点和角色**：[final registry](models/final_intrinsic/registry.json)、[交接说明](docs/v8_downstream_handoff.md)。核心8角色：AST边界路径、原版硬AST、同原子BPE、byte BPE、SentencePiece Unigram、Qwen2.5、Llama 3、o200k；结构消融与扩展通用参考另列。
-- 原式与证据：[v8 manifest](data/releases/v8/manifest.json)、[四轮语料检查](data/releases/v8/quality_audit.json)。
-- 全结果：[metrics](results/v8/full/metrics.json)、[CSV](results/v8/full/all_main_metrics.csv)、[rankings](results/v8/full/rankings.json)、[多指标配对区间](results/v8/full/multimetric_paired_effects.json)。
-- 审查：[八轮公平性](results/v8/full/fairness_audit.json)、[三轮代码检查](results/v8/code_reviews.json)、[最终核验](results/v8/verification.json)。
-- 顺序复现与无RL生产训练：[复现说明](docs/v8_reproduction.md)。入口`sh scripts/run_v8_replay.sh`；加载使用`math_tokenizer.final_models.load_final`。
+## Repository map
 
-历史`load_current`保留v6复现兼容，最终生产使用`load_final`，RL诊断需要明确opt-in。没有执行下游训练，80条新公式专家双审材料尚未有人审，测速只有一台Mac。新增最终测试现已暴露，不再据它挑新分词配置。
+- [`data/benchmark/`](data/benchmark/README.md): **56,000 formula strings**, 13 domains, source-provenance and two syntax-complexity classes. Formula text, IDs and metadata are separate. Frozen source partitions are preserved.
+- [`models/registry.json`](models/registry.json): the only active model registry; 7 methods / 19 configurations. `models/proposed/` contains the two routes; `models/baselines/` contain their pinned controls.
+- [`experiments/current/`](experiments/current/README.md): all retained metrics, 234,556 formula-result rows and three new audit rounds. Numerical results are an unchanged subset of the original v8 experiment.
+- [`presentations/math_tokenizer/`](presentations/math_tokenizer/README.md): English academic presentation using the supplied GBFR Beamer design, exact cover identity and date, 26 primary references and 3 data figures.
+- [`docs/`](docs/reproduction.md): current reproduction and downstream protocol notes.
+- [`history/`](history/README.md): superseded models, datasets, experiment records, scripts and tests. Embedded historical paths refer to Git commit `5217a5a`; check out that commit for original replay.
 
-# 历史研究 v7：同先验对照、AST两级路径与终端RL（2026-10-12）
-
-本轮封存新增3,933条2020年前许可核验arXiv公式，包含1,961条来源领域外测试；旧v6主库不变。完成79种配置、204组指标记录、376,996行逐式重放、八轮公平性检查和193项测试。九种成熟tokenizer与自研/经典算法在相同原式上评测，三次来源重划分的12个保存模型也已重载复算。
-
-AST新压缩分支在同原子、同词表、同ID预算下，先最少token，再在最短路径中最少源树crossing。广域新论文测试相对原版同原子BPE，1024/2048预算的paper token/byte分别降低1.15%/2.21%，本机编码约3.32/3.30倍；独立参数边界召回下降，严格结构仍弱于原版硬树AST。两预算的冻结综合榜第一均为新AST分支，但综合榜不能证明数学语义贡献或所有指标占优。
-
-v5新分支尝试fit动作特征、完整轨迹终端多目标RL和跨词表容量迁移；没有稳定超过父模型和no-update/搜索控制，未通过开发晋升。活动API仍为v6 AST-v4/v5两个家族。本轮取得部分可确认收益，尚未达到“两路线各项指标大幅提升”。
-
-- 完整结果、两预算20方法排名、配对区间及问题清单：[v7报告](docs/v7_results.md)。
-- 合法路径、两级DP、词表剪枝和终端RL机制：[v7方法](docs/v7_formal_mechanisms.md)。
-- 冻结协议与实验边界：[v7协议](docs/v7_research_protocol.md)。
-- 封存语料与四轮质量检查：[manifest](data/releases/v7/manifest.json)、[quality audit](data/releases/v7/quality_audit.json)。
-- 全指标、分层和独立核验：[metrics](results/v7/full/metrics.json)、[CSV](results/v7/full/all_main_metrics.csv)、[分层](results/v7/full/grouped_metrics.json)、[八轮检查](results/v7/full/fairness_audit.json)、[交付核验](results/v7/verification.json)。
-- 顺序重放现有冻结模型：`sh scripts/run_v7_replay.sh`；依赖：[requirements-v7.lock.txt](requirements-v7.lock.txt)，第三方安装沿用v6复现文档。
-
-专家双审完成数为0，144条待审材料已准备；速度只在一台Mac的公共接口上测量。v7测试评分后已经暴露，后续改造须在dev选择并另行封存新最终测试。下游任务尚未开始。
-
-# 活动版本 v6：数学公式 benchmark 与独立分词器（2026-10-12）
-
-主库 **47,773 条**，本轮新增60篇许可可核验、2020年前固定版本的 arXiv 源稿；共277篇取得源码、225篇贡献合格公式。本轮加入6,707条新增论文公式，保留多行方程/方程组、来源证据、宏展开与独立参考树。主库人工历史来源43,002、unknown1,961、possible_mixed2,810；AI基础模板和EqGPT结构串作为补充材料，不补进主benchmark。13领域、两档复杂度，纯字符串分区见 `data/releases/v6/formula_only/`。
-
-四轮语料审查、原始宏/展开MathML比对、明确的source-topic排除和7轮实验公平性审查已经完成。新论文测试3,465式、极端领域1,666式、语法/长输入压力测试521式；极端训练只用9,693条可核验arXiv记录，排除混合库及目标/相邻交叉学科。
-
-只保留AST-v4/v5两个活动家族。AST-v4原生算术AST+明确CST回退、大幅加速完整编码；v5离线学习合并策略，默认为独立结构奖励的精确期望梯度，上线是固定词表及原版Rust BPE。完整轨迹RLOO、RL屏障及频率/贪心/关闭更新/搜索对照均有实验，屏障为空时不宣称RL增益。
-
-在1,024和2,048相同词表预算下，压缩第一均为v5；预先冻结综合权重下均为AST-v4第一、v5第二。现有89种配置、227组结果精确还原率100%；不同偏好会改变综合名次，不能据此宣称下游任务已获胜。
-
-- **通用与数学专用直接对比**：Qwen2.5、Qwen3、DeepSeek-V3、Phi-4、Mistral-Nemo、GPT-2、cl100k、o200k、Llama 3全部参加相同原式、指标、七轮计时、新论文/跨领域/压力实验，并进入16种配置的同榜比较。Llama 3词表文件与Meta官方Git blob完全一致，使用未修改的Meta原版tiktoken接口，与HF配置在47,773条主库和521条压力公式上逐ID相同。两预算综合前两名为AST-v4、v5，压缩第一为v5；v5编码仍慢于o200k，部分成熟配置数字完整性更高。已统一跨领域fit-only概率校准，四轮专项审查和364,428行全量重放通过。见[完整直接比较](docs/general_vs_math_v6.md)、[全指标CSV](results/v6/full/general_vs_math_metrics.csv)和[综合/逐项排名](results/v6/full/general_vs_math_rankings.json)。
-- **速度与贡献归因**：[AST速度来源及两家族贡献](docs/ast_speed_and_contributions_v6.md)。同词表、同C前端、同约束及同ID七轮对照支持约3.35–3.47倍接口加速；融合接口相对通用DP路径约5.29–5.64倍。v5整套专用分词系统有效，但RL相对同原子/同奖励的频率及greedy控制收益尚不稳定。
-- 完整排名、指标、对照与边界：[v6结果](docs/v6_results_and_rankings.md)。
-- 数据质量、两个路线与复现：[v6设计](docs/v6_design_and_reproduction.md)。
-- 指标论文、定义及权重：[v6指标](docs/metrics_v6.md)。
-- 固定数据/划分/许可：[v6 release](data/releases/v6/manifest.json)。
-- 逐式重放、全量独立汇总和计时审查：[7轮公平性](results/v6/full/fairness_audit.json)。
-- 主统计：[metrics.json](results/v6/full/metrics.json)；[rankings.json](results/v6/full/rankings.json)；逐式结果为 `per_formula.jsonl.gz`。
-- 当前API/模型注册：[registry.json](models/current/registry.json)。默认1024，也可2048；512仅为历史兼容。
-- 顺序重放现成模型：`sh scripts/run_v6_replay.sh`；环境及第三方安装说明见设计文档。
+## Loading and training
 
 ```python
-from math_tokenizer.current_models import load_current
-model = load_current("v5", scenario="broad", capacity=1024)
-text = r"\frac{\partial u}{\partial t}=\Delta u"
-assert model.decode(model.encode(text)) == text
+from math_tokenizer.final_models import load_final
+model = load_final('ast_boundary', scenario='broad', capacity=1024)
+formula = r'\frac{\partial u}{\partial t}=\Delta u'
+assert model.decode(model.encode(formula)) == formula
 ```
 
-数学条件和教育难度未由专家逐条认证；研究来源/语法/保真与数学真理不同。human使用用户批准的2020年前历史推断。语料/权重为下游阶段准备，本轮没有训练下游模型。下面均为历史阶段记录，不是当前入口或当前结果。
+The other proposed method is `official_atomic_bpe`. Exact baseline method names are listed in the registry. Historical model names are rejected by the active loader. Trained methods have both `broad` and strict source-category `specialized` versions; ordinary downstream work should begin with `broad`.
 
-# 当前活动模型：AST-v4与v5（2026-10-11）
-
-已按用户要求删除604个旧/重复模型文件（527个已跟踪、77个原忽略文件），仅保留AST-v4/v5家族及其父快照/内部控制。历史实验结果保留，清单见`models/retirement_manifest.json`；旧模型完整重放需清理前Git revision `c75de3c`。语料仍为53,858式，哈希未变。
-
-AST-v4新增等价最短路径内核，编码快约19%–23%；字典增补在同fit的新论文/域迁移测试上分别缩短约0.31%/1.10%，保留硬零crossing与命令完整性。v5 local训练精确加速1.68–1.87倍；通用默认升级完整轨迹RLOO，在线仍原版Rust BPE。新RL并未全面超越等预算搜索，专用域新策略退化，保留原local。critic试验未晋升。
-
-- [设计、两阶段含义与API](docs/current_models_design.md)。
-- [完整结果、控制、失败及成本解释](docs/current_models_results.md)。
-- 当前模型路径/固定配置：[`models/current/registry.json`](models/current/registry.json)。
-- 六轮审计：[`results/current_audit.json`](results/current_audit.json)；工程等价/交错速度：[`results/current_engineering/verification.json`](results/current_engineering/verification.json)。
-- 全新源码checkout：154项测试、14,794条当前checkpoint/官方导出重放通过，见[`results/current_clean_clone_verification.json`](results/current_clean_clone_verification.json)。
-- 顺序运行：`sh scripts/run_current.sh results/my_current_run001`，输出目录必须尚不存在；只训练选定的两条路线，不依赖退休模型。
-
-```python
-from math_tokenizer.current_models import load_current
-tokenizer = load_current("v5", scenario="broad", capacity=1024)
-text = r"\frac{x+y}{z}=\alpha"
-assert tokenizer.decode(tokenizer.encode(text)) == text
+```sh
+.venv/bin/python scripts/audit_current.py
+.venv/bin/python scripts/summarize_current.py
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/train_current.py --scenario broad --capacity 1024 --output /tmp/math-tokenizer-retrain
 ```
 
-以下均为历史阶段记录；早期训练/重放脚本不是当前入口。
+Training reads only the preserved fit and allowed auxiliary IDs. **Do not train on the entire 56,000-string catalog:** it includes test records. Test membership and metadata have not been changed by repository organization.
 
-# 全实验回溯与分类排名（2026-10-11，当时研究暂停）
+## Main intrinsic result
 
-本轮仅审计已有结果。9个正式目录、216条方法/种子/场景记录、563,399条逐公式结果独立核对通过。速度/少手工规则以v5离线词表方案领先，硬结构以v4 AST领先，旧测试压缩以v3原子shortest及RL分支领先；RL尚未稳定胜过同奖励greedy或同词表shortest。
+On the final v8 test, Boundary AST reduces paper-macro token/byte by **1.09%–2.64%** and encodes **2.65–3.00 times faster** than the same-dictionary math-atom BPE across the four budget/scenario conditions. Scope recall rises in three conditions and falls by 0.28 percentage points in one. Family-adjusted paper-cluster intervals support compression improvement in all four conditions, but do not establish universal structural gains.
 
-- 分类、条件排名、优劣及证据边界：[`docs/all_model_classification_rankings.md`](docs/all_model_classification_rankings.md)。
-- 全版本数值附录：[`docs/all_model_review_numeric_appendix.md`](docs/all_model_review_numeric_appendix.md)。
-- 逐领域/复杂度重算及哈希：[`results/retrospective/all_model_inventory.json`](results/retrospective/all_model_inventory.json)。
-- 只读复核：`.venv/bin/python scripts/all_model_review.py`（仅写审计JSON/附录，不运行分词器）。
+The three new release audits passed over **56,000 catalog formulas, 19 configurations, 109 metric records and 234,556 result rows**. Earlier v8 algorithm selection preceded new-test scoring; the current seven-method selection is retrospective. Historical RL did not pass the prespecified same-reward search-control promotion gate and is archived.
 
-# 新一轮：RL词表、扩充语料与未见泛化（2026-10-11）
-
-v5包含 **53,858条自然公式**（新增25,511条、119篇固定许可arXiv稿件，117篇有接受公式），13领域、两档复杂度。旧v2不改。新paper holdout4375条、真正leave-domain-out1636条、独立synthetic stress693条，在算法dev选择前封存。
-
-RL现在离线学习合并表/词表，reward包含编码成本、边界完整、稀有token和变体一致性；在线导出到原版Rust BPE，没有hard AST或手工命令清单。速度达到普通HF BPE量级，复合reward在新paper上改进约2.9%序列长度和命令完整性；仍未稳定优于reward-greedy控制，不能称全自动全面最优。
-
-- 最新结果：`docs/rl_vocab_v5_findings.md`。
-- 完整泛化/分层报告：`results/v5_1024/report.md`。
-- 语料：`data/releases/v5/curated/`、纯字符串：`data/releases/v5/formula_only/`。
-- 主corpus无损归档：`corpus.jsonl.gz`，脚本自动解压并核验SHA；同release split JSONL直接可读。
-- 质量与许可：`docs/benchmark_v5_quality.md`、`data/releases/v5/quality_audit.json`、`arxiv_sources.json`。
-- 协议：`docs/rl_vocab_v5_protocol.md`；复现：`docs/generalization_v5_reproduction.md`。
-
-v5是有来源与自动筛选证据的research candidate benchmark，专家语义/领域双审尚未完成；不是gold mathematical truth dataset。test首次固定评估后也已成为已见benchmark，后续不能继续用它调参却称未见泛化。下游模型仍未训练。
-
-以下为以前阶段记录：
-
-# 第四轮：硬约束与RL主线（2026-10-11）
-
-当前保留两类方案：v3压缩版，以及v4严格结构RL版。数学语料与划分仍冻结，成熟基准未重训。
-
-v4在训练/推断统一屏蔽部分跨树动作，词表覆盖的LaTeX命令/UTF8 codepoint不可内部切分；RL策略通过有限DAG上的全期望on-policy梯度真实学习，未使用最短路径标签。crossing降至0，命令完整率约99.5%，但压缩与速度存在代价，不能说全面胜过v3。
-
-- 研究与约束定义：`docs/constraints_v4_research.md`。
-- 完整结果与控制：`docs/constraints_v4_findings.md`。
-- 两预算结果：`results/v4_512/`、`results/v4_1024/`。
-- 模型加载/顺序复现：`docs/constraints_v4_reproduction.md`。
-
-未知命令/codepoint缺词表项时explicit byte escape，原式无损。数学AST和LaTeX CST分开，zero crossing只对识别的源跨度定义成立；不是完整TeX语义正确性保证。RL仍是主线，手工规则只约束合法动作，不替策略选择每条分词。
-
-以下为v3及以前记录：
-
-# 第三轮优化已发布（2026-10-11）
-
-数学语料保持第二版28,347条及全部split不变，成熟基准未重跑。第三轮重点优化AST-BPE与RL-BPE：命令原子词表、受结构约束的DP、原生C推断，以及逐token等价的语法前端加速。
-
-- 最新结果：`docs/optimization_v3_findings.md`。
-- 两套正式实验：`results/v3_512_release/`、`results/v3_1024_release/`。
-- 协议/收益归因：`docs/optimization_v3_protocol.md`。
-- 加载模型/顺序复现：`docs/optimization_v3_reproduction.md`。
-
-相对自研v2，AST序列缩短约5–8%、命令完整率约96.5%、速度2.2–2.5倍；RL-BPE序列缩短约6.6–7.4%、速度约12倍，数学命令/树边界明显改善。具体收益和未改善指标以完整报告为准；native速度优化不等同RL训练贡献，same-vocab no-RL控制始终保留。
-
-以下为第二版及首版记录：
-
-# 第二版已更新（2026-10-11）
-
-最新语料和实验请使用 **v2**：28,347条公式（首版的16.55倍），98篇固定在2020年前的arXiv源稿，historical human 19,675条，simple/complex 24,109/4,238。13个主题领域；每条保留来源/许可/版本/位置/复杂度分量。所有arXiv版本经CC BY/CC0核对，缓存源码不上传。
-
-- 当前数据：`data/releases/v2/curated/corpus.jsonl`；纯公式：`data/releases/v2/formula_only/<domain>/<origin>/<simple|complex>.jsonl`。
-- 完整协议、合法获取、复杂度规则：`docs/arxiv_collection_v2.md`。
-- 独立评测指标与文献：`docs/intrinsic_metrics_v2.md`；RL设计和全部消融：`docs/rl_design_v2.md`。
-- 跨预算结果：`docs/v2_findings.md`；正式实验：`results/v2_release512/`和`results/v2_release1024/`。
-- 复现：`docs/v2_reproduction.md`、`scripts/run_v2_all.sh`、`requirements-v2.lock.txt`。
-- 旧v1数据、模型、结果保留，见下面首版记录；不要把v1数字当最新结果。
-
-v2结构前端为语义AST + 明确标注的LaTeX syntax tree回退，不冒称通用语义AST。RL-v2用BPE固定词表上的完整路径REINFORCE策略，实验相对奖励基线、RLOO、折扣、熵、采样数、初始化与训练轮次；每预算38个dev配置/种子run，配置按dev冻结后才统一test。
-
-以下为首版历史记录：
-
-# Math Tokenizer Lab
-
-专门用于数学公式的独立分词器研究。**当前交付是可运行、可审计的第一阶段 pilot，不是整个项目完成或下游性能提升的证明。**
-
-- 1,713 条纯 LaTeX 公式；PDE + 九类非 PDE。原始数学结构人工来源 229 条、可能混合 AI 1,287 条、助手生成模板 51 条、证据不足 146 条。
-- `data/formula_only/` 每行只含一个 LaTeX JSON 字符串；`data/curated/` 是带来源和标签的记录；`data/quarantine/` 是拒收审查材料，绝不输入模型。
-- AST-BPE、RL-BPE、RL-AST-BPE 三种独立实现；完全 UTF-8 回退，无 GPT-2 或其他下游模型。
-- 384 / 512 两个预算，各三个自研随机种子；每个设置 26 个方法/种子记录；另有 14 个小样本 smoke 记录。
-- 原版 HuggingFace BPE、SentencePiece BPE/Unigram、tiktoken GPT-2/cl100k/o200k、Qwen2.5 官方 tokenizer 基准，第三方代码未修改。
-- 53 项自动测试、六轮独立工程检查、四轮公平性审计；模型、公式逐条结果、版本、配置及哈希均在仓库。
-
-## 先看哪些文件
-
-| 内容 | 路径 |
-|---|---|
-| 数据统计、规范哈希 | `data/curated/summary.json` |
-| 纯公式 | `data/formula_only/by_domain/<领域>/<来源>.jsonl` |
-| 全部带证据记录 | `data/curated/corpus.jsonl` |
-| 固定来源／许可证／文件哈希 | `data/source_registry.json` |
-| 研究协议、来源定义与方法区别 | `docs/research_protocol.md` |
-| 384 预算完整结果 | `results/pilot01/report.md` |
-| 512 预算敏感性结果 | `results/sensitivity512/report.md` |
-| 研究结果解释与下一步 | `docs/findings.md` |
-| 六轮检查 | `results/pilot01/six_round_checks.json` |
-| 四轮公平性审计 | `results/pilot01/fairness_audit.json` |
-| 阶段完成／未完成清单 | `docs/status.json` |
-
-“human”是原数学结构来源证据，LaTeX 是助手写代码后机械转换，另有 `latex_author_origin`。不能将转换后的每条 LaTeX 宣称人工敲入。非 PDE 的严格人工桶尚为空，unknown 不能并进去。
-
-EqGPT 数据固定为 `dc35fc0ac860ff224293f01d2a62204042095127`：工作簿版本及多个工作表不同于论文报告的 221 条，因此当前记录 229 条去重结构，保留原串及行号。它们缺系数与符号，是 coefficient-free PDE 结构表达式，未伪造完整等式。
-
-OpenAI 最近公开的数学稿件已使用，固定 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`，按官方人工编辑例外信息保守记 possible_mixed。公式数学真伪未由本项目证明。
-
-## 结果概要
-
-共同测试集 406 条；所有已运行方法 100% 精确还原。自研与同训练预算基准如下（自研列为三个种子均值；token/公式越小越短）：
-
-| 方法 | 384 词表预算 | 512 词表预算 |
-|---|---:|---:|
-| byte BPE | 14.377 | 12.616 |
-| AST-BPE | 17.537 | 16.818 |
-| RL-BPE | 14.479 | 12.532 |
-| RL-AST-BPE | 17.644 | 16.843 |
-| HF byte BPE | 14.377 | 12.616 |
-| SentencePiece BPE | 17.631 | 14.357 |
-| SentencePiece Unigram | 17.606 | 14.204 |
-
-AST 测试覆盖率仅 198/406=48.8%。结构方法在可解析子集的跨子树 token 比例为零，但全测试压缩受字节回退影响。512 预算在可解析子集及小样本 PDE 子群有局部优势，不得外推为整体优势。RL-BPE 在 512 平均略缩短、384 略变长，现阶段不支持稳定优于 BPE 的结论。组 bootstrap 区间见完整报告。
-
-成熟固定词表（GPT-2/Qwen/OpenAI）使用相同 raw-string 指标，单列 pretrained_reference；词表和外部语料不同，不能与 384/512 训练组作公平训练算法排名。
-
-## 本地安装与顺序复现
-
-```bash
-# 从本仓库根目录执行，需要 Python 3.11+ 和 uv
-uv venv .venv --python 3.11
-uv pip install --python .venv/bin/python -r requirements.lock.txt
-
-# 仓库已带公式数据、模型与结果：先运行检查，无需下载全文
-.venv/bin/python -m pytest tests -q
-.venv/bin/python -m math_tokenizer.audit results/pilot01
-.venv/bin/python -m math_tokenizer.audit results/sensitivity512
-
-# 需要重建原始提取时：逐文件下载固定快照，验证 SHA-256
-.venv/bin/python scripts/fetch_sources.py
-.venv/bin/python scripts/fetch_baselines.py
-.venv/bin/python -c 'from math_tokenizer.corpus import build; print(build())'
-.venv/bin/python scripts/export_formula_only.py
-
-# 新输出目录：完成的结果不能覆盖。下列命令顺序执行。
-.venv/bin/python -m math_tokenizer.run --output results/reproduce384 --capacity 384 --seeds 17 29 43
-.venv/bin/python -m math_tokenizer.run --output results/reproduce512 --capacity 512 --seeds 17 29 43
-.venv/bin/python -m math_tokenizer.audit results/reproduce384
-.venv/bin/python -m math_tokenizer.audit results/reproduce512
-
-# 六轮原运行审查含原始来源哈希、保存模型重放及优化前后对照
-.venv/bin/python scripts/checks.py --result results/pilot01
-```
-
-也可运行 `bash scripts/run_all.sh <新的输出目录前缀>`。正常使用只需拉取公式、源码和模型；全文原始素材和第三方框架不在主仓库。tiktoken 的官方 encoding 文件首次使用会下载缓存。
-
-保存模型可直接独立用：
-
-```python
-from pathlib import Path
-from math_tokenizer.bpe import MathBPE
-model = MathBPE.load(Path('results/pilot01/models/ast_bpe-17.json'))
-text = r'\frac{\partial u}{\partial t}=u^{2}'
-ids = model.encode(text)
-assert model.decode(ids) == text
-```
-
-## 与第二篇论文的关系
-
-[Dauncey & Wattenhofer, ICML 2026](https://arxiv.org/abs/2602.13940) 是端到端语言模型内部的动态字节边界学习，不是静态 BPE 合并表训练。这里借用 score-function/REINFORCE 思想，采用独立压缩奖励。不能称作其原算法复现。官方代码原样克隆、commit 记录在 `references/upstream_code.json`；CUDA/Triton 动态方法未在本机运行，未加入已跑通基准表。
-
-## 尚未完成
-
-严格人工非 PDE LaTeX 的补充与专家逐条审查；通用语义 AST；RL 长期收益／语义目标与系统消融；新论文 standalone 基准；arXiv 小批量版本化提取；下游提升的后续验证。现在只完成支持这些工作继续开展的第一阶段，详见 `docs/status.json`。需要修复数据时发布新版本，保留当前输入与结果。
-
-## 来源与许可证
-
-[EqGPT](https://github.com/woshixuhao/EqGPT)、[OpenAI 数学稿件](https://github.com/openai/math)、[SymPy 1.10](https://github.com/sympy/sympy/tree/sympy-1.10)、[Dauncey 原代码](https://github.com/SamD770/bitter-lesson-tokenization)。代码 MIT，公式来源声明继承相应上游许可；许可证快照和声明见 `references/` 与 `NOTICE.md`。助手合成模板明确 CC0，不扩大上游授权范围。
+Quality assurance consists of automated source/license, syntax, macro-fidelity, duplicate, classification and serialization checks. There is no pending expert-annotation workflow or certification claim. The benchmark is source syntax, not mathematical theorem truth. Domains are uneven; only **356** catalog formulas meet the strict PDE-equation rule. All current tests are now exposed. Speed evidence is from one machine and no downstream-task benefit has yet been measured.

@@ -1,0 +1,10 @@
+{
+  "original_commit": "5217a5a",
+  "model_frozen_utc": "2026-10-12T16:03:53.211805+00:00",
+  "first_v8_score_utc": "2026-10-12T16:04:25.874275+00:00",
+  "original_registry_sha256": "ca5d7bab2d99a6104043bbbdbaada37d93e29b064a639484a77304a864b0e084",
+  "original_family_size": 144,
+  "current_selection_is_retrospective": true,
+  "raw_scores_unchanged": true,
+  "historical_artifacts": "history/results/v8/full/"
+}

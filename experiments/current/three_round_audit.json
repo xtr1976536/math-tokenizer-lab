@@ -1,0 +1,38 @@
+{
+  "all_passed": true,
+  "reviews": [
+    {
+      "round": 1,
+      "passed": true,
+      "scope": "All catalog formulas, source-origin licenses, domain/type taxonomy, classification file IDs/hashes, frozen source-disjoint scopes",
+      "catalog_rows": 56000
+    },
+    {
+      "round": 2,
+      "passed": true,
+      "scope": "Every saved public encoder and raw payload, exact IDs/counts, independent KaTeX crossings/pylatexenc boundaries and fit-calibrated probability counts",
+      "formula_rows": 234556
+    },
+    {
+      "round": 3,
+      "passed": true,
+      "scope": "Independent paper and count metric recomputation, shared BPE/AST dictionary, same full input suites, seven timing repetitions, prospective model freeze and retrospective seven-method selection disclosed"
+    }
+  ],
+  "catalog_formulas": 56000,
+  "active_methods": 7,
+  "configurations": 19,
+  "metric_records": 109,
+  "formula_rows": 234556,
+  "completed_utc": "2026-10-12T19:11:20.845046+00:00",
+  "selection_is_retrospective": true,
+  "v8_algorithm_freeze_was_pretest": true,
+  "checks_are_automated_not_external_certification": true,
+  "hashes": {
+    "models/registry.json": "27b20f0f43563e865be3fc16a21eb7463b49f3ff37d78cd15e7ac6f653651626",
+    "experiments/current/registry.json": "3e6908a9fd12a57b40a53a803cb41a70126e6019938f0274813457e319e62930",
+    "experiments/current/metrics.json": "968ff7405b8f75e9e7683939543431a64bec39e3dc395a3157cd69b7ce075066",
+    "experiments/current/per_formula.jsonl.gz": "83dba19a680d52b683f04db3bf5ab0b9c84c260a1df4c5b7a00cb8946ce30f3f",
+    "data/benchmark/manifest.json": "dad4a572f9ee065fad97c0f38764f6d375a902b5297182204ddf0d6db3143d41"
+  }
+}

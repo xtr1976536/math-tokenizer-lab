@@ -1,0 +1,414 @@
+{
+  "resamples": 200000,
+  "family_size": 144,
+  "comparisons": {
+    "1024/broad/ast_boundary-vs-official_atomic_bpe": {
+      "papers": 27,
+      "metrics": {
+        "document_macro_tokens_per_byte": {
+          "difference_left_minus_right": -0.004278931355964476,
+          "ci95": [
+            -0.0052218232466091875,
+            -0.003375648630387402
+          ],
+          "familywise_ci95": [
+            -0.006006922839000632,
+            -0.0027027591543066437
+          ],
+          "estimand": "paper_macro",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "independent_tree_crossing": {
+          "difference_left_minus_right": -0.008264324556893465,
+          "ci95": [
+            -0.014749093538105235,
+            -0.003517934426326963
+          ],
+          "familywise_ci95": [
+            -0.02196213791304496,
+            -0.0002299721822188001
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "command_integrity": {
+          "difference_left_minus_right": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "familywise_ci95": [
+            0.0,
+            0.0
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "number_integrity": {
+          "difference_left_minus_right": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "familywise_ci95": [
+            0.0,
+            0.0
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "independent_scope_boundary_recall": {
+          "difference_left_minus_right": 0.015282703943250597,
+          "ci95": [
+            -0.008523091983876435,
+            0.043000779793904514
+          ],
+          "familywise_ci95": [
+            -0.023599260245335176,
+            0.06064617998628933
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "fit_predictive_unigram_bits_per_byte": {
+          "difference_left_minus_right": -0.022225395146194593,
+          "ci95": [
+            -0.032026047552122204,
+            -0.011841736740188936
+          ],
+          "familywise_ci95": [
+            -0.03923736949008392,
+            -0.004613766268159173
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        }
+      }
+    },
+    "1024/specialized/ast_boundary-vs-official_atomic_bpe": {
+      "papers": 13,
+      "metrics": {
+        "document_macro_tokens_per_byte": {
+          "difference_left_minus_right": -0.009757497684454339,
+          "ci95": [
+            -0.019011093955036515,
+            -0.0034643610346225683
+          ],
+          "familywise_ci95": [
+            -0.029162171406620037,
+            -0.001971858114363197
+          ],
+          "estimand": "paper_macro",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "independent_tree_crossing": {
+          "difference_left_minus_right": -0.01659532509686601,
+          "ci95": [
+            -0.044103095115840395,
+            0.0016867481604731962
+          ],
+          "familywise_ci95": [
+            -0.06635835436065399,
+            0.0066184234231452645
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "command_integrity": {
+          "difference_left_minus_right": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "familywise_ci95": [
+            0.0,
+            0.0
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "number_integrity": {
+          "difference_left_minus_right": 0.0015446400988569087,
+          "ci95": [
+            0.0,
+            0.004352565021532282
+          ],
+          "familywise_ci95": [
+            0.0,
+            0.008627284456736042
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "independent_scope_boundary_recall": {
+          "difference_left_minus_right": 0.005675576711827168,
+          "ci95": [
+            -0.029007886474154303,
+            0.05951773276019117
+          ],
+          "familywise_ci95": [
+            -0.044448984648877615,
+            0.09884167510687178
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "fit_predictive_unigram_bits_per_byte": {
+          "difference_left_minus_right": -0.04334953123074703,
+          "ci95": [
+            -0.08547113643135348,
+            -0.013718042132475853
+          ],
+          "familywise_ci95": [
+            -0.1431867606877478,
+            -0.0011514646015638398
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        }
+      }
+    },
+    "2048/broad/ast_boundary-vs-official_atomic_bpe": {
+      "papers": 27,
+      "metrics": {
+        "document_macro_tokens_per_byte": {
+          "difference_left_minus_right": -0.007601098715259074,
+          "ci95": [
+            -0.009343250752483094,
+            -0.006189303587660674
+          ],
+          "familywise_ci95": [
+            -0.01106041164925648,
+            -0.005345147919654739
+          ],
+          "estimand": "paper_macro",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "independent_tree_crossing": {
+          "difference_left_minus_right": -0.00698365075961202,
+          "ci95": [
+            -0.014660519728796902,
+            0.0007587061150439084
+          ],
+          "familywise_ci95": [
+            -0.02006035845592386,
+            0.005873026925966868
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "command_integrity": {
+          "difference_left_minus_right": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "familywise_ci95": [
+            0.0,
+            0.0
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "number_integrity": {
+          "difference_left_minus_right": 0.0031309793007479048,
+          "ci95": [
+            0.001209006048844216,
+            0.005873882910720825
+          ],
+          "familywise_ci95": [
+            0.0004713930713085353,
+            0.00862750464726422
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "independent_scope_boundary_recall": {
+          "difference_left_minus_right": 0.02683601084915499,
+          "ci95": [
+            0.013334652336402445,
+            0.046205031066975905
+          ],
+          "familywise_ci95": [
+            0.004894541193873483,
+            0.06589008360981011
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "fit_predictive_unigram_bits_per_byte": {
+          "difference_left_minus_right": -0.020201877747880737,
+          "ci95": [
+            -0.03123074632641788,
+            -0.00989440378691491
+          ],
+          "familywise_ci95": [
+            -0.04262495920505023,
+            -0.001398261451274938
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        }
+      }
+    },
+    "2048/specialized/ast_boundary-vs-official_atomic_bpe": {
+      "papers": 13,
+      "metrics": {
+        "document_macro_tokens_per_byte": {
+          "difference_left_minus_right": -0.010880320617139628,
+          "ci95": [
+            -0.019993844891746857,
+            -0.004914685318675487
+          ],
+          "familywise_ci95": [
+            -0.03025314707101085,
+            -0.003442316209480994
+          ],
+          "estimand": "paper_macro",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "independent_tree_crossing": {
+          "difference_left_minus_right": -0.0177005277736193,
+          "ci95": [
+            -0.04878403298849917,
+            0.0025734746714003794
+          ],
+          "familywise_ci95": [
+            -0.07425533360241265,
+            0.007101199916788905
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "command_integrity": {
+          "difference_left_minus_right": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "familywise_ci95": [
+            0.0,
+            0.0
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "number_integrity": {
+          "difference_left_minus_right": 0.0015446400988570197,
+          "ci95": [
+            0.0,
+            0.0046865908915617914
+          ],
+          "familywise_ci95": [
+            0.0,
+            0.008468359824156594
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "independent_scope_boundary_recall": {
+          "difference_left_minus_right": -0.0028377883559135286,
+          "ci95": [
+            -0.040793669963959854,
+            0.06715774579420555
+          ],
+          "familywise_ci95": [
+            -0.057820395096089626,
+            0.12172455847684092
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        },
+        "fit_predictive_unigram_bits_per_byte": {
+          "difference_left_minus_right": -0.04231813261418704,
+          "ci95": [
+            -0.08451777111190968,
+            -0.00827811385004446
+          ],
+          "familywise_ci95": [
+            -0.14199367448055383,
+            0.00697103970697092
+          ],
+          "estimand": "ratio",
+          "family_size": 144,
+          "valid_bootstrap_draws": 200000,
+          "left_seed_count": 1,
+          "right_seed_count": 1
+        }
+      }
+    }
+  },
+  "conditional_on_frozen_vocabularies": true,
+  "training_seed_variance_not_paper_variance": true,
+  "subset_only": true,
+  "original_comparison_family_retained": true
+}

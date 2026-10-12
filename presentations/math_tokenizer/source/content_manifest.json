@@ -1,0 +1,232 @@
+{
+  "body_frames": 42,
+  "total_pages": 43,
+  "title": "Design of a Specialized Tokenizer for Mathematical Text",
+  "cover_information_retained": true,
+  "cover_date": "October 10, 2026",
+  "research_date": "2026-10-13",
+  "figures": 3,
+  "references": 26,
+  "methods": [
+    "ast_boundary",
+    "official_atomic_bpe",
+    "hf_byte_bpe",
+    "sentencepiece_unigram",
+    "Qwen2.5-0.5B",
+    "meta-llama/Meta-Llama-3-8B",
+    "tiktoken_o200k_base"
+  ],
+  "table_source_sha256": "c181cd96853edced759b324e27ebe96e539b4b2453b5055413bd4a7d40e5f7d8",
+  "frames": [
+    {
+      "index": 1,
+      "title": "Can Mathematical Tokenization Improve Model Capability?",
+      "section": "Research Question"
+    },
+    {
+      "index": 2,
+      "title": "Why Mathematical Source Text Is Different",
+      "section": "Research Question"
+    },
+    {
+      "index": 3,
+      "title": "What This Study Establishes",
+      "section": "Research Question"
+    },
+    {
+      "index": 4,
+      "title": "Classical Subword Tokenization",
+      "section": "Related Work"
+    },
+    {
+      "index": 5,
+      "title": "General-Purpose Tokenizers as Deployment References",
+      "section": "Related Work"
+    },
+    {
+      "index": 6,
+      "title": "Specialized Mathematical and Scientific Representations",
+      "section": "Related Work"
+    },
+    {
+      "index": 7,
+      "title": "Compression, Structure and Intrinsic Evaluation",
+      "section": "Related Work"
+    },
+    {
+      "index": 8,
+      "title": "Adaptive Tokenization and the Role of RL",
+      "section": "Related Work"
+    },
+    {
+      "index": 9,
+      "title": "Our Two Routes: Contribution and Prior Art",
+      "section": "Related Work"
+    },
+    {
+      "index": 10,
+      "title": "Corpus Sources and Their Roles",
+      "section": "Dataset"
+    },
+    {
+      "index": 11,
+      "title": "Construction: From Licensed Source to Formula Record",
+      "section": "Dataset"
+    },
+    {
+      "index": 12,
+      "title": "Taxonomy: Formula Type Is Not Paper Topic",
+      "section": "Dataset"
+    },
+    {
+      "index": 13,
+      "title": "Provenance Labels and Two Complexity Classes",
+      "section": "Dataset"
+    },
+    {
+      "index": 14,
+      "title": "Frozen Partitions and Generalization Protocol",
+      "section": "Dataset"
+    },
+    {
+      "index": 15,
+      "title": "Corpus Composition and Coverage",
+      "section": "Dataset"
+    },
+    {
+      "index": 16,
+      "title": "Route 1: Learning a Mathematical Lexical Alphabet",
+      "section": "Math-Atom BPE"
+    },
+    {
+      "index": 17,
+      "title": "Route 1: Exact Source Fidelity and Its Limits",
+      "section": "Math-Atom BPE"
+    },
+    {
+      "index": 18,
+      "title": "Route 2: Source Structure as a Segmentation Cost",
+      "section": "Boundary AST"
+    },
+    {
+      "index": 19,
+      "title": "Route 2: Exact Dynamic Programming on a Fixed Graph",
+      "section": "Boundary AST"
+    },
+    {
+      "index": 20,
+      "title": "Route 2: Development Selection and Runtime Cost",
+      "section": "Boundary AST"
+    },
+    {
+      "index": 21,
+      "title": "Exactly Two Routes and Five Baselines",
+      "section": "Experimental Design"
+    },
+    {
+      "index": 22,
+      "title": "Common Inputs, Training Information and Timing",
+      "section": "Experimental Design"
+    },
+    {
+      "index": 23,
+      "title": "Efficiency, Fidelity and Information Measures",
+      "section": "Evaluation Metrics"
+    },
+    {
+      "index": 24,
+      "title": "Structure, Integrity and Robustness",
+      "section": "Evaluation Metrics"
+    },
+    {
+      "index": 25,
+      "title": "Three New Review Rounds of the Retained Release",
+      "section": "Experimental Audit"
+    },
+    {
+      "index": 26,
+      "title": "New-Paper Results: 1,024-ID Trained Vocabulary",
+      "section": "Results"
+    },
+    {
+      "index": 27,
+      "title": "New-Paper Results: 2,048-ID Trained Vocabulary",
+      "section": "Results"
+    },
+    {
+      "index": 28,
+      "title": "Strict Source-Domain Generalization",
+      "section": "Results"
+    },
+    {
+      "index": 29,
+      "title": "Compression Across Vocabulary Budgets",
+      "section": "Results"
+    },
+    {
+      "index": 30,
+      "title": "Runtime and Source-Tree Crossing",
+      "section": "Results"
+    },
+    {
+      "index": 31,
+      "title": "Paired Paper-Cluster Statistical Evidence",
+      "section": "Results"
+    },
+    {
+      "index": 32,
+      "title": "Probability Coding and Vocabulary Utilization",
+      "section": "Results"
+    },
+    {
+      "index": 33,
+      "title": "Current Seven-System Composite Ranking",
+      "section": "Results"
+    },
+    {
+      "index": 34,
+      "title": "Why RL Is Not a Final Production Route",
+      "section": "Results"
+    },
+    {
+      "index": 35,
+      "title": "Four Priority Downstream Tasks",
+      "section": "Downstream Plan"
+    },
+    {
+      "index": 36,
+      "title": "Tokenizer Replacement Does Not Require Full Retraining",
+      "section": "Downstream Plan"
+    },
+    {
+      "index": 37,
+      "title": "Compute, Vocabulary Cost and Fair Training Budgets",
+      "section": "Downstream Plan"
+    },
+    {
+      "index": 38,
+      "title": "Implementation Sequence and Decision Criteria",
+      "section": "Downstream Plan"
+    },
+    {
+      "index": 39,
+      "title": "What We Can Claim, and What We Must Test Next",
+      "section": "Conclusions"
+    },
+    {
+      "index": 40,
+      "title": "References and Technical Context (1/3)",
+      "section": "References"
+    },
+    {
+      "index": 41,
+      "title": "References and Technical Context (2/3)",
+      "section": "References"
+    },
+    {
+      "index": 42,
+      "title": "References and Technical Context (3/3)",
+      "section": "References"
+    }
+  ]
+}

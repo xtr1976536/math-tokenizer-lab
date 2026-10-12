@@ -1,0 +1,210 @@
+[
+  {
+    "id": "bpe",
+    "authors": "Sennrich, Haddow and Birch",
+    "title": "Neural Machine Translation of Rare Words with Subword Units",
+    "year": 2016,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/P16-1162/"
+  },
+  {
+    "id": "unigram",
+    "authors": "Kudo",
+    "title": "Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates",
+    "year": 2018,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/P18-1007/"
+  },
+  {
+    "id": "sentencepiece",
+    "authors": "Kudo and Richardson",
+    "title": "SentencePiece: A Simple and Language Independent Subword Tokenizer and Detokenizer for Neural Text Processing",
+    "year": 2018,
+    "venue": "EMNLP Demonstrations",
+    "url": "https://aclanthology.org/D18-2012/"
+  },
+  {
+    "id": "qwen",
+    "authors": "Qwen Team",
+    "title": "Qwen2.5 Technical Report",
+    "year": 2024,
+    "venue": "Technical report",
+    "url": "https://arxiv.org/abs/2412.15115"
+  },
+  {
+    "id": "llama",
+    "authors": "Dubey et al.",
+    "title": "The Llama 3 Herd of Models",
+    "year": 2024,
+    "venue": "Technical report",
+    "url": "https://arxiv.org/abs/2407.21783"
+  },
+  {
+    "id": "tiktoken",
+    "authors": "OpenAI",
+    "title": "tiktoken: BPE Tokenizer Library",
+    "year": "2026",
+    "venue": "Official software; accessed 2026-10-13",
+    "url": "https://github.com/openai/tiktoken"
+  },
+  {
+    "id": "mathbert",
+    "authors": "Peng et al.",
+    "title": "MathBERT: A Pre-Trained Model for Mathematical Formula Understanding",
+    "year": 2021,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2105.00377"
+  },
+  {
+    "id": "mathgpt",
+    "authors": "Scarlatos and Lan",
+    "title": "Tree-Based Representation and Generation of Natural and Mathematical Language",
+    "year": 2023,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/2023.acl-long.205/"
+  },
+  {
+    "id": "texbleu",
+    "authors": "Jung et al.",
+    "title": "TeXBLEU: Automatic Metric for Evaluate LaTeX Format",
+    "year": 2024,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2409.06639"
+  },
+  {
+    "id": "cmer",
+    "authors": "Bai et al.",
+    "title": "Complex Mathematical Expression Recognition: Benchmark, Large-Scale Dataset and Strong Baseline",
+    "year": 2026,
+    "venue": "AAAI",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37224"
+  },
+  {
+    "id": "galactica",
+    "authors": "Taylor et al.",
+    "title": "Galactica: A Large Language Model for Science",
+    "year": 2022,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2211.09085"
+  },
+  {
+    "id": "xval",
+    "authors": "Golkar et al.",
+    "title": "xVal: A Continuous Numerical Tokenization for Scientific Language Models",
+    "year": 2023,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2310.02989"
+  },
+  {
+    "id": "pathpiece",
+    "authors": "Schmidt et al.",
+    "title": "Tokenization Is More Than Compression",
+    "year": 2024,
+    "venue": "EMNLP",
+    "url": "https://aclanthology.org/2024.emnlp-main.40/"
+  },
+  {
+    "id": "greed",
+    "authors": "Uzan et al.",
+    "title": "Greed Is All You Need: An Evaluation of Tokenizer Inference Methods",
+    "year": 2024,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/2024.acl-short.73/"
+  },
+  {
+    "id": "tokeval",
+    "authors": "Meister",
+    "title": "TokEval: A Tokenizer Evaluation Suite",
+    "year": 2026,
+    "venue": "COLM",
+    "url": "https://arxiv.org/abs/2608.18062"
+  },
+  {
+    "id": "rl",
+    "authors": "Dauncey and Wattenhofer",
+    "title": "You Can Learn Tokenization End-to-End with Reinforcement Learning",
+    "year": 2026,
+    "venue": "ICML",
+    "url": "https://proceedings.mlr.press/v306/dauncey26a.html"
+  },
+  {
+    "id": "hnet",
+    "authors": "Hwang, Wang and Gu",
+    "title": "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling",
+    "year": 2025,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2507.07955"
+  },
+  {
+    "id": "adaptbpe",
+    "authors": "Liyanage and Yvon",
+    "title": "AdaptBPE: From General Purpose to Specialized Tokenizers",
+    "year": 2026,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2601.21665"
+  },
+  {
+    "id": "tokalign",
+    "authors": "Li, Zhang and Zong",
+    "title": "TokAlign: Efficient Vocabulary Adaptation via Token Alignment",
+    "year": 2025,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/2025.acl-long.207/"
+  },
+  {
+    "id": "compute",
+    "authors": "Limisiewicz et al.",
+    "title": "Compute Optimal Tokenization",
+    "year": 2026,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2605.01188"
+  },
+  {
+    "id": "eqgpt",
+    "authors": "Xu et al.",
+    "title": "Generative Discovery of Partial Differential Equations by Learning from Math Handbooks",
+    "year": 2025,
+    "venue": "Nature Communications",
+    "url": "https://www.nature.com/articles/s41467-025-65114-2"
+  },
+  {
+    "id": "pdebench",
+    "authors": "Takamoto et al.",
+    "title": "PDEBench: An Extensive Benchmark for Scientific Machine Learning",
+    "year": 2022,
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "url": "https://proceedings.nips.cc/paper_files/paper/2022/hash/0a9747136d411fb83f0cf81820d44afb-Abstract-Datasets_and_Benchmarks.html"
+  },
+  {
+    "id": "symbolic",
+    "authors": "Lample and Charton",
+    "title": "Deep Learning for Symbolic Mathematics",
+    "year": 2020,
+    "venue": "ICLR",
+    "url": "https://openreview.net/forum?id=S1eZYeHFDS"
+  },
+  {
+    "id": "math",
+    "authors": "Hendrycks et al.",
+    "title": "Measuring Mathematical Problem Solving With the MATH Dataset",
+    "year": 2021,
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html"
+  },
+  {
+    "id": "datasheets",
+    "authors": "Gebru et al.",
+    "title": "Datasheets for Datasets",
+    "year": 2021,
+    "venue": "Communications of the ACM",
+    "url": "https://arxiv.org/abs/1803.09010"
+  },
+  {
+    "id": "mathbridge",
+    "authors": "Jung et al.",
+    "title": "MathBridge: A Large Corpus Dataset for Translating Spoken Mathematical Expressions into LaTeX Formulas for Improved Readability",
+    "year": 2024,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2408.07081"
+  }
+]

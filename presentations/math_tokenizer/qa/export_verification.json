@@ -1,0 +1,10 @@
+{
+  "slides": 43,
+  "aspect_ratio": "4:3",
+  "pptx_is_exact_page_rendition": true,
+  "editable_master": "source/mathematical_tokenizer.tex",
+  "slide_image_bytes_verified": true,
+  "pdf_sha256": "0f3ccdcfc6ab46dfd06df7340a861a6e39c4817524ed9fcad56a1a576f702cbd",
+  "pptx_sha256": "7e6b4a94413e5235839a2e4ba4cd481c43b286ebee5dfca8f414186633bec80f",
+  "source_bundle_sha256": "ace00977cb9ce7ca920c5f0fe241e482092ebd29ad7afc1495f22f213d00aa51"
+}

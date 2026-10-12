@@ -45,6 +45,9 @@ def load_checkpoint(path):
 
 
 def load_current(family, scenario='broad', capacity=1024):
+    if (ROOT/'models/registry.json').exists():
+        from .final_models import load_final
+        return load_final(family,scenario,capacity)
     family = family.replace('-', '_')
     if scenario not in ('broad', 'specialized'):
         raise ValueError('scenario must be broad or specialized')

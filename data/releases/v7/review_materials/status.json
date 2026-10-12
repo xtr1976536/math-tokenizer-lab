@@ -1,7 +1,0 @@
-{
-  "samples": 144,
-  "human_reviews_completed": 0,
-  "expert_gold": false,
-  "purpose": "Source/domain/scope double-review material only; expert answers deliberately blank, not evaluated as ground truth.",
-  "sampling": "Up to8 hash-chosen samples per source-domain/proxy-complexity class, no tokenizer score selection."
-}
