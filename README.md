@@ -1,4 +1,21 @@
-# 当前版本 v6：数学公式 benchmark 与独立分词器（2026-10-12）
+# 最新研究 v7：同先验对照、AST两级路径与终端RL（2026-10-12）
+
+本轮封存新增3,933条2020年前许可核验arXiv公式，包含1,961条来源领域外测试；旧v6主库不变。完成79种配置、204组指标记录、376,996行逐式重放、八轮公平性检查和193项测试。九种成熟tokenizer与自研/经典算法在相同原式上评测，三次来源重划分的12个保存模型也已重载复算。
+
+AST新压缩分支在同原子、同词表、同ID预算下，先最少token，再在最短路径中最少源树crossing。广域新论文测试相对原版同原子BPE，1024/2048预算的paper token/byte分别降低1.15%/2.21%，本机编码约3.32/3.30倍；独立参数边界召回下降，严格结构仍弱于原版硬树AST。两预算的冻结综合榜第一均为新AST分支，但综合榜不能证明数学语义贡献或所有指标占优。
+
+v5新分支尝试fit动作特征、完整轨迹终端多目标RL和跨词表容量迁移；没有稳定超过父模型和no-update/搜索控制，未通过开发晋升。活动API仍为v6 AST-v4/v5两个家族。本轮取得部分可确认收益，尚未达到“两路线各项指标大幅提升”。
+
+- 完整结果、两预算20方法排名、配对区间及问题清单：[v7报告](docs/v7_results.md)。
+- 合法路径、两级DP、词表剪枝和终端RL机制：[v7方法](docs/v7_formal_mechanisms.md)。
+- 冻结协议与实验边界：[v7协议](docs/v7_research_protocol.md)。
+- 封存语料与四轮质量检查：[manifest](data/releases/v7/manifest.json)、[quality audit](data/releases/v7/quality_audit.json)。
+- 全指标、分层和独立核验：[metrics](results/v7/full/metrics.json)、[CSV](results/v7/full/all_main_metrics.csv)、[分层](results/v7/full/grouped_metrics.json)、[八轮检查](results/v7/full/fairness_audit.json)、[交付核验](results/v7/verification.json)。
+- 顺序重放现有冻结模型：`sh scripts/run_v7_replay.sh`；依赖：[requirements-v7.lock.txt](requirements-v7.lock.txt)，第三方安装沿用v6复现文档。
+
+专家双审完成数为0，144条待审材料已准备；速度只在一台Mac的公共接口上测量。v7测试评分后已经暴露，后续改造须在dev选择并另行封存新最终测试。下游任务尚未开始。
+
+# 活动版本 v6：数学公式 benchmark 与独立分词器（2026-10-12）
 
 主库 **47,773 条**，本轮新增60篇许可可核验、2020年前固定版本的 arXiv 源稿；共277篇取得源码、225篇贡献合格公式。本轮加入6,707条新增论文公式，保留多行方程/方程组、来源证据、宏展开与独立参考树。主库人工历史来源43,002、unknown1,961、possible_mixed2,810；AI基础模板和EqGPT结构串作为补充材料，不补进主benchmark。13领域、两档复杂度，纯字符串分区见 `data/releases/v6/formula_only/`。
 

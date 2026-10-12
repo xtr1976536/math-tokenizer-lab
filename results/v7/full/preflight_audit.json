@@ -1,0 +1,29 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "scope": "Identical scenario pools, fit/reward paper disjoint, unseen sources excluded from all training and dev, strict specialized categories",
+      "passed": true
+    },
+    {
+      "round": 2,
+      "scope": "Every reserved ID counted, Unicode/unknown/empty/multiline probes lossless in every official and custom public interface",
+      "passed": true,
+      "configurations": 79
+    },
+    {
+      "round": 3,
+      "scope": "Identical byte dictionaries for BPE/lattice, same atoms for RL/control, strict OOD policy provenance, all baseline fit+reward union ranges available",
+      "passed": true,
+      "limitation": "Common allowed information, not equal tuning count or equal wall-clock training; all search budgets disclosed."
+    },
+    {
+      "round": 4,
+      "scope": "Frozen checkpoints reloaded deterministically; official packages and author metric/baseline code pinned and unmodified; no external tokenizer scores consulted",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "registry_sha256": "cdcb77312ac022cc587bef68448b17467288fa9c8e7a8a55841689528baae817",
+  "test_scores_consulted": false
+}

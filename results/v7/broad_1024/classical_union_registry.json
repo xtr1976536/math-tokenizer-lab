@@ -1,0 +1,29 @@
+[
+  {
+    "name": "sentencepiece_bpe_union",
+    "kind": "sp",
+    "path": "results/v7/broad_1024/models/sentencepiece_bpe_union.model",
+    "train_seconds": 3.332503208000162,
+    "fit_reward_count": 30612,
+    "capacity": 1024,
+    "scenario": "broad"
+  },
+  {
+    "name": "sentencepiece_unigram_union",
+    "kind": "sp",
+    "path": "results/v7/broad_1024/models/sentencepiece_unigram_union.model",
+    "train_seconds": 43.01499987499983,
+    "fit_reward_count": 30612,
+    "capacity": 1024,
+    "scenario": "broad"
+  },
+  {
+    "name": "wordpiece_union",
+    "kind": "wp",
+    "path": "results/v7/broad_1024/models/wordpiece_union.json",
+    "train_seconds": 4.934106042000167,
+    "fit_reward_count": 30612,
+    "capacity": 1024,
+    "scenario": "broad"
+  }
+]

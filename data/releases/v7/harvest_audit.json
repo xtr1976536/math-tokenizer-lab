@@ -1,0 +1,267 @@
+{
+  "target_papers": 40,
+  "downloaded": 40,
+  "discovered_unseen": 104,
+  "domains": {
+    "analysis": 7,
+    "geometry_topology": 7,
+    "mathematical_physics": 6,
+    "pde": 5,
+    "algebra": 3,
+    "combinatorics": 5,
+    "logic": 1,
+    "ode": 2,
+    "optimization": 4
+  },
+  "requests": [
+    {
+      "url": "https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXivRaw&set=math&from=2019-02-01&until=2019-02-10",
+      "status": 200,
+      "duration": 5.059841208989383,
+      "utc": "2026-10-12T06:09:36Z"
+    },
+    {
+      "url": "https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXivRaw&set=math&from=2018-05-01&until=2018-05-10",
+      "status": 200,
+      "duration": 6.308931332998327,
+      "utc": "2026-10-12T06:09:44Z"
+    },
+    {
+      "url": "https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXivRaw&set=math&from=2017-09-01&until=2017-09-10",
+      "status": 200,
+      "duration": 4.299010166010703,
+      "utc": "2026-10-12T06:09:52Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1805.02703v1",
+      "status": 200,
+      "duration": 0.7733883750042878,
+      "utc": "2026-10-12T06:09:57Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1805.02703v1",
+      "status": 200,
+      "duration": 0.3359105409908807,
+      "utc": "2026-10-12T06:10:02Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1804.11252v1",
+      "status": 200,
+      "duration": 0.31078670799615793,
+      "utc": "2026-10-12T06:10:06Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1804.11252v1",
+      "status": 200,
+      "duration": 0.5026378329930594,
+      "utc": "2026-10-12T06:10:10Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1805.02437v1",
+      "status": 200,
+      "duration": 0.29942612499871757,
+      "utc": "2026-10-12T06:10:15Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1805.02437v1",
+      "status": 200,
+      "duration": 0.37165354200988077,
+      "utc": "2026-10-12T06:10:19Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1805.02737v1",
+      "status": 200,
+      "duration": 0.2471519169921521,
+      "utc": "2026-10-12T06:10:23Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1805.02737v1",
+      "status": 200,
+      "duration": 0.4797070420027012,
+      "utc": "2026-10-12T06:10:28Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1805.01223v1",
+      "status": 200,
+      "duration": 0.4684968329966068,
+      "utc": "2026-10-12T06:10:32Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1805.01223v1",
+      "status": 200,
+      "duration": 0.7300751670118188,
+      "utc": "2026-10-12T06:10:37Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1805.03451v1",
+      "status": 200,
+      "duration": 0.37702987500233576,
+      "utc": "2026-10-12T06:10:41Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1805.03451v1",
+      "status": 200,
+      "duration": 0.2748546249931678,
+      "utc": "2026-10-12T06:10:46Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1706.06233v3",
+      "status": 200,
+      "duration": 0.32842233301198576,
+      "utc": "2026-10-12T06:10:50Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1706.06233v3",
+      "status": 200,
+      "duration": 0.24178899999242276,
+      "utc": "2026-10-12T06:10:54Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1804.00980v1",
+      "status": 200,
+      "duration": 0.24859495800046716,
+      "utc": "2026-10-12T06:10:59Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1804.00980v1",
+      "status": 200,
+      "duration": 0.6052718749997439,
+      "utc": "2026-10-12T06:11:03Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1809.00186v1",
+      "status": 200,
+      "duration": 0.39209679199848324,
+      "utc": "2026-10-12T06:11:08Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1809.00186v1",
+      "status": 200,
+      "duration": 0.2567951249948237,
+      "utc": "2026-10-12T06:11:12Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1404.1932v2",
+      "status": 200,
+      "duration": 0.245851917003165,
+      "utc": "2026-10-12T06:11:16Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1404.1932v2",
+      "status": 200,
+      "duration": 0.24402966699562967,
+      "utc": "2026-10-12T06:11:20Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1704.00936v1",
+      "status": 200,
+      "duration": 0.0930181250005262,
+      "utc": "2026-10-12T06:11:24Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1704.00936v1",
+      "status": 200,
+      "duration": 0.5383594159939094,
+      "utc": "2026-10-12T06:11:29Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1909.00469v1",
+      "status": 200,
+      "duration": 0.3209071659948677,
+      "utc": "2026-10-12T06:11:33Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1909.00469v1",
+      "status": 200,
+      "duration": 0.5307532910082955,
+      "utc": "2026-10-12T06:11:38Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1703.10821v1",
+      "status": 200,
+      "duration": 0.2484525420004502,
+      "utc": "2026-10-12T06:11:42Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1703.10821v1",
+      "status": 200,
+      "duration": 0.3937876249983674,
+      "utc": "2026-10-12T06:11:47Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1703.10734v1",
+      "status": 200,
+      "duration": 0.42276158298773225,
+      "utc": "2026-10-12T06:11:51Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1703.10734v1",
+      "status": 200,
+      "duration": 0.7601655829930678,
+      "utc": "2026-10-12T06:11:56Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1302.4497v1",
+      "status": 200,
+      "duration": 0.26127166699734516,
+      "utc": "2026-10-12T06:12:00Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1302.4497v1",
+      "status": 200,
+      "duration": 0.6627368339977693,
+      "utc": "2026-10-12T06:12:05Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1805.00298v1",
+      "status": 200,
+      "duration": 0.3935190420015715,
+      "utc": "2026-10-12T06:12:09Z"
+    },
+    {
+      "url": "https://arxiv.org/src/1805.00298v1",
+      "status": 200,
+      "duration": 0.4680390840076143,
+      "utc": "2026-10-12T06:12:14Z"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "1511.02678",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1701.02859",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1808.10139",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1906.04125",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1704.00908",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1901.01658",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1511.01077",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1511.02154",
+      "reason": "not_tex_source"
+    },
+    {
+      "id": "1711.03086",
+      "reason": "not_tex_source"
+    }
+  ],
+  "rules": "fixed pre2020 CC BY/CC0 version, official URLs, cache first single connection >=4s, stop403/429, no TeX execution"
+}

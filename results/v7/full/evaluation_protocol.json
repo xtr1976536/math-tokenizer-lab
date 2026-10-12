@@ -1,0 +1,58 @@
+{
+  "frozen_utc": "2026-10-12T11:58:24.265549+00:00",
+  "external_archive_sha256": "f63d18b15a7e7beed54705e444cfbc45c13087f48154c46d1ced826cfa29011f",
+  "registry_sha256": "cdcb77312ac022cc587bef68448b17467288fa9c8e7a8a55841689528baae817",
+  "previous_results_used_for_development": true,
+  "new_external_scores_used": false,
+  "capacities": [
+    1024,
+    2048
+  ],
+  "main_scenarios": {
+    "broad": "external_test",
+    "specialized": "extreme_domain_test"
+  },
+  "additional_suites": [
+    "broad_extreme",
+    "stress_test_v6_exposed"
+  ],
+  "all_raw_strings": true,
+  "per_model_filter_or_truncation": false,
+  "fit_calibration": "Same fit IDs by scenario, actual vocab and add-half readout; mature models separately calibrated for broad and specialized.",
+  "additional_smoothing": [
+    0.01,
+    0.1,
+    0.5,
+    1.0
+  ],
+  "independent_parser": "pylatexenc2.11 strict groups (source syntax only, not expert semantic gold)",
+  "edit_probe_limit": 256,
+  "edit_probe_sampling": "Common first256 immutable suite records, same-byte lexical-symbol local edit, outside16bytes boundary change",
+  "timing_repeats": 7,
+  "timing": "All configurations shuffled/interleaved, full public encode/decode including frontend, caches clear, no training/network tasks.",
+  "comprehensive_weights": {
+    "document_macro_tokens_per_byte": 0.3,
+    "encode_mib_s": 0.25,
+    "independent_tree_crossing": 0.2,
+    "command_integrity": 0.1,
+    "number_integrity": 0.05,
+    "fit_predictive_unigram_bits_per_byte": 0.1
+  },
+  "rank_scope": "Practical deployed systems on same inputs; matched dictionaries/atoms and causal controls reported separately.",
+  "scenario_weights": {
+    "broad": 0.5,
+    "specialized": 0.5
+  },
+  "paper_bootstrap_resamples": 2000,
+  "primary_pairs": [
+    "ast_lexicographic-vs-official_atomic_bpe",
+    "ast_lexicographic-vs-lexical_shortest",
+    "v5_terminal_transfer-vs-v5_terminal_no_update",
+    "v5_terminal_transfer-vs-v5_policy_search"
+  ],
+  "multiple_comparisons": "Primary paired bootstrap intervals additionally adjusted by Bonferroni familywise 5%; raw CIs descriptive.",
+  "candidate_promotion": "Experimental branches only; active v6 registry kept until strong multi-metric gain independently established.",
+  "downstream": false,
+  "expert_gold_or_multihardware_claim": false,
+  "scope_limitation": "New source-topic holdout, not guaranteed disjoint mathematical concepts; external pretraining contamination unknown."
+}

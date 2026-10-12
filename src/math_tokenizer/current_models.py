@@ -8,6 +8,12 @@ from .corpus import ROOT
 def load_checkpoint(path):
     path = Path(path)
     saved = json.loads(path.read_text())
+    if saved.get('format')=='ast-v4-balanced-lattice-v7':
+        from .ast_balanced_v7 import BalancedAST
+        return BalancedAST.load(path)
+    if saved.get('format')=='official-atomic-bpe-v7':
+        from .atomic_bpe_v7 import AtomicBPE
+        return AtomicBPE.load(path)
     if saved.get('format')=='ast-v4-native-binding-v6':
         from .ast_route_v6 import NativeASTV4
         return NativeASTV4.load(path)

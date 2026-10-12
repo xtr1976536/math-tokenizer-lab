@@ -1,0 +1,117 @@
+{
+  "selection": {
+    "1024/broad": {
+      "ast_compression_candidate": {
+        "name": "ast_lexicographic",
+        "path": "results/v7/broad_1024/models/ast_lexicographic.json",
+        "dev_utility": 0.3961358930031863,
+        "parent_utility": 0.4118740351798417,
+        "purpose": "Explicit compression/structure tradeoff branch; does not supersede hard-structure AST parent."
+      },
+      "rl_future_credit_candidates": [
+        {
+          "name": "v5_transfer_tree0.5_e4_s29_learned",
+          "path": "results/v7/broad_1024/models/v5_transfer_tree0.5_e4_s29_learned.json",
+          "dev_utility": 0.403477990561728
+        },
+        {
+          "name": "v5_transfer_tree0.5_e4_s17_learned",
+          "path": "results/v7/broad_1024/models/v5_transfer_tree0.5_e4_s17_learned.json",
+          "dev_utility": 0.4094446243976486
+        },
+        {
+          "name": "v5_transfer_tree0.5_e4_s43_learned",
+          "path": "results/v7/broad_1024/models/v5_transfer_tree0.5_e4_s43_learned.json",
+          "dev_utility": 0.4032984716541809
+        }
+      ],
+      "rl_mean_dev_utility": 0.4054070288711859,
+      "rl_parent_dev_utility": 0.40108589725248733,
+      "rl_promoted_by_dev": false,
+      "seed_selection": false,
+      "all_future_credit_seeds_reported": true,
+      "explicitly_discarded_cross_domain_policy_for_strict_ood": false,
+      "all_candidates_only_fit_reward_dev": true,
+      "external_test_score_access": false,
+      "development_model_count": 34
+    },
+    "1024/specialized": {
+      "ast_compression_candidate": {
+        "name": "ast_lexicographic",
+        "path": "results/v7/specialized_1024/models/ast_lexicographic.json",
+        "dev_utility": 0.4054030447922424,
+        "parent_utility": 0.42176628767123614,
+        "purpose": "Explicit compression/structure tradeoff branch; does not supersede hard-structure AST parent."
+      },
+      "rl_future_credit_candidates": [
+        {
+          "name": "v5_transfer_tree0.5_e4_s17_learned",
+          "path": "results/v7/specialized_1024/models/v5_transfer_tree0.5_e4_s17_learned.json",
+          "dev_utility": 0.4148566728480811
+        }
+      ],
+      "rl_mean_dev_utility": 0.4148566728480811,
+      "rl_parent_dev_utility": 0.4116243076679448,
+      "rl_promoted_by_dev": false,
+      "seed_selection": false,
+      "all_future_credit_seeds_reported": true,
+      "explicitly_discarded_cross_domain_policy_for_strict_ood": true,
+      "all_candidates_only_fit_reward_dev": true,
+      "external_test_score_access": false,
+      "development_model_count": 10
+    },
+    "2048/broad": {
+      "ast_compression_candidate": {
+        "name": "ast_lexicographic",
+        "path": "results/v7/broad_2048/models/ast_lexicographic.json",
+        "dev_utility": 0.3448940048292401,
+        "parent_utility": 0.3574897950474244,
+        "purpose": "Explicit compression/structure tradeoff branch; does not supersede hard-structure AST parent."
+      },
+      "rl_future_credit_candidates": [
+        {
+          "name": "v5_cross_task_learned",
+          "path": "results/v7/broad_2048/models/v5_cross_task_learned.json",
+          "dev_utility": 0.3542473964255713
+        }
+      ],
+      "rl_mean_dev_utility": 0.3542473964255713,
+      "rl_parent_dev_utility": 0.3535095625028379,
+      "rl_promoted_by_dev": false,
+      "seed_selection": false,
+      "all_future_credit_seeds_reported": true,
+      "explicitly_discarded_cross_domain_policy_for_strict_ood": false,
+      "all_candidates_only_fit_reward_dev": true,
+      "external_test_score_access": false,
+      "development_model_count": 8
+    },
+    "2048/specialized": {
+      "ast_compression_candidate": {
+        "name": "ast_lexicographic",
+        "path": "results/v7/specialized_2048/models/ast_lexicographic.json",
+        "dev_utility": 0.3688749033161538,
+        "parent_utility": 0.38221634714535513,
+        "purpose": "Explicit compression/structure tradeoff branch; does not supersede hard-structure AST parent."
+      },
+      "rl_future_credit_candidates": [
+        {
+          "name": "v5_cross_task_learned_strict",
+          "path": "results/v7/specialized_2048/models/v5_cross_task_learned_strict.json",
+          "dev_utility": 0.3788335390539198
+        }
+      ],
+      "rl_mean_dev_utility": 0.3788335390539198,
+      "rl_parent_dev_utility": 0.3755163066201848,
+      "rl_promoted_by_dev": false,
+      "seed_selection": false,
+      "all_future_credit_seeds_reported": true,
+      "explicitly_discarded_cross_domain_policy_for_strict_ood": true,
+      "all_candidates_only_fit_reward_dev": true,
+      "external_test_score_access": false,
+      "development_model_count": 8
+    }
+  },
+  "decision_utc": "2026-10-12T11:54:24.443760+00:00",
+  "active_registry_changed": false,
+  "scope": "Freeze experimental candidates, keep parent models; no claim of achieved large gain."
+}
