@@ -8,6 +8,7 @@
 
 在1,024和2,048相同词表预算下，压缩第一均为v5；预先冻结综合权重下均为AST-v4第一、v5第二、PathPiece第三。所有224组结果精确还原率100%；不同偏好会改变综合名次，不能据此宣称下游任务已获胜。
 
+- **通用与数学专用直接对比**：Qwen2.5、Qwen3、DeepSeek-V3、Phi-4、Mistral-Nemo、GPT-2、cl100k、o200k全部参加相同原式、指标、七轮计时、新论文/跨领域/压力实验，并进入15种配置的同榜比较。两预算综合前两名为AST-v4、v5，压缩第一为v5；v5编码仍慢于o200k，部分成熟配置数字完整性更高。已统一跨领域fit-only概率校准，四轮专项审查和358,776行全量重放通过。见[完整直接比较](docs/general_vs_math_v6.md)、[全指标CSV](results/v6/full/general_vs_math_metrics.csv)和[综合/逐项排名](results/v6/full/general_vs_math_rankings.json)。
 - 完整排名、指标、对照与边界：[v6结果](docs/v6_results_and_rankings.md)。
 - 数据质量、两个路线与复现：[v6设计](docs/v6_design_and_reproduction.md)。
 - 指标论文、定义及权重：[v6指标](docs/metrics_v6.md)。

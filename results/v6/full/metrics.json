@@ -153368,7 +153368,20 @@
     "suite": "fresh_test",
     "load_seconds_observed": 0.11450500000501052,
     "checkpoint_bytes": 11422654,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.164976046694219,
+        "fit_rare_token_rate": 0.009282422646477946,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.301553442614652,
+        "fit_rare_token_rate": 0.025888742593811718,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "Qwen/Qwen3-0.6B",
@@ -153408,8 +153421,8 @@
       "3.0": 0.30926413152661675
     },
     "empirical_unigram_bits_per_byte": 3.880779724389518,
-    "fit_predictive_unigram_bits_per_byte": 4.196439174934509,
-    "fit_rare_token_rate": 0.010610296401654487,
+    "fit_predictive_unigram_bits_per_byte": 4.353086821772747,
+    "fit_rare_token_rate": 0.02988539571991433,
     "layout_token_variation": 0.03640504825704611,
     "layout_probe_formulas": 272,
     "encode_seconds_repeats": [
@@ -154373,7 +154386,20 @@
     "suite": "extreme_domain_test",
     "load_seconds_observed": 0.11450500000501052,
     "checkpoint_bytes": 11422654,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.196439174934509,
+        "fit_rare_token_rate": 0.010610296401654487,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.353086821772747,
+        "fit_rare_token_rate": 0.02988539571991433,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "specialized"
   },
   {
     "method": "Qwen/Qwen3-0.6B",
@@ -155065,7 +155091,20 @@
     "suite": "stress_test",
     "load_seconds_observed": 0.11450500000501052,
     "checkpoint_bytes": 11422654,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.136565673792522,
+        "fit_rare_token_rate": 0.008553844140453175,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.274978275049808,
+        "fit_rare_token_rate": 0.02370210956045674,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "deepseek-ai/DeepSeek-V3",
@@ -156612,7 +156651,20 @@
     "suite": "fresh_test",
     "load_seconds_observed": 0.08162674999039154,
     "checkpoint_bytes": 7847652,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 3.8633762818237996,
+        "fit_rare_token_rate": 0.009121316391457296,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 3.9958113750698026,
+        "fit_rare_token_rate": 0.029007516195382634,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "deepseek-ai/DeepSeek-V3",
@@ -156652,8 +156704,8 @@
       "3.0": 0.3393540452311286
     },
     "empirical_unigram_bits_per_byte": 3.547473772544442,
-    "fit_predictive_unigram_bits_per_byte": 3.8711880046182374,
-    "fit_rare_token_rate": 0.011098588320693804,
+    "fit_predictive_unigram_bits_per_byte": 4.0272071110106396,
+    "fit_rare_token_rate": 0.034231790483103784,
     "layout_token_variation": 0.05029208754591948,
     "layout_probe_formulas": 272,
     "encode_seconds_repeats": [
@@ -157786,7 +157838,20 @@
     "suite": "extreme_domain_test",
     "load_seconds_observed": 0.08162674999039154,
     "checkpoint_bytes": 7847652,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 3.8711880046182374,
+        "fit_rare_token_rate": 0.011098588320693804,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.0272071110106396,
+        "fit_rare_token_rate": 0.034231790483103784,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "specialized"
   },
   {
     "method": "deepseek-ai/DeepSeek-V3",
@@ -158590,7 +158655,20 @@
     "suite": "stress_test",
     "load_seconds_observed": 0.08162674999039154,
     "checkpoint_bytes": 7847652,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 3.8196400558221724,
+        "fit_rare_token_rate": 0.019993450276683825,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 3.9610313960670105,
+        "fit_rare_token_rate": 0.03799679231499131,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "microsoft/Phi-4",
@@ -159996,7 +160074,20 @@
     "suite": "fresh_test",
     "load_seconds_observed": 0.057880125008523464,
     "checkpoint_bytes": 4253055,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.150580747085946,
+        "fit_rare_token_rate": 0.009455563792109382,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.261848316206332,
+        "fit_rare_token_rate": 0.026258133596903054,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "microsoft/Phi-4",
@@ -160036,8 +160127,8 @@
       "3.0": 0.3204465085458574
     },
     "empirical_unigram_bits_per_byte": 3.8798714206405895,
-    "fit_predictive_unigram_bits_per_byte": 4.182637501040907,
-    "fit_rare_token_rate": 0.010921714070508097,
+    "fit_predictive_unigram_bits_per_byte": 4.313292583753175,
+    "fit_rare_token_rate": 0.030538225999246778,
     "layout_token_variation": 0.03652707340984293,
     "layout_probe_formulas": 272,
     "encode_seconds_repeats": [
@@ -161038,7 +161129,20 @@
     "suite": "extreme_domain_test",
     "load_seconds_observed": 0.057880125008523464,
     "checkpoint_bytes": 4253055,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.182637501040907,
+        "fit_rare_token_rate": 0.010921714070508097,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.313292583753175,
+        "fit_rare_token_rate": 0.030538225999246778,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "specialized"
   },
   {
     "method": "microsoft/Phi-4",
@@ -161731,7 +161835,20 @@
     "suite": "stress_test",
     "load_seconds_observed": 0.057880125008523464,
     "checkpoint_bytes": 4253055,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.122731511247038,
+        "fit_rare_token_rate": 0.00855515036049433,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.236510695637379,
+        "fit_rare_token_rate": 0.023705729005704647,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "mistralai/Mistral-Nemo-Base-2407",
@@ -163215,7 +163332,20 @@
     "suite": "fresh_test",
     "load_seconds_observed": 0.1287011250096839,
     "checkpoint_bytes": 9264445,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 3.8715413512783035,
+        "fit_rare_token_rate": 0.008710217755443886,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.004396896499133,
+        "fit_rare_token_rate": 0.02851399856424982,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "mistralai/Mistral-Nemo-Base-2407",
@@ -163255,8 +163385,8 @@
       "3.0": 0.33846915184912924
     },
     "empirical_unigram_bits_per_byte": 3.5496247660045825,
-    "fit_predictive_unigram_bits_per_byte": 3.869618411163147,
-    "fit_rare_token_rate": 0.010141563284877083,
+    "fit_predictive_unigram_bits_per_byte": 4.024561009571045,
+    "fit_rare_token_rate": 0.03244158611766497,
     "layout_token_variation": 0.04890260810339242,
     "layout_probe_formulas": 272,
     "encode_seconds_repeats": [
@@ -164344,7 +164474,20 @@
     "suite": "extreme_domain_test",
     "load_seconds_observed": 0.1287011250096839,
     "checkpoint_bytes": 9264445,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 3.869618411163147,
+        "fit_rare_token_rate": 0.010141563284877083,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.024561009571045,
+        "fit_rare_token_rate": 0.03244158611766497,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "specialized"
   },
   {
     "method": "mistralai/Mistral-Nemo-Base-2407",
@@ -165145,7 +165288,20 @@
     "suite": "stress_test",
     "load_seconds_observed": 0.1287011250096839,
     "checkpoint_bytes": 9264445,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 3.8082367892785967,
+        "fit_rare_token_rate": 0.015856409997857243,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 3.943549844908892,
+        "fit_rare_token_rate": 0.03525047161685804,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "Qwen2.5-0.5B",
@@ -166508,7 +166664,20 @@
     "suite": "fresh_test",
     "load_seconds_observed": 0.09872462500061374,
     "checkpoint_bytes": 7031645,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.1649749250044685,
+        "fit_rare_token_rate": 0.009282422646477946,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.30155039333941,
+        "fit_rare_token_rate": 0.025888742593811718,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "Qwen2.5-0.5B",
@@ -166548,8 +166717,8 @@
       "3.0": 0.30926481524739186
     },
     "empirical_unigram_bits_per_byte": 3.880779724389518,
-    "fit_predictive_unigram_bits_per_byte": 4.196438038668559,
-    "fit_rare_token_rate": 0.010610296401654487,
+    "fit_predictive_unigram_bits_per_byte": 4.353083732872596,
+    "fit_rare_token_rate": 0.02988539571991433,
     "layout_token_variation": 0.03640504825704611,
     "layout_probe_formulas": 272,
     "encode_seconds_repeats": [
@@ -167513,7 +167682,20 @@
     "suite": "extreme_domain_test",
     "load_seconds_observed": 0.09872462500061374,
     "checkpoint_bytes": 7031645,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.196438038668559,
+        "fit_rare_token_rate": 0.010610296401654487,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.353083732872596,
+        "fit_rare_token_rate": 0.02988539571991433,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "specialized"
   },
   {
     "method": "Qwen2.5-0.5B",
@@ -168205,7 +168387,20 @@
     "suite": "stress_test",
     "load_seconds_observed": 0.09872462500061374,
     "checkpoint_bytes": 7031645,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.136564579690298,
+        "fit_rare_token_rate": 0.008553844140453175,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.274975300770301,
+        "fit_rare_token_rate": 0.02370210956045674,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "tiktoken_gpt2",
@@ -169055,7 +169250,20 @@
     "suite": "fresh_test",
     "load_seconds_observed": 0.06602904098690487,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.402807311261357,
+        "fit_rare_token_rate": 0.005351212135858645,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.475748203053268,
+        "fit_rare_token_rate": 0.010343375199375808,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "tiktoken_gpt2",
@@ -169095,8 +169303,8 @@
       "3.0": 0.32339743975500773
     },
     "empirical_unigram_bits_per_byte": 4.225882401075535,
-    "fit_predictive_unigram_bits_per_byte": 4.459486463684902,
-    "fit_rare_token_rate": 0.006274840746991888,
+    "fit_predictive_unigram_bits_per_byte": 4.547992929334848,
+    "fit_rare_token_rate": 0.011773833505743998,
     "layout_token_variation": 0.015443027182500716,
     "layout_probe_formulas": 272,
     "encode_seconds_repeats": [
@@ -169728,7 +169936,20 @@
     "suite": "extreme_domain_test",
     "load_seconds_observed": 0.06602904098690487,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.459486463684902,
+        "fit_rare_token_rate": 0.006274840746991888,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.547992929334848,
+        "fit_rare_token_rate": 0.011773833505743998,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "specialized"
   },
   {
     "method": "tiktoken_gpt2",
@@ -170201,7 +170422,20 @@
     "suite": "stress_test",
     "load_seconds_observed": 0.06602904098690487,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.384082437772291,
+        "fit_rare_token_rate": 0.004258126424373275,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.470394241805713,
+        "fit_rare_token_rate": 0.008618207988485067,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "tiktoken_cl100k_base",
@@ -171607,7 +171841,20 @@
     "suite": "fresh_test",
     "load_seconds_observed": 0.04406808300700504,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.150559224352203,
+        "fit_rare_token_rate": 0.009455563792109382,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.2617879667776775,
+        "fit_rare_token_rate": 0.026258133596903054,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "tiktoken_cl100k_base",
@@ -171647,8 +171894,8 @@
       "3.0": 0.320467313323951
     },
     "empirical_unigram_bits_per_byte": 3.8798714206405895,
-    "fit_predictive_unigram_bits_per_byte": 4.1826157131182145,
-    "fit_rare_token_rate": 0.010921714070508097,
+    "fit_predictive_unigram_bits_per_byte": 4.313231490738597,
+    "fit_rare_token_rate": 0.030538225999246778,
     "layout_token_variation": 0.03652707340984293,
     "layout_probe_formulas": 272,
     "encode_seconds_repeats": [
@@ -172649,7 +172896,20 @@
     "suite": "extreme_domain_test",
     "load_seconds_observed": 0.04406808300700504,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.1826157131182145,
+        "fit_rare_token_rate": 0.010921714070508097,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.313231490738597,
+        "fit_rare_token_rate": 0.030538225999246778,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "specialized"
   },
   {
     "method": "tiktoken_cl100k_base",
@@ -173342,7 +173602,20 @@
     "suite": "stress_test",
     "load_seconds_observed": 0.04406808300700504,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.122710502044355,
+        "fit_rare_token_rate": 0.00855515036049433,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.236451786142191,
+        "fit_rare_token_rate": 0.023705729005704647,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "tiktoken_o200k_base",
@@ -174712,7 +174985,20 @@
     "suite": "fresh_test",
     "load_seconds_observed": 0.09150145799503662,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.177063431038466,
+        "fit_rare_token_rate": 0.008808307345232566,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.335010065047588,
+        "fit_rare_token_rate": 0.025902395328777122,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   },
   {
     "method": "tiktoken_o200k_base",
@@ -174752,8 +175038,8 @@
       "3.0": 0.3052656624627225
     },
     "empirical_unigram_bits_per_byte": 3.8527363292112056,
-    "fit_predictive_unigram_bits_per_byte": 4.178903479756765,
-    "fit_rare_token_rate": 0.009618085967840558,
+    "fit_predictive_unigram_bits_per_byte": 4.354438091522388,
+    "fit_rare_token_rate": 0.029449191056171605,
     "layout_token_variation": 0.03695085080361279,
     "layout_probe_formulas": 272,
     "encode_seconds_repeats": [
@@ -175725,7 +176011,20 @@
     "suite": "extreme_domain_test",
     "load_seconds_observed": 0.09150145799503662,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.178903479756765,
+        "fit_rare_token_rate": 0.009618085967840558,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.354438091522388,
+        "fit_rare_token_rate": 0.029449191056171605,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "specialized"
   },
   {
     "method": "tiktoken_o200k_base",
@@ -176408,6 +176707,19 @@
     "suite": "stress_test",
     "load_seconds_observed": 0.09150145799503662,
     "checkpoint_bytes": null,
-    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training"
+    "timing_protocol": "7 interleaved repetitions, all suite inputs, full frontend, cache cleared, no training",
+    "fit_calibrations": {
+      "broad": {
+        "fit_predictive_unigram_bits_per_byte": 4.14023033039719,
+        "fit_rare_token_rate": 0.007558165008982167,
+        "fit_id_sha256": "ccc13752b6b11e456946f1e43951f36137b6e7d51d7d598e07aab6fb03a13ab8"
+      },
+      "specialized": {
+        "fit_predictive_unigram_bits_per_byte": 4.3019793748742705,
+        "fit_rare_token_rate": 0.02349968598927982,
+        "fit_id_sha256": "80aebc414b7a80cd5314143a4a7080cc98b53a3954a1ac41f22031e0bd6cd907"
+      }
+    },
+    "fit_calibration_scenario": "broad"
   }
 ]

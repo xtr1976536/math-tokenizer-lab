@@ -6,6 +6,7 @@ from math_tokenizer.benchmark_v6 import RELEASE,load_split
 from math_tokenizer.experiment_v6 import entries,pretrained_entries,load_entry
 from math_tokenizer.measure_v6 import measure,fit_usage
 from math_tokenizer.metrics_v2 import upstream_information
+from math_tokenizer.comparison_v6 import calibrate, id_hash
 
 OUT=ROOT/'results/v6/full'
 
@@ -33,14 +34,29 @@ def main():
     with gzip.open(row_path,'wt',encoding='utf-8') as stream:
         for e in registry:
             started=time.perf_counter();model=load_entry(e);loadseconds=time.perf_counter()-started
-            fitting=[byid[id] for id in sorted(scopes[(e['capacity'],e['scenario'])])] if e['scenario']!='pretrained' else [byid[id] for id in sorted(scopes[(1024,'broad')])]
-            usage=fit_usage(model,fitting)
+            calibration_scenarios=('broad','specialized') if e['scenario']=='pretrained' else (e['scenario'],)
+            usages={}
+            for scenario in calibration_scenarios:
+                fit_ids=scopes[(1024 if e['scenario']=='pretrained' else e['capacity'],scenario)]
+                usages[scenario]=fit_usage(model,[byid[id] for id in sorted(fit_ids)])
             active=['fresh_test','stress_test'] if e['scenario']=='broad' else ['extreme_domain_test','stress_test'] if e['scenario']=='specialized' else list(suites)
             # Both breadth models are evaluated on exactly the OOD subset as
             # well, enabling matched-input specialization/generalization gaps.
             if e['scenario']=='broad':active.insert(1,'extreme_domain_test')
             for suite in active:
+                primary_scope=('specialized' if suite=='extreme_domain_test' else 'broad') if e['scenario']=='pretrained' else e['scenario']
+                usage=usages[primary_scope]
                 m,rows=measure(model,suites[suite],e['name'],e['seed'],repeats=1,training_usage=usage)
+                m['fit_calibration_scenario']=primary_scope
+                if e['scenario']=='pretrained':
+                    encodings=[model.encode(r['latex']) for r in suites[suite]]
+                    m['fit_calibrations']={}
+                    for scenario in calibration_scenarios:
+                        calibration,bits=calibrate(encodings,usages[scenario],m['vocab_actual'],m['bytes'])
+                        calibration['fit_id_sha256']=id_hash(scopes[(1024,scenario)])
+                        m['fit_calibrations'][scenario]=calibration
+                        for row,value in zip(rows,bits):
+                            row.setdefault('fit_predictive_bits_by_scenario',{})[scenario]=value
                 m.update({k:e[k] for k in ('key','capacity','scenario','group')});m['suite']=suite;m['load_seconds_observed']=loadseconds
                 m['checkpoint_bytes']=(ROOT/e['path']).stat().st_size if e.get('path') else None
                 for row in rows:
