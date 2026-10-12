@@ -6,9 +6,10 @@
 
 只保留AST-v4/v5两个活动家族。AST-v4原生算术AST+明确CST回退、大幅加速完整编码；v5离线学习合并策略，默认为独立结构奖励的精确期望梯度，上线是固定词表及原版Rust BPE。完整轨迹RLOO、RL屏障及频率/贪心/关闭更新/搜索对照均有实验，屏障为空时不宣称RL增益。
 
-在1,024和2,048相同词表预算下，压缩第一均为v5；预先冻结综合权重下均为AST-v4第一、v5第二、PathPiece第三。所有224组结果精确还原率100%；不同偏好会改变综合名次，不能据此宣称下游任务已获胜。
+在1,024和2,048相同词表预算下，压缩第一均为v5；预先冻结综合权重下均为AST-v4第一、v5第二。现有89种配置、227组结果精确还原率100%；不同偏好会改变综合名次，不能据此宣称下游任务已获胜。
 
-- **通用与数学专用直接对比**：Qwen2.5、Qwen3、DeepSeek-V3、Phi-4、Mistral-Nemo、GPT-2、cl100k、o200k全部参加相同原式、指标、七轮计时、新论文/跨领域/压力实验，并进入15种配置的同榜比较。两预算综合前两名为AST-v4、v5，压缩第一为v5；v5编码仍慢于o200k，部分成熟配置数字完整性更高。已统一跨领域fit-only概率校准，四轮专项审查和358,776行全量重放通过。见[完整直接比较](docs/general_vs_math_v6.md)、[全指标CSV](results/v6/full/general_vs_math_metrics.csv)和[综合/逐项排名](results/v6/full/general_vs_math_rankings.json)。
+- **通用与数学专用直接对比**：Qwen2.5、Qwen3、DeepSeek-V3、Phi-4、Mistral-Nemo、GPT-2、cl100k、o200k、Llama 3全部参加相同原式、指标、七轮计时、新论文/跨领域/压力实验，并进入16种配置的同榜比较。Llama 3词表文件与Meta官方Git blob完全一致，使用未修改的Meta原版tiktoken接口，与HF配置在47,773条主库和521条压力公式上逐ID相同。两预算综合前两名为AST-v4、v5，压缩第一为v5；v5编码仍慢于o200k，部分成熟配置数字完整性更高。已统一跨领域fit-only概率校准，四轮专项审查和364,428行全量重放通过。见[完整直接比较](docs/general_vs_math_v6.md)、[全指标CSV](results/v6/full/general_vs_math_metrics.csv)和[综合/逐项排名](results/v6/full/general_vs_math_rankings.json)。
+- **速度与贡献归因**：[AST速度来源及两家族贡献](docs/ast_speed_and_contributions_v6.md)。同词表、同C前端、同约束及同ID七轮对照支持约3.35–3.47倍接口加速；融合接口相对通用DP路径约5.29–5.64倍。v5整套专用分词系统有效，但RL相对同原子/同奖励的频率及greedy控制收益尚不稳定。
 - 完整排名、指标、对照与边界：[v6结果](docs/v6_results_and_rankings.md)。
 - 数据质量、两个路线与复现：[v6设计](docs/v6_design_and_reproduction.md)。
 - 指标论文、定义及权重：[v6指标](docs/metrics_v6.md)。

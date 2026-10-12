@@ -1,11 +1,14 @@
 {
-  "configurations": 88,
-  "metric_records": 224,
+  "configurations": 89,
+  "metric_records": 227,
   "corpus_sha256": "972ada427ecb69f38aa2359b7f10fcfbf13f6896a1da7986656ee1321ec24bc7",
   "completed_utc": "2026-10-11T18:19:28Z",
   "hardware": "macOS-26.5.1-arm64-arm-64bit",
   "python": "3.11.15 (main, Jun 23 2026, 15:46:51) [Clang 22.1.3 ]",
   "all_raw_inputs": true,
   "no_per_model_exclusion": true,
-  "timings_require_isolated_interleaved_remeasurement": true
+  "timings_require_isolated_interleaved_remeasurement": false,
+  "extension_utc": "2026-10-12T03:09:36.281250+00:00",
+  "uniform_interleaved_timing_completed": true,
+  "full_replay_rows": 364428
 }

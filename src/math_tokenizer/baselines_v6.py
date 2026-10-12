@@ -71,3 +71,52 @@ class ByteWordPiece:
     def decode_bytes(self,ids):
         return b''.join(bytes([id-self.base]) if id>=self.base else bytes(self.reverse[c] for c in self.tokenizer.id_to_token(id).removeprefix('##')) for id in ids)
     def decode(self,ids):return self.decode_bytes(ids).decode()
+
+
+def prepare_llama3_ranks(record):
+    """Lossless official HF byte vocabulary -> Meta tiktoken rank file."""
+    import base64
+    import hashlib
+    import json
+    from .corpus import ROOT
+    from .rl_vocab_v5 import bytealphabet
+    destination=ROOT/record['official_ranks_path']
+    if destination.exists() and hashlib.sha256(destination.read_bytes()).hexdigest()==record['official_ranks_sha256']:
+        return destination
+    payload=(ROOT/record['local']).read_bytes()
+    if hashlib.sha256(payload).hexdigest()!=record['sha256']:
+        raise ValueError('Llama 3 official HF configuration hash mismatch')
+    reverse={c:b for b,c in bytealphabet().items()}
+    ranks={bytes(reverse[c] for c in token):rank for token,rank in json.loads(payload)['model']['vocab'].items()}
+    if len(ranks)!=128000 or set(ranks.values())!=set(range(128000)):
+        raise ValueError('Llama 3 base rank IDs are not the official contiguous range')
+    data=b''.join(base64.b64encode(token)+b' '+str(rank).encode()+b'\n' for token,rank in sorted(ranks.items(),key=lambda x:x[1]))
+    if hashlib.sha256(data).hexdigest()!=record['official_ranks_sha256']:
+        raise ValueError('Llama 3 converted rank file does not match pinned hash')
+    destination.parent.mkdir(parents=True,exist_ok=True);destination.write_bytes(data)
+    return destination
+
+
+class Llama3Official:
+    """Thin adapter around Meta's pinned, unmodified public tokenizer code."""
+    def __init__(self, record):
+        import hashlib
+        import importlib.util
+        from .corpus import ROOT
+        source=record['official_code_files']['llama/tokenizer.py']
+        path=ROOT/source['local']
+        if hashlib.sha256(path.read_bytes()).hexdigest()!=source['sha256']:
+            raise ValueError('Llama 3 official source hash mismatch')
+        ranks=ROOT/record['official_ranks_path']
+        if hashlib.sha256(ranks.read_bytes()).hexdigest()!=record['official_ranks_sha256']:
+            raise ValueError('Llama 3 rank conversion hash mismatch')
+        spec=importlib.util.spec_from_file_location('_llama3_official',path)
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        self.reference=module.Tokenizer(str(ranks));self.tokenizer=self.reference.model
+        self.vocab_size=self.reference.n_words;self.train_seconds=0
+
+    def encode(self, text):
+        return self.reference.encode(text,bos=False,eos=False,allowed_special=set(),disallowed_special=())
+
+    def decode(self, ids):
+        return self.reference.decode(ids)

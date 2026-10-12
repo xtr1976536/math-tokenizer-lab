@@ -4,7 +4,7 @@
       "round": 1,
       "review": "all_frozen_models_fit_reward_dev_and_test_scope",
       "passed": true,
-      "configurations": 88
+      "configurations": 89
     },
     {
       "round": 2,

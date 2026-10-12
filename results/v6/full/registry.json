@@ -986,5 +986,16 @@
     "scenario": "pretrained",
     "capacity": null,
     "key": "87:tiktoken_o200k_base:None:pretrained:0"
+  },
+  {
+    "name": "meta-llama/Meta-Llama-3-8B",
+    "kind": "llama3_official",
+    "path": "data/raw/pretrained_v6/NousResearch--Meta-Llama-3-8B.json",
+    "group": "fixed_pretrained_reference",
+    "seed": 0,
+    "scenario": "pretrained",
+    "capacity": null,
+    "key": "88:meta-llama/Meta-Llama-3-8B:None:pretrained:0",
+    "checkpoint_sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
   }
 ]

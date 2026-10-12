@@ -37,5 +37,13 @@
     "executed": true,
     "role": "independent bounded source macro rendering and syntax AST reference",
     "package_lock": "runtime/katex/package-lock.json"
+  },
+  "llama3": {
+    "repo": "https://github.com/meta-llama/llama3",
+    "revision": "a0940f9cf7065d45bb6675660f80d305c041a754",
+    "modified": false,
+    "local_source": "vendor/llama3/tokenizer.py",
+    "executed": true,
+    "role": "Official Meta tiktoken implementation; full-ID equivalence against byte-identical official HF file."
   }
 }

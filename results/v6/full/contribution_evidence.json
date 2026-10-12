@@ -1,0 +1,371 @@
+{
+  "same_ID_ast_speed": [
+    {
+      "capacity": 1024,
+      "scenario": "broad",
+      "suite": "fresh_test",
+      "formulas": 3465,
+      "bytes": 233284,
+      "formula_id_sha256": "b2a1d7ab6b41528753484fce6bbf865de1ac7e04ab6f21183291ad1f11903bdd",
+      "all_ids_identical": true,
+      "all_roundtrip": true,
+      "same_vocabulary_frontend_and_constraints": true,
+      "seconds_repeats": {
+        "fused_bridge": [
+          0.0072110830078599975,
+          0.006235666005522944,
+          0.0063018750079208985,
+          0.006349458999466151,
+          0.0069227920030243695,
+          0.006924666013219394,
+          0.006896167004015297
+        ],
+        "ctypes_same_native_frontend": [
+          0.022406250005587935,
+          0.02360950000002049,
+          0.03647266699408647,
+          0.023351084004389122,
+          0.02305062500818167,
+          0.02307358400139492,
+          0.022955499996896833
+        ],
+        "generic_dp_same_native_frontend": [
+          0.03629916701174807,
+          0.03608900000108406,
+          0.036688250009319745,
+          0.03657625000050757,
+          0.03630716599582229,
+          0.03646391601068899,
+          0.0372113339981297
+        ]
+      },
+      "encode_mib_s": {
+        "fused_bridge": 32.26095874693555,
+        "ctypes_same_native_frontend": 9.64206337494278,
+        "generic_dp_same_native_frontend": 6.101290908066456
+      },
+      "fused_bridge_speedup": {
+        "fused_bridge": 1.0,
+        "ctypes_same_native_frontend": 3.345856326849439,
+        "generic_dp_same_native_frontend": 5.287562785161359
+      },
+      "order": [
+        [
+          "generic_dp_same_native_frontend",
+          "ctypes_same_native_frontend",
+          "fused_bridge"
+        ],
+        [
+          "generic_dp_same_native_frontend",
+          "fused_bridge",
+          "ctypes_same_native_frontend"
+        ],
+        [
+          "fused_bridge",
+          "generic_dp_same_native_frontend",
+          "ctypes_same_native_frontend"
+        ],
+        [
+          "fused_bridge",
+          "generic_dp_same_native_frontend",
+          "ctypes_same_native_frontend"
+        ],
+        [
+          "ctypes_same_native_frontend",
+          "generic_dp_same_native_frontend",
+          "fused_bridge"
+        ],
+        [
+          "ctypes_same_native_frontend",
+          "generic_dp_same_native_frontend",
+          "fused_bridge"
+        ],
+        [
+          "ctypes_same_native_frontend",
+          "generic_dp_same_native_frontend",
+          "fused_bridge"
+        ]
+      ],
+      "repeats": 7,
+      "scope": "Dedicated same-ID implementation ablation; not a replacement for full multi-model timings.",
+      "limitations": "Single host/run; does not attribute different dictionary or frontend semantics to engineering alone."
+    },
+    {
+      "capacity": 2048,
+      "scenario": "broad",
+      "suite": "fresh_test",
+      "formulas": 3465,
+      "bytes": 233284,
+      "formula_id_sha256": "b2a1d7ab6b41528753484fce6bbf865de1ac7e04ab6f21183291ad1f11903bdd",
+      "all_ids_identical": true,
+      "all_roundtrip": true,
+      "same_vocabulary_frontend_and_constraints": true,
+      "seconds_repeats": {
+        "fused_bridge": [
+          0.006709708002745174,
+          0.006822833005571738,
+          0.006767082988517359,
+          0.006918417013366707,
+          0.006494874993222766,
+          0.0065161250095115975,
+          0.0063131250062724575
+        ],
+        "ctypes_same_native_frontend": [
+          0.023982416998478584,
+          0.02327562500431668,
+          0.0235042499989504,
+          0.023259833003976382,
+          0.022912708009243943,
+          0.03762520800228231,
+          0.02299862499057781
+        ],
+        "generic_dp_same_native_frontend": [
+          0.037442832996021025,
+          0.03771224999218248,
+          0.03816329099936411,
+          0.03815100000065286,
+          0.037822167010745034,
+          0.037261167002725415,
+          0.03827483399072662
+        ]
+      },
+      "encode_mib_s": {
+        "fused_bridge": 33.157472596049274,
+        "ctypes_same_native_frontend": 9.558366711409692,
+        "generic_dp_same_native_frontend": 5.882184359381401
+      },
+      "fused_bridge_speedup": {
+        "fused_bridge": 1.0,
+        "ctypes_same_native_frontend": 3.4689475301747583,
+        "generic_dp_same_native_frontend": 5.6369318896248055
+      },
+      "order": [
+        [
+          "fused_bridge",
+          "generic_dp_same_native_frontend",
+          "ctypes_same_native_frontend"
+        ],
+        [
+          "generic_dp_same_native_frontend",
+          "ctypes_same_native_frontend",
+          "fused_bridge"
+        ],
+        [
+          "fused_bridge",
+          "generic_dp_same_native_frontend",
+          "ctypes_same_native_frontend"
+        ],
+        [
+          "ctypes_same_native_frontend",
+          "generic_dp_same_native_frontend",
+          "fused_bridge"
+        ],
+        [
+          "generic_dp_same_native_frontend",
+          "fused_bridge",
+          "ctypes_same_native_frontend"
+        ],
+        [
+          "generic_dp_same_native_frontend",
+          "fused_bridge",
+          "ctypes_same_native_frontend"
+        ],
+        [
+          "fused_bridge",
+          "generic_dp_same_native_frontend",
+          "ctypes_same_native_frontend"
+        ]
+      ],
+      "repeats": 7,
+      "scope": "Dedicated same-ID implementation ablation; not a replacement for full multi-model timings.",
+      "limitations": "Single host/run; does not attribute different dictionary or frontend semantics to engineering alone."
+    }
+  ],
+  "rl_same_atoms_controls": [
+    {
+      "capacity": 1024,
+      "scenario": "broad",
+      "suite": "fresh_test",
+      "left": "v5_structural",
+      "right": "v5_structural_frequency",
+      "left_tokens_per_formula": 25.94978354978355,
+      "right_tokens_per_formula": 26.062914862914862,
+      "left_paper_tokens_per_byte": 0.3947460516706094,
+      "right_paper_tokens_per_byte": 0.39605119870095606,
+      "left_crossing": 0.19529338493705237,
+      "right_crossing": 0.18837755237631218,
+      "bootstrap": {
+        "paper_macro_tokens_per_byte_difference": -0.0013051470303466564,
+        "ci95": [
+          -0.003119007862389625,
+          0.0004946804177584649
+        ],
+        "papers": 25,
+        "resamples": 2000,
+        "negative_favors_left": true
+      }
+    },
+    {
+      "capacity": 1024,
+      "scenario": "broad",
+      "suite": "fresh_test",
+      "left": "v5_structural",
+      "right": "v5_structural_reward_greedy",
+      "left_tokens_per_formula": 25.94978354978355,
+      "right_tokens_per_formula": 26.025108225108227,
+      "left_paper_tokens_per_byte": 0.3947460516706094,
+      "right_paper_tokens_per_byte": 0.3960158609534974,
+      "left_crossing": 0.19529338493705237,
+      "right_crossing": 0.1943400201825299,
+      "bootstrap": {
+        "paper_macro_tokens_per_byte_difference": -0.0012698092828879281,
+        "ci95": [
+          -0.0026163857779420005,
+          -0.00020491405527125656
+        ],
+        "papers": 25,
+        "resamples": 2000,
+        "negative_favors_left": true
+      }
+    },
+    {
+      "capacity": 1024,
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "left": "v5_structural",
+      "right": "v5_structural_frequency",
+      "left_tokens_per_formula": 27.76170468187275,
+      "right_tokens_per_formula": 27.727490996398558,
+      "left_paper_tokens_per_byte": 0.42326157797318525,
+      "right_paper_tokens_per_byte": 0.4231927354392242,
+      "left_crossing": 0.18114202936152732,
+      "right_crossing": 0.180283153656319,
+      "bootstrap": {
+        "paper_macro_tokens_per_byte_difference": 6.884253396102328e-05,
+        "ci95": [
+          -0.0034383031216296696,
+          0.0032859047892549445
+        ],
+        "papers": 13,
+        "resamples": 2000,
+        "negative_favors_left": true
+      }
+    },
+    {
+      "capacity": 1024,
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "left": "v5_structural",
+      "right": "v5_structural_reward_greedy",
+      "left_tokens_per_formula": 27.76170468187275,
+      "right_tokens_per_formula": 27.838535414165666,
+      "left_paper_tokens_per_byte": 0.42326157797318525,
+      "right_paper_tokens_per_byte": 0.4230280373285626,
+      "left_crossing": 0.18114202936152732,
+      "right_crossing": 0.1776234933914056,
+      "bootstrap": {
+        "paper_macro_tokens_per_byte_difference": 0.00023354064462263735,
+        "ci95": [
+          -0.002911572469474982,
+          0.00332603847597598
+        ],
+        "papers": 13,
+        "resamples": 2000,
+        "negative_favors_left": true
+      }
+    },
+    {
+      "capacity": 2048,
+      "scenario": "broad",
+      "suite": "fresh_test",
+      "left": "v5_structural",
+      "right": "v5_structural_frequency",
+      "left_tokens_per_formula": 22.722655122655123,
+      "right_tokens_per_formula": 22.75959595959596,
+      "left_paper_tokens_per_byte": 0.34646409897821095,
+      "right_paper_tokens_per_byte": 0.34588326731662744,
+      "left_crossing": 0.24653897934818503,
+      "right_crossing": 0.23891100910451168,
+      "bootstrap": {
+        "paper_macro_tokens_per_byte_difference": 0.0005808316615834634,
+        "ci95": [
+          -0.0005567782585735614,
+          0.0017948854737426603
+        ],
+        "papers": 25,
+        "resamples": 2000,
+        "negative_favors_left": true
+      }
+    },
+    {
+      "capacity": 2048,
+      "scenario": "broad",
+      "suite": "fresh_test",
+      "left": "v5_structural",
+      "right": "v5_structural_reward_greedy",
+      "left_tokens_per_formula": 22.722655122655123,
+      "right_tokens_per_formula": 22.736796536796536,
+      "left_paper_tokens_per_byte": 0.34646409897821095,
+      "right_paper_tokens_per_byte": 0.3464063585224869,
+      "left_crossing": 0.24653897934818503,
+      "right_crossing": 0.24794689209601056,
+      "bootstrap": {
+        "paper_macro_tokens_per_byte_difference": 5.774045572404249e-05,
+        "ci95": [
+          -0.0009325227951400438,
+          0.001277159424106032
+        ],
+        "papers": 25,
+        "resamples": 2000,
+        "negative_favors_left": true
+      }
+    },
+    {
+      "capacity": 2048,
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "left": "v5_structural",
+      "right": "v5_structural_frequency",
+      "left_tokens_per_formula": 25.21188475390156,
+      "right_tokens_per_formula": 25.32172869147659,
+      "left_paper_tokens_per_byte": 0.3832167801985601,
+      "right_paper_tokens_per_byte": 0.3864211225189695,
+      "left_crossing": 0.21743684974882746,
+      "right_crossing": 0.2160432370928744,
+      "bootstrap": {
+        "paper_macro_tokens_per_byte_difference": -0.0032043423204094717,
+        "ci95": [
+          -0.005449519552950945,
+          -0.0011021705873077003
+        ],
+        "papers": 13,
+        "resamples": 2000,
+        "negative_favors_left": true
+      }
+    },
+    {
+      "capacity": 2048,
+      "scenario": "specialized",
+      "suite": "extreme_domain_test",
+      "left": "v5_structural",
+      "right": "v5_structural_reward_greedy",
+      "left_tokens_per_formula": 25.21188475390156,
+      "right_tokens_per_formula": 25.062424969987994,
+      "left_paper_tokens_per_byte": 0.3832167801985601,
+      "right_paper_tokens_per_byte": 0.3828388218940822,
+      "left_crossing": 0.21743684974882746,
+      "right_crossing": 0.21535661254011593,
+      "bootstrap": {
+        "paper_macro_tokens_per_byte_difference": 0.00037795830447780816,
+        "ci95": [
+          -0.002868214586796701,
+          0.003866171572402012
+        ],
+        "papers": 13,
+        "resamples": 2000,
+        "negative_favors_left": true
+      }
+    }
+  ],
+  "scope": "Frozen models, same fit and atomization; no test-based method selection. Pairwise CIs descriptive, not adjusted for multiple comparisons."
+}

@@ -24,7 +24,8 @@ def main():
                 name='v5' if m['method'] in ('v5_structural','v5_trajectory') else m['method']
                 lines.append(f"|{NAMES.get(name,name)}|{m['tokens_per_formula']:.3f}|{m['document_macro_tokens_per_byte']:.5f}|{100*m['command_integrity']:.3f}|{100*m['number_integrity']:.3f}|{100*m['independent_tree_crossing']:.3f}|{m['encode_mib_s']:.3f}|{m['fit_predictive_unigram_bits_per_byte']:.4f}|")
         lines+=['', 'Pareto 集：'+', '.join(NAMES.get(n,n) for n in ranks['within_scenario'][f'{capacity}/broad']['pareto'])+'。单一综合权重不具有普适最优性；完整权重敏感性保存在 rankings.json。','']
-    lines+=['## 固定成熟大词表的直接比较','', '八种成熟 tokenizer 全部使用相同实验并与自研及经典方法进入15种配置的直接排名，见 [通用与数学专用 tokenizer 完整对比](general_vs_math_v6.md)。词表和外部训练来源差异作为解释条件记录；本页七种方法的排名用于同训练预算算法比较。官方配置未修改；是否见过相同论文无法认证。','', '|配置|实际词表|token/公式|命令完整%|树 crossing%|编码 MiB/s|原文还原%|','|---|---:|---:|---:|---:|---:|---:|']
+    mature_count=len({m['method'] for m in metrics if m['scenario']=='pretrained'})
+    lines+=['## 固定成熟大词表的直接比较','', f'{mature_count}种成熟 tokenizer 全部使用相同实验并与自研及经典方法进入{7+mature_count}种配置的直接排名，见 [通用与数学专用 tokenizer 完整对比](general_vs_math_v6.md)。包含Meta原版Llama 3接口，词表与HF配置逐ID核验一致。词表和外部训练来源差异作为解释条件记录；本页七种方法的排名用于同训练预算算法比较。官方配置未修改；是否见过相同论文无法认证。','', '|配置|实际词表|token/公式|命令完整%|树 crossing%|编码 MiB/s|原文还原%|','|---|---:|---:|---:|---:|---:|---:|']
     for m in sorted([m for m in metrics if m['scenario']=='pretrained' and m['suite']=='fresh_test'],key=lambda m:m['tokens_per_formula']):
         lines.append(f"|{m['method']}|{m['vocab_actual']}|{m['tokens_per_formula']:.3f}|{100*m['command_integrity']:.3f}|{100*m['independent_tree_crossing']:.3f}|{m['encode_mib_s']:.3f}|{100*m['roundtrip_rate']:.3f}|")
     lines+=['','## 增益归因和限制','', '词法原子属于显式结构先验，原生接口属于工程优化；它们的收益不能归入 RL 学习效果。v5 的频率、reward-greedy、关闭更新和等预算搜索控制全部保留，逐式结果与 source-cluster 95% CI 可复算。确定性期望梯度只算一个独立结果，重复 seed 不作为额外统计证据。',

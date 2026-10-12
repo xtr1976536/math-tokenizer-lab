@@ -1,0 +1,182 @@
+[
+  {
+    "capacity": 1024,
+    "scenario": "broad",
+    "suite": "fresh_test",
+    "formulas": 3465,
+    "bytes": 233284,
+    "formula_id_sha256": "b2a1d7ab6b41528753484fce6bbf865de1ac7e04ab6f21183291ad1f11903bdd",
+    "all_ids_identical": true,
+    "all_roundtrip": true,
+    "same_vocabulary_frontend_and_constraints": true,
+    "seconds_repeats": {
+      "fused_bridge": [
+        0.0072110830078599975,
+        0.006235666005522944,
+        0.0063018750079208985,
+        0.006349458999466151,
+        0.0069227920030243695,
+        0.006924666013219394,
+        0.006896167004015297
+      ],
+      "ctypes_same_native_frontend": [
+        0.022406250005587935,
+        0.02360950000002049,
+        0.03647266699408647,
+        0.023351084004389122,
+        0.02305062500818167,
+        0.02307358400139492,
+        0.022955499996896833
+      ],
+      "generic_dp_same_native_frontend": [
+        0.03629916701174807,
+        0.03608900000108406,
+        0.036688250009319745,
+        0.03657625000050757,
+        0.03630716599582229,
+        0.03646391601068899,
+        0.0372113339981297
+      ]
+    },
+    "encode_mib_s": {
+      "fused_bridge": 32.26095874693555,
+      "ctypes_same_native_frontend": 9.64206337494278,
+      "generic_dp_same_native_frontend": 6.101290908066456
+    },
+    "fused_bridge_speedup": {
+      "fused_bridge": 1.0,
+      "ctypes_same_native_frontend": 3.345856326849439,
+      "generic_dp_same_native_frontend": 5.287562785161359
+    },
+    "order": [
+      [
+        "generic_dp_same_native_frontend",
+        "ctypes_same_native_frontend",
+        "fused_bridge"
+      ],
+      [
+        "generic_dp_same_native_frontend",
+        "fused_bridge",
+        "ctypes_same_native_frontend"
+      ],
+      [
+        "fused_bridge",
+        "generic_dp_same_native_frontend",
+        "ctypes_same_native_frontend"
+      ],
+      [
+        "fused_bridge",
+        "generic_dp_same_native_frontend",
+        "ctypes_same_native_frontend"
+      ],
+      [
+        "ctypes_same_native_frontend",
+        "generic_dp_same_native_frontend",
+        "fused_bridge"
+      ],
+      [
+        "ctypes_same_native_frontend",
+        "generic_dp_same_native_frontend",
+        "fused_bridge"
+      ],
+      [
+        "ctypes_same_native_frontend",
+        "generic_dp_same_native_frontend",
+        "fused_bridge"
+      ]
+    ],
+    "repeats": 7,
+    "scope": "Dedicated same-ID implementation ablation; not a replacement for full multi-model timings.",
+    "limitations": "Single host/run; does not attribute different dictionary or frontend semantics to engineering alone."
+  },
+  {
+    "capacity": 2048,
+    "scenario": "broad",
+    "suite": "fresh_test",
+    "formulas": 3465,
+    "bytes": 233284,
+    "formula_id_sha256": "b2a1d7ab6b41528753484fce6bbf865de1ac7e04ab6f21183291ad1f11903bdd",
+    "all_ids_identical": true,
+    "all_roundtrip": true,
+    "same_vocabulary_frontend_and_constraints": true,
+    "seconds_repeats": {
+      "fused_bridge": [
+        0.006709708002745174,
+        0.006822833005571738,
+        0.006767082988517359,
+        0.006918417013366707,
+        0.006494874993222766,
+        0.0065161250095115975,
+        0.0063131250062724575
+      ],
+      "ctypes_same_native_frontend": [
+        0.023982416998478584,
+        0.02327562500431668,
+        0.0235042499989504,
+        0.023259833003976382,
+        0.022912708009243943,
+        0.03762520800228231,
+        0.02299862499057781
+      ],
+      "generic_dp_same_native_frontend": [
+        0.037442832996021025,
+        0.03771224999218248,
+        0.03816329099936411,
+        0.03815100000065286,
+        0.037822167010745034,
+        0.037261167002725415,
+        0.03827483399072662
+      ]
+    },
+    "encode_mib_s": {
+      "fused_bridge": 33.157472596049274,
+      "ctypes_same_native_frontend": 9.558366711409692,
+      "generic_dp_same_native_frontend": 5.882184359381401
+    },
+    "fused_bridge_speedup": {
+      "fused_bridge": 1.0,
+      "ctypes_same_native_frontend": 3.4689475301747583,
+      "generic_dp_same_native_frontend": 5.6369318896248055
+    },
+    "order": [
+      [
+        "fused_bridge",
+        "generic_dp_same_native_frontend",
+        "ctypes_same_native_frontend"
+      ],
+      [
+        "generic_dp_same_native_frontend",
+        "ctypes_same_native_frontend",
+        "fused_bridge"
+      ],
+      [
+        "fused_bridge",
+        "generic_dp_same_native_frontend",
+        "ctypes_same_native_frontend"
+      ],
+      [
+        "ctypes_same_native_frontend",
+        "generic_dp_same_native_frontend",
+        "fused_bridge"
+      ],
+      [
+        "generic_dp_same_native_frontend",
+        "fused_bridge",
+        "ctypes_same_native_frontend"
+      ],
+      [
+        "generic_dp_same_native_frontend",
+        "fused_bridge",
+        "ctypes_same_native_frontend"
+      ],
+      [
+        "fused_bridge",
+        "generic_dp_same_native_frontend",
+        "ctypes_same_native_frontend"
+      ]
+    ],
+    "repeats": 7,
+    "scope": "Dedicated same-ID implementation ablation; not a replacement for full multi-model timings.",
+    "limitations": "Single host/run; does not attribute different dictionary or frontend semantics to engineering alone."
+  }
+]

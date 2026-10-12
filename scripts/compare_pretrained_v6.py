@@ -46,6 +46,7 @@ def immutable_row_digest(rows):
 def main():
     metrics = json.loads((OUT / 'metrics.json').read_text())
     registry = json.loads((OUT / 'registry.json').read_text())
+    mature_count=sum(e['group']=='fixed_pretrained_reference' for e in registry)
     original_protocol = json.loads((ROOT / 'results/v6/evaluation_protocol.json').read_text())
     weights = original_protocol['comprehensive_weights']
     scopes = {}
@@ -137,7 +138,7 @@ def main():
             for r in rr:
                 r['predictive_bits'] = r['fit_predictive_bits_by_scenario'][primary]
         print('official replay and equal-fit calibration:', entry['name'], flush=True)
-    logs.append({'round': 2, 'review': 'All eight official tokenizers replayed; same disjoint fit IDs at both budgets; independent frequency-count BPB/rare-rate validation for both fit scopes.', 'passed': True, 'calibration_records': calibrated})
+    logs.append({'round': 2, 'review': f'All {mature_count} official tokenizers replayed; same disjoint fit IDs at both budgets; independent frequency-count BPB/rare-rate validation for both fit scopes.', 'passed': True, 'calibration_records': calibrated})
     # Review 3: all preexisting encoding, quality, timing and model records stay
     # semantically identical; 7 timing repetitions are present in every record.
     assert metric_before == immutable_metric_digest(metrics)
@@ -170,7 +171,7 @@ def main():
         for label in ('broad', 'specialized', 'broad_ood'):
             board = boards[f'{capacity}/{label}']
             mature = [n for n, m in board['metrics'].items() if m['model_group'] == 'fixed_pretrained_reference']
-            assert len(mature) == 8 and len(board['comprehensive_ranking']) == 15
+            assert len(mature) == mature_count and len(board['comprehensive_ranking']) == 7+mature_count
             for left in ('ast_v4', 'v5'):
                 for right in mature:
                     lkeys, rkeys = board['metrics'][left]['keys'], board['metrics'][right]['keys']
@@ -184,7 +185,7 @@ def main():
         alternate['encode_mib_s'] = speed
         _, scores = comparison_boards(metrics, alternate)
         sensitivity.append({'speed_weight': speed, 'combined': scores})
-    logs.append({'round': 4, 'review': 'Every main/OOD/stress comparison board includes all eight mature tokenizers and seven matched methods, same calibration scope and lossless eligibility; paired paper CIs and fixed-weight sensitivity.', 'passed': True, 'boards': len(boards), 'paired_comparisons': len(pairs)})
+    logs.append({'round': 4, 'review': f'Every main/OOD/stress comparison board includes all {mature_count} mature tokenizers and seven matched methods, same calibration scope and lossless eligibility; paired paper CIs and fixed-weight sensitivity.', 'passed': True, 'boards': len(boards), 'paired_comparisons': len(pairs)})
     write_json(OUT / 'general_vs_math_rankings.json', {
         'weights': weights, 'scenario_weight': {'broad': .5, 'specialized': .5},
         'within_scenario': boards, 'combined': combined, 'weight_sensitivity': sensitivity,

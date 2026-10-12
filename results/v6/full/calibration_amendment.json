@@ -147,9 +147,9 @@
   ],
   "old_per_formula_gz_sha256": "a57a867b3a5ed4e2e2808202c81a7a82402aa815639a97bbe76079580e7649ef",
   "reason": "Fixed tokenizers previously used broad fit counts for extreme-domain readouts. Both fit scopes are now recorded and the primary extreme readout uses specialized fit counts.",
-  "noncalibration_metric_digest": "344fe23f828b55e4b789dd7cd39d949266ebdc1721291f138d0044733679c6d4",
-  "noncalibration_row_digest": "da3e182adc7cb69be1571693599863a77da0b0f22e20b142052fa2737616c3e2",
-  "new_per_formula_gz_sha256": "fa7977c05370bd6110a9bde3224aaff630b58c80025fd209fa34709d8d22eb73",
+  "noncalibration_metric_digest": "8436be72c7214e0cf3cbacb02061af98e25e264f3e07134e7c0c7a108fb32df2",
+  "noncalibration_row_digest": "97e4b28dd41a353cf41cae4942925fdf9d634a4c7ef84e257bbfae39e7e4612a",
+  "new_per_formula_gz_sha256": "996872b19190ee8f98ede7644cba51d6f6220ed08fb53ea9276f95fe7c855a97",
   "model_checkpoints_changed": false,
   "timings_changed": false
 }

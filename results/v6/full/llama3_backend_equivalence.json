@@ -1,0 +1,109 @@
+{
+  "hf_implementation_readouts": [
+    {
+      "suite": "fresh_test",
+      "tokens_per_formula": 34.98585858585859,
+      "command_integrity": 0.026008064516129033,
+      "independent_tree_crossing": 0.2212809133354231,
+      "encode_mib_s": 3.139757814338379,
+      "decode_mib_s": 21.462267077691383,
+      "encode_seconds_repeats": [
+        0.07368812499043997,
+        0.07010949999676086,
+        0.07656216599571053,
+        0.0708580000064103,
+        0.07029695800156333,
+        0.07040266699914355,
+        0.07148637500358745
+      ],
+      "decode_seconds_repeats": [
+        0.010597750006127171,
+        0.010271916995407082,
+        0.011212334007723257,
+        0.010393749995273538,
+        0.010227541992207989,
+        0.010365958005422726,
+        0.01022562499565538
+      ]
+    },
+    {
+      "suite": "extreme_domain_test",
+      "tokens_per_formula": 36.57382953181273,
+      "command_integrity": 0.026757273306434487,
+      "independent_tree_crossing": 0.21056259436749164,
+      "encode_mib_s": 3.1339606788360443,
+      "decode_mib_s": 21.41382364408629,
+      "encode_seconds_repeats": [
+        0.03469754199613817,
+        0.03572812500351574,
+        0.03675479099911172,
+        0.03910895899753086,
+        0.03470316699531395,
+        0.03522550000343472,
+        0.03527391600073315
+      ],
+      "decode_seconds_repeats": [
+        0.005058791997726075,
+        0.005253124996670522,
+        0.005162415996892378,
+        0.005065499994088896,
+        0.00519749999511987,
+        0.0051818329957313836,
+        0.005102916999021545
+      ]
+    },
+    {
+      "suite": "stress_test",
+      "tokens_per_formula": 527.7523992322457,
+      "command_integrity": 0.026390703752100057,
+      "independent_tree_crossing": 0.2465858546183249,
+      "encode_mib_s": 4.097907415026094,
+      "decode_mib_s": 29.486656806669362,
+      "encode_seconds_repeats": [
+        0.24362808400474023,
+        0.13053370799752884,
+        0.14517124999838416,
+        0.12479283400170971,
+        0.12420866599131841,
+        0.12599420799233485,
+        0.1238524159998633
+      ],
+      "decode_seconds_repeats": [
+        0.020531457994366065,
+        0.017835583013948053,
+        0.02318008299334906,
+        0.01737550001416821,
+        0.017510042001958936,
+        0.01749158400343731,
+        0.017411458000424318
+      ]
+    }
+  ],
+  "utc": "2026-10-12T03:16:45.097937+00:00",
+  "formulas": 47773,
+  "stress_formulas": 521,
+  "all_ids_equal": true,
+  "all_roundtrip": true,
+  "vocab_hf": 128256,
+  "vocab_meta": 128256,
+  "main_backend": "Meta original tokenizer.py + tiktoken; bos=False eos=False",
+  "duplicate_segmentation_not_counted_as_extra_method": true,
+  "full_retiming_required_after_switch": true,
+  "official_code_revision": "a0940f9cf7065d45bb6675660f80d305c041a754",
+  "hf_deployment_profile": {
+    "key": "88:meta-llama/Meta-Llama-3-8B:None:pretrained:0",
+    "load_seconds": 0.11499050000566058,
+    "baseline_process_peak_mib": 44.125,
+    "loaded_process_peak_mib": 149.734375,
+    "incremental_peak_mib": 105.609375,
+    "scope": "fresh process, common imports, model construction plus one fixed probe, no corpus"
+  },
+  "meta_deployment_profile": {
+    "key": "88:meta-llama/Meta-Llama-3-8B:None:pretrained:0",
+    "load_seconds": 0.061119416990550235,
+    "baseline_process_peak_mib": 44.09375,
+    "loaded_process_peak_mib": 105.546875,
+    "incremental_peak_mib": 61.453125,
+    "scope": "fresh process, common imports, model construction plus one fixed probe, no corpus"
+  }
+}

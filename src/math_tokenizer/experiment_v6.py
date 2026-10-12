@@ -6,7 +6,7 @@ from tokenizers import Tokenizer
 from .corpus import ROOT
 from .current_models import load_checkpoint
 from .baselines import HFTokenizer,SentencePieceTokenizer,TikToken,ByteTokenizer
-from .baselines_v6 import PathPieceOfficial,ByteWordPiece
+from .baselines_v6 import PathPieceOfficial,ByteWordPiece,Llama3Official
 
 
 def load_entry(entry):
@@ -17,6 +17,9 @@ def load_entry(entry):
     elif kind=='wp':model=ByteWordPiece(Tokenizer.from_file(str(path)),entry.get('train_seconds',0))
     elif kind=='pathpiece':model=PathPieceOfficial(path,entry.get('train_seconds',0))
     elif kind=='tiktoken':model=TikToken(entry['encoding'])
+    elif kind=='llama3_official':
+        record=next(r for r in json.loads((ROOT/'data/pretrained_registry_v6.json').read_text()) if r['repo']==entry['name'])
+        model=Llama3Official(record)
     elif kind=='bytes':model=ByteTokenizer()
     else:raise ValueError('unknown model kind '+kind)
     return model
@@ -51,7 +54,7 @@ def entries(capacity,scenario):
 def pretrained_entries():
     result=[]
     for r in json.loads((ROOT/'data/pretrained_registry_v6.json').read_text()):
-        if r['status']=='downloaded':result.append({'name':r['repo'],'kind':'hf','path':r['local'],'group':'fixed_pretrained_reference','seed':0,'scenario':'pretrained','capacity':None})
+        if r['status']=='downloaded':result.append({'name':r['repo'],'kind':r.get('kind','hf'),'path':r['local'],'group':'fixed_pretrained_reference','seed':0,'scenario':'pretrained','capacity':None})
     qwen=json.loads((ROOT/'data/baseline_registry.json').read_text())['qwen']
     result.append({'name':'Qwen2.5-0.5B','kind':'hf','path':qwen['local'],'group':'fixed_pretrained_reference','seed':0,'scenario':'pretrained','capacity':None})
     for encoding in ('gpt2','cl100k_base','o200k_base'):result.append({'name':'tiktoken_'+encoding,'kind':'tiktoken','encoding':encoding,'path':None,'group':'fixed_pretrained_reference','seed':0,'scenario':'pretrained','capacity':None})

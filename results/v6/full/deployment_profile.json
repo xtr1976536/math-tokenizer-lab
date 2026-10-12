@@ -702,5 +702,13 @@
     "loaded_process_peak_mib": 122.09375,
     "incremental_peak_mib": 78.015625,
     "scope": "fresh process, common imports, model construction plus one fixed probe, no corpus"
+  },
+  {
+    "key": "88:meta-llama/Meta-Llama-3-8B:None:pretrained:0",
+    "load_seconds": 0.061119416990550235,
+    "baseline_process_peak_mib": 44.09375,
+    "loaded_process_peak_mib": 105.546875,
+    "incremental_peak_mib": 61.453125,
+    "scope": "fresh process, common imports, model construction plus one fixed probe, no corpus"
   }
 ]

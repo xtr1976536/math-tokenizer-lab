@@ -33,7 +33,7 @@ def calibrate(encodings, training_usage, vocab_size, raw_bytes):
 
 
 def comparison_boards(metrics, weights):
-    """15 methods per board: seven matched methods plus eight official models.
+    """Seven matched methods plus all registered official models per board.
 
     A pretrained tokenizer retains its actual vocabulary. Its auxiliary unigram
     readout uses exactly the fit IDs of the matched methods in each scenario.

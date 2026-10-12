@@ -30,5 +30,36 @@
     "sha256": "e11c71726323d33da7b8d6f6f269f1988931c0a52b7122bcdd8c05042974e0db",
     "role": "fixed_pretrained_reference",
     "status": "downloaded"
+  },
+  {
+    "repo": "meta-llama/Meta-Llama-3-8B",
+    "revision": "8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
+    "local": "data/raw/pretrained_v6/NousResearch--Meta-Llama-3-8B.json",
+    "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+    "role": "fixed_pretrained_reference",
+    "status": "downloaded",
+    "download_repo": "NousResearch/Meta-Llama-3-8B",
+    "download_revision": "315b20096dc791d381d514deb5f8bd9c8d6d3061",
+    "official_git_blob_sha1": "b197f72effb9d5ed16ee0f5663e11e4cfac2ba62",
+    "official_bytes": 9085698,
+    "official_blob_identity_verified": true,
+    "license": "llama3",
+    "source_note": "Public NousResearch distribution; complete tokenizer.json bytes equal official Meta tokenizer Git blob, unmodified. Uses HuggingFace/tokenizers as other HF baselines.",
+    "kind": "llama3_official",
+    "official_code_repo": "meta-llama/llama3",
+    "official_code_revision": "a0940f9cf7065d45bb6675660f80d305c041a754",
+    "official_code_files": {
+      "llama/tokenizer.py": {
+        "local": "vendor/llama3/tokenizer.py",
+        "sha256": "e29045cbbae33e07bb1ad92bd8249032c4a802f7d9676f115c19aeebd114f9cd"
+      },
+      "LICENSE": {
+        "local": "vendor/llama3/LICENSE",
+        "sha256": "4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f"
+      }
+    },
+    "official_ranks_path": "data/raw/pretrained_v6/llama3.tokenizer.model",
+    "official_ranks_sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
+    "rank_conversion": "Unmodified official HF token ID to mergeable rank; ByteLevel inverse; official Meta reference independently replayed against HF."
   }
 ]
