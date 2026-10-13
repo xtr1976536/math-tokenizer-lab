@@ -119,7 +119,7 @@ def generate_batch(model, adapter, prompts, masked_ids, device, max_new_tokens=2
                          do_sample=False,num_beams=beams,num_return_sequences=beams,
                          pad_token_id=adapter.special_ids["PAD"],
                          eos_token_id=adapter.special_ids["EOS"],
-                         bad_words_ids=[[i] for i in masked_ids],use_cache=True)
+                         bad_words_ids=[[i] for i in masked_ids] if masked_ids else None,use_cache=True)
     result = []
     for row in range(len(prompts)):
         candidates = []
@@ -137,7 +137,8 @@ def generate_batch(model, adapter, prompts, masked_ids, device, max_new_tokens=2
     return result
 
 
-def evaluate(model, adapter, examples, verifier, masked_ids, device, limit=None, beams=1):
+def evaluate(model, adapter, examples, verifier, masked_ids, device, limit=None, beams=1,
+             protocol="legacy"):
     model.eval()
     if limit is not None:
         examples = examples[:limit]
@@ -158,12 +159,18 @@ def evaluate(model, adapter, examples, verifier, masked_ids, device, limit=None,
             torch.mps.synchronize()
         elapsed = time.perf_counter()-start
         for (row,_prompt,_answer),candidates in zip(batch,generated):
-            verdicts = [verifier.verify(row, candidate["text"]) if candidate.get("stopped") else "truncated"
-                        for candidate in candidates]
+            if protocol=="text-v2":
+                from .phases import extract_answer
+                for candidate in candidates: candidate["extracted_answer"]=extract_answer(candidate["text"])
+                verdicts=[verifier.verify(row,candidate["extracted_answer"]) for candidate in candidates]
+            else:
+                verdicts = [verifier.verify(row, candidate["text"]) if candidate.get("stopped") else "truncated"
+                            for candidate in candidates]
             results.append({"id":row["id"],"group":row["group"],"task":row["task"],
                             "method":row["method"],"predictions":candidates,
                             "verdicts":verdicts,"correct":"correct" in verdicts,
-                            "latency_seconds":elapsed/len(batch)})
+                            "latency_seconds":elapsed/len(batch),"protocol":protocol,
+                            "generation_truncated":all(not c.get("stopped") for c in candidates)})
     by_method = defaultdict(list)
     for row in results:
         by_method[row["method"] if row["task"] == "integral" else row["task"]].append(row["correct"])
@@ -174,7 +181,8 @@ def evaluate(model, adapter, examples, verifier, masked_ids, device, limit=None,
 
 
 def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2,
-              effective_batch=32, max_tokens=512, eval_limit=None, device_name="mps"):
+              effective_batch=32, max_tokens=512, eval_limit=None, device_name="mps",
+              mode="full",prompt_style="legacy"):
     torch.manual_seed(seed)
     np.random.seed(seed)
     random.seed(seed)
@@ -186,7 +194,12 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
     coverage = json.loads(coverage_path.read_text())
     if coverage["max_tokens"] != max_tokens:
         raise ValueError("coverage length mismatch")
-    adapter = TokenizerAdapter(method, gpt2_path)
+    if prompt_style=="text-v2":
+        from .phases import PhaseAdapter,configure_model,parameter_digest,save_checkpoint,PROTOCOL
+        if method=="gpt2_native":raise ValueError("native GPT-2 is zero-shot and must not enter training")
+        if coverage.get("protocol")!=PROTOCOL:raise ValueError("phase coverage protocol mismatch")
+        adapter=PhaseAdapter(method,gpt2_path)
+    else:adapter = TokenizerAdapter(method, gpt2_path)
     tokenization_start = time.perf_counter()
     train_rows = read_split(data_dir, "train")
     valid_rows = read_split(data_dir, "valid")
@@ -196,14 +209,16 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
     if not training or not validation:
         raise ValueError("empty train/validation set")
     model, embedding_hash = build_model(adapter, gpt2_path, out_dir.parent / "init")
+    if prompt_style=="text-v2":model=configure_model(model,mode)
+    elif mode!="full":raise ValueError("LoRA requires the shared phase prompt protocol")
     model.config.use_cache = False
     model.gradient_checkpointing_enable()
     device = torch.device(device_name)
     model.to(device)
     masked_ids = adapter.masked_ids()
-    embed = model.transformer.wte.weight
-    backbone = [p for p in model.parameters() if p is not embed]
-    optimizer = torch.optim.AdamW([{"params": backbone, "lr": 2e-5},
+    embed = model.get_input_embeddings().weight
+    backbone = [p for p in model.parameters() if p is not embed and p.requires_grad]
+    optimizer = torch.optim.AdamW([{"params": backbone, "lr": 2e-5 if mode=="full" else 2e-4},
                                    {"params": [embed], "lr": 2e-4}],
                                   betas=(0.9, 0.999), weight_decay=0.01)
     updates_per_epoch = math.ceil(len(training) / effective_batch)
@@ -219,8 +234,13 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
     output = out_dir / method_slug(method) / str(seed)
     output.mkdir(parents=True, exist_ok=True)
     config = {"method": method, "seed": seed, "gpt2_revision": GPT2_REVISION,
+              "mode":mode,"prompt_style":prompt_style,
+              "optimizer":"AdamW","backbone_learning_rate":2e-5 if mode=="full" else 2e-4,
+              "embedding_learning_rate":2e-4,"warmup_ratio":.05,"gradient_clip":1.0,
               "embedding_sha256": embedding_hash, "vocab_size": adapter.vocab_size,
               "parameters": sum(p.numel() for p in model.parameters()),
+              "trainable_parameters":sum(p.numel() for p in model.parameters() if p.requires_grad),
+              "trainable_names":[n for n,p in model.named_parameters() if p.requires_grad],
               "epochs": epochs, "microbatch": microbatch,
               "effective_batch": effective_batch, "max_tokens": max_tokens,
               "train_examples": len(training), "valid_examples": len(validation),
@@ -228,6 +248,10 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
               "train_target_tokens": sum(len(answer) for _, _, answer in training),
               "tokenization_seconds": tokenization_seconds,
               "coverage_sha256": coverage["sha256"], "device": device_name}
+    if mode=="lora":
+        from .phases import LORA
+        config["lora"]=LORA
+        config["frozen_before_sha256"]=parameter_digest(model,True)
     (output / "config.json").write_text(json.dumps(config, indent=2) + "\n")
     history, best, best_tiebreak, step = [], -1.0, float("inf"), 0
     start_all = time.perf_counter()
@@ -237,6 +261,7 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
         rng = random.Random(seed + epoch*100000)
         order = list(range(len(training)))
         rng.shuffle(order)
+        config.setdefault("epoch_order_sha256",[]).append(hashlib.sha256("\n".join(training[i][0]["id"] for i in order).encode()).hexdigest())
         epoch_loss = 0.0
         for offset in range(0, len(order), effective_batch):
             indices = order[offset:offset+effective_batch]
@@ -256,7 +281,7 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
                 max_driver = max(max_driver, torch.mps.driver_allocated_memory())
             if step % 100 == 0:
                 print(method, seed, "epoch", epoch+1, "step", step, "loss", round(epoch_loss/max(1,offset+len(indices)),4), flush=True)
-        scores, _ = evaluate(model, adapter, validation, verifier, masked_ids, device, eval_limit)
+        scores, _ = evaluate(model, adapter, validation, verifier, masked_ids, device, eval_limit,protocol=prompt_style)
         tie_groups = defaultdict(list)
         for item in validation:
             key = item[0]["method"] if item[0]["task"] == "integral" else item[0]["task"]
@@ -279,8 +304,13 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
         print(method, seed, "validation", record, flush=True)
         if scores["selection"] > best or (scores["selection"] == best and tie_loss < best_tiebreak):
             best, best_tiebreak = scores["selection"], tie_loss
-            model.save_pretrained(output / "best", safe_serialization=True)
+            if prompt_style=="text-v2":save_checkpoint(model,output/"best",mode)
+            else:model.save_pretrained(output / "best", safe_serialization=True)
             (output / "best_meta.json").write_text(json.dumps(record, indent=2) + "\n")
+    if mode=="lora":
+        config["frozen_after_sha256"]=parameter_digest(model,True)
+        if config["frozen_after_sha256"]!=config["frozen_before_sha256"]:raise RuntimeError("LoRA modified frozen GPT-2 backbone")
+    (output/"config.json").write_text(json.dumps(config,indent=2)+"\n")
     return output
 
 
