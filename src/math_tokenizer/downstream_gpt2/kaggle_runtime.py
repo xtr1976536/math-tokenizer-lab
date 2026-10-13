@@ -23,11 +23,33 @@ WORKING = Path("/kaggle/working")
 PROJECT = WORKING / "math_tokenizer_project"
 
 
-def _find_data():
-    matches = list(Path("/kaggle/input").glob(f"{DATA_KERNEL_SLUG}/final_data/manifest.json"))
+def find_data(input_root: Path = Path("/kaggle/input")):
+    matches = [p for p in input_root.rglob("manifest.json") if p.parent.name=="final_data"]
     if len(matches) != 1:
         raise RuntimeError(f"expected one mounted frozen-data kernel, found {matches}")
     return matches[0].parent
+
+
+def find_method_run(method: str, input_root: Path = Path("/kaggle/input")):
+    slug=method_slug(method)
+    matches=[p/slug for p in input_root.rglob("runs") if (p/slug).is_dir()]
+    if len(matches)!=1:
+        raise RuntimeError(f"expected one mounted training output for {method}: {matches}")
+    return matches[0]
+
+
+def find_eval_outputs(input_root: Path = Path("/kaggle/input")):
+    outputs={}
+    for path in input_root.rglob("summary.json"):
+        if path.parent.name=="eval_results":
+            summary=json.loads(path.read_text())
+            method=summary.get("method")
+            if method in outputs:
+                raise RuntimeError(f"duplicate evaluation output for {method}")
+            outputs[method]=path.parent
+    if set(outputs)!=set(METHODS):
+        raise RuntimeError(f"missing evaluation outputs: {set(METHODS)-set(outputs)}")
+    return outputs
 
 
 def run_smoke():
@@ -109,7 +131,7 @@ def run_data():
 def run_train(method: str):
     if method not in METHODS:
         raise ValueError(method)
-    data = _find_data()
+    data = find_data()
     gpt2 = PROJECT / "tmp/gpt2-607a30d"
     for seed in (11,23,37):
         train_one(method,seed,data,gpt2,WORKING/"runs",epochs=3,
@@ -121,23 +143,14 @@ def run_train(method: str):
 def run_evaluate(method: str):
     if method not in METHODS:
         raise ValueError(method)
-    data = _find_data()
-    slug = method_slug(method)
-    matches = list(Path("/kaggle/input").glob(f"math-tokenizer-gpt2-{kernel_slug(method)}-v1/runs/{slug}"))
-    if len(matches) != 1:
-        raise RuntimeError(f"missing training kernel output for {method}: {matches}")
-    evaluate_method(method,data,PROJECT/"tmp/gpt2-607a30d",matches[0],WORKING/"eval_results","cuda")
+    data = find_data()
+    run_folder=find_method_run(method)
+    evaluate_method(method,data,PROJECT/"tmp/gpt2-607a30d",run_folder,WORKING/"eval_results","cuda")
     shutil.rmtree(PROJECT)
 
 
 def run_aggregate():
-    outputs={}
-    for method in METHODS:
-        slug=f"math-tokenizer-gpt2-eval-{kernel_slug(method)}-v1"
-        matches=list(Path("/kaggle/input").glob(f"{slug}/eval_results/summary.json"))
-        if len(matches)!=1:
-            raise RuntimeError(f"missing evaluation output for {method}: {matches}")
-        outputs[method]=matches[0].parent
+    outputs=find_eval_outputs()
     aggregate_method_outputs(outputs,WORKING/"final_results")
     shutil.rmtree(PROJECT)
 

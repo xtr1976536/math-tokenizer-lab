@@ -80,18 +80,20 @@ def bundle():
 
 def _script(phase, method=None):
     return f'''import hashlib, json, pathlib, shutil, subprocess, sys, tarfile
-ASSET = pathlib.Path("/kaggle/input/{ASSET_SLUG}/project_bundle.tar.gz")
-EXPANDED = pathlib.Path("/kaggle/input/{ASSET_SLUG}/project_bundle/math_tokenizer_project")
-if not ASSET.exists() and not EXPANDED.exists():
-    raise FileNotFoundError(f"asset missing; input roots: {{list(pathlib.Path('/kaggle/input').glob('*'))}}")
+INPUT = pathlib.Path("/kaggle/input")
+PROJECTS = [p.parent for p in INPUT.rglob("asset_manifest.json")
+            if (p.parent/"tmp/gpt2-607a30d/model.safetensors").exists()]
+ARCHIVES = list(INPUT.rglob("project_bundle.tar.gz"))
+if len(PROJECTS) != 1 and len(ARCHIVES) != 1:
+    raise FileNotFoundError(f"expected one research asset; projects={{PROJECTS}}, archives={{ARCHIVES}}")
 subprocess.run([sys.executable,"-m","pip","install","-q","transformers==5.19.0","tokenizers==0.23.3",
                 "sympy==1.14.0","numexpr==2.14.2","sentencepiece==0.2.2","tiktoken==0.14.0",
                 "antlr4-python3-runtime==4.11.1","safetensors","pylatexenc==2.11","openpyxl==3.1.5"],check=True)
 project = pathlib.Path("/kaggle/working/math_tokenizer_project")
-if ASSET.exists():
-    with tarfile.open(ASSET,"r:gz") as tar: tar.extractall("/kaggle/working")
+if len(PROJECTS) == 1:
+    shutil.copytree(PROJECTS[0],project)
 else:
-    shutil.copytree(EXPANDED,project)
+    with tarfile.open(ARCHIVES[0],"r:gz") as tar: tar.extractall("/kaggle/working")
 import os
 os.environ["TIKTOKEN_CACHE_DIR"] = str(project/"tiktoken_cache")
 manifest = json.loads((project/"asset_manifest.json").read_text())

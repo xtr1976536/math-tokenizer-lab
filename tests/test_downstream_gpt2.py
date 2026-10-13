@@ -2,8 +2,9 @@ import gzip
 import json
 import sympy as sp
 
-from math_tokenizer.downstream_gpt2.adapters import ByteDecomposer, kernel_slug
+from math_tokenizer.downstream_gpt2.adapters import METHODS, ByteDecomposer, kernel_slug, method_slug
 from math_tokenizer.downstream_gpt2.data import catalog_hashes, template_signature
+from math_tokenizer.downstream_gpt2.kaggle_runtime import find_data, find_eval_outputs, find_method_run
 from math_tokenizer.downstream_gpt2.results import paired_interval, stratified_beam_ids
 from math_tokenizer.downstream_gpt2.verify import Verifier, parse_answer
 
@@ -81,3 +82,20 @@ def test_kaggle_extracted_formula_hashes(tmp_path):
     archive.unlink()
     (folder/"formula_hashes.json").write_text(json.dumps(["one","two"]))
     assert catalog_hashes(tmp_path)=={"one","two"}
+
+
+def test_nested_kaggle_dataset_and_kernel_mounts(tmp_path):
+    frozen=tmp_path/"datasets/owner/data-kernel/final_data"
+    frozen.mkdir(parents=True)
+    (frozen/"manifest.json").write_text("{}")
+    assert find_data(tmp_path)==frozen
+    run=tmp_path/"kernels/owner/train-kernel/runs"/method_slug("ast_boundary")
+    (run/"11").mkdir(parents=True)
+    assert find_method_run("ast_boundary",tmp_path)==run
+    expected={}
+    for method in METHODS:
+        folder=tmp_path/"kernels/owner"/f"eval-{kernel_slug(method)}"/"eval_results"
+        folder.mkdir(parents=True)
+        (folder/"summary.json").write_text(json.dumps({"method":method}))
+        expected[method]=folder
+    assert find_eval_outputs(tmp_path)==expected

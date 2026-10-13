@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import tarfile
+import tempfile
 from pathlib import Path
 
 from math_tokenizer.corpus import ROOT
@@ -25,9 +26,23 @@ def run():
         assert len(meta["dataset_sources"])==1
         script=(path.parent/"run.py").read_text()
         compile(script,str(path.parent/"run.py"),"exec")
-        assert "project_bundle/math_tokenizer_project" in script
-        assert "shutil.copytree(EXPANDED,project)" in script
+        assert 'INPUT.rglob("asset_manifest.json")' in script
+        assert "shutil.copytree(PROJECTS[0],project)" in script
         inventory[slug]={"gpu":meta["enable_gpu"],"kernel_sources":meta["kernel_sources"]}
+    # Execute the exact generated bootstrap locator against Kaggle's nested
+    # /input/datasets-style layout before any remote push.
+    smoke=(OUTPUT/"kernels/smoke/run.py").read_text()
+    prefix=smoke.split("subprocess.run(",1)[0]
+    with tempfile.TemporaryDirectory() as temporary:
+        root=Path(temporary)
+        project=root/"datasets/xiaotongrenkk/private-asset/project_bundle/math_tokenizer_project"
+        (project/"tmp/gpt2-607a30d").mkdir(parents=True)
+        (project/"asset_manifest.json").write_text("{}")
+        (project/"tmp/gpt2-607a30d/model.safetensors").write_bytes(b"test")
+        simulated=prefix.replace('pathlib.Path("/kaggle/input")',f"pathlib.Path({str(root)!r})")
+        namespace={}
+        exec(compile(simulated,"bootstrap_locator","exec"),namespace)
+        assert namespace["PROJECTS"]==[project]
     for method in METHODS:
         train=f"math-tokenizer-gpt2-{kernel_slug(method)}-v1"
         evaluate=f"math-tokenizer-gpt2-eval-{kernel_slug(method)}-v1"
