@@ -176,6 +176,8 @@ def generate(source: Path, output: Path, scale: float = 1.0, max_attempts_per_ro
     if not (0 < scale <= 1):
         raise ValueError("scale must be in (0,1]")
     env = upstream(source)
+    from .verify import Verifier
+    verifier = Verifier(source)
     output.mkdir(parents=True, exist_ok=True)
     manifest = {"upstream_repo": "facebookresearch/SymbolicMathematics", "upstream_sha": UPSTREAM_SHA,
                 "upstream_license": "CC BY-NC 4.0", "operators": OPERATORS,
@@ -212,6 +214,9 @@ def generate(source: Path, output: Path, scale: float = 1.0, max_attempts_per_ro
                             rejected["generator_none"] += 1
                             continue
                         rows = make_rows(env, method, pair, split, accepted, choice_rng)
+                        if any(verifier.verify(row,row["target_latex"])!="correct" for row in rows):
+                            rejected["oracle_roundtrip"] += 1
+                            continue
                         if rows[0]["group"] in seen:
                             rejected["duplicate_group"] += 1
                             continue

@@ -259,6 +259,7 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
     max_allocated, max_driver, padded_tokens = 0, 0, 0
     for epoch in range(epochs):
         model.train()
+        train_started=time.perf_counter()
         rng = random.Random(seed + epoch*100000)
         order = list(range(len(training)))
         rng.shuffle(order)
@@ -282,6 +283,10 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
                 max_driver = max(max_driver, torch.mps.driver_allocated_memory())
             if step % 100 == 0:
                 print(method, seed, "epoch", epoch+1, "step", step, "loss", round(epoch_loss/max(1,offset+len(indices)),4), flush=True)
+        if device_name=="mps":torch.mps.synchronize()
+        elif device_name=="cuda":torch.cuda.synchronize()
+        train_seconds=time.perf_counter()-train_started
+        evaluation_started=time.perf_counter()
         scores, _ = evaluate(model, adapter, validation, verifier, masked_ids, device, eval_limit,protocol=prompt_style)
         tie_groups = defaultdict(list)
         for item in validation:
@@ -294,8 +299,12 @@ def train_one(method, seed, data_dir, gpt2_path, out_dir, epochs=3, microbatch=2
                 chunk=tie_examples[offset:offset+4]
                 tie_total += float(loss_for(model,chunk,adapter,masked_ids,device)) * len(chunk)
             tie_loss = tie_total/len(tie_examples)
+        if device_name=="mps":torch.mps.synchronize()
+        elif device_name=="cuda":torch.cuda.synchronize()
+        evaluation_seconds=time.perf_counter()-evaluation_started
         record = {"epoch": epoch+1, "train_loss_per_example": epoch_loss/len(training),
                   "validation": scores, "validation_tiebreak_loss": tie_loss,
+                  "train_seconds":train_seconds,"validation_seconds":evaluation_seconds,
                   "elapsed_seconds": time.perf_counter()-start_all,
                   "padded_training_tokens_cumulative": padded_tokens,
                   "max_sampled_mps_allocated_bytes": max_allocated,

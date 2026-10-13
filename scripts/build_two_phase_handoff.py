@@ -82,6 +82,9 @@ def build(phase):
     jobs += [make_job(root,phase,'aggregate')]
     audit=root/'audits';audit.mkdir()
     shutil.copy2(ROOT/'tmp/two_phase_review/review.json',audit/'four_round_review.json')
+    if phase=='phase1':
+        timing=ROOT/'tmp/phase1_timing/report.json'
+        if timing.exists():shutil.copy2(timing,audit/'phase1_timing.json')
     pilot=root/'pilot_data';shutil.copytree(ROOT/'tmp/two_phase_review/data',pilot)
     native_note=('Original GPT-2 is evaluated ONCE with its unchanged 50,257-ID vocabulary and unchanged pretrained weights. '
                  'There is no native GPT-2 training job. It is an untrained reference, so improvement over this row includes task training, '
@@ -123,6 +126,8 @@ The task ODE generator is the explicitly documented linear-in-constant subfamily
 Stage1 is a preliminary capability experiment; stage2 provides an equal adaptation protocol among the seven systems.
 Large pretrained tokenizer vocabularies have different embedding parameter counts and softmax costs: they are deployment references,
 not equal-total-parameter controls. LoRA reduces backbone optimizer updates but does not remove vocabulary projection or evaluation costs.
+The local 2026-10-14 budget test is recorded in `audits/phase1_timing.json` in Phase 1. It did not establish a
+4–5-hour end-to-end Kaggle runtime; this bundle has been prepared for manual submission, not automatically run.
 '''
     (root/'README.md').write_text(readme)
     spec['resource_sha256']=sha(dataset/'project_bundle.tar.gz');spec['resource_bytes']=(dataset/'project_bundle.tar.gz').stat().st_size
