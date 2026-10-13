@@ -1,5 +1,7 @@
 # Frozen downstream candidates and planned tasks
 
+The detailed literature-grounded experimental design is in [downstream_experiment_protocol_v1.md](downstream_experiment_protocol_v1.md). Its four core tasks and fairness rules supersede the preliminary priority list below; this file remains the historical handoff note.
+
 Two core research routes: Boundary AST and math-atom BPE. Five baselines: byte BPE, SentencePiece Unigram, Qwen2.5, Llama 3 and o200k. Standard condition: broad; trained budgets 1024/2048. Exact files and hashes are in models/registry.json. Retired models are not part of the downstream candidate pool.
 
 Four priorities: (1) PDE solution / executable solver generation, evaluated by residual, initial/boundary error, nRMSE and execution; (2) governing-equation discovery, with equation recovery, coefficient error and held-out field prediction; (3) symbolic algebra/calculus/ODE tasks, with executable or symbolic equivalence; (4) mathematical problem solving, with verified final answers and out-of-domain/length strata. Use independent task datasets and protect task test cases from tokenizer and model adaptation training.
