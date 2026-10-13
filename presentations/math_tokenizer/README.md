@@ -2,13 +2,23 @@
 
 **Design of a Specialized Tokenizer for Mathematical Text**
 
-43 slides in the supplied 4:3 GBFR Warsaw Beamer design. Presenter Tongren Xiao, email, affiliation and the original October 10, 2026 cover date are retained. Research, repository selection and literature verification were updated on October 13, 2026.
+45 slides in the supplied 4:3 GBFR Warsaw Beamer design. Presenter Tongren Xiao, email, affiliation and the original October 10, 2026 cover date are retained. Research, repository selection and literature verification were updated on October 13, 2026.
+
+The two added future-research slides explain autonomous boundary learning, fast
+signal guidance and verified mathematical transitions. Stage 2 is explicitly
+paused; no joint success or mathematical understanding is claimed. Current
+priority is downstream evaluation of the two Stage 1 routes and five baselines.
 
 ## Deliverables
 
 - `output/Design_of_a_Specialized_Tokenizer_for_Mathematical_Text.pdf`: vector Beamer presentation.
 - `output/Design_of_a_Specialized_Tokenizer_for_Mathematical_Text.pptx`: exact high-resolution slide-page rendition for PowerPoint; source text is in speaker notes. Slide elements are images; edit the Beamer master for content/layout changes.
 - `output/Mathematical_Tokenizer_Beamer_Source.zip`: complete editable .tex master, supplied template, vector/raster figures, source-reference records and build instructions.
+
+Updated deliverables have `_Updated.pdf` and `_Updated.pptx` suffixes; the canonical
+PDF/PPTX paths also point to this revision. PowerPoint remains an exact page image
+rendition with speaker notes, now exported through Artifact Tool. The editable
+master is the Beamer source bundle.
 
 The talk covers the research question, classical/general/math-specific/adaptive related work, source dataset construction and taxonomy, both selected methods, controlled settings and metrics, seven-method numerical results and uncertainty, historical RL removal, and four planned downstream tasks plus compute/adaptation constraints. It uses exactly **3 original data figures** and **26 primary references**. Related work is a targeted narrative search, not a claimed exhaustive systematic review.
 

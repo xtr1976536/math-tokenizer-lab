@@ -328,6 +328,21 @@ def main():
             ['C. Open-model adaptation','Token/embedding initialization ablations with equal adaptation budgets.','Benefits exceed the no-replacement control.'],
             ['D. Generalization / scale','New PDE families, long formulas, noise and mixed text/formula prompts.','Gain persists across distributions without unacceptable regressions.']],r'L{1.8cm}X X')+
         block('Failure conditions to investigate','No task gain despite better compression; invalid expression generation; failure on unseen domains; adaptation cost larger than inference savings; arithmetic or scope errors hidden by string similarity.','remarkbox'))
+    frame('Future Research','Stage 2: Autonomous and Signal-Guided Tokenization',
+        block('Research objective','Learn boundaries with little manual intervention and excellent quality, generalization and full-interface speed.')+
+        table(['Direction','Learning signal and mechanism','Question to resolve'],[
+            ['Fast signal guidance','Predictive uncertainty or learned structure; distill a fast encoder.','Which signal improves quality after runtime cost?'],
+            ['Autonomous boundaries','Causal prediction feedback; RL versus equal-budget search.','Do gains survive deployment with fewer rules?'],
+            ['Mathematical transitions','Predict verified operations; learn units without boundary labels.','Do units transfer to unseen operations and compositions?']],r'L{2.4cm}X X')+
+        block('Current decision','Stage 2 is paused as future research. No system has passed both quality and speed requirements; mathematical understanding remains unproven.','remarkbox'),('rl','hnet','symbolic'))
+    frame('Future Research','Research Priorities and Acceptance Criteria',
+        table(['Priority','Planned experiment','Required evidence'],[
+            ['Now: Stage 1 tasks','Two frozen routes and five baselines; common task data and budgets.','Verified symbolic/PDE results; fair compute accounting.'],
+            ['Later: learned signals','Signal ablations, fast distillation, zero/shuffled controls.','Signal-specific quality gains and full encode speed.'],
+            ['Later: autonomous learning','Longer causal context, joint training, consistent deployment.','Stable gains over simple controls; fewer manual rules.'],
+            ['Later: mathematical laws','Verified operations; source and composition holdouts.','Correctness beyond the training environment.']],r'L{2.4cm}X X')+
+        block('Two conditions must hold together','Substantially reduced human intervention and excellent multi-metric performance. Prediction proxies alone are insufficient; disclose remaining priors and regressions.','remarkbox')+
+        block('Research handoff','Preserve Stage 2 experiments for later work. Proceed with the two Stage 1 routes and five baseline tokenizers.'))
     frame('Conclusions','What We Can Claim, and What We Must Test Next',
         block('Supported by current evidence','A classified, source-traceable formula catalog and reproducible frozen experiments are available. Boundary AST improves compression over a same-dictionary BPE control while offering a useful speed/structure trade-off.')+
         table(['Supported statement','Boundary'],[

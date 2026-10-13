@@ -9,3 +9,17 @@ Start with same-capacity small-model tests using equal raw data and common train
 Report non-embedding and total parameter counts, vocabulary/softmax cost, raw bytes, tokens, measured compute and training time. Mature full vocabularies are separately costed deployment references, not equal-parameter controls. A common token window covers different amounts of raw input; report truncation and raw coverage. Lossless tokenizer decoding is not a guarantee that a generated model output is valid mathematics.
 
 No downstream task has been trained in this release. Additional mixed text/formula and numerical task data are required. The strict PDE subset is small and should not be mistaken for a numerical-solution training set.
+
+## Current research decision
+
+The user paused Stage 2 on October 13, 2026. Autonomous boundaries, learned fast
+signals and verified mathematical-transition feedback are future research ideas
+in the presentation. Stage 2 experimental systems have not passed the joint
+quality/speed/intervention gate and are excluded from downstream candidates.
+
+The next active research phase is the Stage 1 downstream protocol. Begin by
+freezing a small symbolic manipulation task and its executable evaluator, then
+extend to PDE solution/solver generation and governing-equation discovery.
+Mathematical reasoning remains the fourth priority. Tokenizer IDs/checkpoints
+come from the existing registry; do not adapt tokenizers on task test data.
+No downstream training has been launched by this handoff update.

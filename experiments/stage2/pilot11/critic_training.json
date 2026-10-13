@@ -1,0 +1,50 @@
+{
+  "true": [
+    {
+      "step": 0,
+      "target_nats": 5.50328254699707
+    },
+    {
+      "step": 80,
+      "target_nats": 0.8924311995506287
+    },
+    {
+      "step": 160,
+      "target_nats": 0.6805904507637024
+    },
+    {
+      "step": 240,
+      "target_nats": 0.5949510931968689
+    },
+    {
+      "step": 319,
+      "target_nats": 0.6270359754562378
+    }
+  ],
+  "shuffled": [
+    {
+      "step": 0,
+      "target_nats": 5.499650955200195
+    },
+    {
+      "step": 80,
+      "target_nats": 1.0763120651245117
+    },
+    {
+      "step": 160,
+      "target_nats": 0.6794078350067139
+    },
+    {
+      "step": 240,
+      "target_nats": 0.5349647998809814
+    },
+    {
+      "step": 319,
+      "target_nats": 0.7051358819007874
+    }
+  ],
+  "teacher_byte_targets": 117279,
+  "shuffled_byte_targets": 117279,
+  "parameters": 57689,
+  "shuffle": "permute targets only among exactly equal UTF8 lengths; same training byte budget"
+}

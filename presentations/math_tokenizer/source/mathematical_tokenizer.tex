@@ -724,6 +724,44 @@ No task gain despite better compression; invalid expression generation; failure 
 
 \end{frame}
 
+\major{Future Research}
+\begin{frame}[t]{Stage 2: Autonomous and Signal-Guided Tokenization}
+\relax
+\begin{definitionbox}{Research objective}
+Learn boundaries with little manual intervention and excellent quality, generalization and full-interface speed.
+\end{definitionbox}
+\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.4cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
+Direction & Learning signal and mechanism & Question to resolve\\\midrule
+Fast signal guidance & Predictive uncertainty or learned structure; distill a fast encoder. & Which signal improves quality after runtime cost?\\
+Autonomous boundaries & Causal prediction feedback; RL versus equal-budget search. & Do gains survive deployment with fewer rules?\\
+Mathematical transitions & Predict verified operations; learn units without boundary labels. & Do units transfer to unseen operations and compositions?\\
+\bottomrule\end{tabularx}}\par\vspace{2pt}
+\begin{remarkbox}{Current decision}
+Stage 2 is paused as future research. No system has passed both quality and speed requirements; mathematical understanding remains unproven.
+\end{remarkbox}
+\src{\href{https://proceedings.mlr.press/v306/dauncey26a.html}{Dauncey and Wattenhofer (2026)} ; \href{https://arxiv.org/abs/2507.07955}{Hwang, Wang and Gu (2025)} ; \href{https://openreview.net/forum?id=S1eZYeHFDS}{Lample and Charton (2020)} }
+
+\end{frame}
+
+\major{Future Research}
+\begin{frame}[t]{Research Priorities and Acceptance Criteria}
+\relax
+\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.4cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
+Priority & Planned experiment & Required evidence\\\midrule
+Now: Stage 1 tasks & Two frozen routes and five baselines; common task data and budgets. & Verified symbolic/PDE results; fair compute accounting.\\
+Later: learned signals & Signal ablations, fast distillation, zero/shuffled controls. & Signal-specific quality gains and full encode speed.\\
+Later: autonomous learning & Longer causal context, joint training, consistent deployment. & Stable gains over simple controls; fewer manual rules.\\
+Later: mathematical laws & Verified operations; source and composition holdouts. & Correctness beyond the training environment.\\
+\bottomrule\end{tabularx}}\par\vspace{2pt}
+\begin{remarkbox}{Two conditions must hold together}
+Substantially reduced human intervention and excellent multi-metric performance. Prediction proxies alone are insufficient; disclose remaining priors and regressions.
+\end{remarkbox}
+\begin{definitionbox}{Research handoff}
+Preserve Stage 2 experiments for later work. Proceed with the two Stage 1 routes and five baseline tokenizers.
+\end{definitionbox}
+
+\end{frame}
+
 \major{Conclusions}
 \begin{frame}[t]{What We Can Claim, and What We Must Test Next}
 \relax

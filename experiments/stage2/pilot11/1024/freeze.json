@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-13T07:34:53.428425+00:00",
+  "models": {
+    "models/minimal_prior_random_search_43.npz": "f052638570e6ceaaaea6966f1c1c59dd791375f710c0ab30d552da465b1d6c70",
+    "models/minimal_prior_parameter_rl_29.npz": "0f05b9ac59349b66cb909f74ad0c6d1be8b49c5553677e3bcf02eb3d770b2570",
+    "models/minimal_prior_cem_search_17.npz": "cedc2af49dd21c7b60346e3b24c83780e5cf5a8805f5d33a31ebf87d1854ecc0",
+    "models/minimal_prior_no_update_17.npz": "99783c652e57b253bad6343e95da4cb8ecef3d27a7c8acec9f31ab125b039e1a",
+    "models/minimal_prior_no_update_29.npz": "db27f23f26bf4266830f707aac02042381048420d0891e1698ce1b6a2efa5878",
+    "models/minimal_prior_cem_search_29.npz": "492a0d3344b7acf6f04b4f22033f443afa8d19a1221302188304b8cb9aa93f20",
+    "models/minimal_prior_parameter_rl_17.npz": "b705823f224456de7962b2da13650388f997ed673a254f8a89cd5b24d8698dda",
+    "models/minimal_prior_random_search_29.npz": "805875be5ae81907c01d64d08558089e635b9c0ccf8360354b210675f20ccf61",
+    "models/minimal_prior_random_search_17.npz": "744a6ab29119bd165bf4378739590d95419f765bfc503df7b1fc30859c07bbea",
+    "models/minimal_prior_base.npz": "91d87151e0a57bf9495740f603a0fbf3cd91a8ee3f918f42c2188d68cc1e28f4",
+    "models/minimal_prior_parameter_rl_43.npz": "7e8e6e46abea320f111cf24ff46540664cfff6b995efda309c9dee739d708f89",
+    "models/minimal_prior_no_update_43.npz": "04f90b087d22a4f5e57fb91ea366397fe54fb0339b09ee8fa2daff041b20dee3",
+    "models/minimal_prior_cem_search_43.npz": "72dbd709b141035462dc9c132c81dd245a4af3a59d6a41b0a1626eeff4120580"
+  }
+}

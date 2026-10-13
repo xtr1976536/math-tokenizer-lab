@@ -23,7 +23,7 @@ def main():
     assert not any(ord(c)<32 and c!='\n' for c in tex)
     raw=subprocess.check_output(['pdftotext','-layout',str(pdf),'-'],text=True)
     pages=raw.split('\f');pages=[p for p in pages if p.strip()]
-    assert len(pages)==manifest['total_pages']==43
+    assert len(pages)==manifest['total_pages']==45
     cover=pages[0]
     for token in ['Tongren Xiao','tongrenxiao7@gmail.com','Sun Yat-sen University','October 10, 2026']:assert token in cover
     assert 'Design of a Specialized Tokenizer' in cover and 'for Mathematical Text' in cover
@@ -40,12 +40,14 @@ def main():
         if index and body:edges.append(max(float(w.attrib['yMax']) for w in body))
     assert not outliers,outliers[:10]
     assert min(edges)>220,'Sparse content frame; inspect and rebalance'
-    assert export['slides']==43 and export['slide_image_bytes_verified'] and export['pdf_sha256']==sha(pdf)
+    assert export['slides']==45 and export['slide_image_bytes_verified'] and export['pdf_sha256']==sha(pdf)
     bundle=F/'output/Mathematical_Tokenizer_Beamer_Source.zip'
     with zipfile.ZipFile(bundle) as z:
         assert z.read('mathematical_tokenizer.tex')==(F/'source/mathematical_tokenizer.tex').read_bytes()
         assert 'template.tex' in z.namelist() and len([p for p in z.namelist() if p.endswith('.pdf')])==3
-    result={'all_passed':True,'pages':43,'figures':3,'primary_references':26,
+    assert 'Stage 2 is paused as future research' in raw
+    assert 'Stage 2: Autonomous and Signal-Guided Tokenization' in raw
+    result={'all_passed':True,'pages':45,'figures':3,'primary_references':26,
         'reviews':[{'round':1,'scope':'Evidence table source hashes, active experiment audit, cover identity, exact seven methods and reference records','passed':True},
                    {'round':2,'scope':'Compiled 4:3 pages, zero TeX overflow, no control-character artifacts, all text within page geometry; rendered-page inspection','passed':True},
                    {'round':3,'scope':'PowerPoint slide-image identity, PDF hashes and complete editable Beamer source bundle','passed':True}],

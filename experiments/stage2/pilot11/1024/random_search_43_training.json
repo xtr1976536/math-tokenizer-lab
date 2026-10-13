@@ -1,0 +1,194 @@
+[
+  {
+    "algorithm": "random_search",
+    "seed": 43,
+    "trace": [
+      {
+        "round": 0,
+        "mean_operation_target_bpb": 0.8749059261054557,
+        "mean_source_token_byte": 0.38087235666312963,
+        "gradient_norm": 0.01567121555730838,
+        "lagrange": 0.0
+      },
+      {
+        "round": 1,
+        "mean_operation_target_bpb": 0.8748446732987571,
+        "mean_source_token_byte": 0.38241820668398574,
+        "gradient_norm": 0.012743330467136616,
+        "lagrange": 0.00011065090255790722
+      },
+      {
+        "round": 2,
+        "mean_operation_target_bpb": 0.8750207645947151,
+        "mean_source_token_byte": 0.40487543223608324,
+        "gradient_norm": 0.01924303247965701,
+        "lagrange": 0.04513575290931082
+      },
+      {
+        "round": 3,
+        "mean_operation_target_bpb": 0.8748669202127184,
+        "mean_source_token_byte": 0.38908768415430345,
+        "gradient_norm": 0.027094888258855934,
+        "lagrange": 0.058585358752504146
+      },
+      {
+        "round": 4,
+        "mean_operation_target_bpb": 0.8748170707114725,
+        "mean_source_token_byte": 0.3840668190098857,
+        "gradient_norm": 0.06371631233136613,
+        "lagrange": 0.06199323430686199
+      },
+      {
+        "round": 5,
+        "mean_operation_target_bpb": 0.8748578562650369,
+        "mean_source_token_byte": 0.3769781836627214,
+        "gradient_norm": 0.06791729066427696,
+        "lagrange": 0.051223839166891216
+      },
+      {
+        "round": 6,
+        "mean_operation_target_bpb": 0.8747647893745263,
+        "mean_source_token_byte": 0.37788415310392387,
+        "gradient_norm": 0.053919339994628446,
+        "lagrange": 0.042266382909325384
+      },
+      {
+        "round": 7,
+        "mean_operation_target_bpb": 0.8749134653891313,
+        "mean_source_token_byte": 0.3857009613619462,
+        "gradient_norm": 0.015379594433475837,
+        "lagrange": 0.04894254316780422
+      },
+      {
+        "round": 8,
+        "mean_operation_target_bpb": 0.8749899638432334,
+        "mean_source_token_byte": 0.38610844636688096,
+        "gradient_norm": 0.07331785316683595,
+        "lagrange": 0.056433673436152576
+      },
+      {
+        "round": 9,
+        "mean_operation_target_bpb": 0.8748877669791217,
+        "mean_source_token_byte": 0.38373510020226187,
+        "gradient_norm": 0.011770987365405248,
+        "lagrange": 0.05917811137526274
+      },
+      {
+        "round": 10,
+        "mean_operation_target_bpb": 0.8749403647864394,
+        "mean_source_token_byte": 0.386278687899711,
+        "gradient_norm": 0.02004512815554495,
+        "lagrange": 0.06700972470927113
+      },
+      {
+        "round": 11,
+        "mean_operation_target_bpb": 0.874923504693293,
+        "mean_source_token_byte": 0.3972583165184358,
+        "gradient_norm": 0.14550260879799587,
+        "lagrange": 0.09680059528072915
+      },
+      {
+        "round": 12,
+        "mean_operation_target_bpb": 0.8748954198174277,
+        "mean_source_token_byte": 0.38068453117127693,
+        "gradient_norm": 0.10420785940440919,
+        "lagrange": 0.09344389515786944
+      },
+      {
+        "round": 13,
+        "mean_operation_target_bpb": 0.8749851927467451,
+        "mean_source_token_byte": 0.38571795073966453,
+        "gradient_norm": 0.08783665313009874,
+        "lagrange": 0.10015403417178492
+      },
+      {
+        "round": 14,
+        "mean_operation_target_bpb": 0.8748203714947639,
+        "mean_source_token_byte": 0.3908937073101436,
+        "gradient_norm": 0.15138764917564357,
+        "lagrange": 0.11721568632665857
+      },
+      {
+        "round": 15,
+        "mean_operation_target_bpb": 0.8748115647074833,
+        "mean_source_token_byte": 0.37153971165306887,
+        "gradient_norm": 0.08296783992298677,
+        "lagrange": 0.09556934716738275
+      }
+    ],
+    "oracle_evaluations": 65,
+    "reward_pair_ids": [
+      "1c6701144d15c50b5dbd6f9b",
+      "99c9a82826fd8829722f2154",
+      "0cf0af019b5c384304b21d2e",
+      "20123f866e403a5c0102d77b",
+      "c8c4616942f338f8fc3603ea",
+      "86d0a3ef7295ce56c40d1e1c",
+      "c65c7473b4e0ee2f8542f05f",
+      "53d3b152c761f95645ea3330",
+      "ebeba02c04b8ab8fe1fe68d4",
+      "c49238aa895a6780a5987cdf",
+      "20080d7a5799dd26961e8b51",
+      "41cb070f4ea30a420a09d22e",
+      "2adf4e76b30a31c212e7605b",
+      "1c5585d268a54d27d80efea2",
+      "a98ccfefd709c1951af810cc",
+      "9c4fda8a512f3b93cbeee27f",
+      "ba0484467d1d4a51f15f8584",
+      "c79aa483c30bfc4575cf4f41",
+      "81c789a0bd989f4c74d8ba51",
+      "198cc52da0251b835e626ef0",
+      "13d402a81a3c61f8d24aede1",
+      "58dfff8c460cdd6ec8d753a8",
+      "0c9df0cd10e148a42777a4e0",
+      "dcecf0c8c2fbbf15bd7cc699",
+      "9014c140733a3ba8555cf8fe",
+      "5326335b7740a0b021894d2f",
+      "20f9b39a4141d975e95d2544",
+      "39bb85a99d68ccbd26c18406",
+      "2dda84c48522b870bb78305e",
+      "05852ae73e48fea3aa90a0a7",
+      "50a5b56937389abd9344c624",
+      "62be2ffe14c10c5a2debf072",
+      "fe785bbb156bd595a2c7ba32",
+      "596f180017532d064515cd3c",
+      "0ea3a9354e6cd8f4926e7399",
+      "43251ad300071466020495b2",
+      "54017dce634f0e3c8b4c3dd2",
+      "05a1799bcfc2fea0cbecd916",
+      "3a375ba38f44d926a7f0adf3",
+      "4bbc1df80ef14c1562560d5b",
+      "2581d30cacd69d42d849cfe5",
+      "45672a08013a1d69bfee84fc",
+      "02d4f1b51b31ec09d9ddbef5",
+      "ce88ab2e65778863e2a7ca8a",
+      "25c63eeaa8d17a8c7d9eee8d",
+      "156616a350ff2bc8ece5c446",
+      "67cfb62fa02a620f1bd484da",
+      "37289466a7227b5193f4e148",
+      "24da6fc24a36f64194d2f1fd",
+      "4836f9359361da56213fdaca",
+      "dd4659dcaa80142125083b93",
+      "8eb9b1ad3279d8bed21f198b",
+      "dcd35bfe33a89c5c342bbb2c",
+      "6fa40075bc1d562a842484be",
+      "5422c5fb87c162acd2eb71a3",
+      "f668117350badbb39a1bd9fe",
+      "3dc23cb61b33148289acbc62",
+      "cc77741c56c98a7ae728925e",
+      "c9ab0426ce41e012784666b6",
+      "5ab2f9304daf920fce80b5fa",
+      "4a2b10b2c0eb3a17671281df",
+      "0b6578303a4a6704a9c30b80",
+      "c25801b438c31690ba66c3bd",
+      "29658dfd30ef34f68bb3daa7"
+    ],
+    "selected_operation_bpb": 0.8746383563820082,
+    "initial_operation_bpb": 0.8748171715992484,
+    "source_rate": 0.3692074986639378,
+    "initial_source_rate": 0.3823628812327068,
+    "zero_selected": false,
+    "objective": "conditional byte prediction of verified polynomial operations, no math segmentation quality reward",
+    "same_training_deployment_encoder": true
+  }
+]

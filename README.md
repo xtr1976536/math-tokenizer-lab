@@ -18,6 +18,13 @@ deployed systems still fail the original joint quality gate at 1,024/2,048 IDs.
 See `requirements-stage2.lock.txt` for optional PyTorch runtime dependencies and
 `scripts/review_stage2_continuation.py` for independent full archive replay.
 
+**Current decision:** Stage 2 is paused at the user's request; see
+[`experiments/stage2/PAUSED.json`](experiments/stage2/PAUSED.json). Pilot10 is an
+additional completed long-context/joint-learning exploration; pilot11 is an
+incomplete operation-feedback attempt, with its failure and artifacts preserved.
+The talk now places these directions under future research. The next work is
+Stage 1 downstream evaluation using the two frozen proposals and five baselines.
+
 | Current system | Role | Vocabulary |
 |---|---|---|
 | Boundary AST | Source structure and parameter-boundary segmentation | 1,024 / 2,048 IDs |
