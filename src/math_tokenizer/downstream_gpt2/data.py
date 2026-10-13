@@ -6,6 +6,7 @@ to this derived academic dataset; every record retains generator provenance.
 from __future__ import annotations
 
 import argparse
+import gzip
 import hashlib
 import importlib
 import json
@@ -31,13 +32,31 @@ QUOTAS = {
 }
 
 
+def catalog_hashes(root: Path):
+    """Read formula hashes whether Kaggle keeps or extracts their gzip file."""
+    archive=root/"data/benchmark/formula_hashes.json.gz"
+    if archive.exists():
+        with gzip.open(archive,"rt") as stream:
+            return set(json.load(stream))
+    if archive.with_suffix("").exists():
+        return set(json.loads(archive.with_suffix("").read_text()))
+    catalog=set()
+    for path in (root/"data/benchmark/formula_only").rglob("*.jsonl"):
+        for line in path.read_text().splitlines():
+            formula="".join(json.loads(line).split())
+            catalog.add(hashlib.sha256(formula.encode()).hexdigest())
+    return catalog
+
+
 def latex(expr):
     # Explicit multiplication avoids the LaTeX parser reading x(x+1) as a function.
     return sp.latex(expr, mul_symbol="dot")
 
 
 def upstream(source: Path):
-    actual = subprocess.check_output(["git", "-C", str(source), "rev-parse", "HEAD"], text=True).strip()
+    marker=source/"source_revision.txt"
+    actual=(marker.read_text().strip() if marker.exists() else
+            subprocess.check_output(["git", "-C", str(source), "rev-parse", "HEAD"], text=True).strip())
     if actual != UPSTREAM_SHA:
         raise RuntimeError(f"expected upstream {UPSTREAM_SHA}, got {actual}")
     sys.path.insert(0, str(source))

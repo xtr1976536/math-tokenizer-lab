@@ -1,7 +1,9 @@
+import gzip
+import json
 import sympy as sp
 
 from math_tokenizer.downstream_gpt2.adapters import ByteDecomposer, kernel_slug
-from math_tokenizer.downstream_gpt2.data import template_signature
+from math_tokenizer.downstream_gpt2.data import catalog_hashes, template_signature
 from math_tokenizer.downstream_gpt2.results import paired_interval, stratified_beam_ids
 from math_tokenizer.downstream_gpt2.verify import Verifier, parse_answer
 
@@ -67,3 +69,15 @@ def test_structural_split_groups_numeric_variants():
     x=sp.Symbol("x")
     assert template_signature(x+2)==template_signature(x+5)
     assert template_signature(x+2)!=template_signature(sp.sin(x)+2)
+
+
+def test_kaggle_extracted_formula_hashes(tmp_path):
+    folder=tmp_path/"data/benchmark"
+    folder.mkdir(parents=True)
+    archive=folder/"formula_hashes.json.gz"
+    with gzip.open(archive,"wt") as stream:
+        json.dump(["one","two"],stream)
+    assert catalog_hashes(tmp_path)=={"one","two"}
+    archive.unlink()
+    (folder/"formula_hashes.json").write_text(json.dumps(["one","two"]))
+    assert catalog_hashes(tmp_path)=={"one","two"}

@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import gzip
 import hashlib
 import json
 import math
@@ -17,6 +16,7 @@ import torch.nn.functional as F
 
 from math_tokenizer.corpus import ROOT
 from .adapters import GPT2_REVISION, METHODS, TokenizerAdapter, build_model, method_slug
+from .data import catalog_hashes
 from .verify import Verifier
 
 
@@ -33,15 +33,7 @@ def common_coverage(folder: Path, gpt2_path: Path, max_tokens=512):
     output = {"max_tokens": max_tokens, "kept": {}, "excluded": {}, "sha256": {},
               "catalog_overlap_removed": {}, "heldout_composition_removed": {}}
     normalize = lambda s: "".join(s.split())
-    hash_file = ROOT / "data/benchmark/formula_hashes.json.gz"
-    if hash_file.exists():
-        with gzip.open(hash_file,"rt") as stream:
-            catalog = set(json.load(stream))
-    else:
-        catalog = set()
-        for path in (ROOT / "data/benchmark/formula_only").rglob("*.jsonl"):
-            catalog.update(hashlib.sha256(normalize(json.loads(line)).encode()).hexdigest()
-                           for line in path.read_text().splitlines())
+    catalog = catalog_hashes(ROOT)
     oracle_path = folder / "oracle_valid_ids.json"
     oracle = json.loads(oracle_path.read_text()) if oracle_path.exists() else None
     for split in ("train", "valid", "test"):

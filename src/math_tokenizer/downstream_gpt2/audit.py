@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import gzip
 import hashlib
 import json
 from collections import Counter, defaultdict
@@ -10,6 +9,7 @@ from pathlib import Path
 
 from math_tokenizer.corpus import ROOT
 from .adapters import METHODS, TokenizerAdapter
+from .data import catalog_hashes
 from .train import read_split
 from .verify import Verifier
 
@@ -51,16 +51,8 @@ def dataset_audit(data: Path, source: Path):
         oracle[split], failures[split] = sorted(good), sorted(bad)
         summaries[split] = dict(tally)
     # Literal overlap is one auditable layer; it does not prove semantic non-overlap.
-    hash_file = ROOT / "data/benchmark/formula_hashes.json.gz"
     normalize = lambda s: "".join(s.split())
-    if hash_file.exists():
-        with gzip.open(hash_file,"rt") as stream:
-            catalog = set(json.load(stream))
-    else:
-        catalog = set()
-        for path in (ROOT / "data/benchmark/formula_only").rglob("*.jsonl"):
-            catalog.update(hashlib.sha256(normalize(json.loads(line)).encode()).hexdigest()
-                           for line in path.read_text().splitlines())
+    catalog = catalog_hashes(ROOT)
     overlap = {split: sum(hashlib.sha256(normalize(row["input_latex"]).encode()).hexdigest() in catalog or
                           hashlib.sha256(normalize(row["target_latex"]).encode()).hexdigest() in catalog
                           for row in read_split(data, split)) for split in summaries}

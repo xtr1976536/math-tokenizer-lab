@@ -49,6 +49,7 @@ def bundle():
     (project/"tmp").mkdir()
     shutil.copytree(ROOT/"tmp/SymbolicMathematics",project/"tmp/SymbolicMathematics",
                     ignore=shutil.ignore_patterns("__pycache__","*.pyc"))
+    (project/"tmp/SymbolicMathematics/source_revision.txt").write_text(UPSTREAM_SHA+"\n")
     shutil.copytree(ROOT/"tmp/gpt2-607a30d",project/"tmp/gpt2-607a30d",
                     ignore=shutil.ignore_patterns(".cache","*.lock"))
     tiktoken_cache=Path(tempfile.gettempdir())/"data-gym-cache"
@@ -78,14 +79,19 @@ def bundle():
 
 
 def _script(phase, method=None):
-    return f'''import hashlib, json, pathlib, subprocess, sys, tarfile
+    return f'''import hashlib, json, pathlib, shutil, subprocess, sys, tarfile
 ASSET = pathlib.Path("/kaggle/input/{ASSET_SLUG}/project_bundle.tar.gz")
-if not ASSET.exists(): raise FileNotFoundError(ASSET)
+EXPANDED = pathlib.Path("/kaggle/input/{ASSET_SLUG}/project_bundle/math_tokenizer_project")
+if not ASSET.exists() and not EXPANDED.exists():
+    raise FileNotFoundError(f"asset missing; input roots: {{list(pathlib.Path('/kaggle/input').glob('*'))}}")
 subprocess.run([sys.executable,"-m","pip","install","-q","transformers==5.19.0","tokenizers==0.23.3",
                 "sympy==1.14.0","numexpr==2.14.2","sentencepiece==0.2.2","tiktoken==0.14.0",
                 "antlr4-python3-runtime==4.11.1","safetensors","pylatexenc==2.11","openpyxl==3.1.5"],check=True)
-with tarfile.open(ASSET,"r:gz") as tar: tar.extractall("/kaggle/working")
 project = pathlib.Path("/kaggle/working/math_tokenizer_project")
+if ASSET.exists():
+    with tarfile.open(ASSET,"r:gz") as tar: tar.extractall("/kaggle/working")
+else:
+    shutil.copytree(EXPANDED,project)
 import os
 os.environ["TIKTOKEN_CACHE_DIR"] = str(project/"tiktoken_cache")
 manifest = json.loads((project/"asset_manifest.json").read_text())

@@ -23,7 +23,10 @@ def run():
         assert meta["is_private"]=="true"
         assert meta["enable_internet"]=="true"
         assert len(meta["dataset_sources"])==1
-        compile((path.parent/"run.py").read_text(),str(path.parent/"run.py"),"exec")
+        script=(path.parent/"run.py").read_text()
+        compile(script,str(path.parent/"run.py"),"exec")
+        assert "project_bundle/math_tokenizer_project" in script
+        assert "shutil.copytree(EXPANDED,project)" in script
         inventory[slug]={"gpu":meta["enable_gpu"],"kernel_sources":meta["kernel_sources"]}
     for method in METHODS:
         train=f"math-tokenizer-gpt2-{kernel_slug(method)}-v1"
@@ -36,6 +39,7 @@ def run():
         names=tar.getnames()
     assert any(name.endswith("model.safetensors") for name in names)
     assert any(name.endswith("formula_hashes.json.gz") for name in names)
+    assert any(name.endswith("source_revision.txt") for name in names)
     assert not any("formula_only" in name or "kaggle.json" in name for name in names)
     report={"status":"passed","private_jobs":len(jobs),"dataset_asset_bytes":archive.stat().st_size,
             "contains_formula_strings":False,"contains_credentials":False,"jobs":inventory}
