@@ -62,6 +62,24 @@ def expressions(env, method, pair):
     return convert(left), convert(right)
 
 
+def template_signature(expr):
+    """Operator tree with numerical leaves grouped into coarse value classes."""
+    if expr.is_Integer:
+        return "ZERO" if expr == 0 else "UNIT" if abs(expr) == 1 else "INT"
+    if expr.is_Rational:
+        return "RATIONAL"
+    if expr.is_Symbol:
+        return "X" if expr.name == "x" else "CONSTANT"
+    return expr.func.__name__ + "(" + ",".join(template_signature(arg) for arg in expr.args) + ")"
+
+
+def row_template(env, row):
+    tokens = row["source_prefix"]
+    infix = env.prefix_to_infix(env.unclean_prefix(tokens))
+    expr = parse_expr(infix, local_dict=env.local_dict)
+    return hashlib.sha256(template_signature(expr).encode()).hexdigest()
+
+
 def gen_ode1_linear(env, rng):
     """Lample–Charton ODE1 construction restricted to f(x,c)=c*g(x)+h(x).
 

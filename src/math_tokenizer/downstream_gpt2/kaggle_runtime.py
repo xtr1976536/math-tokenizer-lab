@@ -33,8 +33,11 @@ def _find_data():
 def run_smoke():
     source = PROJECT / "tmp/SymbolicMathematics"
     gpt2 = PROJECT / "tmp/gpt2-607a30d"
+    raw = WORKING / "pilot_raw_data"
+    generate(source, raw, .001)
     data = WORKING / "pilot_data"
-    generate(source, data, .001)
+    pilot_quotas=json.loads((raw/"manifest.json").read_text())["quotas"]
+    assemble(raw,raw,raw,data,pilot_quotas,source)
     audit = {"round_1": dataset_audit(data,source),
              "round_2": tokenizer_audit(data,gpt2)}
     (data / "coverage_512.json").write_text(json.dumps(common_coverage(data,gpt2),indent=2)+"\n")
@@ -66,6 +69,7 @@ def run_smoke():
         shutil.rmtree(path)
     shutil.rmtree(PROJECT)
     shutil.rmtree(WORKING/"init",ignore_errors=True)
+    shutil.rmtree(raw,ignore_errors=True)
 
 
 def run_data():

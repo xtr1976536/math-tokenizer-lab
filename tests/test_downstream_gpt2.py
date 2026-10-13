@@ -1,6 +1,7 @@
 import sympy as sp
 
 from math_tokenizer.downstream_gpt2.adapters import ByteDecomposer, kernel_slug
+from math_tokenizer.downstream_gpt2.data import template_signature
 from math_tokenizer.downstream_gpt2.results import paired_interval, stratified_beam_ids
 from math_tokenizer.downstream_gpt2.verify import Verifier, parse_answer
 
@@ -60,3 +61,9 @@ def test_kaggle_slugs_and_paired_group_analysis():
     assert interval["difference"] == .5
     assert interval["groups"] == 2
     assert stratified_beam_ids(left,count_per_group=1) == {"a"}
+
+
+def test_structural_split_groups_numeric_variants():
+    x=sp.Symbol("x")
+    assert template_signature(x+2)==template_signature(x+5)
+    assert template_signature(x+2)!=template_signature(sp.sin(x)+2)

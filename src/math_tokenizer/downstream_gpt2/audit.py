@@ -25,6 +25,7 @@ def dataset_audit(data: Path, source: Path):
         assert digest(path) == entry["sha256"], filename
         assert sum(1 for _ in path.open()) == entry["rows"], filename
     groups = {}
+    templates = {}
     summaries = {}
     oracle = {}
     failures = {}
@@ -36,6 +37,11 @@ def dataset_audit(data: Path, source: Path):
         for row in rows:
             previous = groups.setdefault(row["group"], split)
             assert previous == split, (row["id"], previous, split)
+            template=row.get("template_group")
+            if template is None:
+                raise RuntimeError(f"missing frozen template group: {row['id']}")
+            previous_template=templates.setdefault(template,split)
+            assert previous_template==split,(row["id"],previous_template,split)
             verdict = verifier.verify(row, row["target_latex"])
             (good if verdict == "correct" else bad).append(row["id"])
             tally[row["task"] + ":" + row["method"]] += 1
@@ -60,6 +66,7 @@ def dataset_audit(data: Path, source: Path):
                           for row in read_split(data, split)) for split in summaries}
     (data / "oracle_valid_ids.json").write_text(json.dumps(oracle,indent=2)+"\n")
     return {"dataset_counts": summaries, "distinct_groups": len(groups),
+            "disjoint_template_groups":len(templates),
             "oracle_unverified": failures, "oracle_valid_counts":{s:len(ids) for s,ids in oracle.items()},
             "catalog_literal_overlap": overlap, "manifest_sha256": digest(data / "manifest.json")}
 

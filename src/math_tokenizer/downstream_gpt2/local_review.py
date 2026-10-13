@@ -16,6 +16,7 @@ from .adapters import METHODS, TokenizerAdapter, method_slug
 from .audit import dataset_audit, tokenizer_audit
 from .data import UPSTREAM_SHA, generate
 from .ood import generate as generate_ood
+from .orchestrate import assemble
 from .train import common_coverage, examples_for, generate_one, read_split, train_one
 from .verify import Verifier
 
@@ -37,8 +38,11 @@ def run_review(output=ROOT/"tmp/downstream_gpt2/local_review"):
     (output/"round_1.json").write_text(json.dumps(rounds["round_1_static"],indent=2)+"\n")
 
     # Round 2: regenerate a tiny frozen dataset, verify every oracle, and audit every adapter.
+    raw_data=output/"raw_data"
+    generate(source,raw_data,.001)
     data=output/"data"
-    generate(source,data,.001)
+    pilot_quotas=json.loads((raw_data/"manifest.json").read_text())["quotas"]
+    assemble(raw_data,raw_data,raw_data,data,pilot_quotas,source)
     rounds["round_2_data"]={"dataset":dataset_audit(data,source),
                             "tokenizers":tokenizer_audit(data,gpt2)}
     coverage=common_coverage(data,gpt2)
