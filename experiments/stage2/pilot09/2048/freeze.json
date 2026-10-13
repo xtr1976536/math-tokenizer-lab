@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-13T07:06:49.811109+00:00",
+  "models": {
+    "models/minimal_prior_random_search_43.npz": "1f8c348ade9324c7e7011cc34364f9dfa2e30cbed5f90e5840085bb854cbe034",
+    "models/minimal_prior_parameter_rl_29.npz": "f0cdb87b119e822508498f47a4fd09c2608c853ddd911f216a6276137ae43301",
+    "models/minimal_prior_cem_search_17.npz": "854b9b30bacde2bc1ca4c70c0bb9528cc809087b8848f4c982ca831bab90c68d",
+    "models/minimal_prior_no_update_17.npz": "eb2f3b4888c4ade3573d1355167c4d714cf6fb70af2e361c3b7ad5260c4672a7",
+    "models/minimal_prior_no_update_29.npz": "bfcc87c6131554754f0e5f7e06013e0dc5d1a49764876617d3b6262ed6789084",
+    "models/minimal_prior_cem_search_29.npz": "f4b0dd21b7c9aba09ae5c7e398933923737f2fbe138d41f242b173327405f107",
+    "models/minimal_prior_parameter_rl_17.npz": "2d971b4e57ced2e6ddcf002928184dc9e80d2f41dc01e8f08837baf784b7745a",
+    "models/minimal_prior_random_search_29.npz": "46de6e8bd5815edfc693b41bd93dc15951fe58aedf01c215a29415b00b2143ee",
+    "models/minimal_prior_random_search_17.npz": "0d288f98dfaccb9b0de6396e4f03f15c1ae9490a9c391d57eba02a278c2bc6a8",
+    "models/minimal_prior_base.npz": "f16c3100f26a14dc1c814519ddd2ad2b40c75fb30f2e6255afd808b8b1634291",
+    "models/minimal_prior_parameter_rl_43.npz": "9f30f06de5c6c4f5683f82ec27611ddcc97985396a101aeda586f948d360888f",
+    "models/minimal_prior_no_update_43.npz": "cff1459ebc8673dc36b2398ff45325a2cad5cd31fb9391ef188d17d9fb6a1b2e",
+    "models/minimal_prior_cem_search_43.npz": "c231aa720b1edd64a26c4aefd59f8ce6801c4286d928f2791701c875f859e54e"
+  },
+  "selected_before_test": true
+}

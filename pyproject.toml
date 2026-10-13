@@ -6,6 +6,8 @@ name = "math-tokenizer-lab"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = ["numpy", "openpyxl", "tokenizers", "sentencepiece", "tiktoken", "requests", "sympy", "pytest"]
+[project.optional-dependencies]
+stage2 = ["torch==2.14.1"]
 [tool.setuptools.packages.find]
 where = ["src"]
 [tool.pytest.ini_options]

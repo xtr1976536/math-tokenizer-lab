@@ -1,0 +1,6 @@
+-r requirements-v8.lock.txt
+torch==2.14.1
+networkx==3.6.1
+jinja2==3.1.6
+markupsafe==3.0.4
+setuptools==84.0.0

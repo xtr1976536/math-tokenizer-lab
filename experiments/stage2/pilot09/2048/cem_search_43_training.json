@@ -1,0 +1,376 @@
+[
+  {
+    "algorithm": "cem_search",
+    "seed": 43,
+    "trace": [
+      {
+        "round": 0,
+        "mean_conditional_neural_bpb": 3.4515061994660883,
+        "mean_tokens_per_byte": 0.32319248710638737,
+        "gradient_norm": 0.5724722743191616,
+        "lagrange": 0.013824383567359377
+      },
+      {
+        "round": 1,
+        "mean_conditional_neural_bpb": 3.4494350789271526,
+        "mean_tokens_per_byte": 0.3227885518759723,
+        "gradient_norm": 0.37050337411645906,
+        "lagrange": 0.02684089667388856
+      },
+      {
+        "round": 2,
+        "mean_conditional_neural_bpb": 3.453968059582367,
+        "mean_tokens_per_byte": 0.3270877456367259,
+        "gradient_norm": 0.6361318130056057,
+        "lagrange": 0.04845579730192495
+      },
+      {
+        "round": 3,
+        "mean_conditional_neural_bpb": 3.4498704387973698,
+        "mean_tokens_per_byte": 0.32480918362488964,
+        "gradient_norm": 0.15194901552010293,
+        "lagrange": 0.06551357390628887
+      },
+      {
+        "round": 4,
+        "mean_conditional_neural_bpb": 3.451268146652108,
+        "mean_tokens_per_byte": 0.32635531306683624,
+        "gradient_norm": 0.6926633111470338,
+        "lagrange": 0.08566360939454598
+      },
+      {
+        "round": 5,
+        "mean_conditional_neural_bpb": 3.456141684529421,
+        "mean_tokens_per_byte": 0.3263460574629983,
+        "gradient_norm": 0.6434572225103927,
+        "lagrange": 0.10579513367512716
+      },
+      {
+        "round": 6,
+        "mean_conditional_neural_bpb": 3.4553010832026074,
+        "mean_tokens_per_byte": 0.32616780064140083,
+        "gradient_norm": 0.5660179263106859,
+        "lagrange": 0.12557014431251345
+      },
+      {
+        "round": 7,
+        "mean_conditional_neural_bpb": 3.4554442779111105,
+        "mean_tokens_per_byte": 0.3281828779269905,
+        "gradient_norm": 0.6970143168505519,
+        "lagrange": 0.14937530952107914
+      },
+      {
+        "round": 8,
+        "mean_conditional_neural_bpb": 3.4553162942286697,
+        "mean_tokens_per_byte": 0.3273412465004054,
+        "gradient_norm": 0.5546786730903545,
+        "lagrange": 0.1714972118764746
+      },
+      {
+        "round": 9,
+        "mean_conditional_neural_bpb": 3.4504924206001095,
+        "mean_tokens_per_byte": 0.3251520897657387,
+        "gradient_norm": 0.47727557279496396,
+        "lagrange": 0.1892408007625367
+      },
+      {
+        "round": 10,
+        "mean_conditional_neural_bpb": 3.4529923573056256,
+        "mean_tokens_per_byte": 0.3234150302008697,
+        "gradient_norm": 0.17719491360491457,
+        "lagrange": 0.20351027051886073
+      },
+      {
+        "round": 11,
+        "mean_conditional_neural_bpb": 3.4532701621080224,
+        "mean_tokens_per_byte": 0.3277142782820237,
+        "gradient_norm": 0.6080952000327352,
+        "lagrange": 0.22637823643749277
+      },
+      {
+        "round": 12,
+        "mean_conditional_neural_bpb": 3.4516596206716446,
+        "mean_tokens_per_byte": 0.326670992991684,
+        "gradient_norm": 0.37892777021468416,
+        "lagrange": 0.24715963177544542
+      },
+      {
+        "round": 13,
+        "mean_conditional_neural_bpb": 3.4546228305730207,
+        "mean_tokens_per_byte": 0.3289353563487754,
+        "gradient_norm": 0.6035833522487085,
+        "lagrange": 0.2724697538275809
+      },
+      {
+        "round": 14,
+        "mean_conditional_neural_bpb": 3.4505133675355975,
+        "mean_tokens_per_byte": 0.33013707939690545,
+        "gradient_norm": 0.33270477290582445,
+        "lagrange": 0.3001833219759764
+      },
+      {
+        "round": 15,
+        "mean_conditional_neural_bpb": 3.4524005299583034,
+        "mean_tokens_per_byte": 0.3282270118026031,
+        "gradient_norm": 0.4309184432805761,
+        "lagrange": 0.32407675493576726
+      },
+      {
+        "round": 16,
+        "mean_conditional_neural_bpb": 3.4517470044110947,
+        "mean_tokens_per_byte": 0.33129750798519864,
+        "gradient_norm": 0.4408077016695616,
+        "lagrange": 0.35411118026074917
+      },
+      {
+        "round": 17,
+        "mean_conditional_neural_bpb": 3.4519482057808872,
+        "mean_tokens_per_byte": 0.3350583752003594,
+        "gradient_norm": 0.27930851596346146,
+        "lagrange": 0.39166734001605263
+      },
+      {
+        "round": 18,
+        "mean_conditional_neural_bpb": 3.4558652092151307,
+        "mean_tokens_per_byte": 0.3337517976518391,
+        "gradient_norm": 0.2677457036102169,
+        "lagrange": 0.42661034467431547
+      },
+      {
+        "round": 19,
+        "mean_conditional_neural_bpb": 3.4478139550838356,
+        "mean_tokens_per_byte": 0.3338643401723896,
+        "gradient_norm": 0.4536924856870104,
+        "lagrange": 0.46177843437367927
+      },
+      {
+        "round": 20,
+        "mean_conditional_neural_bpb": 3.452363154983867,
+        "mean_tokens_per_byte": 0.33403923837709126,
+        "gradient_norm": 0.14807156813849606,
+        "lagrange": 0.49729632048244643
+      },
+      {
+        "round": 21,
+        "mean_conditional_neural_bpb": 3.4479618899050646,
+        "mean_tokens_per_byte": 0.33301569433525147,
+        "gradient_norm": 0.9999999999999998,
+        "lagrange": 0.530767118507534
+      },
+      {
+        "round": 22,
+        "mean_conditional_neural_bpb": 3.4500557845401456,
+        "mean_tokens_per_byte": 0.3353263669498112,
+        "gradient_norm": 0.6981698939022416,
+        "lagrange": 0.5688592617617411
+      },
+      {
+        "round": 23,
+        "mean_conditional_neural_bpb": 3.4476700432325584,
+        "mean_tokens_per_byte": 0.3339344371132844,
+        "gradient_norm": 0.8114769344003998,
+        "lagrange": 0.6041675453428945
+      },
+      {
+        "round": 24,
+        "mean_conditional_neural_bpb": 3.4452746868971493,
+        "mean_tokens_per_byte": 0.3344236722078463,
+        "gradient_norm": 0.10178962186423614,
+        "lagrange": 0.6404542991131718
+      },
+      {
+        "round": 25,
+        "mean_conditional_neural_bpb": 3.444696942759632,
+        "mean_tokens_per_byte": 0.3326422411623986,
+        "gradient_norm": 0.29668736044918825,
+        "lagrange": 0.6731781907925536
+      },
+      {
+        "round": 26,
+        "mean_conditional_neural_bpb": 3.4458349306861993,
+        "mean_tokens_per_byte": 0.33481911572362755,
+        "gradient_norm": 0.8904663476825703,
+        "lagrange": 0.7102558315943933
+      },
+      {
+        "round": 27,
+        "mean_conditional_neural_bpb": 3.44718642892569,
+        "mean_tokens_per_byte": 0.3360061317623274,
+        "gradient_norm": 0.7234392559135119,
+        "lagrange": 0.7497075044736328
+      },
+      {
+        "round": 28,
+        "mean_conditional_neural_bpb": 3.4444635745970267,
+        "mean_tokens_per_byte": 0.3373863984823231,
+        "gradient_norm": 0.7534992162765788,
+        "lagrange": 0.7919197107928636
+      },
+      {
+        "round": 29,
+        "mean_conditional_neural_bpb": 3.4460122101583703,
+        "mean_tokens_per_byte": 0.33852660299131687,
+        "gradient_norm": 0.17680899791290688,
+        "lagrange": 0.836412326130082
+      },
+      {
+        "round": 30,
+        "mean_conditional_neural_bpb": 3.441927090376942,
+        "mean_tokens_per_byte": 0.336864884726468,
+        "gradient_norm": 0.6912424384821091,
+        "lagrange": 0.8775815049376026
+      },
+      {
+        "round": 31,
+        "mean_conditional_neural_bpb": 3.4430458695333677,
+        "mean_tokens_per_byte": 0.3396054867677607,
+        "gradient_norm": 0.20758761721715857,
+        "lagrange": 0.9242318878277086
+      }
+    ],
+    "oracle_evaluations": 129,
+    "selected_neural_code_bpb": 3.444238492916513,
+    "initial_code_bpb": 3.4478271903543174,
+    "selected_rate": 0.3189891095136243,
+    "initial_rate": 0.3162802953227077,
+    "zero_parameter_selected": false,
+    "same_training_and_deployment_MAP": true,
+    "reward_ids": [
+      "3d3220947b0ff1175f3c61d2",
+      "ebc7f8003807129756bb3a31",
+      "ed5a1bf52ae810b50658f708",
+      "307804f90f432d4abcac6490",
+      "fd340f3482440a91066d66ab",
+      "b434513b3a845e9d5c886dff",
+      "3830fd8db8dd3e00d7273e41",
+      "ccad154cccf97103a802dc1e",
+      "a717173b0e1a6cc65a4feff7",
+      "2b8d640cba48647c745a89e5",
+      "bb3708c9476e38e3c3ebabe9",
+      "9e67d9c482b00e2af19ebbb5",
+      "bcbc42fbdf797c18afec5e5a",
+      "0469b6822c1f038eeace1e6e",
+      "60bb05b85b9f9db16c5650df",
+      "0ac4068627b7c356a5a5adbd",
+      "8b5e4ce655523e4ef2b5b400",
+      "d960761622ca78a5f5ea35f7",
+      "f19318664c8ce54a2662f936",
+      "bc8611f5483a820f82a6ffb8",
+      "d8c8dc834c262a837467e1f2",
+      "4e06920b76dd57c31334cc2c",
+      "1cc90ddc5f28fb791957eb56",
+      "6edaefc1ccf95130df9053ee",
+      "d3dcdd02bed636d0a1b56231",
+      "25aa563ac7d28a11e90fa67c",
+      "0d850f919f987cadfc0a63fd",
+      "3f6c7a8c89d7994952b32a2a",
+      "007e5a480ae9f51030877d9b",
+      "504d8d0d9bf11777ad23c37d",
+      "58b1acb48f9dd47fe645e8ac",
+      "0470c2f2b3a064d03882da4a",
+      "462adc8ded079865e2bbf262",
+      "f046328e33bacd95cd710506",
+      "97e3751c82a5d92d4de74fea",
+      "490107da0fb292aed2cb8146",
+      "6a23ceb686dee0bdb4c823fb",
+      "24e3dc1ec36dedc4923a9574",
+      "6ef290de1a912d6d0f206990",
+      "7a46964b138398ae3773e999",
+      "94883baadb36f766226ef680",
+      "55c0d7ea5636916d5a9c9c82",
+      "4ffe9f3585de2e5b7f80d086",
+      "ae84f4c076ab9efb45bb8e4c",
+      "00529c1b8794313de989721c",
+      "db028fdea0f24308bf50b055",
+      "4f43009e5da3ce8bf4bfb205",
+      "54aaffe4e316b1e7ed5becb2",
+      "0e41b48f3508a2e200b03ad3",
+      "a9fd044cf2ad73ec061f5797",
+      "7fd1af5e2b72904c5b679164",
+      "a992725ff32846918d514f9c",
+      "1a7eea77f502cf060373ddd4",
+      "eab09cd2bcfd657e8d9b2e10",
+      "2e160700e1101c0ce0c3f5d9",
+      "792145946c4b057d000ae1c9",
+      "d3461fe3d431c4ea41ffc27e",
+      "fe748aa0f0de2a23369ee145",
+      "e4ee4b5f33c99fc641845429",
+      "58c8beee67708d254a172bba",
+      "1d1568b061e0d2c0bb5de09c",
+      "faf38dd99d9f810fd9be1b00",
+      "cc6c3d3d9c4c8fc87434d7cf",
+      "94b36e3a6e1a7c9929399dbb",
+      "6aa8b35feb56a4e5bab64f3a",
+      "2914aa9445865539fbe05019",
+      "600ac559c910fe65637517d5",
+      "8a86f5361f79456a0feffd79",
+      "f6bbfa328d95e5d618eb8cad",
+      "6e6caee0a543b7fe5af76f8a",
+      "062896b2575a24fefebd5f60",
+      "93723a8ce153e1ef77281979",
+      "6adb403ff1c63b2b35ff9190",
+      "d0bb3b18adcb82dc0f69fa8e",
+      "84aafee3a9d605915294ad18",
+      "91ba1db04be35822bba43883",
+      "eb650f5b7e9a23a72bd360ae",
+      "32bc6e4e47865f2fc04eb903",
+      "e0ca77fe3082d6ba542d0478",
+      "cadeb54e60c31d335179d8ea",
+      "8fa8508589bb392dc80cd5bb",
+      "050ff1181c08cd40fff37c77",
+      "b9c72cf3d074ced2bc8fa82d",
+      "de5d08d4b057de3b74f02d42",
+      "24773719c8e9f6dcae0447fa",
+      "780834c383f7f370fbfc40c5",
+      "72269c2dbb0eb20e02f4878c",
+      "0b5529acdecb716027feb922",
+      "5f297a24e0f39bc216f755c3",
+      "bb4c17d2b383623eabd57d7e",
+      "01315925b41205f7cb8e2aec",
+      "8d5240d91816ba093eca243b",
+      "04f792d71749302bac03ec9c",
+      "220d436ec55f4964a6048667",
+      "6c941b393d836c7bb0f1519c",
+      "ac5ff5a5b6d3a080f101517d",
+      "23f6e1c8519c6149190c7e16",
+      "9aacfce295dca17f161288f8",
+      "edebfa48ebe1469ce388b938",
+      "7330c4e3ff4cf5d4982fa819",
+      "878bd08fd8f7da849811f0ed",
+      "188e730fec92795c38fed703",
+      "bf6f365f231fb8c476084e5f",
+      "8b1d27c3b567a7631ae49c5c",
+      "2249d9f63c1135ef1a6c3d59",
+      "2de2ee0d5125d2000ec517aa",
+      "44e77aa7cafe7036564869d3",
+      "f6225657045774ad8a754203",
+      "550b4c9a00cd651c8e3b63c4",
+      "33aeed6148e59bc4868c5551",
+      "ec543391301154c0d07920db",
+      "783ac14fc80f8535d80e6177",
+      "43ebfbc74c971a563e37d2e3",
+      "96c1c43285c65279aea4d5bb",
+      "c4544d1a31f2a059914706f4",
+      "6e2a14acf03af5d98a622024",
+      "92e7de3c2049bf1d7485fb9a",
+      "b06fc060d7b44333a79b7dfb",
+      "ba6da724821c68c1e39be1a1",
+      "17f757e16da1bc57909b46ec",
+      "6234e871eb4b3e2aadfb6165",
+      "87eb57ef3e2faebd8df5d934",
+      "a287102b2f93b9fcea02bb24",
+      "dc6d4f43517c363bf4c26f29",
+      "bff222052c9ca5b662e90d63",
+      "27456d43f96af63b05e98c34",
+      "7669ead329c90ca9e58f101f",
+      "79e1c81804aee8c9cc560d46"
+    ],
+    "teacher_parameters": {
+      "neural_parameters": 88800,
+      "parameter_bytes": 355200,
+      "teacher_byte_targets": 307200,
+      "context": "causal local byte windows, fixed early head and patch-conditioned head"
+    },
+    "objective": "conditional frozen neural patch code; no mathematical structure metrics"
+  }
+]

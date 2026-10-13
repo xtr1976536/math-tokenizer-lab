@@ -1,0 +1,9 @@
+{
+  "status": "exploratory completed; pending success gate analysis",
+  "metric_records": 222,
+  "result_rows": 151552,
+  "capacities": [
+    1024,
+    2048
+  ]
+}

@@ -15,7 +15,9 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     folder=ROOT/'experiments/stage2';runs={};review=[]
     for p in sorted(folder.glob('pilot*')):
-        if not (p/'completion.json').exists():continue
+        # Later neural/deployment experiments have their own manifest schema
+        # and are reviewed by review_stage2_continuation.py.
+        if not (p/'completion.json').exists() or not (p/'run_manifest.json').exists():continue
         manifest=json.loads((p/'run_manifest.json').read_text());freeze=json.loads((p/'freeze.json').read_text())
         for path,digest in manifest['source_sha256'].items():assert sha(p/'source_snapshot'/path)==digest
         for path,digest in freeze['model_sha256'].items():assert sha(p/path)==digest

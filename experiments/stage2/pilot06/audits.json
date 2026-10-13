@@ -1,0 +1,35 @@
+[
+  {
+    "round": 1,
+    "passed": true,
+    "scope": "ID/source-paper isolation; old public tests excluded; number-theory source exclusion",
+    "counts": {
+      "fit": 4096,
+      "reward": 512,
+      "dev": 512,
+      "internal_eval": 1024,
+      "domain_ood": 512
+    },
+    "papers": {
+      "fit": 102,
+      "reward": 31,
+      "dev": 19,
+      "internal_eval": 20,
+      "domain_ood": 19
+    },
+    "freshness": "new source-disjoint internal partition of previously available training data, not fresh external evidence"
+  },
+  {
+    "round": 2,
+    "passed": true,
+    "native_reference_serialization_checks": 2016,
+    "scope": "generic primitive protection and exact DP; source-hashed save/load; seeded models unchanged"
+  },
+  {
+    "round": 3,
+    "passed": true,
+    "scope": "full row/paper/scope/fidelity aggregation; equal oracle budgets and teacher; frozen model/catalog hashes",
+    "result_rows": 151552,
+    "metric_records": 222
+  }
+]

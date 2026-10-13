@@ -10,6 +10,14 @@ data-discovered units. None has passed both the low-intervention and excellent
 deployment-quality requirements; the seven production systems below stay frozen.
 Do not conflate statistical-router learning gains with deployed tokenizer quality.
 
+The [continuation report](experiments/stage2/CONTINUATION_REPORT.md) adds five
+executed experiments: causal neural feedback, deployment-consistent cost learning,
+fit-discovered paired-byte scopes, statistical merge trees and fast distillation.
+The neural-router gains survive the equal-rate search controls on internal probes;
+deployed systems still fail the original joint quality gate at 1,024/2,048 IDs.
+See `requirements-stage2.lock.txt` for optional PyTorch runtime dependencies and
+`scripts/review_stage2_continuation.py` for independent full archive replay.
+
 | Current system | Role | Vocabulary |
 |---|---|---|
 | Boundary AST | Source structure and parameter-boundary segmentation | 1,024 / 2,048 IDs |

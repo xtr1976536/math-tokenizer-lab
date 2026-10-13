@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-13T07:00:58.294469+00:00",
+  "models": {
+    "models/raw_distilled_signal.npz": "8381e5885260edf98aff154b84c5bdf5b7dfb175cd3bf0d55627db69a96d23ea",
+    "models/minimal_prior_distilled_signal.npz": "91d87151e0a57bf9495740f603a0fbf3cd91a8ee3f918f42c2188d68cc1e28f4",
+    "models/raw_no_signal.npz": "bc858031b61db16ecd7105d93aa7b5ba9eaaaa6351b5ff859597f48e0f0fc2cc",
+    "models/minimal_prior_no_signal.npz": "33bf83898c3ca79acdac89cea8c4ac865a45ac74b71e6209327cb1c2fc92fe4f"
+  },
+  "selected_before_test": true
+}
