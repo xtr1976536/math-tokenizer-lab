@@ -1,0 +1,110 @@
+[
+  {
+    "seed": 17,
+    "control": "random_search",
+    "relative_byte_loss_improvement": 0.018068320633752077,
+    "left_minus_right_paper_bpb": -0.0706753381762438,
+    "paper_cluster_ci95": [
+      -0.09989614625354334,
+      -0.04494804673509962
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  },
+  {
+    "seed": 17,
+    "control": "cem_search",
+    "relative_byte_loss_improvement": 0.019909183554304377,
+    "left_minus_right_paper_bpb": -0.07802225692116645,
+    "paper_cluster_ci95": [
+      -0.10192717259509229,
+      -0.05566699861353924
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  },
+  {
+    "seed": 17,
+    "control": "no_update",
+    "relative_byte_loss_improvement": 0.016717446160024685,
+    "left_minus_right_paper_bpb": -0.0653014729780251,
+    "paper_cluster_ci95": [
+      -0.08992312910495394,
+      -0.04276747274382352
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  },
+  {
+    "seed": 29,
+    "control": "random_search",
+    "relative_byte_loss_improvement": 0.017944854590621118,
+    "left_minus_right_paper_bpb": -0.07020310531598675,
+    "paper_cluster_ci95": [
+      -0.08688985172046841,
+      -0.05258390248599366
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  },
+  {
+    "seed": 29,
+    "control": "cem_search",
+    "relative_byte_loss_improvement": 0.020159820497132497,
+    "left_minus_right_paper_bpb": -0.07904668678236343,
+    "paper_cluster_ci95": [
+      -0.09814030500683076,
+      -0.059016819047928555
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  },
+  {
+    "seed": 29,
+    "control": "no_update",
+    "relative_byte_loss_improvement": 0.01777233084528118,
+    "left_minus_right_paper_bpb": -0.06951595287581604,
+    "paper_cluster_ci95": [
+      -0.08424531271818596,
+      -0.05315843803892204
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  },
+  {
+    "seed": 43,
+    "control": "random_search",
+    "relative_byte_loss_improvement": 0.023823049290079834,
+    "left_minus_right_paper_bpb": -0.09347748729117657,
+    "paper_cluster_ci95": [
+      -0.10879253950090441,
+      -0.07971268108380727
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  },
+  {
+    "seed": 43,
+    "control": "cem_search",
+    "relative_byte_loss_improvement": 0.022864907039437887,
+    "left_minus_right_paper_bpb": -0.08962993030287353,
+    "paper_cluster_ci95": [
+      -0.1087197735331008,
+      -0.07118543915081191
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  },
+  {
+    "seed": 43,
+    "control": "no_update",
+    "relative_byte_loss_improvement": 0.022276929411095603,
+    "left_minus_right_paper_bpb": -0.08727255593101506,
+    "paper_cluster_ci95": [
+      -0.09975024304644199,
+      -0.07497987451239466
+    ],
+    "papers": 19,
+    "multiplicity": "exploratory unadjusted interval; not confirmatory significance"
+  }
+]

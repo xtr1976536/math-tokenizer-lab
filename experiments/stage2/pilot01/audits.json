@@ -1,0 +1,36 @@
+[
+  {
+    "round": 1,
+    "passed": true,
+    "scope": "ID/source-paper isolation; old public tests excluded; number-theory source exclusion",
+    "counts": {
+      "fit": 4096,
+      "reward": 512,
+      "dev": 512,
+      "internal_eval": 1024,
+      "domain_ood": 512
+    },
+    "papers": {
+      "fit": 102,
+      "reward": 31,
+      "dev": 19,
+      "internal_eval": 20,
+      "domain_ood": 19
+    },
+    "freshness": "new source-disjoint internal partition of previously available training data, not fresh external evidence"
+  },
+  {
+    "round": 2,
+    "passed": true,
+    "native_reference_and_serialization_probes": 1156,
+    "scope": "native/python exact path and roundtrip; source-hashed serialization; pytest covers causality and exact expected gradient"
+  },
+  {
+    "round": 3,
+    "passed": true,
+    "scope": "all per-formula count and paper-macro aggregates; scope recall; raw fidelity; equal oracle budgets; identical predictor; interleaved public timings; frozen hashes",
+    "result_rows": 49152,
+    "metric_records": 72,
+    "catalog_unchanged": true
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "completed_utc": "2026-10-13T06:14:14.788134+00:00",
+  "seconds": 56.06155504100025,
+  "models": 40,
+  "metric_records": 120,
+  "status": "exploratory completed; success requires separate gate evaluation and confirmatory evidence"
+}

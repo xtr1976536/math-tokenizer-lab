@@ -2,6 +2,14 @@
 
 This repository contains **two active mathematical tokenizer routes** and **five baseline tokenizers**, a classified formula-only benchmark, audited intrinsic experiments, and an academic Beamer presentation. Downstream language-model training has not started.
 
+Stage 2 is now an isolated exploratory branch of the research, available in
+[`experiments/stage2/REPORT.md`](experiments/stage2/REPORT.md), with the protocol in
+[`docs/stage2_protocol.md`](docs/stage2_protocol.md). Four executed pilots test
+annotation-free raw-byte signals, causal boundary RL, exact predictive paths and
+data-discovered units. None has passed both the low-intervention and excellent
+deployment-quality requirements; the seven production systems below stay frozen.
+Do not conflate statistical-router learning gains with deployed tokenizer quality.
+
 | Current system | Role | Vocabulary |
 |---|---|---|
 | Boundary AST | Source structure and parameter-boundary segmentation | 1,024 / 2,048 IDs |

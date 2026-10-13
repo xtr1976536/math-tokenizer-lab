@@ -1,0 +1,2812 @@
+{
+  "status": "exploratory; no stage-2 success or production promotion",
+  "pilots": {
+    "pilot01": {
+      "deployment_gates": [
+        {
+          "method": "zero_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8288606519005928
+        },
+        {
+          "method": "entropy_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9538932365049217
+        },
+        {
+          "method": "surprise_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9988843901604447
+        },
+        {
+          "method": "distribution_change_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9566805404333243
+        },
+        {
+          "method": "shuffled_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0296084102387146
+        },
+        {
+          "method": "boundary_rl_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.7969936240915059
+        },
+        {
+          "method": "random_search_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9197733089289226
+        },
+        {
+          "method": "cem_search_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.011391582034486
+        },
+        {
+          "method": "no_update_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0437551227707105
+        },
+        {
+          "method": "boundary_rl_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9823934820965101
+        },
+        {
+          "method": "random_search_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0328819913367537
+        },
+        {
+          "method": "cem_search_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0085315456177564
+        },
+        {
+          "method": "no_update_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9975152583767766
+        },
+        {
+          "method": "boundary_rl_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.998886455730445
+        },
+        {
+          "method": "random_search_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8995890270722142
+        },
+        {
+          "method": "cem_search_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9352347739191693
+        },
+        {
+          "method": "no_update_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9656729765996965
+        },
+        {
+          "method": "zero_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0690780855445494
+        },
+        {
+          "method": "entropy_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.16838589497751
+        },
+        {
+          "method": "surprise_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.1936547854639965
+        },
+        {
+          "method": "distribution_change_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.1841102285677128
+        },
+        {
+          "method": "shuffled_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2207894871321368
+        },
+        {
+          "method": "boundary_rl_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.7191141467297306
+        },
+        {
+          "method": "random_search_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.9374602991784766
+        },
+        {
+          "method": "cem_search_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0678166329950973
+        },
+        {
+          "method": "no_update_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.134242082848036
+        },
+        {
+          "method": "boundary_rl_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2235219990582893
+        },
+        {
+          "method": "random_search_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.222248874885711
+        },
+        {
+          "method": "cem_search_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.359181141326071
+        },
+        {
+          "method": "no_update_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.241913283131414
+        },
+        {
+          "method": "boundary_rl_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.182350361656738
+        },
+        {
+          "method": "random_search_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.3085497982154255
+        },
+        {
+          "method": "cem_search_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2218860743430087
+        },
+        {
+          "method": "no_update_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2149840121189817
+        }
+      ],
+      "learning_proxy": {
+        "random_search": {
+          "relative_bpb_improvement_percent": [
+            0.5212174949873583,
+            0.65189560261254,
+            0.8272862854406537
+          ],
+          "all_seeds_above_1_percent": false,
+          "all_exploratory_paper_intervals_negative": true
+        },
+        "cem_search": {
+          "relative_bpb_improvement_percent": [
+            0.7250026442222945,
+            0.7687202222989686,
+            0.8379417006053602
+          ],
+          "all_seeds_above_1_percent": false,
+          "all_exploratory_paper_intervals_negative": true
+        },
+        "no_update": {
+          "relative_bpb_improvement_percent": [
+            0.4630853978057847,
+            0.6344425022004274,
+            0.6702113780528207
+          ],
+          "all_seeds_above_1_percent": false,
+          "all_exploratory_paper_intervals_negative": true
+        }
+      },
+      "models": 24,
+      "metrics": 72,
+      "rows": 49152,
+      "all_fidelity_passed": true,
+      "successful_stage2_models": []
+    },
+    "pilot02": {
+      "deployment_gates": [
+        {
+          "method": "zero_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8549506774610367
+        },
+        {
+          "method": "entropy_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9418220826082233
+        },
+        {
+          "method": "surprise_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9572089469976837
+        },
+        {
+          "method": "distribution_change_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.953862614315558
+        },
+        {
+          "method": "shuffled_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.7015975795081464
+        },
+        {
+          "method": "predictive_path",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.05259378717265761,
+          "encode_ratio_vs_ast": 1.0092770537547728
+        },
+        {
+          "method": "boundary_rl_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.7657770971398585
+        },
+        {
+          "method": "random_search_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9728436308739796
+        },
+        {
+          "method": "cem_search_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9056205433044753
+        },
+        {
+          "method": "no_update_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.005751116177836
+        },
+        {
+          "method": "boundary_rl_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9557010703886524
+        },
+        {
+          "method": "random_search_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9674898496290918
+        },
+        {
+          "method": "cem_search_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9886408194252438
+        },
+        {
+          "method": "no_update_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9658828811974143
+        },
+        {
+          "method": "boundary_rl_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9211654771246978
+        },
+        {
+          "method": "random_search_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9379499828635796
+        },
+        {
+          "method": "cem_search_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8868929673607897
+        },
+        {
+          "method": "no_update_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8217452593103383
+        },
+        {
+          "method": "zero_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.9129977680247954
+        },
+        {
+          "method": "entropy_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0159293972105665
+        },
+        {
+          "method": "surprise_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.07274973305953
+        },
+        {
+          "method": "distribution_change_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0754134014476215
+        },
+        {
+          "method": "shuffled_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.6520946644966115
+        },
+        {
+          "method": "predictive_path",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "tree_crossing"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.0781389832255206,
+          "encode_ratio_vs_ast": 1.0309510718258923
+        },
+        {
+          "method": "boundary_rl_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.7615672358198526
+        },
+        {
+          "method": "random_search_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.9904381360546923
+        },
+        {
+          "method": "cem_search_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0148304505485592
+        },
+        {
+          "method": "no_update_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.07491299449353
+        },
+        {
+          "method": "boundary_rl_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0873271636736312
+        },
+        {
+          "method": "random_search_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0854735911305404
+        },
+        {
+          "method": "cem_search_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.1857755894705195
+        },
+        {
+          "method": "no_update_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.1946956146500143
+        },
+        {
+          "method": "boundary_rl_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2040635030067746
+        },
+        {
+          "method": "random_search_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.156380161471994
+        },
+        {
+          "method": "cem_search_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.1314500850492215
+        },
+        {
+          "method": "no_update_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.1543975829217965
+        }
+      ],
+      "learning_proxy": {
+        "random_search": {
+          "relative_bpb_improvement_percent": [
+            1.8068320633752077,
+            1.7944854590621118,
+            2.3823049290079834
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        },
+        "cem_search": {
+          "relative_bpb_improvement_percent": [
+            1.9909183554304377,
+            2.0159820497132497,
+            2.2864907039437887
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        },
+        "no_update": {
+          "relative_bpb_improvement_percent": [
+            1.6717446160024685,
+            1.7772330845281181,
+            2.2276929411095603
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        }
+      },
+      "models": 25,
+      "metrics": 75,
+      "rows": 51200,
+      "all_fidelity_passed": true,
+      "successful_stage2_models": []
+    },
+    "pilot03": {
+      "deployment_gates": [
+        {
+          "method": "zero_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.957322407391194
+        },
+        {
+          "method": "entropy_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0402870600320795
+        },
+        {
+          "method": "surprise_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.095616125335539
+        },
+        {
+          "method": "distribution_change_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0500820556999293
+        },
+        {
+          "method": "shuffled_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0887253690124967
+        },
+        {
+          "method": "predictive_path",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.05259378717265761,
+          "encode_ratio_vs_ast": 1.1655416986588343
+        },
+        {
+          "method": "entropy_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.09731994023944646,
+          "encode_ratio_vs_ast": 0.22653254154105468
+        },
+        {
+          "method": "surprise_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.14889097924795802,
+          "encode_ratio_vs_ast": 0.21954706984123543
+        },
+        {
+          "method": "distribution_change_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.15446773712539597,
+          "encode_ratio_vs_ast": 0.1922558092383114
+        },
+        {
+          "method": "boundary_rl_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8783472202861977
+        },
+        {
+          "method": "boundary_rl_17_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.14359711840686273,
+          "encode_ratio_vs_ast": 0.2204734863665751
+        },
+        {
+          "method": "random_search_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.861547111717876
+        },
+        {
+          "method": "random_search_17_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.1498565783671706,
+          "encode_ratio_vs_ast": 0.21100620893495267
+        },
+        {
+          "method": "cem_search_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.7759139764265044
+        },
+        {
+          "method": "cem_search_17_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.1495801414697162,
+          "encode_ratio_vs_ast": 0.21173680580581342
+        },
+        {
+          "method": "no_update_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.79003397560523
+        },
+        {
+          "method": "no_update_17_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.19744418305911404,
+          "encode_ratio_vs_ast": 0.1689681980973466
+        },
+        {
+          "method": "boundary_rl_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.812633779034674
+        },
+        {
+          "method": "boundary_rl_29_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.1343594400470669,
+          "encode_ratio_vs_ast": 0.21827290001844504
+        },
+        {
+          "method": "random_search_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8311969135878028
+        },
+        {
+          "method": "random_search_29_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.13751308388759353,
+          "encode_ratio_vs_ast": 0.2112203463362373
+        },
+        {
+          "method": "cem_search_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.7906148187418038
+        },
+        {
+          "method": "cem_search_29_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.14191134665815297,
+          "encode_ratio_vs_ast": 0.21404254936198602
+        },
+        {
+          "method": "no_update_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8642089093500087
+        },
+        {
+          "method": "no_update_29_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.19744418305911404,
+          "encode_ratio_vs_ast": 0.1700173800371703
+        },
+        {
+          "method": "boundary_rl_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8142271759055162
+        },
+        {
+          "method": "boundary_rl_43_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.1285961192883429,
+          "encode_ratio_vs_ast": 0.21553747107104482
+        },
+        {
+          "method": "random_search_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8289639385916368
+        },
+        {
+          "method": "random_search_43_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.134661508122087,
+          "encode_ratio_vs_ast": 0.21532103221299698
+        },
+        {
+          "method": "cem_search_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.7910685954871979
+        },
+        {
+          "method": "cem_search_43_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.15510150730640837,
+          "encode_ratio_vs_ast": 0.21357093835258514
+        },
+        {
+          "method": "no_update_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8031317976719767
+        },
+        {
+          "method": "no_update_43_learned_units",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.19744418305911404,
+          "encode_ratio_vs_ast": 0.16956747083751794
+        },
+        {
+          "method": "zero_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.9240679946622117
+        },
+        {
+          "method": "entropy_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0620960807911195
+        },
+        {
+          "method": "surprise_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.1587836345049354
+        },
+        {
+          "method": "distribution_change_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.226921779039138
+        },
+        {
+          "method": "shuffled_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2416218778272823
+        },
+        {
+          "method": "predictive_path",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "tree_crossing"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.0781389832255206,
+          "encode_ratio_vs_ast": 1.0280045330074974
+        },
+        {
+          "method": "entropy_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.10456410833630736,
+          "encode_ratio_vs_ast": 0.22958655012363094
+        },
+        {
+          "method": "surprise_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.16160904444625923,
+          "encode_ratio_vs_ast": 0.22205866044615546
+        },
+        {
+          "method": "distribution_change_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.18372313797321382,
+          "encode_ratio_vs_ast": 0.1804317147327293
+        },
+        {
+          "method": "boundary_rl_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8792128762721763
+        },
+        {
+          "method": "boundary_rl_17_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.16941413222968116,
+          "encode_ratio_vs_ast": 0.21109560480868797
+        },
+        {
+          "method": "random_search_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.928575914803127
+        },
+        {
+          "method": "random_search_17_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.176702261094706,
+          "encode_ratio_vs_ast": 0.20390477514730002
+        },
+        {
+          "method": "cem_search_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8911161032028148
+        },
+        {
+          "method": "cem_search_17_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.14596732452212713,
+          "encode_ratio_vs_ast": 0.20750920047218707
+        },
+        {
+          "method": "no_update_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.918360969968498
+        },
+        {
+          "method": "no_update_17_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.2087061309594207,
+          "encode_ratio_vs_ast": 0.15231746381150718
+        },
+        {
+          "method": "boundary_rl_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8232080578892393
+        },
+        {
+          "method": "boundary_rl_29_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.14478481644136276,
+          "encode_ratio_vs_ast": 0.21149992975923163
+        },
+        {
+          "method": "random_search_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8249248188131637
+        },
+        {
+          "method": "random_search_29_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.15299615595151428,
+          "encode_ratio_vs_ast": 0.20526532312515866
+        },
+        {
+          "method": "cem_search_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8698989644978952
+        },
+        {
+          "method": "cem_search_29_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.15015370384573656,
+          "encode_ratio_vs_ast": 0.21145381808857147
+        },
+        {
+          "method": "no_update_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.860676877654858
+        },
+        {
+          "method": "no_update_29_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.2087061309594207,
+          "encode_ratio_vs_ast": 0.1540817393997468
+        },
+        {
+          "method": "boundary_rl_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8352818418356402
+        },
+        {
+          "method": "boundary_rl_43_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.16108750710750108,
+          "encode_ratio_vs_ast": 0.20933865697893328
+        },
+        {
+          "method": "random_search_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.7905208599245583
+        },
+        {
+          "method": "random_search_43_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.13939154967473888,
+          "encode_ratio_vs_ast": 0.20495094624716417
+        },
+        {
+          "method": "cem_search_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8810336409348518
+        },
+        {
+          "method": "cem_search_43_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.15369460567725413,
+          "encode_ratio_vs_ast": 0.20712630433810322
+        },
+        {
+          "method": "no_update_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8418762862726612
+        },
+        {
+          "method": "no_update_43_learned_units",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.2087061309594207,
+          "encode_ratio_vs_ast": 0.15664875463750547
+        }
+      ],
+      "learning_proxy": {
+        "random_search": {
+          "relative_bpb_improvement_percent": [
+            1.8068320633752077,
+            1.7944854590621118,
+            2.3823049290079834
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        },
+        "cem_search": {
+          "relative_bpb_improvement_percent": [
+            1.9909183554304377,
+            2.0159820497132497,
+            2.2864907039437887
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        },
+        "no_update": {
+          "relative_bpb_improvement_percent": [
+            1.6717446160024685,
+            1.7772330845281181,
+            2.2276929411095603
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        }
+      },
+      "models": 40,
+      "metrics": 120,
+      "rows": 81920,
+      "all_fidelity_passed": true,
+      "successful_stage2_models": []
+    },
+    "pilot04": {
+      "deployment_gates": [
+        {
+          "method": "zero_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8180656887699447
+        },
+        {
+          "method": "entropy_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8967254402227298
+        },
+        {
+          "method": "surprise_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9299978652623395
+        },
+        {
+          "method": "distribution_change_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9350583532541745
+        },
+        {
+          "method": "shuffled_signal",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.96775441241172
+        },
+        {
+          "method": "predictive_path",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.05259378717265761,
+          "encode_ratio_vs_ast": 1.0465084403184928
+        },
+        {
+          "method": "context_units_bpe",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.13889046549401196,
+          "encode_ratio_vs_ast": 0.19651351798749142
+        },
+        {
+          "method": "context_units_fast",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.11228153533969176,
+          "encode_ratio_vs_ast": 1.6471604427623365
+        },
+        {
+          "method": "context_units_predictive",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.11805764418476472,
+          "encode_ratio_vs_ast": 1.066033119805187
+        },
+        {
+          "method": "boundary_rl_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.798632401326794
+        },
+        {
+          "method": "random_search_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.8203078578981866
+        },
+        {
+          "method": "cem_search_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.997904646186382
+        },
+        {
+          "method": "no_update_17",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.985509006967036
+        },
+        {
+          "method": "boundary_rl_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9366127497050445
+        },
+        {
+          "method": "random_search_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9824150426781533
+        },
+        {
+          "method": "cem_search_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0116033717708564
+        },
+        {
+          "method": "no_update_29",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0087766995589282
+        },
+        {
+          "method": "boundary_rl_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.0100131593792927
+        },
+        {
+          "method": "random_search_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 2.051916598592018
+        },
+        {
+          "method": "cem_search_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9946822392514092
+        },
+        {
+          "method": "no_update_43",
+          "suite": "internal_eval",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.047404733562865564,
+          "encode_ratio_vs_ast": 1.9958137086808607
+        },
+        {
+          "method": "zero_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0244385679013113
+        },
+        {
+          "method": "entropy_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.156080804091206
+        },
+        {
+          "method": "surprise_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2334686320081345
+        },
+        {
+          "method": "distribution_change_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2714362558856775
+        },
+        {
+          "method": "shuffled_signal",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2327353131586447
+        },
+        {
+          "method": "predictive_path",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "tree_crossing"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.0781389832255206,
+          "encode_ratio_vs_ast": 1.0827510218312788
+        },
+        {
+          "method": "context_units_bpe",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "lexical_boundary_f1",
+            "tree_crossing",
+            "speed"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.15163163196244178,
+          "encode_ratio_vs_ast": 0.20278713744947244
+        },
+        {
+          "method": "context_units_fast",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.11772892818003067,
+          "encode_ratio_vs_ast": 1.7315738602661204
+        },
+        {
+          "method": "context_units_predictive",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "independent_scope_boundary_recall"
+          ],
+          "substantial_gain": false,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.12131046614072827,
+          "encode_ratio_vs_ast": 1.0695785207565407
+        },
+        {
+          "method": "boundary_rl_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 1.8202764839372982
+        },
+        {
+          "method": "random_search_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.0415730896742277
+        },
+        {
+          "method": "cem_search_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2924552032346246
+        },
+        {
+          "method": "no_update_17",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.2259868096124955
+        },
+        {
+          "method": "boundary_rl_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.3209603691382963
+        },
+        {
+          "method": "random_search_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.347142554231362
+        },
+        {
+          "method": "cem_search_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.3237243331440456
+        },
+        {
+          "method": "no_update_29",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.400051199743337
+        },
+        {
+          "method": "boundary_rl_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.353217267960722
+        },
+        {
+          "method": "random_search_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.4025899845724155
+        },
+        {
+          "method": "cem_search_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.3491623445676653
+        },
+        {
+          "method": "no_update_43",
+          "suite": "domain_ood",
+          "failures": [
+            "compression",
+            "command_integrity",
+            "lexical_boundary_f1",
+            "tree_crossing"
+          ],
+          "substantial_gain": true,
+          "deployment_gate_passed": false,
+          "token_byte_regression_vs_ast": 0.07085109213294927,
+          "encode_ratio_vs_ast": 2.3425042918140595
+        }
+      ],
+      "learning_proxy": {
+        "random_search": {
+          "relative_bpb_improvement_percent": [
+            1.8068320633752077,
+            1.7944854590621118,
+            2.3823049290079834
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        },
+        "cem_search": {
+          "relative_bpb_improvement_percent": [
+            1.9909183554304377,
+            2.0159820497132497,
+            2.2864907039437887
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        },
+        "no_update": {
+          "relative_bpb_improvement_percent": [
+            1.6717446160024685,
+            1.7772330845281181,
+            2.2276929411095603
+          ],
+          "all_seeds_above_1_percent": true,
+          "all_exploratory_paper_intervals_negative": true
+        }
+      },
+      "models": 28,
+      "metrics": 84,
+      "rows": 57344,
+      "all_fidelity_passed": true,
+      "successful_stage2_models": []
+    }
+  },
+  "independent_replay": [
+    {
+      "pilot": "pilot01",
+      "source_snapshots_match": true,
+      "frozen_models_match": true,
+      "independent_rows_checked": 49152,
+      "metric_records": 72,
+      "zero_signal_deployed_variants": [
+        "boundary_rl_17",
+        "boundary_rl_29",
+        "boundary_rl_43",
+        "cem_search_17",
+        "cem_search_29",
+        "cem_search_43",
+        "distribution_change_signal",
+        "entropy_signal",
+        "no_update_17",
+        "no_update_29",
+        "no_update_43",
+        "random_search_17",
+        "random_search_29",
+        "random_search_43",
+        "shuffled_signal",
+        "surprise_signal",
+        "zero_signal"
+      ]
+    },
+    {
+      "pilot": "pilot02",
+      "source_snapshots_match": true,
+      "frozen_models_match": true,
+      "independent_rows_checked": 51200,
+      "metric_records": 75,
+      "zero_signal_deployed_variants": [
+        "boundary_rl_17",
+        "boundary_rl_29",
+        "boundary_rl_43",
+        "cem_search_17",
+        "cem_search_29",
+        "cem_search_43",
+        "distribution_change_signal",
+        "entropy_signal",
+        "no_update_17",
+        "no_update_29",
+        "no_update_43",
+        "random_search_17",
+        "random_search_29",
+        "random_search_43",
+        "shuffled_signal",
+        "surprise_signal",
+        "zero_signal"
+      ]
+    },
+    {
+      "pilot": "pilot03",
+      "source_snapshots_match": true,
+      "frozen_models_match": true,
+      "independent_rows_checked": 81920,
+      "metric_records": 120,
+      "zero_signal_deployed_variants": [
+        "boundary_rl_17",
+        "boundary_rl_29",
+        "boundary_rl_43",
+        "cem_search_17",
+        "cem_search_29",
+        "cem_search_43",
+        "distribution_change_signal",
+        "entropy_signal",
+        "no_update_17",
+        "no_update_29",
+        "no_update_43",
+        "random_search_17",
+        "random_search_29",
+        "random_search_43",
+        "shuffled_signal",
+        "surprise_signal",
+        "zero_signal"
+      ]
+    },
+    {
+      "pilot": "pilot04",
+      "source_snapshots_match": true,
+      "frozen_models_match": true,
+      "independent_rows_checked": 57344,
+      "metric_records": 84,
+      "zero_signal_deployed_variants": [
+        "boundary_rl_17",
+        "boundary_rl_29",
+        "boundary_rl_43",
+        "cem_search_17",
+        "cem_search_29",
+        "cem_search_43",
+        "context_units_fast",
+        "distribution_change_signal",
+        "entropy_signal",
+        "no_update_17",
+        "no_update_29",
+        "no_update_43",
+        "random_search_17",
+        "random_search_29",
+        "random_search_43",
+        "shuffled_signal",
+        "surprise_signal",
+        "zero_signal"
+      ]
+    }
+  ],
+  "confirmed_success": false,
+  "limitations": [
+    "same internal scopes reused adaptively",
+    "statistical predictors only; no neural world model",
+    "raw-router gains not preserved by deployable lattice projection",
+    "3 seeds, 1 ID capacity, 1 machine",
+    "source-domain exclusion does not guarantee concept exclusion"
+  ]
+}
