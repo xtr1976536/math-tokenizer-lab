@@ -6,6 +6,7 @@ from transformers import GPT2Config,GPT2LMHeadModel
 from math_tokenizer.downstream_gpt2.phases import PHASES,PROPOSED,FORMAL,configure_model,parameter_digest,extract_answer,prompt_text,save_checkpoint
 from math_tokenizer.downstream_gpt2.train import generate_batch
 from math_tokenizer.downstream_gpt2.phase_results import aggregate
+from math_tokenizer.downstream_gpt2.results import paired_interval
 
 def test_phase_membership_and_controlled_budget():
     assert PHASES['phase1']['trained_methods']==PROPOSED
@@ -65,3 +66,8 @@ def test_phase_aggregation_rejects_different_question_sets(tmp_path):
         paths[method]=folder
     with pytest.raises(RuntimeError,match='different inputs'):
         aggregate('phase1',paths,tmp_path/'output',replicates=2)
+
+def test_numeric_variants_share_bootstrap_cluster():
+    left=[{'id':str(i),'group':'one-template','task':'integral','method':'prim_fwd','correct':True} for i in range(3)]
+    right=[{**r,'correct':False} for r in left]
+    assert paired_interval(left,right,'prim_fwd',replicates=10)['groups']==1

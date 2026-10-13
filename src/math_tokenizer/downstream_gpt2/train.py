@@ -166,7 +166,8 @@ def evaluate(model, adapter, examples, verifier, masked_ids, device, limit=None,
             else:
                 verdicts = [verifier.verify(row, candidate["text"]) if candidate.get("stopped") else "truncated"
                             for candidate in candidates]
-            results.append({"id":row["id"],"group":row["group"],"task":row["task"],
+            results.append({"id":row["id"],"group":row.get("template_group",row["group"]) if protocol=="text-v2" else row["group"],
+                            "equation_group":row["group"],"task":row["task"],
                             "method":row["method"],"predictions":candidates,
                             "verdicts":verdicts,"correct":"correct" in verdicts,
                             "latency_seconds":elapsed/len(batch),"protocol":protocol,
