@@ -96,7 +96,7 @@ def build(phase):
 Self-contained manual Kaggle package, phase `{phase}`. Local-only smoke checks are in `audits/`.
 Methods: {', '.join(PHASES[phase]['methods'])}.
 Trained methods: {', '.join(PHASES[phase]['trained_methods'])}; mode `{PHASES[phase]['mode']}`;
-**2 epochs**, effective batch 32, seeds 11/23/37. Full training starts from the same pinned PRETRAINED GPT-2, not random initialization.
+**2 epochs**, effective batch 32, one training seed: 11. Full training starts from the same pinned PRETRAINED GPT-2, not random initialization.
 
 {native_note}
 
@@ -114,7 +114,7 @@ All data-generation and model source licenses are retained in the resource bundl
    `kaggle datasets create -p dataset -t` (use `datasets version` if the dataset already exists).
 2. Submit `kaggle kernels push -p kernels/smoke`. Check logs and successful completion.
 3. Submit `kaggle kernels push -p kernels/data`; wait for the CPU job and audits to complete.
-4. Submit each directory under `kernels/train/`. Complete all trained methods/three seeds before test jobs.
+4. Submit each directory under `kernels/train/`. Complete all trained methods with seed 11 before test jobs.
 5. Submit every directory under `kernels/evaluate/` (including the zero-shot native row in phase1), then `kernels/aggregate`.
 6. Download `final_results.json` and `metrics.csv` from the aggregate job. Check input/suite hashes before interpretation.
 
@@ -126,6 +126,7 @@ The task ODE generator is the explicitly documented linear-in-constant subfamily
 Stage1 is a preliminary capability experiment; stage2 provides an equal adaptation protocol among the seven systems.
 Large pretrained tokenizer vocabularies have different embedding parameter counts and softmax costs: they are deployment references,
 not equal-total-parameter controls. LoRA reduces backbone optimizer updates but does not remove vocabulary projection or evaluation costs.
+With one training seed per method, the results cannot estimate variation across training seeds; paired intervals describe question-group uncertainty only.
 The local 2026-10-14 budget test is recorded in `audits/phase1_timing.json` in Phase 1. It did not establish a
 4–5-hour end-to-end Kaggle runtime; this bundle has been prepared for manual submission, not automatically run.
 '''

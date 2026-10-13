@@ -19,6 +19,7 @@ def main():
             assert z.testzip() is None
             spec=json.loads(z.read(prefix+'EXPERIMENT.json'))
             jobs=json.loads(z.read(prefix+'jobs.json'))
+            assert spec['seeds']==[11]
             assert len(jobs)==(8 if phase=='phase1' else 17)
             assert not any('/train-gpt2-native' in j['id'] for j in jobs)
             with z.open(prefix+'dataset/project_bundle.tar.gz') as f:
@@ -36,6 +37,7 @@ def main():
             assert not any('formula_only' in n or 'kaggle.json' in n for n in names)
             if phase=='phase1':assert not any('/models/baselines/' in n for n in files)
         project=extraction/'math_tokenizer_project'
+        assert json.loads((project/'phase_spec.json').read_text())['seeds']==[11]
         registry=json.loads((project/'models/registry.json').read_text())
         assert set(registry['models'])==set(spec['trained_methods'])
         env=dict(os.environ,PYTHONPATH=str(project/'src'),TIKTOKEN_CACHE_DIR=str(project/'tiktoken_cache'),TASK_PHASE=phase,TASK_PROJECT=str(project),TASK_OUTPUT=str(extraction/'smoke'))
@@ -45,9 +47,10 @@ from math_tokenizer.downstream_gpt2.data import generate
 from math_tokenizer.downstream_gpt2.orchestrate import assemble
 from math_tokenizer.downstream_gpt2.audit import dataset_audit
 from math_tokenizer.downstream_gpt2.phase_runtime import audit_adapters
-from math_tokenizer.downstream_gpt2.phases import PHASES,freeze_coverage,PhaseAdapter,load_checkpoint,parameter_digest
+from math_tokenizer.downstream_gpt2.phases import PHASES,SEEDS,freeze_coverage,PhaseAdapter,load_checkpoint,parameter_digest
 from math_tokenizer.downstream_gpt2.train import train_one,generate_one
 phase=os.environ['TASK_PHASE'];project=Path(os.environ['TASK_PROJECT']);out=Path(os.environ['TASK_OUTPUT'])
+assert SEEDS==(11,)
 source=project/'tmp/SymbolicMathematics';gpt2=project/'tmp/gpt2-607a30d';raw=out/'raw';data=out/'final'
 asset=json.loads((project/'asset_manifest.json').read_text())
 assert hashlib.sha256((gpt2/'model.safetensors').read_bytes()).hexdigest()==asset['gpt2_weights_sha256']

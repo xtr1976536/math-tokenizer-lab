@@ -3,7 +3,7 @@ import json,hashlib,subprocess,sys
 from pathlib import Path
 import torch
 from math_tokenizer.corpus import ROOT
-from .phases import PHASES,PhaseAdapter,freeze_coverage,load_checkpoint,parameter_digest
+from .phases import PHASES,SEEDS,PhaseAdapter,freeze_coverage,load_checkpoint,parameter_digest
 from .data import generate
 from .orchestrate import assemble
 from .ood import generate as generate_ood
@@ -19,7 +19,8 @@ def main():
     OUT.mkdir(parents=True,exist_ok=True);source=ROOT/'tmp/SymbolicMathematics';gpt2=ROOT/'tmp/gpt2-607a30d'
     report={}
     subprocess.run([sys.executable,'-m','pytest','-q'],cwd=ROOT,check=True)
-    report['round1_static']={'status':'passed','phases':PHASES,'native_training_jobs':0}
+    assert SEEDS==(11,)
+    report['round1_static']={'status':'passed','phases':PHASES,'training_seeds':SEEDS,'native_training_jobs':0}
     raw=OUT/'raw';data=OUT/'data';generate(source,raw,.001)
     assemble(raw,raw,raw,data,json.loads((raw/'manifest.json').read_text())['quotas'],source)
     audit=dataset_audit(data,source);coverage=freeze_coverage(data)

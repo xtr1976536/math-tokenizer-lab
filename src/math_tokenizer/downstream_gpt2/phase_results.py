@@ -39,7 +39,7 @@ def evaluate_method(phase,method,data,gpt2,run_folder,output,device="cuda",smoke
     for name,items in suites.items():
         if smoke_limit is not None:suites[name]=items[:smoke_limit]
         summary["suite_id_sha256"][name]=hashlib.sha256("\n".join(sorted(r["id"] for r in suites[name])).encode()).hexdigest()
-    seeds=("zero_shot",) if method=="gpt2_native" else (SEEDS if smoke_limit is None else (11,))
+    seeds=("zero_shot",) if method=="gpt2_native" else SEEDS
     summary["smoke_only"]=smoke_limit is not None
     for seed in seeds:
         adapter=PhaseAdapter(method,gpt2)

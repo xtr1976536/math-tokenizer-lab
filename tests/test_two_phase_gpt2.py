@@ -3,7 +3,7 @@ import json
 import pytest
 import torch
 from transformers import GPT2Config,GPT2LMHeadModel
-from math_tokenizer.downstream_gpt2.phases import PHASES,PROPOSED,FORMAL,configure_model,parameter_digest,extract_answer,prompt_text,save_checkpoint
+from math_tokenizer.downstream_gpt2.phases import PHASES,PROPOSED,FORMAL,SEEDS,configure_model,parameter_digest,extract_answer,prompt_text,save_checkpoint
 from math_tokenizer.downstream_gpt2.train import generate_batch
 from math_tokenizer.downstream_gpt2.phase_results import aggregate
 from math_tokenizer.downstream_gpt2.results import paired_interval
@@ -13,6 +13,7 @@ def test_phase_membership_and_controlled_budget():
     assert PHASES['phase1']['methods']==(*PROPOSED,'gpt2_native')
     assert PHASES['phase2']['methods']==FORMAL
     assert PHASES['phase1']['epochs']==PHASES['phase2']['epochs']==2
+    assert SEEDS==(11,)
 
 def test_native_uses_same_readable_prompt_and_fixed_extraction():
     p=prompt_text('integral','x')
@@ -65,6 +66,17 @@ def test_phase_aggregation_rejects_different_question_sets(tmp_path):
                 'suite_id_sha256':{},'smoke_only':False}))
         paths[method]=folder
     with pytest.raises(RuntimeError,match='different inputs'):
+        aggregate('phase1',paths,tmp_path/'output',replicates=2)
+
+def test_phase_aggregation_rejects_old_multiseed_outputs(tmp_path):
+    paths={}
+    for index,method in enumerate(PHASES['phase1']['methods']):
+        folder=tmp_path/str(index);folder.mkdir()
+        seeds={'zero_shot':{}} if method=='gpt2_native' else {'11':{},'23':{}}
+        (folder/'summary.json').write_text(json.dumps({'protocol':'same','coverage_sha256':'same',
+                'suite_id_sha256':{},'smoke_only':False,'seeds':seeds}))
+        paths[method]=folder
+    with pytest.raises(RuntimeError,match='missing seeds'):
         aggregate('phase1',paths,tmp_path/'output',replicates=2)
 
 def test_numeric_variants_share_bootstrap_cluster():

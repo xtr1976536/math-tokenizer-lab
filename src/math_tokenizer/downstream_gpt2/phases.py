@@ -10,7 +10,7 @@ from math_tokenizer.corpus import ROOT
 
 PROPOSED=METHODS[:2]
 FORMAL=METHODS[:7]
-SEEDS=(11,23,37)
+SEEDS=(11,)
 PHASES={
     "phase1":{"methods":(*PROPOSED,"gpt2_native"),"trained_methods":PROPOSED,
               "mode":"full","epochs":2,"native_role":"zero_shot_reference"},
