@@ -2,6 +2,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
+import {execFileSync} from 'node:child_process';
 const runtime='/Users/xiao/.cache/codex-runtimes/codex-primary-runtime/dependencies';
 process.env.RUNTIME_NODE_MODULES=path.join(runtime,'node/node_modules');
 const skill='/Users/xiao/.codex/plugins/cache/openai-primary-runtime/presentations/26.1011.11113/skills/presentations';
@@ -18,6 +19,10 @@ for(let i=0;i<prep.images.length;i++){
 }
 const staging=path.join(folder,'build',`artifact_export_${Date.now()}`);await fs.mkdir(staging,{recursive:true});
 const candidate=path.join(staging,'candidate.pptx');await(await PresentationFile.exportPptx(presentation)).save(candidate);
+if(prep.links?.some(items=>items.length)){
+  execFileSync(path.join(runtime,'python/bin/python3'),[path.join(root,'scripts/add_presentation_links.py'),candidate,
+    path.join(folder,'build/export_revision_input.json')],{stdio:'inherit'});
+}
 const {finalizePresentation}=await import(pathToFileURL(path.join(skill,'container_tools/artifact_tool_utils.mjs')).href);
 const final=prep.finalPptx ?? path.join(folder,'output/Design_of_a_Specialized_Tokenizer_for_Mathematical_Text_Updated.pptx');
 const result=await finalizePresentation({workspaceDir:root,candidatePath:candidate,finalPath:final,

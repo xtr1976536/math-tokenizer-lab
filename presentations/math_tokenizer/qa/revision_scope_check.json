@@ -1,55 +1,45 @@
 {
   "passed": true,
-  "unchanged_original_content_frames": "9 through44, exact source equality",
-  "cover_preamble_unchanged": true,
-  "original_deleted_frames": [
-    2,
-    6,
-    7,
-    8
+  "retained_frames_checked": [
+    "Can Mathematical Tokenization Improve Model Capability?",
+    "Study Overview",
+    "Our Two Routes: Contribution and Prior Art",
+    "Route 1: Learning a Mathematical Lexical Alphabet",
+    "Route 1: Exact Source Fidelity and Its Limits",
+    "Route 2: Source Structure as a Segmentation Cost",
+    "Route 2: Exact Dynamic Programming on a Fixed Graph",
+    "Route 2: Development Selection and Runtime Cost",
+    "Common Inputs, Training Information and Timing",
+    "Efficiency, Fidelity and Information Measures",
+    "Structure, Integrity and Robustness",
+    "Three New Review Rounds of the Retained Release",
+    "New-Paper Results: 1,024-ID Trained Vocabulary",
+    "New-Paper Results: 2,048-ID Trained Vocabulary",
+    "Strict Source-Domain Generalization",
+    "Compression Across Vocabulary Budgets",
+    "Runtime and Source-Tree Crossing",
+    "Paired Paper-Cluster Statistical Evidence",
+    "Probability Coding and Vocabulary Utilization",
+    "Current Seven-System Composite Ranking",
+    "Baseline Tokenizers",
+    "SP Unigram: Training and Inference",
+    "SP Unigram: A Two-Round EM Example"
   ],
-  "original_merged_frames": [
-    4,
-    5
+  "content_unchanged_except_citations": true,
+  "dataset_pages": 3,
+  "deleted_content_frames": [
+    18,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
   ],
-  "baseline_pages": 3,
-  "total_pdf_pages": 42,
-  "em_exact_rational_rounds": [
-    {
-      "round": 1,
-      "posterior": [
-        "1/4",
-        "3/4"
-      ],
-      "expected_counts": [
-        "1/4",
-        "1/4",
-        "3/4"
-      ],
-      "new_probabilities": [
-        "1/5",
-        "1/5",
-        "3/5"
-      ]
-    },
-    {
-      "round": 2,
-      "posterior": [
-        "1/16",
-        "15/16"
-      ],
-      "expected_counts": [
-        "1/16",
-        "1/16",
-        "15/16"
-      ],
-      "new_probabilities": [
-        "1/17",
-        "1/17",
-        "15/17"
-      ]
-    }
-  ],
-  "claim": "core intrinsic metrics and overall comparison; not universal individual-metric dominance",
-  "scope": "only requested opening content edits; subsequent footers renumbered automatically"
+  "replacement": "one Limitations and Next Steps frame",
+  "active_references": 13,
+  "total_pages": 30,
+  "citation_format": "numeric internal hyperlinks; original footer prose removed"
 }

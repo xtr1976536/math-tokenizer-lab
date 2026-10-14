@@ -54,11 +54,11 @@ Results & Our two tokenizers achieve leading performance on core intrinsic metri
 \relax
 \par\noindent{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.8}\setlength{\tabcolsep}{3pt}}\tbl\begin{tabularx}{\linewidth}{@{}L{2.4cm}L{1.5cm}L{1.7cm}>{\raggedright\arraybackslash}X@{}}\toprule
 Category & Tokenizer & Actual ID space & Code / tokenizer source\\\midrule
-Classical tokenizers & Byte BPE & 1,024 / 2,048 & \href{https://github.com/huggingface/tokenizers}{huggingface/tokenizers}\\
-Classical tokenizers & SP Unigram & 1,024 / 2,048 & \href{https://github.com/google/sentencepiece}{google/sentencepiece}\\
-General-Purpose Tokenizers & Qwen2.5 & 151,665 & \href{https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json}{Qwen2.5-0.5B/tokenizer.json}\\
-General-Purpose Tokenizers & Llama 3 & 128,256 & \href{https://github.com/meta-llama/llama3/blob/a0940f9cf7065d45bb6675660f80d305c041a754/llama/tokenizer.py}{meta-llama/llama3/tokenizer.py}\\
-General-Purpose Tokenizers & o200k & 200,019 & \href{https://github.com/openai/tiktoken}{openai/tiktoken}\\
+Classical tokenizers & Byte BPE \hyperlink{ref-bpe}{(1)} & 1,024 / 2,048 & \href{https://github.com/huggingface/tokenizers}{huggingface/tokenizers}\\
+Classical tokenizers & SP Unigram \hyperlink{ref-sentencepiece}{(2)} & 1,024 / 2,048 & \href{https://github.com/google/sentencepiece}{google/sentencepiece}\\
+General-Purpose Tokenizers & Qwen2.5 \hyperlink{ref-qwen}{(3)} & 151,665 & \href{https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json}{Qwen2.5-0.5B/tokenizer.json}\\
+General-Purpose Tokenizers & Llama 3 \hyperlink{ref-llama}{(4)} & 128,256 & \href{https://github.com/meta-llama/llama3/blob/a0940f9cf7065d45bb6675660f80d305c041a754/llama/tokenizer.py}{meta-llama/llama3/tokenizer.py}\\
+General-Purpose Tokenizers & o200k \hyperlink{ref-tiktoken}{(5)} & 200,019 & \href{https://github.com/openai/tiktoken}{openai/tiktoken}\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
 \vspace{6pt}\begin{itemize}
 \item Qwen2.5: used by the Qwen2.5 model family.
@@ -81,7 +81,7 @@ Preparation & Use raw strings without language-specific word segmentation; repre
 3. Prune & Remove pieces with low contribution to corpus likelihood; repeat EM and pruning to reach 1,024 or 2,048 IDs.\\
 4. Final model & A piece vocabulary and probabilities; an optional byte fallback table.\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\vspace{2pt}\textbf{Inference}\par Build a segmentation lattice; for \texttt{abc}: $a+b+c$, $ab+c$, $a+bc$, or $abc$.\[P(s)=\prod_i p(s_i),\qquad s^*=\arg\max_{s\in\mathcal S(x)}P(s).\]Viterbi dynamic programming returns the most probable token sequence.
+\vspace{2pt}\textbf{Inference}\par Build a segmentation lattice; for \texttt{abc}: $a+b+c$, $ab+c$, $a+bc$, or $abc$.\[P(s)=\prod_i p(s_i),\qquad s^*=\arg\max_{s\in\mathcal S(x)}P(s).\]Viterbi dynamic programming returns the most probable token sequence. \hyperlink{ref-unigram}{(6)} \hyperlink{ref-sentencepiece}{(2)}
 \note{Raw training describes the SentencePiece approach. For this experiment identity normalization and whitespace-preserving settings are used. E-step uses forward/backward dynamic programming rather than explicit exponential enumeration. P(s) is one segmentation probability; the training string likelihood is P(x)=sum_s P(s). Official SentencePiece uses a Bayesian/digamma probability update and loss-based pruning, so the next example illustrates basic maximum-likelihood EM rather than byte-for-byte trainer behavior. U+2581 denotes the visible space symbol.}
 
 \end{frame}
@@ -99,7 +99,7 @@ Round & $\mathbb E[n_a],\mathbb E[n_b],\mathbb E[n_{ab}]$ & Total & $p(a),p(b),p
 1 & $0.25,\;0.25,\;0.75$ & $1.25$ & $0.2,\;0.2,\;0.6$\\
 2 & $0.0625,\;0.0625,\;0.9375$ & $1.0625$ & $1/17,\;1/17,\;15/17$\newline $\approx0.0588,\;0.0588,\;0.8824$\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\[P(x)=\sum_{s\in\mathcal S(x)}\prod_i p(s_i),\qquad p(v)=\frac{\mathbb E[n_v]}{\sum_u\mathbb E[n_u]}.\]For this one-string example, $p(ab)\to1$ and $p(a),p(b)\to0$: EM favors the whole piece $ab$. Low-contribution pieces become pruning candidates; required characters remain protected.
+\[P(x)=\sum_{s\in\mathcal S(x)}\prod_i p(s_i),\qquad p(v)=\frac{\mathbb E[n_v]}{\sum_u\mathbb E[n_u]}.\]For this one-string example, $p(ab)\to1$ and $p(a),p(b)\to0$: EM favors the whole piece $ab$. Low-contribution pieces become pruning candidates; required characters remain protected. \hyperlink{ref-unigram}{(6)}
 \note{Simplified maximum-likelihood EM example supplied by the user; exact arithmetic was checked with rational numbers. Real SentencePiece uses a Bayesian probability update, estimates pruning loss, and preserves required symbols. The toy example cannot imply universal deletion of individual characters.}
 
 \end{frame}
@@ -117,57 +117,35 @@ Novelty boundary & A reproducible domain-specific training recipe. & A tested st
 \bottomrule\end{tabularx}}\par\vspace{2pt}
 \begin{remarkbox}{Central comparison}
 Holding the dictionary fixed isolates the effect of the structural segmentation rule. Comparing against generic tokenizers instead measures the complete specialized system.
+\hyperlink{ref-cmer}{(7)} \hyperlink{ref-pathpiece}{(8)} \hyperlink{ref-mathgpt}{(9)}
 \end{remarkbox}
-\src{\href{https://ojs.aaai.org/index.php/AAAI/article/view/37224}{Bai et al. (2026)} ; \href{https://aclanthology.org/2024.emnlp-main.40/}{Schmidt et al. (2024)} ; \href{https://aclanthology.org/2023.acl-long.205/}{Scarlatos and Lan (2023)} }
 
 \end{frame}
 
 \major{Dataset}
-\begin{frame}[t]{Corpus Sources and Their Roles}
+\begin{frame}[t]{Dataset}
 \relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{3.1cm}L{1.8cm}>{\raggedright\arraybackslash}X@{}}\toprule
-Source & Accepted formulas & Provenance / role\\\midrule
-arXiv, fixed pre-2020 versions & 51,229 & CC BY / CC0; 283 contributing source papers; historical human-origin inference.\\
-OpenAI math repository & 2,810 & Apache-2.0; conservatively labeled possible\_mixed.\\
-FunGrim & 1,889 & MIT; formula library, origin unknown.\\
-SymPy & 72 & BSD-3-Clause; formula fixtures, origin unknown.\\
-EqGPT structures / AI templates & Supplement only & Not counted as complete research-level LaTeX formulas in the 56,000-string catalog.\\
+\par\noindent{\footnotesize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.8}\setlength{\tabcolsep}{3pt}}\tbl\begin{tabularx}{\linewidth}{@{}L{3.2cm}L{2cm}>{\raggedright\arraybackslash}X@{}}\toprule
+Source & Accepted formulas & Source link\\\midrule
+arXiv (pre-2020 papers) & 51,229 & \href{https://arxiv.org}{arxiv.org}\\
+OpenAI math repository & 2,810 & \href{https://github.com/openai/math}{github.com/openai/math}\\
+FunGrim & 1,889 & \href{https://github.com/fredrik-johansson/fungrim}{github.com/fredrik-johansson/fungrim}\\
+SymPy & 72 & \href{https://github.com/sympy/sympy}{github.com/sympy/sympy}\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Source-specific distinction}
-EqGPT reports 221 handbook PDE structures and an operator vocabulary. Its structure strings are useful context, but are not automatically valid complete LaTeX equations.
-\end{remarkbox}
-\begin{definitionbox}{Record-level traceability}
-Each accepted string retains its source revision, license and location. Formula text is stored separately from this metadata; redistribution follows the upstream record license.
-\end{definitionbox}
-\src{\href{https://www.nature.com/articles/s41467-025-65114-2}{Xu et al. (2025)} ; \href{https://arxiv.org/abs/1803.09010}{Gebru et al. (2021)} }
-
-\note{Counts are computed from the active catalog. Do not confuse EqGPT 221 structures with the 356 strict PDE equations in our catalog.}
-
+\vspace{16pt}\textbf{Construction process}\par\vspace{6pt}\begin{center}\includegraphics[width=\linewidth]{assets/dataset-pipeline.drawio.pdf}\end{center}
 \end{frame}
 
 \major{Dataset}
-\begin{frame}[t]{Construction: From Licensed Source to Formula Record}
+\begin{frame}[t]{Dataset}
 \relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{1.7cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Step & Operation & Retained evidence\\\midrule
-1. Acquire & Official arXiv URLs; cache first, one connection, at least 4 s between requests. & Version date, license URL, source archive hash.\\
-2. Extract & Find inline/display/multirow math; bounded source-macro expansion. & Original LaTeX, member path and source span.\\
-3. Filter & Reject prose, isolated labels, executable commands and damaged/trivial fragments. & Explicit rejection reason and quarantine record.\\
-4. Validate & Independent KaTeX parse and source/expanded rendering fidelity. & Reference spans and rendered-equivalence hashes.\\
-5. Partition & Exact/template/render-equivalent exclusion against earlier exposures. & Frozen formula IDs, source groups and split hashes.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{No hidden mathematical rewriting}
-The encoder is evaluated on the accepted stored string. Formula normalization is a recorded dataset operation, not a model-specific test preprocessing step.
-\end{remarkbox}
-\src{\href{https://arxiv.org/abs/1803.09010}{Gebru et al. (2021)} ; \href{https://ojs.aaai.org/index.php/AAAI/article/view/37224}{Bai et al. (2026)} }
-
+\begin{center}\includegraphics[width=.96\linewidth,height=7.4cm,keepaspectratio]{assets/dataset_domains_only.png}\end{center}
 \end{frame}
 
 \major{Dataset}
-\begin{frame}[t]{Taxonomy: Formula Type Is Not Paper Topic}
+\begin{frame}[t]{Dataset}
 \relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X r >{\raggedright\arraybackslash}X r@{}}\toprule
-Formula domain & Count & Formula domain & Count\\\midrule
+\begin{columns}[T,onlytextwidth]\begin{column}{.61\linewidth}\textbf{Formula types}\par\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X r >{\raggedright\arraybackslash}X r@{}}\toprule
+Formula type & Count & Formula type & Count\\\midrule
 analysis & 20,233 & geometry / topology & 9,135\\
 combinatorics & 5,563 & algebra & 4,431\\
 number / theory & 4,273 & mathematical / physics & 3,850\\
@@ -176,62 +154,19 @@ statistics & 1,056 & logic & 662\\
 pde & 356 & ode & 46\\
 linear / algebra & 13 &  & \\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{definitionbox}{Separate axes}
-\textbf{Formula domain}: strict PDE vs. other mathematics.\\\textbf{Paper domain}: source subject, stored independently.\\\textbf{Types}: integral, sum/product, matrix, differential relation and system.
-\end{definitionbox}
-\begin{remarkbox}{PDE limitation}
-Only 356 strings meet the strict PDE rule. Other formulas from PDE papers retain their structural category; the catalog is not yet a large PDE-solver training set.
-\end{remarkbox}
-
-\end{frame}
-
-\major{Dataset}
-\begin{frame}[t]{Provenance Labels and Two Complexity Classes}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{3.0cm}r >{\raggedright\arraybackslash}X@{}}\toprule
-Origin label & Count & Interpretation\\\midrule
-Historical human & 51,229 & Fixed pre-2020 manuscripts; inference from source history.\\
-Possible mixed & 2,810 & Model-produced / edited manuscript sources; no per-formula attribution.\\
-Unknown & 1,961 & Library provenance does not establish who typed each formula.\\
-Fully AI generated & 0 in main catalog & Synthetic templates remain separate supplements.\\
+\end{column}\begin{column}{.36\linewidth}\textbf{Provenance labels}\par\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X r@{}}\toprule
+Provenance label & Formulas\\\midrule
+Historical human & 51,229\\
+Possible mixed & 2,810\\
+Unknown & 1,961\\
+Fully AI generated & 0\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{definitionbox}{Fixed syntax-complexity score}
-\[s=.40\bar L+.20\bar C+.15\bar D+.15\bar S+.10\bar O,\quad \bar z=\min(z/z_0,2).\]$L$: lexeme length; $C$: command types; $D$: nesting; $S$: symbol types; $O$: operators. Normalizers: $(60,6,3,18,12)$. Complex iff $s\ge .65$.
-\end{definitionbox}
-\begin{remarkbox}{Class balance}
-37,400 simple and 18,600 complex formulas. These are reproducible syntax strata, not theorem difficulty levels.
-\end{remarkbox}
-
-\end{frame}
-
-\major{Dataset}
-\begin{frame}[t]{Frozen Partitions and Generalization Protocol}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{4.0cm}L{2.0cm}>{\raggedright\arraybackslash}X@{}}\toprule
-Partition / scenario & Formulas & Use\\\midrule
-v6 train / dev & 36,615 / 7,693 & Source-separated pools; active scenario subsets below.\\
-v6 new-paper test & 3,465 & Previously exposed; regression check only.\\
-v7 new-paper / extreme & 3,933 / 1,961 & Previously exposed; regression and domain checks.\\
-v8 new-paper / extreme & 4,294 / 1,428 & Final sealed source test, scored after model freeze.\\
-Synthetic / long-input stress & 521 & Explicit stress diagnostics, outside the natural catalog.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{itemize}
-\item \textbf{Broad}: fit 30,100; auxiliary training/reward pool 512; dev 965.
-\item \textbf{Specialized}: fit 8,124; auxiliary pool 512; dev 249. Target and adjacent source categories excluded.
-\item Extreme subsets overlap their parent test. They are not additional independent samples.
-\end{itemize}
-\begin{remarkbox}{Do not train on the whole catalog}
-56,000 is an organized library size. Its ID-only split manifests preserve the training/test boundary.
-\end{remarkbox}
-
-\end{frame}
-
-\major{Dataset}
-\begin{frame}[t]{Corpus Composition and Coverage}
-\relax
-\begin{center}\includegraphics[width=.98\linewidth,height=5.5cm,keepaspectratio]{assets/dataset_composition.pdf}\end{center}\begin{remarkbox}{What the composition implies}
-Analysis and geometry dominate. PDE, ODE and linear algebra are sparse. Report paper/domain/complexity strata and avoid interpreting an overall average as uniform mathematical coverage.
-\end{remarkbox}
+\vspace{4pt}\textbf{Complexity classes}\par\par\noindent{\scriptsize\tbl\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}rr@{}}\toprule
+Simple & Complex\\\midrule
+37,400 & 18,600\\
+\bottomrule\end{tabular*}}\par\vspace{2pt}
+\end{column}\end{columns}\vspace{4pt}\textbf{Complexity score}\par\[s=.40\bar L+.20\bar C+.15\bar D+.15\bar S+.10\bar O,\quad \bar z=\min(z/z_0,2).\]{\scriptsize $L$: lexemes; $C$: command types; $D$: nesting; $S$: symbol types; $O$: operators.\\Normalizers $(L_0,C_0,D_0,S_0,O_0)=(60,6,3,18,12)$; complex iff $s\ge.65$.}\par\vspace{3pt}\textbf{Example:} $\frac{1}{s^a}$ has $(L,C,D,S,O)=(9,1,1,5,2)$, hence $s\approx0.202<0.65$: simple.\par\vspace{5pt}\textbf{Train: 36,615 formulas; validation: 7,693; test: 11,692.}
+\note{The example matches the stored complexity metadata for the accepted formula. Train=v6_train, validation=v6_dev, test=union of v6_fresh_test,v7_external_test,v8_external_test. These are disjoint and sum to56000. The scenario-specific fitting scopes remain described in the retained experimental settings.}
 
 \end{frame}
 
@@ -249,8 +184,8 @@ Inference & Native lexical codec, then original Rust BPE. & No AST path search a
 \bottomrule\end{tabularx}}\par\vspace{2pt}
 \begin{remarkbox}{Why this route remains}
 It is the simple, fast mathematical reference against which extra structural machinery must justify itself. No manually enumerated command vocabulary is required.
+\hyperlink{ref-bpe}{(1)} \hyperlink{ref-cmer}{(7)}
 \end{remarkbox}
-\src{\href{https://aclanthology.org/P16-1162/}{Sennrich, Haddow and Birch (2016)} ; \href{https://ojs.aaai.org/index.php/AAAI/article/view/37224}{Bai et al. (2026)} }
 
 \end{frame}
 
@@ -269,8 +204,8 @@ Numbers / identifiers & BPE learns recurrent sequences. & Numeric magnitude is n
 \bottomrule\end{tabularx}}\par\vspace{2pt}
 \begin{remarkbox}{Interpretation}
 High command integrity reflects observed alphabet coverage, not universal LaTeX grammar coverage or a learned theorem representation.
+\hyperlink{ref-xval}{(10)} \hyperlink{ref-texbleu}{(11)}
 \end{remarkbox}
-\src{\href{https://arxiv.org/abs/2310.02989}{Golkar et al. (2023)} ; \href{https://arxiv.org/abs/2409.06639}{Jung et al. (2024)} }
 
 \end{frame}
 
@@ -285,8 +220,8 @@ An edge $(a,b)$ matches $x_{a:b}\in V$ at permitted lexical endpoints. The restr
 \end{definitionbox}
 \begin{remarkbox}{A source-tree method}
 The parser is restricted and falls back to source syntax. It is not a full TeX interpreter or a semantic operator tree for arbitrary mathematics.
+\hyperlink{ref-pathpiece}{(8)} \hyperlink{ref-mathgpt}{(9)}
 \end{remarkbox}
-\src{\href{https://aclanthology.org/2024.emnlp-main.40/}{Schmidt et al. (2024)} ; \href{https://aclanthology.org/2023.acl-long.205/}{Scarlatos and Lan (2023)} }
 
 \end{frame}
 
@@ -304,8 +239,8 @@ Boundary cost & Prefix sums count hidden brace-content endpoints. & Recover argu
 \bottomrule\end{tabularx}}\par\vspace{2pt}
 \begin{remarkbox}{Scope of optimality}
 The result is not globally optimal vocabulary learning, and a low source-tree cost does not imply low task loss. The shortest-path algorithm itself is established.
+\hyperlink{ref-pathpiece}{(8)} \hyperlink{ref-greed}{(12)}
 \end{remarkbox}
-\src{\href{https://aclanthology.org/2024.emnlp-main.40/}{Schmidt et al. (2024)} ; \href{https://aclanthology.org/2024.acl-short.73/}{Uzan et al. (2024)} }
 
 \end{frame}
 
@@ -326,25 +261,6 @@ Typical lattice work scales with input bytes, maximum piece length and source sp
 \begin{definitionbox}{Deployment contract}
 A frozen dictionary and weights define deterministic IDs. Unknown lexical units use byte coverage; supported source parsing has an explicit one-million-byte input limit.
 \end{definitionbox}
-
-\end{frame}
-
-\major{Experimental Design}
-\begin{frame}[t]{Exactly Two Routes and Five Baselines}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{3.0cm}>{\raggedright\arraybackslash}X L{3.0cm}@{}}\toprule
-System & Vocabulary / training & Role\\\midrule
-Boundary AST (ours) & Common math-atom BPE vocabulary; fixed source-path objective. & Structure-aware route.\\
-Math-atom BPE (ours) & Fit-derived alphabet; original BPE on allowed data. & Lexical domain route.\\
-Byte BPE & Original HF byte BPE; same allowed training records. & Equal-capacity classical control.\\
-SP Unigram & Original SentencePiece; identity normalization, byte fallback. & Equal-capacity probabilistic control.\\
-Qwen2.5 & Unmodified full official vocabulary. & General deployment reference.\\
-Llama 3 & Unmodified Meta reference tokenizer. & General deployment reference.\\
-o200k & Original tiktoken encoding. & General deployment reference.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Current repository contract}
-Seven method names, 19 frozen configurations. Other models and experiments live only in the historical archive and cannot be selected by the active loader.
-\end{remarkbox}
 
 \end{frame}
 
@@ -380,8 +296,8 @@ Information / utilization & Renyi efficiency at $\alpha=1,2,2.5,3$; used IDs / a
 \bottomrule\end{tabularx}}\par\vspace{2pt}
 \begin{remarkbox}{Sensitivity}
 Report smoothing at .01 / .1 / .5 / 1. Information efficiency and token count measure different properties; neither alone proves downstream quality.
+\hyperlink{ref-greed}{(12)} \hyperlink{ref-tokeval}{(13)}
 \end{remarkbox}
-\src{\href{https://aclanthology.org/2024.acl-short.73/}{Uzan et al. (2024)} ; \href{https://arxiv.org/abs/2608.18062}{Meister (2026)} }
 
 \end{frame}
 
@@ -398,8 +314,8 @@ Robustness & Layout token variation; local symbol edit effects outside a 16-byte
 \bottomrule\end{tabularx}}\par\vspace{2pt}
 \begin{remarkbox}{Coverage is part of the result}
 Unicode integrity, parser coverage and probe counts accompany the scores. No formula disappears from the common test merely because a diagnostic parser cannot measure it.
+\hyperlink{ref-tokeval}{(13)} \hyperlink{ref-texbleu}{(11)}
 \end{remarkbox}
-\src{\href{https://arxiv.org/abs/2608.18062}{Meister (2026)} ; \href{https://arxiv.org/abs/2409.06639}{Jung et al. (2024)} }
 
 \end{frame}
 
@@ -544,8 +460,8 @@ Fit BPB uses the same scenario fit records and actual vocabulary size. The much 
 \end{definitionbox}
 \begin{remarkbox}{Why several measures are necessary}
 Low token count can coexist with sparse usage or unstable boundaries. These probability readouts are descriptive token statistics; no trained language-model perplexity is reported.
+\hyperlink{ref-greed}{(12)} \hyperlink{ref-tokeval}{(13)}
 \end{remarkbox}
-\src{\href{https://aclanthology.org/2024.acl-short.73/}{Uzan et al. (2024)} ; \href{https://arxiv.org/abs/2608.18062}{Meister (2026)} }
 
 \end{frame}
 
@@ -571,197 +487,45 @@ The ranking favors our complete specialized systems under this preference. It is
 
 \end{frame}
 
-\major{Results}
-\begin{frame}[t]{Why RL Is Not a Final Production Route}
+\major{Next Work}
+\begin{frame}[t]{Limitations and Next Steps}
 \relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{3.2cm}rr >{\raggedright\arraybackslash}X@{}}\toprule
-Same-reward control & RL mean utility gain & Wins & 95\% interval crosses zero?\\\midrule
-Fixed random search & 0.116\% & 7 / 15 & Yes\\
-Cross-entropy search & 0.199\% & 8 / 15 & Yes\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{definitionbox}{Controlled evidence}
-Three paper splits and five seeds per split; shared tasks, features, initialization and 34 actual terminal evaluations. The gate required at least 0.5\% utility improvement, 12/15 wins and core noninferiority.
+\begin{definitionbox}{Downstream tasks}
+Validate the tokenizers on PDE solving, ODE solving, and mathematical reasoning beyond equation solving.
 \end{definitionbox}
-\begin{itemize}
-\item The gate was not met; these results remain in history, outside the current seven-system registry.
-\item The non-RL Boundary AST replacement preserves core point-estimate tolerances relative to the old v5, with explicit structural trade-offs.
-\item This does not refute the ICML end-to-end RL paper, whose reward is language-model loss.
-\end{itemize}
-\src{Historical v8 controlled-terminal decision; 15 pairs are conditional on three potentially overlapping source splits.}\src{\href{https://proceedings.mlr.press/v306/dauncey26a.html}{Dauncey and Wattenhofer (2026)} }
-
-\end{frame}
-
-\major{Downstream Plan}
-\begin{frame}[t]{Four Priority Downstream Tasks}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.9cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Task & Input and output & Primary evaluation\\\midrule
-1. PDE solution / solver generation & Equation + initial/boundary conditions; generate an analytic candidate or executable numerical solver. & Residual, boundary error, nRMSE and execution success.\\
-2. Governing-equation discovery & Field observations / derivatives; generate a symbolic PDE and fit coefficients. & Structure recovery, coefficient error, held-out prediction and noise robustness.\\
-3. Symbolic manipulation & Integration, differentiation, simplification and ODE solving. & Executable/symbolic equivalence, validity and unseen operator combinations.\\
-4. Mathematical reasoning & Problem text + formulas; generate derivation and final answer. & Verified final-answer accuracy and length/generalization strata.\\
+\par\noindent{\footnotesize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{3pt}}\tbl\begin{tabularx}{\linewidth}{@{}L{2.3cm}>{\raggedright\arraybackslash}X@{}}\toprule
+Step & Experimental procedure\\\midrule
+1. Architecture & Select a suitable model architecture.\\
+2. Tokenizer integration & Connect each tokenizer to the same architecture.\\
+3. Training & Train each model fully from scratch.\\
+4. Evaluation & Select suitable benchmarks and evaluate downstream task performance.\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Data and task separation}
-PDEBench supplies numerical PDE tasks; EqGPT motivates discovery; SymbolicMathematics and MATH motivate symbolic/reasoning tasks. Their test cases must not enter tokenizer or model adaptation training.
-\end{remarkbox}
-\src{\href{https://proceedings.nips.cc/paper_files/paper/2022/hash/0a9747136d411fb83f0cf81820d44afb-Abstract-Datasets_and_Benchmarks.html}{Takamoto et al. (2022)} ; \href{https://www.nature.com/articles/s41467-025-65114-2}{Xu et al. (2025)} ; \href{https://openreview.net/forum?id=S1eZYeHFDS}{Lample and Charton (2020)} ; \href{https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html}{Hendrycks et al. (2021)} }
-
-\end{frame}
-
-\major{Downstream Plan}
-\begin{frame}[t]{Tokenizer Replacement Does Not Require Full Retraining}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{3.0cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Option & Procedure & Experimental use\\\midrule
-Small models from scratch & Same backbone, raw data and initialization seeds. & Clean comparison; start around 100--300M parameters.\\
-Adapt an open backbone & Replace vocabulary; initialize embeddings; continue pretraining. & Retain a no-replacement adaptation control.\\
-Align / transplant embeddings & Use old-token decompositions or learned alignment. & Equal adaptation cost against simple initialization.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{definitionbox}{What must change}
-New IDs cannot reuse old embedding rows by ID. Replace input/output vocabulary matrices; other Transformer weights can be retained.
-\end{definitionbox}
-\begin{remarkbox}{Core difficulty}
-Formula-only data are insufficient for reasoning and solver generation. Additional context/task data and mixed-text coverage are needed.
-\end{remarkbox}
-\src{\href{https://aclanthology.org/2025.acl-long.207/}{Li, Zhang and Zong (2025)} ; \href{https://arxiv.org/abs/2605.01188}{Limisiewicz et al. (2026)} }
-
-\end{frame}
-
-\major{Downstream Plan}
-\begin{frame}[t]{Compute, Vocabulary Cost and Fair Training Budgets}
-\relax
-\begin{definitionbox}{Vocabulary-dependent parameters}
-Tied embeddings: $P_{\mathrm{vocab}}=|V|d$. At $d=2{,}048$:\\$|V|=2{,}048\Rightarrow4.2$M; $|V|\approx200{,}000\Rightarrow409.6$M parameters. Untied input/output matrices roughly double this component.
-\end{definitionbox}
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.8cm}>{\raggedright\arraybackslash}X@{}}\toprule
-Budget issue & Protocol requirement\\\midrule
-Training amount & Use the same raw examples/bytes; also report tokens and measured FLOPs.\\
-Context length & Report raw-byte coverage and truncation, not only a common token window.\\
-Model size & Report non-embedding and total parameters separately.\\
-Compute scale & Heuristic $C\approx6ND$: a 1B-parameter, 10B-token run is about $6\times10^{19}$ FLOPs before additional overhead.\\
-Replication & Seven systems times three seeds is 21 runs per task configuration.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Staged resource plan}
-Start with equal-capacity small-model tests. Scale after a reproducible task gain; cost full-vocabulary deployment references separately.
-\end{remarkbox}
-\src{\href{https://arxiv.org/abs/2605.01188}{Limisiewicz et al. (2026)} }
-
-\end{frame}
-
-\major{Downstream Plan}
-\begin{frame}[t]{Implementation Sequence and Decision Criteria}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{1.8cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Phase & Work & Advance only if\\\midrule
-A. Freeze task protocol & Choose equation families, source splits, validation rules and resource accounting. & Data leakage and task evaluator checks pass.\\
-B. Small-model pilot & Two routes + five baselines; matched raw training data, same task code, three seeds. & Gain is stable under task accuracy and compute accounting.\\
-C. Open-model adaptation & Token/embedding initialization ablations with equal adaptation budgets. & Benefits exceed the no-replacement control.\\
-D. Generalization / scale & New PDE families, long formulas, noise and mixed text/formula prompts. & Gain persists across distributions without unacceptable regressions.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Failure conditions to investigate}
-No task gain despite better compression; invalid expression generation; failure on unseen domains; adaptation cost larger than inference savings; arithmetic or scope errors hidden by string similarity.
-\end{remarkbox}
-
-\end{frame}
-
-\major{Future Research}
-\begin{frame}[t]{Stage 2: Autonomous and Signal-Guided Tokenization}
-\relax
-\begin{definitionbox}{Research objective}
-Learn boundaries with little manual intervention and excellent quality, generalization and full-interface speed.
-\end{definitionbox}
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.4cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Direction & Learning signal and mechanism & Question to resolve\\\midrule
-Fast signal guidance & Predictive uncertainty or learned structure; distill a fast encoder. & Which signal improves quality after runtime cost?\\
-Autonomous boundaries & Causal prediction feedback; RL versus equal-budget search. & Do gains survive deployment with fewer rules?\\
-Mathematical transitions & Predict verified operations; learn units without boundary labels. & Do units transfer to unseen operations and compositions?\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Current decision}
-Stage 2 is paused as future research. No system has passed both quality and speed requirements; mathematical understanding remains unproven.
-\end{remarkbox}
-\src{\href{https://proceedings.mlr.press/v306/dauncey26a.html}{Dauncey and Wattenhofer (2026)} ; \href{https://arxiv.org/abs/2507.07955}{Hwang, Wang and Gu (2025)} ; \href{https://openreview.net/forum?id=S1eZYeHFDS}{Lample and Charton (2020)} }
-
-\end{frame}
-
-\major{Future Research}
-\begin{frame}[t]{Research Priorities and Acceptance Criteria}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.4cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Priority & Planned experiment & Required evidence\\\midrule
-Now: Stage 1 tasks & Two frozen routes and five baselines; common task data and budgets. & Verified symbolic/PDE results; fair compute accounting.\\
-Later: learned signals & Signal ablations, fast distillation, zero/shuffled controls. & Signal-specific quality gains and full encode speed.\\
-Later: autonomous learning & Longer causal context, joint training, consistent deployment. & Stable gains over simple controls; fewer manual rules.\\
-Later: mathematical laws & Verified operations; source and composition holdouts. & Correctness beyond the training environment.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Two conditions must hold together}
-Substantially reduced human intervention and excellent multi-metric performance. Prediction proxies alone are insufficient; disclose remaining priors and regressions.
-\end{remarkbox}
-\begin{definitionbox}{Research handoff}
-Preserve Stage 2 experiments for later work. Proceed with the two Stage 1 routes and five baseline tokenizers.
-\end{definitionbox}
-
-\end{frame}
-
-\major{Conclusions}
-\begin{frame}[t]{What We Can Claim, and What We Must Test Next}
-\relax
-\begin{definitionbox}{Supported by current evidence}
-A classified, source-traceable formula catalog and reproducible frozen experiments are available. Boundary AST improves compression over a same-dictionary BPE control while offering a useful speed/structure trade-off.
-\end{definitionbox}
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{3.4cm}>{\raggedright\arraybackslash}X@{}}\toprule
-Supported statement & Boundary\\\midrule
-Two routes are deployable & Standalone tokenizers only; no downstream model training has been completed.\\
-Three current audits passed & Automated data, implementation and experiment checks; not external certification.\\
-Some core metrics improve & Not all structure metrics or adjusted intervals favor one method.\\
-Specialization is promising & Sparse PDE coverage, uneven domains and mixed-text transfer remain open.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Next scientific question}
-Do the observed intrinsic improvements survive embedding adaptation and produce better symbolic/PDE task performance at a defensible total training cost?
+\begin{remarkbox}{Open issues}
+\textbf{Benchmarks:} identify suitable benchmarks for each mathematical task.\\\textbf{Compute:} full training from scratch requires substantial computational resources.
 \end{remarkbox}
 
 \end{frame}
 
 \major{References}
-\begin{frame}[t]{References and Technical Context (1/3)}
+\begin{frame}[t]{References (1/2)}
 \relax
-{\scriptsize\begin{enumerate}\setlength{\itemsep}{4pt}
-\item Sennrich, Haddow and Birch (2016). \href{https://aclanthology.org/P16-1162/}{Neural Machine Translation of Rare Words with Subword Units}. ACL.
-\item Kudo (2018). \href{https://aclanthology.org/P18-1007/}{Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates}. ACL.
-\item Kudo and Richardson (2018). \href{https://aclanthology.org/D18-2012/}{SentencePiece: A Simple and Language Independent Subword Tokenizer and Detokenizer for Neural Text Processing}. EMNLP Demonstrations.
-\item Qwen Team (2024). \href{https://arxiv.org/abs/2412.15115}{Qwen2.5 Technical Report}. Technical report.
-\item Dubey et al. (2024). \href{https://arxiv.org/abs/2407.21783}{The Llama 3 Herd of Models}. Technical report.
-\item OpenAI (2026). \href{https://github.com/openai/tiktoken}{tiktoken: BPE Tokenizer Library}. Official software; accessed 2026-10-13.
-\item Peng et al. (2021). \href{https://arxiv.org/abs/2105.00377}{MathBERT: A Pre-Trained Model for Mathematical Formula Understanding}. Preprint.
-\item Scarlatos and Lan (2023). \href{https://aclanthology.org/2023.acl-long.205/}{Tree-Based Representation and Generation of Natural and Mathematical Language}. ACL.
-\item Jung et al. (2024). \href{https://arxiv.org/abs/2409.06639}{TeXBLEU: Automatic Metric for Evaluate LaTeX Format}. Preprint.\end{enumerate}}\src{Targeted primary-source search; not an exhaustive systematic review. Publication and preprint status are distinguished.}
+{\scriptsize \par\noindent\hypertarget{ref-bpe}{}\textbf{(1)} Sennrich, Haddow and Birch (2016). \href{https://aclanthology.org/P16-1162/}{Neural Machine Translation of Rare Words with Subword Units}. ACL.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-sentencepiece}{}\textbf{(2)} Kudo and Richardson (2018). \href{https://aclanthology.org/D18-2012/}{SentencePiece: A Simple and Language Independent Subword Tokenizer and Detokenizer for Neural Text Processing}. EMNLP Demonstrations.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-qwen}{}\textbf{(3)} Qwen Team (2024). \href{https://arxiv.org/abs/2412.15115}{Qwen2.5 Technical Report}. Technical report.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-llama}{}\textbf{(4)} Dubey et al. (2024). \href{https://arxiv.org/abs/2407.21783}{The Llama 3 Herd of Models}. Technical report.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-tiktoken}{}\textbf{(5)} OpenAI (2026). \href{https://github.com/openai/tiktoken}{tiktoken: BPE Tokenizer Library}. Official software; accessed 2026-10-13.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-unigram}{}\textbf{(6)} Kudo (2018). \href{https://aclanthology.org/P18-1007/}{Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates}. ACL.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-cmer}{}\textbf{(7)} Bai et al. (2026). \href{https://ojs.aaai.org/index.php/AAAI/article/view/37224}{Complex Mathematical Expression Recognition: Benchmark, Large-Scale Dataset and Strong Baseline}. AAAI.\par\vspace{14pt}}
 \end{frame}
 
 \major{References}
-\begin{frame}[t]{References and Technical Context (2/3)}
+\begin{frame}[t]{References (2/2)}
 \relax
-{\scriptsize\begin{enumerate}\setlength{\itemsep}{4pt}
-\item Bai et al. (2026). \href{https://ojs.aaai.org/index.php/AAAI/article/view/37224}{Complex Mathematical Expression Recognition: Benchmark, Large-Scale Dataset and Strong Baseline}. AAAI.
-\item Taylor et al. (2022). \href{https://arxiv.org/abs/2211.09085}{Galactica: A Large Language Model for Science}. Preprint.
-\item Golkar et al. (2023). \href{https://arxiv.org/abs/2310.02989}{xVal: A Continuous Numerical Tokenization for Scientific Language Models}. Preprint.
-\item Schmidt et al. (2024). \href{https://aclanthology.org/2024.emnlp-main.40/}{Tokenization Is More Than Compression}. EMNLP.
-\item Uzan et al. (2024). \href{https://aclanthology.org/2024.acl-short.73/}{Greed Is All You Need: An Evaluation of Tokenizer Inference Methods}. ACL.
-\item Meister (2026). \href{https://arxiv.org/abs/2608.18062}{TokEval: A Tokenizer Evaluation Suite}. COLM.
-\item Dauncey and Wattenhofer (2026). \href{https://proceedings.mlr.press/v306/dauncey26a.html}{You Can Learn Tokenization End-to-End with Reinforcement Learning}. ICML.
-\item Hwang, Wang and Gu (2025). \href{https://arxiv.org/abs/2507.07955}{Dynamic Chunking for End-to-End Hierarchical Sequence Modeling}. Preprint.
-\item Liyanage and Yvon (2026). \href{https://arxiv.org/abs/2601.21665}{AdaptBPE: From General Purpose to Specialized Tokenizers}. Preprint.\end{enumerate}}\src{Targeted primary-source search; not an exhaustive systematic review. Publication and preprint status are distinguished.}
-\end{frame}
-
-\major{References}
-\begin{frame}[t]{References and Technical Context (3/3)}
-\relax
-{\scriptsize\begin{enumerate}\setlength{\itemsep}{6.5pt}
-\item Li, Zhang and Zong (2025). \href{https://aclanthology.org/2025.acl-long.207/}{TokAlign: Efficient Vocabulary Adaptation via Token Alignment}. ACL.
-\item Limisiewicz et al. (2026). \href{https://arxiv.org/abs/2605.01188}{Compute Optimal Tokenization}. Preprint.
-\item Xu et al. (2025). \href{https://www.nature.com/articles/s41467-025-65114-2}{Generative Discovery of Partial Differential Equations by Learning from Math Handbooks}. Nature Communications.
-\item Takamoto et al. (2022). \href{https://proceedings.nips.cc/paper_files/paper/2022/hash/0a9747136d411fb83f0cf81820d44afb-Abstract-Datasets_and_Benchmarks.html}{PDEBench: An Extensive Benchmark for Scientific Machine Learning}. NeurIPS Datasets and Benchmarks.
-\item Lample and Charton (2020). \href{https://openreview.net/forum?id=S1eZYeHFDS}{Deep Learning for Symbolic Mathematics}. ICLR.
-\item Hendrycks et al. (2021). \href{https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html}{Measuring Mathematical Problem Solving With the MATH Dataset}. NeurIPS Datasets and Benchmarks.
-\item Gebru et al. (2021). \href{https://arxiv.org/abs/1803.09010}{Datasheets for Datasets}. Communications of the ACM.
-\item Jung et al. (2024). \href{https://arxiv.org/abs/2408.07081}{MathBridge: A Large Corpus Dataset for Translating Spoken Mathematical Expressions into LaTeX Formulas for Improved Readability}. Preprint.\end{enumerate}}\src{Targeted primary-source search; not an exhaustive systematic review. Publication and preprint status are distinguished.}
+{\scriptsize \par\noindent\hypertarget{ref-pathpiece}{}\textbf{(8)} Schmidt et al. (2024). \href{https://aclanthology.org/2024.emnlp-main.40/}{Tokenization Is More Than Compression}. EMNLP.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-mathgpt}{}\textbf{(9)} Scarlatos and Lan (2023). \href{https://aclanthology.org/2023.acl-long.205/}{Tree-Based Representation and Generation of Natural and Mathematical Language}. ACL.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-xval}{}\textbf{(10)} Golkar et al. (2023). \href{https://arxiv.org/abs/2310.02989}{xVal: A Continuous Numerical Tokenization for Scientific Language Models}. Preprint.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-texbleu}{}\textbf{(11)} Jung et al. (2024). \href{https://arxiv.org/abs/2409.06639}{TeXBLEU: Automatic Metric for Evaluate LaTeX Format}. Preprint.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-greed}{}\textbf{(12)} Uzan et al. (2024). \href{https://aclanthology.org/2024.acl-short.73/}{Greed Is All You Need: An Evaluation of Tokenizer Inference Methods}. ACL.\par\vspace{14pt}
+\par\noindent\hypertarget{ref-tokeval}{}\textbf{(13)} Meister (2026). \href{https://arxiv.org/abs/2608.18062}{TokEval: A Tokenizer Evaluation Suite}. COLM.\par\vspace{14pt}}
 \end{frame}
 \end{document}

@@ -1,12 +1,13 @@
 {
-  "body_frames": 41,
-  "total_pages": 42,
+  "body_frames": 29,
+  "total_pages": 30,
   "title": "Design of a Specialized Tokenizer for Mathematical Text",
   "cover_information_retained": true,
   "cover_date": "October 10, 2026",
   "research_date": "2026-10-13",
   "figures": 3,
-  "references": 26,
+  "flowcharts": 1,
+  "references": 13,
   "methods": [
     "ast_boundary",
     "official_atomic_bpe",
@@ -50,177 +51,117 @@
     },
     {
       "index": 7,
-      "title": "Corpus Sources and Their Roles",
+      "title": "Dataset",
       "section": "Dataset"
     },
     {
       "index": 8,
-      "title": "Construction: From Licensed Source to Formula Record",
+      "title": "Dataset",
       "section": "Dataset"
     },
     {
       "index": 9,
-      "title": "Taxonomy: Formula Type Is Not Paper Topic",
+      "title": "Dataset",
       "section": "Dataset"
     },
     {
       "index": 10,
-      "title": "Provenance Labels and Two Complexity Classes",
-      "section": "Dataset"
-    },
-    {
-      "index": 11,
-      "title": "Frozen Partitions and Generalization Protocol",
-      "section": "Dataset"
-    },
-    {
-      "index": 12,
-      "title": "Corpus Composition and Coverage",
-      "section": "Dataset"
-    },
-    {
-      "index": 13,
       "title": "Route 1: Learning a Mathematical Lexical Alphabet",
       "section": "Math-Atom BPE"
     },
     {
-      "index": 14,
+      "index": 11,
       "title": "Route 1: Exact Source Fidelity and Its Limits",
       "section": "Math-Atom BPE"
     },
     {
-      "index": 15,
+      "index": 12,
       "title": "Route 2: Source Structure as a Segmentation Cost",
       "section": "Boundary AST"
     },
     {
-      "index": 16,
+      "index": 13,
       "title": "Route 2: Exact Dynamic Programming on a Fixed Graph",
       "section": "Boundary AST"
     },
     {
-      "index": 17,
+      "index": 14,
       "title": "Route 2: Development Selection and Runtime Cost",
       "section": "Boundary AST"
     },
     {
-      "index": 18,
-      "title": "Exactly Two Routes and Five Baselines",
-      "section": "Experimental Design"
-    },
-    {
-      "index": 19,
+      "index": 15,
       "title": "Common Inputs, Training Information and Timing",
       "section": "Experimental Design"
     },
     {
-      "index": 20,
+      "index": 16,
       "title": "Efficiency, Fidelity and Information Measures",
       "section": "Evaluation Metrics"
     },
     {
-      "index": 21,
+      "index": 17,
       "title": "Structure, Integrity and Robustness",
       "section": "Evaluation Metrics"
     },
     {
-      "index": 22,
+      "index": 18,
       "title": "Three New Review Rounds of the Retained Release",
       "section": "Experimental Audit"
     },
     {
-      "index": 23,
+      "index": 19,
       "title": "New-Paper Results: 1,024-ID Trained Vocabulary",
       "section": "Results"
     },
     {
-      "index": 24,
+      "index": 20,
       "title": "New-Paper Results: 2,048-ID Trained Vocabulary",
       "section": "Results"
     },
     {
-      "index": 25,
+      "index": 21,
       "title": "Strict Source-Domain Generalization",
       "section": "Results"
     },
     {
-      "index": 26,
+      "index": 22,
       "title": "Compression Across Vocabulary Budgets",
       "section": "Results"
     },
     {
-      "index": 27,
+      "index": 23,
       "title": "Runtime and Source-Tree Crossing",
       "section": "Results"
     },
     {
-      "index": 28,
+      "index": 24,
       "title": "Paired Paper-Cluster Statistical Evidence",
       "section": "Results"
     },
     {
-      "index": 29,
+      "index": 25,
       "title": "Probability Coding and Vocabulary Utilization",
       "section": "Results"
     },
     {
-      "index": 30,
+      "index": 26,
       "title": "Current Seven-System Composite Ranking",
       "section": "Results"
     },
     {
-      "index": 31,
-      "title": "Why RL Is Not a Final Production Route",
-      "section": "Results"
+      "index": 27,
+      "title": "Limitations and Next Steps",
+      "section": "Next Work"
     },
     {
-      "index": 32,
-      "title": "Four Priority Downstream Tasks",
-      "section": "Downstream Plan"
-    },
-    {
-      "index": 33,
-      "title": "Tokenizer Replacement Does Not Require Full Retraining",
-      "section": "Downstream Plan"
-    },
-    {
-      "index": 34,
-      "title": "Compute, Vocabulary Cost and Fair Training Budgets",
-      "section": "Downstream Plan"
-    },
-    {
-      "index": 35,
-      "title": "Implementation Sequence and Decision Criteria",
-      "section": "Downstream Plan"
-    },
-    {
-      "index": 36,
-      "title": "Stage 2: Autonomous and Signal-Guided Tokenization",
-      "section": "Future Research"
-    },
-    {
-      "index": 37,
-      "title": "Research Priorities and Acceptance Criteria",
-      "section": "Future Research"
-    },
-    {
-      "index": 38,
-      "title": "What We Can Claim, and What We Must Test Next",
-      "section": "Conclusions"
-    },
-    {
-      "index": 39,
-      "title": "References and Technical Context (1/3)",
+      "index": 28,
+      "title": "References (1/2)",
       "section": "References"
     },
     {
-      "index": 40,
-      "title": "References and Technical Context (2/3)",
-      "section": "References"
-    },
-    {
-      "index": 41,
-      "title": "References and Technical Context (3/3)",
+      "index": 29,
+      "title": "References (2/2)",
       "section": "References"
     }
   ]

@@ -12,18 +12,19 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     pdf=F/'output/Design_of_a_Specialized_Tokenizer_for_Mathematical_Text.pdf'
     manifest=json.loads((F/'source/content_manifest.json').read_text());audit=json.loads((ROOT/'experiments/current/three_round_audit.json').read_text())
-    refs=json.loads((F/'source/references.json').read_text());review=json.loads((F/'source/reference_verification.json').read_text())
+    refs=json.loads((F/'source/active_references.json').read_text());review=json.loads((F/'source/reference_verification.json').read_text())
     export=json.loads((F/'qa/export_verification.json').read_text())
     log=(F/'build/mathematical_tokenizer.log').read_text();tex=(F/'source/mathematical_tokenizer.tex').read_text()
     assert audit['all_passed'] and audit['active_methods']==7 and audit['formula_rows']==234556
-    assert manifest['figures']==3 and manifest['references']==len(refs)==26
-    assert len(review['records'])==26 and all(r['primary_source_browsing_verified'] for r in review['records'])
+    assert manifest['figures']==3 and manifest['references']==len(refs)==13 and manifest['flowcharts']==1
+    verified={r['id']:r for r in review['records']}
+    assert all(verified[r['id']]['primary_source_browsing_verified'] for r in refs)
     assert sha(ROOT/'experiments/current/rankings.json')==manifest['table_source_sha256']
     assert 'Overfull' not in log and '\n!' not in log
     assert not any(ord(c)<32 and c!='\n' for c in tex)
     raw=subprocess.check_output(['pdftotext','-layout',str(pdf),'-'],text=True)
     pages=raw.split('\f');pages=[p for p in pages if p.strip()]
-    assert len(pages)==manifest['total_pages']==42
+    assert len(pages)==manifest['total_pages']==30
     cover=pages[0]
     for token in ['Tongren Xiao','tongrenxiao7@gmail.com','Sun Yat-sen University','October 10, 2026']:assert token in cover
     assert 'Design of a Specialized Tokenizer' in cover and 'for Mathematical Text' in cover
@@ -39,17 +40,20 @@ def main():
         body=[w for w in words if 20<float(w.attrib['yMin']) and float(w.attrib['yMax'])<253]
         if index and body:edges.append(max(float(w.attrib['yMax']) for w in body))
     assert not outliers,outliers[:10]
-    # The first five content slides were explicitly shortened by the user.
-    # Preserve the original density check for all unaffected slides.
-    assert min(edges[5:])>220,'Sparse unaffected content frame; inspect and rebalance'
-    assert export['slides']==42 and export['slide_image_bytes_verified'] and export['pdf_sha256']==sha(pdf)
+    # User removed prose/footers and consolidated content; validate bounds and
+    # rendered layout instead of forcing filler to a fixed bottom text edge.
+    assert export['slides']==30 and export['slide_image_bytes_verified'] and export['pdf_sha256']==sha(pdf)
     bundle=F/'output/Mathematical_Tokenizer_Beamer_Source.zip'
     with zipfile.ZipFile(bundle) as z:
         assert z.read('mathematical_tokenizer.tex')==(F/'source/mathematical_tokenizer.tex').read_bytes()
-        assert 'template.tex' in z.namelist() and len([p for p in z.namelist() if p.endswith('.pdf')])==3
-    assert 'Stage 2 is paused as future research' in raw
-    assert 'Stage 2: Autonomous and Signal-Guided Tokenization' in raw
-    result={'all_passed':True,'pages':42,'figures':3,'primary_references':26,
+        assert 'template.tex' in z.namelist()
+        assert 'assets/dataset_domains_only.png' in z.namelist() and 'assets/dataset-pipeline.drawio.pdf' in z.namelist()
+    assert len([f for f in manifest['frames'] if f['section']=='Dataset'])==3
+    assert 'Limitations and Next Steps' in raw and 'Frozen Partitions and Generalization Protocol' not in raw
+    assert r'\src{' not in tex
+    used=set(re.findall(r'\\hyperlink\{ref-([^}]+)\}',tex));targets=set(re.findall(r'\\hypertarget\{ref-([^}]+)\}',tex))
+    assert used==targets=={r['id'] for r in refs}
+    result={'all_passed':True,'pages':30,'figures':3,'flowcharts':1,'primary_references':13,
         'reviews':[{'round':1,'scope':'Evidence table source hashes, active experiment audit, cover identity, exact seven methods and reference records','passed':True},
                    {'round':2,'scope':'Compiled 4:3 pages, zero TeX overflow, no control-character artifacts, all text within page geometry; rendered-page inspection','passed':True},
                    {'round':3,'scope':'PowerPoint slide-image identity, PDF hashes and complete editable Beamer source bundle','passed':True}],

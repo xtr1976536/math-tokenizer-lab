@@ -1,8 +1,9 @@
 {
   "all_passed": true,
-  "pages": 42,
+  "pages": 30,
   "figures": 3,
-  "primary_references": 26,
+  "flowcharts": 1,
+  "primary_references": 13,
   "reviews": [
     {
       "round": 1,
@@ -21,13 +22,13 @@
     }
   ],
   "layout": {
-    "min_body_text_bottom_pt": 213.941482,
-    "median_body_text_bottom_pt": 235.765482,
+    "min_body_text_bottom_pt": 185.904199,
+    "median_body_text_bottom_pt": 229.816783,
     "page_height_pt": 272.13,
     "reference_median_body_text_bottom_pt": 240.45,
     "out_of_page_words": 0
   },
   "pptx_editability": "Exact page renderings; editable master is the included Beamer source",
-  "source_sha256": "07f1f8b8bfbac70c124adcb710f3bfe8610dfebe33d87201a9d5209a16b0d28c",
-  "pdf_sha256": "ea7a385cde805c61a370f5ef11468f57dd498e00deea5efefcbe1ddde232bd35"
+  "source_sha256": "cb4661aef814d32a6db6b09416aab629345309487e15c58478d6f586ff4767e3",
+  "pdf_sha256": "e4825c475258078ad498cb0717b45781c34154cc94433e5e18fb8d321f0742b4"
 }

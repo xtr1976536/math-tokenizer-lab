@@ -1,0 +1,106 @@
+[
+  {
+    "id": "bpe",
+    "authors": "Sennrich, Haddow and Birch",
+    "title": "Neural Machine Translation of Rare Words with Subword Units",
+    "year": 2016,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/P16-1162/"
+  },
+  {
+    "id": "sentencepiece",
+    "authors": "Kudo and Richardson",
+    "title": "SentencePiece: A Simple and Language Independent Subword Tokenizer and Detokenizer for Neural Text Processing",
+    "year": 2018,
+    "venue": "EMNLP Demonstrations",
+    "url": "https://aclanthology.org/D18-2012/"
+  },
+  {
+    "id": "qwen",
+    "authors": "Qwen Team",
+    "title": "Qwen2.5 Technical Report",
+    "year": 2024,
+    "venue": "Technical report",
+    "url": "https://arxiv.org/abs/2412.15115"
+  },
+  {
+    "id": "llama",
+    "authors": "Dubey et al.",
+    "title": "The Llama 3 Herd of Models",
+    "year": 2024,
+    "venue": "Technical report",
+    "url": "https://arxiv.org/abs/2407.21783"
+  },
+  {
+    "id": "tiktoken",
+    "authors": "OpenAI",
+    "title": "tiktoken: BPE Tokenizer Library",
+    "year": "2026",
+    "venue": "Official software; accessed 2026-10-13",
+    "url": "https://github.com/openai/tiktoken"
+  },
+  {
+    "id": "unigram",
+    "authors": "Kudo",
+    "title": "Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates",
+    "year": 2018,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/P18-1007/"
+  },
+  {
+    "id": "cmer",
+    "authors": "Bai et al.",
+    "title": "Complex Mathematical Expression Recognition: Benchmark, Large-Scale Dataset and Strong Baseline",
+    "year": 2026,
+    "venue": "AAAI",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37224"
+  },
+  {
+    "id": "pathpiece",
+    "authors": "Schmidt et al.",
+    "title": "Tokenization Is More Than Compression",
+    "year": 2024,
+    "venue": "EMNLP",
+    "url": "https://aclanthology.org/2024.emnlp-main.40/"
+  },
+  {
+    "id": "mathgpt",
+    "authors": "Scarlatos and Lan",
+    "title": "Tree-Based Representation and Generation of Natural and Mathematical Language",
+    "year": 2023,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/2023.acl-long.205/"
+  },
+  {
+    "id": "xval",
+    "authors": "Golkar et al.",
+    "title": "xVal: A Continuous Numerical Tokenization for Scientific Language Models",
+    "year": 2023,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2310.02989"
+  },
+  {
+    "id": "texbleu",
+    "authors": "Jung et al.",
+    "title": "TeXBLEU: Automatic Metric for Evaluate LaTeX Format",
+    "year": 2024,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2409.06639"
+  },
+  {
+    "id": "greed",
+    "authors": "Uzan et al.",
+    "title": "Greed Is All You Need: An Evaluation of Tokenizer Inference Methods",
+    "year": 2024,
+    "venue": "ACL",
+    "url": "https://aclanthology.org/2024.acl-short.73/"
+  },
+  {
+    "id": "tokeval",
+    "authors": "Meister",
+    "title": "TokEval: A Tokenizer Evaluation Suite",
+    "year": 2026,
+    "venue": "COLM",
+    "url": "https://arxiv.org/abs/2608.18062"
+  }
+]

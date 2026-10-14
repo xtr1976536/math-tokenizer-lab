@@ -35,9 +35,8 @@ def main():
     frames=[]
     def frame(section,title,body,cites=(),note=''):
         if isinstance(cites,str):cites=(cites,)
-        footer=''
-        if cites:footer='\\src{'+ '; '.join(r'\href{'+refmap[k]['url']+'}{'+escape(refmap[k]['authors'])+' ('+str(refmap[k]['year'])+')} ' for k in cites)+'}\n'
-        frames.append({'section':section,'title':title,'body':body+footer,'note':note})
+        body=re.sub(r'\\src\{[^{}]*\}', '', body)
+        frames.append({'section':section,'title':title,'body':body,'cites':tuple(cites),'note':note})
     frame('Research Question','Can Mathematical Tokenization Improve Model Capability?',
         block('Research question',r'Can we train tokenizers specifically for mathematical text that improve both \textbf{intrinsic tokenization} and \textbf{downstream mathematical capability}?')+
         r'\vspace{8pt}'+table(['Question','What would count as evidence?'],[
@@ -54,11 +53,11 @@ def main():
         note='Leading performance refers to selected core metrics and the stated aggregate comparison; the experimental tables do not show universal dominance on every individual metric.')
     frame('Baseline','Baseline Tokenizers',
         table(['Category','Tokenizer','Actual ID space','Code / tokenizer source'],[
-            ['Classical tokenizers','Byte BPE','1,024 / 2,048',r'\href{https://github.com/huggingface/tokenizers}{huggingface/tokenizers}'],
-            ['Classical tokenizers','SP Unigram','1,024 / 2,048',r'\href{https://github.com/google/sentencepiece}{google/sentencepiece}'],
-            ['General-Purpose Tokenizers','Qwen2.5','151,665',r'\href{https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json}{Qwen2.5-0.5B/tokenizer.json}'],
-            ['General-Purpose Tokenizers','Llama 3','128,256',r'\href{https://github.com/meta-llama/llama3/blob/a0940f9cf7065d45bb6675660f80d305c041a754/llama/tokenizer.py}{meta-llama/llama3/tokenizer.py}'],
-            ['General-Purpose Tokenizers','o200k','200,019',r'\href{https://github.com/openai/tiktoken}{openai/tiktoken}']],r'L{2.4cm}L{1.5cm}L{1.7cm}X')+
+            ['Classical tokenizers',r'Byte BPE \rcite{bpe}','1,024 / 2,048',r'\href{https://github.com/huggingface/tokenizers}{huggingface/tokenizers}'],
+            ['Classical tokenizers',r'SP Unigram \rcite{sentencepiece}','1,024 / 2,048',r'\href{https://github.com/google/sentencepiece}{google/sentencepiece}'],
+            ['General-Purpose Tokenizers',r'Qwen2.5 \rcite{qwen}','151,665',r'\href{https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json}{Qwen2.5-0.5B/tokenizer.json}'],
+            ['General-Purpose Tokenizers',r'Llama 3 \rcite{llama}','128,256',r'\href{https://github.com/meta-llama/llama3/blob/a0940f9cf7065d45bb6675660f80d305c041a754/llama/tokenizer.py}{meta-llama/llama3/tokenizer.py}'],
+            ['General-Purpose Tokenizers',r'o200k \rcite{tiktoken}','200,019',r'\href{https://github.com/openai/tiktoken}{openai/tiktoken}']],r'L{2.4cm}L{1.5cm}L{1.7cm}X')+
         r'\vspace{6pt}'+bullets(['Qwen2.5: used by the Qwen2.5 model family.',
                                 'Llama 3: used by the Meta Llama 3 model family.',
                                 r'o200k\_base: used by GPT-4o and GPT-4.1.']),
@@ -73,7 +72,7 @@ def main():
         r'\vspace{2pt}\textbf{Inference}\par '+
         r'Build a segmentation lattice; for \texttt{abc}: $a+b+c$, $ab+c$, $a+bc$, or $abc$.'+
         r'\[P(s)=\prod_i p(s_i),\qquad s^*=\arg\max_{s\in\mathcal S(x)}P(s).\]'+
-        r'Viterbi dynamic programming returns the most probable token sequence.',
+        r'Viterbi dynamic programming returns the most probable token sequence. \rcite{unigram} \rcite{sentencepiece}',
         note='Raw training describes the SentencePiece approach. For this experiment identity normalization and whitespace-preserving settings are used. E-step uses forward/backward dynamic programming rather than explicit exponential enumeration. P(s) is one segmentation probability; the training string likelihood is P(x)=sum_s P(s). Official SentencePiece uses a Bayesian/digamma probability update and loss-based pruning, so the next example illustrates basic maximum-likelihood EM rather than byte-for-byte trainer behavior. U+2581 denotes the visible space symbol.')
     frame('Baseline','SP Unigram: A Two-Round EM Example',
         r'\textbf{Setup:} one training string \texttt{ab}; pieces $a,b,ab$; initially $p(a)=p(b)=p(ab)=1/3$.\par'+
@@ -86,7 +85,7 @@ def main():
             ['1',r'$0.25,\;0.25,\;0.75$',r'$1.25$',r'$0.2,\;0.2,\;0.6$'],
             ['2',r'$0.0625,\;0.0625,\;0.9375$',r'$1.0625$',r'$1/17,\;1/17,\;15/17$' + r'\newline $\approx0.0588,\;0.0588,\;0.8824$']],r'L{1cm}L{3.5cm}L{1cm}X')+
         r'\[P(x)=\sum_{s\in\mathcal S(x)}\prod_i p(s_i),\qquad p(v)=\frac{\mathbb E[n_v]}{\sum_u\mathbb E[n_u]}.\]'+
-        r'For this one-string example, $p(ab)\to1$ and $p(a),p(b)\to0$: EM favors the whole piece $ab$. Low-contribution pieces become pruning candidates; required characters remain protected.',
+        r'For this one-string example, $p(ab)\to1$ and $p(a),p(b)\to0$: EM favors the whole piece $ab$. Low-contribution pieces become pruning candidates; required characters remain protected. \rcite{unigram}',
         note='Simplified maximum-likelihood EM example supplied by the user; exact arithmetic was checked with rational numbers. Real SentencePiece uses a Bayesian probability update, estimates pruning loss, and preserves required symbols. The toy example cannot imply universal deletion of individual characters.')
     frame('Related Work','Our Two Routes: Contribution and Prior Art',
         table(['Dimension','Math-atom BPE','Boundary AST'],[
@@ -96,56 +95,36 @@ def main():
             ['Deployment','Native reversible codec + original Rust BPE.','Fused native trie traversal and dynamic programming.'],
             ['Novelty boundary','A reproducible domain-specific training recipe.','A tested structural trade-off; shortest paths and AST ideas are not new.']],r'L{2.2cm}X X')+
         block('Central comparison','Holding the dictionary fixed isolates the effect of the structural segmentation rule. Comparing against generic tokenizers instead measures the complete specialized system.','remarkbox'),('cmer','pathpiece','mathgpt'))
-    frame('Dataset','Corpus Sources and Their Roles',
-        table(['Source','Accepted formulas','Provenance / role'],[
-            ['arXiv, fixed pre-2020 versions','51,229','CC BY / CC0; 283 contributing source papers; historical human-origin inference.'],
-            ['OpenAI math repository','2,810','Apache-2.0; conservatively labeled possible\_mixed.'],
-            ['FunGrim','1,889','MIT; formula library, origin unknown.'],
-            ['SymPy','72','BSD-3-Clause; formula fixtures, origin unknown.'],
-            ['EqGPT structures / AI templates','Supplement only','Not counted as complete research-level LaTeX formulas in the 56,000-string catalog.']],r'L{3.1cm}L{1.8cm}X')+
-        block('Source-specific distinction','EqGPT reports 221 handbook PDE structures and an operator vocabulary. Its structure strings are useful context, but are not automatically valid complete LaTeX equations.','remarkbox')+
-        block('Record-level traceability','Each accepted string retains its source revision, license and location. Formula text is stored separately from this metadata; redistribution follows the upstream record license.'),('eqgpt','datasheets'),note='Counts are computed from the active catalog. Do not confuse EqGPT 221 structures with the 356 strict PDE equations in our catalog.')
-    frame('Dataset','Construction: From Licensed Source to Formula Record',
-        table(['Step','Operation','Retained evidence'],[
-            ['1. Acquire','Official arXiv URLs; cache first, one connection, at least 4 s between requests.','Version date, license URL, source archive hash.'],
-            ['2. Extract','Find inline/display/multirow math; bounded source-macro expansion.','Original LaTeX, member path and source span.'],
-            ['3. Filter','Reject prose, isolated labels, executable commands and damaged/trivial fragments.','Explicit rejection reason and quarantine record.'],
-            ['4. Validate','Independent KaTeX parse and source/expanded rendering fidelity.','Reference spans and rendered-equivalence hashes.'],
-            ['5. Partition','Exact/template/render-equivalent exclusion against earlier exposures.','Frozen formula IDs, source groups and split hashes.']],r'L{1.7cm}X X')+
-        block('No hidden mathematical rewriting','The encoder is evaluated on the accepted stored string. Formula normalization is a recorded dataset operation, not a model-specific test preprocessing step.','remarkbox'),('datasheets','cmer'))
+    frame('Dataset','Dataset',
+        table(['Source','Accepted formulas','Source link'],[
+            ['arXiv (pre-2020 papers)','51,229',r'\href{https://arxiv.org}{arxiv.org}'],
+            ['OpenAI math repository','2,810',r'\href{https://github.com/openai/math}{github.com/openai/math}'],
+            ['FunGrim','1,889',r'\href{https://github.com/fredrik-johansson/fungrim}{github.com/fredrik-johansson/fungrim}'],
+            ['SymPy','72',r'\href{https://github.com/sympy/sympy}{github.com/sympy/sympy}']],r'L{3.2cm}L{2cm}X')+
+        r'\vspace{16pt}\textbf{Construction process}\par\vspace{6pt}'+
+        r'\begin{center}\includegraphics[width=\linewidth]{assets/dataset-pipeline.drawio.pdf}\end{center}')
+    frame('Dataset','Dataset',
+        r'\begin{center}\includegraphics[width=.96\linewidth,height=7.4cm,keepaspectratio]{assets/dataset_domains_only.png}\end{center}')
     domainrows=[]
     domains=manifest['domain']
     domain_order=['analysis','geometry_topology','combinatorics','algebra','number_theory','mathematical_physics','optimization','probability','statistics','logic','pde','ode','linear_algebra']
     for i in range(0,len(domain_order),2):
         a=domain_order[i];b=domain_order[i+1] if i+1<len(domain_order) else None
         domainrows.append([escape(a.replace('_',' / ')),f'{domains[a]:,}',escape(b.replace('_',' / ')) if b else '',f'{domains[b]:,}' if b else ''])
-    frame('Dataset','Taxonomy: Formula Type Is Not Paper Topic',
-        table(['Formula domain','Count','Formula domain','Count'],domainrows,r'X r X r')+
-        block('Separate axes',r'\textbf{Formula domain}: strict PDE vs. other mathematics.\\\textbf{Paper domain}: source subject, stored independently.\\\textbf{Types}: integral, sum/product, matrix, differential relation and system.')+
-        block('PDE limitation','Only 356 strings meet the strict PDE rule. Other formulas from PDE papers retain their structural category; the catalog is not yet a large PDE-solver training set.','remarkbox'))
-    frame('Dataset','Provenance Labels and Two Complexity Classes',
-        table(['Origin label','Count','Interpretation'],[
-            ['Historical human','51,229','Fixed pre-2020 manuscripts; inference from source history.'],
-            ['Possible mixed','2,810','Model-produced / edited manuscript sources; no per-formula attribution.'],
-            ['Unknown','1,961','Library provenance does not establish who typed each formula.'],
-            ['Fully AI generated','0 in main catalog','Synthetic templates remain separate supplements.']],r'L{3.0cm}r X')+
-        block('Fixed syntax-complexity score',r'\[s=.40\bar L+.20\bar C+.15\bar D+.15\bar S+.10\bar O,\quad \bar z=\min(z/z_0,2).\]'+
-            r'$L$: lexeme length; $C$: command types; $D$: nesting; $S$: symbol types; $O$: operators. Normalizers: $(60,6,3,18,12)$. Complex iff $s\ge .65$.')+
-        block('Class balance','37,400 simple and 18,600 complex formulas. These are reproducible syntax strata, not theorem difficulty levels.','remarkbox'))
-    frame('Dataset','Frozen Partitions and Generalization Protocol',
-        table(['Partition / scenario','Formulas','Use'],[
-            ['v6 train / dev','36,615 / 7,693','Source-separated pools; active scenario subsets below.'],
-            ['v6 new-paper test','3,465','Previously exposed; regression check only.'],
-            ['v7 new-paper / extreme','3,933 / 1,961','Previously exposed; regression and domain checks.'],
-            ['v8 new-paper / extreme','4,294 / 1,428','Final sealed source test, scored after model freeze.'],
-            ['Synthetic / long-input stress','521','Explicit stress diagnostics, outside the natural catalog.']],r'L{4.0cm}L{2.0cm}X')+
-        bullets([r'\textbf{Broad}: fit 30,100; auxiliary training/reward pool 512; dev 965.',
-                 r'\textbf{Specialized}: fit 8,124; auxiliary pool 512; dev 249. Target and adjacent source categories excluded.',
-                 'Extreme subsets overlap their parent test. They are not additional independent samples.'])+
-        block('Do not train on the whole catalog','56,000 is an organized library size. Its ID-only split manifests preserve the training/test boundary.','remarkbox'))
-    frame('Dataset','Corpus Composition and Coverage',
-        r'\begin{center}\includegraphics[width=.98\linewidth,height=5.5cm,keepaspectratio]{assets/dataset_composition.pdf}\end{center}'+
-        block('What the composition implies','Analysis and geometry dominate. PDE, ODE and linear algebra are sparse. Report paper/domain/complexity strata and avoid interpreting an overall average as uniform mathematical coverage.','remarkbox'))
+    left=table(['Formula type','Count','Formula type','Count'],domainrows,r'X r X r')
+    right=table(['Provenance label','Formulas'],[
+        ['Historical human','51,229'],['Possible mixed','2,810'],['Unknown','1,961'],['Fully AI generated','0']],r'X r')
+    frame('Dataset','Dataset',
+        r'\begin{columns}[T,onlytextwidth]\begin{column}{.61\linewidth}'+r'\textbf{Formula types}\par'+left+
+        r'\end{column}\begin{column}{.36\linewidth}'+r'\textbf{Provenance labels}\par'+right+
+        r'\vspace{4pt}\textbf{Complexity classes}\par'+table(['Simple','Complex'],[['37,400','18,600']],r'rr')+
+        r'\end{column}\end{columns}'+
+        r'\vspace{4pt}\textbf{Complexity score}\par'+
+        r'\[s=.40\bar L+.20\bar C+.15\bar D+.15\bar S+.10\bar O,\quad \bar z=\min(z/z_0,2).\]'+
+        r'{\scriptsize $L$: lexemes; $C$: command types; $D$: nesting; $S$: symbol types; $O$: operators.\\Normalizers $(L_0,C_0,D_0,S_0,O_0)=(60,6,3,18,12)$; complex iff $s\ge.65$.}\par'+
+        r'\vspace{3pt}\textbf{Example:} $\frac{1}{s^a}$ has $(L,C,D,S,O)=(9,1,1,5,2)$, hence $s\approx0.202<0.65$: simple.\par'+
+        r'\vspace{5pt}\textbf{Train: 36,615 formulas; validation: 7,693; test: 11,692.}',
+        note='The example matches the stored complexity metadata for the accepted formula. Train=v6_train, validation=v6_dev, test=union of v6_fresh_test,v7_external_test,v8_external_test. These are disjoint and sum to56000. The scenario-specific fitting scopes remain described in the retained experimental settings.')
     frame('Math-Atom BPE','Route 1: Learning a Mathematical Lexical Alphabet',
         block('Training alphabet',r'\[A=\{\text{all 256 bytes}\}\cup\operatorname{Top}_{384}\{\text{observed complete commands / Unicode units}\}.\]'+
               'Atoms are derived from fit records only, ranked by frequency with deterministic tie rules. The actual primitive counts are 596 (broad) and 495 (specialized).')+
@@ -184,16 +163,6 @@ def main():
             ['Public encoder','C frontend + trie + DP; all source parsing is included in throughput.']],r'L{3.0cm}X')+
         block('Engineering and trade-offs',r'Typical lattice work scales with input bytes, maximum piece length and source spans; the dense byte trie uses more memory than a compact sparse trie.\\Compared with the older length-first path, the boundary term costs some speed but restores much of the parameter-boundary recall.','remarkbox')+
         block('Deployment contract','A frozen dictionary and weights define deterministic IDs. Unknown lexical units use byte coverage; supported source parsing has an explicit one-million-byte input limit.'))
-    frame('Experimental Design','Exactly Two Routes and Five Baselines',
-        table(['System','Vocabulary / training','Role'],[
-            ['Boundary AST (ours)','Common math-atom BPE vocabulary; fixed source-path objective.','Structure-aware route.'],
-            ['Math-atom BPE (ours)','Fit-derived alphabet; original BPE on allowed data.','Lexical domain route.'],
-            ['Byte BPE','Original HF byte BPE; same allowed training records.','Equal-capacity classical control.'],
-            ['SP Unigram','Original SentencePiece; identity normalization, byte fallback.','Equal-capacity probabilistic control.'],
-            ['Qwen2.5','Unmodified full official vocabulary.','General deployment reference.'],
-            ['Llama 3','Unmodified Meta reference tokenizer.','General deployment reference.'],
-            ['o200k','Original tiktoken encoding.','General deployment reference.']],r'L{3.0cm}X L{3.0cm}')+
-        block('Current repository contract','Seven method names, 19 frozen configurations. Other models and experiments live only in the historical archive and cannot be selected by the active loader.','remarkbox'))
     frame('Experimental Design','Common Inputs, Training Information and Timing',
         table(['Axis','Controlled implementation'],[
             ['Vocabulary budgets','1,024 / 2,048 for trained methods; all primitive and reserved IDs count.'],
@@ -281,74 +250,36 @@ def main():
         table(['System','Rank: 1,024','Rank: 2,048','Score: 1,024','Score: 2,048'],rows,r'L{3.4cm}rrrr')+
         block('Frozen metric preferences','Compression 30\%; encode speed 25\%; KaTeX crossing 20\%; command integrity 10\%; number integrity 5\%; fit BPB 10\%. Broad and specialized scenarios each receive 50\%.')+
         block('How to use the ranking','The ranking favors our complete specialized systems under this preference. It is relative to the seven retained methods, omits scope recall from its weighted score and cannot establish downstream superiority.','remarkbox'))
-    frame('Results','Why RL Is Not a Final Production Route',
-        table(['Same-reward control','RL mean utility gain','Wins','95\% interval crosses zero?'],[
-            ['Fixed random search','0.116\%','7 / 15','Yes'],['Cross-entropy search','0.199\%','8 / 15','Yes']],r'L{3.2cm}rr X')+
-        block('Controlled evidence','Three paper splits and five seeds per split; shared tasks, features, initialization and 34 actual terminal evaluations. The gate required at least 0.5\% utility improvement, 12/15 wins and core noninferiority.')+
-        bullets(['The gate was not met; these results remain in history, outside the current seven-system registry.',
-                 'The non-RL Boundary AST replacement preserves core point-estimate tolerances relative to the old v5, with explicit structural trade-offs.',
-                 'This does not refute the ICML end-to-end RL paper, whose reward is language-model loss.'])+
-        r'\src{Historical v8 controlled-terminal decision; 15 pairs are conditional on three potentially overlapping source splits.}',('rl'))
-    frame('Downstream Plan','Four Priority Downstream Tasks',
-        table(['Task','Input and output','Primary evaluation'],[
-            ['1. PDE solution / solver generation','Equation + initial/boundary conditions; generate an analytic candidate or executable numerical solver.','Residual, boundary error, nRMSE and execution success.'],
-            ['2. Governing-equation discovery','Field observations / derivatives; generate a symbolic PDE and fit coefficients.','Structure recovery, coefficient error, held-out prediction and noise robustness.'],
-            ['3. Symbolic manipulation','Integration, differentiation, simplification and ODE solving.','Executable/symbolic equivalence, validity and unseen operator combinations.'],
-            ['4. Mathematical reasoning','Problem text + formulas; generate derivation and final answer.','Verified final-answer accuracy and length/generalization strata.']],r'L{2.9cm}X X')+
-        block('Data and task separation','PDEBench supplies numerical PDE tasks; EqGPT motivates discovery; SymbolicMathematics and MATH motivate symbolic/reasoning tasks. Their test cases must not enter tokenizer or model adaptation training.','remarkbox'),('pdebench','eqgpt','symbolic','math'))
-    frame('Downstream Plan','Tokenizer Replacement Does Not Require Full Retraining',
-        table(['Option','Procedure','Experimental use'],[
-            ['Small models from scratch','Same backbone, raw data and initialization seeds.','Clean comparison; start around 100--300M parameters.'],
-            ['Adapt an open backbone','Replace vocabulary; initialize embeddings; continue pretraining.','Retain a no-replacement adaptation control.'],
-            ['Align / transplant embeddings','Use old-token decompositions or learned alignment.','Equal adaptation cost against simple initialization.']],r'L{3.0cm}X X')+
-        block('What must change','New IDs cannot reuse old embedding rows by ID. Replace input/output vocabulary matrices; other Transformer weights can be retained.')+
-        block('Core difficulty','Formula-only data are insufficient for reasoning and solver generation. Additional context/task data and mixed-text coverage are needed.','remarkbox'),('tokalign','compute'))
-    frame('Downstream Plan','Compute, Vocabulary Cost and Fair Training Budgets',
-        block('Vocabulary-dependent parameters',r'Tied embeddings: $P_{\mathrm{vocab}}=|V|d$. At $d=2{,}048$:\\$|V|=2{,}048\Rightarrow4.2$M; $|V|\approx200{,}000\Rightarrow409.6$M parameters. Untied input/output matrices roughly double this component.')+
-        table(['Budget issue','Protocol requirement'],[
-            ['Training amount','Use the same raw examples/bytes; also report tokens and measured FLOPs.'],
-            ['Context length','Report raw-byte coverage and truncation, not only a common token window.'],
-            ['Model size','Report non-embedding and total parameters separately.'],
-            ['Compute scale',r'Heuristic $C\approx6ND$: a 1B-parameter, 10B-token run is about $6\times10^{19}$ FLOPs before additional overhead.'],
-            ['Replication','Seven systems times three seeds is 21 runs per task configuration.']],r'L{2.8cm}X')+
-        block('Staged resource plan','Start with equal-capacity small-model tests. Scale after a reproducible task gain; cost full-vocabulary deployment references separately.','remarkbox'),('compute'))
-    frame('Downstream Plan','Implementation Sequence and Decision Criteria',
-        table(['Phase','Work','Advance only if'],[
-            ['A. Freeze task protocol','Choose equation families, source splits, validation rules and resource accounting.','Data leakage and task evaluator checks pass.'],
-            ['B. Small-model pilot','Two routes + five baselines; matched raw training data, same task code, three seeds.','Gain is stable under task accuracy and compute accounting.'],
-            ['C. Open-model adaptation','Token/embedding initialization ablations with equal adaptation budgets.','Benefits exceed the no-replacement control.'],
-            ['D. Generalization / scale','New PDE families, long formulas, noise and mixed text/formula prompts.','Gain persists across distributions without unacceptable regressions.']],r'L{1.8cm}X X')+
-        block('Failure conditions to investigate','No task gain despite better compression; invalid expression generation; failure on unseen domains; adaptation cost larger than inference savings; arithmetic or scope errors hidden by string similarity.','remarkbox'))
-    frame('Future Research','Stage 2: Autonomous and Signal-Guided Tokenization',
-        block('Research objective','Learn boundaries with little manual intervention and excellent quality, generalization and full-interface speed.')+
-        table(['Direction','Learning signal and mechanism','Question to resolve'],[
-            ['Fast signal guidance','Predictive uncertainty or learned structure; distill a fast encoder.','Which signal improves quality after runtime cost?'],
-            ['Autonomous boundaries','Causal prediction feedback; RL versus equal-budget search.','Do gains survive deployment with fewer rules?'],
-            ['Mathematical transitions','Predict verified operations; learn units without boundary labels.','Do units transfer to unseen operations and compositions?']],r'L{2.4cm}X X')+
-        block('Current decision','Stage 2 is paused as future research. No system has passed both quality and speed requirements; mathematical understanding remains unproven.','remarkbox'),('rl','hnet','symbolic'))
-    frame('Future Research','Research Priorities and Acceptance Criteria',
-        table(['Priority','Planned experiment','Required evidence'],[
-            ['Now: Stage 1 tasks','Two frozen routes and five baselines; common task data and budgets.','Verified symbolic/PDE results; fair compute accounting.'],
-            ['Later: learned signals','Signal ablations, fast distillation, zero/shuffled controls.','Signal-specific quality gains and full encode speed.'],
-            ['Later: autonomous learning','Longer causal context, joint training, consistent deployment.','Stable gains over simple controls; fewer manual rules.'],
-            ['Later: mathematical laws','Verified operations; source and composition holdouts.','Correctness beyond the training environment.']],r'L{2.4cm}X X')+
-        block('Two conditions must hold together','Substantially reduced human intervention and excellent multi-metric performance. Prediction proxies alone are insufficient; disclose remaining priors and regressions.','remarkbox')+
-        block('Research handoff','Preserve Stage 2 experiments for later work. Proceed with the two Stage 1 routes and five baseline tokenizers.'))
-    frame('Conclusions','What We Can Claim, and What We Must Test Next',
-        block('Supported by current evidence','A classified, source-traceable formula catalog and reproducible frozen experiments are available. Boundary AST improves compression over a same-dictionary BPE control while offering a useful speed/structure trade-off.')+
-        table(['Supported statement','Boundary'],[
-            ['Two routes are deployable','Standalone tokenizers only; no downstream model training has been completed.'],
-            ['Three current audits passed','Automated data, implementation and experiment checks; not external certification.'],
-            ['Some core metrics improve','Not all structure metrics or adjusted intervals favor one method.'],
-            ['Specialization is promising','Sparse PDE coverage, uneven domains and mixed-text transfer remain open.']],r'L{3.4cm}X')+
-        block('Next scientific question','Do the observed intrinsic improvements survive embedding adaptation and produce better symbolic/PDE task performance at a defensible total training cost?','remarkbox'))
-    for i in range(0,len(refs),9):
+    frame('Next Work','Limitations and Next Steps',
+        block('Downstream tasks','Validate the tokenizers on PDE solving, ODE solving, and mathematical reasoning beyond equation solving.')+
+        table(['Step','Experimental procedure'],[
+            ['1. Architecture','Select a suitable model architecture.'],
+            ['2. Tokenizer integration','Connect each tokenizer to the same architecture.'],
+            ['3. Training','Train each model fully from scratch.'],
+            ['4. Evaluation','Select suitable benchmarks and evaluate downstream task performance.']],r'L{2.3cm}X')+
+        block('Open issues',r'\textbf{Benchmarks:} identify suitable benchmarks for each mathematical task.\\\textbf{Compute:} full training from scratch requires substantial computational resources.','remarkbox'))
+    used=[]
+    for f in frames:
+        for k in re.findall(r'\\rcite\{([^}]+)\}',f['body'])+list(f['cites']):
+            if k not in used:used.append(k)
+    refs=[refmap[k] for k in used];numbers={k:i+1 for i,k in enumerate(used)}
+    def cite(k):return r'\hyperlink{ref-'+k+'}{('+str(numbers[k])+')}'
+    for f in frames:
+        body=re.sub(r'\\rcite\{([^}]+)\}',lambda m:cite(m.group(1)),f['body'])
+        if f['cites']:
+            marker=' '.join(cite(k) for k in f['cites'])
+            ends=list(re.finditer(r'\\end\{(?:definitionbox|remarkbox|theorembox)\}',body))
+            if ends:
+                end=ends[-1].start();body=body[:end]+marker+'\n'+body[end:]
+            else:body+='\n'+marker
+        f['body']=body
+    refpages=(len(refs)+6)//7
+    for i in range(0,len(refs),7):
         items=[]
-        for r in refs[i:i+9]:
-            items.append(r'\item '+escape(r['authors'])+' ('+str(r['year'])+r'). \href{'+r['url']+'}{'+escape(r['title'])+'}. '+escape(r['venue'])+'.')
-        frame('References',f'References and Technical Context ({i//9+1}/3)',
-            r'{\scriptsize\begin{enumerate}\setlength{\itemsep}{4pt}'+'\n'+'\n'.join(items)+r'\end{enumerate}}'+
-            r'\src{Targeted primary-source search; not an exhaustive systematic review. Publication and preprint status are distinguished.}')
+        for r in refs[i:i+7]:
+            items.append(r'\par\noindent\hypertarget{ref-'+r['id']+r'}{}\textbf{('+str(numbers[r['id']])+')} '+escape(r['authors'])+' ('+str(r['year'])+r'). \href{'+r['url']+'}{'+escape(r['title'])+'}. '+escape(r['venue'])+r'.\par\vspace{8pt}')
+        frame('References',f'References ({i//7+1}/{refpages})',r'{\scriptsize '+ '\n'.join(items)+'}')
+    (OUT/'active_references.json').write_text(json.dumps(refs,indent=2)+'\n')
     preamble=r'''% !TEX program = xelatex
 \documentclass[11pt,aspectratio=43]{beamer}
 \input{template.tex}
@@ -381,6 +312,12 @@ def main():
             body=body.replace(r'{\scriptsize\tbl',r'{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.35}\setlength{\tabcolsep}{3pt}}\tbl')
         if f['title']=='Baseline Tokenizers':
             body=body.replace(r'{\scriptsize\tbl',r'{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.8}\setlength{\tabcolsep}{3pt}}\tbl')
+        if f['title']=='Dataset' and 'Construction process' in body:
+            body=body.replace(r'{\scriptsize\tbl',r'{\footnotesize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.8}\setlength{\tabcolsep}{3pt}}\tbl')
+        if f['title']=='Limitations and Next Steps':
+            body=body.replace(r'{\scriptsize\tbl',r'{\footnotesize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{3pt}}\tbl')
+        if f['section']=='References':
+            body=body.replace(r'\vspace{8pt}',r'\vspace{14pt}')
         if f['title']=='Efficiency, Fidelity and Information Measures':
             body=body.replace(r'{\scriptsize\tbl',r'{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.27}\setlength{\tabcolsep}{3pt}}\tbl')
         if f['title']=='References and Technical Context (3/3)':body=body.replace(r'\setlength{\itemsep}{4pt}',r'\setlength{\itemsep}{6.5pt}')
@@ -394,7 +331,7 @@ def main():
     (OUT/'mathematical_tokenizer.tex').write_text(text)
     evidence={'body_frames':len(frames),'total_pages':len(frames)+1,'title':'Design of a Specialized Tokenizer for Mathematical Text',
         'cover_information_retained':True,'cover_date':'October 10, 2026','research_date':'2026-10-13',
-        'figures':3,'references':len(refs),'methods':METHODS,'table_source_sha256':hashlib.sha256((ROOT/'experiments/current/rankings.json').read_bytes()).hexdigest(),
+        'figures':3,'flowcharts':1,'references':len(refs),'methods':METHODS,'table_source_sha256':hashlib.sha256((ROOT/'experiments/current/rankings.json').read_bytes()).hexdigest(),
         'frames':[{'index':i+1,'title':f['title'],'section':f['section']} for i,f in enumerate(frames)]}
     (OUT/'content_manifest.json').write_text(json.dumps(evidence,indent=2)+'\n')
     print('Beamer frames',len(frames)+1,'figures 3','references',len(refs))
