@@ -1,6 +1,6 @@
 {
-  "body_frames": 44,
-  "total_pages": 45,
+  "body_frames": 41,
+  "total_pages": 42,
   "title": "Design of a Specialized Tokenizer for Mathematical Text",
   "cover_information_retained": true,
   "cover_date": "October 10, 2026",
@@ -25,216 +25,201 @@
     },
     {
       "index": 2,
-      "title": "Why Mathematical Source Text Is Different",
+      "title": "Study Overview",
       "section": "Research Question"
     },
     {
       "index": 3,
-      "title": "What This Study Establishes",
-      "section": "Research Question"
+      "title": "Baseline Tokenizers",
+      "section": "Baseline"
     },
     {
       "index": 4,
-      "title": "Classical Subword Tokenization",
-      "section": "Related Work"
+      "title": "SP Unigram: Training and Inference",
+      "section": "Baseline"
     },
     {
       "index": 5,
-      "title": "General-Purpose Tokenizers as Deployment References",
-      "section": "Related Work"
+      "title": "SP Unigram: A Two-Round EM Example",
+      "section": "Baseline"
     },
     {
       "index": 6,
-      "title": "Specialized Mathematical and Scientific Representations",
-      "section": "Related Work"
-    },
-    {
-      "index": 7,
-      "title": "Compression, Structure and Intrinsic Evaluation",
-      "section": "Related Work"
-    },
-    {
-      "index": 8,
-      "title": "Adaptive Tokenization and the Role of RL",
-      "section": "Related Work"
-    },
-    {
-      "index": 9,
       "title": "Our Two Routes: Contribution and Prior Art",
       "section": "Related Work"
     },
     {
-      "index": 10,
+      "index": 7,
       "title": "Corpus Sources and Their Roles",
       "section": "Dataset"
     },
     {
-      "index": 11,
+      "index": 8,
       "title": "Construction: From Licensed Source to Formula Record",
       "section": "Dataset"
     },
     {
-      "index": 12,
+      "index": 9,
       "title": "Taxonomy: Formula Type Is Not Paper Topic",
       "section": "Dataset"
     },
     {
-      "index": 13,
+      "index": 10,
       "title": "Provenance Labels and Two Complexity Classes",
       "section": "Dataset"
     },
     {
-      "index": 14,
+      "index": 11,
       "title": "Frozen Partitions and Generalization Protocol",
       "section": "Dataset"
     },
     {
-      "index": 15,
+      "index": 12,
       "title": "Corpus Composition and Coverage",
       "section": "Dataset"
     },
     {
-      "index": 16,
+      "index": 13,
       "title": "Route 1: Learning a Mathematical Lexical Alphabet",
       "section": "Math-Atom BPE"
     },
     {
-      "index": 17,
+      "index": 14,
       "title": "Route 1: Exact Source Fidelity and Its Limits",
       "section": "Math-Atom BPE"
     },
     {
-      "index": 18,
+      "index": 15,
       "title": "Route 2: Source Structure as a Segmentation Cost",
       "section": "Boundary AST"
     },
     {
-      "index": 19,
+      "index": 16,
       "title": "Route 2: Exact Dynamic Programming on a Fixed Graph",
       "section": "Boundary AST"
     },
     {
-      "index": 20,
+      "index": 17,
       "title": "Route 2: Development Selection and Runtime Cost",
       "section": "Boundary AST"
     },
     {
-      "index": 21,
+      "index": 18,
       "title": "Exactly Two Routes and Five Baselines",
       "section": "Experimental Design"
     },
     {
-      "index": 22,
+      "index": 19,
       "title": "Common Inputs, Training Information and Timing",
       "section": "Experimental Design"
     },
     {
-      "index": 23,
+      "index": 20,
       "title": "Efficiency, Fidelity and Information Measures",
       "section": "Evaluation Metrics"
     },
     {
-      "index": 24,
+      "index": 21,
       "title": "Structure, Integrity and Robustness",
       "section": "Evaluation Metrics"
     },
     {
-      "index": 25,
+      "index": 22,
       "title": "Three New Review Rounds of the Retained Release",
       "section": "Experimental Audit"
     },
     {
-      "index": 26,
+      "index": 23,
       "title": "New-Paper Results: 1,024-ID Trained Vocabulary",
       "section": "Results"
     },
     {
-      "index": 27,
+      "index": 24,
       "title": "New-Paper Results: 2,048-ID Trained Vocabulary",
       "section": "Results"
     },
     {
-      "index": 28,
+      "index": 25,
       "title": "Strict Source-Domain Generalization",
       "section": "Results"
     },
     {
-      "index": 29,
+      "index": 26,
       "title": "Compression Across Vocabulary Budgets",
       "section": "Results"
     },
     {
-      "index": 30,
+      "index": 27,
       "title": "Runtime and Source-Tree Crossing",
       "section": "Results"
     },
     {
-      "index": 31,
+      "index": 28,
       "title": "Paired Paper-Cluster Statistical Evidence",
       "section": "Results"
     },
     {
-      "index": 32,
+      "index": 29,
       "title": "Probability Coding and Vocabulary Utilization",
       "section": "Results"
     },
     {
-      "index": 33,
+      "index": 30,
       "title": "Current Seven-System Composite Ranking",
       "section": "Results"
     },
     {
-      "index": 34,
+      "index": 31,
       "title": "Why RL Is Not a Final Production Route",
       "section": "Results"
     },
     {
-      "index": 35,
+      "index": 32,
       "title": "Four Priority Downstream Tasks",
       "section": "Downstream Plan"
     },
     {
-      "index": 36,
+      "index": 33,
       "title": "Tokenizer Replacement Does Not Require Full Retraining",
       "section": "Downstream Plan"
     },
     {
-      "index": 37,
+      "index": 34,
       "title": "Compute, Vocabulary Cost and Fair Training Budgets",
       "section": "Downstream Plan"
     },
     {
-      "index": 38,
+      "index": 35,
       "title": "Implementation Sequence and Decision Criteria",
       "section": "Downstream Plan"
     },
     {
-      "index": 39,
+      "index": 36,
       "title": "Stage 2: Autonomous and Signal-Guided Tokenization",
       "section": "Future Research"
     },
     {
-      "index": 40,
+      "index": 37,
       "title": "Research Priorities and Acceptance Criteria",
       "section": "Future Research"
     },
     {
-      "index": 41,
+      "index": 38,
       "title": "What We Can Claim, and What We Must Test Next",
       "section": "Conclusions"
     },
     {
-      "index": 42,
+      "index": 39,
       "title": "References and Technical Context (1/3)",
       "section": "References"
     },
     {
-      "index": 43,
+      "index": 40,
       "title": "References and Technical Context (2/3)",
       "section": "References"
     },
     {
-      "index": 44,
+      "index": 41,
       "title": "References and Technical Context (3/3)",
       "section": "References"
     }

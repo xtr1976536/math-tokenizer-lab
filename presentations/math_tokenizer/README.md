@@ -2,7 +2,7 @@
 
 **Design of a Specialized Tokenizer for Mathematical Text**
 
-45 slides in the supplied 4:3 GBFR Warsaw Beamer design. Presenter Tongren Xiao, email, affiliation and the original October 10, 2026 cover date are retained. Research, repository selection and literature verification were updated on October 13, 2026.
+42 slides in the supplied 4:3 GBFR Warsaw Beamer design. Presenter Tongren Xiao, email, affiliation and the original October 10, 2026 cover date are retained. Research, repository selection and literature verification were updated on October 13, 2026.
 
 The two added future-research slides explain autonomous boundary learning, fast
 signal guidance and verified mathematical transitions. Stage 2 is explicitly
@@ -29,3 +29,5 @@ Run `scripts/plot_presentation.py`, then `scripts/build_presentation.py`. Compil
 `qa/three_round_review.json` records three deliverable checks. Every slide was rendered and inspected; overflowing boxes and plot-label overlaps were corrected. PDF table cells are generated from experiments/current/rankings.json, and the original 144-family statistical intervals are retained. The PowerPoint export is byte-verified against every rendered source page. The editable source bundle contains all dependencies other than the TeX installation.
 
 No downstream accuracy is presented as completed. The seven-method subset is retrospective; original v8 algorithm settings were frozen before its new-paper scores. Source syntax metrics do not establish mathematical semantic correctness.
+
+The October 14 edit changes only the opening content: concise research question and overview, three baseline pages (source links, SP Unigram workflow, two-round EM example). Original content frame9onward remains unchanged; frame numbers update automatically.

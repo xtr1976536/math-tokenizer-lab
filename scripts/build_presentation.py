@@ -40,63 +40,54 @@ def main():
         frames.append({'section':section,'title':title,'body':body+footer,'note':note})
     frame('Research Question','Can Mathematical Tokenization Improve Model Capability?',
         block('Research question',r'Can we train tokenizers specifically for mathematical text that improve both \textbf{intrinsic tokenization} and \textbf{downstream mathematical capability}?')+
-        table(['Question','What would count as evidence?'],[
-            ['RQ1: tokenizer quality','Lossless compression, structural boundary preservation, robustness and full-interface speed.'],
-            ['RQ2: model capability','Better symbolic manipulation, PDE solving/discovery and mathematical reasoning under controlled training budgets.'],
-            ['Current status','RQ1 has completed experiments; RQ2 is a planned, separate evaluation.']],r'L{2.7cm}X')+
-        block('Two final research routes',r'\textbf{Math-atom BPE}: learn a mathematical vocabulary using a reversible lexical alphabet.\\\textbf{Boundary AST}: use the same vocabulary with source-structure-aware segmentation.','remarkbox'),('pathpiece','tokeval'))
-    frame('Research Question','Why Mathematical Source Text Is Different',
-        block('A source string carries both symbols and scope',r'\[\frac{\partial u}{\partial t}=\nu\Delta u+f(x,t).\]'+'Commands, indices and grouped arguments carry distinct roles. Command splits can hide recurring units; cross-argument merges can hide useful boundaries.')+
-        table(['Property','Example','Design consequence'],[
-            ['Command identity',r'\texttt{\textbackslash partial}, \texttt{\textbackslash frac}','Protect observed complete commands.'],
-            ['Argument scope',r'\texttt{\{x+y\}} vs. \texttt{\{x\}+y}','Track source endpoints without rewriting the formula.'],
-            ['Numerical form',r'$1.25$, $10^{-6}$, $x_{12}$','Measure digit and number integrity separately.'],
-            ['Open vocabulary','Unseen commands and Unicode','Retain a complete 256-byte fallback.']],r'L{2.1cm}L{3.7cm}X')+
-        block('Important distinction','Lossless source reconstruction is necessary. It does not prove that the tokens preserve all mathematical semantics.','remarkbox'),('texbleu','xval'))
-    frame('Research Question','What This Study Establishes',
-        table(['Component','Completed evidence','What remains untested'],[
-            ['Data','56,000 classified formula strings; frozen source-based partitions.','General mathematical truth or complete semantic equivalence.'],
-            ['Methods','Two frozen routes; original third-party training and baseline interfaces.','Benefits from model-specific embedding adaptation.'],
-            ['Evaluation','Seven retained systems; three new audits of the current release.','Downstream accuracy and scaling to multiple hardware platforms.'],
-            ['Selection','Two proposed systems and five baselines explicitly registered.','Whether the best intrinsic trade-off is the best task representation.']],r'L{1.7cm}X X')+
-        block('Evidence boundary','The original v8 model/weight freeze preceded its test scores. The present seven-system selection is retrospective and user specified; it is not a new unseen-test experiment.','remarkbox')+
-        block('Experimental separation','Tokenizer learning, string-to-ID inference and language-model adaptation are separate interventions. A gain in one stage must be checked rather than assumed to transfer to the next.'),('pathpiece','compute'))
-    frame('Related Work','Classical Subword Tokenization',
-        table(['Family','Learning and inference','Relevance to mathematics'],[
-            ['BPE','Repeated pair-frequency merges; apply a learned merge order.','Simple, fast and data driven; syntax is not the training objective.'],
-            ['WordPiece','Vocabulary learning followed by subword matching.','Widely used; unknown handling and pretokenization affect raw fidelity.'],
-            ['Unigram','Learn piece probabilities; choose a likely segmentation.','Separates vocabulary probability from one fixed merge history.'],
-            ['SentencePiece','A training/runtime framework supporting BPE and Unigram.','Identity normalization and byte fallback must be set explicitly.']],r'L{2.0cm}X X')+
-        block('Our use of established algorithms','The math-atom route uses the original Hugging Face BPE trainer and Rust runtime. Its contribution is the mathematical alphabet, corpus and controlled design, not a new BPE optimization algorithm.','remarkbox'),('bpe','unigram','sentencepiece'))
-    frame('Related Work','General-Purpose Tokenizers as Deployment References',
-        table(['Retained tokenizer','Actual ID space','Interface used'],[
-            ['Qwen2.5','151,665','Pinned official tokenizer configuration; HF tokenizers.'],
-            ['Llama 3','128,256','Pinned Meta tokenizer code and byte-rank file.'],
-            ['o200k','200,019','Original tiktoken o200k\_base.'],
-            ['Our trained comparisons','1,024 / 2,048','Every primitive and reserved ID counted.']],r'L{2.5cm}L{2.3cm}X')+
-        block('What is held fixed','All systems receive the same raw formulas and metric definitions. Mature tokenizers retain their full vocabularies; their source pretraining data and possible contamination are unknown.')+
-        block('What this comparison cannot establish','Different vocabulary sizes imply different embedding/softmax costs. These rows are practical deployment references, not equal-parameter causal comparisons.','remarkbox'),('qwen','llama','tiktoken'))
-    frame('Related Work','Specialized Mathematical and Scientific Representations',
-        table(['Work','Relevant mechanism','Difference from our study'],[
-            ['TeXBLEU (2024)','LaTeX-trained BPE and embeddings for a formula-generation metric.','Evaluates generated expressions, rather than a common standalone tokenizer benchmark.'],
-            ['CMERNet (AAAI 2026)','Explicit LaTeX command/environment units plus specialized BPE.','Targets expression recognition; its symbol inventory is curated.'],
-            ['MathBERT (2021)','Operator-tree substructure prediction during formula/context pretraining.','Changes model pretraining objectives, rather than only segmentation.'],
-            ['MathGPT (ACL 2023)','Operator-tree tokens, tree positions and constrained generation.','Uses a tree representation and model modifications.']],r'L{2.5cm}X X')+
-        block('Positioning','Preserving mathematical units and using formula trees are established ideas. Our claim is a specific raw-byte segmentation trade-off with matched-vocabulary controls.','remarkbox'),('texbleu','cmer','mathbert','mathgpt'))
-    frame('Related Work','Compression, Structure and Intrinsic Evaluation',
-        table(['Work','Finding / design principle','Consequence for our experiment'],[
-            ['PathPiece (EMNLP 2024)','Shortest segmentation need not yield the best downstream model.','Separate vocabulary learning from segmentation; keep same-dictionary controls.'],
-            ['Greed Is All You Need (ACL 2024)','Inference choices affect intrinsic properties even with fixed vocabularies.','Report lexical boundaries and information measures, not just token count.'],
-            ['TokEval (COLM 2026)','Structural properties such as Unicode and digit boundaries matter.','Measure integrity and robustness alongside compression.'],
-            ['Compute Optimal Tokenization (2026)','Granularity interacts with model size, data and compute.','Downstream budgets must include vocabulary and sequence costs.']],r'L{2.6cm}X X')+
-        block('Our structural metrics','KaTeX partial-crossing and pylatexenc argument endpoints are syntax proxies. Neither is an established gold measure of mathematical meaning.','remarkbox'),('pathpiece','greed','tokeval','compute'))
-    frame('Related Work','Adaptive Tokenization and the Role of RL',
-        table(['Approach','What is learned','Why it is not the same experiment'],[
-            ['Dauncey \& Wattenhofer (ICML 2026)','Discrete byte boundaries using score-function estimates and LM loss.','Requires downstream model feedback; our terminal vocabulary reward is an adaptation.'],
-            ['H-Net (2025)','Content-dependent hierarchical chunks jointly with a sequence model.','Changes the model architecture and latent representation.'],
-            ['AdaptBPE (2026)','Adapt general tokenization to specialized domains.','Motivates domain adaptation; does not establish formula-tree optimality.'],
-            ['xVal (2023)','Continuous numerical encoding inside scientific LMs.','Requires a numerical channel and modified model handling.']],r'L{2.9cm}X X')+
-        block('Design decision','Standalone multi-objective RL did not pass our repeatability gate. The final production routes contain no policy updates or online policy inference.','remarkbox'),('rl','hnet','adaptbpe','xval'))
+        r'\vspace{8pt}'+table(['Question','What would count as evidence?'],[
+            ['RQ1: tokenizer quality','Lossless compression, robustness, speed, etc.'],
+            ['RQ2: model capability','Mathematical tasks such as PDE/ODE solving.'],
+            ['Current status','Tokenizer experiments completed; downstream evaluation to follow.']],r'L{3.0cm}X'),
+        note='This page is intentionally limited to the research question and requested short evidence descriptions.')
+    frame('Research Question','Study Overview',
+        table(['Component','Summary'],[
+            ['Dataset','We constructed and classified a dataset of mathematical formulas from multiple mathematical fields.'],
+            ['Models','We proposed two specialized mathematical tokenizers.'],
+            ['Baselines','We selected five tokenizers: classical BPE and Unigram methods, and tokenizers used by mature large language models.'],
+            ['Results','Our two tokenizers achieve leading performance on core intrinsic metrics and in the overall comparison.']],r'L{2.4cm}X'),
+        note='Leading performance refers to selected core metrics and the stated aggregate comparison; the experimental tables do not show universal dominance on every individual metric.')
+    frame('Baseline','Baseline Tokenizers',
+        table(['Category','Tokenizer','Actual ID space','Code / tokenizer source'],[
+            ['Classical tokenizers','Byte BPE','1,024 / 2,048',r'\href{https://github.com/huggingface/tokenizers}{huggingface/tokenizers}'],
+            ['Classical tokenizers','SP Unigram','1,024 / 2,048',r'\href{https://github.com/google/sentencepiece}{google/sentencepiece}'],
+            ['General-Purpose Tokenizers','Qwen2.5','151,665',r'\href{https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json}{Qwen2.5-0.5B/tokenizer.json}'],
+            ['General-Purpose Tokenizers','Llama 3','128,256',r'\href{https://github.com/meta-llama/llama3/blob/a0940f9cf7065d45bb6675660f80d305c041a754/llama/tokenizer.py}{meta-llama/llama3/tokenizer.py}'],
+            ['General-Purpose Tokenizers','o200k','200,019',r'\href{https://github.com/openai/tiktoken}{openai/tiktoken}']],r'L{2.4cm}L{1.5cm}L{1.7cm}X')+
+        r'\vspace{6pt}'+bullets(['Qwen2.5: used by the Qwen2.5 model family.',
+                                'Llama 3: used by the Meta Llama 3 model family.',
+                                r'o200k\_base: used by GPT-4o and GPT-4.1.']),
+        note='Source links point to the actual public implementation or tokenizer artifact used. Actual ID spaces are taken from the frozen active registry; SP Unigram includes byte fallback IDs.')
+    frame('Baseline','SP Unigram: Training and Inference',
+        table(['Training step','Procedure'],[
+            ['Preparation',r'Use raw strings without language-specific word segmentation; represent spaces as a symbol, usually {\fontspec{Apple Symbols}▁}.'],
+            ['1. Initialize','Create a large seed vocabulary of characters, frequent substrings and symbols; assign initial piece probabilities.'],
+            ['2. EM iterations','E: sum over possible segmentations to obtain expected piece counts. M: re-estimate probabilities from those counts.'],
+            ['3. Prune','Remove pieces with low contribution to corpus likelihood; repeat EM and pruning to reach 1,024 or 2,048 IDs.'],
+            ['4. Final model','A piece vocabulary and probabilities; an optional byte fallback table.']],r'L{2.1cm}X')+
+        r'\vspace{2pt}\textbf{Inference}\par '+
+        r'Build a segmentation lattice; for \texttt{abc}: $a+b+c$, $ab+c$, $a+bc$, or $abc$.'+
+        r'\[P(s)=\prod_i p(s_i),\qquad s^*=\arg\max_{s\in\mathcal S(x)}P(s).\]'+
+        r'Viterbi dynamic programming returns the most probable token sequence.',
+        note='Raw training describes the SentencePiece approach. For this experiment identity normalization and whitespace-preserving settings are used. E-step uses forward/backward dynamic programming rather than explicit exponential enumeration. P(s) is one segmentation probability; the training string likelihood is P(x)=sum_s P(s). Official SentencePiece uses a Bayesian/digamma probability update and loss-based pruning, so the next example illustrates basic maximum-likelihood EM rather than byte-for-byte trainer behavior. U+2581 denotes the visible space symbol.')
+    frame('Baseline','SP Unigram: A Two-Round EM Example',
+        r'\textbf{Setup:} one training string \texttt{ab}; pieces $a,b,ab$; initially $p(a)=p(b)=p(ab)=1/3$.\par'+
+        r'\vspace{3pt}\textbf{E step: segmentation likelihoods and posteriors}\par'+
+        table(['Round','$(a,b)$ likelihood','$ab$ likelihood','$P(x)$','Posterior: $(a,b)$ / $ab$'],[
+            ['1',r'$1/3\times1/3=1/9$',r'$1/3=3/9$',r'$4/9$',r'$1/4=0.25$ / $3/4=0.75$'],
+            ['2',r'$0.2\times0.2=0.04$',r'$0.6$',r'$0.64$',r'$0.0625$ / $0.9375$']],r'L{1cm}L{2.5cm}L{1.5cm}L{1cm}X')+
+        r'\vspace{4pt}\textbf{M step: expected counts and normalized probabilities}\par'+
+        table(['Round','$\mathbb E[n_a],\mathbb E[n_b],\mathbb E[n_{ab}]$','Total','$p(a),p(b),p(ab)$'],[
+            ['1',r'$0.25,\;0.25,\;0.75$',r'$1.25$',r'$0.2,\;0.2,\;0.6$'],
+            ['2',r'$0.0625,\;0.0625,\;0.9375$',r'$1.0625$',r'$1/17,\;1/17,\;15/17$' + r'\newline $\approx0.0588,\;0.0588,\;0.8824$']],r'L{1cm}L{3.5cm}L{1cm}X')+
+        r'\[P(x)=\sum_{s\in\mathcal S(x)}\prod_i p(s_i),\qquad p(v)=\frac{\mathbb E[n_v]}{\sum_u\mathbb E[n_u]}.\]'+
+        r'For this one-string example, $p(ab)\to1$ and $p(a),p(b)\to0$: EM favors the whole piece $ab$. Low-contribution pieces become pruning candidates; required characters remain protected.',
+        note='Simplified maximum-likelihood EM example supplied by the user; exact arithmetic was checked with rational numbers. Real SentencePiece uses a Bayesian probability update, estimates pruning loss, and preserves required symbols. The toy example cannot imply universal deletion of individual characters.')
     frame('Related Work','Our Two Routes: Contribution and Prior Art',
         table(['Dimension','Math-atom BPE','Boundary AST'],[
             ['Vocabulary','Fit-derived complete-command/Unicode atoms; original BPE.','Exactly the same byte vocabulary and ID budget.'],
@@ -382,6 +373,14 @@ def main():
         body=f['body']
         if f['title'] in ('Can Mathematical Tokenization Improve Model Capability?','Classical Subword Tokenization','Common Inputs, Training Information and Timing'):
             body=body.replace(r'{\scriptsize\tbl',r'{\footnotesize\tbl')
+        if f['title']=='Can Mathematical Tokenization Improve Model Capability?':
+            body=body.replace(r'{\footnotesize\tbl',r'{\footnotesize\renewcommand{\tbl}{\renewcommand{\arraystretch}{2.3}\setlength{\tabcolsep}{3pt}}\tbl')
+        if f['title']=='Study Overview':
+            body=body.replace(r'{\scriptsize\tbl',r'{\footnotesize\renewcommand{\tbl}{\renewcommand{\arraystretch}{2.8}\setlength{\tabcolsep}{5pt}}\tbl')
+        if f['title']=='SP Unigram: Training and Inference':
+            body=body.replace(r'{\scriptsize\tbl',r'{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.35}\setlength{\tabcolsep}{3pt}}\tbl')
+        if f['title']=='Baseline Tokenizers':
+            body=body.replace(r'{\scriptsize\tbl',r'{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.8}\setlength{\tabcolsep}{3pt}}\tbl')
         if f['title']=='Efficiency, Fidelity and Information Measures':
             body=body.replace(r'{\scriptsize\tbl',r'{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.27}\setlength{\tabcolsep}{3pt}}\tbl')
         if f['title']=='References and Technical Context (3/3)':body=body.replace(r'\setlength{\itemsep}{4pt}',r'\setlength{\itemsep}{6.5pt}')

@@ -1,15 +1,15 @@
 {
   "schemaVersion": "presentation-finalization.v1",
-  "finalSha256": "e46b92f15ea13cb44f5f76bc22ef3e77310caeea772884c11206f0cfd17f76c0",
-  "byteCount": 9708003,
+  "finalSha256": "288caff91d19117213bbd0c859a3062346fbf0b8b8c666aba633a4a36a9b3f1a",
+  "byteCount": 8846328,
   "packageIntegrity": {
     "chart_count": 0,
     "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
     "finding_count": 0,
     "findings": [],
-    "notes_parts_skipped": 45,
-    "relationship_part_count": 100,
-    "slide_count": 45,
+    "notes_parts_skipped": 42,
+    "relationship_part_count": 94,
+    "slide_count": 42,
     "status": "pass",
     "exitCode": 0,
     "findingCount": 0,
@@ -18,7 +18,7 @@
   "presentationLayout": {
     "finding_count": 0,
     "findings": [],
-    "slide_count": 45,
+    "slide_count": 42,
     "slide_size_in": [
       10,
       7.5
@@ -38,8 +38,8 @@
   "firstPartyImport": {
     "performed": true,
     "passed": true,
-    "slideCount": 45,
-    "sha256": "e46b92f15ea13cb44f5f76bc22ef3e77310caeea772884c11206f0cfd17f76c0",
+    "slideCount": 42,
+    "sha256": "288caff91d19117213bbd0c859a3062346fbf0b8b8c666aba633a4a36a9b3f1a",
     "runtimeNodeModules": "/Users/xiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules",
     "nodeExecutable": "/Users/xiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
   },
@@ -55,7 +55,7 @@
     "passed": true,
     "schema_version": "presentation-native-table-arithmetic.v1",
     "skipped_tables": [],
-    "slide_count": 45,
+    "slide_count": 42,
     "warning_count": 0,
     "warnings": []
   },
@@ -67,9 +67,9 @@
     "native_chart_count": 0,
     "native_powerpoint_verified": false,
     "passed": true,
-    "presentation_sha256": "e46b92f15ea13cb44f5f76bc22ef3e77310caeea772884c11206f0cfd17f76c0",
+    "presentation_sha256": "288caff91d19117213bbd0c859a3062346fbf0b8b8c666aba633a4a36a9b3f1a",
     "schema_version": "presentation-native-chart-titles.v1",
-    "slide_count": 45,
+    "slide_count": 42,
     "source_text_emitted": false,
     "unresolved_linked_title_count": 0
   },
@@ -81,7 +81,7 @@
     "--cover-role",
     "none",
     "--expected-slide-count",
-    "45"
+    "42"
   ],
   "nativeChartValidation": {
     "detectedOwnerSlides": [],

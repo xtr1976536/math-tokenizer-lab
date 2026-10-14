@@ -16,7 +16,7 @@ for(let i=0;i<prep.images.length;i++){
     alt:`Beamer presentation page ${i+1}`,fit:'contain',position:{left:0,top:0,width:960,height:720}});
   slide.speakerNotes.text=prep.notes[i]+'\n\nEditable master: mathematical_tokenizer.tex in companion source bundle; this page preserves the Beamer rendering.';
 }
-const staging=path.join(folder,'build/artifact_export');await fs.mkdir(staging,{recursive:true});
+const staging=path.join(folder,'build',`artifact_export_${Date.now()}`);await fs.mkdir(staging,{recursive:true});
 const candidate=path.join(staging,'candidate.pptx');await(await PresentationFile.exportPptx(presentation)).save(candidate);
 const {finalizePresentation}=await import(pathToFileURL(path.join(skill,'container_tools/artifact_tool_utils.mjs')).href);
 const final=prep.finalPptx ?? path.join(folder,'output/Design_of_a_Specialized_Tokenizer_for_Mathematical_Text_Updated.pptx');

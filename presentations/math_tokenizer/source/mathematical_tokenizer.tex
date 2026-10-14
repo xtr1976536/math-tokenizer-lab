@@ -23,144 +23,84 @@
 \begin{definitionbox}{Research question}
 Can we train tokenizers specifically for mathematical text that improve both \textbf{intrinsic tokenization} and \textbf{downstream mathematical capability}?
 \end{definitionbox}
-\par\noindent{\footnotesize\tbl\begin{tabularx}{\linewidth}{@{}L{2.7cm}>{\raggedright\arraybackslash}X@{}}\toprule
+\vspace{8pt}\par\noindent{\footnotesize\renewcommand{\tbl}{\renewcommand{\arraystretch}{2.3}\setlength{\tabcolsep}{3pt}}\tbl\begin{tabularx}{\linewidth}{@{}L{3.0cm}>{\raggedright\arraybackslash}X@{}}\toprule
 Question & What would count as evidence?\\\midrule
-RQ1: tokenizer quality & Lossless compression, structural boundary preservation, robustness and full-interface speed.\\
-RQ2: model capability & Better symbolic manipulation, PDE solving/discovery and mathematical reasoning under controlled training budgets.\\
-Current status & RQ1 has completed experiments; RQ2 is a planned, separate evaluation.\\
+RQ1: tokenizer quality & Lossless compression, robustness, speed, etc.\\
+RQ2: model capability & Mathematical tasks such as PDE/ODE solving.\\
+Current status & Tokenizer experiments completed; downstream evaluation to follow.\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Two final research routes}
-\textbf{Math-atom BPE}: learn a mathematical vocabulary using a reversible lexical alphabet.\\\textbf{Boundary AST}: use the same vocabulary with source-structure-aware segmentation.
-\end{remarkbox}
-\src{\href{https://aclanthology.org/2024.emnlp-main.40/}{Schmidt et al. (2024)} ; \href{https://arxiv.org/abs/2608.18062}{Meister (2026)} }
+
+\note{This page is intentionally limited to the research question and requested short evidence descriptions.}
 
 \end{frame}
 
 \major{Research Question}
-\begin{frame}[t]{Why Mathematical Source Text Is Different}
+\begin{frame}[t]{Study Overview}
 \relax
-\begin{definitionbox}{A source string carries both symbols and scope}
-\[\frac{\partial u}{\partial t}=\nu\Delta u+f(x,t).\]Commands, indices and grouped arguments carry distinct roles. Command splits can hide recurring units; cross-argument merges can hide useful boundaries.
-\end{definitionbox}
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.1cm}L{3.7cm}>{\raggedright\arraybackslash}X@{}}\toprule
-Property & Example & Design consequence\\\midrule
-Command identity & \texttt{\textbackslash partial}, \texttt{\textbackslash frac} & Protect observed complete commands.\\
-Argument scope & \texttt{\{x+y\}} vs. \texttt{\{x\}+y} & Track source endpoints without rewriting the formula.\\
-Numerical form & $1.25$, $10^{-6}$, $x_{12}$ & Measure digit and number integrity separately.\\
-Open vocabulary & Unseen commands and Unicode & Retain a complete 256-byte fallback.\\
+\par\noindent{\footnotesize\renewcommand{\tbl}{\renewcommand{\arraystretch}{2.8}\setlength{\tabcolsep}{5pt}}\tbl\begin{tabularx}{\linewidth}{@{}L{2.4cm}>{\raggedright\arraybackslash}X@{}}\toprule
+Component & Summary\\\midrule
+Dataset & We constructed and classified a dataset of mathematical formulas from multiple mathematical fields.\\
+Models & We proposed two specialized mathematical tokenizers.\\
+Baselines & We selected five tokenizers: classical BPE and Unigram methods, and tokenizers used by mature large language models.\\
+Results & Our two tokenizers achieve leading performance on core intrinsic metrics and in the overall comparison.\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Important distinction}
-Lossless source reconstruction is necessary. It does not prove that the tokens preserve all mathematical semantics.
-\end{remarkbox}
-\src{\href{https://arxiv.org/abs/2409.06639}{Jung et al. (2024)} ; \href{https://arxiv.org/abs/2310.02989}{Golkar et al. (2023)} }
+
+\note{Leading performance refers to selected core metrics and the stated aggregate comparison; the experimental tables do not show universal dominance on every individual metric.}
 
 \end{frame}
 
-\major{Research Question}
-\begin{frame}[t]{What This Study Establishes}
+\major{Baseline}
+\begin{frame}[t]{Baseline Tokenizers}
 \relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{1.7cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Component & Completed evidence & What remains untested\\\midrule
-Data & 56,000 classified formula strings; frozen source-based partitions. & General mathematical truth or complete semantic equivalence.\\
-Methods & Two frozen routes; original third-party training and baseline interfaces. & Benefits from model-specific embedding adaptation.\\
-Evaluation & Seven retained systems; three new audits of the current release. & Downstream accuracy and scaling to multiple hardware platforms.\\
-Selection & Two proposed systems and five baselines explicitly registered. & Whether the best intrinsic trade-off is the best task representation.\\
+\par\noindent{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.8}\setlength{\tabcolsep}{3pt}}\tbl\begin{tabularx}{\linewidth}{@{}L{2.4cm}L{1.5cm}L{1.7cm}>{\raggedright\arraybackslash}X@{}}\toprule
+Category & Tokenizer & Actual ID space & Code / tokenizer source\\\midrule
+Classical tokenizers & Byte BPE & 1,024 / 2,048 & \href{https://github.com/huggingface/tokenizers}{huggingface/tokenizers}\\
+Classical tokenizers & SP Unigram & 1,024 / 2,048 & \href{https://github.com/google/sentencepiece}{google/sentencepiece}\\
+General-Purpose Tokenizers & Qwen2.5 & 151,665 & \href{https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json}{Qwen2.5-0.5B/tokenizer.json}\\
+General-Purpose Tokenizers & Llama 3 & 128,256 & \href{https://github.com/meta-llama/llama3/blob/a0940f9cf7065d45bb6675660f80d305c041a754/llama/tokenizer.py}{meta-llama/llama3/tokenizer.py}\\
+General-Purpose Tokenizers & o200k & 200,019 & \href{https://github.com/openai/tiktoken}{openai/tiktoken}\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Evidence boundary}
-The original v8 model/weight freeze preceded its test scores. The present seven-system selection is retrospective and user specified; it is not a new unseen-test experiment.
-\end{remarkbox}
-\begin{definitionbox}{Experimental separation}
-Tokenizer learning, string-to-ID inference and language-model adaptation are separate interventions. A gain in one stage must be checked rather than assumed to transfer to the next.
-\end{definitionbox}
-\src{\href{https://aclanthology.org/2024.emnlp-main.40/}{Schmidt et al. (2024)} ; \href{https://arxiv.org/abs/2605.01188}{Limisiewicz et al. (2026)} }
+\vspace{6pt}\begin{itemize}
+\item Qwen2.5: used by the Qwen2.5 model family.
+\item Llama 3: used by the Meta Llama 3 model family.
+\item o200k\_base: used by GPT-4o and GPT-4.1.
+\end{itemize}
+
+\note{Source links point to the actual public implementation or tokenizer artifact used. Actual ID spaces are taken from the frozen active registry; SP Unigram includes byte fallback IDs.}
 
 \end{frame}
 
-\major{Related Work}
-\begin{frame}[t]{Classical Subword Tokenization}
+\major{Baseline}
+\begin{frame}[t]{SP Unigram: Training and Inference}
 \relax
-\par\noindent{\footnotesize\tbl\begin{tabularx}{\linewidth}{@{}L{2.0cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Family & Learning and inference & Relevance to mathematics\\\midrule
-BPE & Repeated pair-frequency merges; apply a learned merge order. & Simple, fast and data driven; syntax is not the training objective.\\
-WordPiece & Vocabulary learning followed by subword matching. & Widely used; unknown handling and pretokenization affect raw fidelity.\\
-Unigram & Learn piece probabilities; choose a likely segmentation. & Separates vocabulary probability from one fixed merge history.\\
-SentencePiece & A training/runtime framework supporting BPE and Unigram. & Identity normalization and byte fallback must be set explicitly.\\
+\par\noindent{\scriptsize\renewcommand{\tbl}{\renewcommand{\arraystretch}{1.35}\setlength{\tabcolsep}{3pt}}\tbl\begin{tabularx}{\linewidth}{@{}L{2.1cm}>{\raggedright\arraybackslash}X@{}}\toprule
+Training step & Procedure\\\midrule
+Preparation & Use raw strings without language-specific word segmentation; represent spaces as a symbol, usually {\fontspec{Apple Symbols}▁}.\\
+1. Initialize & Create a large seed vocabulary of characters, frequent substrings and symbols; assign initial piece probabilities.\\
+2. EM iterations & E: sum over possible segmentations to obtain expected piece counts. M: re-estimate probabilities from those counts.\\
+3. Prune & Remove pieces with low contribution to corpus likelihood; repeat EM and pruning to reach 1,024 or 2,048 IDs.\\
+4. Final model & A piece vocabulary and probabilities; an optional byte fallback table.\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Our use of established algorithms}
-The math-atom route uses the original Hugging Face BPE trainer and Rust runtime. Its contribution is the mathematical alphabet, corpus and controlled design, not a new BPE optimization algorithm.
-\end{remarkbox}
-\src{\href{https://aclanthology.org/P16-1162/}{Sennrich, Haddow and Birch (2016)} ; \href{https://aclanthology.org/P18-1007/}{Kudo (2018)} ; \href{https://aclanthology.org/D18-2012/}{Kudo and Richardson (2018)} }
+\vspace{2pt}\textbf{Inference}\par Build a segmentation lattice; for \texttt{abc}: $a+b+c$, $ab+c$, $a+bc$, or $abc$.\[P(s)=\prod_i p(s_i),\qquad s^*=\arg\max_{s\in\mathcal S(x)}P(s).\]Viterbi dynamic programming returns the most probable token sequence.
+\note{Raw training describes the SentencePiece approach. For this experiment identity normalization and whitespace-preserving settings are used. E-step uses forward/backward dynamic programming rather than explicit exponential enumeration. P(s) is one segmentation probability; the training string likelihood is P(x)=sum_s P(s). Official SentencePiece uses a Bayesian/digamma probability update and loss-based pruning, so the next example illustrates basic maximum-likelihood EM rather than byte-for-byte trainer behavior. U+2581 denotes the visible space symbol.}
 
 \end{frame}
 
-\major{Related Work}
-\begin{frame}[t]{General-Purpose Tokenizers as Deployment References}
+\major{Baseline}
+\begin{frame}[t]{SP Unigram: A Two-Round EM Example}
 \relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.5cm}L{2.3cm}>{\raggedright\arraybackslash}X@{}}\toprule
-Retained tokenizer & Actual ID space & Interface used\\\midrule
-Qwen2.5 & 151,665 & Pinned official tokenizer configuration; HF tokenizers.\\
-Llama 3 & 128,256 & Pinned Meta tokenizer code and byte-rank file.\\
-o200k & 200,019 & Original tiktoken o200k\_base.\\
-Our trained comparisons & 1,024 / 2,048 & Every primitive and reserved ID counted.\\
+\textbf{Setup:} one training string \texttt{ab}; pieces $a,b,ab$; initially $p(a)=p(b)=p(ab)=1/3$.\par\vspace{3pt}\textbf{E step: segmentation likelihoods and posteriors}\par\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{1cm}L{2.5cm}L{1.5cm}L{1cm}>{\raggedright\arraybackslash}X@{}}\toprule
+Round & $(a,b)$ likelihood & $ab$ likelihood & $P(x)$ & Posterior: $(a,b)$ / $ab$\\\midrule
+1 & $1/3\times1/3=1/9$ & $1/3=3/9$ & $4/9$ & $1/4=0.25$ / $3/4=0.75$\\
+2 & $0.2\times0.2=0.04$ & $0.6$ & $0.64$ & $0.0625$ / $0.9375$\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{definitionbox}{What is held fixed}
-All systems receive the same raw formulas and metric definitions. Mature tokenizers retain their full vocabularies; their source pretraining data and possible contamination are unknown.
-\end{definitionbox}
-\begin{remarkbox}{What this comparison cannot establish}
-Different vocabulary sizes imply different embedding/softmax costs. These rows are practical deployment references, not equal-parameter causal comparisons.
-\end{remarkbox}
-\src{\href{https://arxiv.org/abs/2412.15115}{Qwen Team (2024)} ; \href{https://arxiv.org/abs/2407.21783}{Dubey et al. (2024)} ; \href{https://github.com/openai/tiktoken}{OpenAI (2026)} }
-
-\end{frame}
-
-\major{Related Work}
-\begin{frame}[t]{Specialized Mathematical and Scientific Representations}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.5cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Work & Relevant mechanism & Difference from our study\\\midrule
-TeXBLEU (2024) & LaTeX-trained BPE and embeddings for a formula-generation metric. & Evaluates generated expressions, rather than a common standalone tokenizer benchmark.\\
-CMERNet (AAAI 2026) & Explicit LaTeX command/environment units plus specialized BPE. & Targets expression recognition; its symbol inventory is curated.\\
-MathBERT (2021) & Operator-tree substructure prediction during formula/context pretraining. & Changes model pretraining objectives, rather than only segmentation.\\
-MathGPT (ACL 2023) & Operator-tree tokens, tree positions and constrained generation. & Uses a tree representation and model modifications.\\
+\vspace{4pt}\textbf{M step: expected counts and normalized probabilities}\par\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{1cm}L{3.5cm}L{1cm}>{\raggedright\arraybackslash}X@{}}\toprule
+Round & $\mathbb E[n_a],\mathbb E[n_b],\mathbb E[n_{ab}]$ & Total & $p(a),p(b),p(ab)$\\\midrule
+1 & $0.25,\;0.25,\;0.75$ & $1.25$ & $0.2,\;0.2,\;0.6$\\
+2 & $0.0625,\;0.0625,\;0.9375$ & $1.0625$ & $1/17,\;1/17,\;15/17$\newline $\approx0.0588,\;0.0588,\;0.8824$\\
 \bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Positioning}
-Preserving mathematical units and using formula trees are established ideas. Our claim is a specific raw-byte segmentation trade-off with matched-vocabulary controls.
-\end{remarkbox}
-\src{\href{https://arxiv.org/abs/2409.06639}{Jung et al. (2024)} ; \href{https://ojs.aaai.org/index.php/AAAI/article/view/37224}{Bai et al. (2026)} ; \href{https://arxiv.org/abs/2105.00377}{Peng et al. (2021)} ; \href{https://aclanthology.org/2023.acl-long.205/}{Scarlatos and Lan (2023)} }
-
-\end{frame}
-
-\major{Related Work}
-\begin{frame}[t]{Compression, Structure and Intrinsic Evaluation}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.6cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Work & Finding / design principle & Consequence for our experiment\\\midrule
-PathPiece (EMNLP 2024) & Shortest segmentation need not yield the best downstream model. & Separate vocabulary learning from segmentation; keep same-dictionary controls.\\
-Greed Is All You Need (ACL 2024) & Inference choices affect intrinsic properties even with fixed vocabularies. & Report lexical boundaries and information measures, not just token count.\\
-TokEval (COLM 2026) & Structural properties such as Unicode and digit boundaries matter. & Measure integrity and robustness alongside compression.\\
-Compute Optimal Tokenization (2026) & Granularity interacts with model size, data and compute. & Downstream budgets must include vocabulary and sequence costs.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Our structural metrics}
-KaTeX partial-crossing and pylatexenc argument endpoints are syntax proxies. Neither is an established gold measure of mathematical meaning.
-\end{remarkbox}
-\src{\href{https://aclanthology.org/2024.emnlp-main.40/}{Schmidt et al. (2024)} ; \href{https://aclanthology.org/2024.acl-short.73/}{Uzan et al. (2024)} ; \href{https://arxiv.org/abs/2608.18062}{Meister (2026)} ; \href{https://arxiv.org/abs/2605.01188}{Limisiewicz et al. (2026)} }
-
-\end{frame}
-
-\major{Related Work}
-\begin{frame}[t]{Adaptive Tokenization and the Role of RL}
-\relax
-\par\noindent{\scriptsize\tbl\begin{tabularx}{\linewidth}{@{}L{2.9cm}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
-Approach & What is learned & Why it is not the same experiment\\\midrule
-Dauncey \& Wattenhofer (ICML 2026) & Discrete byte boundaries using score-function estimates and LM loss. & Requires downstream model feedback; our terminal vocabulary reward is an adaptation.\\
-H-Net (2025) & Content-dependent hierarchical chunks jointly with a sequence model. & Changes the model architecture and latent representation.\\
-AdaptBPE (2026) & Adapt general tokenization to specialized domains. & Motivates domain adaptation; does not establish formula-tree optimality.\\
-xVal (2023) & Continuous numerical encoding inside scientific LMs. & Requires a numerical channel and modified model handling.\\
-\bottomrule\end{tabularx}}\par\vspace{2pt}
-\begin{remarkbox}{Design decision}
-Standalone multi-objective RL did not pass our repeatability gate. The final production routes contain no policy updates or online policy inference.
-\end{remarkbox}
-\src{\href{https://proceedings.mlr.press/v306/dauncey26a.html}{Dauncey and Wattenhofer (2026)} ; \href{https://arxiv.org/abs/2507.07955}{Hwang, Wang and Gu (2025)} ; \href{https://arxiv.org/abs/2601.21665}{Liyanage and Yvon (2026)} ; \href{https://arxiv.org/abs/2310.02989}{Golkar et al. (2023)} }
+\[P(x)=\sum_{s\in\mathcal S(x)}\prod_i p(s_i),\qquad p(v)=\frac{\mathbb E[n_v]}{\sum_u\mathbb E[n_u]}.\]For this one-string example, $p(ab)\to1$ and $p(a),p(b)\to0$: EM favors the whole piece $ab$. Low-contribution pieces become pruning candidates; required characters remain protected.
+\note{Simplified maximum-likelihood EM example supplied by the user; exact arithmetic was checked with rational numbers. Real SentencePiece uses a Bayesian probability update, estimates pruning loss, and preserves required symbols. The toy example cannot imply universal deletion of individual characters.}
 
 \end{frame}
 

@@ -16,8 +16,9 @@ def main():
     (out/(name+'_Updated.pdf')).write_bytes(data)
     pages=FOLDER/'build/revision_pages';pages.mkdir(exist_ok=True)
     subprocess.run(['pdftoppm','-png','-scale-to','2000',str(pdf),str(pages/'slide')],check=True)
-    reader=PdfReader(pdf);images=sorted(pages.glob('slide-*.png'))
+    reader=PdfReader(pdf)
     expected=json.loads((FOLDER/'source/content_manifest.json').read_text())['total_pages']
+    images=[p for p in sorted(pages.glob('slide-*.png')) if int(p.stem.split('-')[-1])<=expected]
     assert len(images)==len(reader.pages)==expected
     final=out/(name+'_Updated.pptx')
     if final.exists():final=out/(name+'_'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'.pptx')

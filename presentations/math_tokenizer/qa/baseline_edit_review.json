@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "page_count": 42,
+  "baseline_content_frames": [
+    3,
+    4,
+    5
+  ],
+  "source_links": [
+    "https://github.com/huggingface/tokenizers",
+    "https://github.com/google/sentencepiece",
+    "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json",
+    "https://github.com/meta-llama/llama3/blob/a0940f9cf7065d45bb6675660f80d305c041a754/llama/tokenizer.py",
+    "https://github.com/openai/tiktoken"
+  ],
+  "em_math_exact": true,
+  "visible_glyph": "U+2581 Apple Symbols",
+  "unaffected_original_content": "9 through44, byte-identical TeX bodies",
+  "claim": "leading core intrinsic metrics and overall comparison",
+  "sentencepiece_note": "example illustrates maximum-likelihood EM; official code uses digamma updates and loss-based pruning"
+}

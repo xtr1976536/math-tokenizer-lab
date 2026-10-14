@@ -1,12 +1,12 @@
 {
-  "slides": 45,
+  "slides": 42,
   "aspect_ratio": "4:3",
   "pptx_is_exact_page_rendition": true,
   "editable_master": "source/mathematical_tokenizer.tex",
   "slide_image_bytes_verified": true,
-  "exporter": "Artifact Tool2.8.93",
-  "pdf_sha256": "19281af121de080c75206215588ec99072741241b29c746f3a6e9a4ff5e2a922",
-  "pptx_sha256": "e46b92f15ea13cb44f5f76bc22ef3e77310caeea772884c11206f0cfd17f76c0",
-  "source_bundle_sha256": "7cdbe15a844c5b702a1fa2da73dbfb7d9cf007e90f4f98cf219ce698caa8b5c5",
+  "exporter": "Artifact Tool",
+  "pdf_sha256": "ea7a385cde805c61a370f5ef11468f57dd498e00deea5efefcbe1ddde232bd35",
+  "pptx_sha256": "288caff91d19117213bbd0c859a3062346fbf0b8b8c666aba633a4a36a9b3f1a",
+  "source_bundle_sha256": "9a70a1f6f47da3f1b430320b7f7745d6f27180f626bf141626e0577abff0f78b",
   "future_research_added": true
 }

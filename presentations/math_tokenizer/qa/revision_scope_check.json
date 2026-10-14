@@ -1,12 +1,55 @@
 {
   "passed": true,
-  "original_body_unchanged": true,
-  "added_pages": [
-    40,
-    41
+  "unchanged_original_content_frames": "9 through44, exact source equality",
+  "cover_preamble_unchanged": true,
+  "original_deleted_frames": [
+    2,
+    6,
+    7,
+    8
   ],
-  "total_pages": 45,
-  "cover_identity_preserved": true,
-  "stage2_paused": true,
-  "active_downstream_methods": 7
+  "original_merged_frames": [
+    4,
+    5
+  ],
+  "baseline_pages": 3,
+  "total_pdf_pages": 42,
+  "em_exact_rational_rounds": [
+    {
+      "round": 1,
+      "posterior": [
+        "1/4",
+        "3/4"
+      ],
+      "expected_counts": [
+        "1/4",
+        "1/4",
+        "3/4"
+      ],
+      "new_probabilities": [
+        "1/5",
+        "1/5",
+        "3/5"
+      ]
+    },
+    {
+      "round": 2,
+      "posterior": [
+        "1/16",
+        "15/16"
+      ],
+      "expected_counts": [
+        "1/16",
+        "1/16",
+        "15/16"
+      ],
+      "new_probabilities": [
+        "1/17",
+        "1/17",
+        "15/17"
+      ]
+    }
+  ],
+  "claim": "core intrinsic metrics and overall comparison; not universal individual-metric dominance",
+  "scope": "only requested opening content edits; subsequent footers renumbered automatically"
 }
