@@ -43,3 +43,5 @@
 
 1,024-ID 包 `eqgpt_tokenizer_cloud_20261016.zip` 及其已有审查记录对应此前
 版本，不能作为本协议已经实施或通过验证的证据。
+
+后续按照 [LaTeX 1,024-ID 无 SAT 协议](latex_1024_protocol.md)开展第二轮。
