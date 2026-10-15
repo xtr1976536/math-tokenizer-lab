@@ -1,0 +1,601 @@
+{
+  "round": 5,
+  "passed": true,
+  "scope": "independent frozen archive replay;all declared-vocab Renyi and Used;all custom AST node boundaries;sample direct crossing predicate;all paper means and timing;code/data hashes",
+  "checks": [
+    {
+      "protocol": "id_17",
+      "method": "hard_ast_bpe",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "id_17",
+      "method": "ast_v4",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "id_17",
+      "method": "boundary_ast",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "id_17",
+      "method": "math_atom_bpe",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "id_17",
+      "method": "byte_bpe",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "id_17",
+      "method": "sp_unigram",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "id_17",
+      "method": "qwen25",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "id_17",
+      "method": "llama3",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "id_17",
+      "method": "o200k",
+      "rows": 7022,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "hard_ast_bpe",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "ast_v4",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "boundary_ast",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "math_atom_bpe",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "byte_bpe",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "sp_unigram",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "qwen25",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "llama3",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_17",
+      "method": "o200k",
+      "rows": 2769,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "hard_ast_bpe",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "ast_v4",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "boundary_ast",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "math_atom_bpe",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "byte_bpe",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "sp_unigram",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "qwen25",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "llama3",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "id_29",
+      "method": "o200k",
+      "rows": 4184,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "hard_ast_bpe",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "ast_v4",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "boundary_ast",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "math_atom_bpe",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "byte_bpe",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "sp_unigram",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "qwen25",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "llama3",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_29",
+      "method": "o200k",
+      "rows": 1487,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "hard_ast_bpe",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "ast_v4",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "boundary_ast",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "math_atom_bpe",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "byte_bpe",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "sp_unigram",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "qwen25",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "llama3",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "id_43",
+      "method": "o200k",
+      "rows": 5725,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "hard_ast_bpe",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "ast_v4",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "boundary_ast",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "math_atom_bpe",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "byte_bpe",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "sp_unigram",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "qwen25",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "llama3",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "complexity_43",
+      "method": "o200k",
+      "rows": 1684,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "hard_ast_bpe",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "ast_v4",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "boundary_ast",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "math_atom_bpe",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "byte_bpe",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "sp_unigram",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "qwen25",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "llama3",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_1",
+      "method": "o200k",
+      "rows": 18622,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "hard_ast_bpe",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "ast_v4",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "boundary_ast",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "math_atom_bpe",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "byte_bpe",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "sp_unigram",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "qwen25",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "llama3",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_2",
+      "method": "o200k",
+      "rows": 7334,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "hard_ast_bpe",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "ast_v4",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "boundary_ast",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "math_atom_bpe",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "byte_bpe",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "sp_unigram",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "qwen25",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "llama3",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "ood_3",
+      "method": "o200k",
+      "rows": 20259,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "hard_ast_bpe",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "ast_v4",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "boundary_ast",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "math_atom_bpe",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "byte_bpe",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "sp_unigram",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "qwen25",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "llama3",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_analysis_equations_to_algebra",
+      "method": "o200k",
+      "rows": 8576,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "hard_ast_bpe",
+      "rows": 20420,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "ast_v4",
+      "rows": 20420,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "boundary_ast",
+      "rows": 20420,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "math_atom_bpe",
+      "rows": 20420,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "byte_bpe",
+      "rows": 20420,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "sp_unigram",
+      "rows": 20420,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "qwen25",
+      "rows": 20420,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "llama3",
+      "rows": 20420,
+      "passed": true
+    },
+    {
+      "protocol": "extreme_algebra_to_analysis_equations",
+      "method": "o200k",
+      "rows": 20420,
+      "passed": true
+    }
+  ]
+}

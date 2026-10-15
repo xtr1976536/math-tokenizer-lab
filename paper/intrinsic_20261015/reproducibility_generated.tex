@@ -1,0 +1,11 @@
+代码、数据及全部输出位于\href{https://github.com/xtr1976536/math-tokenizer-lab}{GitHub仓库}。按下列顺序执行实验、复算和报告生成：
+\begin{quote}\small\ttfamily
+.venv/bin/python scripts/run\_intrinsic\_2026.py\\
+.venv/bin/python scripts/audit\_intrinsic\_2026.py\\
+.venv/bin/python scripts/build\_intrinsic\_2026\_report.py
+\end{quote}
+实验目录为\code{experiments/intrinsic_20261015}；协议保存所有训练／验证／测试ID、固定参数、代码哈希、数据哈希与环境信息；每组保存训练所得模型、七轮计时、逐式token ID及统计量。
+
+审查分五轮执行。第一轮检查ID、来源、模板、渲染隔离及领域／复杂度条件；第二轮检查1,024实际ID预算、软约束与数学原子共享词表、硬AST原生实现与独立参考实现的一致性；第三轮检查所有测试公式的精确负载、完整解码、ID范围和七轮确定性；第四轮独立重聚合逐式计数与来源组等权T/B；第五轮从存档token与检查点重建边界，复算所有模型的命令、数字与复合节点对齐，抽样以直接区间判据复核Cross，并调用公开Rényi熵函数核对99组分布统计。所有检查均通过。
+
+独立审查覆盖882,738条模型—公式记录。依赖版本为tokenizers 0.23.3，sentencepiece 0.2.2，tiktoken 0.14.0，numpy 2.4.6，matplotlib 3.11.2。

@@ -1,0 +1,3 @@
+# SentencePiece's native vocabulary export can contain literal CR/whitespace
+# token payloads. Preserve it byte-for-byte rather than normalize text lines.
+*/models/sp_unigram.vocab binary

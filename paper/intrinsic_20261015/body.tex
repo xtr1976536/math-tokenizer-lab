@@ -1,0 +1,138 @@
+\section{研究问题与相关工作}
+数学公式由控制命令、数字、运算符、变量和层次化参数组构成。通用分词器通常依据文本频率构建子词，而数学专用分词可以额外使用词法原子或语法树信号。本文研究三个问题：在固定1,024个ID的条件下，数学原子能否提高编码压缩与命令完整性；AST硬约束与软约束如何改变压缩、结构对齐和速度；这些性质能否迁移到新来源、新领域以及更复杂的公式。
+
+分词器的设计包含基础单位、词表学习和推理分割三个环节。Sennrich等\citep{sennrich-etal-2016-neural}将BPE用于开放词表建模；Kudo\citep{kudo-2018-subword}提出Unigram子词模型，SentencePiece\citep{kudo-richardson-2018-sentencepiece}将原始字符串训练与分词接口统一起来。Müller和Vlachos\citep{muller2019ast}提出AST-BPE，按照语法树限制可合并的相邻节点。AST-T5\citep{gong2024ast}进一步说明，结构树既可用于分割，也可用于预训练目标。本文将硬约束AST-BPE迁移到数学公式，并与保留硬约束的AST-v4和采用软代价的Boundary AST进行比较。
+
+评价方面，压缩长度、词表分布和结构对齐测量不同性质。Zouhar等\citep{zouhar-etal-2023-tokenization}用Rényi熵衡量词表信道效率；Uzan等\citep{uzan-etal-2024-greed}区分词表构造与推理算法的作用；Schmidt等\citep{schmidt-etal-2024-tokenization}和Lotz等\citep{lotz-etal-2025-beyond}分别从受控预训练和跨规模评价研究压缩以外的分词性质。TokEval\citep{meister2026tokeval}同时覆盖压缩、词表利用率、速度和语法节点对齐。本文保留六项既有指标，增加Rényi效率和复合AST节点对齐率，形成八项评价。
+
+数学数字的切分还涉及位值和算法对齐。Singh和Strouse\citep{singh2024counts}以及NumeroLogic\citep{schwartz-etal-2024-numerologic}研究了数字表示与算术任务之间的关系。本文的Num专门测量源码连续数字词素是否被切开；与其互补的数学推理与方程求解，将在后续语言模型实验中检验。不同指标各自对应清晰的观测对象，结果按指标分别比较。
+
+\section{数学公式数据集}
+\subsection{来源、内容与类别}
+数据集包含56,000条LaTeX公式，来自366个来源组：283篇历史arXiv论文、11篇公开仓库论文及72个FunGrim／SymPy资源模块。每条记录保存公式、来源论文或资源、固定版本、许可、原始位置、变换记录、内容哈希、领域、复杂度和独立KaTeX语法跨度。评估使用目录中保存的原字符串，编码与解码均不改变空格、换行或命令拼写。
+
+\begin{table}[htbp]\centering\small
+\caption{语料来源。来源标签与数学领域分别存储。}\label{tab:sources}
+\begin{tabularx}{\linewidth}{Y r Y l}\toprule
+来源&公式数&版本与来源标签&许可\\\midrule
+\href{https://arxiv.org/}{2020年前arXiv论文}&51,229&283个固定历史论文来源；human&CC BY／CC0\\
+\href{https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb}{OpenAI数学仓库}&2,810&固定Git版本；possible\_mixed&Apache-2.0\\
+\href{https://github.com/fredrik-johansson/fungrim/tree/b7c3ca6e565e1058638cab6ba2bc811090296767}{FunGrim}&1,889&固定资源版本；unknown&MIT\\
+\href{https://github.com/sympy/sympy/tree/sympy-1.10}{SymPy}&72&固定资源版本；unknown&BSD\\\midrule
+合计&56,000&366个来源组&逐条记录\\\bottomrule
+\end{tabularx}
+\end{table}
+
+来源构建依次进行：获取固定版本源文件，提取数学环境，展开记录中的局部宏，验证公式语法和宏变换前后的渲染一致性，去重，登记来源与许可，完成分类，保存公式和元数据。\code{human}依据2020年前论文版本及作者信息登记；其余来源分别使用\code{possible_mixed}和\code{unknown}标签。原始公式、宏定义和展开后的评估字符串可以相互追溯。
+
+\input{dataset_table.tex}
+
+公式领域与论文领域采用两个字段。前者按照公式本身的微分关系和结构分类；后者记录来源论文的学科，用于整域留出。严格PDE公式共356条，ODE公式46条。结构标签允许一式多类，包括恒等式或界、求和或乘积、积分、矩阵、多行公式、微分关系和方程组。领域划分使用论文领域，因而来自PDE论文中的积分或代数表达式仍属于PDE来源域。
+
+\subsection{复杂度定义与集合隔离}
+句法复杂度综合公式长度和符号复杂度。令$L$为LaTeX词素数、$C$为命令种类、$D$为嵌套深度、$S$为符号种类、$O$为运算符数，则
+\begin{equation}\label{eq:complexity}
+\begin{split}
+K(x)={}&.40\min(L/60,2)+.20\min(C/6,2)\\
+&+.15\min(D/3,2)+.15\min(S/18,2)+.10\min(O/12,2).
+\end{split}
+\end{equation}
+$K(x)<.65$标记为简单，$K(x)\geq.65$标记为复杂。目录中简单公式37,400条，复杂公式18,600条。该分类测量源码句法复杂度。\input{complexity_example.tex}
+
+本轮根据固定随机种子生成新的研究划分，保存每一集合的全部公式ID。首先在论文或资源模块层面分组，再删除训练、验证与测试之间的模板和MathML渲染重复。训练集合优先保留；验证集合删除与训练重复的项；测试集合删除与训练或验证重复的项。三者的公式ID、来源组、模板哈希及渲染哈希均无交集。
+
+\section{比较模型与严格定义}
+记输入的UTF-8字节串为$x$，词表为$V$，编码结果为$z=(z_1,\ldots,z_T)$。每个token对应原串的连续字节片段，解码为这些片段按序拼接。六个在本数据集上训练的模型均使用恰好1,024个ID，基础字节与预留原子均计入总数。三个通用分词器使用原始官方词表和代码接口。所有模型编码同一批原始公式，不添加BOS、EOS或对话模板。
+
+\subsection{标准硬AST-BPE：受语法约束的逐次合并}
+标准AST-BPE遵循Müller和Vlachos\citep{muller2019ast}的约束合并原则。本文将SQL场景迁移到LaTeX：叶节点保留源码位置，叶内部以字节表示，训练只统计与语法层次兼容的相邻片段。数学前端支持算术优先级、分式、根式、分组和上下标；其他LaTeX结构采用命令与参数的绑定语法树。
+
+设候选token区间为$[a,b)$，参考节点区间为$[u,v)$。若满足
+\begin{equation}\label{eq:cross}
+a<u<b<v\quad\text{或}\quad u<a<v<b,
+\end{equation}
+两者发生部分跨越。硬约束要求候选区间与所有前端节点均不发生式\eqref{eq:cross}的关系。训练按合法相邻对的频率选择合并，记录有序合并规则，直至词表达到1,024。推理从字节出发，依照训练合并顺序执行当前合法的合并。该模型不预留数学命令原子，完整命令通过BPE学习。
+
+\subsection{AST-v4：数学原子初始化与硬约束最短分割}
+AST-v4沿用硬AST主线，在训练前从训练公式中选取至多256个高频控制命令和非ASCII字符作为原子；加上256个基础字节后，余下预算用于受AST约束的BPE合并。原子按训练频率排序，同频时按字节排序。推理在原串上构建词表匹配格，删除跨越前端语法节点或切开已覆盖完整命令的候选边，再求
+\begin{equation}\label{eq:harddp}
+z^*=\arg\min_{z\in\mathcal Z_{\mathrm{hard}}(x;V)}|z|.
+\end{equation}
+动态规划从右向左计算最少token路径。与标准硬AST-BPE相比，v4保留训练期与推理期的硬结构约束，增加数学原子初始化，并用完整词表上的最短路径替代逐次合并推理。原生C前端、trie匹配和动态规划在一次编码调用内完成。
+
+\subsection{Math-atom BPE：数学原子上的标准BPE}
+Math-atom BPE首先从训练集选取至多384个高频完整控制命令和非ASCII字符，与256个基础字节构成可逆原子字母表。已登记的完整命令映射成单个基础符号，其内部不允许出现切点；其他输入以字节表示。然后直接使用Hugging Face官方BPE训练和推理，学习合并到1,024个ID。该方法的数学信号位于基础字母表，BPE合并本身采用官方实现。
+
+\subsection{Boundary AST：共享词表与软结构代价}
+Boundary AST与Math-atom BPE共享同一训练所得词表。其命令原子约束保持不变，语法树约束改为可累计的软代价。令$C_{\mathrm{native}}(z,x)$为与推理前端语法跨度发生部分跨越的token数，$G(x)$为非空花括号组的内部内容端点集合，$B(z)$为分词边界集合，则
+\begin{equation}\label{eq:softdp}
+z^*=\arg\min_{z\in\mathcal Z(x;V)}\left[|z|+.25C_{\mathrm{native}}(z,x)+.30|G(x)\setminus B(z)|\right].
+\end{equation}
+实现以trie枚举候选token，累加token数与局部结构代价，再以动态规划求最优路径。权重在所有领域和划分中固定。Math-atom BPE与Boundary AST的差异只发生在分割阶段，因此两者可用于分析软结构引导带来的变化。
+
+\input{model_table.tex}
+
+\subsection{五个基准分词器}
+\textbf{Byte BPE。}Hugging Face官方BPE在可逆字节字母表上训练，256个字节占据词表中的256个ID；训练和推理不使用数学语法信号。Byte BPE最小合并频率设为1，Math-atom BPE设为2；两者均训练到固定1,024容量。\textbf{SentencePiece Unigram。}在原始训练字符串上初始化较大候选子词集合，使用EM估计子词概率并逐步剪枝，直到目标词表；推理通过Viterbi求$\arg\max_z\prod_t p(z_t)$。本轮采用identity归一化、保留原始空白、byte fallback、关闭句首空格与特殊句首句尾ID；字符覆盖率为1、单线程训练、输入顺序固定、最大句长16,384字节。所有原始字符串使用相同精确保真检查。\textbf{Qwen2.5、Llama 3和o200k。}分别调用固定官方词表与接口，词表大小为151,665、128,256和200,019。Qwen2.5对应千问2.5系列，Llama 3对应Meta Llama 3系列，o200k对应OpenAI的o200k编码系列。官方完整词表与1,024词表的训练型模型分别构成两组容量设置。
+
+\section{八项评价指标}
+所有边界均采用原始UTF-8字节坐标。完整编码和token字节片段逐条验证，精确保真要求为
+\begin{equation}\mathrm{decode}(\mathrm{encode}(x))=x.\end{equation}
+同时，token负载拼接必须精确等于原始字节串。精确保真作为所有结果的共同通过条件。压缩、命令、数字、速度、词表使用与结构对齐分别评价，各项指标采用固定方向和统计定义。
+
+\subsection{压缩、完整性与速度}
+\textbf{(1) T/B：每字节token数，越低越压缩。}为使长论文和短来源组等权，首先对每个测试来源组$g$计算其公式总token数$T_g$与原始字节数$B_g$之比，再平均：
+\begin{equation}\mathrm{T/B}=\frac{1}{|\mathcal P|}\sum_{g\in\mathcal P}\frac{T_g}{B_g}.\end{equation}
+压缩的倒数为每token平均表示的字节量；每个公式的原始长度和token数同时保存在逐式记录中。
+
+\textbf{(2) Cmd：命令完整率，越高表示命令内部切点越少。}命令由固定词法规则识别为反斜杠加连续ASCII字母，或反斜杠加单个非字母字符。设命令跨度集合为$M$，内部token边界为$B^\circ$，则
+\begin{equation}\mathrm{Cmd}=\frac{\sum_{[a,b)\in M}\mathbf1[B^\circ\cap(a,b)=\varnothing]}{|M|}.\end{equation}
+完整命令可以与相邻字符同处一个token，只要其内部没有切点即计为完整。
+
+\textbf{(3) Num：数字词素完整率，越高表示连续数字词素内部切点越少。}数字由连续十进制数字及可选小数部分组成，匹配规则为\par\smallskip\noindent\hspace{2em}\code{[0-9]+(?:\.[0-9]+)?}\par\smallskip
+将Cmd公式中的$M$替换为数字词素集合，测量源码数字串。
+
+\textbf{(4) 编码速度：MiB/s，越高越快。}令测试输入的原始字节总数为$B$，完整\code{encode(string)->IDs}接口的运行时间为$t$，则
+\begin{equation}\mathrm{Speed}=\frac{B}{2^{20}t}.\end{equation}
+计时包含字母表转换、前端解析、词表匹配与实际分割；所有方法采用同样的逐公式调用方式。模型加载与指标计算在计时区间之外。七轮交错顺序编码、每轮清缓存，以时间中位数计算速度。
+
+\subsection{词表分布与结构保持}
+\textbf{(5) Used：实际使用ID占比。}设测试集使用过的不同ID集合为$V_{\mathrm{used}}$，报告$100|V_{\mathrm{used}}|/|V|$。分母使用完整实际ID空间，包括基础字节、预留原子和特殊ID。该值描述词表覆盖与利用情况。
+
+\textbf{(6) Cross：KaTeX部分跨越比例，越低表示部分跨越token越少。}使用数据集的独立KaTeX语法跨度$\mathcal R(x)$，按式\eqref{eq:cross}判断每个token。分子为至少与一个参考跨度发生部分跨越的token数，分母为测试token总数。同一token跨越多个跨度只计一次。它与推理前端采用不同的参考跨度，所有模型使用同一KaTeX标注。
+
+\textbf{(7) AST-A：复合AST节点双端对齐率，越高表示复合节点的起止位置越常保留为token边界。}借鉴TokEval的AST节点双端对齐判据\citep{meister2026tokeval}，本文将评价对象扩展为数学公式中的复合语法节点：从KaTeX跨度中去掉完整公式根跨度及与单个词法单位完全相同的跨度，去重得到$\mathcal R_c(x)$。定义
+\begin{equation}\mathrm{AST\text{-}A}=\frac{\sum_x\sum_{[a,b)\in\mathcal R_c(x)}\mathbf1[a\in B(z_x)\land b\in B(z_x)]}{\sum_x|\mathcal R_c(x)|}.\end{equation}
+节点内部允许使用多个token；关键是能在token序列中精确定位该复合单元的完整区间。Cross以token为分母，AST-A以复合节点为分母，分别检查部分跨越和完整节点边界。二者与T/B一起呈现结构与压缩的关系。
+
+\textbf{(8) $\eta_{2.5}$：Rényi词表效率，越高表示token概率质量在词表上分配得更均衡。}根据测试token的经验频率$p_i$，采用Zouhar等\citep{zouhar-etal-2023-tokenization}和TokEval的定义：
+\begin{equation}\eta_{2.5}=\frac{H_{2.5}(p)}{\log_2|V|},\qquad H_\alpha(p)=\frac{1}{1-\alpha}\log_2\sum_i p_i^\alpha.
+\end{equation}
+分母采用声明的完整词表大小。Used只统计一个ID是否出现，Rényi效率还考虑每个ID出现多少次。Cognetta等\citep{cognetta-etal-2024-two}给出的反例表明，分布均匀性与具体任务能力需要分别测量，因此本轮直接报告各项值。
+
+\subsection{来自本轮测试集的实例}
+\input{metric_examples.tex}
+
+\section{实验设计与实施}
+\subsection{训练、验证与测试的职责}
+\textbf{训练集}用于构建数学原子、统计合并频率、构造BPE词表或估计Unigram子词概率。它决定的不仅是词表中的字符串，还包括BPE合并规则或Unigram概率。\textbf{验证集}与训练来源隔离，用于检查编码接口、查看来源域内的分布与固定参数表现；本轮九个模型的算法、词表大小、原子预算与Boundary权重在测试之前固定，按ID顺序取至多256条验证公式进行共同接口诊断，验证公式不参与词表构造。固定参数实验可以直接采用训练／测试两集；保留验证集使后续开发与最终测试继续隔离。\textbf{测试集}包含训练和验证集合之外的来源组，并删除模板和渲染重叠，用于评价新公式与分布迁移。
+
+\subsection{四类泛化测试}
+\textbf{全领域ID。}按来源领域分层，以来源论文或资源模块为最小分组，约80\%来源组用于训练、10\%用于验证、其余用于测试。使用17、29、43三个固定种子。不同来源组的公式数不同，实际公式数量按来源组划分结果计算。\textbf{整域OOD。}设置三组留出领域：几何拓扑／组合／数论，概率／统计／优化，分析／PDE／ODE。留出领域全部用于测试；含任一目标领域记录的来源组从训练候选中整组排除，其他领域的来源组约90\%训练、10\%验证。\textbf{极限OOD。}以分析／PDE／ODE为一个学科族，代数／数论／线性代数为另一个学科族，进行双向迁移：仅用一个族构建词表，在另一个族测试。\textbf{复杂度迁移。}沿用三个ID来源组划分，只用训练和验证来源中的简单公式；仅测试留出来源中的复杂公式。
+
+\input{split_table.tex}
+
+四类测试分别控制来源组、学科、数学表示体系和句法复杂度。ID已测量未见公式的泛化，整域OOD和极限OOD进一步引入语料分布变化。各类设置在正文中分开报告；极限OOD同时给出两个迁移方向，复杂度迁移同时报告三个来源划分。完整结果按11组逐项列于附录。
+
+\subsection{共同输入、统计与运行协议}
+所有训练型模型读取同一训练ID列表，顺序固定；预训练模型直接使用公开检查点。测试集不进行模型专属清洗、截断或删样。每组模型处理完全相同的测试字符串，所有ID均检查范围，所有输出均验证原始字节保真。指标参考由固定词法规则与KaTeX 0.16.25构成，训练型AST前端不负责生成评价参考。
+
+每个来源组先汇总token与字节数，再计算T/B；命令、数字、部分跨越与复合节点采用全测试集事件计数；Used和Rényi使用全测试token分布。相同实验组以相同来源组抽样索引进行1,000次bootstrap，得到T/B及结构／完整性指标的95\%区间。三个ID种子及三个复杂度种子表示来源划分变化；它们采用同一算法与容量。整域OOD的三个留出组合、极限OOD的两个方向表示不同迁移设置。
+
+编码测速采用单进程，模型接口保持逐公式调用。计时前完成模型加载与本机扩展构建；每轮清除结构和BPE可清理缓存，九个方法以固定随机交错顺序运行七轮。报告中位时间对应的MiB/s。\input{environment_generated.tex}
+
+\section{实验结果}
+\input{results_generated.tex}
+
+\section{结论与后续实验}
+\input{conclusion_generated.tex}

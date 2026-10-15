@@ -1,0 +1,105 @@
+{
+  "Boundary AST": {
+    "counts": {
+      "id": "0e5a942aa5faafdca707467a",
+      "group": "arxiv:1602.08801",
+      "domain": "probability",
+      "paper_domain": "probability",
+      "complexity": "simple",
+      "bytes": 11,
+      "tokens": 5,
+      "commands": 1,
+      "command_good": 1,
+      "numbers": 1,
+      "number_good": 1,
+      "crossings": 1,
+      "ast_nodes": 2,
+      "ast_good": 0,
+      "roundtrip": true,
+      "ids": [
+        87,
+        29,
+        647,
+        649,
+        77
+      ]
+    },
+    "pieces": [
+      "x",
+      ">",
+      "\\frac{",
+      "2}",
+      "n"
+    ]
+  },
+  "Hard AST-BPE": {
+    "counts": {
+      "id": "0e5a942aa5faafdca707467a",
+      "group": "arxiv:1602.08801",
+      "domain": "probability",
+      "paper_domain": "probability",
+      "complexity": "simple",
+      "bytes": 11,
+      "tokens": 5,
+      "commands": 1,
+      "command_good": 1,
+      "numbers": 1,
+      "number_good": 1,
+      "crossings": 0,
+      "ast_nodes": 2,
+      "ast_good": 2,
+      "roundtrip": true,
+      "ids": [
+        120,
+        62,
+        279,
+        309,
+        110
+      ]
+    },
+    "pieces": [
+      "x",
+      ">",
+      "\\frac",
+      "{2}",
+      "n"
+    ]
+  },
+  "Qwen2.5": {
+    "counts": {
+      "id": "0e5a942aa5faafdca707467a",
+      "group": "arxiv:1602.08801",
+      "domain": "probability",
+      "paper_domain": "probability",
+      "complexity": "simple",
+      "bytes": 11,
+      "tokens": 7,
+      "commands": 1,
+      "command_good": 0,
+      "numbers": 1,
+      "number_good": 1,
+      "crossings": 0,
+      "ast_nodes": 2,
+      "ast_good": 2,
+      "roundtrip": true,
+      "ids": [
+        87,
+        8449,
+        37018,
+        90,
+        17,
+        92,
+        77
+      ]
+    },
+    "pieces": [
+      "x",
+      ">\\",
+      "frac",
+      "{",
+      "2",
+      "}",
+      "n"
+    ]
+  }
+}

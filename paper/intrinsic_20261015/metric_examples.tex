@@ -1,0 +1,12 @@
+测试公式\texttt{x>\textbackslash{}frac\{2\}n}来自arXiv:1602.08801，ID为\code{0e5a942aa5faafdca707467a}，原串共11字节。表\ref{tab:example}给出三种实际输出。
+\begin{table}[H]\centering\footnotesize
+\caption{同一真实公式的分词及事件计数。竖线表示token边界。}\label{tab:example}
+\begin{tabularx}{\linewidth}{l Y r r r r}\toprule
+模型&实际token序列&T/B&Cmd&Cross&AST-A\\\midrule
+Boundary AST & \texttt{x} $|$ \texttt{>} $|$ \texttt{\textbackslash{}frac\{} $|$ \texttt{2\}} $|$ \texttt{n} & 5/11 & 1/1 & 1/5 & 0/2 \\
+Hard AST-BPE & \texttt{x} $|$ \texttt{>} $|$ \texttt{\textbackslash{}frac} $|$ \texttt{\{2\}} $|$ \texttt{n} & 5/11 & 1/1 & 0/5 & 2/2 \\
+Qwen2.5 & \texttt{x} $|$ \texttt{>\textbackslash{}} $|$ \texttt{frac} $|$ \texttt{\{} $|$ \texttt{2} $|$ \texttt{\}} $|$ \texttt{n} & 7/11 & 0/1 & 0/7 & 2/2 \\
+\bottomrule\end{tabularx}\end{table}
+Boundary AST和Hard AST-BPE均产生5个token，单式T/B为$5/11\approx.455$，且\code{\frac}内部没有切点，Cmd均为100\%。软约束模型将分式命令与左花括号合并，跨过复合节点的起点，Cross为$1/5=20\%$；硬约束模型保留花括号分组的完整边界，Cross为0。该式两个复合参考跨度的双端在硬约束输出中全部保留，AST-A为100\%，软约束输出为0。Qwen2.5把反斜杠与\code{frac}分开，Cmd为0；其更细分的序列保留了两个复合跨度的双端，AST-A为100\%。三列分别显示命令内部、部分跨越和复合单元边界三种性质。
+数字实例为测试公式\texttt{y\_\{m,n\}(1)\textbackslash{}geq C\_\{12\}}（ID：\code{06a371ce545de9ef798775c5}）。Hard AST-BPE保留2/2个数字词素；Boundary AST保留1/2个数字词素。该式的数字词素为1和12，Boundary AST在12内部产生切点，而Hard AST-BPE保留完整的12。
+第一组全领域测试输入共659,113字节，即0.6286 MiB；Boundary AST的中位编码时间为0.02121秒，速度为29.63 MiB/s。该组实际使用696个ID，Used为67.97\%；Rényi熵为7.0755 bit，除以$\log_2 1024=10$，得到$\eta_{2.5}=0.7075$。例如相同的两个已用ID，使用次数分别为50／50与90／10时，Used相同，而后者的Rényi效率更低；它刻画频率集中度。

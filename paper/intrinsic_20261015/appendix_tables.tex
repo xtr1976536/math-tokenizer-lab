@@ -1,0 +1,196 @@
+\par\begin{table}[htbp]\centering\small
+\caption{id\_17：训练44,070、验证4,656、测试7,022条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4253 & 92.92 & 98.14 & \textbf{8.32} & \textbf{73.77} & 75.00 & 62.82 & 14.77 \\
+AST-v4 & 0.4094 & 99.07 & 98.14 & 8.61 & 72.66 & 76.27 & 62.27 & \textbf{32.99} \\
+Boundary AST & \textbf{0.3829} & \textbf{99.92} & 97.63 & 18.85 & 37.08 & 67.97 & 70.75 & 29.63 \\
+Math-atom BPE & 0.3860 & \textbf{99.92} & 97.63 & 19.87 & 35.45 & 68.16 & 71.12 & 10.34 \\
+Byte BPE & 0.4152 & 38.04 & 97.63 & 26.31 & 22.16 & 78.71 & \textbf{75.08} & 8.59 \\
+SP Unigram & 0.4827 & 4.16 & 98.38 & 20.32 & 27.13 & 71.00 & 59.99 & 25.26 \\
+\midrule
+Qwen2.5 & 0.5360 & 2.54 & 97.63 & 20.70 & 29.06 & 1.04 & 32.63 & 3.17 \\
+Llama 3 & 0.5320 & 2.54 & \textbf{98.67} & 20.81 & 28.07 & 1.31 & 33.14 & 9.05 \\
+o200k & 0.5257 & 2.92 & \textbf{98.67} & 21.24 & 26.39 & 0.81 & 32.54 & 14.19 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{complexity\_17：训练29,863、验证3,032、测试2,769条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4223 & 83.58 & 98.04 & \textbf{7.82} & \textbf{74.06} & 74.71 & 61.99 & 16.26 \\
+AST-v4 & 0.4001 & 99.09 & 98.11 & 8.42 & 72.76 & 75.29 & 62.04 & \textbf{39.21} \\
+Boundary AST & \textbf{0.3768} & \textbf{99.86} & 97.36 & 18.46 & 37.00 & 67.77 & 70.16 & 34.97 \\
+Math-atom BPE & 0.3822 & \textbf{99.86} & 97.36 & 20.53 & 33.82 & 67.68 & 69.66 & 11.65 \\
+Byte BPE & 0.4059 & 67.29 & 97.36 & 21.61 & 28.11 & 78.22 & \textbf{71.65} & 9.44 \\
+SP Unigram & 0.5009 & 1.60 & 98.26 & 15.58 & 36.21 & 68.16 & 53.37 & 28.89 \\
+\midrule
+Qwen2.5 & 0.5219 & 3.27 & 97.36 & 20.90 & 28.64 & 0.90 & 32.51 & 3.43 \\
+Llama 3 & 0.5190 & 3.27 & \textbf{98.45} & 20.99 & 27.71 & 1.13 & 33.03 & 10.06 \\
+o200k & 0.5123 & 3.68 & \textbf{98.45} & 21.51 & 25.88 & 0.70 & 32.43 & 16.03 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{id\_29：训练43,262、验证8,317、测试4,184条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4220 & 91.85 & 95.77 & \textbf{7.05} & \textbf{75.47} & 74.22 & 63.46 & 15.11 \\
+AST-v4 & 0.4027 & 98.70 & 95.77 & 7.46 & 74.14 & 76.27 & 63.32 & \textbf{33.97} \\
+Boundary AST & \textbf{0.3861} & \textbf{99.37} & 95.43 & 17.57 & 38.26 & 66.80 & 70.28 & 29.70 \\
+Math-atom BPE & 0.3894 & \textbf{99.37} & 95.43 & 18.23 & 37.39 & 66.99 & 70.87 & 10.02 \\
+Byte BPE & 0.4138 & 38.62 & 95.43 & 25.58 & 23.88 & 76.95 & \textbf{75.50} & 8.75 \\
+SP Unigram & 0.4782 & 3.87 & 96.53 & 20.15 & 27.87 & 71.29 & 60.08 & 23.56 \\
+\midrule
+Qwen2.5 & 0.5304 & 2.02 & 95.43 & 20.19 & 31.72 & 0.89 & 33.29 & 3.12 \\
+Llama 3 & 0.5257 & 2.02 & \textbf{99.33} & 20.43 & 27.80 & 1.17 & 33.84 & 9.00 \\
+o200k & 0.5206 & 2.36 & \textbf{99.33} & 20.96 & 26.06 & 0.74 & 32.59 & 14.59 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{complexity\_29：训练29,119、验证5,347、测试1,487条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4333 & 84.70 & 95.23 & \textbf{6.97} & \textbf{75.84} & 71.19 & 62.02 & 16.71 \\
+AST-v4 & 0.4072 & 98.54 & 95.23 & 7.53 & 74.05 & 72.85 & 62.38 & \textbf{41.79} \\
+Boundary AST & \textbf{0.3868} & \textbf{99.20} & 94.42 & 18.35 & 36.59 & 65.62 & 69.09 & 36.95 \\
+Math-atom BPE & 0.3915 & \textbf{99.20} & 94.42 & 19.31 & 35.61 & 65.23 & 69.29 & 12.12 \\
+Byte BPE & 0.4208 & 55.01 & 94.42 & 22.79 & 26.48 & 75.00 & \textbf{71.80} & 9.81 \\
+SP Unigram & 0.5096 & 2.50 & 96.11 & 15.85 & 39.47 & 67.29 & 52.42 & 29.88 \\
+\midrule
+Qwen2.5 & 0.5192 & 2.78 & 94.42 & 20.57 & 31.77 & 0.75 & 33.00 & 3.42 \\
+Llama 3 & 0.5136 & 2.78 & \textbf{99.20} & 20.86 & 27.28 & 0.97 & 33.57 & 10.05 \\
+o200k & 0.5097 & 2.83 & \textbf{99.20} & 21.45 & 25.49 & 0.61 & 32.38 & 16.30 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{id\_43：训练44,515、验证5,516、测试5,725条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4069 & 92.07 & 96.71 & \textbf{7.75} & \textbf{74.88} & 75.00 & 62.36 & 14.54 \\
+AST-v4 & 0.3897 & 99.27 & 96.71 & 8.19 & 73.20 & 77.73 & 62.00 & \textbf{30.30} \\
+Boundary AST & \textbf{0.3709} & \textbf{99.92} & 96.06 & 16.07 & 42.50 & 69.14 & 68.02 & 28.74 \\
+Math-atom BPE & 0.3737 & \textbf{99.92} & 96.06 & 16.44 & 41.85 & 68.95 & 69.09 & 9.65 \\
+Byte BPE & 0.4027 & 32.14 & 96.06 & 23.62 & 26.65 & 79.10 & \textbf{74.92} & 8.15 \\
+SP Unigram & 0.4741 & 4.52 & 97.34 & 18.93 & 30.66 & 72.66 & 59.79 & 22.47 \\
+\midrule
+Qwen2.5 & 0.5120 & 1.51 & 96.06 & 19.05 & 33.74 & 1.13 & 33.04 & 3.15 \\
+Llama 3 & 0.5106 & 1.51 & \textbf{99.70} & 19.19 & 31.30 & 1.41 & 33.57 & 8.94 \\
+o200k & 0.5057 & 2.56 & \textbf{99.70} & 19.53 & 30.78 & 0.87 & 32.76 & 14.05 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{complexity\_43：训练29,347、验证3,768、测试1,684条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4121 & 90.23 & 97.45 & \textbf{8.11} & \textbf{74.09} & 73.44 & 61.32 & 16.17 \\
+AST-v4 & 0.3992 & 98.81 & 97.45 & 8.23 & 72.95 & 74.61 & 61.20 & \textbf{42.12} \\
+Boundary AST & \textbf{0.3771} & \textbf{99.80} & 96.60 & 17.05 & 40.96 & 68.36 & 68.62 & 37.07 \\
+Math-atom BPE & 0.3820 & \textbf{99.80} & 96.60 & 17.66 & 38.96 & 68.26 & 69.28 & 11.85 \\
+Byte BPE & 0.3985 & 72.12 & 96.60 & 20.10 & 32.93 & 77.44 & \textbf{72.66} & 9.44 \\
+SP Unigram & 0.4956 & 4.04 & 97.89 & 16.56 & 37.51 & 68.07 & 54.22 & 30.64 \\
+\midrule
+Qwen2.5 & 0.5015 & 2.14 & 96.60 & 19.74 & 32.18 & 0.95 & 32.98 & 3.54 \\
+Llama 3 & 0.5003 & 2.14 & \textbf{99.78} & 19.90 & 30.14 & 1.17 & 33.51 & 10.25 \\
+o200k & 0.4954 & 3.37 & \textbf{99.78} & 20.30 & 29.58 & 0.73 & 32.67 & 16.59 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{ood\_1：训练31,684、验证5,214、测试18,622条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4420 & 90.15 & 95.91 & \textbf{6.29} & \textbf{78.62} & 77.25 & 59.95 & 14.61 \\
+AST-v4 & 0.4239 & 98.67 & 95.91 & 6.81 & 77.39 & 79.20 & 59.80 & \textbf{27.84} \\
+Boundary AST & \textbf{0.4016} & \textbf{99.50} & 95.60 & 17.66 & 40.73 & 74.51 & 68.51 & 25.80 \\
+Math-atom BPE & 0.4047 & \textbf{99.50} & 95.60 & 18.36 & 39.48 & 74.51 & 68.93 & 8.54 \\
+Byte BPE & 0.4305 & 26.77 & 95.60 & 23.81 & 27.33 & 79.98 & \textbf{73.77} & 7.09 \\
+SP Unigram & 0.4919 & 3.40 & 96.37 & 20.11 & 29.37 & 73.93 & 61.38 & 20.52 \\
+\midrule
+Qwen2.5 & 0.5330 & 2.18 & 95.60 & 19.92 & 34.47 & 1.52 & 33.36 & 3.03 \\
+Llama 3 & 0.5281 & 2.18 & \textbf{99.31} & 20.11 & 30.46 & 2.27 & 33.92 & 8.41 \\
+o200k & 0.5251 & 2.79 & \textbf{99.31} & 20.37 & 29.74 & 1.43 & 33.27 & 13.44 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{ood\_2：训练42,081、验证6,357、测试7,334条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4305 & 91.04 & 98.80 & \textbf{7.85} & \textbf{75.20} & 74.32 & 62.57 & 14.87 \\
+AST-v4 & 0.4050 & 98.98 & 98.95 & 8.26 & 73.38 & 76.86 & 62.27 & \textbf{33.33} \\
+Boundary AST & \textbf{0.3831} & \textbf{99.81} & 98.26 & 16.90 & 39.30 & 69.24 & 69.66 & 29.41 \\
+Math-atom BPE & 0.3881 & \textbf{99.81} & 98.26 & 17.30 & 38.02 & 69.34 & 69.89 & 10.46 \\
+Byte BPE & 0.4138 & 53.05 & 98.26 & 23.57 & 24.18 & 79.00 & \textbf{74.99} & 8.70 \\
+SP Unigram & 0.4990 & 2.14 & 99.06 & 18.79 & 27.20 & 71.09 & 58.57 & 24.58 \\
+\midrule
+Qwen2.5 & 0.5148 & 2.21 & 98.26 & 18.86 & 31.52 & 1.11 & 32.95 & 3.29 \\
+Llama 3 & 0.5142 & 2.21 & \textbf{99.52} & 18.91 & 30.78 & 1.35 & 33.43 & 9.08 \\
+o200k & 0.5111 & 1.81 & \textbf{99.52} & 19.43 & 29.32 & 0.84 & 32.46 & 14.56 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{ood\_3：训练31,313、验证4,022、测试20,259条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4136 & 93.61 & 97.91 & \textbf{7.83} & \textbf{75.03} & 76.07 & 62.03 & 14.53 \\
+AST-v4 & 0.3977 & 99.06 & 97.93 & 8.37 & 73.30 & 78.42 & 61.94 & \textbf{30.84} \\
+Boundary AST & \textbf{0.3759} & \textbf{99.78} & 97.37 & 17.23 & 40.19 & 70.41 & 69.77 & 28.18 \\
+Math-atom BPE & 0.3796 & \textbf{99.78} & 97.37 & 17.72 & 38.93 & 70.61 & 70.11 & 9.16 \\
+Byte BPE & 0.4040 & 58.77 & 97.37 & 23.03 & 26.87 & 79.49 & \textbf{74.41} & 7.40 \\
+SP Unigram & 0.4761 & 3.73 & 98.33 & 19.56 & 29.74 & 72.66 & 59.35 & 22.63 \\
+\midrule
+Qwen2.5 & 0.5236 & 1.91 & 97.37 & 19.86 & 30.67 & 1.52 & 32.92 & 3.18 \\
+Llama 3 & 0.5209 & 1.91 & \textbf{99.27} & 19.96 & 29.03 & 2.07 & 33.41 & 8.89 \\
+o200k & 0.5144 & 2.94 & \textbf{99.27} & 20.32 & 27.92 & 1.31 & 32.71 & 14.04 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{extreme\_analysis\_equations\_to\_algebra：训练16,893、验证3,298、测试8,576条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4503 & 85.90 & 93.90 & \textbf{7.20} & \textbf{79.49} & 74.12 & 60.90 & 15.15 \\
+AST-v4 & 0.4351 & 98.62 & 93.90 & 7.51 & 78.82 & 75.59 & 59.90 & \textbf{30.18} \\
+Boundary AST & \textbf{0.4015} & \textbf{98.93} & 93.19 & 16.12 & 44.88 & 74.90 & 69.74 & 27.82 \\
+Math-atom BPE & 0.4061 & \textbf{98.93} & 93.19 & 16.42 & 44.12 & 74.80 & 70.07 & 9.77 \\
+Byte BPE & 0.4396 & 54.39 & 93.19 & 19.66 & 36.45 & 76.86 & \textbf{72.82} & 8.02 \\
+SP Unigram & 0.5124 & 2.45 & 94.21 & 18.10 & 33.75 & 70.90 & 61.64 & 21.87 \\
+\midrule
+Qwen2.5 & 0.5294 & 1.98 & 93.19 & 18.59 & 38.34 & 1.28 & 33.51 & 3.07 \\
+Llama 3 & 0.5228 & 1.98 & \textbf{98.76} & 18.86 & 32.27 & 1.88 & 34.15 & 8.62 \\
+o200k & 0.5221 & 2.15 & \textbf{98.76} & 19.11 & 31.27 & 1.19 & 33.38 & 14.24 \\
+\bottomrule\end{tabular}
+\end{table}\par
+
+
+\par\begin{table}[htbp]\centering\small
+\caption{extreme\_algebra\_to\_analysis\_equations：训练7,707、验证1,002、测试20,420条公式。}
+\begin{tabular}{lrrrrrrrr}\toprule
+模型 & T/B $\dn$ & Cmd $\up$ & Num $\up$ & Cross $\dn$ & AST-A $\up$ & Used & $\eta_{2.5}$ $\up$ & 速度 $\up$ \\\midrule
+Hard AST-BPE & 0.4246 & 88.38 & 98.30 & \textbf{7.39} & \textbf{77.47} & 76.76 & 60.78 & 15.05 \\
+AST-v4 & 0.4089 & 97.93 & 98.30 & 7.70 & 76.79 & 76.56 & 59.98 & \textbf{31.26} \\
+Boundary AST & \textbf{0.3824} & \textbf{98.22} & 97.40 & 17.06 & 40.92 & 74.32 & 69.01 & 28.14 \\
+Math-atom BPE & 0.3873 & \textbf{98.22} & 97.40 & 17.46 & 39.46 & 74.12 & 69.60 & 9.35 \\
+Byte BPE & 0.4175 & 37.30 & 97.50 & 23.39 & 26.36 & 77.25 & \textbf{72.56} & 7.39 \\
+SP Unigram & 0.4914 & 4.31 & 98.56 & 19.50 & 27.75 & 71.78 & 60.88 & 22.55 \\
+\midrule
+Qwen2.5 & 0.5236 & 1.91 & 97.37 & 19.84 & 30.70 & 1.52 & 32.91 & 3.19 \\
+Llama 3 & 0.5210 & 1.91 & \textbf{99.27} & 19.95 & 29.07 & 2.07 & 33.41 & 8.91 \\
+o200k & 0.5145 & 2.94 & \textbf{99.27} & 20.30 & 27.95 & 1.31 & 32.70 & 14.36 \\
+\bottomrule\end{tabular}
+\end{table}\par

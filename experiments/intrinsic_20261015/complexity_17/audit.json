@@ -1,0 +1,33 @@
+[
+  {
+    "round": 1,
+    "name": "complexity_17",
+    "passed": true,
+    "scope": "ID/source-paper/template/rendered separation;domain/complexity predicates",
+    "counts": {
+      "train": 29863,
+      "dev": 3032,
+      "test": 2769
+    }
+  },
+  {
+    "round": 2,
+    "name": "complexity_17",
+    "passed": true,
+    "scope": "hard native/reference identity;1024 total IDs;shared soft/BPE dictionary;determinism and roundtrip",
+    "reference_formulas": 140
+  },
+  {
+    "round": 3,
+    "name": "complexity_17",
+    "passed": true,
+    "scope": "all test formulas exact roundtrip/payload/ID range;identical IDs;seven deterministic interleaved encodes",
+    "rows": 24921
+  },
+  {
+    "round": 4,
+    "name": "complexity_17",
+    "passed": true,
+    "scope": "independent aggregate reconciliation;common test IDs;paper bootstrap intervals;timing envelope"
+  }
+]
