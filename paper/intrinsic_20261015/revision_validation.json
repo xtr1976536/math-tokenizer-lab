@@ -1,0 +1,70 @@
+{
+  "methods": [
+    "hard_ast_bpe",
+    "boundary_ast",
+    "math_atom_bpe",
+    "byte_bpe",
+    "sp_unigram",
+    "qwen25",
+    "llama3",
+    "o200k"
+  ],
+  "labels": [
+    "AST-BPE",
+    "软AST-BPE",
+    "数学BPE",
+    "BPE",
+    "Unigram",
+    "Qwen2.5",
+    "Llama 3",
+    "o200k"
+  ],
+  "metrics": [
+    "tb",
+    "cmd",
+    "num",
+    "cross",
+    "used",
+    "speed"
+  ],
+  "records": 88,
+  "formula_method_records": 784656,
+  "data_sha256": "9568bff2c2984c017b81d8d84183cb63a58d5c9b547e477602e71709fc4d8bd7",
+  "protocol_sha256": "caa55eda40a2323fd8d1e1bf0d09ea9e09b7cd6e55c2d90e6c6181992303d761",
+  "raw_results_unchanged": true,
+  "excluded_methods": [
+    "ast_v4"
+  ],
+  "excluded_metrics": [
+    "ast_align",
+    "renyi"
+  ],
+  "layout": "official ICML2026 preprint;Chinese fonts;two-column main text",
+  "checks": {
+    "four_families": true,
+    "all_six_metrics": true,
+    "fixed_capacities": true
+  },
+  "review_rounds": [
+    {
+      "round": 1,
+      "check": "requested model/metric/section deletions and simple naming",
+      "passed": true
+    },
+    {
+      "round": 2,
+      "check": "all remaining aggregate values reconciled with immutable measurements",
+      "passed": true
+    },
+    {
+      "round": 3,
+      "check": "real tokenization examples and complexity substitution verified against source records",
+      "passed": true
+    },
+    {
+      "round": 4,
+      "check": "official template hashes,cited-only references,leading zeros and compiled PDF layout",
+      "passed": true
+    }
+  ]
+}

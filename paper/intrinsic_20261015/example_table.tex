@@ -1,0 +1,14 @@
+\begin{table}[H]\centering\footnotesize
+\caption{测试公式的实际分词。竖线表示token边界。}\label{tab:example}
+\begin{tabularx}{\columnwidth}{lY}\toprule 模型&token序列\\\midrule
+\multicolumn{2}{l}{A：$x>\frac{2}n$}\\[2pt]
+AST-BPE & \texttt{x} $|$\allowbreak \texttt{>} $|$\allowbreak \texttt{\textbackslash{}frac} $|$\allowbreak \texttt{\{2\}} $|$\allowbreak \texttt{n}\\
+软AST-BPE & \texttt{x} $|$\allowbreak \texttt{>} $|$\allowbreak \texttt{\textbackslash{}frac\{} $|$\allowbreak \texttt{2\}} $|$\allowbreak \texttt{n}\\
+Qwen2.5 & \texttt{x} $|$\allowbreak \texttt{>\textbackslash{}} $|$\allowbreak \texttt{frac} $|$\allowbreak \texttt{\{} $|$\allowbreak \texttt{2} $|$\allowbreak \texttt{\}} $|$\allowbreak \texttt{n}\\
+\midrule
+\multicolumn{2}{l}{B：$y_{m,n}(1)\geq C_{12}$}\\[2pt]
+AST-BPE & \texttt{y\_} $|$\allowbreak \texttt{\{m} $|$\allowbreak \texttt{,} $|$\allowbreak \texttt{n\}} $|$\allowbreak \texttt{(1} $|$\allowbreak \texttt{)} $|$\allowbreak \texttt{\textbackslash{}geq } $|$\allowbreak \texttt{C\_} $|$\allowbreak \texttt{\{} $|$\allowbreak \texttt{12} $|$\allowbreak \texttt{\}}\\
+软AST-BPE & \texttt{y} $|$\allowbreak \texttt{\_\{m} $|$\allowbreak \texttt{,} $|$\allowbreak \texttt{n\}} $|$\allowbreak \texttt{(1} $|$\allowbreak \texttt{)} $|$\allowbreak \texttt{\textbackslash{}geq } $|$\allowbreak \texttt{C} $|$\allowbreak \texttt{\_\{1} $|$\allowbreak \texttt{2\}}\\
+Qwen2.5 & \texttt{y} $|$\allowbreak \texttt{\_\{} $|$\allowbreak \texttt{m} $|$\allowbreak \texttt{,n} $|$\allowbreak \texttt{\}(} $|$\allowbreak \texttt{1} $|$\allowbreak \texttt{)\textbackslash{}} $|$\allowbreak \texttt{ge} $|$\allowbreak \texttt{q} $|$\allowbreak \texttt{ C} $|$\allowbreak \texttt{\_\{} $|$\allowbreak \texttt{1} $|$\allowbreak \texttt{2} $|$\allowbreak \texttt{\}}\\
+\bottomrule\end{tabularx}
+\end{table}

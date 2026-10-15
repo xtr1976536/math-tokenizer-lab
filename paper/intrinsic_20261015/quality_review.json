@@ -1,16 +1,18 @@
 {
-  "pages": 17,
-  "word_boxes_checked": 4331,
+  "pages": 9,
+  "layout": "official ICML 2026 preprint",
+  "models": 8,
+  "metrics": 6,
+  "core_experiment_tables": 4,
+  "word_boxes_checked": 2847,
   "out_of_page_words": [],
   "unresolved_references": false,
   "overfull_boxes": false,
   "missing_glyphs": false,
+  "leading_zeroes_checked": true,
   "compiled_successfully": true,
-  "pdf_sha256": "a5e0ac6e284d3afe8c1ecdf83cdce5256e7d8d32a081c1c4e65e2bc9bc65720d",
-  "metric_records": 99,
-  "formula_method_records": 882738,
-  "statistic_unit": "source paper or resource module",
-  "final_contact_sheet_inspected": true,
-  "charts_inspected": true,
-  "accepted": true
+  "original_results_unchanged": true,
+  "pdf_sha256": "3b0bd1e70294b0e48d67f285a36218f1323f005aa8c7f72a698e052f738c25b0",
+  "artifact": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/output/pdf/数学专用分词器_四类泛化实验_中文报告_20261015_修订版.pdf",
+  "visual_review": "All nine pages reviewed; final figure and reference pages rerendered after pagination adjustment."
 }

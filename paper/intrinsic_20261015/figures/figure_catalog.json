@@ -1,27 +1,29 @@
 {
-  "source_data": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/experiments/intrinsic_20261015/metrics.json",
-  "generating_script": "scripts/build_intrinsic_2026_report.py",
+  "source": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/experiments/intrinsic_20261015/metrics.json",
+  "generator": "scripts/build_intrinsic_2026_report.py",
   "surface_class": "paper_main",
+  "style": "ICML-sized vector point/range plots;split observations;consistent colour/marker;no truncated bars",
   "figures": [
     {
       "id": "compression",
+      "claim": "Points show split values;line shows range and large marker the equal-setting mean.",
       "pdf": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/paper/intrinsic_20261015/figures/compression.pdf",
       "preview": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/paper/intrinsic_20261015/figures/compression.png"
     },
     {
-      "id": "structure",
-      "pdf": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/paper/intrinsic_20261015/figures/structure.pdf",
-      "preview": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/paper/intrinsic_20261015/figures/structure.png"
-    },
-    {
-      "id": "speed",
-      "pdf": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/paper/intrinsic_20261015/figures/speed.pdf",
-      "preview": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/paper/intrinsic_20261015/figures/speed.png"
+      "id": "tradeoffs",
+      "claim": "In-domain compression, crossing and speed;each of three splits is shown.",
+      "pdf": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/paper/intrinsic_20261015/figures/tradeoffs.pdf",
+      "preview": "/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project/paper/intrinsic_20261015/figures/tradeoffs.png"
     }
   ],
-  "style": "adapted paper-plot grouped bar template;muted academic palette;white background;zero baselines;hatched soft-AST route",
-  "render_review": {
-    "all_three_figures_inspected": true,
-    "revision": "Chinese font fallback;shared-axis direction;quoted style colours;zero baselines;actual values checked"
+  "visual_review": {
+    "passed": true,
+    "checks": [
+      "vector export and readable labels at manuscript size",
+      "all eight models use consistent colours and markers",
+      "observations and equal-setting means correspond to frozen results",
+      "figure captions and plots inspected in final PDF"
+    ]
   }
 }

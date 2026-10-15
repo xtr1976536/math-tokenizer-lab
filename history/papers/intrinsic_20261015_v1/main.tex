@@ -1,0 +1,64 @@
+% !TEX program = xelatex
+\documentclass[UTF8,a4paper,11pt,fontset=none]{ctexart}
+\usepackage[margin=2.05cm,headheight=16pt,headsep=10pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Menlo}[Scale=.88]
+\setCJKmainfont{Songti SC}[BoldFont=Songti SC Bold]
+\setCJKsansfont{Heiti SC}
+\setCJKmonofont{Heiti SC}
+\usepackage{amsmath,amssymb,mathtools,booktabs,array,tabularx,longtable,multirow}
+\usepackage{graphicx,xcolor,colortbl,caption,subcaption,float,enumitem,microtype}
+\usepackage[sort&compress,numbers]{natbib}
+\usepackage{fancyhdr,lastpage,placeins}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!50!black,breaklinks=true]{hyperref}
+\definecolor{ink}{HTML}{283741}\definecolor{accent}{HTML}{547B7D}\definecolor{pale}{HTML}{EFF4F3}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small 面向数学公式的专用分词}\fancyhead[R]{\small 内在质量与四类泛化实验}\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}
+\setlength{\parindent}{2em}\setlength{\parskip}{2pt}\linespread{1.12}
+\setlength{\emergencystretch}{2em}
+\ctexset{section={format=\large\bfseries,beforeskip=14pt,afterskip=7pt},subsection={format=\normalsize\bfseries,beforeskip=10pt,afterskip=5pt}}
+\setlist{nosep,leftmargin=2em,topsep=3pt}
+\captionsetup{font=small,labelfont=bf,labelsep=quad}
+\captionsetup[table]{position=top,skip=5pt}
+\setlength{\tabcolsep}{4.5pt}\renewcommand{\arraystretch}{1.13}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\up}{\ensuremath{\uparrow}}\newcommand{\dn}{\ensuremath{\downarrow}}
+\newcommand{\mib}{\ensuremath{\mathrm{MiB/s}}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\begin{document}
+\thispagestyle{empty}
+\noindent\textcolor{accent}{\small 数学语料与分词器研究\hfill 2026年10月15日}
+\vspace{5pt}\hrule\vspace{15pt}
+\begin{center}
+{\LARGE\bfseries 面向数学公式的专用分词：\\[6pt]硬／软 AST 约束与四类泛化实验}\par
+\vspace{10pt}{\normalsize 肖童仁}\par
+\vspace{4pt}{\small Design and Evaluation of Specialized Tokenizers for Mathematical Formulas}
+\end{center}
+\vspace{8pt}\hrule\vspace{9pt}
+\noindent\begin{minipage}[t]{.23\linewidth}
+\textbf{研究信息}\par\smallskip\small
+数学公式分词\par 抽象语法树\par 子词词表\par 跨领域泛化\par 可逆编码\par
+\medskip\textbf{代码与数据}\par\smallskip
+\href{https://github.com/xtr1976536/math-tokenizer-lab}{math-tokenizer-lab}\par
+\medskip\textbf{实验规模}\par\smallskip
+56,000条公式\par 9个分词器\par 11组划分\par 8项评价指标
+\end{minipage}\hfill\begin{minipage}[t]{.72\linewidth}
+\textbf{摘\quad 要}\par\smallskip
+\input{abstract_generated.tex}
+\end{minipage}
+\vspace{10pt}\hrule\vspace{9pt}
+\input{body.tex}
+\FloatBarrier
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+\clearpage\appendix
+\section{各组划分的完整结果}
+所有表格采用同一列顺序和相同统计口径。T/B 为来源组等权平均；Cmd、Num、Cross、AST-A、Used 和 $\eta_{2.5}$ 均以百分数表示；速度单位为 MiB/s。每组测试公式完全相同。表中同时列出六个1,024词表模型与三个使用官方完整词表的通用模型。
+\input{appendix_tables.tex}
+\FloatBarrier
+\section{实现、复现与审查记录}
+\input{reproducibility_generated.tex}
+\input{bootstrap_table.tex}
+\end{document}

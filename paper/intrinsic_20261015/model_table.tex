@@ -1,11 +1,10 @@
-\begin{table}[htbp]\centering\small\caption{比较模型及词表、推理和代码来源。硬AST-BPE为公开算法的数学迁移实现。}\label{tab:models}\begin{tabularx}{\linewidth}{l Y Y r l}\toprule 模型&词表／训练约束&推理&实际ID空间&来源\\\midrule
-Hard AST-BPE & 无原子预留；硬合并 & 训练次序合并 & 1,024 & \href{https://github.com/SamuelGabriel/sqlbpe}{代码} \\
-AST-v4 & 至多256原子；硬合并 & 硬约束最短路径 & 1,024 & \href{https://github.com/xtr1976536/math-tokenizer-lab}{代码} \\
-Boundary AST & 与Math-atom共享词表 & 软结构最短路径 & 1,024 & \href{https://github.com/xtr1976536/math-tokenizer-lab}{代码} \\
-Math-atom BPE & 至多384原子；官方BPE & 官方BPE & 1,024 & \href{https://github.com/huggingface/tokenizers}{代码} \\
-Byte BPE & 官方字节BPE & 官方BPE & 1,024 & \href{https://github.com/huggingface/tokenizers}{代码} \\
-SP Unigram & EM与候选子词剪枝 & Viterbi & 1,024 & \href{https://github.com/google/sentencepiece}{代码} \\
-Qwen2.5 & 官方固定检查点 & 官方HF接口 & 151,665 & \href{https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json}{代码} \\
-Llama 3 & 官方固定检查点 & Meta官方代码 & 128,256 & \href{https://github.com/meta-llama/llama3/blob/main/llama/tokenizer.py}{代码} \\
-o200k & 官方固定编码 & 官方tiktoken & 200,019 & \href{https://github.com/openai/tiktoken}{代码} \\
-\bottomrule\end{tabularx}\end{table}
+\begin{table}[t]\centering\small\caption{模型容量与代码来源。AST-BPE采用公开算法的数学迁移实现。}\label{tab:models}\begin{tabular}{lrr}\toprule 模型&ID空间&来源\\\midrule
+AST-BPE & 1,024 & \href{https://github.com/SamuelGabriel/sqlbpe}{代码}\\
+软AST-BPE & 1,024 & \href{https://github.com/xtr1976536/math-tokenizer-lab}{代码}\\
+数学BPE & 1,024 & \href{https://github.com/huggingface/tokenizers}{代码}\\
+BPE & 1,024 & \href{https://github.com/huggingface/tokenizers}{代码}\\
+Unigram & 1,024 & \href{https://github.com/google/sentencepiece}{代码}\\
+Qwen2.5 & 151,665 & \href{https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json}{代码}\\
+Llama 3 & 128,256 & \href{https://github.com/meta-llama/llama3/blob/main/llama/tokenizer.py}{代码}\\
+o200k & 200,019 & \href{https://github.com/openai/tiktoken}{代码}\\
+\bottomrule\end{tabular}\end{table}
