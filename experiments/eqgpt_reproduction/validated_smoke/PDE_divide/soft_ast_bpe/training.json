@@ -1,0 +1,19 @@
+{
+  "initial_sha256": "da040af7f7bdc18f440feef26a09b879ff7a515772b23cad06d9c8f47e8ef175",
+  "final_sha256": "b1220d7eaf592646fa36d706e671d35f21e041719b4e19a6b4ba8a5df969f104",
+  "all_parameters_trainable": true,
+  "epochs": 1,
+  "batch_size": 2,
+  "optimizer": "Adam",
+  "lr": 0.0001,
+  "clip": 1,
+  "raw_sequence_order_sha256": "fce3767942c5ac67b2824ddc7262a8dff0b3e2677fbd1f41c2d07469ba0d432f",
+  "samples": 4,
+  "max_model_tokens": 16,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 5.325922846794128
+    }
+  ]
+}

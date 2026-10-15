@@ -1,0 +1,13 @@
+{
+  "equation": "PDE_divide",
+  "seed": 525,
+  "observations": 32,
+  "noise_percent": 0,
+  "surrogate_sha256": "16e95efa0ace060d0a5c003983358b1ddf0b40d6741fcf211e084434e315c13c",
+  "raw_noisy_data_sha256": "560844e46aa367c983f4e4d9df7d7937df5d238865e574af7605520dc8e92f41",
+  "metadata_sha256": "455858d4c927788f9587f72fb9891878e2b3873c1601bd71137e7e32afc531bb",
+  "metadata_points": 25,
+  "activation": "Rational",
+  "surrogate_iterations": 2,
+  "target_name": "8.14.1d"
+}

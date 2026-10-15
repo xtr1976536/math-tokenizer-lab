@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "error": null,
+  "coefficients": [
+    {
+      "iteration": 0,
+      "gre": [
+        22,
+        2,
+        9,
+        1
+      ],
+      "values": [
+        -177.98350524902344
+      ]
+    },
+    {
+      "iteration": 1,
+      "gre": [
+        22,
+        2,
+        9,
+        1
+      ],
+      "values": [
+        -184.02398681640625
+      ]
+    }
+  ],
+  "sampling": [
+    {
+      "function": "random_data_complex_region",
+      "sha256": "f9492f77f36cf921b22a8aad5a653ad39b0ad7cf8031daff05ab77b2c57b04b9"
+    }
+  ],
+  "initial_surrogate_sha256": "51f38d6c572973c3a1dd0677363a381f3cb9891e62d65d0036ce9f72853e4532",
+  "final_surrogate_sha256": "aba76ea6c551f2b52b5a40a11a8808f8991da4b1ce720cfa7ebee36bdb26153e",
+  "data_loss_weight": 1,
+  "pde_loss_weight": 0.01
+}

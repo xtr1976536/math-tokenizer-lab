@@ -1,0 +1,13 @@
+{
+  "equation": "Chaffee_Infante_equation",
+  "seed": 525,
+  "observations": 32,
+  "noise_percent": 0,
+  "surrogate_sha256": "8716019ad74305efdf765f1daec3fea78c091ab30c049cf26f866c3e2e2f42e7",
+  "raw_noisy_data_sha256": "a54ad81be207d78ed95f66288772914fa6ecef1c8f9de3f450ad5c4c9408ee26",
+  "metadata_sha256": "61761a54e77750400b68d57e4bdf9a972d0285a138e27457ac2b6c5073919a8f",
+  "metadata_points": 25,
+  "activation": "Rational",
+  "surrogate_iterations": 2,
+  "target_name": "Chafee–Infante equation"
+}

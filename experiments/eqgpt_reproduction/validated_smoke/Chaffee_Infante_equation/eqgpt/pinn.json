@@ -1,0 +1,100 @@
+{
+  "status": "completed",
+  "error": null,
+  "coefficients": [
+    {
+      "iteration": 0,
+      "gre": [
+        6,
+        2,
+        53,
+        2,
+        7,
+        1
+      ],
+      "values": [
+        0.6055838465690613,
+        0.054145969450473785
+      ]
+    },
+    {
+      "iteration": 1,
+      "gre": [
+        6,
+        2,
+        53,
+        2,
+        7,
+        1
+      ],
+      "values": [
+        0.8090945482254028,
+        0.04090575873851776
+      ]
+    },
+    {
+      "iteration": 0,
+      "gre": [
+        6,
+        2,
+        9,
+        2,
+        7,
+        1
+      ],
+      "values": [
+        -0.25868287682533264,
+        0.024927033111453056
+      ]
+    },
+    {
+      "iteration": 1,
+      "gre": [
+        6,
+        2,
+        9,
+        2,
+        7,
+        1
+      ],
+      "values": [
+        -0.25765615701675415,
+        0.01911165937781334
+      ]
+    },
+    {
+      "iteration": 0,
+      "gre": [
+        16,
+        2,
+        8,
+        1
+      ],
+      "values": [
+        4.719927787780762
+      ]
+    },
+    {
+      "iteration": 1,
+      "gre": [
+        16,
+        2,
+        8,
+        1
+      ],
+      "values": [
+        9.00909423828125
+      ]
+    }
+  ],
+  "sampling": [
+    {
+      "function": "random_data",
+      "sha256": "8b11cadb10e22ed7e14229f35efe7e597c4dd4a7a179957a6d8e2203133acc49"
+    }
+  ],
+  "initial_surrogate_sha256": "8716019ad74305efdf765f1daec3fea78c091ab30c049cf26f866c3e2e2f42e7",
+  "final_surrogate_sha256": "cec3504c60d12d8482c43fa0d8e9562d180821772044fd469bcbdd35c54b6a07",
+  "data_loss_weight": 1,
+  "pde_loss_weight": 0.01
+}

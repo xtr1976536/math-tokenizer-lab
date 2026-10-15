@@ -1,0 +1,13 @@
+{
+  "equation": "Burgers_equation",
+  "seed": 525,
+  "observations": 32,
+  "noise_percent": 0,
+  "surrogate_sha256": "7cf1fa8228ba75d7ec22b9a5da7a4b5751c6c134472fdea2bda0c48a3270fb5d",
+  "raw_noisy_data_sha256": "8ac0a2a2aecb57e0880ce4158b2e7f01215192aee45a49615db6889df4867daa",
+  "metadata_sha256": "9c3f7ae7382ab8fb854c8e7dd7ec998903f8ffcf4b4c70643f92bdfd6d82a037",
+  "metadata_points": 25,
+  "activation": "Rational",
+  "surrogate_iterations": 2,
+  "target_name": "Bateman-Burgers equation"
+}

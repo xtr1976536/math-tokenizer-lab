@@ -73,3 +73,13 @@ On the final v8 test, Boundary AST reduces paper-macro token/byte by **1.09%–2
 The three new release audits passed over **56,000 catalog formulas, 19 configurations, 109 metric records and 234,556 result rows**. Earlier v8 algorithm selection preceded new-test scoring; the current seven-method selection is retrospective. Historical RL did not pass the prespecified same-reward search-control promotion gate and is archived.
 
 Quality assurance consists of automated source/license, syntax, macro-fidelity, duplicate, classification and serialization checks. There is no pending expert-annotation workflow or certification claim. The benchmark is source syntax, not mathematical theorem truth. Domains are uneven; only **356** catalog formulas meet the strict PDE-equation rule. All current tests are now exposed. Speed evidence is from one machine and no downstream-task benefit has yet been measured.
+
+## EqGPT downstream comparison (2026-10-16)
+
+The author-architecture experiment compares original EqGPT, hard AST-BPE and soft
+AST-BPE, all trained from scratch under one paired protocol. See
+[the experiment guide](docs/eqgpt/README.md),
+[the four-round audit](docs/eqgpt/audit_summary.json), and
+[GPU rental options](docs/eqgpt/cloud_options_20261016.md).
+The portable archive is `deliverables/eqgpt_tokenizer_cloud_20261016.zip`.
+Local smoke runs are stored separately from future formal CUDA results.

@@ -42,3 +42,6 @@ presentations/**/qa/*.jpg
 presentations/**/qa/contact-*.png
 presentations/**/qa/final_contact.png
 presentations/**/qa/page_geometry.html
+
+# Isolated, author-version EqGPT runtime
+.venv-eqgpt/

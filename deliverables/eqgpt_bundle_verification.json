@@ -1,0 +1,32 @@
+{
+  "zip_sha256": "d64b4e54649955734f85771ca389e33134ce34b8c9141fcac2cd7afcdcb3deab",
+  "file_hashes_verified": 331,
+  "checks": [
+    {
+      "command": [
+        "scripts/eqgpt/preflight.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.235310042000492
+    },
+    {
+      "command": [
+        "-m",
+        "pytest",
+        "tests/test_eqgpt.py"
+      ],
+      "exit_code": 0,
+      "seconds": 6.697350624999672
+    },
+    {
+      "command": [
+        "scripts/eqgpt/run_experiment.py",
+        "--smoke",
+        "--output"
+      ],
+      "exit_code": 0,
+      "seconds": 11.61670379199495
+    }
+  ],
+  "isolated_smoke_matches": true
+}

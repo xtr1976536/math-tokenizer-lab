@@ -1,0 +1,25 @@
+{
+  "upstream": "third_party/eqgpt/code",
+  "upstream_revision": "dc35fc0ac860ff224293f01d2a62204042095127",
+  "policy": "All author files are preserved byte-for-byte. The runner loads selected definitions by AST to prevent import-time training and exposes the same globals.",
+  "allowed_changes": [
+    "Replace the author word-to-ID encoder with a reversible byte-tokenizer adapter.",
+    "Reserve seven shared special/structure IDs and resize only the input embedding and output projection dimensions.",
+    "Construct the model from the author's GPT class with the same d_model, d_ff, heads, layers, scientific-action limit, Adam learning rate, batch size, epochs, clipping, sampling, reward, and PINN settings.",
+    "Fix the author's empty Left assignment in the copied execution wrapper; the source file itself is unchanged.",
+    "Pass Delete_equation_name to read_dataset, because the published call site otherwise does not remove the held-out target.",
+    "Bind the optimizer to the model that is actually fine-tuned in the five-step reward continuation; the upstream variable is otherwise a new unoptimized model.",
+    "Use explicit run directories and deterministic seeds; record all hashes and parameters.",
+    "Extend only the positional embedding capacity identically for all arms, to fit the longest subword-expanded sequence; retain the author GRE generation-length condition.",
+    "Encode exact original GRE spellings at semantic action boundaries and score complete prefix-free codewords before invoking the original author GPT.step. No LaTeX conversion or action-space expansion.",
+    "Keep published EOS placement in data augmentation; all arms encode exactly the same GRE sequences.",
+    "For disk Poisson, fix the author get_meta four-value unpack of a function returning two values. No numerical derivative or reward changes.",
+    "Record numerical PINN failures without resampling or substituting another candidate; retain outcomes in result denominators.",
+    "Instrument common data sampling hashes, model state hashes, parameter/optimizer binding, timing, and checkpoint reload without changing the loss or update equations."
+  ],
+  "forbidden_changes": [
+    "No change to transformer block equations, width, depth, attention, activation, loss, data augmentation semantics, reward formula, candidate selection, or PINN objective.",
+    "No pretrained GPT-2 weights; all three author-architecture models start from new random weights.",
+    "No tokenizer-specific training examples or target-specific token reservations."
+  ]
+}

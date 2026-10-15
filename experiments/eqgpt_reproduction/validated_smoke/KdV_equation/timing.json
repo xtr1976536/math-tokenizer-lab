@@ -1,0 +1,24 @@
+{
+  "seconds": {
+    "eqgpt": {
+      "pretrain_seconds": 0.3188209159998223,
+      "search_seconds": 0.7434958749945508,
+      "pinn_seconds": 0.49033875000168337,
+      "total_seconds": 1.7843462499949965
+    },
+    "ast_bpe": {
+      "pretrain_seconds": 0.31770016600057716,
+      "search_seconds": 2.0691474589984864,
+      "pinn_seconds": 0.47398016600345727,
+      "total_seconds": 3.0776773750039865
+    },
+    "soft_ast_bpe": {
+      "pretrain_seconds": 0.33835624999483116,
+      "search_seconds": 2.1874440829997184,
+      "pinn_seconds": 0.4900730420049513,
+      "total_seconds": 3.233362249993661
+    }
+  },
+  "device": "cpu",
+  "smoke": true
+}

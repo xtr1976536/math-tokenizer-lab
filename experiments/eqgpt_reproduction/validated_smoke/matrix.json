@@ -1,0 +1,68 @@
+[
+  {
+    "case": "KdV_equation",
+    "exit_code": 0,
+    "seconds": 12.253387582997675,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/KdV_equation/manifest.json"
+  },
+  {
+    "case": "Burgers_equation",
+    "exit_code": 0,
+    "seconds": 10.07474650000222,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/Burgers_equation/manifest.json"
+  },
+  {
+    "case": "Wave_equation",
+    "exit_code": 0,
+    "seconds": 9.997957790998043,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/Wave_equation/manifest.json"
+  },
+  {
+    "case": "Chaffee_Infante_equation",
+    "exit_code": 0,
+    "seconds": 10.366317667001567,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/Chaffee_Infante_equation/manifest.json"
+  },
+  {
+    "case": "KG_equation",
+    "exit_code": 0,
+    "seconds": 9.918785082998511,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/KG_equation/manifest.json"
+  },
+  {
+    "case": "Allen_Cahn",
+    "exit_code": 0,
+    "seconds": 10.483457708003698,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/Allen_Cahn/manifest.json"
+  },
+  {
+    "case": "Convection_diffusion_equation",
+    "exit_code": 0,
+    "seconds": 10.06664237500081,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/Convection_diffusion_equation/manifest.json"
+  },
+  {
+    "case": "PDE_divide",
+    "exit_code": 0,
+    "seconds": 9.888752458995441,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/PDE_divide/manifest.json"
+  },
+  {
+    "case": "Eq_6_2_12",
+    "exit_code": 0,
+    "seconds": 14.201317207996908,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/Eq_6_2_12/manifest.json"
+  },
+  {
+    "case": "PDE_compound",
+    "exit_code": 0,
+    "seconds": 9.980584250006359,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/PDE_compound/manifest.json"
+  },
+  {
+    "case": "Possion_x_y",
+    "exit_code": 0,
+    "seconds": 9.7273035420003,
+    "manifest": "experiments/eqgpt_reproduction/validated_smoke/Possion_x_y/manifest.json"
+  }
+]

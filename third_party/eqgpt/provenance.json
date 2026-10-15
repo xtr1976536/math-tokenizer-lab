@@ -1,0 +1,176 @@
+{
+  "repository": "https://github.com/woshixuhao/EqGPT",
+  "revision": "dc35fc0ac860ff224293f01d2a62204042095127",
+  "license": "Apache-2.0",
+  "files": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "563fbe99b9c8206edde1cac1e0be7a22631b64643078f81f0b141274eeb233ee",
+    "code/dict_datas_0725.json": "6cec0ef67d61fc385e30826a7799e7cd42ff4759c729f51eab409ad2f128fc30",
+    "code/read_dataset.py": "e0e2ff903fd12ae4f01441ddbbd482f40f7f54986c2880b8a96800930f12ceb7",
+    "code/surrogate_model.py": "c72b1e90d0d76ce901953c82d92b8ca453f920eb0a4c5b8850264004407bf6a4",
+    "code/PDE_dataset_0725.xlsx": "d48acfdf565d1c615343c92b6aacdac2c7db4354b1f74629952a984fcd7adc31",
+    "code/calculate_terms.py": "f72e211c8e30e7a8d25d45ed2c420d22b27876c359eb932e1727adec0d4c097f",
+    "code/train_gpt.py": "d41192b18c3d1743cbe9cb0eeb60c39b5512305ac4c01cc56b9a6519662b7a0a",
+    "code/PINN_optimization.py": "c0f9dbb7891b07c4a5f762d9707e7b3458d0986e725f0eff1ccde13a17706574",
+    "code/neural_network.py": "6e000b105d7754e840c7cb3fb583194c083413ea1dbe8955ed4dada143f36e55",
+    "code/gpt_model.py": "7da48457352848e53e4c3b18e566e3a29979ca02fceed53e4fcf11e4061170b8",
+    "code/continue_train_GPT.py": "b094c613321e1f0930313d09d9250327a032395a30f914f379837c6bbac2a3fd"
+  },
+  "data_files": [
+    {
+      "path": "data/Allen_Cahn/Allen_Cahn.mat",
+      "size": 291152,
+      "sha256": "863a5a84bf2b3d2727a8ef39364b4a42c3d50eecf69790246277941276bd9b65"
+    },
+    {
+      "path": "data/Allen_Cahn/data_description",
+      "size": 369,
+      "sha256": "c8412666b12aa1bfd20460fbcaf412c2f1a9ea0aba8bf27a92a3beb1747ae97a"
+    },
+    {
+      "path": "data/Burgers_2D/Burgers2D.mat",
+      "size": 3935738,
+      "sha256": "bebb1212aafb7c37938d46f9e064bdd38c1a0669091078eae2829e708f7a1ed0"
+    },
+    {
+      "path": "data/Burgers_2D/data description",
+      "size": 230,
+      "sha256": "3140b21065de866fdf7cfd5bb7688379cdd9c228546168268b60cd15fcfd1367"
+    },
+    {
+      "path": "data/Burgers_equation/burgers_sine.mat",
+      "size": 287462,
+      "sha256": "8813fcd8af70f4e4c2c5ee228a06c3ca7e37be1189accaa2681a2d3a29190d64"
+    },
+    {
+      "path": "data/Burgers_equation/dataset_description",
+      "size": 351,
+      "sha256": "2531ac6933c3f3854adf77431b9db0841d799fd1316d8aa47d58c744bce6e70e"
+    },
+    {
+      "path": "data/Chaffee_Infante_equation/CI.npy",
+      "size": 481728,
+      "sha256": "9ab264bf39895a73f581813c3687619f61ee01fe5e514627bde885445b6640a0"
+    },
+    {
+      "path": "data/Chaffee_Infante_equation/dataset_description",
+      "size": 322,
+      "sha256": "5d65436abed8ac4aa43d85d3738d314e46f7450953455832039d6a57668247ce"
+    },
+    {
+      "path": "data/Chaffee_Infante_equation/t.npy",
+      "size": 1728,
+      "sha256": "10b0e2b5a647ce58128be9182e5d8943bda5e45ff7e8fd6bb33cd77eefb42f7a"
+    },
+    {
+      "path": "data/Chaffee_Infante_equation/x.npy",
+      "size": 2536,
+      "sha256": "91b28bb9edbecd86abedff439f9e9f0cd4d2d2e239ef68722aa78abcdb9b538a"
+    },
+    {
+      "path": "data/Convection_diffusion_equation/data.mat",
+      "size": 387350,
+      "sha256": "d9f2c7e01fa33e63e4c4168ee28c10084f17a0e2a2bd69626555b38ebfe6908c"
+    },
+    {
+      "path": "data/Convection_diffusion_equation/dataset_description",
+      "size": 339,
+      "sha256": "162f64778be89ad9e91a97dc1be9bb465af0a054963f407e5065f9cd7db986a4"
+    },
+    {
+      "path": "data/Eq_6_2_12/data_Eq_6_2_12.csv",
+      "size": 4886493,
+      "sha256": "174477275070804a5f74ce4f3ab32a3cea8e236674cdd28e9de80feafecc4daf"
+    },
+    {
+      "path": "data/Eq_6_2_12/dataset_description",
+      "size": 361,
+      "sha256": "9abfe54ee43b74b9cd1e8ecea1fd1cd3a440ca3ae874a2f026df5078dfcd12bb"
+    },
+    {
+      "path": "data/KG_equation/KG_Exp.mat",
+      "size": 208639,
+      "sha256": "6dd6fd9a1e887dba4c612ff7b05de05e2e8ea61393c77be5971e7b043570a1ea"
+    },
+    {
+      "path": "data/KG_equation/dataset_description",
+      "size": 364,
+      "sha256": "8f209632372d6d54dbddfbefd62a0e631f014e2b3e54f0bf6aa81e77553453ec"
+    },
+    {
+      "path": "data/KdV_equation/KdV-PINN.mat",
+      "size": 788239,
+      "sha256": "7c04e89a0c65692105dbe7fc8ba52cb90ce01a64e47e995a5736fbf1c06be220"
+    },
+    {
+      "path": "data/KdV_equation/dataset_description.txt",
+      "size": 330,
+      "sha256": "3aff1f07444b46a7d4a6dbd461f93c18b7b216f0774b671878ac31dc63f5d157"
+    },
+    {
+      "path": "data/Laplacian_EITech/Laplacian_EITech.xlsx",
+      "size": 2889690,
+      "sha256": "bee4840843c27fe14572a031204d290bc03dd7bf122715277555da70e40a7629"
+    },
+    {
+      "path": "data/Laplacian_EITech/dataset_description",
+      "size": 156,
+      "sha256": "b76ba4fd94d955d02f6de1e715cb6b75069ba75c5d430a1b3183fcccc1b65e4c"
+    },
+    {
+      "path": "data/Laplacian_smile/Laplacian_smile.xlsx",
+      "size": 1378624,
+      "sha256": "91bdb63683ae2b58d0b0f5c4ad0862365417ab88003f26adc38c578e751c1229"
+    },
+    {
+      "path": "data/Laplacian_smile/dataset_description",
+      "size": 164,
+      "sha256": "68a23da9628985ebc37d6a72bf9875c0c2ac5724b1a744084d7fa523c0502e26"
+    },
+    {
+      "path": "data/PDE_compound/PDE_compound.csv",
+      "size": 773327,
+      "sha256": "d5de76ad760329e56018dc7d1928c0cc1e40f3c15e9a623a7163722ec2bd644d"
+    },
+    {
+      "path": "data/PDE_compound/dataset_description",
+      "size": 187,
+      "sha256": "25ef854c52c02d5f58d324f6cbba82a10441dcfbb2bde34e55626edb85b3542b"
+    },
+    {
+      "path": "data/PDE_divide/PDE_divide.npy",
+      "size": 200928,
+      "sha256": "2749dc1b882fa5d0e257e0bc379d1aef956efda65cef59178c90f16332dfc348"
+    },
+    {
+      "path": "data/PDE_divide/dataset_description",
+      "size": 215,
+      "sha256": "eb025b0b393e3522f8d7f5c59f142c52516efa50f3186773f7f9c37eb0465c75"
+    },
+    {
+      "path": "data/Possion_equation/Possion_x_y.xlsx",
+      "size": 1817836,
+      "sha256": "6f0f595a41c0242b89f180284e0a3b84569c28114762921e243e0e65fdb432ba"
+    },
+    {
+      "path": "data/Possion_equation/dataset_description",
+      "size": 212,
+      "sha256": "7869ac76914da71afeb6b8c50f67315e59b3b8008466dd72fc5df892c07b9915"
+    },
+    {
+      "path": "data/Readme",
+      "size": 151,
+      "sha256": "4ba6f7e0b918f0d282c92973618c7d4389a47d00210b1798198f6d016323bfb2"
+    },
+    {
+      "path": "data/Wave_equation/dataset_description",
+      "size": 300,
+      "sha256": "a3d49d818a99c8e192092d32309ef0ef69f5131ca1a4adcc29a1e392875c97fa"
+    },
+    {
+      "path": "data/Wave_equation/wave.mat",
+      "size": 137903,
+      "sha256": "239f106b040421419e72575589e421cec6c527484659a953b19e8472b048ec38"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "cycles": 2,
+  "samples_per_cycle": 4,
+  "finetune_epochs": 1,
+  "lr": 1e-05,
+  "epi": 0.2,
+  "gre_length_limit": 10,
+  "history": [
+    {
+      "cycle": 1,
+      "rewards": [
+        0.6977582573890686,
+        0.1034485399723053,
+        0.0
+      ],
+      "gre": [
+        [
+          5,
+          6,
+          2,
+          9,
+          2,
+          7,
+          1
+        ],
+        [
+          5,
+          6,
+          2,
+          9,
+          3,
+          21,
+          2,
+          9,
+          1
+        ],
+        [
+          5,
+          15,
+          3,
+          8,
+          3,
+          26,
+          1
+        ]
+      ],
+      "equations": [
+        "ut+uxx+u",
+        "ut+uxx*u^3+uxx",
+        "uxxxx*ux*uxxxxx"
+      ],
+      "before_sha256": "c96a6f797a85592ca3d2a03ea10174cf0cfcc9755a1327a3839a3f6d9cb958de",
+      "after_sha256": "ba0d1576053d5153efe308dffb1f294fd4cf26b7e6efdfeac6160e99518b6f7d"
+    },
+    {
+      "cycle": 2,
+      "rewards": [
+        0.6977582573890686,
+        0.4373296797275543,
+        0.1034485399723053
+      ],
+      "gre": [
+        [
+          5,
+          6,
+          2,
+          9,
+          2,
+          7,
+          1
+        ],
+        [
+          5,
+          6,
+          2,
+          53,
+          3,
+          7,
+          3,
+          7,
+          1
+        ],
+        [
+          5,
+          6,
+          2,
+          9,
+          3,
+          21,
+          2,
+          9,
+          1
+        ]
+      ],
+      "equations": [
+        "ut+uxx+u",
+        "ut+(uux)t*u*u",
+        "ut+uxx*u^3+uxx"
+      ],
+      "before_sha256": "ba0d1576053d5153efe308dffb1f294fd4cf26b7e6efdfeac6160e99518b6f7d",
+      "after_sha256": "e89630cb3c4ee09cfd437f79ecb27ff47f9ac5585588c557fec57659066b9f7c"
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "gre": [
+        16,
+        2,
+        8,
+        1
+      ],
+      "reward": 0.0
+    },
+    {
+      "index": 1,
+      "gre": [
+        6,
+        2,
+        9,
+        2,
+        7,
+        2,
+        7,
+        1
+      ],
+      "reward": 0.697758242077837
+    },
+    {
+      "index": 2,
+      "gre": [
+        15,
+        3,
+        8,
+        3,
+        26,
+        1
+      ],
+      "reward": 0.0
+    },
+    {
+      "index": 3,
+      "gre": [
+        6,
+        2,
+        9,
+        3,
+        21,
+        2,
+        9,
+        1
+      ],
+      "reward": 0.10344853978312238
+    },
+    {
+      "index": 4,
+      "gre": [
+        6,
+        4,
+        46,
+        3,
+        8,
+        3,
+        27,
+        1
+      ],
+      "reward": -2.6231145319749296
+    },
+    {
+      "index": 5,
+      "gre": [
+        6,
+        2,
+        53,
+        3,
+        7,
+        3,
+        7,
+        1
+      ],
+      "reward": 0.43732969325659554
+    },
+    {
+      "index": 6,
+      "gre": [
+        6,
+        2,
+        54,
+        3,
+        8,
+        2,
+        9,
+        3
+      ],
+      "reward": 0.0
+    },
+    {
+      "index": 7,
+      "gre": [
+        6,
+        2,
+        9,
+        2,
+        7,
+        1
+      ],
+      "reward": 0.697758242077837
+    }
+  ],
+  "updates": [
+    {
+      "before_sha256": "c96a6f797a85592ca3d2a03ea10174cf0cfcc9755a1327a3839a3f6d9cb958de",
+      "after_sha256": "ba0d1576053d5153efe308dffb1f294fd4cf26b7e6efdfeac6160e99518b6f7d",
+      "loss": 1.994306206703186
+    },
+    {
+      "before_sha256": "ba0d1576053d5153efe308dffb1f294fd4cf26b7e6efdfeac6160e99518b6f7d",
+      "after_sha256": "e89630cb3c4ee09cfd437f79ecb27ff47f9ac5585588c557fec57659066b9f7c",
+      "loss": 1.3500889539718628
+    }
+  ],
+  "loop": "Original author main-block AST; adapted GPT factory and data IDs"
+}

@@ -1,0 +1,13 @@
+{
+  "equation": "Convection_diffusion_equation",
+  "seed": 525,
+  "observations": 32,
+  "noise_percent": 0,
+  "surrogate_sha256": "7d57aacb194359ff41ed09e77275d2b30156085430a49673a492c3391d2dd73d",
+  "raw_noisy_data_sha256": "480263d6d6615f5138b0aadfe3907a2fd443751f56eac647108af9a4b29a181e",
+  "metadata_sha256": "9c094442f0cf5e5da3e30f0ed5b8771f07d31c3e991bf061fee9c5973349025b",
+  "metadata_points": 25,
+  "activation": "Rational",
+  "surrogate_iterations": 2,
+  "target_name": "6.2.13"
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 0,
+    "seed": 525
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 0,
+    "seed": 526
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 0,
+    "seed": 527
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 10,
+    "seed": 525
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 10,
+    "seed": 526
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 10,
+    "seed": 527
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 20,
+    "seed": 525
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 20,
+    "seed": 526
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 20,
+    "seed": 527
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 30,
+    "seed": 525
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 30,
+    "seed": 526
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 30,
+    "seed": 527
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 40,
+    "seed": 525
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 40,
+    "seed": 526
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 40,
+    "seed": 527
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 50,
+    "seed": 525
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 50,
+    "seed": 526
+  },
+  {
+    "case": "KdV_equation",
+    "observations": 10000,
+    "noise": 50,
+    "seed": 527
+  }
+]

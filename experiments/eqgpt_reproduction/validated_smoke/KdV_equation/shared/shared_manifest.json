@@ -1,0 +1,13 @@
+{
+  "equation": "KdV_equation",
+  "seed": 525,
+  "observations": 32,
+  "noise_percent": 0,
+  "surrogate_sha256": "0eb66994b12beeaaf2bdbe86e308ae935bb6d5c5dd5eda8d0ed233b7b1d87a47",
+  "raw_noisy_data_sha256": "d2eeb7ed520b005a7208ef870f3bf032290467150fc43dc0156d76128d818b64",
+  "metadata_sha256": "fed593922e6a51e72352d30da0cb9bd9c1cf2276eadc930c193dbe3765895b83",
+  "metadata_points": 25,
+  "activation": "Sin",
+  "surrogate_iterations": 2,
+  "target_name": "KdV equation"
+}

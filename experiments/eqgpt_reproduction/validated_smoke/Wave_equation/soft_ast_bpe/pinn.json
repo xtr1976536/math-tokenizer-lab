@@ -1,0 +1,66 @@
+{
+  "status": "numerical_failure",
+  "error": "LinAlgError: SVD did not converge",
+  "coefficients": [
+    {
+      "iteration": 0,
+      "gre": [
+        6,
+        2,
+        13,
+        3,
+        21,
+        2,
+        9,
+        1
+      ],
+      "values": [
+        129.9923858642578,
+        -0.19905684888362885
+      ]
+    },
+    {
+      "iteration": 1,
+      "gre": [
+        6,
+        2,
+        13,
+        3,
+        21,
+        2,
+        9,
+        1
+      ],
+      "values": [
+        -3478.7607421875,
+        -0.2524036467075348
+      ]
+    },
+    {
+      "iteration": 0,
+      "gre": [
+        6,
+        4,
+        46,
+        3,
+        7,
+        2,
+        13,
+        1
+      ],
+      "values": [
+        -0.0
+      ]
+    }
+  ],
+  "sampling": [
+    {
+      "function": "random_data",
+      "sha256": "5f02dc61ab437652a8ac5c82c1e9117daf03846c2ec949f2a565f44faef522c0"
+    }
+  ],
+  "initial_surrogate_sha256": "62782bdd1efe3fc7ea05b55f5e1c23ce5c418083801d9e389c917c3df8cad37c",
+  "final_surrogate_sha256": "2ab98ba9181cea7c0692bfa28cb68fff0f0e859f20a7f28ef561fdb5397708c2",
+  "data_loss_weight": 1,
+  "pde_loss_weight": 0.01
+}

@@ -1,0 +1,273 @@
+{
+  "all_four_rounds_passed": true,
+  "rounds": [
+    {
+      "round": 1,
+      "scope": "Author source and unchanged Transformer equations",
+      "passed": true,
+      "repository": "https://github.com/woshixuhao/EqGPT",
+      "revision": "dc35fc0ac860ff224293f01d2a62204042095127",
+      "files_verified": 12,
+      "definition_hashes": {
+        "gpt_model.py": {
+          "MyDataSet": "b79774356b357b017183c5666935f1efda6a4c6d1309cd9aeff3fe0e7af1fec5",
+          "get_attn_pad_mask": "8b344d1e3fde698c4bd725ba6e438a0058af752d824ed88af37927fa125ae5c5",
+          "get_attn_subsequence_mask": "559e7138f0df899652c1b107b4d6dd8aeb915ec18cc44d135f7579e763bb79be",
+          "ScaledDotProductAttention": "ddce4787b7a45362905de45e4ed6501eb3082565dae59c410cb56f2a0d4dbfdf",
+          "MultiHeadAttention": "0cd9e1348a60ecc2a5bc2d4f3b74cfae2469a3a87edf80365cd674496d48abd6",
+          "PoswiseFeedForwardNet": "8336d9513d26f174678b53b79cc581f28ed8f980236ac957edf02999939a7961",
+          "DecoderLayer": "68d43c009794311cc08e65c6795c2734fe5cb8a5e7852e972776abba666afba1",
+          "Decoder": "20c0227603f8ecbb3b7a6e27be4c13daeb9848751ede7c53672f19d9e7401c1c",
+          "GPT": "8d0532e77bcce75936d049cf558afa132eca2a1b18b958422c79124bce0be114"
+        },
+        "train_gpt.py": {
+          "MyDataSet": "b79774356b357b017183c5666935f1efda6a4c6d1309cd9aeff3fe0e7af1fec5",
+          "epoch_time": "65281220c1d7b065b0aa1782a77ccd20192f711207dcb179e0b9808df1ab6c48",
+          "train_step": "2505950f5a9f7a9fd68567591ec59aef95e964450265f694b93ea5fec11e0d00",
+          "train": "3841dae71ff35bc809ef9b9aea5f0400827e2fc576446696c7cfe41c70538f43",
+          "print_num_parameters": "d8c4816552b2fb66c5d10d961a377b3d310f5e0d399c638f4b9bd198251fd62d"
+        },
+        "read_dataset.py": {
+          "permutation": "d2655157c4a0162b45abaa631d02a56f998f8407f1948a5350f252017e8d644d",
+          "combine_permutation": "fa91faf26a219271a2308d9535ad6076a8c540c7719c548004830e663db6b83b",
+          "combine_permutation_multiply": "2ca7791ec93eb5745a72bba9d79977b4fb03b77f5798084a9db6b53348493c19",
+          "read_dataset": "c8be6377228167920b593ab6670087e19ef9163e98e156b524cdc8b000e16810",
+          "get_words": "2fd9b9422ba30fb9a22fa99b4ca0a7048837a4c638ed29f7b9df83a9fc5ac55c",
+          "calculate_words": "f3540e0b363c7ef5bd27a878fbb6bc2026d81167722455f24014b4dc38c246a9",
+          "data_augumentation_plus": "14102876bb90973e94a5d475afd904e9395b1565e70b25d91857888509871c34",
+          "split_list": "00b00c4b7acceae5daa2d5b2d3197738dee516904aa66a121bffe6bf044a0e52",
+          "data_augumentation_multiply": "bd1eb8019b1e3565cdd3b07650024ed478d435051603286c030370afc91cb90f",
+          "expand_to_wanted_size": "cfec9df59aa9fb86b313c6168a4aef5224ae255065c17be302354073a122385e",
+          "get_train_dataset": "9582f9044a1925f669e4bfe2e02d8f80b73efeda37b1739a024ec3916b501f4a",
+          "get_train_dataset_different_num": "ee42ecf6b7ad00a153484f0753154072c8048a6c33dc0525f46032bf8a4e5c79"
+        },
+        "neural_network.py": {
+          "Rational": "ccab408f6dd8748019438cba940be6b5619ffc1e4abe7ac0099cf7b6fd352674",
+          "Sin": "edd3dab9ca2596765aa8a9fb6bf53768d99e519d3aeb2aac7136e8b2c6718e5b",
+          "ANN": "68d8ddcdc06de9d23b4246648b6c190032c1f05ccec4280eb87f8674b5256009",
+          "NN": "788e76548a80a8256f184b3c32cee705fe2f6af23b647b1fb5831bed7280ac69",
+          "random_data": "58ab74c2be28e4f2fcedd73a298f0698563d8eeb3a515691a655016bf3c8426e",
+          "random_data_complex_region": "e47862a020d1892ee9ad84d3dcac21e80bf3a49c62ce3273bacd36c1fde65cb5",
+          "random_data_shuttle": "87ed1220fc7ef8c2ca8e491556feba8034cdffe395d73d26e2be7ab51536eff2",
+          "random_data_H": "d7089be3b22957507fc3466c37fe1fe0ec8e1d4cd69b62da5a975f3cc2c827a9",
+          "random_data_2D": "e5a811076ba88a638d8246bfb2d2916e861eb41a0a39e193847657f3efe1ca02",
+          "random_data_NS": "bac767f8c7469348c1c421485a893d879e8aa1aeb23e3c0fdd175c0c51c5313e",
+          "load_random_data": "a97d73ffd85a7a8b7f2c9594441a0bae885d1def5311397918b173113b3395a0"
+        },
+        "calculate_terms.py": {
+          "calculate_terms": "2cd51ed0a5c514dc1dcf36679f973809cccec2d07600efbde180c2706b4a270e",
+          "calculate_terms_PINN": "c31c9b2adb1fa5301ccd861a91857afde081676ce3b05017a9b55399a1c85cc1"
+        },
+        "continue_train_GPT.py": {
+          "get_sub_set": "70298804a0bf6233bd3936d364d23452d0801cd25a7e616f989aff873d103944",
+          "make_data": "a79bda3f0e80cb428f15cf72ab49e792c1b7402d3ddfd209b6e6d8e79ae2546e",
+          "MyDataSet": "b79774356b357b017183c5666935f1efda6a4c6d1309cd9aeff3fe0e7af1fec5",
+          "epoch_time": "65281220c1d7b065b0aa1782a77ccd20192f711207dcb179e0b9808df1ab6c48",
+          "train_step": "2505950f5a9f7a9fd68567591ec59aef95e964450265f694b93ea5fec11e0d00",
+          "train": "66ef9739618313926ba39b82327b59c7d463f62cd25645379fb81ec64534653b",
+          "print_num_parameters": "d8c4816552b2fb66c5d10d961a377b3d310f5e0d399c638f4b9bd198251fd62d",
+          "delete_duplicate": "ad05f9824f51a0c9327aaf07c45cfe0b570d690b4b0b5f9f6f1cbe2c4aa1d5dc",
+          "delete_dulplicate_A_column": "fdde2a233045cc5ec44910bdd3abc7d1ea278e3eaa3a731feac750f271ff72e5",
+          "calculate_reward": "f056b4a7139ec58d8b6f8c8cb692a6083444f541bef6200cfbd9fc3c7b92b584",
+          "get_mask_invalid": "2aae8d0cbb143cdec40694b0005300fdc6dc465b81e3eb132d47039d37ca7fe7",
+          "find_min_no_repeat": "2f42caaac85f980eddfdf5ee30d4b9c953eb22b58e05d46378c6fe7239bae373"
+        },
+        "PINN_optimization.py": {
+          "PINNLossFunc": "02e424be8f8aac18734eb15b56c342f64b3aae27ba354f198405a3d4a122fa94",
+          "get_coefficients": "375b5138c271528ada5e16a5298c7f415f9eb4122d6b779325eecbcf1565c9cc",
+          "get_PDE_terms": "56b0f5050ce531f1725308873e749e5c2f6644f01e81f533f2e9fe082a88e039",
+          "get_mask_invalid": "2aae8d0cbb143cdec40694b0005300fdc6dc465b81e3eb132d47039d37ca7fe7",
+          "get_no_boundary": "7039699cddb4828be18d09fe485e916e940a084668264d5e361eca50b9014184",
+          "train_PINN": "65713f20be4deaf9cf7c901759eda97f7b23db0289bd6d48282a700f545c4537",
+          "train_PINN_3D": "ab4485e891d3a9f1101c89c238958879c4d95378648f3389d818f56cd915ee48",
+          "train_PINN_space_shuttle": "9dc34f567031c6e9f287be661f4e4d631b3cd15ce826c26ad5347cdcb0351f26"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "scope": "No target leakage; identical raw examples/order, action space, initial backbone, numerical samples",
+      "passed": true,
+      "cases": [
+        {
+          "equation": "Allen_Cahn",
+          "target_exclusions": [
+            "Chafee–Infante equation"
+          ],
+          "formulas": 220,
+          "sequences": 7040,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "Burgers_equation",
+          "target_exclusions": [
+            "Bateman-Burgers equation"
+          ],
+          "formulas": 220,
+          "sequences": 7040,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "Chaffee_Infante_equation",
+          "target_exclusions": [
+            "Chafee–Infante equation"
+          ],
+          "formulas": 220,
+          "sequences": 7040,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "Convection_diffusion_equation",
+          "target_exclusions": [
+            "6.2.13"
+          ],
+          "formulas": 220,
+          "sequences": 7040,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "Eq_6_2_12",
+          "target_exclusions": [
+            "6.2.12"
+          ],
+          "formulas": 220,
+          "sequences": 7040,
+          "pinn_status": {
+            "eqgpt": "numerical_failure",
+            "ast_bpe": "numerical_failure",
+            "soft_ast_bpe": "numerical_failure"
+          }
+        },
+        {
+          "equation": "KG_equation",
+          "target_exclusions": [
+            "Klein–Gordon_u",
+            3.3
+          ],
+          "formulas": 219,
+          "sequences": 7008,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "KdV_equation",
+          "target_exclusions": [
+            "KdV equation"
+          ],
+          "formulas": 220,
+          "sequences": 7040,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "PDE_compound",
+          "target_exclusions": [],
+          "formulas": 221,
+          "sequences": 7072,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "PDE_divide",
+          "target_exclusions": [
+            "8.14.1d"
+          ],
+          "formulas": 220,
+          "sequences": 7040,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "Possion_x_y",
+          "target_exclusions": [
+            "1.5.20b",
+            "1.8.1_2D"
+          ],
+          "formulas": 219,
+          "sequences": 7008,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "completed",
+            "soft_ast_bpe": "completed"
+          }
+        },
+        {
+          "equation": "Wave_equation",
+          "target_exclusions": [
+            "(1.2.10)"
+          ],
+          "formulas": 220,
+          "sequences": 7040,
+          "pinn_status": {
+            "eqgpt": "completed",
+            "ast_bpe": "numerical_failure",
+            "soft_ast_bpe": "numerical_failure"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "scope": "33 real scratch-model runs: backpropagation, original author search loop, correctly bound optimizer, PINN outcome logging and checkpoint reload",
+      "passed": true,
+      "paired_cases": 11,
+      "models": 33
+    },
+    {
+      "round": 4,
+      "scope": "Independent complete repetition; exact training, model-state, search and PINN JSON agreement",
+      "passed": true,
+      "reference": "experiments/eqgpt_reproduction/validated_smoke/KdV_equation",
+      "repeat": "experiments/eqgpt_reproduction/validated_repeat"
+    }
+  ],
+  "environment": {
+    "python": "3.11.15 (main, Jun 23 2026, 15:46:51) [Clang 22.1.3 ]",
+    "versions": {
+      "torch": "2.3.1",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "scipy": "1.13.1",
+      "matplotlib": "3.8.4",
+      "sympy": "1.12.1",
+      "tokenizers": "0.20.3"
+    },
+    "author_revision": "dc35fc0ac860ff224293f01d2a62204042095127",
+    "author_files_verified": 12,
+    "data_files_verified": 31,
+    "cuda_available": false,
+    "require_cuda": false,
+    "cpu_checks_passed": true,
+    "native_compiler_check": true
+  },
+  "formal_cuda_experiments_executed": false,
+  "scope": "Canonical author data and disk Poisson; smoke scores excluded from scientific comparison"
+}

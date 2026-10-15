@@ -1,0 +1,13 @@
+{
+  "equation": "Eq_6_2_12",
+  "seed": 525,
+  "observations": 32,
+  "noise_percent": 0,
+  "surrogate_sha256": "555cd3bee5000077be2da80f7d619cab8827c9125d812d39463752b9afc5b75f",
+  "raw_noisy_data_sha256": "c94a76ef0981357e7dc2ee967722da486e11de45b9c884afde95d6a52ae498e9",
+  "metadata_sha256": "d14368896994962120f2751d655408efeb81603685aba67887d108f25754fd5b",
+  "metadata_points": 25,
+  "activation": "Rational",
+  "surrogate_iterations": 2,
+  "target_name": "6.2.12"
+}

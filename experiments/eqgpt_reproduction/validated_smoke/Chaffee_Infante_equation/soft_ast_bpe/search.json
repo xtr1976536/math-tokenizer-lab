@@ -1,0 +1,241 @@
+{
+  "cycles": 2,
+  "samples_per_cycle": 4,
+  "finetune_epochs": 1,
+  "lr": 1e-05,
+  "epi": 0.2,
+  "gre_length_limit": 10,
+  "history": [
+    {
+      "cycle": 1,
+      "rewards": [
+        0.08960475027561188,
+        0.05612748861312866,
+        0.0,
+        -1.594998836517334
+      ],
+      "gre": [
+        [
+          5,
+          6,
+          2,
+          9,
+          2,
+          7,
+          1
+        ],
+        [
+          5,
+          15,
+          2,
+          8,
+          2,
+          45,
+          1
+        ],
+        [
+          5,
+          16,
+          2,
+          9,
+          1
+        ],
+        [
+          5,
+          6,
+          2,
+          22,
+          3,
+          21,
+          2,
+          9,
+          1
+        ]
+      ],
+      "equations": [
+        "ut+uxx+u",
+        "uxxxx+ux+sint",
+        "(uux)x+uxx",
+        "ut+x*u^3+uxx"
+      ],
+      "before_sha256": "ebaa30c1c2452ab98feb91e13f5971ddfc47b335d0aa305c95a6097db3f6e0fc",
+      "after_sha256": "5fbbaa08b1070b95262c65958f4bed08b3d2f680aeff8c6e1bec08229dcc09f5"
+    },
+    {
+      "cycle": 2,
+      "rewards": [
+        0.6442662477493286,
+        0.3623887002468109,
+        0.31681981682777405,
+        0.08960475027561188
+      ],
+      "gre": [
+        [
+          5,
+          13,
+          2,
+          53,
+          2,
+          7,
+          1
+        ],
+        [
+          5,
+          6,
+          2,
+          8,
+          2,
+          7,
+          1
+        ],
+        [
+          5,
+          6,
+          4,
+          46,
+          3,
+          8,
+          2,
+          21,
+          1
+        ],
+        [
+          5,
+          6,
+          2,
+          9,
+          2,
+          7,
+          1
+        ]
+      ],
+      "equations": [
+        "utt+(uux)t+u",
+        "ut+ux+u",
+        "ut/sinx*ux+u^3",
+        "ut+uxx+u"
+      ],
+      "before_sha256": "5fbbaa08b1070b95262c65958f4bed08b3d2f680aeff8c6e1bec08229dcc09f5",
+      "after_sha256": "6b1c7f777741b2da31cc763e315a0b1e4758f56604b9d9ee5507775a1da98a4b"
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "gre": [
+        16,
+        2,
+        9,
+        1
+      ],
+      "reward": 0.0
+    },
+    {
+      "index": 1,
+      "gre": [
+        6,
+        2,
+        9,
+        2,
+        7,
+        2,
+        7,
+        1
+      ],
+      "reward": 0.08960475326866132
+    },
+    {
+      "index": 2,
+      "gre": [
+        15,
+        2,
+        8,
+        2,
+        45,
+        1
+      ],
+      "reward": 0.056127488981054394
+    },
+    {
+      "index": 3,
+      "gre": [
+        6,
+        2,
+        22,
+        3,
+        21,
+        2,
+        9,
+        1
+      ],
+      "reward": -1.5949988229274603
+    },
+    {
+      "index": 4,
+      "gre": [
+        6,
+        4,
+        46,
+        3,
+        8,
+        2,
+        21,
+        1
+      ],
+      "reward": 0.3168198099568814
+    },
+    {
+      "index": 5,
+      "gre": [
+        13,
+        2,
+        53,
+        2,
+        7,
+        2,
+        7,
+        1
+      ],
+      "reward": 0.6442662665901212
+    },
+    {
+      "index": 6,
+      "gre": [
+        8,
+        2,
+        54,
+        2,
+        8,
+        2,
+        9,
+        3
+      ],
+      "reward": 0.0
+    },
+    {
+      "index": 7,
+      "gre": [
+        6,
+        2,
+        8,
+        2,
+        7,
+        1
+      ],
+      "reward": 0.3623887044720386
+    }
+  ],
+  "updates": [
+    {
+      "before_sha256": "ebaa30c1c2452ab98feb91e13f5971ddfc47b335d0aa305c95a6097db3f6e0fc",
+      "after_sha256": "5fbbaa08b1070b95262c65958f4bed08b3d2f680aeff8c6e1bec08229dcc09f5",
+      "loss": 3.087996482849121
+    },
+    {
+      "before_sha256": "5fbbaa08b1070b95262c65958f4bed08b3d2f680aeff8c6e1bec08229dcc09f5",
+      "after_sha256": "6b1c7f777741b2da31cc763e315a0b1e4758f56604b9d9ee5507775a1da98a4b",
+      "loss": 2.6934211254119873
+    }
+  ],
+  "loop": "Original author main-block AST; adapted GPT factory and data IDs"
+}

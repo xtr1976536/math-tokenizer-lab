@@ -1,0 +1,16 @@
+{
+  "source_formulas": 221,
+  "training_formulas": 220,
+  "augmentations": 32,
+  "training_sequences": 7040,
+  "target_name": "6.2.12",
+  "removed_equations": [
+    "6.2.12"
+  ],
+  "source_sha256": "d48acfdf565d1c615343c92b6aacdac2c7db4354b1f74629952a984fcd7adc31",
+  "training_sha256": "7b83109e251d1b32d0425ba983b6a8d9c82c3cb924a843a6e27aa651c9735fb7",
+  "max_gre_length": 19,
+  "target_structures_removed": true,
+  "author_augmentation_interior_eos": 627,
+  "augmentation_policy": "Unchanged author permutations, including EOS placement"
+}
