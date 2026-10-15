@@ -1,0 +1,18 @@
+[
+  {
+    "round": 1,
+    "passed": true,
+    "scope": "source/ID split isolation;zero test scoring;fixed primitive hashes and decoder weights"
+  },
+  {
+    "round": 2,
+    "passed": true,
+    "scope": "same dictionary per pair;all raw payload/roundtrip checks;deterministic inference;1024/2048 original dictionaries exactly reproduced"
+  },
+  {
+    "round": 3,
+    "passed": true,
+    "scope": "all per-formula and paper-macro count aggregates;common7pass timings;unchanged catalog",
+    "rows": 16996
+  }
+]
