@@ -11,10 +11,11 @@ from math_tokenizer.eqgpt.frozen_math import load_frozen
 from math_tokenizer.eqgpt.latex_codec import structure_to_latex
 from math_tokenizer.eqgpt.tokenizer_adapters import Adapter
 from math_tokenizer.eqgpt.models import build_models
+from math_tokenizer.eqgpt.round1_config import MAIN_CASES,LATEX_METHODS,SEEDS
 p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=Path('gpu_calibration.json'));p.add_argument('--steps',type=int,default=8);p.add_argument('--hourly-price',type=float,default=None);a=p.parse_args()
 if not torch.cuda.is_available():raise RuntimeError('Run GPU calibration on AutoDL')
 torch.set_num_threads(8);seed_all(525)
-adapters,_=load_frozen(ROOT/'experiments/eqgpt_round1/frozen_math');adapters['eqgpt_reference']=Adapter('eqgpt')
+adapters,_=load_frozen(ROOT/'experiments/eqgpt_round1/frozen_math');adapters={n:adapters[n] for n in LATEX_METHODS};adapters['eqgpt_reference']=Adapter('eqgpt')
 with tempfile.TemporaryDirectory() as temp:
  seq,_=augment_training('KdV equation',temp,525)
 texts=[structure_to_latex(s) for s in seq];models,metadata=build_models(adapters,512,525,'cuda');env=training_namespace('cuda');measurements={}
@@ -40,7 +41,7 @@ for name,m in models.items():
   infer[str(length)]=(time.perf_counter()-started)/5
  measurements[name]=dict(train_step_seconds=float(np.median(durations)),train_samples=len(encoded),steps_per_epoch=len(batches),
   forward_seconds_by_prefix=infer,peak_memory_gib=torch.cuda.max_memory_allocated()/1024**3,
-  projected_pretrain_hours_33_models=33*100*len(batches)*float(np.median(durations))/3600)
+  projected_pretrain_hours_per_method=len(MAIN_CASES)*len(SEEDS)*100*len(batches)*float(np.median(durations))/3600)
  del opt,out,loss,batches,encoded;gc.collect();torch.cuda.empty_cache()
 # Exact surrogate NN and original MSE training objective on the registered batch.
 e=case_environment('KdV_equation',10000,0,'cuda',525);net=build_surrogate(e,'cuda',525)
@@ -49,8 +50,8 @@ h,_,x,_=values;h=h.cuda();x=x.cuda();opt=torch.optim.Adam(net.parameters(),lr=.0
 for i in range(202):
  torch.cuda.synchronize();started=time.perf_counter();opt.zero_grad();loss=(net(x)-h).square().mean();loss.backward();opt.step();torch.cuda.synchronize()
  if i>=2:durations.append(time.perf_counter()-started)
-training_hours=sum(r['projected_pretrain_hours_33_models'] for r in measurements.values())
-surrogate_hours=float(np.median(durations))*1650000/3600
+training_hours=sum(r['projected_pretrain_hours_per_method'] for r in measurements.values())
+surrogate_hours=float(np.median(durations))*(len(MAIN_CASES)*len(SEEDS)*50000)/3600
 # Discovery includes sequential SAT, unknown generated lengths and candidate-specific derivatives/PINN.
 # Report measured components plus an explicit planning allowance, not a fabricated total benchmark.
 report=dict(gpu=torch.cuda.get_device_name(),fp32=True,tf32=False,formal_results=False,models=measurements,

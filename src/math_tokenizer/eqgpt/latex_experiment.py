@@ -18,10 +18,9 @@ from .frozen_math import load_frozen,sha
 from .round1_runtime import shared_surrogate,train_round1,runtime_sha256
 from .latex_generation import generate
 from .evaluation import classify,coefficient_error
+from .round1_config import MAIN_CASES,LATEX_METHODS,METHODS,VERSION
+from .cached_batches import cache_batches
 
-
-MAIN_CASES=['KdV_equation','Burgers_equation','Wave_equation','Chaffee_Infante_equation','KG_equation',
-    'Allen_Cahn','Convection_diffusion_equation','PDE_divide','Eq_6_2_12','PDE_compound','Possion_x_y']
 
 def sync(device):
     if device=='cuda':torch.cuda.synchronize()
@@ -31,6 +30,8 @@ class RewardEvaluator:
     def __init__(self,net,database,equation,variables,device,epi):
         self.env=numerical_namespace(device,equation);self.net=net;self.database=database
         self.variables=variables;self.epi=epi;self.cache={};self.mask=self.env['get_mask_invalid'](variables)
+        self.mask_values=self.mask.detach().cpu().tolist()
+        self.reward_cache={};self.reward_cache_hits=0;self.author_reward_calls=0
     def evaluate(self,attempt):
         r=copy.deepcopy(attempt)
         if not r['stopped']:r.update(status='incomplete',reward=None);return r
@@ -39,13 +40,21 @@ class RewardEvaluator:
         except (LatexError,ValueError) as exc:
             r.update(status='unsupported_expression' if isinstance(exc,Unsupported) else 'syntax_error',error=str(exc),reward=None);return r
         # Check physical domain only AFTER generation. Never change token probs.
-        if any(float(self.mask[i])==0 for i in gre[1:-1] if i>=6):
+        if any(self.mask_values[i]==0 for i in gre[1:-1] if i>=6):
             r.update(status='variable_or_numeric_unavailable',gre=gre,reward=None);return r
+        cache_key=tuple(gre)
+        if cache_key in self.reward_cache:
+            self.reward_cache_hits+=1
+            r.update(status='evaluated',gre=gre,reward=self.reward_cache[cache_key]);return r
+        self.author_reward_calls+=1
         try:
             value,self.cache,self.mask=self.env['calculate_reward'](gre[1:].copy(),self.net,self.database,self.cache,self.mask,self.variables,self.epi)
             if not np.isfinite(value):raise FloatingPointError('Nonfinite reward')
         except (np.linalg.LinAlgError,FloatingPointError,ValueError,TypeError,IndexError,ZeroDivisionError,RuntimeError) as exc:
             r.update(status='numerical_failure',gre=gre,error=type(exc).__name__+': '+str(exc),reward=None);return r
+        finally:
+            self.mask_values=self.mask.detach().cpu().tolist()
+        self.reward_cache[cache_key]=float(value)
         r.update(status='evaluated',gre=gre,reward=float(value));return r
 
 
@@ -105,7 +114,7 @@ def search_latex(model,adapter,net,database,equation,variables,folder,device,see
             # Fine-tune on exactly the generated source text; no canonical repair
             # or replacement by a known PDE from the source collection.
             ds=env['MyDataSet']([adapter.sequence(r['gre'] if reference else r['text']) for r in best])
-            loader=DataLoader(ds,batch_size=len(best),collate_fn=ds.padding_batch,shuffle=False)
+            loader=cache_batches(DataLoader(ds,batch_size=len(best),collate_fn=ds.padding_batch,shuffle=False),device)
             for _ in range(finetune_epochs):losses.append(env['train_step'](model,loader,optimizer,criterion,1,print_every=None))
         after=tensor_hash(model.state_dict())
         if best and before==after:raise RuntimeError('Continuation model did not update')
@@ -118,7 +127,8 @@ def search_latex(model,adapter,net,database,equation,variables,folder,device,see
         attempts_per_cycle=attempts,max_new_tokens=max_tokens,max_raw_bytes=2048,batch_size=batch_size,
         cycles=cycles,continuation_epochs=finetune_epochs,lr=1e-5,epi=epi,
         insufficient_candidates='No refill; train on available ranked outputs; if none, skip update and continue next fixed 400 attempts',
-        history=history,attempts=trace,elapsed_seconds=time.perf_counter()-started)
+        history=history,attempts=trace,performance=dict(author_reward_calls=getattr(evaluator,'author_reward_calls',None),
+            exact_reward_cache_hits=getattr(evaluator,'reward_cache_hits',None)),elapsed_seconds=time.perf_counter()-started)
     dump(folder/'search.json',report);torch.save(model.state_dict(),folder/'searched.pt');return history
 
 
@@ -139,13 +149,14 @@ def run(folder,equation='KdV_equation',mode='fixed',capacity=1024,device='cpu',s
     if not smoke:
         if device!='cuda' or attempts!=400:raise ValueError('Formal run requires CUDA and exactly 400 attempts per cycle')
         if not reference or noise!=0 or observations!=(30000 if equation=='Possion_x_y' else 10000):
-            raise ValueError('First-round main protocol requires all four arms, no noise, and the registered observation count')
+            raise ValueError('First-round main protocol requires all three arms, no noise, and the registered observation count')
         if equation not in MAIN_CASES:raise ValueError('Case outside the first-round main experiment')
     if mode!='fixed' or capacity!=1024:raise ValueError('Only fixed 1024-ID first-round main experiment is enabled')
     if frozen_assets is None:raise ValueError('Independent pretrained frozen tokenizers are required; no handbook vocabulary fitting')
     adapters,frozen=load_frozen(frozen_assets)
+    adapters={name:adapters[name] for name in LATEX_METHODS}
     fingerprint=dict(equation=equation,seed=seed,observations=observations,noise=noise,smoke=smoke,
-        attempts=attempts,smoke_tokens=smoke_tokens,reference=reference,frozen_sha256=sha(Path(frozen_assets)/'FROZEN.json'),runtime_sha256=runtime_sha256())
+        methods=list(METHODS),attempts=attempts,smoke_tokens=smoke_tokens,reference=reference,frozen_sha256=sha(Path(frozen_assets)/'FROZEN.json'),runtime_sha256=runtime_sha256())
     folder.mkdir(parents=True,exist_ok=True)
     if (folder/'RUN.json').exists():
         if json.loads((folder/'RUN.json').read_text())!=fingerprint:raise ValueError('Partial-run configuration or source changed')
@@ -157,11 +168,12 @@ def run(folder,equation='KdV_equation',mode='fixed',capacity=1024,device='cpu',s
     sequences,source=augment_training(env['Delete_equation_name'],folder/'shared',seed,extra)
     texts=[structure_to_latex(s) for s in sequences]
     # Each original GRE structure has exactly the same mathematical content.
-    for s,t in zip(sequences,texts):
+    for t in dict.fromkeys(texts):
         converted=structure_to_latex(latex_to_structure(t));assert key(LatexParser(t).parse())==key(LatexParser(converted).parse())
     vocab_report=json.loads((Path(frozen_assets)/'tokenizers/manifest.json').read_text())['methods']
-    used=texts[:4] if smoke else texts
-    max_training=max(len(a.sequence(t)) for a in adapters.values() for t in texts)
+    vocab_report={n:vocab_report[n] for n in LATEX_METHODS}
+    encoded_latex={n:[a.sequence(t) for t in texts] for n,a in adapters.items()}
+    max_training=max(len(s) for rows in encoded_latex.values() for s in rows)
     generation_tokens=smoke_tokens if smoke else 256
     positions=512
     if max_training>positions:raise ValueError('A common context increase requires a new reviewed configuration; no truncation')
@@ -172,9 +184,17 @@ def run(folder,equation='KdV_equation',mode='fixed',capacity=1024,device='cpu',s
     for name,bridge in models.items():
         out=folder/name;out.mkdir(exist_ok=True);adapter=adapters[name]
         sync(device);started=time.perf_counter()
-        encoded=[adapter.sequence(s) for s in (sequences[:4] if smoke else sequences)] if name=='eqgpt_reference' else [adapter.sequence(t) for t in used]
+        encoded=[adapter.sequence(s) for s in (sequences[:4] if smoke else sequences)] if name=='eqgpt_reference' else (encoded_latex[name][:4] if smoke else encoded_latex[name])
         training=train_round1(bridge,encoded,out,device,seed,smoke)
         sync(device);after_train=time.perf_counter();net.load_state_dict(state);net.eval();database.grad=None
+        with torch.no_grad():base_values=net(database).detach().cpu()
+        actual_metadata=hashlib.sha256(database.detach().cpu().numpy().tobytes()).hexdigest()
+        actual_observations=hashlib.sha256(env['un'].tobytes()).hexdigest()
+        assert actual_metadata==shared['metadata_sha256'] and actual_observations==shared['raw_noisy_data_sha256']
+        assert tensor_hash(net.state_dict())==shared['surrogate_sha256']
+        assert hashlib.sha256(base_values.numpy().tobytes()).hexdigest()==shared['base_predictions_sha256']
+        stage_b=dict(surrogate_sha256=shared['surrogate_sha256'],metadata_sha256=actual_metadata,raw_noisy_data_sha256=actual_observations,
+            base_predictions_sha256=shared['base_predictions_sha256'])
         if (out/'search.json').exists() and (out/'searched.pt').exists():
             history=json.loads((out/'search.json').read_text())['history']
             saved=torch.load(out/'searched.pt',map_location=device,weights_only=True)
@@ -190,7 +210,7 @@ def run(folder,equation='KdV_equation',mode='fixed',capacity=1024,device='cpu',s
             else:dump(out/'pinn.json',dict(status='no_evaluable_candidate',coefficients=[],initial_surrogate_sha256=tensor_hash(state)))
         sync(device);after_pinn=time.perf_counter()
         pinn=json.loads((out/'pinn.json').read_text())
-        results[name]=dict(training=training,**result_summary(history,equation,pinn))
+        results[name]=dict(training=training,stage_b=stage_b,**result_summary(history,equation,pinn))
         saved=torch.load(out/'searched.pt',map_location=device,weights_only=True)
         assert tensor_hash(saved)==tensor_hash(bridge.state_dict())
         reloaded=model_namespace(adapter.vocab_size,positions,device)['GPT']().to(device)
@@ -205,7 +225,7 @@ def run(folder,equation='KdV_equation',mode='fixed',capacity=1024,device='cpu',s
         timings[name]=dict(train_seconds=sum(h['seconds'] for h in training['history']),
             search_seconds=json.loads((out/'search.json').read_text())['elapsed_seconds'],pinn_seconds=pinn.get('elapsed_seconds',0),
             invocation_seconds=after_pinn-started)
-    manifest=dict(version='eqgpt-round1-main-v1',equation=equation,seed=seed,smoke=smoke,formal_results=not smoke,
+    manifest=dict(version=VERSION,equation=equation,seed=seed,smoke=smoke,formal_results=not smoke,
         mode=mode,requested_capacity=capacity if mode=='fixed' else None,shared=shared,training_source=source,
         raw_latex_sha256=hashlib.sha256(json.dumps(texts).encode()).hexdigest(),
         model_initialization=initial,frozen_tokenizers_sha256=fingerprint['frozen_sha256'],tokenizer_corpus=frozen['corpus'],tokenizers=vocab_report,positions=positions,architecture=ARCHITECTURE,

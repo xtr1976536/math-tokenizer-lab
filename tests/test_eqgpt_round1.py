@@ -32,7 +32,7 @@ def test_independent_frozen_train_manifest_and_no_handbook_overlap():
 def test_frozen_tamper_fails_before_training(tmp_path):
     import shutil
     shutil.copytree(BANK,tmp_path/'bank')
-    p=tmp_path/'bank/tokenizers/bpe.json';p.write_bytes(p.read_bytes()+b' ')
+    p=tmp_path/'bank/tokenizers/ast_bpe.json';p.write_bytes(p.read_bytes()+b' ')
     with pytest.raises(ValueError,match='Frozen asset mismatch'):load_frozen(tmp_path/'bank')
 
 
@@ -42,7 +42,9 @@ def test_main_is_load_only_fixed_1024_and_shared_original_backbone():
     from math_tokenizer.eqgpt.models import build_models
     from math_tokenizer.eqgpt.tokenizer_adapters import Adapter
     assert 'train_tokenizers' not in inspect.getsource(run)
-    adapters,_=load_frozen(BANK);adapters['eqgpt_reference']=Adapter('eqgpt')
+    from math_tokenizer.eqgpt.round1_config import LATEX_METHODS,METHODS,SEEDS
+    adapters,_=load_frozen(BANK);adapters={n:adapters[n] for n in LATEX_METHODS};adapters['eqgpt_reference']=Adapter('eqgpt')
+    assert set(adapters)==set(METHODS) and SEEDS==(525,)
     models,meta=build_models(adapters,512,525)
     assert len({r['backbone_initial_sha256'] for r in meta.values()})==1
     assert {k:r['input_shape'] for k,r in meta.items()}=={k:[57 if k=='eqgpt_reference' else 1024,768] for k in meta}
@@ -97,6 +99,8 @@ def test_poisson_shared_surrogate_cache_preserves_raw_data(tmp_path):
     e2,n2,d2,s2,second=shared_surrogate(tmp_path,'Possion_x_y',10000,0,525,'cpu',True)
     assert first==second and np.array_equal(e2['un'],original)
     assert tensor_hash(state)==tensor_hash(s2) and torch.equal(db,d2)
+    assert first['stage']=='B' and first['base_prediction_shape']==list(net(db).shape)
+    assert first['shared_across_methods']==['ast_bpe','soft_ast_bpe','eqgpt_reference']
 
 
 def test_pinn_each_arm_copies_inputs_before_author_sampler():
@@ -135,7 +139,8 @@ def test_supported_latex_candidates_follow_real_author_continuation_and_pinn(tmp
     from math_tokenizer.eqgpt.experiment import run_pinn
     from math_tokenizer.eqgpt.latex_experiment import search_latex
     from math_tokenizer.eqgpt.models import build_models
-    adapters,_=load_frozen(BANK)
+    from math_tokenizer.eqgpt.round1_config import LATEX_METHODS
+    adapters,_=load_frozen(BANK);adapters={n:adapters[n] for n in LATEX_METHODS}
     models,_=build_models(adapters,512,525)
     env,net,database,state,shared=shared_surrogate(tmp_path/'shared','KdV_equation',10000,0,525,'cpu',True)
     env['_shared_folder']=tmp_path/'shared'
@@ -154,7 +159,7 @@ def test_supported_latex_candidates_follow_real_author_continuation_and_pinn(tmp
         pinn=json.loads((out/'pinn.json').read_text())
         assert pinn['status']=='completed' and pinn['coefficients']
         all_splits.append(pinn['sampling'])
-    assert all_splits[0]==all_splits[1]==all_splits[2]
+    assert all_splits[0]==all_splits[1]
 
 
 def test_compound_target_product_rule_alias_is_held_out(tmp_path):
@@ -170,3 +175,56 @@ def test_poisson_target_named_laplacian_alias_is_held_out(tmp_path):
     _,report=augment_training(env['Delete_equation_name'],tmp_path,525)
     assert {'1.5.20b','1.8.1','1.8.1_2D'}<=set(report['removed_equations'])
     assert report['training_formulas']==218
+
+
+def test_cached_batches_exact_inputs_optimizer_and_rng_trajectory():
+    from math_tokenizer.eqgpt.cached_batches import cache_batches
+    from math_tokenizer.eqgpt.author import training_namespace
+    from torch.utils.data import DataLoader
+    from torch import nn
+    env=training_namespace('cpu');sequences=[[2,3,4,1],[2,5,1],[2,8,7,6,1]]
+    def loader():
+        ds=env['MyDataSet'](sequences)
+        return DataLoader(ds,batch_size=2,collate_fn=ds.padding_batch,shuffle=False)
+    seed_all(22);initial=copy.deepcopy(TinyTrain().state_dict());results=[]
+    for cached in (False,True):
+        m=TinyTrain();m.load_state_dict(initial);seed_all(525)
+        batches=cache_batches(loader(),'cpu') if cached else loader()
+        opt=torch.optim.Adam(m.parameters(),lr=1e-4);losses=[]
+        for _ in range(5):losses.append(env['train_step'](m,batches,opt,nn.CrossEntropyLoss(ignore_index=0),1))
+        results.append((losses,tensor_hash(m.state_dict()),torch.get_rng_state().clone()))
+    assert results[0][:2]==results[1][:2] and torch.equal(results[0][2],results[1][2])
+    a,b=loader(),cache_batches(loader(),'cpu')
+    assert all(torch.equal(x,u) and torch.equal(y,v) for (x,y),(u,v) in zip(a,b))
+
+
+def test_reward_cache_matches_uncached_records_masks_and_author_term_cache():
+    from math_tokenizer.eqgpt.latex_experiment import RewardEvaluator
+    class Analytic(torch.nn.Module):
+        def forward(self,xt):return torch.exp(-2*xt[:,1:2])*torch.sin(xt[:,0:1])
+    grid=torch.stack([torch.linspace(.2,1,16),torch.linspace(.1,.8,16)],1).requires_grad_()
+    cached=RewardEvaluator(Analytic(),grid,'KdV_equation',['x','t'],'cpu',.2)
+    original=RewardEvaluator(Analytic(),grid,'KdV_equation',['x','t'],'cpu',.2)
+    formulas=['u_t+u_{xx}=0','u_t+u_{xx}=0','u_{yy}+u_t=0','u_t+=0','u_{xx}+u_t=0','u_t+u_{xx}=0']
+    for text in formulas:
+        original.reward_cache.clear()
+        assert cached.evaluate(dict(stopped=True,text=text))==original.evaluate(dict(stopped=True,text=text))
+        assert torch.equal(cached.mask,original.mask) and set(cached.cache)==set(original.cache)
+    assert cached.reward_cache_hits==2 and cached.author_reward_calls<original.author_reward_calls
+
+
+def test_reward_cache_does_not_skip_dynamic_numeric_masks_or_memoize_failures():
+    from math_tokenizer.eqgpt.latex_experiment import RewardEvaluator
+    e=RewardEvaluator(torch.nn.Identity(),torch.zeros(2,2),'KdV_equation',['x','t'],'cpu',.2)
+    def mask_term(gre,net,db,terms,mask,variables,epi):
+        mask[6]=0;return 0.,terms,mask
+    e.env['calculate_reward']=mask_term
+    first=e.evaluate(dict(stopped=True,text='u_t+u_{xx}=0'))
+    assert first['status']=='evaluated'
+    assert e.evaluate(dict(stopped=True,text='u_t+u_{xx}=0'))['status']=='variable_or_numeric_unavailable'
+    assert e.author_reward_calls==1 and e.reward_cache_hits==0
+    e=RewardEvaluator(torch.nn.Identity(),torch.zeros(2,2),'KdV_equation',['x','t'],'cpu',.2)
+    e.env['calculate_reward']=lambda *a:(_ for _ in ()).throw(FloatingPointError('fixture'))
+    assert e.evaluate(dict(stopped=True,text='u_t+u_{xx}=0'))['status']=='numerical_failure'
+    assert e.evaluate(dict(stopped=True,text='u_t+u_{xx}=0'))['status']=='numerical_failure'
+    assert e.author_reward_calls==2 and e.reward_cache_hits==0

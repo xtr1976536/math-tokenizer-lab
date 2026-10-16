@@ -4,7 +4,7 @@ import ast,hashlib,json,zipfile
 ROOT=Path(__file__).resolve().parents[2]
 from math_tokenizer.eqgpt.round1_runtime import runtime_sha256
 audit=json.loads((ROOT/'docs/eqgpt/round1_evidence/audit.json').read_text())
-assert audit['all_four_rounds_passed'] and audit['runtime_sha256']==runtime_sha256()
+assert audit['all_four_rounds_passed'] and audit['version']=='eqgpt-round1-main-v2' and audit['runtime_sha256']==runtime_sha256()
 PREFIX='eqgpt_round1_autodl_20261016';OUT=ROOT/'deliverables'/f'{PREFIX}.zip'
 scripts=['run_round1.py','run_latex.py','collect_latex.py','preflight.py','install_round1.sh','verify_round1_bundle.py','calibrate_round1.py','profile_round1.py','build_round1_bundle.py','audit_round1.py','audit_equivalents.py']
 files=[ROOT/'scripts/eqgpt'/s for s in scripts]
@@ -43,6 +43,6 @@ with zipfile.ZipFile(OUT,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
   z.write(ROOT/(rel if rel!='README.md' else 'docs/eqgpt/round1_autodl.md'),PREFIX+'/'+rel)
  z.writestr(PREFIX+'/BUNDLE_MANIFEST.json',json.dumps(manifest,indent=2)+'\n')
 summary=dict(path=str(OUT),bytes=OUT.stat().st_size,sha256=hashlib.sha256(OUT.read_bytes()).hexdigest(),files=len(manifest),
- first_round_only=True,frozen_math_formulas=32270,frozen_vocab_ids=1024,models=132,smoke_models=44,second_round_run=False)
+ first_round_only=True,version='eqgpt-round1-main-v2',frozen_math_formulas=32270,frozen_vocab_ids=1024,methods=['ast_bpe','soft_ast_bpe','eqgpt_reference'],models=33,smoke_models=33,second_round_run=False)
 (ROOT/'deliverables/eqgpt_round1_bundle_manifest.json').write_text(json.dumps(summary,indent=2)+'\n')
 print(json.dumps(summary,indent=2))

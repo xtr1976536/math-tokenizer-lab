@@ -2,7 +2,6 @@
   "version": "eqgpt-round1-broad-math-1024-v1",
   "vocab_size": 1024,
   "methods": [
-    "bpe",
     "ast_bpe",
     "soft_ast_bpe"
   ],
@@ -32,20 +31,19 @@
     },
     "selected_ids_sha256": "1636ce418fdb084ccd68a63799be40d917e6e6cb868cecf009a03b97f063c851",
     "texts_sha256": "ec513c358072a5fa8d4c18b3f5063507f43c58a7cf6df38861fb485ed6c917ba",
-    "selected_archive_sha256": "fa7a3e495ee32bb666f7488e0e8eb4cdf4c5f61f4a78f0212c2c449204807063",
+    "selected_archive_sha256": "55e5a0986367c50878f7f133a4995c5f912c1b9d85874ef603afd71791769a3f",
     "original_catalog_sha256": "76046cec92362fb58b5d5a28f0831a56240c37d6afd0bc9d7fcce052c614fb5e",
     "handbook_sha256": "d48acfdf565d1c615343c92b6aacdac2c7db4354b1f74629952a984fcd7adc31",
     "overlap_policy": "All 221 handbook semantic keys screened; train-only; conservative derivative-equation/multiterm quarantine; never asserts complete semantic equivalence detection for arbitrary TeX",
     "source_used_for_transformer_pretraining": false
   },
   "files": {
-    "math_train.jsonl.gz": "fa7a3e495ee32bb666f7488e0e8eb4cdf4c5f61f4a78f0212c2c449204807063",
-    "corpus_manifest.json": "6b0ffd2b66d998032f449b4d94743b786912e91ba8aaf3e1178fc0760feb5b34",
-    "excluded_ids.jsonl.gz": "bd6cda006d8f8f349d6b1124346beeb62c2748890d85c4290dde99c7434a106d",
-    "tokenizers/ast_bpe.json": "08e49a15b5a7593a46c99837bf41ddbbf8727970fe3b6035c90f02566ca01830",
-    "tokenizers/bpe.json": "da7b4c08f1bec48c2bfdf6f6c5347bfe8c03fb25b05c13ffe5c2684f55e8b0a5",
-    "tokenizers/manifest.json": "91afbbf2043f65e0d03a4e6d4a9528307f95c902e186175370488582a7eb4962",
-    "tokenizers/soft_ast_bpe.json": "358ce0e0df75c3229d9f36da696e6554f80dba360ff032a305fa2cb7618b971b"
+    "math_train.jsonl.gz": "55e5a0986367c50878f7f133a4995c5f912c1b9d85874ef603afd71791769a3f",
+    "corpus_manifest.json": "919beaf6ce25f7cff966df321be45ea477b1a5d0e0a04714b1ae0cc06a2616bb",
+    "excluded_ids.jsonl.gz": "8d7f4e85b246fe2e12b8356a255cf50bb13bec283a59ad3683a8504ad1f203bd",
+    "tokenizers/ast_bpe.json": "ed2a33a13e1ea802da34fde6b8c1c3000c2863d67c8f6659e38efd47ebf01714",
+    "tokenizers/manifest.json": "eea4db062e6cc3964a811ca4e8c395c9a4b696ff967c2ce24cad8273ef35bdc6",
+    "tokenizers/soft_ast_bpe.json": "444736c34441ff75cdd444ba89055df917bf401ed480d48d25af5675a25ccace"
   },
   "tokenizer_source_sha256": {
     "hard_ast_2026.py": "6b4988b72af70d35b3c55112e0e0e0cb968eaedcc5c2bde6c976f2b5104b1d1c",
@@ -56,7 +54,7 @@
     "frontend_v6.py": "8f257a3e8968b436033853cb3ac19f76623d04881dddc89e4581d37fe2663a3b",
     "ast_route_v6.py": "5f86419409e1661f80dc2c73f2a1c81fc8367fcf7341125ecec46b8e6f4d5c41",
     "eqgpt/frozen_math.py": "f51d87abf314b2ec395f3f6e4c8a72739a7390ece6311a330cfdc42931be0e27",
-    "eqgpt/latex_tokenizers.py": "bad14e28f568b6616baf98235da0f73b9fc984cdde2610c7755a980c37ab6419",
+    "eqgpt/latex_tokenizers.py": "def155ef1dd8f41f778fbf0c2ed46643330f0997305c9d1cf488941396405ec3",
     "eqgpt/latex_codec.py": "1fa25a12d16ccf3728e9f9e0f89ffed69e30d1e0d6fd96ff5b33fdc7223a1b21"
   },
   "native_source_sha256": {
@@ -73,6 +71,6 @@
     "python_frontend_v6.c": "f7533b8818f204887efb5fe074bc9daa35b86f8bcf705142683626933bbe0e5e",
     "signal_stage2.c": "af32dda52a9da3d1bbd461e98c27b09a6b111c00b553058d1117c2b960fe5939"
   },
-  "elapsed_tokenizer_seconds": 73.21654320899688,
+  "elapsed_tokenizer_seconds": 45.81495591699786,
   "policy": "Load-only in model training. Shared across every target, seed and first-round arm. No automatic vocabulary/capacity search."
 }

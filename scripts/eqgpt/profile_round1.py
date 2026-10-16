@@ -6,10 +6,10 @@ from math_tokenizer.eqgpt.author import ROOT,verify_source
 from math_tokenizer.eqgpt.data import augment_training,case_environment
 from math_tokenizer.eqgpt.frozen_math import load_frozen
 from math_tokenizer.eqgpt.latex_codec import structure_to_latex,latex_to_structure,LatexParser,key
-from math_tokenizer.eqgpt.latex_experiment import MAIN_CASES
+from math_tokenizer.eqgpt.round1_config import MAIN_CASES,LATEX_METHODS,METHODS,SEEDS
 from math_tokenizer.eqgpt.tokenizer_adapters import Adapter
 p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ROOT/'docs/eqgpt/round1_workload.json');a=p.parse_args()
-adapters,frozen=load_frozen(ROOT/'experiments/eqgpt_round1/frozen_math');adapters['eqgpt_reference']=Adapter('eqgpt')
+adapters,frozen=load_frozen(ROOT/'experiments/eqgpt_round1/frozen_math');adapters={n:adapters[n] for n in LATEX_METHODS};adapters['eqgpt_reference']=Adapter('eqgpt')
 rows=[]
 with tempfile.TemporaryDirectory() as folder:
  for case in MAIN_CASES:
@@ -26,9 +26,9 @@ with tempfile.TemporaryDirectory() as folder:
        token_max=int(lengths.max()),token_mean=float(lengths.mean()),target_tokens_100_epochs=int((lengths-1).sum()*100),
        padded_positions_100_epochs=padded*100)
   rows.append(result);print(case,info['training_sequences'],{k:v['token_max'] for k,v in result['methods'].items()},flush=True)
-report=dict(first_round_only=True,length_profile_seed=525,padded_lengths_may_vary_by_seed=True,cases=11,seeds=3,paired_runs=33,model_runs=132,source_revision=verify_source()['revision'],
- frozen_training_formulas=frozen['corpus']['accepted'],surrogate_updates=33*50000,
- optimizer_updates_pretrain=sum(m['steps_100_epochs'] for r in rows for m in r['methods'].values())*3,
- generation_attempts=132*400*5,case_workloads=rows)
+report=dict(first_round_only=True,length_profile_seed=525,padded_lengths_may_vary_by_seed=True,cases=11,seeds=len(SEEDS),paired_runs=len(MAIN_CASES)*len(SEEDS),model_runs=len(MAIN_CASES)*len(SEEDS)*len(METHODS),source_revision=verify_source()['revision'],
+ frozen_training_formulas=frozen['corpus']['accepted'],surrogate_updates=len(MAIN_CASES)*len(SEEDS)*50000,
+ optimizer_updates_pretrain=sum(m['steps_100_epochs'] for r in rows for m in r['methods'].values())*len(SEEDS),
+ generation_attempts=len(MAIN_CASES)*len(SEEDS)*len(METHODS)*400*5,case_workloads=rows)
 a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(report,indent=2)+'\n')
 print('Workload report:',a.output)

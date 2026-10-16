@@ -3,14 +3,14 @@
   "length_profile_seed": 525,
   "padded_lengths_may_vary_by_seed": true,
   "cases": 11,
-  "seeds": 3,
-  "paired_runs": 33,
-  "model_runs": 132,
+  "seeds": 1,
+  "paired_runs": 11,
+  "model_runs": 33,
   "source_revision": "dc35fc0ac860ff224293f01d2a62204042095127",
   "frozen_training_formulas": 32270,
-  "surrogate_updates": 1650000,
-  "optimizer_updates_pretrain": 726000,
-  "generation_attempts": 264000,
+  "surrogate_updates": 550000,
+  "optimizer_updates_pretrain": 181500,
+  "generation_attempts": 66000,
   "case_workloads": [
     {
       "case": "KdV_equation",
@@ -35,15 +35,6 @@
         201
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.81974431818182,
-          "target_tokens_100_epochs": 16065100,
-          "padded_positions_100_epochs": 22835200
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -96,15 +87,6 @@
         201
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.824289772727273,
-          "target_tokens_100_epochs": 16068300,
-          "padded_positions_100_epochs": 22515200
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -157,15 +139,6 @@
         321
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.858380681818183,
-          "target_tokens_100_epochs": 16092300,
-          "padded_positions_100_epochs": 22758400
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -218,15 +191,6 @@
         200
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.8265625,
-          "target_tokens_100_epochs": 16069900,
-          "padded_positions_100_epochs": 22515200
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -280,15 +244,6 @@
         201
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7008,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.889697488584474,
-          "target_tokens_100_epochs": 16041100,
-          "padded_positions_100_epochs": 22355200
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7008,
@@ -341,15 +296,6 @@
         201
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.8265625,
-          "target_tokens_100_epochs": 16069900,
-          "padded_positions_100_epochs": 22515200
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -402,15 +348,6 @@
         100
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.840198863636363,
-          "target_tokens_100_epochs": 16079500,
-          "padded_positions_100_epochs": 22784000
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -463,15 +400,6 @@
         251
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.831107954545455,
-          "target_tokens_100_epochs": 16073100,
-          "padded_positions_100_epochs": 22771200
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -524,15 +452,6 @@
         501
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.840198863636363,
-          "target_tokens_100_epochs": 16079500,
-          "padded_positions_100_epochs": 22784000
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -585,15 +504,6 @@
         201
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 7040,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.815198863636365,
-          "target_tokens_100_epochs": 16061900,
-          "padded_positions_100_epochs": 22784000
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 7040,
@@ -647,15 +557,6 @@
         40200
       ],
       "methods": {
-        "bpe": {
-          "ids": 1024,
-          "samples": 6976,
-          "steps_100_epochs": 5500,
-          "token_max": 62,
-          "token_mean": 23.971760321100916,
-          "target_tokens_100_epochs": 16025100,
-          "padded_positions_100_epochs": 22528000
-        },
         "ast_bpe": {
           "ids": 1024,
           "samples": 6976,

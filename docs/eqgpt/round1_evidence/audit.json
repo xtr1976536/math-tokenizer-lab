@@ -1,11 +1,12 @@
 {
   "first_round_only": true,
+  "version": "eqgpt-round1-main-v2",
   "all_four_rounds_passed": true,
   "formal_cuda_experiments_executed": false,
-  "unit_tests_passed": 33,
-  "runtime_sha256": "802a41b539a6dbcd0a9c3f9bb8bf7f25df3ec48920240c4249556c54bbbcb9bd",
+  "unit_tests_passed": 36,
+  "runtime_sha256": "95bc0e29bc57eb6c38f89e491660298f598eb527f598608601f40b9940e743ef",
   "source_revision": "dc35fc0ac860ff224293f01d2a62204042095127",
-  "frozen_tokenizers_sha256": "18a98b380edd14cc71da95db303930f193fb776f8ba98ffc2f5bcf3f86e5e57c",
+  "frozen_tokenizers_sha256": "6319a9afe2df7cc9873d50bcf4d80df2a29cbaad190b83a31dc30f0ec78d5edc",
   "rounds": [
     {
       "round": 1,
@@ -258,41 +259,21 @@
       "round": 2,
       "scope": "Common original backbone, scratch gradients, unchanged author optimizer steps, optimizer binding, explicit no-SAT generation, supported numerical/PINN bridge fixtures",
       "passed": true,
-      "automated_tests": 33
+      "automated_tests": 36
     },
     {
       "round": 3,
-      "scope": "11 real paired smoke cases, four scratch models each, two cycles with exactly 400 attempts, failure accounting, candidate updates, checkpoint/logit replay",
+      "scope": "11 real paired smoke cases, three scratch models each, two cycles with exactly 400 attempts, failure accounting, candidate updates, checkpoint/logit replay",
       "passed": true,
       "paired_cases": 11,
-      "model_runs": 44,
-      "attempts": 35200,
+      "model_runs": 33,
+      "attempts": 26400,
       "cases": [
         {
           "case": "KdV_equation",
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -355,26 +336,6 @@
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 379,
-                  "decode_error": 9,
-                  "unsupported_expression": 11,
-                  "syntax_error": 1
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 7,
-                  "syntax_error": 2
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "07874a71378f3ea885c512659d5f90f7c5270a0a08116b76ce03ed3db22e59bc"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -435,26 +396,6 @@
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -517,26 +458,6 @@
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -599,26 +520,6 @@
           "formula_count": 219,
           "sequence_count": 7008,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -681,26 +582,6 @@
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -763,26 +644,6 @@
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -845,26 +706,6 @@
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -927,26 +768,6 @@
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -1009,26 +830,6 @@
           "formula_count": 220,
           "sequence_count": 7040,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -1091,26 +892,6 @@
           "formula_count": 218,
           "sequence_count": 6976,
           "arms": {
-            "bpe": {
-              "attempts": 800,
-              "statuses": [
-                {
-                  "incomplete": 375,
-                  "unsupported_expression": 12,
-                  "syntax_error": 5,
-                  "decode_error": 8
-                },
-                {
-                  "incomplete": 388,
-                  "decode_error": 3,
-                  "unsupported_expression": 4,
-                  "syntax_error": 5
-                }
-              ],
-              "pinn_status": "no_evaluable_candidate",
-              "checkpoint_reload_exact": true,
-              "training_sha256": "da858b198f4854ab19a207de994b86884e5bb84b9ddf6f4c312476f628f6e172"
-            },
             "ast_bpe": {
               "attempts": 800,
               "statuses": [
@@ -1173,20 +954,17 @@
       "scope": "Independent complete KdV repetition, exact parameters/losses/samples/rewards/PINN equality except elapsed time; interrupted optimizer+RNG resume test",
       "passed": true,
       "replay_record_hashes": {
-        "bpe/training.json": "17d8bc76a6f4d700ba9fb07a5afd0213ec6294b2384071be9c0764b0bf58436b",
-        "bpe/search.json": "d30217e8047c5f7bd1aabf3aeb0b51d99f472f3b9e0b4e67950e1feee49e0596",
-        "bpe/pinn.json": "14c647653b53b5958fe74faa87bb90bc68d922dc010d81e9bca4a8090f26d059",
         "ast_bpe/training.json": "e858c0614dc0b220bc37763d61dd905ac1b696862b73ee1a0f944d8c5a863a99",
-        "ast_bpe/search.json": "56729fdf758e04081a5d09e19f18563a4b58cf55fae37131302cc5794a12c301",
+        "ast_bpe/search.json": "5557830f28dc46c0cddbb62906ae06172ed2c2d4b7a3321321e1f9e2fcd4284c",
         "ast_bpe/pinn.json": "14c647653b53b5958fe74faa87bb90bc68d922dc010d81e9bca4a8090f26d059",
         "soft_ast_bpe/training.json": "3c36fc98f59786b9b6a9bb436766ad9f844aed2a1642745d98aff54ed6c35591",
-        "soft_ast_bpe/search.json": "4e356f2761484506c96822eb19d85503d0f8059f018bac53d92ebc2ce5ea3876",
+        "soft_ast_bpe/search.json": "f5223182c55ca2b0866d3e90b9136acb36d164cc1218a03cd497d368ad01a4d7",
         "soft_ast_bpe/pinn.json": "14c647653b53b5958fe74faa87bb90bc68d922dc010d81e9bca4a8090f26d059",
         "eqgpt_reference/training.json": "24ab32fae6f53ba5e2e60a7acd91cd7b8b12539381ee24c52d8cd252a01d38da",
-        "eqgpt_reference/search.json": "6260b36af3c4f8899cc1eaf0a8a04f92c6d4b83418957e7251f53eb870367a2d",
+        "eqgpt_reference/search.json": "3905be3dae79869fc1a7299b555fddae1e499f4394e5c4a995e441d2f75ac1aa",
         "eqgpt_reference/pinn.json": "f22977c5efeffdcf399ae294f36beaa0409d5c0a2789001b063f7bebf9541e29"
       }
     }
   ],
-  "smoke_record_sha256": "b295a20d491392bd142f88025f35b2a28bbd945a59b38c0ab10ee06ad617af03"
+  "smoke_record_sha256": "4a1fa5ed6a5af5eef1f6fcaaac711763da7915cb60ba7abbac9869ce143bb92b"
 }

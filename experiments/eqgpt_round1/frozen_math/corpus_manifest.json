@@ -24,7 +24,7 @@
   },
   "selected_ids_sha256": "1636ce418fdb084ccd68a63799be40d917e6e6cb868cecf009a03b97f063c851",
   "texts_sha256": "ec513c358072a5fa8d4c18b3f5063507f43c58a7cf6df38861fb485ed6c917ba",
-  "selected_archive_sha256": "fa7a3e495ee32bb666f7488e0e8eb4cdf4c5f61f4a78f0212c2c449204807063",
+  "selected_archive_sha256": "55e5a0986367c50878f7f133a4995c5f912c1b9d85874ef603afd71791769a3f",
   "original_catalog_sha256": "76046cec92362fb58b5d5a28f0831a56240c37d6afd0bc9d7fcce052c614fb5e",
   "handbook_sha256": "d48acfdf565d1c615343c92b6aacdac2c7db4354b1f74629952a984fcd7adc31",
   "overlap_policy": "All 221 handbook semantic keys screened; train-only; conservative derivative-equation/multiterm quarantine; never asserts complete semantic equivalence detection for arbitrary TeX",

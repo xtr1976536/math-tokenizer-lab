@@ -1,7 +1,7 @@
 {
   "round": 1,
-  "jobs": 33,
-  "models": 132,
+  "jobs": 11,
+  "models": 33,
   "plan": [
     {
       "equation": "KdV_equation",
@@ -12,40 +12,8 @@
       "lr": 0.0001
     },
     {
-      "equation": "KdV_equation",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "KdV_equation",
-      "seed": 527,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
       "equation": "Burgers_equation",
       "seed": 525,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Burgers_equation",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Burgers_equation",
-      "seed": 527,
       "observations": 10000,
       "noise": 0,
       "epochs": 100,
@@ -60,40 +28,8 @@
       "lr": 0.0001
     },
     {
-      "equation": "Wave_equation",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Wave_equation",
-      "seed": 527,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
       "equation": "Chaffee_Infante_equation",
       "seed": 525,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Chaffee_Infante_equation",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Chaffee_Infante_equation",
-      "seed": 527,
       "observations": 10000,
       "noise": 0,
       "epochs": 100,
@@ -108,40 +44,8 @@
       "lr": 0.0001
     },
     {
-      "equation": "KG_equation",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "KG_equation",
-      "seed": 527,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
       "equation": "Allen_Cahn",
       "seed": 525,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Allen_Cahn",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Allen_Cahn",
-      "seed": 527,
       "observations": 10000,
       "noise": 0,
       "epochs": 100,
@@ -156,40 +60,8 @@
       "lr": 0.0001
     },
     {
-      "equation": "Convection_diffusion_equation",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Convection_diffusion_equation",
-      "seed": 527,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
       "equation": "PDE_divide",
       "seed": 525,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "PDE_divide",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "PDE_divide",
-      "seed": 527,
       "observations": 10000,
       "noise": 0,
       "epochs": 100,
@@ -204,22 +76,6 @@
       "lr": 0.0001
     },
     {
-      "equation": "Eq_6_2_12",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Eq_6_2_12",
-      "seed": 527,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
       "equation": "PDE_compound",
       "seed": 525,
       "observations": 10000,
@@ -228,40 +84,8 @@
       "lr": 0.0001
     },
     {
-      "equation": "PDE_compound",
-      "seed": 526,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "PDE_compound",
-      "seed": 527,
-      "observations": 10000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
       "equation": "Possion_x_y",
       "seed": 525,
-      "observations": 30000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Possion_x_y",
-      "seed": 526,
-      "observations": 30000,
-      "noise": 0,
-      "epochs": 100,
-      "lr": 0.0001
-    },
-    {
-      "equation": "Possion_x_y",
-      "seed": 527,
       "observations": 30000,
       "noise": 0,
       "epochs": 100,

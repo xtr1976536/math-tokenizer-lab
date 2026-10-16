@@ -8,11 +8,13 @@ from torch.utils.data import DataLoader
 from .author import ROOT,seed_all,tensor_hash,training_namespace
 from .data import case_environment,build_surrogate
 from .experiment import prepare_surrogate,dump
+from .round1_config import METHODS,VERSION
+from .cached_batches import cache_batches
 
 
 def runtime_sha256():
     names=['author.py','data.py','experiment.py','models.py','tokenizer_adapters.py','evaluation.py',
-        'latex_codec.py','latex_tokenizers.py','latex_generation.py','latex_experiment.py','frozen_math.py','round1_runtime.py']
+        'round1_config.py','cached_batches.py','latex_codec.py','latex_tokenizers.py','latex_generation.py','latex_experiment.py','frozen_math.py','round1_runtime.py']
     return hashlib.sha256(b''.join((ROOT/'src/math_tokenizer/eqgpt'/n).read_bytes() for n in names)).hexdigest()
 
 
@@ -26,8 +28,13 @@ def shared_surrogate(folder,equation,observations,noise,seed,device,smoke):
     if not cache.exists():
         result=prepare_surrogate(folder,equation,observations,noise,seed,device,smoke)
         env,net,database,state,report=result
-        atomic_save(dict(state={k:v.detach().cpu() for k,v in state.items()},database=database.detach().cpu(),report=report),cache)
-        return result
+        with torch.no_grad():predictions=net(database).detach().cpu()
+        report.update(stage='B',surrogate_hidden_layers=5,surrogate_hidden_width=50,
+            base_predictions_sha256=hashlib.sha256(predictions.numpy().tobytes()).hexdigest(),
+            base_prediction_shape=list(predictions.shape),shared_across_methods=list(METHODS))
+        dump(folder/'shared_manifest.json',report)
+        atomic_save(dict(state={k:v.detach().cpu() for k,v in state.items()},database=database.detach().cpu(),predictions=predictions,report=report),cache)
+        return env,net,database,state,report
     value=torch.load(cache,map_location='cpu',weights_only=True);report=value['report']
     assert (report['equation'],report['seed'],report['noise_percent'],report['observations'])==(equation,seed,noise,min(32,observations) if smoke else observations)
     env=case_environment(equation,observations,noise,device,seed)
@@ -37,11 +44,13 @@ def shared_surrogate(folder,equation,observations,noise,seed,device,smoke):
     assert tensor_hash(state)==report['surrogate_sha256']
     assert hashlib.sha256(env['un'].tobytes()).hexdigest()==report['raw_noisy_data_sha256']
     assert hashlib.sha256(database.detach().cpu().numpy().tobytes()).hexdigest()==report['metadata_sha256']
+    with torch.no_grad():predictions=net(database).detach().cpu()
+    assert hashlib.sha256(predictions.numpy().tobytes()).hexdigest()==report['base_predictions_sha256']
     return env,net,database,state,report
 
 
 def train_round1(model,sequences,folder,device,seed,smoke=False):
-    """Same Adam/CE/batching and author train_step for all four arms."""
+    """Same Adam/CE/batching and author train_step for every active arm."""
     folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
     identity=hashlib.sha256(json.dumps(sequences).encode()).hexdigest()
     initial=tensor_hash(model.state_dict());epochs=1 if smoke else 100;batch=2 if smoke else 128
@@ -53,6 +62,7 @@ def train_round1(model,sequences,folder,device,seed,smoke=False):
         model.load_state_dict(saved);return report
     seed_all(seed);env=training_namespace(device)
     dataset=env['MyDataSet'](sequences);loader=DataLoader(dataset,batch_size=batch,collate_fn=dataset.padding_batch,shuffle=False)
+    loader=cache_batches(loader,device)
     optimizer=torch.optim.Adam(model.parameters(),lr=1e-4);criterion=nn.CrossEntropyLoss(ignore_index=0)
     first_epoch=0;history=[]
     if progress.exists():
@@ -84,11 +94,11 @@ def train_round1(model,sequences,folder,device,seed,smoke=False):
 
 def verify_completed(folder,runtime_digest,frozen_digest):
     folder=Path(folder);m=json.loads((folder/'manifest.json').read_text());run=json.loads((folder/'RUN.json').read_text())
-    assert m['version']=='eqgpt-round1-main-v1' and not m['smoke']
+    assert m['version']==VERSION and not m['smoke']
     assert m['runtime_sha256']==run['runtime_sha256']==runtime_digest
     assert m['frozen_tokenizers_sha256']==run['frozen_sha256']==frozen_digest
     assert m['protocol']['training_epochs']==100 and m['protocol']['attempts_per_cycle']==400
-    assert set(m['results'])=={'bpe','ast_bpe','soft_ast_bpe','eqgpt_reference'}
+    assert set(m['results'])==set(METHODS)
     for name,result in m['results'].items():
         out=folder/name;search=json.loads((out/'search.json').read_text())
         assert len(search['attempts'])==2000 and len(search['history'])==5

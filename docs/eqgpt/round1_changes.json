@@ -2,9 +2,8 @@
   "round": 1,
   "author_revision": "dc35fc0ac860ff224293f01d2a62204042095127",
   "author_files_modified": false,
-  "four_arms": [
+  "active_arms": [
     "eqgpt_reference",
-    "bpe",
     "ast_bpe",
     "soft_ast_bpe"
   ],
@@ -24,10 +23,10 @@
   ],
   "representation_adaptations": [
     "Reference retains author GRE vocabulary (57 IDs), internal EOS placement from the original augmenter, SAT and 80/20 sampler.",
-    "Three LaTeX arms encode the same full raw formulas continuously; external BOS/EOS, 1024 total IDs, frozen broad-math vocabularies.",
+    "Two LaTeX arms encode the same full raw formulas continuously; external BOS/EOS, 1024 total IDs, frozen broad-math vocabularies.",
     "LaTeX output sampling has no SAT, variable or control-ID masks. Unexpected control IDs, truncation, UTF-8 failure, syntax and unsupported expressions are retained.",
     "Only post-generation supported expressions are mapped to the original numerical GRE term interface. No target-based repairs.",
-    "Input/output vocabulary rows resize; positional capacity 512 for all four arms, GRE scientific action length remains 50."
+    "Input/output vocabulary rows resize; positional capacity 512 for all three arms, GRE scientific action length remains 50."
   ],
   "unchanged": [
     "Original six-layer Transformer, attention, normalization, activation, FFN, hidden width and heads.",
@@ -35,5 +34,5 @@
     "Author derivatives, reward equation, float32 Top-10 ranking, 5-epoch/1e-5 continuation, PINN objective and 500 updates per retained top-three candidate."
   ],
   "second_round_and_ablations_executed": false,
-  "comparison": "Same-representation/same-capacity tokenizer comparison among three LaTeX arms; system-level comparison against GRE/SAT reference."
+  "comparison": "Same-representation/same-capacity tokenizer comparison between two LaTeX arms; system-level comparison against GRE/SAT reference."
 }

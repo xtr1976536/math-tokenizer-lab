@@ -3083,7 +3083,7 @@
     0.0
   ],
   "capacity": 1021,
-  "train_seconds": 9.317782792000799,
+  "train_seconds": 9.320382541998697,
   "training_log": [
     {
       "vocabulary": "Train-only math-atom BPE",

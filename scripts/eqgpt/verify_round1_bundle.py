@@ -11,5 +11,7 @@ for name,record in m.items():
  if hashlib.sha256(path.read_bytes()).hexdigest()!=record['sha256']:raise ValueError('Changed bundle file: '+name)
 from math_tokenizer.eqgpt.author import verify_source
 from math_tokenizer.eqgpt.frozen_math import load_frozen
+from math_tokenizer.eqgpt.round1_config import LATEX_METHODS,VERSION
 verify_source();_,f=load_frozen(ROOT/'experiments/eqgpt_round1/frozen_math')
-print(json.dumps(dict(bundle_files_verified=len(m),frozen_ids=f['vocab_size'],math_training_formulas=f['corpus']['accepted']),indent=2))
+assert set(f['methods'])==set(LATEX_METHODS) and VERSION=='eqgpt-round1-main-v2'
+print(json.dumps(dict(bundle_files_verified=len(m),frozen_ids=f['vocab_size'],frozen_methods=f['methods'],math_training_formulas=f['corpus']['accepted']),indent=2))

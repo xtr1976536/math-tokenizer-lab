@@ -10,7 +10,7 @@ from math_tokenizer.hard_ast_2026 import HardASTBPE
 from math_tokenizer.rl_route_v6 import derive_atoms
 from .latex_codec import LatexParser,key
 
-METHODS=('bpe','ast_bpe','soft_ast_bpe')
+METHODS=('ast_bpe','soft_ast_bpe')
 
 class LatexAdapter:
     pad=0;eos=1;bos=2;offset=3

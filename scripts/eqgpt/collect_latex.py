@@ -3,16 +3,17 @@ import argparse,csv,json
 from pathlib import Path
 from collections import Counter,defaultdict
 from math_tokenizer.eqgpt.evaluation import classify
+from math_tokenizer.eqgpt.round1_config import METHODS,VERSION
 p=argparse.ArgumentParser();p.add_argument('root',type=Path);p.add_argument('--include-smoke',action='store_true');a=p.parse_args()
 rows=[];cycles=[];seen=set();fingerprints=set()
 for path in sorted(a.root.rglob('manifest.json')):
  m=json.loads(path.read_text())
- if m.get('version')!='eqgpt-round1-main-v1':continue
+ if m.get('version')!=VERSION:continue
  if m['smoke'] and not a.include_smoke:continue
  setting=(m['equation'],m['seed'],m['mode'],m['shared']['observations'],m['shared']['noise_percent'])
  if setting in seen:raise ValueError('Duplicate paired setting: '+str(setting))
  seen.add(setting);fingerprints.add((m['runtime_sha256'],m['frozen_tokenizers_sha256']))
- assert set(m['results'])=={'bpe','ast_bpe','soft_ast_bpe','eqgpt_reference'}
+ assert set(m['results'])==set(METHODS)
  timing=json.loads((path.parent/'timing.json').read_text())
  for name,result in m['results'].items():
   s=json.loads((path.parent/name/'search.json').read_text());attempts=s['attempts'];states=Counter(r['status'] for r in attempts)
@@ -58,9 +59,9 @@ for name,items in groups.items():
 paired=[]
 bysetting=defaultdict(dict)
 for r in rows:bysetting[(r['equation'],r['seed'])][r['method']]=r
-for name in ('ast_bpe','soft_ast_bpe','eqgpt_reference'):
- differences=[int(v[name]['top1']=='correct')-int(v['bpe']['top1']=='correct') for v in bysetting.values()]
- if differences:paired.append(dict(method=name,reference='bpe',pairs=len(differences),
+for name in ('ast_bpe','soft_ast_bpe'):
+ differences=[int(v[name]['top1']=='correct')-int(v['eqgpt_reference']['top1']=='correct') for v in bysetting.values()]
+ if differences:paired.append(dict(method=name,reference='eqgpt_reference',pairs=len(differences),
      exact_success_difference=sum(differences)/len(differences),wins=sum(d>0 for d in differences),losses=sum(d<0 for d in differences),ties=sum(d==0 for d in differences)))
 plan=a.root/'plan.json';expected=len(json.loads(plan.read_text())['jobs']) if plan.exists() else None
 costfile=a.root/'scheduler_walltimes.json';cost=json.loads(costfile.read_text()) if costfile.exists() else []
