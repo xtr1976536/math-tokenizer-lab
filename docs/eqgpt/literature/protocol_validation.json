@@ -1,0 +1,18 @@
+{
+  "tests": "tests/test_eqgpt_training_protocol.py",
+  "passed": 6,
+  "actual_search_smoke": {
+    "model": "tiny synthetic causal token model; not EqGPT performance",
+    "scratch_trajectories": 3,
+    "candidate_checkpoints": 6,
+    "max_epochs": 300,
+    "downstream_tests_used": false
+  },
+  "formal_gpu_runs_started": false,
+  "paper_fulltexts_checked": 5,
+  "artifacts": [
+    "docs/eqgpt/literature/training_fairness_20261016.md",
+    "docs/eqgpt/literature/evidence.json",
+    "docs/eqgpt/main_training_protocol.json"
+  ]
+}
