@@ -1,5 +1,7 @@
 # EqGPT：三种分词器的公平下游实验
 
+本轮按 [最终执行计划](final_execution_plan.md)实施；该计划优先于下文保留的旧版实现记录。
+
 当前第二轮主实验范围见 [当前范围](current_stage2_scope.md)，训练预算与学习率的文献依据见 [公平训练协议](literature/training_fairness_20261016.md)。
 
 > 当前优先执行 LaTeX／1,024-ID／无 SAT 主实验，分词器先在独立数学训练分区训练并冻结。
