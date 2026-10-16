@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "raw_formulas": 221,
+  "target_cases": 11,
+  "policy": "Independent SymPy expansion of formal GRE meanings; compare coefficient-free monomial support, including product differentiation and named 2-D Laplacian. Used only to audit target exclusions, never to repair generated expressions or alter author numerical functions.",
+  "cases": [
+    {
+      "case": "KdV_equation",
+      "all_symbolic_support_matches": [
+        [
+          "KdV equation",
+          "ut,+,uxxx,+,u,*,ux"
+        ]
+      ],
+      "removed_equations": [
+        "KdV equation"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "Burgers_equation",
+      "all_symbolic_support_matches": [
+        [
+          "Bateman-Burgers equation",
+          "ut,+,u,*,ux,+,uxx"
+        ]
+      ],
+      "removed_equations": [
+        "Bateman-Burgers equation"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "Wave_equation",
+      "all_symbolic_support_matches": [
+        [
+          "(1.2.10)",
+          "utt,+,uxx"
+        ]
+      ],
+      "removed_equations": [
+        "(1.2.10)"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "all_symbolic_support_matches": [
+        [
+          "Chafee\u2013Infante equation",
+          "ut,+,uxx,+,u^3,+,u"
+        ]
+      ],
+      "removed_equations": [
+        "Chafee\u2013Infante equation"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "KG_equation",
+      "all_symbolic_support_matches": [
+        [
+          "Klein\u2013Gordon_u",
+          "utt,+,uxx,+,u"
+        ],
+        [
+          "3.3",
+          "uxx,+,utt,+,u"
+        ]
+      ],
+      "removed_equations": [
+        "Klein\u2013Gordon_u",
+        3.3
+      ],
+      "training_formulas": 219
+    },
+    {
+      "case": "Allen_Cahn",
+      "all_symbolic_support_matches": [
+        [
+          "Chafee\u2013Infante equation",
+          "ut,+,uxx,+,u^3,+,u"
+        ]
+      ],
+      "removed_equations": [
+        "Chafee\u2013Infante equation"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "all_symbolic_support_matches": [
+        [
+          "6.2.13",
+          "ut,+,ux,+,uxx"
+        ]
+      ],
+      "removed_equations": [
+        "6.2.13"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "PDE_divide",
+      "all_symbolic_support_matches": [
+        [
+          "8.14.1d",
+          "ut,+,uxx,+,ux,/,x"
+        ]
+      ],
+      "removed_equations": [
+        "8.14.1d"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "Eq_6_2_12",
+      "all_symbolic_support_matches": [
+        [
+          "6.2.12",
+          "ut,+,ux,+,uxt"
+        ]
+      ],
+      "removed_equations": [
+        "6.2.12"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "PDE_compound",
+      "all_symbolic_support_matches": [
+        [
+          "6.12.1",
+          "ut,+,ux^2,+,u,*,uxx"
+        ]
+      ],
+      "removed_equations": [
+        "6.12.1"
+      ],
+      "training_formulas": 220
+    },
+    {
+      "case": "Possion_x_y",
+      "all_symbolic_support_matches": [
+        [
+          "1.5.20b",
+          "uxx,+,uyy"
+        ],
+        [
+          "1.8.1",
+          "Laplace(u)"
+        ],
+        [
+          "1.8.1_2D",
+          "uxx,+,uyy"
+        ]
+      ],
+      "removed_equations": [
+        "1.5.20b",
+        "1.8.1",
+        "1.8.1_2D"
+      ],
+      "training_formulas": 218
+    }
+  ]
+}

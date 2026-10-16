@@ -44,6 +44,15 @@ def augment_training(target_name, folder, seed=525, extra_exclusions=()):
     targets=df[df['Equation name']==target_name]
     forbidden={canonical(s.split(',')) for s in targets['Terms']}
     forbidden.update(canonical(s) for s in extra_exclusions)
+    # Known product-rule alias: (u*u_x)_x = u_x^2 + u*u_xx.
+    # Handbook 6.12.1 is the expanded target of the compound-PDE case.
+    if canonical(['ut','+','(uux)x']) in forbidden:
+        forbidden.update([canonical(['ut','+','ux^2','+','u','*','uxx']),
+                          canonical(['ut','+','ux','*','ux','+','u','*','uxx'])])
+    # For the 2-D Poisson target, the author's named Laplacian is the same
+    # differential structure as u_xx + u_yy (including the dimension-free row).
+    if canonical(['uxx','+','uyy']) in forbidden:
+        forbidden.add(canonical(['Laplace(u)']))
     keep=df[[canonical(s.split(',')) not in forbidden for s in df['Terms']]]
     removed=df.loc[~df.index.isin(keep.index)]
     selected=[s.split(',') for s in keep['Terms']]

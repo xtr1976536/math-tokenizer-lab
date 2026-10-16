@@ -1,3 +1,5 @@
+> **2026-10-16 当前入口：第一轮 LaTeX 无 SAT 主实验。** 完整代码、冻结词表、AutoDL 安装与正式运行命令见 [round1_autodl.md](round1_autodl.md)。下文为此前 GRE 接口复现记录，不能代替本轮入口。
+
 # EqGPT：三种分词器的公平下游实验
 
 本轮按 [最终执行计划](final_execution_plan.md)实施；该计划优先于下文保留的旧版实现记录。

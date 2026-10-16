@@ -64,7 +64,9 @@ def prepare_surrogate(folder, equation, observations, noise, seed, device, smoke
         def small_meta(*args,**kwargs):return original(*args,**dict(kwargs,nx=5,nt=5))
         env['Generate_meta_data']=small_meta
     with working_directory(folder):
-        env['train_surrogate_model'](net,env['un'])
+        # Author irregular-region sampling shuffles an array view in place.
+        # Preserve the shared raw observations for later paired PINN stages.
+        env['train_surrogate_model'](net,env['un'].copy())
         net,database=env['get_meta'](net)
     # Derivatives need gradients; evaluation mode only changes train/eval state.
     initial_state={k:v.detach().clone() for k,v in net.state_dict().items()}
@@ -189,6 +191,10 @@ def run_pinn(env,net,state,history,folder,device,smoke,seed=525):
     """Execute the author's PINN function on that arm's final top three GREs."""
     import pickle
     folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
+    started=time.perf_counter()
+    # The author's irregular-region sampler shuffles array views in place.
+    # Isolate each arm so all four begin from the identical raw observations.
+    env['un']=env['un'].copy()
     net.load_state_dict(state)
     seed_all(seed)
     runtime_definitions('PINN_optimization.py',env,
@@ -240,7 +246,7 @@ def run_pinn(env,net,state,history,folder,device,smoke,seed=525):
         (folder/'pinn_failure.txt').write_text(traceback.format_exc())
     dump(folder/'pinn.json',dict(status=status,error=error,coefficients=coefficients,sampling=splits,initial_surrogate_sha256=tensor_hash(state),
                                final_surrogate_sha256=tensor_hash(net.state_dict()),
-                               data_loss_weight=1,pde_loss_weight=.01))
+                               data_loss_weight=1,pde_loss_weight=.01,elapsed_seconds=time.perf_counter()-started))
     torch.save(net.state_dict(),folder/'pinn_surrogate.pt')
 
 

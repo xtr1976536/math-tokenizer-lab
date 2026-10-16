@@ -1,0 +1,53 @@
+{
+  "zip_sha256": "3225800ea1f5a1acc727d44144f155732e7166743ff3ab9dcec585fdfde3381d",
+  "file_hashes_verified": 128,
+  "checks": [
+    {
+      "command": [
+        "scripts/eqgpt/verify_round1_bundle.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.787734292003734
+    },
+    {
+      "command": [
+        "scripts/eqgpt/preflight.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.0878648340003565
+    },
+    {
+      "command": [
+        "-m",
+        "pytest",
+        "tests/test_eqgpt.py",
+        "tests/test_eqgpt_latex.py"
+      ],
+      "exit_code": 0,
+      "seconds": 19.5190843340024
+    },
+    {
+      "command": [
+        "scripts/eqgpt/run_latex.py",
+        "--smoke",
+        "--attempts",
+        "400"
+      ],
+      "exit_code": 0,
+      "seconds": 63.19404966699949
+    },
+    {
+      "command": [
+        "scripts/eqgpt/collect_latex.py",
+        "/var/folders/4c/gd05pkx16932jy8mq6vsv7gm0000gn/T/eqgpt_round1_unpack_276ecuiw/eqgpt_round1_autodl_20261016",
+        "--include-smoke"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1005910000021686
+    }
+  ],
+  "unpacked_source_tests_passed": true,
+  "unpacked_400_attempt_smoke_exact_match": true,
+  "local_device": "CPU",
+  "formal_cuda_run": false
+}

@@ -1,0 +1,12 @@
+{
+  "path": "/Users/xiao/Documents/ChatGPT/\u79d1\u7814\u5de5\u4f5c\uff08\u6e2f\u57ce\uff09/math_tokenizer_project/deliverables/eqgpt_round1_autodl_20261016.zip",
+  "bytes": 23090384,
+  "sha256": "3225800ea1f5a1acc727d44144f155732e7166743ff3ab9dcec585fdfde3381d",
+  "files": 128,
+  "first_round_only": true,
+  "frozen_math_formulas": 32270,
+  "frozen_vocab_ids": 1024,
+  "models": 132,
+  "smoke_models": 44,
+  "second_round_run": false
+}
