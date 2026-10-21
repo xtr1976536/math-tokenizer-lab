@@ -1,27 +1,5 @@
 {
   "pde_id": {
-    "fragmentation_pct": [
-      {
-        "method": "soft_ast_bpe",
-        "value": 34.39295998575005
-      },
-      {
-        "method": "ast_bpe",
-        "value": 36.40112182226142
-      },
-      {
-        "method": "tiktoken_o200k_base",
-        "value": 47.36573436766397
-      },
-      {
-        "method": "meta-llama/Meta-Llama-3-8B",
-        "value": 48.13178287929966
-      },
-      {
-        "method": "Qwen2.5-0.5B",
-        "value": 48.257752266407834
-      }
-    ],
     "cmd_pct": [
       {
         "method": "soft_ast_bpe",
@@ -90,28 +68,6 @@
     ]
   },
   "benchmark_id": {
-    "fragmentation_pct": [
-      {
-        "method": "soft_ast_bpe",
-        "value": 37.27051477348458
-      },
-      {
-        "method": "ast_bpe",
-        "value": 41.01832210265436
-      },
-      {
-        "method": "tiktoken_o200k_base",
-        "value": 50.66529897488602
-      },
-      {
-        "method": "meta-llama/Meta-Llama-3-8B",
-        "value": 51.25840875660095
-      },
-      {
-        "method": "Qwen2.5-0.5B",
-        "value": 51.50158805641298
-      }
-    ],
     "cmd_pct": [
       {
         "method": "soft_ast_bpe",
@@ -180,28 +136,6 @@
     ]
   },
   "benchmark_ood_algebra": {
-    "fragmentation_pct": [
-      {
-        "method": "soft_ast_bpe",
-        "value": 39.45850885444358
-      },
-      {
-        "method": "ast_bpe",
-        "value": 43.72355385810868
-      },
-      {
-        "method": "tiktoken_o200k_base",
-        "value": 51.07766553515194
-      },
-      {
-        "method": "meta-llama/Meta-Llama-3-8B",
-        "value": 51.218606758257486
-      },
-      {
-        "method": "Qwen2.5-0.5B",
-        "value": 51.606195121797754
-      }
-    ],
     "cmd_pct": [
       {
         "method": "soft_ast_bpe",
@@ -270,28 +204,6 @@
     ]
   },
   "benchmark_ood_geometry_topology": {
-    "fragmentation_pct": [
-      {
-        "method": "soft_ast_bpe",
-        "value": 38.09873020529162
-      },
-      {
-        "method": "ast_bpe",
-        "value": 42.063820110194065
-      },
-      {
-        "method": "tiktoken_o200k_base",
-        "value": 50.34570831314788
-      },
-      {
-        "method": "meta-llama/Meta-Llama-3-8B",
-        "value": 50.94823486535376
-      },
-      {
-        "method": "Qwen2.5-0.5B",
-        "value": 51.163645144898226
-      }
-    ],
     "cmd_pct": [
       {
         "method": "soft_ast_bpe",
@@ -360,28 +272,6 @@
     ]
   },
   "benchmark_ood_number_theory": {
-    "fragmentation_pct": [
-      {
-        "method": "soft_ast_bpe",
-        "value": 38.0245536566919
-      },
-      {
-        "method": "ast_bpe",
-        "value": 41.8836948134793
-      },
-      {
-        "method": "tiktoken_o200k_base",
-        "value": 50.135984781927775
-      },
-      {
-        "method": "meta-llama/Meta-Llama-3-8B",
-        "value": 50.447680237133014
-      },
-      {
-        "method": "Qwen2.5-0.5B",
-        "value": 51.22959273321772
-      }
-    ],
     "cmd_pct": [
       {
         "method": "soft_ast_bpe",
@@ -450,28 +340,6 @@
     ]
   },
   "benchmark_simple_to_complex": {
-    "fragmentation_pct": [
-      {
-        "method": "soft_ast_bpe",
-        "value": 37.63717557871727
-      },
-      {
-        "method": "ast_bpe",
-        "value": 41.96403254938485
-      },
-      {
-        "method": "tiktoken_o200k_base",
-        "value": 50.08577618795402
-      },
-      {
-        "method": "meta-llama/Meta-Llama-3-8B",
-        "value": 50.78027144166858
-      },
-      {
-        "method": "Qwen2.5-0.5B",
-        "value": 50.99046903316727
-      }
-    ],
     "cmd_pct": [
       {
         "method": "soft_ast_bpe",

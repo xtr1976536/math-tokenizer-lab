@@ -7,8 +7,9 @@
     "scripts/zip_ast_20261021/audit.py": "4cf5eb14bc2d8b67394c79ce471e9e5d0a8c21481c8c55d8b07dfe40d6a6b38b",
     "scripts/zip_ast_20261021/examples.py": "c82da775fbfcc7bc0b35869925c0485fb1a96c626129312e53cb593b01e0811f",
     "scripts/zip_ast_20261021/finalize.py": "0a2aece1fbf5213432f4a20744054786b7d81a99c745efb839d99b2e6bab4143",
+    "scripts/zip_ast_20261021/granularity.py": "cdb36cb0ffe82b0d08fa519dbf4983be30aaa287e6fa8e61e531aee79da49fdf",
     "scripts/zip_ast_20261021/paired.py": "9c52f212b0659bb61d6acad5bcb343cb74568b1db1ce6ad526d36f1c273218da",
-    "scripts/zip_ast_20261021/report.py": "8b3a9daba10f9098d68a2d633c9607931ef602a80678cf632f7e3d5852942864",
+    "scripts/zip_ast_20261021/report.py": "0f7b623978ad79b6e10bb0a0651b6d92983ba870ce07fd466ad7c91f70d03f85",
     "scripts/zip_ast_20261021/requirements.txt": "74233a629e71905da2a9790879af0c6028d12cc3dcda205436d780172368fc77",
     "scripts/zip_ast_20261021/run.py": "0ca16bc2e4540c9aef4f575d137ac93087eeffa733109cfe18fda720e24f566a"
   },
@@ -854,7 +855,7 @@
     "benchmark_simple_to_complex_43/tiktoken_o200k_base_official.json": "2ec3c023862a83d3f43d5317eca7988c5cb819cc5d81c64b6569c8cfdaf15d72",
     "benchmark_simple_to_complex_43/tiktoken_o200k_base_official.jsonl.gz": "41a4ccdc9c817c53bfd5d7eca8914a3664c07b8046771fce69e3facb7ed11329"
   },
-  "report_sha256": "53f7884aadaf2974bd68043923ce79b0429b533eea69166e3fd0055692d0db7f",
+  "report_sha256": "9dd83fbaf4b16da5e50b6707374d6828d5adeea9e01b0d2342934860e8d06583",
   "baseline_provenance_sha256": "c8a350e076cf6a18ccd6f022925ce5e0059214442cde8d1c6844c8273cdd8e0f",
   "zip_provenance_sha256": "64641cd54527342e6381b5e15856cd863ac27f5edd4a1c67a326ba614fe6e1d0",
   "python": "3.11.15",
@@ -866,7 +867,7 @@
     "sentencepiece": "0.2.2",
     "matplotlib": "3.11.2"
   },
-  "git_base_commit": "2d21e1b73d897ae1962867f496c7411ba8ede4e6",
+  "git_base_commit": "36c743a27fc3b101e27a80a6dd03b6dfbb5dc9a0",
   "split_seed_role": "Only source partition randomization; unmodified ZIP default training settings; no pretrained research vocab loaded",
   "note": "Runner portability fallback and PDE split-diversity audit were finalized before corresponding fits. Model algorithms and four metric definitions unchanged. Initial-overlap PDE diagnostics kept outside final experiment and excluded from all reported results."
 }

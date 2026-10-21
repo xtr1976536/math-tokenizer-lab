@@ -6,14 +6,14 @@
 
 | 指标 | 定义 | 方向 |
 |---|---|---|
-| 破坏率／切分率 | $100\sum_i(T_i-1)/\sum_i(B_i-1)$，其中 $B_i$ 为 UTF-8 字节数，$T_i$ 为内容 token 数 | ↓ |
+| 破坏率／切分率 | $100\sum_i(T_i-1)/\sum_i(B_i-1)$，其中 $B_i$ 为 UTF-8 字节数，$T_i$ 为内容 token 数 | 不宜过高或过低 |
 | Cmd | 内部没有 token 边界的 `\[A-Za-z]+` 命令数／全部这类命令数 ×100 | ↑ |
 | Cross 保持率 | $100(1-\mathrm{partial\ crossing\ tokens}/\mathrm{all\ tokens})$，参考为冻结的独立 KaTeX 语法跨度 | ↑ |
 | Num | 内部没有 token 边界的 `[0-9]+(?:\.[0-9]+)?` 数字词素数／全部这类数字词素数 ×100 | ↑ |
 
 统计都使用先汇总分子、分母再求比率；没有命令或数字时是 NA，不记为100。Cross 是旧 crossing rate 的补数，与旧表的方向相反。判定部分跨越：token `[a,b)` 与参考跨度 `[s,e)` 满足 `a<s<b<e` 或 `s<a<e<b`；包含、被包含、端点重合均不算 crossing。
 
-**“破坏率”在这里严格测量切分密度，不直接等价于数学语义受损。** 例如3字节 `abc` 切为3个 token，切分率为100%；切为1个 token，切分率为0%。逐字节切分虽然 Cmd/Num 可能很差，却几乎不会部分跨越树跨度，Cross 可以得到100%。因此四指标不保证反向单调关系，不能修改定义以追求这种关系。
+**破坏率不希望太高，也不希望太低；本轮不再把更低视为更优。** “破坏率”在这里严格测量切分密度，不直接等价于数学语义受损。 例如3字节 `abc` 切为3个 token，切分率为100%；切为1个 token，切分率为0%。逐字节切分虽然 Cmd/Num 可能很差，却几乎不会部分跨越树跨度，Cross 可以得到100%。因此四指标不保证反向单调关系，不能修改定义以追求这种关系。
 
 ## 2. 数据、模型及公平性
 
@@ -58,7 +58,7 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 
 ### 纯PDE：两种方法的容量曲线数值
 
-| 总ID | 方法 | 破坏率↓ | Cmd↑ | Cross↑ | Num↑ |
+| 总ID | 方法 | 破坏率 | Cmd↑ | Cross↑ | Num↑ |
 |---:|---|---:|---:|---:|---:|
 | 320 | Hard AST-BPE | 71.20 ± 3.01 | 34.22 ± 4.73 | 98.79 ± 0.54 | 97.21 ± 4.82 |
 | 320 | Soft AST-BPE | 62.18 ± 2.21 | 90.63 ± 3.39 | 100.00 ± 0.00 | 97.21 ± 4.82 |
@@ -78,7 +78,7 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 | 1024 | Soft AST-BPE | 34.39 ± 4.85 | 94.22 ± 3.71 | 84.46 ± 3.90 | 97.21 ± 4.82 |
 ### 全量 benchmark：两种方法的容量曲线数值
 
-| 总ID | 方法 | 破坏率↓ | Cmd↑ | Cross↑ | Num↑ |
+| 总ID | 方法 | 破坏率 | Cmd↑ | Cross↑ | Num↑ |
 |---:|---|---:|---:|---:|---:|
 | 320 | Hard AST-BPE | 74.30 ± 0.79 | 27.01 ± 1.93 | 98.58 ± 0.21 | 95.82 ± 0.60 |
 | 320 | Soft AST-BPE | 70.83 ± 1.20 | 75.63 ± 0.78 | 100.00 ± 0.00 | 95.82 ± 0.60 |
@@ -103,7 +103,7 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 
 ### 纯PDE未见公式
 
-| 方法 | 破坏率↓ | Cmd↑ | Cross↑ | Num↑ |
+| 方法 | 破坏率 | Cmd↑ | Cross↑ | Num↑ |
 |---|---:|---:|---:|---:|
 | Hard AST-BPE | 36.40 ± 4.16 | 92.28 ± 2.48 | 92.84 ± 1.02 | 97.21 ± 4.82 |
 | Soft AST-BPE | 34.39 ± 4.85 | 94.22 ± 3.71 | 84.46 ± 3.90 | 97.21 ± 4.82 |
@@ -112,7 +112,7 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 | o200k | 47.37 ± 0.36 | 0.00 ± 0.00 | 79.38 ± 0.76 | 100.00 ± 0.00 |
 ### 全量 benchmark 未见来源
 
-| 方法 | 破坏率↓ | Cmd↑ | Cross↑ | Num↑ |
+| 方法 | 破坏率 | Cmd↑ | Cross↑ | Num↑ |
 |---|---:|---:|---:|---:|
 | Hard AST-BPE | 41.02 ± 0.88 | 90.94 ± 0.85 | 92.33 ± 0.13 | 96.40 ± 0.45 |
 | Soft AST-BPE | 37.27 ± 0.83 | 99.61 ± 0.17 | 83.28 ± 0.94 | 95.82 ± 0.60 |
@@ -128,7 +128,7 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 
 ### 从未参与拟合的代数领域
 
-| 方法 | 破坏率↓ | Cmd↑ | Cross↑ | Num↑ |
+| 方法 | 破坏率 | Cmd↑ | Cross↑ | Num↑ |
 |---|---:|---:|---:|---:|
 | Hard AST-BPE | 43.72 | 89.76 | 92.46 | 94.42 |
 | Soft AST-BPE | 39.46 | 99.66 | 84.53 | 93.50 |
@@ -137,7 +137,7 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 | o200k | 51.08 | 0.00 | 81.07 | 99.09 |
 ### 从未参与拟合的几何拓扑领域
 
-| 方法 | 破坏率↓ | Cmd↑ | Cross↑ | Num↑ |
+| 方法 | 破坏率 | Cmd↑ | Cross↑ | Num↑ |
 |---|---:|---:|---:|---:|
 | Hard AST-BPE | 42.06 | 90.40 | 94.53 | 96.97 |
 | Soft AST-BPE | 38.10 | 99.45 | 82.25 | 96.76 |
@@ -146,7 +146,7 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 | o200k | 50.35 | 0.00 | 79.88 | 99.71 |
 ### 从未参与拟合的数论领域
 
-| 方法 | 破坏率↓ | Cmd↑ | Cross↑ | Num↑ |
+| 方法 | 破坏率 | Cmd↑ | Cross↑ | Num↑ |
 |---|---:|---:|---:|---:|
 | Hard AST-BPE | 41.88 | 91.13 | 93.07 | 93.24 |
 | Soft AST-BPE | 38.02 | 99.85 | 82.91 | 92.77 |
@@ -155,7 +155,7 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 | o200k | 50.14 | 0.00 | 80.71 | 98.31 |
 ### 仅简单公式训练 → 未见来源的复杂公式
 
-| 方法 | 破坏率↓ | Cmd↑ | Cross↑ | Num↑ |
+| 方法 | 破坏率 | Cmd↑ | Cross↑ | Num↑ |
 |---|---:|---:|---:|---:|
 | Hard AST-BPE | 41.96 ± 1.13 | 90.08 ± 1.71 | 92.13 ± 0.44 | 96.85 ± 0.78 |
 | Soft AST-BPE | 37.64 ± 0.95 | 99.26 ± 0.37 | 81.99 ± 0.65 | 96.08 ± 0.79 |
@@ -167,40 +167,34 @@ Soft AST-BPE 在小词表时优先把训练中出现的命令与Unicode符号加
 
 1024-ID 常规未见公式测试中，Soft AST-BPE 的切分率最低、Cmd最高；Hard AST-BPE 的Cross保持率最高。两种方法的Num都没有全面超过Llama 3和o200k。Soft的Cross均值优势较小，在几何、数论OOD及部分PDE划分中，相对Qwen的配对区间包含零，不能宣称稳定的结构优势。数值相同的模型视为并列。
 
-以下使用同一组测试划分的均值作描述性排序，不人为指定综合权重，不把微小均值差异当作显著优胜。指标方向已固定。另提供 `paired_comparisons_1024.csv`：同一来源组抽样下，逐指标计算新模型相对基准的配对差值及1000次聚类bootstrap的95%区间，差值为正表示新模型更好；这些是条件于各划分、未做多重比较校正的探索性区间。
+以下使用同一组测试划分的均值作描述性排序，不人为指定综合权重，不把微小均值差异当作显著优胜。破坏率不参与单向优劣排名。另提供 `paired_comparisons_1024.csv`：同一来源组抽样下，逐指标计算新模型相对基准的配对差值及1000次聚类bootstrap的95%区间，Cmd/Cross/Num差值为正表示新模型更好；破坏率列沿用历史编码，正值仅表示切分率更低，不表示更好；这些是条件于各划分、未做多重比较校正的探索性区间。
 
 **PDE**
-- fragmentation_pct：Soft AST-BPE (34.39)；Hard AST-BPE (36.40)；o200k (47.37)；Llama 3 (48.13)；Qwen2.5 (48.26)
 - cmd_pct：Soft AST-BPE (94.22)；Hard AST-BPE (92.28)；Qwen2.5 (0.00)；Llama 3 (0.00)；o200k (0.00)
 - cross_preservation_pct：Hard AST-BPE (92.84)；Soft AST-BPE (84.46)；Qwen2.5 (79.86)；Llama 3 (79.80)；o200k (79.38)
 - num_pct：Llama 3 (100.00)；o200k (100.00)；Hard AST-BPE (97.21)；Soft AST-BPE (97.21)；Qwen2.5 (97.21)
 
 **全量ID**
-- fragmentation_pct：Soft AST-BPE (37.27)；Hard AST-BPE (41.02)；o200k (50.67)；Llama 3 (51.26)；Qwen2.5 (51.50)
 - cmd_pct：Soft AST-BPE (99.61)；Hard AST-BPE (90.94)；Qwen2.5 (0.00)；Llama 3 (0.00)；o200k (0.00)
 - cross_preservation_pct：Hard AST-BPE (92.33)；Soft AST-BPE (83.28)；Qwen2.5 (80.87)；Llama 3 (80.77)；o200k (80.40)
 - num_pct：Llama 3 (99.42)；o200k (99.42)；Hard AST-BPE (96.40)；Soft AST-BPE (95.82)；Qwen2.5 (95.82)
 
 **代数OOD**
-- fragmentation_pct：Soft AST-BPE (39.46)；Hard AST-BPE (43.72)；o200k (51.08)；Llama 3 (51.22)；Qwen2.5 (51.61)
 - cmd_pct：Soft AST-BPE (99.66)；Hard AST-BPE (89.76)；Qwen2.5 (0.00)；Llama 3 (0.00)；o200k (0.00)
 - cross_preservation_pct：Hard AST-BPE (92.46)；Soft AST-BPE (84.53)；Qwen2.5 (81.46)；Llama 3 (81.31)；o200k (81.07)
 - num_pct：Llama 3 (99.09)；o200k (99.09)；Hard AST-BPE (94.42)；Soft AST-BPE (93.50)；Qwen2.5 (93.50)
 
 **几何OOD**
-- fragmentation_pct：Soft AST-BPE (38.10)；Hard AST-BPE (42.06)；o200k (50.35)；Llama 3 (50.95)；Qwen2.5 (51.16)
 - cmd_pct：Soft AST-BPE (99.45)；Hard AST-BPE (90.40)；Qwen2.5 (0.00)；Llama 3 (0.00)；o200k (0.00)
 - cross_preservation_pct：Hard AST-BPE (94.53)；Soft AST-BPE (82.25)；Qwen2.5 (80.31)；Llama 3 (80.21)；o200k (79.88)
 - num_pct：Llama 3 (99.71)；o200k (99.71)；Hard AST-BPE (96.97)；Soft AST-BPE (96.76)；Qwen2.5 (96.76)
 
 **数论OOD**
-- fragmentation_pct：Soft AST-BPE (38.02)；Hard AST-BPE (41.88)；o200k (50.14)；Llama 3 (50.45)；Qwen2.5 (51.23)
 - cmd_pct：Soft AST-BPE (99.85)；Hard AST-BPE (91.13)；Qwen2.5 (0.00)；Llama 3 (0.00)；o200k (0.00)
 - cross_preservation_pct：Hard AST-BPE (93.07)；Soft AST-BPE (82.91)；Qwen2.5 (81.38)；Llama 3 (80.97)；o200k (80.71)
 - num_pct：Llama 3 (98.31)；o200k (98.31)；Hard AST-BPE (93.24)；Soft AST-BPE (92.77)；Qwen2.5 (92.77)
 
 **简单→复杂**
-- fragmentation_pct：Soft AST-BPE (37.64)；Hard AST-BPE (41.96)；o200k (50.09)；Llama 3 (50.78)；Qwen2.5 (50.99)
 - cmd_pct：Soft AST-BPE (99.26)；Hard AST-BPE (90.08)；Qwen2.5 (0.00)；Llama 3 (0.00)；o200k (0.00)
 - cross_preservation_pct：Hard AST-BPE (92.13)；Soft AST-BPE (81.99)；Qwen2.5 (80.36)；Llama 3 (80.27)；o200k (79.79)
 - num_pct：Llama 3 (99.30)；o200k (99.30)；Hard AST-BPE (96.85)；Soft AST-BPE (96.08)；Qwen2.5 (96.08)
@@ -230,3 +224,19 @@ PDE数字词素长度分布：`{"1": 2262, "2": 39}`。
 ```
 
 所有 per-formula `.jsonl.gz` 包含可复算分子分母；模型文件和训练ID哈希在各划分 `models/`。图提供PNG、PDF和SVG。原数据、旧模型、PPT和下游代码均未由本轮修改。
+
+## 8. 补充指标：公式级切分率标准差（SD）
+
+对每条公式计算 f_i=100(T_i−1)/(B_i−1)，再计算 SD=sqrt(mean((f_i−mean(f))²))，单位是百分点。每条公式等权；B_i≤1不参与该补充指标。SD越大表示公式之间的粒度差异越大，但不作为单独越低越好的优化目标。它用于识别平均值掩盖的两极分化，不能证明token可复用，也不能独立证明粒度适中。
+
+例如：所有公式切分率均为50%，均值50%、SD=0；一半0%、一半100%，均值仍为50%，但SD=50个百分点。全都0%或全都100%也会SD=0，因此必须结合平均切分率和结构指标解读，不能仅看SD。公式长度、领域、难度不同也会造成离散，跨模型应使用完全相同的测试集。
+
+完整228组结果见 `granularity_dispersion.csv`。以下为1024-ID版本各划分SD的均值（非合并样本SD）。
+
+| 模型 | PDE：SD（百分点） | 全量ID：SD（百分点） |
+|---|---:|---:|
+| Hard AST-BPE | 6.53 | 13.61 |
+| Soft AST-BPE | 7.71 | 11.92 |
+| Qwen2.5 | 5.88 | 9.25 |
+| Llama 3 | 5.88 | 9.00 |
+| o200k | 6.12 | 9.12 |
