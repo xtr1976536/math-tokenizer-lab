@@ -7,8 +7,8 @@
     "scripts/zip_ast_20261021/audit.py": "4cf5eb14bc2d8b67394c79ce471e9e5d0a8c21481c8c55d8b07dfe40d6a6b38b",
     "scripts/zip_ast_20261021/examples.py": "c82da775fbfcc7bc0b35869925c0485fb1a96c626129312e53cb593b01e0811f",
     "scripts/zip_ast_20261021/finalize.py": "0a2aece1fbf5213432f4a20744054786b7d81a99c745efb839d99b2e6bab4143",
-    "scripts/zip_ast_20261021/paired.py": "f38428e6c79385a800c775f8b71365f9dad50e2f307db24a81a84d1b77753fc9",
-    "scripts/zip_ast_20261021/report.py": "69269b80504eec894929526624689ba07c2850d461603ea3246a08e4accbb5ee",
+    "scripts/zip_ast_20261021/paired.py": "9c52f212b0659bb61d6acad5bcb343cb74568b1db1ce6ad526d36f1c273218da",
+    "scripts/zip_ast_20261021/report.py": "8b3a9daba10f9098d68a2d633c9607931ef602a80678cf632f7e3d5852942864",
     "scripts/zip_ast_20261021/requirements.txt": "74233a629e71905da2a9790879af0c6028d12cc3dcda205436d780172368fc77",
     "scripts/zip_ast_20261021/run.py": "0ca16bc2e4540c9aef4f575d137ac93087eeffa733109cfe18fda720e24f566a"
   },
@@ -866,7 +866,7 @@
     "sentencepiece": "0.2.2",
     "matplotlib": "3.11.2"
   },
-  "git_base_commit": "0ee511f2b0ead7c05625ff7ed4390688b095dc11",
+  "git_base_commit": "2d21e1b73d897ae1962867f496c7411ba8ede4e6",
   "split_seed_role": "Only source partition randomization; unmodified ZIP default training settings; no pretrained research vocab loaded",
   "note": "Runner portability fallback and PDE split-diversity audit were finalized before corresponding fits. Model algorithms and four metric definitions unchanged. Initial-overlap PDE diagnostics kept outside final experiment and excluded from all reported results."
 }

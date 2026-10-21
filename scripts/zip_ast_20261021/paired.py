@@ -35,6 +35,6 @@ def main():
      output.append(dict(protocol=p['name'],model=name,reference=base,metric=k,beneficial_difference_pp=float(delta[i]),ci95_lower=lo,ci95_upper=hi,source_groups=len(groups),valid_bootstrap_replicates=len(valid)))
  s.write(s.OUT/'paired_comparisons_1024.json',dict(description='Paired source-cluster bootstrap,1000 draws; positive delta favors model; point delta uses ratio of aggregated counts; unadjusted exploratory95% intervals,conditional on this source split; no pooling overlapping splits',rows=output))
  with (s.OUT/'paired_comparisons_1024.csv').open('w',newline='') as f:
-  w=csv.DictWriter(f,fieldnames=list(output[0]));w.writeheader();w.writerows(output)
+  w=csv.DictWriter(f,fieldnames=list(output[0]),lineterminator='\n');w.writeheader();w.writerows(output)
  print('Paired comparisons:',len(output))
 if __name__=='__main__':main()

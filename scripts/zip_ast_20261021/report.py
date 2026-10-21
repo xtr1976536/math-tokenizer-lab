@@ -16,14 +16,14 @@ LABELS=['Fragmentation ↓ (%)','Cmd ↑ (%)','Cross preservation ↑ (%)','Num 
 def main():
  protocol=json.loads((O/'protocol.json').read_text());rows=[]
  for p in protocol['splits']:
-  paths=list((O/p['name']).glob('*.json'))
+  paths=sorted((O/p['name']).glob('*.json'))
   assert len(paths)==19,(p['name'],len(paths))
   for path in paths:
    r=json.loads(path.read_text());r.update(protocol=p['name'],seed=p['seed']);rows.append(r)
  assert len(rows)==228
  cols=['protocol','seed','method','requested_total_ids','actual_total_ids','formulas','papers']+s.METRICS+['test_ids_sha256']
  with (O/'all_results.csv').open('w',newline='') as f:
-  w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows({c:r.get(c) for c in cols} for r in rows)
+  w=csv.DictWriter(f,fieldnames=cols,lineterminator='\n');w.writeheader();w.writerows({c:r.get(c) for c in cols} for r in rows)
  s.write(O/'all_results.json',rows)
  # Five-model comparisons at every requested budget; the official models are reused,
  # never refitted or truncated. This expanded CSV makes all eight tables explicit.
@@ -33,7 +33,7 @@ def main():
    for r in rows:
     if r['protocol']==p['name'] and (r['requested_total_ids'] is None or r['requested_total_ids']==size):expanded.append(dict(comparison_budget=size,**{c:r.get(c) for c in cols}))
  with (O/'five_model_comparisons_all_budgets.csv').open('w',newline='') as f:
-  w=csv.DictWriter(f,fieldnames=['comparison_budget']+cols);w.writeheader();w.writerows(expanded)
+  w=csv.DictWriter(f,fieldnames=['comparison_budget']+cols,lineterminator='\n');w.writeheader();w.writerows(expanded)
  def select(prefix,method,size=1024):return [r for r in rows if r['protocol'].startswith(prefix) and r['method']==method and r['requested_total_ids']==(size if method in METHODS[:2] else None)]
  def values(prefix,method,metric,size=1024):return np.array([r[metric] for r in select(prefix,method,size) if r[metric] is not None])
  def cell(a):return 'NA' if not len(a) else f'{np.mean(a):.2f} ± {np.std(a,ddof=1):.2f}' if len(a)>1 else f'{a[0]:.2f}'
