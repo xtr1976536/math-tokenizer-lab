@@ -1,0 +1,8 @@
+{
+  "train_ids_sha256": "fe8dbd83346851e297d3155fb3eb86a8c706603b0607958c8b5d3b0789b1e419",
+  "train_strings_sha256": "48338176a0046fc617dcd6c576fdc717ea99472c2ed7829f5460d0f716675dae",
+  "checkpoint_sha256": "bb2a7e5abd1e19bb23e667336820197252c6c3df630e99a5607a97fb382cb4b7",
+  "fit_from": "fresh train_one on this protocol training strings; never packaged vocab",
+  "actual_total_ids": 384,
+  "requested_total_ids": 384
+}

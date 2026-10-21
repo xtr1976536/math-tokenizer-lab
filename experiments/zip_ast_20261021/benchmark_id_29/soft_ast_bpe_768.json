@@ -1,0 +1,37 @@
+{
+  "method": "soft_ast_bpe",
+  "requested_total_ids": 768,
+  "actual_total_ids": 768,
+  "formulas": 11200,
+  "papers": 72,
+  "test_ids_sha256": "629b8ecdedaddcbeecb395e3f5306e641e25e84d4608a4b66a8f6edab007c33c",
+  "fragmentation_pct": 43.54258788665335,
+  "cmd_pct": 99.62440410266288,
+  "cross_preservation_pct": 87.159631643642,
+  "num_pct": 96.33096218644702,
+  "ci95": {
+    "fragmentation_pct": [
+      42.20891909186732,
+      44.879459417258566
+    ],
+    "cmd_pct": [
+      99.00850741577813,
+      99.92249932456042
+    ],
+    "cross_preservation_pct": [
+      85.70924281531613,
+      88.28535055344263
+    ],
+    "num_pct": [
+      94.62558955718964,
+      98.11734492837665
+    ]
+  },
+  "denominators": {
+    "bytes": 783274,
+    "tokens": 347381,
+    "possible_cuts": 772074,
+    "commands": 62301,
+    "numbers": 34723
+  }
+}

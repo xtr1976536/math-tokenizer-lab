@@ -1,0 +1,37 @@
+{
+  "method": "meta-llama/Meta-Llama-3-8B",
+  "requested_total_ids": null,
+  "actual_total_ids": 128256,
+  "formulas": 4431,
+  "papers": 31,
+  "test_ids_sha256": "88be810b5e8ab0d1ca86d210568b08cad1664d8ae558b9be3d82492c402b673a",
+  "fragmentation_pct": 51.218606758257486,
+  "cmd_pct": 0.0,
+  "cross_preservation_pct": 81.30725441890502,
+  "num_pct": 99.0896852362331,
+  "ci95": {
+    "fragmentation_pct": [
+      49.283991922166216,
+      52.84531893200776
+    ],
+    "cmd_pct": [
+      0.0,
+      0.0
+    ],
+    "cross_preservation_pct": [
+      79.64101106874878,
+      83.5942520657159
+    ],
+    "num_pct": [
+      97.45850848945267,
+      99.8575805724972
+    ]
+  },
+  "denominators": {
+    "bytes": 322294,
+    "tokens": 167236,
+    "possible_cuts": 317863,
+    "commands": 23103,
+    "numbers": 15599
+  }
+}

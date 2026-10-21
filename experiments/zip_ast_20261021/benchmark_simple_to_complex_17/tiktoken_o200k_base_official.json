@@ -1,0 +1,37 @@
+{
+  "method": "tiktoken_o200k_base",
+  "requested_total_ids": null,
+  "actual_total_ids": 200019,
+  "formulas": 3570,
+  "papers": 68,
+  "test_ids_sha256": "b80512e8fe514c5900dd37bcd8f2db3e457bd9091fb47720e2ab0c62740ac66d",
+  "fragmentation_pct": 50.240940190526075,
+  "cmd_pct": 0.0,
+  "cross_preservation_pct": 79.78661050136549,
+  "num_pct": 99.05891815805349,
+  "ci95": {
+    "fragmentation_pct": [
+      49.1732964127364,
+      51.31833399750509
+    ],
+    "cmd_pct": [
+      0.0,
+      0.0
+    ],
+    "cross_preservation_pct": [
+      78.61292673284778,
+      80.82136798169098
+    ],
+    "num_pct": [
+      97.95756748453606,
+      99.74228743400447
+    ]
+  },
+  "denominators": {
+    "bytes": 614510,
+    "tokens": 310512,
+    "possible_cuts": 610940,
+    "commands": 47158,
+    "numbers": 24865
+  }
+}

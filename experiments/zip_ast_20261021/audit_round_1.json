@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "checks": [
+    "ZIP hash and byte-identical implementation snapshot",
+    "frozen runner snapshot matches initial hash; all computational functions unchanged",
+    "baseline adapters and registry hashes unchanged",
+    "no ZIP learned vocabulary extracted",
+    "all twelve source/canonical/template separated splits",
+    "5000 independent interval-crossing tests",
+    "hand-calculated byte and whole-formula metric endpoints"
+  ],
+  "catalog_formulas": 56000,
+  "pde_formulas": 356,
+  "command_occurrences": 350440,
+  "number_length_counts": {
+    "1": 178014,
+    "2": 4672,
+    "3": 1346,
+    "4": 383,
+    "5": 66,
+    "6": 65,
+    "7": 46,
+    "8": 26,
+    "9": 22,
+    "10": 18,
+    "11": 10,
+    "12": 7,
+    "13": 2,
+    "14": 2,
+    "15": 5,
+    "17": 12,
+    "18": 2,
+    "19": 4,
+    "27": 4,
+    "28": 6,
+    "32": 6,
+    "51": 5,
+    "52": 4
+  },
+  "pde_number_length_counts": {
+    "1": 2262,
+    "2": 39
+  },
+  "repeated_split_test_jaccard": {
+    "pde_id_17__pde_id_29": 0.0,
+    "pde_id_17__pde_id_43": 0.0070921985815602835,
+    "pde_id_29__pde_id_43": 0.0,
+    "benchmark_id_17__benchmark_id_29": 0.03819058212829069,
+    "benchmark_id_17__benchmark_id_43": 0.3391522687869911,
+    "benchmark_id_29__benchmark_id_43": 0.21646573259476484,
+    "benchmark_simple_to_complex_17__benchmark_simple_to_complex_29": 0.036796863218217464,
+    "benchmark_simple_to_complex_17__benchmark_simple_to_complex_43": 0.2786793508673755,
+    "benchmark_simple_to_complex_29__benchmark_simple_to_complex_43": 0.21006243114212267
+  },
+  "counterexample": {
+    "byte_tokenizer": {
+      "fragmentation_pct": 100.0,
+      "cmd_pct": 0.0,
+      "cross_preservation_pct": 100.0,
+      "num_pct": 0.0
+    },
+    "whole_formula_tokenizer": {
+      "fragmentation_pct": 0.0,
+      "cmd_pct": 100.0,
+      "cross_preservation_pct": 100.0,
+      "num_pct": 100.0
+    }
+  },
+  "limitation": "Cross preservation alone cannot measure structural quality: byte tokenization obtains100 even though command and numeric integrity can be0.",
+  "scope": "complete"
+}

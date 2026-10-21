@@ -1,0 +1,32 @@
+{
+  "formulas": 56000,
+  "source_groups": 366,
+  "formula_partition": {
+    "other": 55644,
+    "pde": 356
+  },
+  "domains": {
+    "geometry_topology": 9135,
+    "pde": 356,
+    "combinatorics": 5563,
+    "statistics": 1056,
+    "mathematical_physics": 3850,
+    "analysis": 20233,
+    "optimization": 3211,
+    "number_theory": 4273,
+    "algebra": 4431,
+    "logic": 662,
+    "probability": 3171,
+    "ode": 46,
+    "linear_algebra": 13
+  },
+  "complexity": {
+    "simple": 37400,
+    "complex": 18600
+  },
+  "provenance": {
+    "human": 51229,
+    "unknown": 1961,
+    "possible_mixed": 2810
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "hard_native_python_reference_cases": 768,
+  "soft_native_independent_dynamic_program_cases": 288,
+  "fresh_retraining": [
+    {
+      "method": "ast_bpe",
+      "size": 320,
+      "identical_vocabulary": true,
+      "identical_all_test_encodings": true
+    },
+    {
+      "method": "soft_ast_bpe",
+      "size": 320,
+      "identical_vocabulary": true,
+      "identical_all_test_encodings": true
+    },
+    {
+      "method": "ast_bpe",
+      "size": 1024,
+      "identical_vocabulary": true,
+      "identical_all_test_encodings": true
+    },
+    {
+      "method": "soft_ast_bpe",
+      "size": 1024,
+      "identical_vocabulary": true,
+      "identical_all_test_encodings": true
+    }
+  ],
+  "checks": [
+    "Native hard AST ranked merges equal independent Python reference",
+    "Soft AST native objective equals independent byte-span DP optimum",
+    "Fresh retraining reproduces vocabulary and held-out encodings at320 and1024"
+  ],
+  "scope": "complete"
+}
