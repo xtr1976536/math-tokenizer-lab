@@ -1,0 +1,33 @@
+{
+  "source_formulas": 221,
+  "training_formulas": 212,
+  "augmentations": 32,
+  "training_sequences": 6784,
+  "target_name": [
+    "KdV equation",
+    "Bateman-Burgers equation",
+    "(1.2.10)",
+    "Chafee\u2013Infante equation",
+    "Klein\u2013Gordon_u",
+    "6.2.13",
+    "8.14.1d",
+    "6.2.12"
+  ],
+  "removed_equations": [
+    "Bateman-Burgers equation",
+    "Chafee\u2013Infante equation",
+    "Klein\u2013Gordon_u",
+    "(1.2.10)",
+    3.3,
+    "6.2.12",
+    "6.2.13",
+    "8.14.1d",
+    "KdV equation"
+  ],
+  "source_sha256": "d48acfdf565d1c615343c92b6aacdac2c7db4354b1f74629952a984fcd7adc31",
+  "training_sha256": "79a80bb76dd7dd8029b2ec2af21d583a832c23d52b3cba226499bbb8e2d0ba8e",
+  "max_gre_length": 19,
+  "target_structures_removed": true,
+  "author_augmentation_interior_eos": 616,
+  "augmentation_policy": "Unchanged author permutations, including EOS placement"
+}

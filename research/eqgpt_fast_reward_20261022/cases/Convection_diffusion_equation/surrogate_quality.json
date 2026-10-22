@@ -1,0 +1,34 @@
+{
+  "case": "Convection_diffusion_equation",
+  "shared": {
+    "equation": "Convection_diffusion_equation",
+    "seed": 525,
+    "observations": 10000,
+    "noise_percent": 0,
+    "surrogate_sha256": "453be345b9b7ce614177ecf2dd757aeab645187deef29461bf5299e4a997327d",
+    "raw_noisy_data_sha256": "480263d6d6615f5138b0aadfe3907a2fd443751f56eac647108af9a4b29a181e",
+    "metadata_sha256": "7e56bed884fef6373e9926b8c06128bb0c3eff438e3fba9ee371eda8e42b25b2",
+    "metadata_points": 10000,
+    "activation": "Rational",
+    "surrogate_iterations": 50000,
+    "target_name": "6.2.13",
+    "stage": "B",
+    "surrogate_hidden_layers": 5,
+    "surrogate_hidden_width": 50,
+    "base_predictions_sha256": "e99df8165c767682039cb817f9198d3f894c5162670a829a9b21c1b7cf6b102d",
+    "base_prediction_shape": [
+      10000,
+      1
+    ],
+    "shared_across_methods": [
+      "ast_bpe",
+      "soft_ast_bpe",
+      "eqgpt_reference"
+    ]
+  },
+  "loss_first": "iter_num: 500      loss: 0.00047058    loss_validate: 0.00043829 ",
+  "loss_last": "iter_num: 50000      loss: 0.00000384    loss_validate: 0.00000387 ",
+  "loss_file_sha256": "c35f28d0ea4962e709318930e69882d823b93aab6ef879bdfdd0843fb64aa771",
+  "fit_or_cache_load_seconds": 661.0101049589866,
+  "cache_sha256": "1906b573c07da916ed6ffb56bf6387aa94124767a160bf4d6567f4b472018451"
+}

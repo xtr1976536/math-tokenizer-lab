@@ -1,0 +1,18 @@
+{
+  "python": "3.11.15 (main, Jun 23 2026, 15:46:51) [Clang 22.1.3 ]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "torch": "2.14.1",
+  "mps_available": true,
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "tokenizers": "0.23.3",
+    "sympy": "1.14.0",
+    "tqdm": "4.70.1"
+  },
+  "source_repository_commit": "463b868c3acdff076667dd3705ccc2031c765a04",
+  "private_repository": "https://github.com/xtr1976536/math-tokenizer-lab",
+  "run_device": "Apple MPS"
+}

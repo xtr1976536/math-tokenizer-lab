@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "cases": [
+    "Wave_equation",
+    "Convection_diffusion_equation",
+    "KG_equation",
+    "Burgers_equation",
+    "Eq_6_2_12",
+    "PDE_divide",
+    "KdV_equation",
+    "Chaffee_Infante_equation"
+  ],
+  "protocol_sha256": "43dcef8f670c03a4d357f5eae81523c306433eae9b3a48ac98782e2fcf5791fd",
+  "report_sha256": "386a1e4f74641c28d4e01d33fc5c22a87e4ea040ed9bbbe7dcf9c5e86fe52185",
+  "runtime_files": [
+    "scripts/eqgpt/fast_reward_case.py",
+    "scripts/eqgpt/summarize_fast_reward.py",
+    "scripts/eqgpt/package_fast_reward_release.py",
+    "src/math_tokenizer/eqgpt/eqgpt_fast_config.py",
+    "src/math_tokenizer/eqgpt/eqgpt_fast_tokenizers.py",
+    "src/math_tokenizer/eqgpt/author.py",
+    "src/math_tokenizer/eqgpt/data.py",
+    "src/math_tokenizer/eqgpt/models.py",
+    "src/math_tokenizer/eqgpt/round1_runtime.py"
+  ],
+  "runtime_sha256": {
+    "scripts/eqgpt/fast_reward_case.py": "988a40745496d6da40f4de99f10250e3190d32f6bb2dc59a9e0c9fc9bacfa023",
+    "scripts/eqgpt/summarize_fast_reward.py": "b38bb63ac027fe5d86f28a2d2c779af527db107cc6dbcc8025d12f0c38556e1f",
+    "scripts/eqgpt/package_fast_reward_release.py": "db5f081d3b8bffbeaf41f9ce50809a4a4ba7c63f8da677297366cc9575190ffc",
+    "src/math_tokenizer/eqgpt/eqgpt_fast_config.py": "bcab4e5583005aa4d70df40bba63384e0c9f7d56aa7472814e010a737a76d86a",
+    "src/math_tokenizer/eqgpt/eqgpt_fast_tokenizers.py": "a4a4f722fb88a475d19452270cb24d8bdcc63d7162298f0aca495c8f7d317451",
+    "src/math_tokenizer/eqgpt/author.py": "39837f3b1c0fa24ab0822f50f1ecd92aac7ccdc9f4b9723c44dbe16a2e9c3602",
+    "src/math_tokenizer/eqgpt/data.py": "1fa125101533bf351aaaeacba229b1260a5d2306e915c4dddfdbca91a4345e36",
+    "src/math_tokenizer/eqgpt/models.py": "4b4741d2ef5f745960ceeabdf3c5f18bd9c1423eb4e6599be5f3063aabbd224f",
+    "src/math_tokenizer/eqgpt/round1_runtime.py": "dcfbe218392a6e036ace3d8c7272ed423d8d7188ae7f7c6dd6ad0ef008558aae"
+  },
+  "lfs_patterns": [
+    "*.pt"
+  ],
+  "visibility": "repository must remain private"
+}

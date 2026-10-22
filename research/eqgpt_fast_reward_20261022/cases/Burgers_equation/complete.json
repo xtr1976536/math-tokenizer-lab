@@ -1,0 +1,210 @@
+{
+  "case": "Burgers_equation",
+  "results": {
+    "eqgpt_reference": {
+      "training_seconds": 0.1615620829979889,
+      "pretraining_reused": true,
+      "original_pretraining_seconds": 143.8964349590533,
+      "search_seconds": 114.98989354100195,
+      "top1": "correct",
+      "top10_correct": true,
+      "top10_redundant": true,
+      "ranked_classes": [
+        "correct",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "incorrect",
+        "redundant",
+        "incorrect",
+        "redundant",
+        "incorrect"
+      ],
+      "attempted_statuses": {
+        "correct": 1,
+        "redundant": 9,
+        "incorrect": 590
+      },
+      "first_correct": 497,
+      "reward_calls": 539,
+      "cache_hits": 61
+    },
+    "ast_bpe_280": {
+      "training_seconds": 0.41365245802444406,
+      "pretraining_reused": true,
+      "original_pretraining_seconds": 169.90287329397688,
+      "search_seconds": 104.31739858302171,
+      "top1": "redundant",
+      "top10_correct": false,
+      "top10_redundant": true,
+      "ranked_classes": [
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant"
+      ],
+      "attempted_statuses": {
+        "correct": 0,
+        "redundant": 17,
+        "incorrect": 272
+      },
+      "first_correct": null,
+      "reward_calls": 241,
+      "cache_hits": 48
+    },
+    "soft_ast_bpe_280": {
+      "training_seconds": 0.5903000410180539,
+      "pretraining_reused": true,
+      "original_pretraining_seconds": 128.80282820905268,
+      "search_seconds": 197.78767104202416,
+      "top1": "redundant",
+      "top10_correct": false,
+      "top10_redundant": true,
+      "ranked_classes": [
+        "redundant",
+        "incorrect",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "incorrect",
+        "incorrect"
+      ],
+      "attempted_statuses": {
+        "correct": 0,
+        "redundant": 8,
+        "incorrect": 312
+      },
+      "first_correct": null,
+      "reward_calls": 251,
+      "cache_hits": 69
+    },
+    "ast_bpe_315": {
+      "training_seconds": 0.7576767090067733,
+      "pretraining_reused": true,
+      "original_pretraining_seconds": 160.95463520703197,
+      "search_seconds": 200.23345333398902,
+      "top1": "redundant",
+      "top10_correct": false,
+      "top10_redundant": true,
+      "ranked_classes": [
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "incorrect"
+      ],
+      "attempted_statuses": {
+        "correct": 0,
+        "redundant": 14,
+        "incorrect": 283
+      },
+      "first_correct": null,
+      "reward_calls": 253,
+      "cache_hits": 44
+    },
+    "soft_ast_bpe_315": {
+      "training_seconds": 0.5750346249842551,
+      "pretraining_reused": true,
+      "original_pretraining_seconds": 125.9817344990297,
+      "search_seconds": 242.93546183302533,
+      "top1": "redundant",
+      "top10_correct": false,
+      "top10_redundant": true,
+      "ranked_classes": [
+        "redundant",
+        "redundant",
+        "redundant",
+        "incorrect",
+        "incorrect",
+        "incorrect",
+        "incorrect",
+        "incorrect",
+        "incorrect",
+        "incorrect"
+      ],
+      "attempted_statuses": {
+        "correct": 0,
+        "redundant": 6,
+        "incorrect": 271
+      },
+      "first_correct": null,
+      "reward_calls": 216,
+      "cache_hits": 61
+    },
+    "ast_bpe_350": {
+      "training_seconds": 0.4713305000041146,
+      "pretraining_reused": true,
+      "original_pretraining_seconds": 149.7838928749843,
+      "search_seconds": 253.506375958008,
+      "top1": "correct",
+      "top10_correct": true,
+      "top10_redundant": true,
+      "ranked_classes": [
+        "correct",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "redundant",
+        "incorrect",
+        "incorrect",
+        "incorrect"
+      ],
+      "attempted_statuses": {
+        "correct": 1,
+        "redundant": 14,
+        "incorrect": 280
+      },
+      "first_correct": 518,
+      "reward_calls": 249,
+      "cache_hits": 46
+    },
+    "soft_ast_bpe_350": {
+      "training_seconds": 0.4360954580188263,
+      "pretraining_reused": true,
+      "original_pretraining_seconds": 120.29544149701542,
+      "search_seconds": 258.2509052910027,
+      "top1": "redundant",
+      "top10_correct": false,
+      "top10_redundant": true,
+      "ranked_classes": [
+        "redundant",
+        "redundant",
+        "incorrect",
+        "redundant",
+        "incorrect",
+        "incorrect",
+        "incorrect",
+        "incorrect",
+        "incorrect",
+        "incorrect"
+      ],
+      "attempted_statuses": {
+        "correct": 0,
+        "redundant": 7,
+        "incorrect": 266
+      },
+      "first_correct": null,
+      "reward_calls": 233,
+      "cache_hits": 40
+    }
+  },
+  "elapsed_seconds": 2108.7143621249998,
+  "surrogate_sha256": "1c90bc74b0b3af22362dfa05083687b114a03d99a2308c2d098312cbbcf02e40"
+}

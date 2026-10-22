@@ -1,0 +1,29 @@
+{
+  "training_seconds": 0.4034465840086341,
+  "pretraining_reused": true,
+  "original_pretraining_seconds": 149.7838928749843,
+  "search_seconds": 198.96203999998397,
+  "top1": "incorrect",
+  "top10_correct": false,
+  "top10_redundant": false,
+  "ranked_classes": [
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect"
+  ],
+  "attempted_statuses": {
+    "correct": 0,
+    "redundant": 0,
+    "incorrect": 286
+  },
+  "first_correct": null,
+  "reward_calls": 239,
+  "cache_hits": 47
+}

@@ -1,0 +1,11 @@
+# Python 3.11; author scientific-stack versions. CUDA uses torch's cu121 index.
+torch==2.3.1
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+matplotlib==3.8.4
+sympy==1.12.1
+openpyxl==3.1.5
+tqdm==4.66.5
+tokenizers==0.20.3
+pytest==8.3.3

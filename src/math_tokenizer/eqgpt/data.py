@@ -41,7 +41,11 @@ def canonical(words):
 
 def augment_training(target_name, folder, seed=525, extra_exclusions=()):
     df=pd.read_excel(CODE/'PDE_dataset_0725.xlsx')
-    targets=df[df['Equation name']==target_name]
+    target_names=(target_name,) if isinstance(target_name,str) else tuple(target_name)
+    if not target_names or len(set(target_names))!=len(target_names):raise ValueError('Target names must be unique and nonempty')
+    targets=df[df['Equation name'].isin(target_names)]
+    if not isinstance(target_name,str) and set(target_names)-set(targets['Equation name']):
+        raise ValueError('Unknown handbook target name')
     forbidden={canonical(s.split(',')) for s in targets['Terms']}
     forbidden.update(canonical(s) for s in extra_exclusions)
     # Known product-rule alias: (u*u_x)_x = u_x^2 + u*u_xx.
@@ -62,7 +66,7 @@ def augment_training(target_name, folder, seed=525, extra_exclusions=()):
     env['read_dataset']=lambda Equation_name='': [row.copy() for row in selected]
     state=random.getstate();random.seed(seed)
     try:
-        with working_directory(CODE): seqs=env['get_train_dataset'](target_name,32)
+        with working_directory(CODE): seqs=env['get_train_dataset'](target_names[0],32)
     finally: random.setstate(state)
     assert len(seqs)==32*len(keep)
     for s in seqs:
@@ -72,7 +76,7 @@ def augment_training(target_name, folder, seed=525, extra_exclusions=()):
     payload=json.dumps(seqs,separators=(',',':'))
     (path/'train_gre.json').write_text(payload+'\n')
     info=dict(source_formulas=len(df),training_formulas=len(keep),augmentations=32,
-              training_sequences=len(seqs),target_name=target_name,
+              training_sequences=len(seqs),target_name=target_name if isinstance(target_name,str) else list(target_names),
               removed_equations=removed['Equation name'].tolist(),
               source_sha256=hashlib.sha256((CODE/'PDE_dataset_0725.xlsx').read_bytes()).hexdigest(),
               training_sha256=hashlib.sha256(payload.encode()).hexdigest(),
@@ -108,7 +112,7 @@ class RuntimeCompatibility(ast.NodeTransformer):
 
 def runtime_definitions(filename, env, names, device, smoke=False):
     nodes=[n for n in source_tree(filename).body if isinstance(n,(ast.FunctionDef,ast.ClassDef)) and n.name in names]
-    transform=RuntimeCompatibility(str(device)=='cpu',2 if smoke else None,1 if smoke else None)
+    transform=RuntimeCompatibility(str(device)!='cuda',2 if smoke else None,1 if smoke else None)
     module=ast.fix_missing_locations(transform.visit(ast.Module(body=nodes,type_ignores=[])))
     exec(compile(module,str(CODE/filename),'exec'),env)
     return env

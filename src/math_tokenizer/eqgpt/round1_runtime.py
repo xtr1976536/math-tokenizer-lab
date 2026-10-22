@@ -49,11 +49,11 @@ def shared_surrogate(folder,equation,observations,noise,seed,device,smoke):
     return env,net,database,state,report
 
 
-def train_round1(model,sequences,folder,device,seed,smoke=False):
+def train_round1(model,sequences,folder,device,seed,smoke=False,epochs_override=None):
     """Same Adam/CE/batching and author train_step for every active arm."""
     folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
     identity=hashlib.sha256(json.dumps(sequences).encode()).hexdigest()
-    initial=tensor_hash(model.state_dict());epochs=1 if smoke else 100;batch=2 if smoke else 128
+    initial=tensor_hash(model.state_dict());epochs=epochs_override or (1 if smoke else 100);batch=2 if smoke else 128
     completed=folder/'training.json';weights=folder/'pretrained.pt';progress=folder/'training_progress.pt'
     if completed.exists() and weights.exists():
         report=json.loads(completed.read_text())
