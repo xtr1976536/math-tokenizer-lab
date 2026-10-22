@@ -76,7 +76,7 @@ def main():
     script_root=dest.parent.parent
     source_files=[
         'scripts/eqgpt/fast_reward_case.py','scripts/eqgpt/summarize_fast_reward.py',
-        'scripts/eqgpt/package_fast_reward_release.py',
+        'scripts/eqgpt/package_fast_reward_release.py','scripts/eqgpt/audit_fast_reward_target_exclusion.py',
         'src/math_tokenizer/eqgpt/eqgpt_fast_config.py',
         'src/math_tokenizer/eqgpt/eqgpt_fast_tokenizers.py',
         'src/math_tokenizer/eqgpt/author.py','src/math_tokenizer/eqgpt/data.py',

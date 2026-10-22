@@ -16,6 +16,7 @@
     "scripts/eqgpt/fast_reward_case.py",
     "scripts/eqgpt/summarize_fast_reward.py",
     "scripts/eqgpt/package_fast_reward_release.py",
+    "scripts/eqgpt/audit_fast_reward_target_exclusion.py",
     "src/math_tokenizer/eqgpt/eqgpt_fast_config.py",
     "src/math_tokenizer/eqgpt/eqgpt_fast_tokenizers.py",
     "src/math_tokenizer/eqgpt/author.py",
@@ -26,7 +27,8 @@
   "runtime_sha256": {
     "scripts/eqgpt/fast_reward_case.py": "988a40745496d6da40f4de99f10250e3190d32f6bb2dc59a9e0c9fc9bacfa023",
     "scripts/eqgpt/summarize_fast_reward.py": "b38bb63ac027fe5d86f28a2d2c779af527db107cc6dbcc8025d12f0c38556e1f",
-    "scripts/eqgpt/package_fast_reward_release.py": "db5f081d3b8bffbeaf41f9ce50809a4a4ba7c63f8da677297366cc9575190ffc",
+    "scripts/eqgpt/package_fast_reward_release.py": "5c97d473e280aa2df379ac1efae43070ee7fcd9d772074e7a0a4653dd4de3047",
+    "scripts/eqgpt/audit_fast_reward_target_exclusion.py": "75a8e85b27b1a2c9641eb26c6ce87896f782ae9ab40c9fb4b8145b697906a960",
     "src/math_tokenizer/eqgpt/eqgpt_fast_config.py": "bcab4e5583005aa4d70df40bba63384e0c9f7d56aa7472814e010a737a76d86a",
     "src/math_tokenizer/eqgpt/eqgpt_fast_tokenizers.py": "a4a4f722fb88a475d19452270cb24d8bdcc63d7162298f0aca495c8f7d317451",
     "src/math_tokenizer/eqgpt/author.py": "39837f3b1c0fa24ab0822f50f1ecd92aac7ccdc9f4b9723c44dbe16a2e9c3602",

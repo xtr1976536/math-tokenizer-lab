@@ -6451,8 +6451,8 @@
   },
   {
     "path": "design/release_manifest.json",
-    "bytes": 2003,
-    "sha256": "aea80ec367798dc9dfe19198557ab050b7dc9f5a72f51ff5040b0f683700b10e"
+    "bytes": 2189,
+    "sha256": "0a3f0522c3545b41c35360b237617874c5482cc1f5b47a05f6868c449ca8b853"
   },
   {
     "path": "design/report.md",
@@ -6478,6 +6478,11 @@
     "path": "design/summary.json",
     "bytes": 33176,
     "sha256": "43dcef8f670c03a4d357f5eae81523c306433eae9b3a48ac98782e2fcf5791fd"
+  },
+  {
+    "path": "design/target_exclusion_audit.json",
+    "bytes": 29991,
+    "sha256": "3dc7e26982c4a8c9eae058209511b76e55acef38426cfc815bc0da83b6bc4211"
   },
   {
     "path": "logs/Burgers_equation.log",
