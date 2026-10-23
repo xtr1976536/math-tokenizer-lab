@@ -1,10 +1,10 @@
 # 数学公式分词与 PDE 方程发现
 
-本仓库只保留四块内容：**上游分词实验、下游方程发现实验、实验 benchmark、参考资料**。仓库保持私有。[公开的 Hard AST-BPE 树结构可视化网站](https://xtr1976536.github.io/ast-bpe-visualizer/)展示训练所得规则树、公式结构树、编码和解码；也可[离线打开网页](docs/index.html)，输入公式或选择 1500 条 PDE benchmark 公式。
+本仓库有四块内容：**上游任务、下游任务、benchmark、参考资料**。此外，我们设计了一个[公开的 Hard AST-BPE 分词可视化网页](https://xtr1976536.github.io/ast-bpe-visualizer/)：输入公式后，可以查看训练得到的规则树、公式结构树，以及编码和解码过程。研究仓库仍保持私有；网页也可[离线打开](docs/index.html)。
 
 ## 1. 上游任务
 
-比较 **Hard AST-BPE、Qwen2.5、Llama 3、`o200k_base`** 四个分词器。最新主实验为 1500 条 PDE 的三折测试和“简单训练→复杂测试”；补充实验扫描 Hard AST-BPE 的 200–450 总词表规模。三个指标统一命名为 **tokenizer compression、operation、numbers**，分别对应旧报告的压缩率、Cmd、Num；只改名称，不重算数据。另保留 token 使用次数及概率。
+我们评估 **Hard AST-BPE、Qwen2.5、Llama 3、`o200k_base`** 四个分词器。最新主实验使用 1500 条 PDE 做三折测试和“简单训练→复杂测试”，并扫描 Hard AST-BPE 的 200–450 总词表规模。三个指标统一命名为 **tokenizer compression、operation、numbers**，分别对应旧报告的压缩率、Cmd、Num；只改名称，不重算数据。另保留 token 使用次数及概率。
 
 - [主实验结果](reports/upstream/main_summary.csv)、[词表规模指标](reports/upstream/three_metrics.csv)、[逐 token 使用统计](reports/upstream/per_token_usage.csv)
 - [主实验逐公式记录与冻结词表](experiments/pde1500_main_final_20261022/)、[Hard 词表扫描](experiments/pde1500_sweep_200_450_20261022/)
@@ -17,7 +17,7 @@
 
 ## 2. 下游任务
 
-比较 Hard AST-BPE（280、315、350 ID）与 **EqGPT GRE（57 ID）** 接入同一个缩小后的方程发现模型，在八个已知 PDE 案例中搜索正确方程结构。两个模型均从头训练；每个案例共用一个预先拟合并缓存的 MLP surrogate，保留 EqGPT 原最小二乘 reward、候选排序和 Top-10 继续训练。末尾 PINN 系数拟合没有运行，因此这里比较的是**公式结构发现**，不是系数精度。
+比较  AST-BPE（280、315、350 ID）与 **EqGPT GRE（57 ID）** 接入同一个gpt-2架构的llm，并在八个已知 PDE 案例中搜索正确方程结构。两个模型均从头训练；每个案例共用一个预先拟合并缓存的 MLP surrogate，保留 EqGPT 原最小二乘 reward、候选排序和 Top-10 继续训练。末尾 PINN 系数拟合没有运行，因为我们关注的是**公式结构是否可以被发现**，而不是系数精度。
 
 | 参数 | 本仓库快速实验 | EqGPT 原论文/作者默认设置 |
 |---|---:|---:|
@@ -34,13 +34,11 @@
 
 ## 3. Benchmark
 
-- [上游固定公式集](data/benchmark_pde1500_20261022/)：1500 条 PDE 来自 490 篇论文，简单/中等/复杂按语法结构为 450/600/450；另有 55,644 条原有非 PDE 公式记录。质量检查包括来源回放、解析检查和语义抽查，**不是**专家逐条认证。
-- [下游八案例数据与已拟合 MLP 缓存索引](benchmark/README.md)、[EqGPT 原作者 PDE 结构工作簿](third_party/eqgpt/code/PDE_dataset_0725.xlsx)：八案例是**已知方程回收测试**，不是从未知真实过程发现新 PDE 的 benchmark。
+- [上游固定公式集](data/benchmark_pde1500_20261022/)：我们从 490 篇论文中筛选 1500 条 PDE 公式，并按语法结构分为简单/中等/复杂，比例为 450/600/450；此外保留 55,644 条非 PDE 数学公式。质量检查包括来源回放、解析检查和语义抽查，**没有对全部 1500 条逐条进行专家人工检查**。
+- [下游八案例数据与已拟合 MLP 缓存索引](benchmark/README.md)、[EqGPT 原作者 PDE 结构工作簿](third_party/eqgpt/code/PDE_dataset_0725.xlsx)：这八案例是**已知方程的测试**，目标公式未进入模型的训练语料；我们尚未在前人也未知其有效控制方程的新数据集上完成发现实验。
 
-此前讨论的真实数据新方程 benchmark 尚未定稿，**不在本仓库**。
+## 4. 参考资料和可视化网页
 
-## 4. 参考资料
-
-[参考论文 PDF、原仓库地址与许可说明](参考资料/README.md)。[EqGPT 论文原版完整代码](third_party/eqgpt/论文原版说明.md)单独保存，包含原作者的 PINN 全流程，和本仓库缩小版运行代码分开。第三方原始源码保持原貌；本仓库说明文字先用中文，待内容确认后再制作英文版本。
+[参考论文 PDF、原仓库地址与许可说明](参考资料/README.md)。[EqGPT 论文原版完整代码](third_party/eqgpt/论文原版说明.md)单独保存，包含原作者的 PINN 全流程，和本仓库缩小版运行代码分开。第三方原始源码保持原貌；仓库说明先使用中文，待内容确认后再制作英文版。
 
 网页托管在独立的[公开 GitHub Pages 仓库](https://github.com/xtr1976536/ast-bpe-visualizer)，使用 GitHub 免费计划与 HTTPS；研究仓库继续保持私有。公开站点只发布静态网页、三个分词词表与 1500 条公式的展示字段，不发布原始八案例数据、模型权重或私有实验日志。
