@@ -82,7 +82,10 @@ def summarize(rows):
 
 def save_csv(path, rows):
     with path.open('w', newline='') as f:
-        writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+        rename={'compression_ratio':'tokenizer compression','cmd_pct':'operation','num_pct':'numbers'} if path.name=='three_metrics.csv' else {}
+        writer=csv.DictWriter(f,fieldnames=[rename.get(k,k) for k in rows[0]])
+        writer.writeheader()
+        writer.writerows({rename.get(k,k):v for k,v in row.items()} for row in rows)
 
 
 def plot(metrics, summaries, rows):

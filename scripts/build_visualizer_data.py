@@ -32,6 +32,9 @@ def main():
             formulas.append({
                 "id": row["id"], "latex": latex,
                 "level": row["complexity_bin"],
+                "title": row.get("title"),
+                "source_url": row.get("abstract_url"),
+                "license": row.get("license"),
                 "spans": list(structure_native(latex).spans),
             })
     (OUT / "pde1500.json").write_text(json.dumps(formulas, ensure_ascii=False, separators=(",", ":")) + "\n")

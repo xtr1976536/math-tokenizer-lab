@@ -48,12 +48,23 @@ def audit():
         model = json.loads((ROOT / f"docs/data/hard-{size}.json").read_text())
         assert len(model["compact_ids"]) + 3 == size
     assert (ROOT / "docs/data/离线数据.js").is_file()
+    assert all(row.get("source_url", "").startswith("https://arxiv.org/abs/") for row in web)
+    assert all(row.get("title") and row.get("license") for row in web)
+    assert not any(host in (ROOT / "docs/index.html").read_text()
+                   for host in ("fonts.googleapis.com", "fonts.gstatic.com"))
+    for name in ("train_gpt.py", "continue_train_GPT.py", "PINN_optimization.py", "surrogate_model.py"):
+        assert (ROOT / "third_party/eqgpt/code" / name).is_file()
+    weights = json.loads((ROOT / "benchmark/weights_manifest.json").read_text())
+    records = [*weights["pretrained"].values(),
+               *(record for case in weights["searched"].values() for record in case.values())]
+    assert len(weights["pretrained"]) == 4 and len(weights["searched"]) == 8 and len(records) == 36
+    assert len({record["asset"] for record in records}) == 36
     assert len(list((ROOT / "参考资料/PDF").glob("*.pdf"))) == 4
     assert all(path.stat().st_size < 95_000_000 for path in ROOT.rglob("*") if path.is_file() and ".git" not in path.parts)
     digest = hashlib.sha256((ROOT / "data/benchmark_pde1500_20261022/pde_equations.jsonl.gz").read_bytes()).hexdigest()
     return {"检查": "通过", "上游方法": sorted(FOUR), "下游案例": len(CASES),
             "下游实验": len(rows), "PDE公式": len(formulas), "公式文件SHA256": digest,
-            "参考PDF": 4, "网页": "离线数据齐全"}
+            "参考PDF": 4, "已训练权重": len(records), "网页": "离线数据与来源字段齐全"}
 
 
 if __name__ == "__main__":

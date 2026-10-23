@@ -1,4 +1,4 @@
-experiment,method,vocab,compression,cmd,num
+experiment,method,vocab,tokenizer compression,operation,numbers
 三折汇总,ast_bpe,104,1.0432603534687417,0.0,98.26808587407541
 三折汇总,ast_bpe,112,1.1442743374982838,12.829166027509332,98.26808587407541
 三折汇总,ast_bpe,120,1.2174246495296628,12.829166027509332,98.26808587407541

@@ -1,7 +1,7 @@
 const el = id => document.getElementById(id);
 const encoder = new TextEncoder();
 const decoder = new TextDecoder();
-const state = {size: 350, models: {}, samples: [], selected: null, level: 'all', steps: [], current: 0, timer: null};
+const state = {size: 350, models: {}, samples: [], selected: null, level: 'all', view: 'encoding', steps: [], current: 0, timer: null};
 const hex = bytes => Array.from(bytes, byte => byte.toString(16).padStart(2, '0')).join('');
 const bytes = value => new Uint8Array(value.match(/../g).map(part => parseInt(part, 16)));
 const visible = value => value.replaceAll(' ', '␠').replaceAll('\n', '↵').replaceAll('\t', '⇥').replaceAll('\r', '↵');
@@ -166,6 +166,114 @@ function tokenize(formula, model, spans) {
 globalThis.astBpeVisualizer = {tokenize, bindingSpans};
 
 function stop() { if (state.timer) clearInterval(state.timer); state.timer = null; el('play').textContent = '▶ 播放'; }
+function treeRow(kind, label, range, active, onSelect) {
+  const row = document.createElement('button'); row.type = 'button'; row.className = `tree-row${active ? ' active' : ''}`;
+  const category = document.createElement('span'); category.className = 'tree-kind'; category.textContent = kind;
+  const text = document.createElement('span'); text.className = 'tree-text'; text.textContent = visible(label) || '∅';
+  const position = document.createElement('span'); position.className = 'tree-range'; position.textContent = range;
+  row.append(category, text, position); row.onclick = onSelect; return row;
+}
+function labelForSpan(raw, node) {
+  const value = decoder.decode(raw.slice(node.start, node.end));
+  if (node.start === 0 && node.end === raw.length) return '公式';
+  if (value.startsWith('\\')) return '命令';
+  if (value.startsWith('{') || value.startsWith('(')) return '分组';
+  if (value.includes('^') || value.includes('_')) return '上下标';
+  return node.children.length ? '子表达式' : '词法单元';
+}
+function intervalTree(raw, spans) {
+  const n = raw.length, unique = new Map();
+  for (const [start, end] of spans) if (end > start && start >= 0 && end <= n) unique.set(`${start}:${end}`, {start, end, children: []});
+  const root = unique.get(`0:${n}`) || {start: 0, end: n, children: []};
+  const nodes = [...unique.values()].filter(node => node !== root).sort((a, b) => b.end - b.start - (a.end - a.start) || a.start - b.start);
+  for (const node of nodes) {
+    let parent = root;
+    for (const candidate of nodes) {
+      if (candidate === node || candidate.end - candidate.start <= node.end - node.start) continue;
+      if (candidate.start <= node.start && candidate.end >= node.end && candidate.end - candidate.start < parent.end - parent.start) parent = candidate;
+    }
+    parent.children.push(node);
+  }
+  const sort = node => {node.children.sort((a, b) => a.start - b.start || b.end - a.end); node.children.forEach(sort);}; sort(root);
+  return root;
+}
+function renderFormulaBranch(node, raw, step, depth = 0) {
+  const container = document.createElement('div'); container.className = depth ? 'branch' : 'tree-root';
+  const snippet = decoder.decode(raw.slice(node.start, node.end));
+  const match = step?.tokens.find(token => token.start === node.start && token.end === node.end);
+  const highlighted = !!step?.merge && node.start <= step.merge.left.start && node.end >= step.merge.right.end;
+  const label = match && depth ? `${snippet}  [${match.id}]` : snippet;
+  container.append(treeRow(labelForSpan(raw, node), label, `${node.start}:${node.end}`, highlighted && (node.end - node.start < raw.length), () => {
+    el('inspector-label').textContent = '结构节点';
+    el('inspector-title').textContent = snippet;
+    el('inspector-detail').textContent = `字节 ${node.start}–${node.end}；${node.children.length} 个直接子节点${match ? `；当前内部 token ID ${match.id}` : ''}。合并不得只跨过该区间的一部分。`;
+  }));
+  if (node.children.length && depth < 18) {
+    const children = document.createElement('div'); children.className = 'tree-children';
+    for (const child of node.children) children.append(renderFormulaBranch(child, raw, step, depth + 1));
+    container.append(children);
+  }
+  return container;
+}
+function renderRuleBranch(id, model, rules, depth = 0) {
+  const container = document.createElement('div'); container.className = depth ? 'branch' : 'tree-root';
+  const value = decoder.decode(bytes(model.vocab[id]));
+  const rule = rules.get(id);
+  container.append(treeRow(rule ? `规则 #${rule.rank + 1}` : '基础字节', value, `内部 ID ${id}`, depth === 0, () => {
+    el('inspector-label').textContent = rule ? '训练得到的合并' : '初始字节';
+    el('inspector-title').textContent = visible(value);
+    el('inspector-detail').textContent = rule ? `规则优先级 ${rule.rank + 1}；由内部 ID ${rule.left} 与 ${rule.right} 合并。这里展示冻结词表的规则分解，训练时每轮全语料词频未保存。` : `内部 ID ${id}；初始字节，不需要合并。`;
+  }));
+  if (rule && depth < 30) {
+    const children = document.createElement('div'); children.className = 'rule-subtree';
+    children.append(renderRuleBranch(rule.left, model, rules, depth + 1));
+    children.append(renderRuleBranch(rule.right, model, rules, depth + 1));
+    container.append(children);
+  }
+  return container;
+}
+function renderTree() {
+  const output = el('tree-view'); output.replaceChildren();
+  if (!calculation) {output.textContent = '输入公式后显示结构树'; return;}
+  const model = state.models[state.size], current = calculation.steps[state.current];
+  const rules = new Map(model.merges.map(([left, right, id], rank) => [id, {left, right, rank}]));
+  const note = document.createElement('p'); note.className = 'tree-note';
+  if (state.view === 'training') {
+    el('tree-title').textContent = '学习到的合并规则树';
+    el('tree-caption').textContent = '训练规则 · 词表中的合并优先级';
+    const activeRule = current.merge?.rule || {id: model.merges[0][2], rank: 0};
+    note.textContent = `当前查看第 ${activeRule.rank + 1} 条规则。树叶为初始字节，内部节点为训练得到的合并。`;
+    output.append(note, renderRuleBranch(activeRule.id, model, rules));
+    el('inspector-label').textContent = '规则来源';
+    el('inspector-title').textContent = `规则 #${activeRule.rank + 1}`;
+    el('inspector-detail').textContent = '规则来自固定的 Hard AST-BPE 词表。训练时限制跨越公式结构区间；网页回放已学习规则，不伪造未保存的全语料训练频率。';
+  } else if (state.view === 'encoding') {
+    el('tree-title').textContent = '公式 AST / 语法绑定树';
+    el('tree-caption').textContent = '编码 · 结构区间约束 token 合并';
+    note.textContent = '从公式根节点向下查看分组、命令、上下标和词法单元；橙色路径是当前合并所在位置。';
+    output.append(note, renderFormulaBranch(intervalTree(calculation.raw, calculation.regions), calculation.raw, current));
+    el('inspector-label').textContent = '编码步骤';
+    el('inspector-title').textContent = `${state.current} / ${calculation.steps.length - 1}`;
+    el('inspector-detail').textContent = current.merge ? `本步应用规则 #${current.merge.rule.rank + 1}，合并字节 ${current.merge.left.start}–${current.merge.right.end}；结构树阻止部分跨界合并。` : '初始状态：一个字节对应一个基础 token，随后依照合并规则的优先级逐步编码。';
+  } else {
+    el('tree-title').textContent = 'Token 解码树';
+    el('tree-caption').textContent = '解码 · Token ID → 规则子树 → 原始公式';
+    note.textContent = `最终 ${calculation.finalIds.length} 个 token。展开任意 token 可查看它由哪些基础字节合并而来。`;
+    output.append(note);
+    const list = document.createElement('div'); list.className = 'decode-list';
+    const final = calculation.steps.at(-1).tokens;
+    final.forEach((token, index) => {
+      const details = document.createElement('details'); details.className = 'decode-token';
+      if (index === 0) details.open = true;
+      const summary = document.createElement('summary'); summary.textContent = `#${index + 1} · ID ${calculation.finalIds[index]} · ${visible(decoder.decode(calculation.raw.slice(token.start, token.end)))}`;
+      details.append(summary, renderRuleBranch(token.id, model, rules)); list.append(details);
+    });
+    output.append(list);
+    el('inspector-label').textContent = '解码结果';
+    el('inspector-title').textContent = `${calculation.finalIds.length} 个 token`;
+    el('inspector-detail').textContent = '按序拼接各 token 的 UTF-8 字节后，得到左侧输入的原始公式；无规范化或改写。';
+  }
+}
 function showSamples() {
   const query = el('search').value.trim().toLowerCase();
   const matching = state.samples.filter(row => (state.level === 'all' || row.level === state.level) && (!query || row.latex.toLowerCase().includes(query) || row.id.toLowerCase().includes(query)));
@@ -196,6 +304,7 @@ function render() {
   el('compression').textContent = result?.finalIds.length ? (result.raw.length / result.finalIds.length).toFixed(2) + '×' : '—';
   el('stage-title').textContent = !result ? '等待公式' : state.current === 0 ? '初始字节序列' : state.current === result.steps.length - 1 ? '最终分词结果' : `第 ${state.current} 次合并`;
   el('byte-count').textContent = `${result?.raw.length || 0} 字节`;
+  renderTree();
   const track = el('token-track'); track.replaceChildren();
   if (!step) {const empty = document.createElement('span'); empty.className = 'token empty'; empty.textContent = '输入公式后将在这里显示 token'; track.append(empty); return;}
   for (const token of step.tokens) {
@@ -215,9 +324,16 @@ function render() {
 function refresh() {
   stop(); state.current = 0; calculation = null;
   const text = el('formula').value; const notice = el('notice'); notice.hidden = true;
+  const source = state.selected?.latex === text ? state.selected : null;
+  el('formula-source').hidden = !source;
+  if (source) {
+    const link = el('source-link'); link.textContent = source.title || source.id;
+    link.href = source.source_url || '#';
+    el('source-license').textContent = source.license === 'not_confirmed' ? '许可状态未确认' : (source.license || '未标明许可');
+  }
   if (!text) { render(); return; }
   try {
-    const row = state.selected?.latex === text ? state.selected : null;
+    const row = source;
     calculation = tokenize(text, state.models[state.size], row?.spans);
     el('status').textContent = row ? 'Benchmark 公式' : '自定义公式';
   } catch (error) { notice.textContent = error.message; notice.hidden = false; el('status').textContent = '无法分词'; }
@@ -238,6 +354,7 @@ if (typeof document !== 'undefined') {
   el('search').addEventListener('input', showSamples);
   document.querySelectorAll('[data-level]').forEach(button => button.onclick = () => {state.level = button.dataset.level; document.querySelectorAll('[data-level]').forEach(item => item.classList.toggle('selected', item === button)); showSamples();});
   document.querySelectorAll('[data-size]').forEach(button => button.onclick = () => {state.size = Number(button.dataset.size); document.querySelectorAll('[data-size]').forEach(item => item.classList.toggle('selected', item === button)); refresh();});
+  document.querySelectorAll('[data-view]').forEach(button => button.onclick = () => {state.view = button.dataset.view; document.querySelectorAll('[data-view]').forEach(item => {item.classList.toggle('selected', item === button); item.setAttribute('aria-selected', item === button ? 'true' : 'false');}); renderTree();});
   el('reset').onclick = () => {stop(); state.current = 0; render();};
   el('previous').onclick = () => {stop(); state.current = Math.max(0, state.current - 1); render();};
   el('next').onclick = () => {stop(); state.current = Math.min(calculation.steps.length - 1, state.current + 1); render();};
