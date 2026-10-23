@@ -1,4 +1,4 @@
-"""Frozen quick reward-search protocol and target-excluded compact tokenizers."""
+"""保留八案例的 Hard AST-BPE 与 EqGPT GRE 快速实验参数。"""
 import json
 from pathlib import Path
 

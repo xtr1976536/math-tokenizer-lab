@@ -1,4 +1,19 @@
 {
+  "eqgpt_reference": {
+    "parameters": 19014201,
+    "trainable_parameters": 19014201,
+    "backbone_initial_sha256": "99a5c84e453f6240cb88efc22c85e956852bcf253c54462edeaf174fc4f024f1",
+    "input_shape": [
+      57,
+      768
+    ],
+    "output_shape": [
+      57,
+      768
+    ],
+    "positions": 50,
+    "pretrained_weights": false
+  },
   "ast_bpe_280": {
     "parameters": 19356952,
     "trainable_parameters": 19356952,

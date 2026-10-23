@@ -22,10 +22,10 @@
     },
     {
       "case": "KG_equation",
-      "handbook_name": "Klein\u2013Gordon_u",
+      "handbook_name": "Klein–Gordon_u",
       "coefficient_free_term_key": "((('u', 1),), (('utt', 1),), (('uxx', 1),))",
       "same_structure_handbook_rows": [
-        "Klein\u2013Gordon_u",
+        "Klein–Gordon_u",
         "3.3"
       ]
     },
@@ -63,10 +63,10 @@
     },
     {
       "case": "Chaffee_Infante_equation",
-      "handbook_name": "Chafee\u2013Infante equation",
+      "handbook_name": "Chafee–Infante equation",
       "coefficient_free_term_key": "((('u', 1),), (('u^3', 1),), (('ut', 1),), (('uxx', 1),))",
       "same_structure_handbook_rows": [
-        "Chafee\u2013Infante equation"
+        "Chafee–Infante equation"
       ]
     }
   ],
@@ -77,16 +77,16 @@
     "6.2.13",
     "8.14.1d",
     "Bateman-Burgers equation",
-    "Chafee\u2013Infante equation",
+    "Chafee–Infante equation",
     "KdV equation",
-    "Klein\u2013Gordon_u"
+    "Klein–Gordon_u"
   ],
   "excluded_row_count": 9,
   "coefficient_handling": "Target matching uses coefficient-free canonical term multisets; coefficient-only variants have the same key and are excluded.",
   "tokenizer_rule": "Tokenizer corpus hash matches the exact target-excluded LaTeX strings consumed by the training adapters.",
   "transformer_rule": "Recomputed method-specific tokenized sequence hash equals each saved training.json sequence hash; each stored and decoded training sequence is target-structure-free.",
   "case_count": 8,
-  "model_training_stream_count": 24,
+  "model_training_stream_count": 32,
   "cases": [
     {
       "case": "Wave_equation",
@@ -96,6 +96,15 @@
       "tokenizer_corpus_sha256": "13b38624be147527363f789a32549789fd512040424a89d2977f65dc0bc23d05",
       "removed_target_and_coefficient_variant_rows": 9,
       "arms": [
+        {
+          "arm": "eqgpt_reference",
+          "training_examples": 6784,
+          "training_sequence_sha256": "24e037f404c24eb14149bdfcd426bc2c296fe41bb3a258d87938a9f74cde2d7c",
+          "tokenizer_training_corpus_sha256": null,
+          "encoded_sequences_checked": 6784,
+          "roundtrip_checked": false,
+          "target_structures_found": 0
+        },
         {
           "arm": "ast_bpe_280",
           "training_examples": 6784,
@@ -134,6 +143,15 @@
       "removed_target_and_coefficient_variant_rows": 9,
       "arms": [
         {
+          "arm": "eqgpt_reference",
+          "training_examples": 6784,
+          "training_sequence_sha256": "24e037f404c24eb14149bdfcd426bc2c296fe41bb3a258d87938a9f74cde2d7c",
+          "tokenizer_training_corpus_sha256": null,
+          "encoded_sequences_checked": 6784,
+          "roundtrip_checked": false,
+          "target_structures_found": 0
+        },
+        {
           "arm": "ast_bpe_280",
           "training_examples": 6784,
           "training_sequence_sha256": "1cf74af010e85d60932397f36db2a51a482968f6a524bab5663a18732ee74403",
@@ -170,6 +188,15 @@
       "tokenizer_corpus_sha256": "13b38624be147527363f789a32549789fd512040424a89d2977f65dc0bc23d05",
       "removed_target_and_coefficient_variant_rows": 9,
       "arms": [
+        {
+          "arm": "eqgpt_reference",
+          "training_examples": 6784,
+          "training_sequence_sha256": "24e037f404c24eb14149bdfcd426bc2c296fe41bb3a258d87938a9f74cde2d7c",
+          "tokenizer_training_corpus_sha256": null,
+          "encoded_sequences_checked": 6784,
+          "roundtrip_checked": false,
+          "target_structures_found": 0
+        },
         {
           "arm": "ast_bpe_280",
           "training_examples": 6784,
@@ -208,6 +235,15 @@
       "removed_target_and_coefficient_variant_rows": 9,
       "arms": [
         {
+          "arm": "eqgpt_reference",
+          "training_examples": 6784,
+          "training_sequence_sha256": "24e037f404c24eb14149bdfcd426bc2c296fe41bb3a258d87938a9f74cde2d7c",
+          "tokenizer_training_corpus_sha256": null,
+          "encoded_sequences_checked": 6784,
+          "roundtrip_checked": false,
+          "target_structures_found": 0
+        },
+        {
           "arm": "ast_bpe_280",
           "training_examples": 6784,
           "training_sequence_sha256": "1cf74af010e85d60932397f36db2a51a482968f6a524bab5663a18732ee74403",
@@ -244,6 +280,15 @@
       "tokenizer_corpus_sha256": "13b38624be147527363f789a32549789fd512040424a89d2977f65dc0bc23d05",
       "removed_target_and_coefficient_variant_rows": 9,
       "arms": [
+        {
+          "arm": "eqgpt_reference",
+          "training_examples": 6784,
+          "training_sequence_sha256": "24e037f404c24eb14149bdfcd426bc2c296fe41bb3a258d87938a9f74cde2d7c",
+          "tokenizer_training_corpus_sha256": null,
+          "encoded_sequences_checked": 6784,
+          "roundtrip_checked": false,
+          "target_structures_found": 0
+        },
         {
           "arm": "ast_bpe_280",
           "training_examples": 6784,
@@ -282,6 +327,15 @@
       "removed_target_and_coefficient_variant_rows": 9,
       "arms": [
         {
+          "arm": "eqgpt_reference",
+          "training_examples": 6784,
+          "training_sequence_sha256": "24e037f404c24eb14149bdfcd426bc2c296fe41bb3a258d87938a9f74cde2d7c",
+          "tokenizer_training_corpus_sha256": null,
+          "encoded_sequences_checked": 6784,
+          "roundtrip_checked": false,
+          "target_structures_found": 0
+        },
+        {
           "arm": "ast_bpe_280",
           "training_examples": 6784,
           "training_sequence_sha256": "1cf74af010e85d60932397f36db2a51a482968f6a524bab5663a18732ee74403",
@@ -319,6 +373,15 @@
       "removed_target_and_coefficient_variant_rows": 9,
       "arms": [
         {
+          "arm": "eqgpt_reference",
+          "training_examples": 6784,
+          "training_sequence_sha256": "24e037f404c24eb14149bdfcd426bc2c296fe41bb3a258d87938a9f74cde2d7c",
+          "tokenizer_training_corpus_sha256": null,
+          "encoded_sequences_checked": 6784,
+          "roundtrip_checked": false,
+          "target_structures_found": 0
+        },
+        {
           "arm": "ast_bpe_280",
           "training_examples": 6784,
           "training_sequence_sha256": "1cf74af010e85d60932397f36db2a51a482968f6a524bab5663a18732ee74403",
@@ -355,6 +418,15 @@
       "tokenizer_corpus_sha256": "13b38624be147527363f789a32549789fd512040424a89d2977f65dc0bc23d05",
       "removed_target_and_coefficient_variant_rows": 9,
       "arms": [
+        {
+          "arm": "eqgpt_reference",
+          "training_examples": 6784,
+          "training_sequence_sha256": "24e037f404c24eb14149bdfcd426bc2c296fe41bb3a258d87938a9f74cde2d7c",
+          "tokenizer_training_corpus_sha256": null,
+          "encoded_sequences_checked": 6784,
+          "roundtrip_checked": false,
+          "target_structures_found": 0
+        },
         {
           "arm": "ast_bpe_280",
           "training_examples": 6784,

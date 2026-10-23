@@ -6,7 +6,7 @@ from pathlib import Path
 
 from .author import DICTIONARY
 
-NAMES = ("eqgpt", "ast_bpe", "soft_ast_bpe")
+NAMES = ("eqgpt", "ast_bpe")
 
 class Adapter:
     """A GRE action remains one scientific term/operator in every arm.
@@ -65,21 +65,11 @@ class Adapter:
 
 def train_adapters(sequences, folder, capacity=1024):
     from math_tokenizer.hard_ast_2026 import HardASTBPE
-    from math_tokenizer.atomic_bpe_v7 import AtomicBPE
-    from math_tokenizer.rl_route_v6 import derive_atoms
-    from math_tokenizer.ast_boundary_v8 import BoundaryAST
     folder = Path(folder); folder.mkdir(parents=True,exist_ok=True)
     texts = [','.join(DICTIONARY['id2word'][int(i)] for i in seq[1:] if i!=1) for seq in sequences]
     hard = HardASTBPE.train(texts,capacity-3)
-    rows = [dict(latex=t) for t in texts]
-    atoms = derive_atoms(rows,capacity-3,384)
-    math_bpe = AtomicBPE.train(rows,atoms,capacity-3)
-    soft = BoundaryAST(math_bpe.vocab,.25,.30)
-    soft.capacity=len(soft.vocab);soft.train_seconds=math_bpe.train_seconds
-    soft.training_log=[dict(vocabulary='train-only mathematical BPE',tree_penalty=.25,boundary_penalty=.30)]
-    hard.save(folder/'ast_bpe.json');soft.save(folder/'soft_ast_bpe.json')
-    adapters = {'eqgpt':Adapter('eqgpt'),'ast_bpe':Adapter('ast_bpe',hard),
-                'soft_ast_bpe':Adapter('soft_ast_bpe',soft)}
+    hard.save(folder/'ast_bpe.json')
+    adapters = {'eqgpt':Adapter('eqgpt'),'ast_bpe':Adapter('ast_bpe',hard)}
     for name, a in adapters.items():
         (folder/f'{name}_adapter.json').write_text(json.dumps(a.manifest(),indent=2)+'\n')
     return adapters
@@ -87,10 +77,8 @@ def train_adapters(sequences, folder, capacity=1024):
 
 def load_adapters(folder):
     from math_tokenizer.hard_ast_2026 import HardASTBPE
-    from math_tokenizer.ast_boundary_v8 import BoundaryAST
     folder=Path(folder)
-    return {'eqgpt':Adapter('eqgpt'),'ast_bpe':Adapter('ast_bpe',HardASTBPE.load(folder/'ast_bpe.json')),
-            'soft_ast_bpe':Adapter('soft_ast_bpe',BoundaryAST.load(folder/'soft_ast_bpe.json'))}
+    return {'eqgpt':Adapter('eqgpt'),'ast_bpe':Adapter('ast_bpe',HardASTBPE.load(folder/'ast_bpe.json'))}
 
 
 def common_positions(adapters):

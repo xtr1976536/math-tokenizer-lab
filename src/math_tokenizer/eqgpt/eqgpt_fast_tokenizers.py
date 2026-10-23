@@ -9,13 +9,13 @@ def train_or_load(texts,folder,sizes,alphabet):
     folder.mkdir(parents=True,exist_ok=True)
     fingerprint=hashlib.sha256(json.dumps(texts,ensure_ascii=False).encode()).hexdigest()
     manifest=folder/'manifest.json'
-    expected=dict(corpus_sha256=fingerprint,sizes=list(sizes),alphabet=list(alphabet))
+    expected=dict(corpus_sha256=fingerprint,sizes=list(sizes),alphabet=list(alphabet),methods=['ast_bpe'])
     if manifest.exists():
         assert json.loads(manifest.read_text())==expected
     else:manifest.write_text(json.dumps(expected,indent=2)+'\n')
     models={}
     for size in sizes:
-        for method in ('ast_bpe','soft_ast_bpe'):
+        for method in ('ast_bpe',):
             path=folder/f'{method}_{size}.model.json'
             if path.exists():model=CompactAlphabet.load(path)
             else:

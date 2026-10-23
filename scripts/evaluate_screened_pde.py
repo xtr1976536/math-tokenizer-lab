@@ -1,4 +1,4 @@
-"""Frozen three-fold PDE-only intrinsic study on an immutable screened snapshot."""
+"""固定 1500 条 PDE 上四分词器评估：三折及简单训练到复杂测试。"""
 import argparse
 import bisect
 from collections import Counter, defaultdict
@@ -12,9 +12,8 @@ import time
 
 from math_tokenizer.corpus import ROOT
 from math_tokenizer.eqgpt.compact_alphabet import CompactAlphabet, train_compact
-from math_tokenizer.final_models import load_final
 from math_tokenizer.metrics_v2 import token_bytes
-from math_tokenizer.rl_route_v6 import AtomCodec, derive_atoms
+from scripts.当前四分词器 import load as load_current
 
 ALPHABET=list(range(32,127))+[9,10,13]
 BASELINES=('Qwen2.5-0.5B','meta-llama/Meta-Llama-3-8B','tiktoken_o200k_base')
@@ -100,7 +99,7 @@ def token_coverage(model,rows):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--output',required=True)
-    parser.add_argument('--data',default='data/pde_expansion_20261022/screened_equations.jsonl.gz')
+    parser.add_argument('--data',default='data/benchmark_pde1500_20261022/pde_equations.jsonl.gz')
     parser.add_argument('--sizes',default='256')
     parser.add_argument('--ast-only',action='store_true')
     args=parser.parse_args();out=ROOT/args.output
@@ -114,7 +113,6 @@ def main():
     protocol=dict(data_sha256=sha(snapshot.read_bytes()),equations=len(rows),
         alphabet=ALPHABET,base_bytes=len(ALPHABET),sizes=sizes,
         compression_definition='sum(initial one-byte alphabet tokens)/sum(final tokens); shared source-byte numerator across all methods',
-        supplementary_compression='For soft AST, method initial alphabet includes training-derived complete command atoms; separately reported',
         cmd_definition='percent of complete backslash+ASCII-letter command lexemes with no internal boundary',
         num_definition='percent of [0-9]+(?:decimal fraction)? lexemes with no internal boundary',
         experiment_scope='PDE equation screened snapshot only; no other-math training or scoring',
@@ -125,12 +123,14 @@ def main():
         assert json.loads(pfile.read_text())==protocol
     else:
         pfile.write_text(json.dumps(protocol,indent=2)+'\n')
-    baselines={} if args.ast_only else {name:load_final(name) for name in BASELINES}
+    names={'Qwen2.5-0.5B':'qwen2.5','meta-llama/Meta-Llama-3-8B':'llama3',
+           'tiktoken_o200k_base':'o200k_base'}
+    baselines={} if args.ast_only else {name:load_current(alias) for name,alias in names.items()}
     results=[]
     for pname,plan in plans.items():
         folder=out/pname;folder.mkdir(exist_ok=True)
         train=[r['latex'] for r in plan['train']]
-        for method,size in [(name,None) for name in baselines]+[(name,size) for size in sizes for name in ('ast_bpe','soft_ast_bpe')]:
+        for method,size in [(name,None) for name in baselines]+[("ast_bpe",size) for size in sizes]:
             stem=method.replace('/','--')+'_'+str(size or 'official')
             path=folder/(stem+'.json')
             if path.exists():
@@ -144,9 +144,6 @@ def main():
                 reloaded=CompactAlphabet.load(cp)
                 for r in plan['test'][:8]:
                     assert model.encode(r['latex'])==reloaded.encode(r['latex'])
-                if method=='soft_ast_bpe':
-                    atoms=derive_atoms([dict(latex=t) for t in train],size+256-len(ALPHABET)-3,384)
-                    initial=AtomCodec(atoms)
             summary,rr,usage=measure(model,plan['test'],initial)
             summary.update(protocol=pname,method=method,total_ids=size or model.vocab_size,
                            seconds=time.monotonic()-started)
@@ -159,7 +156,7 @@ def main():
                     long_rare_train_pieces=sum(len(b)>16 and train_usage[i]<=10 for i,b in enumerate(model.vocab)))
                 _,train_formulas,train_papers=token_coverage(model,plan['train'])
                 _,test_formulas,test_papers=token_coverage(model,plan['test'])
-                atom_payloads=set(initial.atoms[256:]) if initial else set()
+                atom_payloads=set()
                 with (folder/(stem+'.tokens.csv')).open('w',newline='') as f:
                     w=csv.writer(f);w.writerow(['content_id','type','text','hex','bytes','train_count','train_probability','train_formulas','train_papers','test_count','test_probability','test_formulas','test_papers'])
                     for i,b in enumerate(model.vocab):

@@ -5,7 +5,7 @@ MAIN_CASES = (
     'Convection_diffusion_equation', 'PDE_divide', 'Eq_6_2_12',
     'PDE_compound', 'Possion_x_y',
 )
-LATEX_METHODS = ('ast_bpe', 'soft_ast_bpe')
+LATEX_METHODS = ('ast_bpe',)
 METHODS = (*LATEX_METHODS, 'eqgpt_reference')
 SEEDS = (525,)
 VERSION = 'eqgpt-round1-main-v2'

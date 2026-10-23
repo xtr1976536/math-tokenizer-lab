@@ -1,14 +1,8 @@
-# Attribution and redistribution scope
+# 许可与来源说明
 
-The root MIT license covers original project code. It does not relicense upstream tokenizer assets or extracted source formulas.
+根目录 `LICENSE` 仅适用于本项目原创代码，不改变第三方源码、分词器词表、论文或公式数据的许可证。
 
-- The active mathematical formula catalog carries per-record author/title/version/license/source attribution. arXiv records are fixed pre-2020 CC BY 3.0 / CC BY 4.0 / CC0 versions. Full raw manuscript archives remain excluded from Git.
-- OpenAI math extractions: Apache-2.0, possible_mixed provenance. FunGrim: MIT, Fredrik Johansson, 1,889 accepted strings. SymPy: BSD-3-Clause, 72 accepted strings. Source formulas are not unconditional mathematical truth labels.
-- EqGPT workbook-derived structures and simple assistant-generated templates remain historical supplementary material, outside the accepted current complete-formula catalog. Original historical attribution is preserved in history/NOTICE.md and per-record metadata.
-- Hugging Face tokenizers and SentencePiece: Apache-2.0. tiktoken: MIT. Installed official library source is not modified.
-- The selected Qwen2.5-0.5B tokenizer configuration is now included under models/baselines/Qwen2.5-0.5B/, with its pinned SHA-256 in the registry. Upstream model assets are Apache-2.0; see the official Qwen/Qwen2.5-0.5B repository.
-- Llama 3 reference tokenizer source, license, official-identical configuration and deterministic byte-rank conversion are in models/baselines/Meta-Llama-3-8B/. Meta's Llama 3 license and notices apply. Pinned hashes and provenance are in models/baselines/llama3_provenance.json.
-- Original historical metric and baseline code has its license snapshots in references/ and remains traceable through history/. The current mathematical source metrics are project-defined diagnostics, distinct from third-party metrics.
-- The presentation uses the user-provided local GBFR Beamer template. Bibliographic references link to original papers; their PDF manuscripts are not republished. All three result figures are generated from this project's audited data. The included PowerPoint is an exact page rendition; editable content is in the Beamer source bundle.
-
-Formula-only files inherit their records' licenses. The unified catalog and directory names do not override upstream terms. Historical logs retain original paths; original reproducibility is available at Git commit 5217a5a.
+- EqGPT 原作者源码、八案例数据及 PDE 结构工作簿来自 [EqGPT 仓库](https://github.com/woshixuhao/EqGPT)；原许可和文件哈希见 `third_party/eqgpt/LICENSE`、`third_party/eqgpt/provenance.json`。
+- Qwen 分词器文件与 Llama 3 分词器文件分别遵守各自原项目许可；Llama 许可证见 `models/Meta-Llama-3-8B/LICENSE`，来源校验见 `models/llama3_provenance.json`。`o200k_base` 由安装的 tiktoken 提供。
+- 1500 条 PDE 及非 PDE 公式保留逐记录来源与许可信息。公式筛查和分类用于本项目实验，不代表原论文作者认可或专家逐条验证。
+- `参考资料/PDF/` 中论文的版权归相应作者及出版方；引用、分享或改编应遵守各自许可。

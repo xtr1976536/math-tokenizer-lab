@@ -3,14 +3,10 @@ from __future__ import annotations
 import hashlib,json,math
 from pathlib import Path
 import numpy as np
-from tokenizers import Tokenizer,models
-from math_tokenizer.atomic_bpe_v7 import AtomicBPE
-from math_tokenizer.ast_boundary_v8 import BoundaryAST
 from math_tokenizer.hard_ast_2026 import HardASTBPE
-from math_tokenizer.rl_route_v6 import derive_atoms
 from .latex_codec import LatexParser,key
 
-METHODS=('ast_bpe','soft_ast_bpe')
+METHODS=('ast_bpe',)
 
 class LatexAdapter:
     pad=0;eos=1;bos=2;offset=3
@@ -29,37 +25,18 @@ class LatexAdapter:
 
 def train_one(name,texts,size):
     if size<259:raise ValueError('LaTeX byte alphabet and 3 control IDs require at least 259 IDs')
-    if name=='ast_bpe':return HardASTBPE.train(texts,size-3)
-    rows=[dict(latex=t) for t in texts]
-    atoms=[bytes([i]) for i in range(256)] if name=='bpe' else derive_atoms(rows,size-3,384)
-    learned=AtomicBPE.train(rows,atoms,size-3)
-    if name=='bpe':return learned
-    model=BoundaryAST(learned.vocab,.25,.30);model.capacity=len(model.vocab)
-    model.train_seconds=learned.train_seconds
-    model.training_log=[dict(vocabulary='Train-only math-atom BPE',tree_penalty=.25,boundary_penalty=.30)]
-    return model
+    if name!='ast_bpe':raise ValueError(name)
+    return HardASTBPE.train(texts,size-3)
 
 
 def prefix_model(name,model,size):
+    if name!='ast_bpe':raise ValueError(name)
     n=min(size-3,len(model.vocab))
-    if name=='ast_bpe':
-        merges=[]
-        for m in model.merges:
-            if max(m)>=n:break
-            merges.append(m)
-        return HardASTBPE(model.vocab[:n],merges)
-    if name=='soft_ast_bpe':
-        result=BoundaryAST(model.vocab[:n],.25,.30);result.capacity=n
-        result.train_seconds=model.train_seconds;result.training_log=model.training_log
-        return result
-    config=json.loads(model.tokenizer.to_str());original=config['model']['vocab']
-    vocab={spelling:i for spelling,i in original.items() if i<n}
     merges=[]
-    for item in config['model']['merges']:
-        pair=item.split(' ') if isinstance(item,str) else item
-        if pair[0] in vocab and pair[1] in vocab and pair[0]+pair[1] in vocab:merges.append(item)
-    config['model']['vocab']=vocab;config['model']['merges']=merges
-    return AtomicBPE(model.atoms,Tokenizer.from_str(json.dumps(config)))
+    for merge in model.merges:
+        if max(merge)>=n:break
+        merges.append(merge)
+    return HardASTBPE(model.vocab[:n],merges)
 
 
 def select_capacity(name,texts,candidates=(384,512,768,1024,1536,2048)):
@@ -112,5 +89,4 @@ def train_tokenizers(texts,folder,mode='fixed',capacity=1024):
 
 def load_tokenizers(folder):
     folder=Path(folder)
-    return {n:LatexAdapter(n,HardASTBPE.load(folder/f'{n}.json') if n=='ast_bpe' else
-           BoundaryAST.load(folder/f'{n}.json') if n=='soft_ast_bpe' else AtomicBPE.load(folder/f'{n}.json')) for n in METHODS}
+    return {n:LatexAdapter(n,HardASTBPE.load(folder/f'{n}.json')) for n in METHODS}

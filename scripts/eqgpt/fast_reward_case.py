@@ -1,4 +1,4 @@
-"""One-case, reward-preserving EqGPT tokenizer comparison without final PINN."""
+"""单案例：Hard AST-BPE 对照缩小版 EqGPT GRE，保留 reward，不运行最终 PINN。"""
 from __future__ import annotations
 
 import argparse
@@ -49,7 +49,7 @@ def main():
     assert source['training_sequences']==6784
     adapters={'eqgpt_reference':Adapter('eqgpt')}
     adapters.update(load_or_train_tokenizers(texts,out/'tokenizers'))
-    assert set(adapters)=={'eqgpt_reference',*(f'{m}_{s}' for m in ('ast_bpe','soft_ast_bpe') for s in SIZES)}
+    assert set(adapters)=={'eqgpt_reference',*(f'ast_bpe_{s}' for s in SIZES)}
     encoded={name:[adapter.sequence(seq if name=='eqgpt_reference' else text)
                     for seq,text in zip(sequences,texts)] for name,adapter in adapters.items()}
     max_train=max(map(len,(seq for rows in encoded.values() for seq in rows)))

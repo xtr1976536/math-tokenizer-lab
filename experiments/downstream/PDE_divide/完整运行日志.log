@@ -1,0 +1,24 @@
+TOKENIZER_READY ast_bpe 280
+TOKENIZER_READY ast_bpe 315
+TOKENIZER_READY ast_bpe 350
+SURROGATE_READY PDE_divide seconds 638.9
+TRAIN_COMPLETE eqgpt_reference seconds 0.12
+sample eqgpt 1 {'evaluated': 200}
+sample eqgpt 2 {'evaluated': 200}
+sample eqgpt 3 {'evaluated': 200}
+CASE_ARM_COMPLETE eqgpt_reference {'training_seconds': 0.12120745799620636, 'pretraining_reused': True, 'original_pretraining_seconds': 143.8964349590533, 'search_seconds': 96.40675991598982, 'top1': 'incorrect', 'top10_correct': False, 'top10_redundant': True, 'ranked_classes': ['incorrect', 'incorrect', 'redundant', 'incorrect', 'incorrect', 'redundant', 'incorrect', 'incorrect', 'incorrect', 'incorrect'], 'attempted_statuses': {'correct': 0, 'redundant': 2, 'incorrect': 598}, 'first_correct': None, 'reward_calls': 532, 'cache_hits': 68}
+TRAIN_COMPLETE ast_bpe_280 seconds 0.34
+sample ast_bpe 1 {'variable_or_numeric_unavailable': 89, 'evaluated': 99, 'unsupported_expression': 7, 'syntax_error': 5}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 89, 'evaluated': 99, 'unsupported_expression': 7, 'syntax_error': 5}
+sample ast_bpe 3 {'variable_or_numeric_unavailable': 83, 'unsupported_expression': 5, 'evaluated': 103, 'syntax_error': 9}
+CASE_ARM_COMPLETE ast_bpe_280 {'training_seconds': 0.3402774579881225, 'pretraining_reused': True, 'original_pretraining_seconds': 169.90287329397688, 'search_seconds': 77.63112354101031, 'top1': 'incorrect', 'top10_correct': False, 'top10_redundant': True, 'ranked_classes': ['incorrect', 'incorrect', 'incorrect', 'incorrect', 'redundant', 'redundant', 'redundant', 'incorrect', 'incorrect', 'incorrect'], 'attempted_statuses': {'correct': 0, 'redundant': 6, 'incorrect': 295}, 'first_correct': None, 'reward_calls': 256, 'cache_hits': 45}
+TRAIN_COMPLETE ast_bpe_315 seconds 0.35
+sample ast_bpe 1 {'variable_or_numeric_unavailable': 94, 'unsupported_expression': 4, 'evaluated': 94, 'syntax_error': 8}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 95, 'evaluated': 98, 'syntax_error': 6, 'unsupported_expression': 1}
+sample ast_bpe 3 {'syntax_error': 6, 'variable_or_numeric_unavailable': 75, 'evaluated': 107, 'unsupported_expression': 12}
+CASE_ARM_COMPLETE ast_bpe_315 {'training_seconds': 0.35106954199727625, 'pretraining_reused': True, 'original_pretraining_seconds': 160.95463520703197, 'search_seconds': 66.89033375002327, 'top1': 'correct', 'top10_correct': True, 'top10_redundant': True, 'ranked_classes': ['correct', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'redundant', 'redundant'], 'attempted_statuses': {'correct': 1, 'redundant': 5, 'incorrect': 293}, 'first_correct': 501, 'reward_calls': 254, 'cache_hits': 45}
+TRAIN_COMPLETE ast_bpe_350 seconds 0.73
+sample ast_bpe 1 {'evaluated': 94, 'variable_or_numeric_unavailable': 95, 'syntax_error': 3, 'unsupported_expression': 8}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 85, 'evaluated': 98, 'unsupported_expression': 7, 'syntax_error': 10}
+sample ast_bpe 3 {'variable_or_numeric_unavailable': 78, 'evaluated': 104, 'unsupported_expression': 6, 'syntax_error': 11, 'incomplete': 1}
+CASE_ARM_COMPLETE ast_bpe_350 {'training_seconds': 0.7265719579881988, 'pretraining_reused': True, 'original_pretraining_seconds': 149.7838928749843, 'search_seconds': 185.57172374997754, 'top1': 'correct', 'top10_correct': True, 'top10_redundant': True, 'ranked_classes': ['correct', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'redundant', 'redundant', 'redundant'], 'attempted_statuses': {'correct': 1, 'redundant': 4, 'incorrect': 291}, 'first_correct': 28, 'reward_calls': 245, 'cache_hits': 51}

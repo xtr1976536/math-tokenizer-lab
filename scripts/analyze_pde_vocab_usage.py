@@ -12,7 +12,7 @@ from math_tokenizer.corpus import ROOT
 
 EXPERIMENT = ROOT / 'experiments/pde1500_sweep_200_450_20261022'
 OUTPUT = ROOT / 'reports/pde1500_vocab_200_450_20261022'
-METHODS = ('ast_bpe', 'soft_ast_bpe')
+METHODS = ('ast_bpe',)
 
 
 def pooled_metrics(results):
@@ -86,8 +86,8 @@ def save_csv(path, rows):
 
 
 def plot(metrics, summaries, rows):
-    colors={'ast_bpe':'#2575a8','soft_ast_bpe':'#c45b34'}
-    labels={'ast_bpe':'Hard AST-BPE','soft_ast_bpe':'Soft AST-BPE'}
+    colors={'ast_bpe':'#2575a8'}
+    labels={'ast_bpe':'Hard AST-BPE'}
     fig,axes=plt.subplots(2,3,figsize=(13,7),layout='constrained')
     for j,(key,title) in enumerate([('compression_ratio','Compression'),('cmd_pct','Cmd (%)'),('num_pct','Num (%)')]):
         ax=axes[0,j]
@@ -113,8 +113,8 @@ def plot(metrics, summaries, rows):
     for ax in axes.flat:ax.spines[['top','right']].set_visible(False)
     fig.savefig(OUTPUT/'size_and_usage.png',dpi=175);plt.close(fig)
 
-    fig,axes=plt.subplots(1,2,figsize=(12,4.5),layout='constrained')
-    for ax,method in zip(axes,METHODS):
+    fig,ax=plt.subplots(figsize=(7,4.5),layout='constrained')
+    for method in METHODS:
         for size,alpha in [(300,.55),(384,.75),(450,1.0)]:
             subset=sorted((r['train_probability'] for r in rows if r['method']==method and r['total_ids']==size and r['type']=='learned_merge' and r['train_count']>0),reverse=True)
             ax.plot(range(1,len(subset)+1),subset,label=str(size),alpha=alpha)
@@ -137,7 +137,7 @@ def main():
     OUTPUT.mkdir(parents=True,exist_ok=True)
     manifest=json.loads((ROOT/'data/benchmark_pde1500_20261022/manifest.json').read_text())
     protocol=json.loads((EXPERIMENT/'protocol.json').read_text())
-    audit=json.loads((EXPERIMENT/'audit.json').read_text())
+    audit=json.loads((ROOT/'experiments/pde1500_main_final_20261022/audit.json').read_text())
     assert protocol['data_sha256']==manifest['pde_sha256'] and audit['status']=='PASS'
     metrics=pooled_metrics(json.loads((EXPERIMENT/'results.json').read_text()))
     rows=usage_rows();summaries=summarize(rows)

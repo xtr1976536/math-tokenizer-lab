@@ -6,7 +6,6 @@ Inputs outside the declared byte alphabet are explicitly rejected.
 import json
 from pathlib import Path
 
-from math_tokenizer.ast_boundary_v8 import BoundaryAST
 from math_tokenizer.hard_ast_2026 import HardASTBPE
 from .latex_tokenizers import train_one
 
@@ -53,15 +52,16 @@ class CompactAlphabet:
         config = json.loads(path.read_text())
         if config["format"] != "compact-alphabet-ast-bpe-v1":
             raise ValueError("Wrong compact alphabet format")
-        loader = HardASTBPE if config["method"] == "ast_bpe" else BoundaryAST
-        model = cls(config["method"], config["alphabet"], loader.load(path.parent / config["backend"]))
+        if config["method"] != "ast_bpe":
+            raise ValueError("Only hard AST-BPE is supported in this release")
+        model = cls(config["method"], config["alphabet"], HardASTBPE.load(path.parent / config["backend"]))
         if len(model.vocab) != config["content_ids"]:
             raise ValueError("Compact vocabulary size mismatch")
         return model
 
 
 def train_compact(method, texts, total_ids, alphabet):
-    if method not in ("ast_bpe", "soft_ast_bpe"):
+    if method != "ast_bpe":
         raise ValueError(method)
     observed = set().union(*(set(text.encode()) for text in texts))
     if not observed <= set(alphabet):

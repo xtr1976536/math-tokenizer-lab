@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AST-BPE 分词过程</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">∑</span><span>AST-BPE <small>分词过程</small></span></div>
+    <div class="top-actions"><span class="source-tag">Hard AST-BPE · 冻结词表</span><a href="../README.md">项目资料 ↗</a></div>
+  </header>
+  <main>
+    <section class="workspace">
+      <div class="heading-row"><div><p class="eyebrow">公式工作台</p><h1>观察公式如何变成 token</h1></div><span id="status" class="status">准备中</span></div>
+      <div class="input-layout">
+        <div class="editor-area"><label for="formula">数学公式 · LaTeX</label><textarea id="formula" spellcheck="false" aria-label="输入数学公式"></textarea><div class="editor-foot"><span>保留原始输入，不自动改写公式</span><span id="byte-count">0 字节</span></div></div>
+        <aside class="picker"><div class="picker-title"><label for="search">Benchmark 公式</label><span id="sample-count">1500 条</span></div><input id="search" type="search" placeholder="搜索公式或编号" aria-label="搜索 benchmark 公式"><div class="filters" role="group" aria-label="公式难度"><button class="selected" data-level="all">全部</button><button data-level="simple">简单</button><button data-level="moderate">中等</button><button data-level="complex">复杂</button></div><div id="samples" class="sample-list" role="listbox" aria-label="选择 benchmark 公式"></div></aside>
+      </div>
+    </section>
+    <section class="controls-band"><div class="controls-inner"><div><span class="field-label">词表规模</span><div class="segmented" role="group" aria-label="词表规模"><button data-size="280">280</button><button data-size="315">315</button><button class="selected" data-size="350">350</button></div></div><div class="playback"><span class="field-label">合并过程</span><button id="reset" class="icon-button" title="回到初始字节" aria-label="回到初始字节">↺</button><button id="previous" class="icon-button" title="上一步" aria-label="上一步">←</button><button id="next" class="icon-button" title="下一步" aria-label="下一步">→</button><button id="play" class="command-button" title="自动播放">▶ 播放</button></div><div class="step-control"><span id="step-label">0 / 0</span><input id="step-range" type="range" min="0" max="0" value="0" aria-label="分词步骤"></div></div></section>
+    <section class="results"><div class="result-header"><div><p class="eyebrow">分词轨迹</p><h2 id="stage-title">等待公式</h2></div><div class="metrics"><div><strong id="tokens-now">—</strong><span>当前 token</span></div><div><strong id="tokens-final">—</strong><span>最终 token</span></div><div><strong id="compression">—</strong><span>压缩率</span></div></div></div><div id="notice" class="notice" hidden></div><div id="token-track" class="token-track" aria-live="polite"></div><div class="detail-grid"><div class="detail"><span class="detail-label">本步合并</span><strong id="merge-detail">—</strong></div><div class="detail"><span class="detail-label">结构边界</span><strong id="boundary-detail">—</strong></div><div class="detail"><span class="detail-label">词表命中</span><strong id="rank-detail">—</strong></div></div></section>
+  </main>
+  <footer>基于项目冻结的 Hard AST-BPE 词表与合并规则 · Benchmark 1500 条 PDE · 原始公式不经修改</footer>
+  <script src="data/离线数据.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
