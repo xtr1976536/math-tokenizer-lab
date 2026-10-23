@@ -1,8 +1,0 @@
-"\\frac{\\partial^{2} v}{\\partial t^{2}}=5 \\Delta v-b v"
-"\\frac{\\partial u}{\\partial t}=7 \\frac{\\partial^{2} u}{\\partial x^{2}}+b u^{2}"
-"\\frac{\\partial^{2} v}{\\partial t^{2}}=3 \\Delta v-b v"
-"\\frac{\\partial u}{\\partial t}=5 \\frac{\\partial^{2} u}{\\partial x^{2}}+b u^{2}"
-"\\frac{\\partial^{2} v}{\\partial t^{2}}=2 \\Delta v-b v"
-"\\frac{\\partial u}{\\partial t}=3 \\frac{\\partial^{2} u}{\\partial x^{2}}+b u^{2}"
-"\\frac{\\partial u}{\\partial t}=2 \\frac{\\partial^{2} u}{\\partial x^{2}}+b u^{2}"
-"\\frac{\\partial^{2} v}{\\partial t^{2}}=7 \\Delta v-b v"

@@ -1,9 +1,0 @@
-{
-  "rows": 27720,
-  "models": 8,
-  "new_native_cache_compiled": true,
-  "master_auto_decompressed": true,
-  "source_commit": "d3a961103c79fa31de32176b87f86c4ce07bef5f",
-  "checkout": "/var/folders/4c/gd05pkx16932jy8mq6vsv7gm0000gn/T/math-v6-clean-9fkgmqmp/checkout",
-  "dependency_runtime": "same pinned venv; independent source, corpus archive expansion and native compilation"
-}

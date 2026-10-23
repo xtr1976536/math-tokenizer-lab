@@ -12,9 +12,10 @@ from .round1_config import METHODS,VERSION
 from .cached_batches import cache_batches
 
 
-def runtime_sha256():
+def runtime_sha256(shared8=False):
     names=['author.py','data.py','experiment.py','models.py','tokenizer_adapters.py','evaluation.py',
         'round1_config.py','cached_batches.py','latex_codec.py','latex_tokenizers.py','latex_generation.py','latex_experiment.py','frozen_math.py','round1_runtime.py']
+    if shared8:names.extend(['shared8.py','shared8_config.py'])
     return hashlib.sha256(b''.join((ROOT/'src/math_tokenizer/eqgpt'/n).read_bytes() for n in names)).hexdigest()
 
 
@@ -29,7 +30,8 @@ def shared_surrogate(folder,equation,observations,noise,seed,device,smoke):
         result=prepare_surrogate(folder,equation,observations,noise,seed,device,smoke)
         env,net,database,state,report=result
         with torch.no_grad():predictions=net(database).detach().cpu()
-        report.update(stage='B',surrogate_hidden_layers=5,surrogate_hidden_width=50,
+        report.update(stage='B',surrogate_hidden_layers=int(net.Num_Hidden_Layers),
+            surrogate_hidden_width=int(net.Layers[0].out_features),
             base_predictions_sha256=hashlib.sha256(predictions.numpy().tobytes()).hexdigest(),
             base_prediction_shape=list(predictions.shape),shared_across_methods=list(METHODS))
         dump(folder/'shared_manifest.json',report)
@@ -49,11 +51,11 @@ def shared_surrogate(folder,equation,observations,noise,seed,device,smoke):
     return env,net,database,state,report
 
 
-def train_round1(model,sequences,folder,device,seed,smoke=False):
+def train_round1(model,sequences,folder,device,seed,smoke=False,epochs_override=None):
     """Same Adam/CE/batching and author train_step for every active arm."""
     folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
     identity=hashlib.sha256(json.dumps(sequences).encode()).hexdigest()
-    initial=tensor_hash(model.state_dict());epochs=1 if smoke else 100;batch=2 if smoke else 128
+    initial=tensor_hash(model.state_dict());epochs=epochs_override or (1 if smoke else 100);batch=2 if smoke else 128
     completed=folder/'training.json';weights=folder/'pretrained.pt';progress=folder/'training_progress.pt'
     if completed.exists() and weights.exists():
         report=json.loads(completed.read_text())
@@ -92,14 +94,16 @@ def train_round1(model,sequences,folder,device,seed,smoke=False):
     return report
 
 
-def verify_completed(folder,runtime_digest,frozen_digest):
+def verify_completed(folder,runtime_digest,frozen_digest,version=VERSION,shared_digest=None,training_epochs=100):
     folder=Path(folder);m=json.loads((folder/'manifest.json').read_text());run=json.loads((folder/'RUN.json').read_text())
-    assert m['version']==VERSION and not m['smoke']
+    assert m['version']==version and not m['smoke']
     assert m['runtime_sha256']==run['runtime_sha256']==runtime_digest
     assert m['frozen_tokenizers_sha256']==run['frozen_sha256']==frozen_digest
-    assert m['protocol']['training_epochs']==100 and m['protocol']['attempts_per_cycle']==400
+    if shared_digest is not None:assert m['shared_pretrain_sha256']==run['shared_pretrain_sha256']==shared_digest
+    assert m['protocol']['training_epochs']==training_epochs and m['protocol']['attempts_per_cycle']==400
     assert set(m['results'])==set(METHODS)
     for name,result in m['results'].items():
+        assert result['training']['epochs']==training_epochs
         out=folder/name;search=json.loads((out/'search.json').read_text())
         assert len(search['attempts'])==2000 and len(search['history'])==5
         for checkpoint,expected in [('pretrained.pt',result['training']['final_sha256']),('searched.pt',search['history'][-1]['after_sha256'])]:

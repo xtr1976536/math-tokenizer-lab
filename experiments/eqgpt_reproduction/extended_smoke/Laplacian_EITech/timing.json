@@ -1,9 +1,0 @@
-{
-  "seconds": {
-    "eqgpt": 2.6520269159955205,
-    "ast_bpe": 4.251879832998384,
-    "soft_ast_bpe": 4.273480292002205
-  },
-  "device": "cpu",
-  "smoke": true
-}

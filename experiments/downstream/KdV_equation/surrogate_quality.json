@@ -1,0 +1,32 @@
+{
+  "case": "KdV_equation",
+  "shared": {
+    "equation": "KdV_equation",
+    "seed": 525,
+    "observations": 10000,
+    "noise_percent": 0,
+    "surrogate_sha256": "d0592cbfecb1d171311d2f395d324b6adf411123ca03a19762905c7a3762ca3e",
+    "raw_noisy_data_sha256": "d2eeb7ed520b005a7208ef870f3bf032290467150fc43dc0156d76128d818b64",
+    "metadata_sha256": "41cd1c3ed72853e47cbc6bb653e8f5d32e3d4547969d6657b52c6e6321b5d292",
+    "metadata_points": 10000,
+    "activation": "Sin",
+    "surrogate_iterations": 50000,
+    "target_name": "KdV equation",
+    "stage": "B",
+    "surrogate_hidden_layers": 5,
+    "surrogate_hidden_width": 50,
+    "base_predictions_sha256": "daf8a397823ac929e65226b61612843bd3faefa7ce31f039be57642e06f1d91b",
+    "base_prediction_shape": [
+      10000,
+      1
+    ],
+    "shared_across_methods": [
+      "ast_bpe"
+    ]
+  },
+  "loss_first": "iter_num: 500      loss: 0.00468105    loss_validate: 0.00488600 ",
+  "loss_last": "iter_num: 50000      loss: 0.00000244    loss_validate: 0.00000257 ",
+  "loss_file_sha256": "344e037853e4afed50ab3e21a28c6d0b5feaa92ce96b07fd3e739d992b4c569c",
+  "fit_or_cache_load_seconds": 387.7507172920159,
+  "cache_sha256": "4505836f41303da1d0d41d7630ba0fe02c25f30243041c349b1edc0e24bd3d65"
+}

@@ -1,0 +1,32 @@
+{
+  "case": "KG_equation",
+  "shared": {
+    "equation": "KG_equation",
+    "seed": 525,
+    "observations": 10000,
+    "noise_percent": 0,
+    "surrogate_sha256": "bc0230d4149a67bfe49093ab49948450f001c687ae1fc88045e28ca1585dedfa",
+    "raw_noisy_data_sha256": "0ffc5653c2352b5794a8f79ca33dae391c9dfc7fd72360a875943639df9413a2",
+    "metadata_sha256": "e03acfb3b36bfe734ab52de46c8295bca34f201058f3330b3d678d551a794d4c",
+    "metadata_points": 10000,
+    "activation": "Rational",
+    "surrogate_iterations": 50000,
+    "target_name": "Klein\u2013Gordon_u",
+    "stage": "B",
+    "surrogate_hidden_layers": 5,
+    "surrogate_hidden_width": 50,
+    "base_predictions_sha256": "01093c385197de0ad1d06b17bbfcbe61a4e8d3949e3496421edadc8a19bdf040",
+    "base_prediction_shape": [
+      10000,
+      1
+    ],
+    "shared_across_methods": [
+      "ast_bpe"
+    ]
+  },
+  "loss_first": "iter_num: 500      loss: 0.00933292    loss_validate: 0.00956957 ",
+  "loss_last": "iter_num: 50000      loss: 0.00000069    loss_validate: 0.00000072 ",
+  "loss_file_sha256": "9fbab97b7a3aa46721c4ff964a24fec6b30b616c941bf2eb593ae20b0042a9fe",
+  "fit_or_cache_load_seconds": 646.228624292009,
+  "cache_sha256": "6fc136605f08c3770ea40d90c3544feb4c5c4178bfc05c934bf9e63a14faa667"
+}

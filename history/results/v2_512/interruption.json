@@ -1,5 +1,0 @@
-{
-  "status": "interrupted_before_test",
-  "reason": "added one-token lookahead feature, additional samples/update ablations before final test evaluation; all partial dev records preserved",
-  "test_accessed": false
-}

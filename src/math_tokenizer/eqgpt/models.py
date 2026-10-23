@@ -69,17 +69,17 @@ class ModelBridge(nn.Module):
     def load_state_dict(self,*a,**kw): return self.core.load_state_dict(*a,**kw)
 
 
-def build_models(adapters, positions, seed, device='cpu'):
+def build_models(adapters, positions, seed, device='cpu', n_layers=None):
     # Embedding-size changes must not shift the RNG stream for backbone layers.
     seed_all(seed)
-    reference=model_namespace(57,positions,device)['GPT']()
+    reference=model_namespace(57,positions,device,n_layers=n_layers)['GPT']()
     common={k:v.detach().clone() for k,v in reference.state_dict().items()
             if k not in ('decoder.tgt_emb.weight','projection.weight','projection.bias')}
     del reference
     models={};metadata={}
     for name,adapter in adapters.items():
         seed_all(seed+1)
-        env=model_namespace(adapter.vocab_size,positions,device)
+        env=model_namespace(adapter.vocab_size,positions,device,n_layers=n_layers)
         core=env['GPT']()
         state=core.state_dict();state.update(common);core.load_state_dict(state)
         core=core.to(device)

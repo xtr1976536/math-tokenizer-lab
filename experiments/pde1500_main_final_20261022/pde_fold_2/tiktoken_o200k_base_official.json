@@ -1,0 +1,22 @@
+{
+  "formulas": 500,
+  "sources": 163,
+  "compression_ratio": 2.241226470670744,
+  "method_initial_compression_ratio": 2.241226470670744,
+  "cmd_pct": 0.0,
+  "num_pct": 99.23161361141602,
+  "counts": {
+    "initial_character_tokens": 79893,
+    "initial_method_tokens": 79893,
+    "final_tokens": 35647,
+    "commands": 6740,
+    "commands_intact": 0,
+    "numbers": 1822,
+    "numbers_intact": 1808
+  },
+  "test_ids_sha256": "80519a7ac6867766bb758fe21bf210dc6381c6b042fdb617c3463141a07e132b",
+  "protocol": "pde_fold_2",
+  "method": "tiktoken_o200k_base",
+  "total_ids": 200019,
+  "seconds": 0.04134520801017061
+}

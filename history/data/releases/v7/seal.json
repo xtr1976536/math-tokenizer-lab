@@ -1,7 +1,0 @@
-{
-  "sealed_utc": "2026-10-12T07:31:47.915986+00:00",
-  "archive_sha256": "f63d18b15a7e7beed54705e444cfbc45c13087f48154c46d1ced826cfa29011f",
-  "raw_jsonl_sha256": "efb2258bbd418c3e23f0a291853615e9f53e19d834bb73d85e09fcda22d8763d",
-  "splits_sha256": "8f9ec67ed7830cd64c30f762e5468323b18ca1d38f6277187309326c5ca8c414",
-  "scores_must_not_be_read_before_model_freeze": true
-}

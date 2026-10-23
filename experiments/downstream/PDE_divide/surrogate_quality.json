@@ -1,0 +1,32 @@
+{
+  "case": "PDE_divide",
+  "shared": {
+    "equation": "PDE_divide",
+    "seed": 525,
+    "observations": 10000,
+    "noise_percent": 0,
+    "surrogate_sha256": "def3ddb3c4917726f31472afbb6bd160239ce9d7e898a05f85521f34698667ae",
+    "raw_noisy_data_sha256": "560844e46aa367c983f4e4d9df7d7937df5d238865e574af7605520dc8e92f41",
+    "metadata_sha256": "c646bf52f418e76a1a6ccca74100c54355f4f7ed2a17640410ca857450479e94",
+    "metadata_points": 10000,
+    "activation": "Rational",
+    "surrogate_iterations": 50000,
+    "target_name": "8.14.1d",
+    "stage": "B",
+    "surrogate_hidden_layers": 5,
+    "surrogate_hidden_width": 50,
+    "base_predictions_sha256": "420df801ec5a76c7af75175d0d1d11769d3b16be22ff20c75af666cf588f20f1",
+    "base_prediction_shape": [
+      10000,
+      1
+    ],
+    "shared_across_methods": [
+      "ast_bpe"
+    ]
+  },
+  "loss_first": "iter_num: 500      loss: 0.00094459    loss_validate: 0.00090707 ",
+  "loss_last": "iter_num: 50000      loss: 0.00000419    loss_validate: 0.00000413 ",
+  "loss_file_sha256": "ffe40dacbfd25a78a46f8649e05b9756c3ed60daa2fd6e244d0a4a4b855a2119",
+  "fit_or_cache_load_seconds": 638.9047681249795,
+  "cache_sha256": "75f515a35c01bb7116cbc8fbd788fac6ad5642f8e035c8486fe9845e79ba3727"
+}

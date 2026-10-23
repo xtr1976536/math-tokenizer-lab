@@ -85,8 +85,10 @@ def definitions(name, env, names=None):
     return env
 
 
-def model_namespace(vocab_size=57, max_pos=50, device="cpu"):
+def model_namespace(vocab_size=57, max_pos=50, device="cpu", n_layers=None):
     env = namespace(device, vocab_size=vocab_size, max_pos=max_pos)
+    if n_layers is not None:
+        env['n_layers'] = n_layers
     definitions("gpt_model.py", env)
     return env
 

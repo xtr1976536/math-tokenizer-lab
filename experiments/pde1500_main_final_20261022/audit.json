@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "source/id/template/canonical split isolation",
+    "exact UTF8 payload and decode reconstruction",
+    "compact model save/load equality",
+    "independent persisted count aggregation",
+    "identical ordered test samples and metric denominators"
+  ],
+  "result_rows": 20
+}

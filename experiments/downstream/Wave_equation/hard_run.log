@@ -1,0 +1,19 @@
+TOKENIZER_READY ast_bpe 280
+TOKENIZER_READY ast_bpe 315
+TOKENIZER_READY ast_bpe 350
+SURROGATE_READY Wave_equation seconds 642.33
+TRAIN_COMPLETE ast_bpe_280 seconds 170.85
+sample ast_bpe 1 {'variable_or_numeric_unavailable': 89, 'evaluated': 99, 'unsupported_expression': 7, 'syntax_error': 5}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 89, 'evaluated': 98, 'unsupported_expression': 4, 'syntax_error': 9}
+sample ast_bpe 3 {'variable_or_numeric_unavailable': 87, 'unsupported_expression': 10, 'evaluated': 94, 'syntax_error': 9}
+CASE_ARM_COMPLETE ast_bpe_280 {'training_seconds': 170.84944854099012, 'search_seconds': 82.40722745799576, 'top1': 'correct', 'top10_correct': True, 'top10_redundant': True, 'ranked_classes': ['correct', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant'], 'attempted_statuses': {'correct': 1, 'redundant': 48, 'incorrect': 242}, 'first_correct': 113, 'reward_calls': 247, 'cache_hits': 44}
+TRAIN_COMPLETE ast_bpe_315 seconds 162.18
+sample ast_bpe 1 {'variable_or_numeric_unavailable': 94, 'unsupported_expression': 4, 'evaluated': 94, 'syntax_error': 8}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 88, 'evaluated': 102, 'syntax_error': 6, 'unsupported_expression': 4}
+sample ast_bpe 3 {'syntax_error': 10, 'variable_or_numeric_unavailable': 78, 'evaluated': 106, 'unsupported_expression': 6}
+CASE_ARM_COMPLETE ast_bpe_315 {'training_seconds': 162.18405762499606, 'search_seconds': 83.06062462500995, 'top1': 'correct', 'top10_correct': True, 'top10_redundant': True, 'ranked_classes': ['correct', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant'], 'attempted_statuses': {'correct': 1, 'redundant': 50, 'incorrect': 251}, 'first_correct': 85, 'reward_calls': 249, 'cache_hits': 53}
+TRAIN_COMPLETE ast_bpe_350 seconds 150.74
+sample ast_bpe 1 {'evaluated': 94, 'variable_or_numeric_unavailable': 95, 'syntax_error': 3, 'unsupported_expression': 8}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 82, 'evaluated': 103, 'unsupported_expression': 7, 'syntax_error': 8}
+sample ast_bpe 3 {'variable_or_numeric_unavailable': 74, 'evaluated': 103, 'unsupported_expression': 14, 'syntax_error': 8, 'incomplete': 1}
+CASE_ARM_COMPLETE ast_bpe_350 {'training_seconds': 150.7388217090047, 'search_seconds': 175.6886991670035, 'top1': 'redundant', 'top10_correct': False, 'top10_redundant': True, 'ranked_classes': ['redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant'], 'attempted_statuses': {'correct': 0, 'redundant': 61, 'incorrect': 239}, 'first_correct': None, 'reward_calls': 250, 'cache_hits': 50}

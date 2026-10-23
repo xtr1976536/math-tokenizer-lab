@@ -1,7 +1,0 @@
-{
-  "name": "math-tokenizer-reference-parser",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Pinned unmodified independent LaTeX syntax validation",
-  "dependencies": {"katex": "0.16.25"}
-}

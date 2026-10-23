@@ -1,0 +1,19 @@
+TOKENIZER_READY ast_bpe 280
+TOKENIZER_READY ast_bpe 315
+TOKENIZER_READY ast_bpe 350
+SURROGATE_READY KG_equation seconds 646.23
+TRAIN_COMPLETE ast_bpe_280 seconds 0.31
+sample ast_bpe 1 {'variable_or_numeric_unavailable': 89, 'evaluated': 99, 'unsupported_expression': 7, 'syntax_error': 5}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 95, 'evaluated': 97, 'unsupported_expression': 3, 'syntax_error': 5}
+sample ast_bpe 3 {'variable_or_numeric_unavailable': 90, 'unsupported_expression': 10, 'evaluated': 91, 'syntax_error': 9}
+CASE_ARM_COMPLETE ast_bpe_280 {'training_seconds': 0.3118142079911195, 'pretraining_reused': True, 'original_pretraining_seconds': 169.90287329397688, 'search_seconds': 80.23909166600788, 'top1': 'incorrect', 'top10_correct': False, 'top10_redundant': True, 'ranked_classes': ['incorrect', 'incorrect', 'redundant', 'redundant', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'incorrect', 'incorrect'], 'attempted_statuses': {'correct': 0, 'redundant': 7, 'incorrect': 280}, 'first_correct': None, 'reward_calls': 245, 'cache_hits': 42}
+TRAIN_COMPLETE ast_bpe_315 seconds 0.36
+sample ast_bpe 1 {'variable_or_numeric_unavailable': 94, 'unsupported_expression': 4, 'evaluated': 94, 'syntax_error': 8}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 88, 'evaluated': 102, 'syntax_error': 6, 'unsupported_expression': 4}
+sample ast_bpe 3 {'unsupported_expression': 6, 'variable_or_numeric_unavailable': 81, 'evaluated': 104, 'syntax_error': 9}
+CASE_ARM_COMPLETE ast_bpe_315 {'training_seconds': 0.35703937499783933, 'pretraining_reused': True, 'original_pretraining_seconds': 160.95463520703197, 'search_seconds': 171.8653156250075, 'top1': 'incorrect', 'top10_correct': False, 'top10_redundant': True, 'ranked_classes': ['incorrect', 'incorrect', 'incorrect', 'incorrect', 'redundant', 'redundant', 'redundant', 'redundant', 'redundant', 'incorrect'], 'attempted_statuses': {'correct': 0, 'redundant': 14, 'incorrect': 286}, 'first_correct': None, 'reward_calls': 249, 'cache_hits': 51}
+TRAIN_COMPLETE ast_bpe_350 seconds 0.54
+sample ast_bpe 1 {'evaluated': 94, 'variable_or_numeric_unavailable': 95, 'syntax_error': 3, 'unsupported_expression': 8}
+sample ast_bpe 2 {'variable_or_numeric_unavailable': 82, 'evaluated': 103, 'unsupported_expression': 7, 'syntax_error': 8}
+sample ast_bpe 3 {'variable_or_numeric_unavailable': 90, 'evaluated': 93, 'unsupported_expression': 13, 'syntax_error': 4}
+CASE_ARM_COMPLETE ast_bpe_350 {'training_seconds': 0.5440830839797854, 'pretraining_reused': True, 'original_pretraining_seconds': 149.7838928749843, 'search_seconds': 204.4928632079973, 'top1': 'incorrect', 'top10_correct': True, 'top10_redundant': True, 'ranked_classes': ['incorrect', 'incorrect', 'incorrect', 'correct', 'redundant', 'redundant', 'redundant', 'incorrect', 'incorrect', 'incorrect'], 'attempted_statuses': {'correct': 1, 'redundant': 5, 'incorrect': 284}, 'first_correct': 283, 'reward_calls': 240, 'cache_hits': 50}

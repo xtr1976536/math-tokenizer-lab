@@ -1,7 +1,0 @@
-{
-  "folds": 3,
-  "methods_per_fold": 4,
-  "same_heldout_inputs": true,
-  "policies_and_vocabularies_trained_from_scratch_each_fold": true,
-  "sealed_external_test_loaded": false
-}

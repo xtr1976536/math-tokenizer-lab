@@ -1,8 +1,0 @@
-"(\\partial_t+u\\cdot\\nabla_x+(E_1+u\\times B_1)\\cdot\\nabla_v)g\n =-(\\delta E+u\\times\\delta B)\\cdot\\nabla_v f_2."
-"g(X,Y)=\\partial_X\\big(X\\chi_*(X,Y)\\big),\\qquad\n W(X,Y,Z)=\\big(V_1(Z,X,Y),V_2(Z,X,Y),g(X,Y)\\big)"
-"-\\frac Hr\\partial_s^{(u)}g\n =-(Hg/r)'+(H/r)'g+(H/r)\\partial_s^{(n)}g"
-"\\mathcal V(\\sigma,x)=\n \\nabla_x\\times\\left[\n  \\zeta\\left(\\frac{x-c(\\sigma)}{\\delta}\\right)\n  \\frac{\\dot c(\\sigma)\\times(x-c(\\sigma))}{2}\n \\right]"
-"U_a(t,x)=a(t)W(x),\\qquad\n F_a=a'W+a^2(W\\cdot\\nabla)W-\\nu a\\Delta W"
-"(\\partial_t+u\\cdot\\nabla_x+(E_1+u\\times B_1)\\cdot\\nabla_v)g\n =-(\\delta E+u\\times\\delta B)\\cdot\\nabla_v f_2"
-"\\|\\partial_t^r\\partial_\\xi^\\alpha v_n\\|_\\infty\n \\le C_{r,k}\\left(\\mathbf 1_{k=0}\\beta_n\n       +P_{n+1}\\epsilon_{n+1}\\epsilon_n^{-k}\\right)"
-"\\partial_t\\mathcal A(t,x)=t j_f(0,x)+O(t^2),\\qquad\n \\nabla\\Phi(t,x),\\ \\nabla\\mathcal A(t,x)=O(t^2)"

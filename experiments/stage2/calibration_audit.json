@@ -1,7 +1,0 @@
-{
-  "passed": true,
-  "analytical_expected_boundary_rate": 0.5800000000000001,
-  "enumerated_reference": 0.5800000000000001,
-  "same_calibration_steps_per_method": 24,
-  "test": "forced max-patch boundary expectation on exact three-byte sequence"
-}

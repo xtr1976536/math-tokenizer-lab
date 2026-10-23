@@ -1,47 +1,6 @@
-.venv/
 __pycache__/
 .pytest_cache/
-*.egg-info/
-data/raw/
-references/*.txt
-references/*.xlsx
-references/*tree.json
-references/preprints.json
-vendor/
-*.log
-
-# Current GitHub OAuth credential lacks workflow-write scope.
-.github/workflows/
-# Incomplete or invalidated exploratory runs: provenance summaries remain tracked.
-results/v2_512/models/
-results/v2_512_final/models/
-results/v2_1024_final/models/
 .native_cache/
-results/v3_512/models/
-# v5 master uncompressed size exceeds GitHub per-file limit; lossless archive tracked.
-data/releases/v5/curated/corpus.jsonl
-runtime/katex/node_modules/
-data/releases/v6/curated/corpus.jsonl
-data/raw/metrics_research_v6/
-runtime/rustup-init
-runtime/rustup/
-runtime/cargo/
-runtime/wheels/
-
-# Archived caches and generated presentation previews
-history/**/__pycache__/
-history/data/**/corpus.jsonl
-history/results/**/*.log
-tmp/
-presentations/**/build/
-presentations/**/qa/page-*.png
-
-# Local-only rendered slide inspection artifacts
-presentations/**/qa/pptx_pages/
-presentations/**/qa/*.jpg
-presentations/**/qa/contact-*.png
-presentations/**/qa/final_contact.png
-presentations/**/qa/page_geometry.html
-
-# Isolated, author-version EqGPT runtime
-.venv-eqgpt/
+.venv/
+*.pyc
+*.zip

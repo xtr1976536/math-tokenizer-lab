@@ -1,0 +1,47 @@
+{
+  "formulas": 143,
+  "sources": 68,
+  "compression_ratio": 2.1397980746654146,
+  "method_initial_compression_ratio": 2.1397980746654146,
+  "cmd_pct": 73.28203767577607,
+  "num_pct": 98.71406959152799,
+  "counts": {
+    "initial_character_tokens": 45567,
+    "initial_method_tokens": 45567,
+    "final_tokens": 21295,
+    "commands": 3769,
+    "commands_intact": 2762,
+    "numbers": 1322,
+    "numbers_intact": 1305
+  },
+  "test_ids_sha256": "e3fd8d2ee6e38ae75db0afc228eebca841c9f415cfa333f03f4b37752f54173c",
+  "protocol": "pde_simple_to_complex",
+  "method": "ast_bpe",
+  "total_ids": 384,
+  "seconds": 0.18877687498752493,
+  "train": {
+    "formulas": 285,
+    "sources": 156,
+    "compression_ratio": 3.001767131356764,
+    "method_initial_compression_ratio": 3.001767131356764,
+    "cmd_pct": 89.38589840788477,
+    "num_pct": 99.14040114613181,
+    "counts": {
+      "initial_character_tokens": 15288,
+      "initial_method_tokens": 15288,
+      "final_tokens": 5093,
+      "commands": 1319,
+      "commands_intact": 1179,
+      "numbers": 349,
+      "numbers_intact": 346
+    },
+    "test_ids_sha256": "f426a2fdab5af0dfab67d1bddb9666e919ff8fc5ae867306e50ff883b2590643"
+  },
+  "distribution": {
+    "active_train_ids": 303,
+    "active_test_ids": 312,
+    "zero_train_ids": 78,
+    "max_piece_bytes": 19,
+    "long_rare_train_pieces": 1
+  }
+}

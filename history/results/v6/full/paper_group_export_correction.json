@@ -1,5 +1,0 @@
-{
-  "rows": 358776,
-  "reason": "Per-formula method-group metadata overwrote source paper group; restored from immutable ID-to-paper map. Aggregate metrics, token IDs, source inputs and model selection unchanged.",
-  "metric_values_changed": false
-}

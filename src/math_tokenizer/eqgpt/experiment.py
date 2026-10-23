@@ -199,7 +199,8 @@ def run_pinn(env,net,state,history,folder,device,smoke,seed=525):
     seed_all(seed)
     runtime_definitions('PINN_optimization.py',env,
                         {'PINNLossFunc','get_coefficients','get_PDE_terms','get_mask_invalid',
-                         'get_no_boundary','train_PINN','train_PINN_3D','train_PINN_space_shuttle'},device,smoke)
+                         'get_no_boundary','train_PINN','train_PINN_3D','train_PINN_space_shuttle'},
+                        device,smoke,iteration_override=env.get('_pinn_iterations'))
     env['Net']=net
     # The author PINN reads its final candidates from a pickle (5th cycle).
     seqs=[h['gre'] for h in history]
@@ -238,11 +239,12 @@ def run_pinn(env,net,state,history,folder,device,smoke,seed=525):
             elif equation in env['irrgular_2D_regions']:env['train_PINN'](net,env['un'],env['x'],env['y'])
             elif equation=='Laplacian_shuttle':env['train_PINN_space_shuttle'](net,env['un'],env['x'],env['y'],env['z'])
             else:env['train_PINN_3D'](net,env['un'],env['x'],env['y'],env['t'])
-    except (np.linalg.LinAlgError,FloatingPointError,ZeroDivisionError) as exc:
+    except (np.linalg.LinAlgError,FloatingPointError,ZeroDivisionError,IndexError,ValueError,TypeError) as exc:
         # Invalid generated expressions are experimental failures, not grounds
         # to change data, discard an arm, or resample more favorable equations.
         import traceback
-        status='numerical_failure';error=type(exc).__name__+': '+str(exc)
+        status='candidate_processing_failure' if isinstance(exc,(IndexError,ValueError,TypeError)) else 'numerical_failure'
+        error=type(exc).__name__+': '+str(exc)
         (folder/'pinn_failure.txt').write_text(traceback.format_exc())
     dump(folder/'pinn.json',dict(status=status,error=error,coefficients=coefficients,sampling=splits,initial_surrogate_sha256=tensor_hash(state),
                                final_surrogate_sha256=tensor_hash(net.state_dict()),

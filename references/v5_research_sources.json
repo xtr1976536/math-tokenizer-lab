@@ -1,9 +1,0 @@
-[
- {"title":"Tokenization Is More Than Compression","year":2024,"venue":"EMNLP","url":"https://aclanthology.org/2024.emnlp-main.40/","usage":"compression alone inadequate; vocabulary construction vs segmentation controls"},
- {"title":"Tokenization and the Noiseless Channel","year":2023,"venue":"ACL","url":"https://aclanthology.org/2023.acl-long.284/","usage":"intrinsic distribution/code metrics, not sole reward"},
- {"title":"Two Counterexamples to Tokenization and the Noiseless Channel","year":2024,"venue":"LREC-COLING","url":"https://aclanthology.org/2024.lrec-main.1469/","usage":"avoid single-metric Renyi optimization claims"},
- {"title":"MDL-Calibrated Significance-Gain Pair Encoding: Replication-Aware Automatic Stopping for Subword Tokenization","year":2026,"arxiv":"2609.31705","url":"https://arxiv.org/abs/2609.31705","usage":"train-internal discovery/utility separation and MDL cost; exploratory paper not official code reproduction"},
- {"title":"Investigating the Generalizability of Pretrained Language Models across Multiple Dimensions: A Case Study of NLI and MRC","year":2024,"venue":"GenBench","url":"https://aclanthology.org/2024.genbench-1.11/","usage":"domain/document/representation stress dimensions; tokenizer adaptation distinguished"},
- {"title":"Terms of Use for arXiv APIs","url":"https://info.arxiv.org/help/api/tou.html","checked":"2026-10-11","usage":"single connection minimum4 seconds, cache, research/reuse distinct"},
- {"title":"Permissions and Reuse","url":"https://info.arxiv.org/help/license/reuse.html","checked":"2026-10-11","usage":"version-level CC BY/CC0 only corpus sources"}
-]

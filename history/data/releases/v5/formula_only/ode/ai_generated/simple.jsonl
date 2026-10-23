@@ -1,8 +1,0 @@
-"y(t)=2\\exp(-b t)"
-"\\frac{d y}{d t}=5 y-b y^{2}"
-"y(t)=5\\exp(-b t)"
-"y(t)=7\\exp(-b t)"
-"\\frac{d y}{d t}=3 y-b y^{2}"
-"\\frac{d y}{d t}=7 y-b y^{2}"
-"y(t)=3\\exp(-b t)"
-"\\frac{d y}{d t}=2 y-b y^{2}"

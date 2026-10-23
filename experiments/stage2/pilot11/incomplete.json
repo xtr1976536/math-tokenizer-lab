@@ -1,7 +1,0 @@
-{
-  "name": "pilot11",
-  "status": "incomplete; not scored or promoted",
-  "reason": "run failed during evaluation before pause: HFTokenizer adapter lacks vocab attribute in model_cuts",
-  "last_completed": "verified auxiliary pair generation, both critic training,1024 cost candidates and freeze",
-  "future_fix": "use shared token_bytes adapter for payload lengths; rerun into a new output only after user resumes"
-}

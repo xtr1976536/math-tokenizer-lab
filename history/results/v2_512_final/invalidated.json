@@ -1,9 +1,0 @@
-{
-  "status": "invalidated_corpus_filter_correction",
-  "reason": "79-test corpus revalidation found28 inherited v1 formulas bypassing v2 strict filter; excluded before final production runs, without consulting method performance",
-  "old_corpus_sha256": "19da51a9f54b635ce6d6ecaa3adfe0847fef0464660b2e1723aa2f3fb260b5fd",
-  "new_corpus_sha256": "4ffe6202753593a295c981d665c60a47294a11d012acb579cb48dd68c3768733",
-  "test_previously_inspected": true,
-  "selection_rerun_on_dev_only": true,
-  "must_not_compare_as_identical_corpus": true
-}

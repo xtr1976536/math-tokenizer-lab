@@ -1,85 +1,21 @@
-# Specialized Tokenizers for Mathematical Text
+# Math tokenizer: current PDE benchmark and hard AST-BPE downstream results
 
-This repository contains **two active mathematical tokenizer routes** and **five baseline tokenizers**, a classified formula-only benchmark, audited intrinsic experiments, and an academic Beamer presentation. Downstream language-model training has not started.
+This curated branch contains the current four-tokenizer upstream comparison, the 1,500-PDE formula benchmark, and the original eight-case hard AST-BPE downstream experiment from 2026-10-22. It excludes the later compact-alphabet/early-stopping pilot and the provisional real-data discovery benchmark.
 
-Stage 2 is now an isolated exploratory branch of the research, available in
-[`experiments/stage2/REPORT.md`](experiments/stage2/REPORT.md), with the protocol in
-[`docs/stage2_protocol.md`](docs/stage2_protocol.md). Four executed pilots test
-annotation-free raw-byte signals, causal boundary RL, exact predictive paths and
-data-discovered units. None has passed both the low-intervention and excellent
-deployment-quality requirements; the seven production systems below stay frozen.
-Do not conflate statistical-router learning gains with deployed tokenizer quality.
+## Upstream
 
-The [continuation report](experiments/stage2/CONTINUATION_REPORT.md) adds five
-executed experiments: causal neural feedback, deployment-consistent cost learning,
-fit-discovered paired-byte scopes, statistical merge trees and fast distillation.
-The neural-router gains survive the equal-rate search controls on internal probes;
-deployed systems still fail the original joint quality gate at 1,024/2,048 IDs.
-See `requirements-stage2.lock.txt` for optional PyTorch runtime dependencies and
-`scripts/review_stage2_continuation.py` for independent full archive replay.
+- Four methods: hard AST-BPE, Qwen2.5, Llama 3, and `o200k_base`.
+- Fixed 1,500-PDE benchmark: `data/benchmark_pde1500_20261022/` (490 source papers; 450/600/450 syntax-complexity mix). The accompanying non-PDE records are preserved in `formulas.jsonl.gz`.
+- Latest three-fold and simple-to-complex results: `experiments/pde1500_main_final_20261022/` and `reports/upstream/main_summary.csv`.
+- Hard-only 200-450 ID sweep and actual token-use distribution: `experiments/pde1500_sweep_200_450_20261022/` and `reports/upstream/`.
 
-**Current decision:** Stage 2 is paused at the user's request; see
-[`experiments/stage2/PAUSED.json`](experiments/stage2/PAUSED.json). Pilot10 is an
-additional completed long-context/joint-learning exploration; pilot11 is an
-incomplete operation-feedback attempt, with its failure and artifacts preserved.
-The talk now places these directions under future research. The next work is
-Stage 1 downstream evaluation using the two frozen proposals and five baselines.
+These are tokenizer metrics, not PDE-discovery outcomes. The 1,500 formulas were subjected to reproducible automated checks and semantic spot checks; they were not each expert-certified.
 
-| Current system | Role | Vocabulary |
-|---|---|---|
-| Boundary AST | Source structure and parameter-boundary segmentation | 1,024 / 2,048 IDs |
-| Math-atom BPE | Fit-derived mathematical alphabet + original HF BPE | 1,024 / 2,048 IDs |
-| Byte BPE | Original HF byte BPE baseline | 1,024 / 2,048 IDs |
-| SentencePiece Unigram | Original probabilistic subword baseline | 1,024 / 2,048 IDs |
-| Qwen2.5 | Fixed general tokenizer | 151,665 IDs |
-| Llama 3 | Original Meta tokenizer interface | 128,256 IDs |
-| o200k | Original tiktoken encoding | 200,019 IDs |
+## Downstream
 
-The math-atom route is a domain-specific training recipe using established BPE; the AST route changes segmentation over exactly the same dictionary. Neither production route uses RL. Full general vocabularies are deployment references, not equal-parameter causal comparisons.
+- Original eight EqGPT benchmark cases, hard AST-BPE at 280, 315, 350 IDs: `experiments/downstream/` and `reports/downstream/hard_results.csv`.
+- Each case retains its target-excluded training source, fixed protocol, frozen hard tokenizer, training record, complete candidate search trace, filtered hard-only log, and shared fitted MLP surrogate cache.
+- The original least-squares reward and Top-10 continuation search are preserved. Final PINN coefficient fitting is omitted; structure classification is the outcome.
+- The full hard-only archive with all eight cases' pretrained and searched model weights is distributed separately as `hard_ast_bpe_8case_20261022.zip`; it is intentionally not committed because its size is about 3.5 GB. The archive manifest includes per-file SHA-256 hashes.
 
-## Repository map
-
-- [`data/benchmark/`](data/benchmark/README.md): **56,000 formula strings**, 13 domains, source-provenance and two syntax-complexity classes. Formula text, IDs and metadata are separate. Frozen source partitions are preserved.
-- [`models/registry.json`](models/registry.json): the only active model registry; 7 methods / 19 configurations. `models/proposed/` contains the two routes; `models/baselines/` contain their pinned controls.
-- [`experiments/current/`](experiments/current/README.md): all retained metrics, 234,556 formula-result rows and three new audit rounds. Numerical results are an unchanged subset of the original v8 experiment.
-- [`presentations/math_tokenizer/`](presentations/math_tokenizer/README.md): English academic presentation using the supplied GBFR Beamer design, exact cover identity and date, 26 primary references and 3 data figures.
-- [`docs/`](docs/reproduction.md): current reproduction and downstream protocol notes.
-- [`history/`](history/README.md): superseded models, datasets, experiment records, scripts and tests. Embedded historical paths refer to Git commit `5217a5a`; check out that commit for original replay.
-
-## Loading and training
-
-```python
-from math_tokenizer.final_models import load_final
-model = load_final('ast_boundary', scenario='broad', capacity=1024)
-formula = r'\frac{\partial u}{\partial t}=\Delta u'
-assert model.decode(model.encode(formula)) == formula
-```
-
-The other proposed method is `official_atomic_bpe`. Exact baseline method names are listed in the registry. Historical model names are rejected by the active loader. Trained methods have both `broad` and strict source-category `specialized` versions; ordinary downstream work should begin with `broad`.
-
-```sh
-.venv/bin/python scripts/audit_current.py
-.venv/bin/python scripts/summarize_current.py
-.venv/bin/python -m pytest -q
-.venv/bin/python scripts/train_current.py --scenario broad --capacity 1024 --output /tmp/math-tokenizer-retrain
-```
-
-Training reads only the preserved fit and allowed auxiliary IDs. **Do not train on the entire 56,000-string catalog:** it includes test records. Test membership and metadata have not been changed by repository organization.
-
-## Main intrinsic result
-
-On the final v8 test, Boundary AST reduces paper-macro token/byte by **1.09%–2.64%** and encodes **2.65–3.00 times faster** than the same-dictionary math-atom BPE across the four budget/scenario conditions. Scope recall rises in three conditions and falls by 0.28 percentage points in one. Family-adjusted paper-cluster intervals support compression improvement in all four conditions, but do not establish universal structural gains.
-
-The three new release audits passed over **56,000 catalog formulas, 19 configurations, 109 metric records and 234,556 result rows**. Earlier v8 algorithm selection preceded new-test scoring; the current seven-method selection is retrospective. Historical RL did not pass the prespecified same-reward search-control promotion gate and is archived.
-
-Quality assurance consists of automated source/license, syntax, macro-fidelity, duplicate, classification and serialization checks. There is no pending expert-annotation workflow or certification claim. The benchmark is source syntax, not mathematical theorem truth. Domains are uneven; only **356** catalog formulas meet the strict PDE-equation rule. All current tests are now exposed. Speed evidence is from one machine and no downstream-task benefit has yet been measured.
-
-## EqGPT downstream comparison (2026-10-16)
-
-The author-architecture experiment compares original EqGPT, hard AST-BPE and soft
-AST-BPE, all trained from scratch under one paired protocol. See
-[the experiment guide](docs/eqgpt/README.md),
-[the four-round audit](docs/eqgpt/audit_summary.json), and
-[GPU rental options](docs/eqgpt/cloud_options_20261016.md).
-The portable archive is `deliverables/eqgpt_tokenizer_cloud_20261016.zip`.
-Local smoke runs are stored separately from future formal CUDA results.
+The EqGPT source and the eight original numerical-case datasets are under `third_party/eqgpt/`. The benchmark's 1,500 PDEs are formula text for upstream segmentation, not previously unknown physical laws. No new effective-equation discovery is claimed here.

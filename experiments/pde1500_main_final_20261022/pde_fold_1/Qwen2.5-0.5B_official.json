@@ -1,0 +1,22 @@
+{
+  "formulas": 500,
+  "sources": 163,
+  "compression_ratio": 2.2276545848546916,
+  "method_initial_compression_ratio": 2.2276545848546916,
+  "cmd_pct": 0.0,
+  "num_pct": 98.48293299620734,
+  "counts": {
+    "initial_character_tokens": 75043,
+    "initial_method_tokens": 75043,
+    "final_tokens": 33687,
+    "commands": 6355,
+    "commands_intact": 0,
+    "numbers": 1582,
+    "numbers_intact": 1558
+  },
+  "test_ids_sha256": "7d7034c082ead310a59f9cabe23b67e915f45b57f277e802ef45169dac547f6f",
+  "protocol": "pde_fold_1",
+  "method": "Qwen2.5-0.5B",
+  "total_ids": 151665,
+  "seconds": 0.1634437080065254
+}

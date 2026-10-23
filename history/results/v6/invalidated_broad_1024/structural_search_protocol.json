@@ -1,9 +1,0 @@
-{
-  "tree_weights": [
-    0.25,
-    0.5,
-    1.0
-  ],
-  "estimator": "exact expected contextual bandit policy gradient",
-  "test_used": false
-}

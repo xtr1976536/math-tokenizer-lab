@@ -1,0 +1,36 @@
+{
+  "status": "frozen_research_benchmark_automated_screen_and_semantic_spotcheck",
+  "pde_equations": 1500,
+  "other_formulas": 55644,
+  "non_pde_records_exactly_preserved": true,
+  "non_pde_serialized_sha256": "b08ba3fc49afe1f387e716fd610e9cf853592a70c55da3a37728110e3f6bb016",
+  "original_catalog_sha256": "76046cec92362fb58b5d5a28f0831a56240c37d6afd0bc9d7fcce052c614fb5e",
+  "pde_sha256": "93b36f70cfc7ab0d3f78d88bde72b3201043c2b21f9f6bf6b0543770a8510258",
+  "sources": 490,
+  "complexity": {
+    "complex": 450,
+    "simple": 450,
+    "moderate": 600
+  },
+  "families": {
+    "wave_dispersive": 155,
+    "other_pde": 594,
+    "schrodinger": 88,
+    "fluid": 230,
+    "reaction_diffusion": 84,
+    "geometric": 93,
+    "elliptic": 124,
+    "chemotaxis": 23,
+    "parabolic": 94,
+    "magnetohydrodynamics": 33,
+    "fractional_nonlocal": 47,
+    "kinetic": 77,
+    "transport_conservation": 27
+  },
+  "complexity_definition": "30/40/30 relative syntactic complexity quantiles of screened pool; not mathematical difficulty",
+  "quality_audit": "data/benchmark_pde1500_20261022/quality_audit.json",
+  "limitations": [
+    "Automated checks and semantic spot checks do not constitute exhaustive expert verification.",
+    "Conservative exclusion of integral/weak forms, inline equations and ambiguous identities narrows coverage."
+  ]
+}
