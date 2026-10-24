@@ -1,6 +1,6 @@
 # 数学公式分词与 PDE 方程发现
 
-本仓库有四块内容：**上游任务、下游任务、benchmark、参考资料**。此外，我们设计了一个[公开的 Hard AST-BPE 分词可视化网页](https://xtr1976536.github.io/ast-bpe-visualizer/)：输入公式后，可以查看训练得到的规则树、公式结构树，以及编码和解码过程。研究仓库仍保持私有；网页也可[离线打开](docs/index.html)。
+本仓库有四块内容：**上游任务、下游任务、benchmark、参考资料**。仓库保持私有，说明文档目前使用中文。
 
 ## 1. 上游任务
 
@@ -11,9 +11,9 @@
 - [主实验日志](experiments/upstream/pde1500_main_final_20261022.log)、[扫描日志](experiments/upstream/pde1500_sweep_200_450_20261022.log)（均从同批原始日志提取本仓库当前方法的行）
 - [四分词器加载脚本](scripts/当前四分词器.py)、[通用词表文件](models/)、[Hard 实现](src/math_tokenizer/hard_ast_2026.py)
 
-调用示例：`PYTHONPATH=src python scripts/当前四分词器.py hard_ast_bpe 'u_t+u_x=0'`。其余方法名为 `qwen2.5`、`llama3` 和 `o200k_base`。网页只展示 Hard AST-BPE。
+调用示例：`PYTHONPATH=src python scripts/当前四分词器.py hard_ast_bpe 'u_t+u_x=0'`。其余方法名为 `qwen2.5`、`llama3` 和 `o200k_base`。
 
-重新评估固定公式集可运行 `PYTHONPATH=src:. python scripts/evaluate_screened_pde.py --output experiments/复核主实验 --sizes 256`。已有实验记录不需为浏览网页重新计算。
+重新评估固定公式集可运行 `PYTHONPATH=src:. python scripts/evaluate_screened_pde.py --output experiments/复核主实验 --sizes 256`。
 
 ## 2. 下游任务
 
@@ -37,8 +37,6 @@
 - [上游固定公式集](data/benchmark_pde1500_20261022/)：我们从 490 篇论文中筛选 1500 条 PDE 公式，并按语法结构分为简单/中等/复杂，比例为 450/600/450；此外保留 55,644 条非 PDE 数学公式。质量检查包括来源回放、解析检查和语义抽查，**没有对全部 1500 条逐条进行专家人工检查**。
 - [下游八案例数据与已拟合 MLP 缓存索引](benchmark/README.md)、[EqGPT 原作者 PDE 结构工作簿](third_party/eqgpt/code/PDE_dataset_0725.xlsx)：这八案例是**已知方程的测试**，目标公式未进入模型的训练语料；我们尚未在前人也未知其有效控制方程的新数据集上完成发现实验。
 
-## 4. 参考资料和可视化网页
+## 4. 参考资料
 
 [参考论文 PDF、原仓库地址与许可说明](参考资料/README.md)。[EqGPT 论文原版完整代码](third_party/eqgpt/论文原版说明.md)单独保存，包含原作者的 PINN 全流程，和本仓库缩小版运行代码分开。第三方原始源码保持原貌；仓库说明先使用中文，待内容确认后再制作英文版。
-
-网页托管在独立的[公开 GitHub Pages 仓库](https://github.com/xtr1976536/ast-bpe-visualizer)，使用 GitHub 免费计划与 HTTPS；研究仓库继续保持私有。公开站点只发布静态网页、三个分词词表与 1500 条公式的展示字段，不发布原始八案例数据、模型权重或私有实验日志。
