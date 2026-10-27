@@ -24,12 +24,12 @@ math-tokenizer-lab/
 │   ├── pde1500_main_final_20261022/    # 上游主实验：逐公式结果及冻结词表
 │   ├── pde1500_sweep_200_450_20261022/ # 上游词表规模扫描：结果及冻结词表
 │   ├── upstream/                      # 上游运行日志
-│   └── downstream/                    # 八案例：词表、结果、日志及 MLP 缓存
+│   └── downstream/                    # 八个测试案例：词表、结果、日志及 MLP 缓存
 ├── reports/                           # 实验汇总、词表清单、token 频率和统计图
 │   ├── upstream/                      # 四种分词器的上游结果
-│   ├── downstream/                    # Hard AST-BPE 与缩小版 EqGPT 的下游结果
+│   ├── downstream/                    # Hard AST-BPE 与EqGPT 的下游结果
 │   └── pde1500_vocab_200_450_20261022/ # 词表规模与 token 使用分布分析
-├── third_party/eqgpt/                 # EqGPT 论文原版代码及八案例原始数据
+├── third_party/eqgpt/                 # EqGPT 论文原版代码及八个测试案例的原始数据
 ├── provenance/upstream_original/      # 上游原始实验来源与记录
 └── 参考资料/                           # 参考论文 PDF、原仓库链接与许可说明
 ```
