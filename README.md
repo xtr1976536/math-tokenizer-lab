@@ -23,7 +23,7 @@ data/
 │   ├── benchmark_pde1500_20261022/ # 上游公式、来源和筛查记录
 │   ├── eqgpt/                     # EqGPT 公式工作簿及八案例的增强训练语料
 │   └── snapshots/                 # 已完成上游实验使用的 PDE 语料快照
-├── cases/                         # 八案例的原始 MAT、CSV、NPY 数据
+├── cases/                         # 八个测试案例的原始 MAT、CSV、NPY 数据
 ├── surrogates/                    # 八案例已拟合 MLP、采样坐标和质量记录
 ├── tokenizers/                    # Qwen2.5、Llama 3 的分词器文件及来源
 └── weights/
@@ -41,7 +41,7 @@ data/
 | `experiments/pde1500_main_final_20261022/` | 上游主实验，按三折和“简单训练→复杂测试”保存指标、逐公式结果和 256-ID 词表。 |
 | `experiments/pde1500_sweep_200_450_20261022/` | 上游词表大小实验，保存各容量下的结果、词表及 token 使用统计。 |
 | `experiments/upstream/` | 上游实验日志。 |
-| `experiments/downstream/` | 八个下游案例各有一个目录，保存运行配置、Hard 与 GRE 结果、日志和词表。 |
+| `experiments/downstream/` | 八个下游测试案例各有一个目录，保存运行配置、Hard 与 GRE 结果、日志和词表。 |
 | `reports/upstream/` | 四个分词器的结果，以及 Hard AST-BPE 的词表规模和使用频率汇总。 |
 | `reports/downstream/` | Hard 与 GRE 的八案例对比、训练目标排除审计，以及 280、315、350-ID 的可读词表。 |
 | `reports/pde1500_vocab_200_450_20261022/` | 词表大小与 token 使用情况的分析表、统计图。 |
@@ -120,7 +120,7 @@ PYTHONPATH=src python scripts/当前四分词器.py hard_ast_bpe 'u_t+u_x=0'
 
 [上游公式集](data/corpora/benchmark_pde1500_20261022/) 包含 1500 条 PDE，来自 490 个来源组，简单、中等、复杂各有 450、600、450 条。目录还保留 55,644 条非 PDE 数学公式，当前上游实验未使用这些公式。筛查记录包括来源、自动检查和语义抽查，尚未逐条经过专家审核。
 
-下游八案例的原始数据在 [`data/cases/`](data/cases/)，已拟合 MLP 在 `data/surrogates/<case>/surrogate_cache.pt`。具体路径见 [数据索引](data/README.md)。这些案例用于已知方程的结构恢复，仓库尚未包含未知控制方程的发现实验。
+下游八个测试案例的原始数据在 [`data/cases/`](data/cases/)，已拟合 MLP 在 `data/surrogates/<case>/surrogate_cache.pt`。具体路径见 [数据索引](data/README.md)。这些案例用于已知方程的结构恢复，仓库尚未包含未知控制方程的发现实验。
 
 [参考资料](参考资料/README.md) 收录论文 PDF 和参考仓库链接。[EqGPT 论文原版说明](third_party/eqgpt/论文原版说明.md) 对应作者的完整代码，与本项目的缩小版实验分开保存。
 
