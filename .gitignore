@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 *.zip
 release_assets/
+data/weights/pretrained/
+data/weights/searched/
+data/weights/.downloads/

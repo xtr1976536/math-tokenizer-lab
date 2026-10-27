@@ -3,28 +3,28 @@
   "pretrained": {
     "eqgpt_reference": {
       "asset": "eqgpt_reference.pt",
-      "path": "release_assets/weights/pretrained/eqgpt_reference.pt",
+      "path": "data/weights/pretrained/eqgpt_reference.pt",
       "bytes": 76076615,
       "sha256": "a8529b685c46ded49c84325f8468dc47956cd86b34b798c5a9abdcf3e18b01d1",
       "tensor_sha256": "05e17f9ca1343f610628998ddcf10ce804ac1ad3e52f09345000628602650df0"
     },
     "ast_bpe_280": {
       "asset": "ast_bpe_280.pt",
-      "path": "release_assets/weights/pretrained/ast_bpe_280.pt",
+      "path": "data/weights/pretrained/ast_bpe_280.pt",
       "bytes": 77447623,
       "sha256": "3fa7d23847c55ffb691eea1669b123268e017a352d4dc03fdd0c30b4597fbc71",
       "tensor_sha256": "52205a0afce1eae5871e2ca0fc2bd21efae2621d8c7fef02d5f5b1423fe0fe26"
     },
     "ast_bpe_315": {
       "asset": "ast_bpe_315.pt",
-      "path": "release_assets/weights/pretrained/ast_bpe_315.pt",
+      "path": "data/weights/pretrained/ast_bpe_315.pt",
       "bytes": 77662791,
       "sha256": "0acb5f2e0b0f456e720e70587183950e926f904467be0f04b19cfce7547a36b5",
       "tensor_sha256": "d0fa962e7a04479d25e722c4baad72aa755507260e53ce490943a7d62e77503e"
     },
     "ast_bpe_350": {
       "asset": "ast_bpe_350.pt",
-      "path": "release_assets/weights/pretrained/ast_bpe_350.pt",
+      "path": "data/weights/pretrained/ast_bpe_350.pt",
       "bytes": 77877959,
       "sha256": "6dd1a8cfa50bba166545596fde96e11d7f69281d8ea14009e77222a751d4de6d",
       "tensor_sha256": "ef06506367432bb4971e208be87855e0ce68d7893139ee4d86ba1ae7234b4919"
@@ -34,28 +34,28 @@
     "Wave_equation": {
       "eqgpt_reference": {
         "asset": "Wave_equation_eqgpt_reference.pt",
-        "path": "release_assets/weights/searched/Wave_equation/eqgpt_reference.pt",
+        "path": "data/weights/searched/Wave_equation/eqgpt_reference.pt",
         "bytes": 76076615,
         "sha256": "5b9b5c54d69103dcacdaf8adf74938f7a0eca1ffaf93a9a2af06a28403b376ec",
         "tensor_sha256": "d568d589a5325c1e49dcb8b0f7d1300f4d7d9d354f0703e991cbd954c93a3ad3"
       },
       "ast_bpe_280": {
         "asset": "Wave_equation_ast_bpe_280.pt",
-        "path": "release_assets/weights/searched/Wave_equation/ast_bpe_280.pt",
+        "path": "data/weights/searched/Wave_equation/ast_bpe_280.pt",
         "bytes": 77447623,
         "sha256": "9620ab7cf39d6d95debd6e33b2bb1abb450db0220eab972af1e103067ce1ce10",
         "tensor_sha256": "817605fe394ec8a3dd1fe6635028dd9ee4511949868916776859665e41e232fe"
       },
       "ast_bpe_315": {
         "asset": "Wave_equation_ast_bpe_315.pt",
-        "path": "release_assets/weights/searched/Wave_equation/ast_bpe_315.pt",
+        "path": "data/weights/searched/Wave_equation/ast_bpe_315.pt",
         "bytes": 77662791,
         "sha256": "9d731b2196428cc07eb4bdb51950009e0960eb6863d947a039596d63b9f4fdf6",
         "tensor_sha256": "89e63b322fccc3e5fdbaf82335b9998e017204baf44910839f82b8d78b7b6cd3"
       },
       "ast_bpe_350": {
         "asset": "Wave_equation_ast_bpe_350.pt",
-        "path": "release_assets/weights/searched/Wave_equation/ast_bpe_350.pt",
+        "path": "data/weights/searched/Wave_equation/ast_bpe_350.pt",
         "bytes": 77877959,
         "sha256": "e3ec088a80bbcaadbaddbf675edac140a8471303270045695f6ffdaef3344b99",
         "tensor_sha256": "4cf0d3b45f254602105632c7296eedb1281088f62308758bd1b78b8f8f5c7645"
@@ -64,28 +64,28 @@
     "Convection_diffusion_equation": {
       "eqgpt_reference": {
         "asset": "Convection_diffusion_equation_eqgpt_reference.pt",
-        "path": "release_assets/weights/searched/Convection_diffusion_equation/eqgpt_reference.pt",
+        "path": "data/weights/searched/Convection_diffusion_equation/eqgpt_reference.pt",
         "bytes": 76076615,
         "sha256": "f791955d91a9f23ed9c94bfabc01ace757fd6be33f1b76a6ff044aaae8a7f712",
         "tensor_sha256": "3a6fd849f837b2c55ee90c1f1ad1bae13375f84b6e2a32e695b604546c184545"
       },
       "ast_bpe_280": {
         "asset": "Convection_diffusion_equation_ast_bpe_280.pt",
-        "path": "release_assets/weights/searched/Convection_diffusion_equation/ast_bpe_280.pt",
+        "path": "data/weights/searched/Convection_diffusion_equation/ast_bpe_280.pt",
         "bytes": 77447623,
         "sha256": "a81ea6d8d622683b65b89a4ce5c3e32bc028376d8d72184a80bbebe7802ed6a6",
         "tensor_sha256": "ca74b4d888d8c441ecdda7dbb216c5aeb76a845e4f3d5f208a18e15476a49f82"
       },
       "ast_bpe_315": {
         "asset": "Convection_diffusion_equation_ast_bpe_315.pt",
-        "path": "release_assets/weights/searched/Convection_diffusion_equation/ast_bpe_315.pt",
+        "path": "data/weights/searched/Convection_diffusion_equation/ast_bpe_315.pt",
         "bytes": 77662791,
         "sha256": "bcd91725fb91b7c00673b87f921e9a75a8050be20f38269f93bccbd0d5480a26",
         "tensor_sha256": "a542a50253c35c04034f04c07304e2db902521d28d568b3ef26de87a8bcb28d7"
       },
       "ast_bpe_350": {
         "asset": "Convection_diffusion_equation_ast_bpe_350.pt",
-        "path": "release_assets/weights/searched/Convection_diffusion_equation/ast_bpe_350.pt",
+        "path": "data/weights/searched/Convection_diffusion_equation/ast_bpe_350.pt",
         "bytes": 77877959,
         "sha256": "02c5dff1416d4878e669103dad625948b2348f64ca6139b8ee4c13b5eb8690ab",
         "tensor_sha256": "d03d8bd1f711ac03ffb2ba4303939ea70faf4dd270c0bceee10a08f83a65c7c9"
@@ -94,28 +94,28 @@
     "KG_equation": {
       "eqgpt_reference": {
         "asset": "KG_equation_eqgpt_reference.pt",
-        "path": "release_assets/weights/searched/KG_equation/eqgpt_reference.pt",
+        "path": "data/weights/searched/KG_equation/eqgpt_reference.pt",
         "bytes": 76076615,
         "sha256": "96b8a61843229b53ef06a0f88561dcc1041153e2b5c2c2d51d10f0405ba4bc2d",
         "tensor_sha256": "0233ed0de8dacb28dff992156f2e63e23073e237821d8c3fc12691e265b62f11"
       },
       "ast_bpe_280": {
         "asset": "KG_equation_ast_bpe_280.pt",
-        "path": "release_assets/weights/searched/KG_equation/ast_bpe_280.pt",
+        "path": "data/weights/searched/KG_equation/ast_bpe_280.pt",
         "bytes": 77447623,
         "sha256": "22de5bcec224193bf4a020bc782a9f1713b20cc1122200c906c2fbebbf504bbf",
         "tensor_sha256": "2706475d5ba7ca90044cdd2632b6ab6f7ede5a54f75a44701b6f79988a003584"
       },
       "ast_bpe_315": {
         "asset": "KG_equation_ast_bpe_315.pt",
-        "path": "release_assets/weights/searched/KG_equation/ast_bpe_315.pt",
+        "path": "data/weights/searched/KG_equation/ast_bpe_315.pt",
         "bytes": 77662791,
         "sha256": "92c505187fdcf8d8e93ac5ff9785c7b87249a6895f8e52db9fe71f13dd3c82b9",
         "tensor_sha256": "e1da9f1723e4af165e591153c9ed37c66e7165cb2046330dd1d4d79e080d07c0"
       },
       "ast_bpe_350": {
         "asset": "KG_equation_ast_bpe_350.pt",
-        "path": "release_assets/weights/searched/KG_equation/ast_bpe_350.pt",
+        "path": "data/weights/searched/KG_equation/ast_bpe_350.pt",
         "bytes": 77877959,
         "sha256": "846c2e83ad21e65e66b6c91c08db95f18dedf2aa8322e8b3ab286123ea6d5801",
         "tensor_sha256": "a9c1e77298e1665b0b568975a573a2b2bd2bfbd6438bcf1baa1889397abf1d1d"
@@ -124,28 +124,28 @@
     "Burgers_equation": {
       "eqgpt_reference": {
         "asset": "Burgers_equation_eqgpt_reference.pt",
-        "path": "release_assets/weights/searched/Burgers_equation/eqgpt_reference.pt",
+        "path": "data/weights/searched/Burgers_equation/eqgpt_reference.pt",
         "bytes": 76076615,
         "sha256": "ea7c7b9551ec1c6bc0f5455ed96ad18159da844edac2f0e186ed84822c6826c7",
         "tensor_sha256": "0adef4380b1587d71052785109b00fc663083b3401c9aacb9ac0dd739fb2a879"
       },
       "ast_bpe_280": {
         "asset": "Burgers_equation_ast_bpe_280.pt",
-        "path": "release_assets/weights/searched/Burgers_equation/ast_bpe_280.pt",
+        "path": "data/weights/searched/Burgers_equation/ast_bpe_280.pt",
         "bytes": 77447623,
         "sha256": "29a90a09de4d48c89bced27fde131722a6ba125187b0712c97f66b9329406a87",
         "tensor_sha256": "1d97e2911c766f73d45cbc1dcd22300d474d26ab4a1477304c19db72714166c7"
       },
       "ast_bpe_315": {
         "asset": "Burgers_equation_ast_bpe_315.pt",
-        "path": "release_assets/weights/searched/Burgers_equation/ast_bpe_315.pt",
+        "path": "data/weights/searched/Burgers_equation/ast_bpe_315.pt",
         "bytes": 77662791,
         "sha256": "d505a7a683b91f609c8cb064aa2b72a3228aa09f0db800733acc6e3140208381",
         "tensor_sha256": "1342de9771758c1ea893485c6b5bb9f7a2ea672670bf75aefd0ae6a6e816ba53"
       },
       "ast_bpe_350": {
         "asset": "Burgers_equation_ast_bpe_350.pt",
-        "path": "release_assets/weights/searched/Burgers_equation/ast_bpe_350.pt",
+        "path": "data/weights/searched/Burgers_equation/ast_bpe_350.pt",
         "bytes": 77877959,
         "sha256": "ec58250f90254df9f557d677dab3943debda60184fd03cb985fec729eb1d43b0",
         "tensor_sha256": "17d39b3cefee65aa98321a231056d07d31abd88bc824ee10bcda88ccb969cd65"
@@ -154,28 +154,28 @@
     "Eq_6_2_12": {
       "eqgpt_reference": {
         "asset": "Eq_6_2_12_eqgpt_reference.pt",
-        "path": "release_assets/weights/searched/Eq_6_2_12/eqgpt_reference.pt",
+        "path": "data/weights/searched/Eq_6_2_12/eqgpt_reference.pt",
         "bytes": 76076615,
         "sha256": "beba10eba493fd6368f7c60e589ab5c9a1cc0fa5dbc0e207900f463149280298",
         "tensor_sha256": "89076bceede2265f56c0e43b534be20faddf7367ca0096077cb5027b2db06007"
       },
       "ast_bpe_280": {
         "asset": "Eq_6_2_12_ast_bpe_280.pt",
-        "path": "release_assets/weights/searched/Eq_6_2_12/ast_bpe_280.pt",
+        "path": "data/weights/searched/Eq_6_2_12/ast_bpe_280.pt",
         "bytes": 77447623,
         "sha256": "c288cdf49d23279655c7849f1ad0c9e972ad4306486f2af6debbba6f8f8a15d9",
         "tensor_sha256": "df24916e6ae7b2df8f858b1240d3f603527e3f6f946b4551e9ebc178b0411a3a"
       },
       "ast_bpe_315": {
         "asset": "Eq_6_2_12_ast_bpe_315.pt",
-        "path": "release_assets/weights/searched/Eq_6_2_12/ast_bpe_315.pt",
+        "path": "data/weights/searched/Eq_6_2_12/ast_bpe_315.pt",
         "bytes": 77662791,
         "sha256": "ba79bed7530eb5bc9bc94cf58bffd61171833f5a1adeb06dea04d705155781eb",
         "tensor_sha256": "bec0c1eabdfb010ec490a8e2cc3fffcf1fe5fdab020ddcbc3adcb2f84457004e"
       },
       "ast_bpe_350": {
         "asset": "Eq_6_2_12_ast_bpe_350.pt",
-        "path": "release_assets/weights/searched/Eq_6_2_12/ast_bpe_350.pt",
+        "path": "data/weights/searched/Eq_6_2_12/ast_bpe_350.pt",
         "bytes": 77877959,
         "sha256": "04506b17ec92c0ebef58fb7541c30dd2da3b80092f270505b8d557f68efdb532",
         "tensor_sha256": "b8a1fe2bec2f1351874fab82246f9764fd2bb15aa6bb5fa39c7d93bdb00e9fde"
@@ -184,28 +184,28 @@
     "PDE_divide": {
       "eqgpt_reference": {
         "asset": "PDE_divide_eqgpt_reference.pt",
-        "path": "release_assets/weights/searched/PDE_divide/eqgpt_reference.pt",
+        "path": "data/weights/searched/PDE_divide/eqgpt_reference.pt",
         "bytes": 76076615,
         "sha256": "5655de91b044b5084c478f48a63a1b58c938315a82564e8c3cfa593c091b06ab",
         "tensor_sha256": "ff2fb12941577d20f77b375f10e3e33fd9fbfebe5091a0445ab015d4b7db56e9"
       },
       "ast_bpe_280": {
         "asset": "PDE_divide_ast_bpe_280.pt",
-        "path": "release_assets/weights/searched/PDE_divide/ast_bpe_280.pt",
+        "path": "data/weights/searched/PDE_divide/ast_bpe_280.pt",
         "bytes": 77447623,
         "sha256": "b8eb106988ece49b6d61a6cc19b3d43a5db6134ff8f742935079179ea426a738",
         "tensor_sha256": "7212c2c04d6f97a662e7297e606ef8c7e09e554ea80245fed4ae0acc2334a9c0"
       },
       "ast_bpe_315": {
         "asset": "PDE_divide_ast_bpe_315.pt",
-        "path": "release_assets/weights/searched/PDE_divide/ast_bpe_315.pt",
+        "path": "data/weights/searched/PDE_divide/ast_bpe_315.pt",
         "bytes": 77662791,
         "sha256": "4c1f0d15c2987903ea71877c946b240e9385f2e9d15e52e5cc22af57460c25dc",
         "tensor_sha256": "e6eda9203840c1eea2a06a25a53f83be6219ab0183c36ab5f3f10c2db5b2077c"
       },
       "ast_bpe_350": {
         "asset": "PDE_divide_ast_bpe_350.pt",
-        "path": "release_assets/weights/searched/PDE_divide/ast_bpe_350.pt",
+        "path": "data/weights/searched/PDE_divide/ast_bpe_350.pt",
         "bytes": 77877959,
         "sha256": "dccf6265eb16c6237a4be6288413fda570829e6e85f5c2fc6743dfb09614d216",
         "tensor_sha256": "10b913873d0c0037af0fea479501962b60923a160e72bc5200e1c50f65b22c01"
@@ -214,28 +214,28 @@
     "KdV_equation": {
       "eqgpt_reference": {
         "asset": "KdV_equation_eqgpt_reference.pt",
-        "path": "release_assets/weights/searched/KdV_equation/eqgpt_reference.pt",
+        "path": "data/weights/searched/KdV_equation/eqgpt_reference.pt",
         "bytes": 76076615,
         "sha256": "d811b094902c0e77bf07af09ca0595cbd496764fc72086fc1ba02e262bb61410",
         "tensor_sha256": "d28b36addc3c9b7d89c1bec940943c8dabe62bf0c90afcdc75e6b30f53011f5c"
       },
       "ast_bpe_280": {
         "asset": "KdV_equation_ast_bpe_280.pt",
-        "path": "release_assets/weights/searched/KdV_equation/ast_bpe_280.pt",
+        "path": "data/weights/searched/KdV_equation/ast_bpe_280.pt",
         "bytes": 77447623,
         "sha256": "eb5c7eba2afe396fc4d604829efe8ec29967f48e8953f3b87c93ab62664eae3c",
         "tensor_sha256": "6112edd3dcce0ec5c25ac07affdddb45b377668d9e23c5e05f9026b7b71058d5"
       },
       "ast_bpe_315": {
         "asset": "KdV_equation_ast_bpe_315.pt",
-        "path": "release_assets/weights/searched/KdV_equation/ast_bpe_315.pt",
+        "path": "data/weights/searched/KdV_equation/ast_bpe_315.pt",
         "bytes": 77662791,
         "sha256": "e204018002d3a2fc9d29d02fcc4eb0a194af4cbb30c7f0323b13161187e61c0d",
         "tensor_sha256": "1542026a0d0735a8be1b7ae00baaaaaf9e39f23510ee4551ba7b6e6924a2589a"
       },
       "ast_bpe_350": {
         "asset": "KdV_equation_ast_bpe_350.pt",
-        "path": "release_assets/weights/searched/KdV_equation/ast_bpe_350.pt",
+        "path": "data/weights/searched/KdV_equation/ast_bpe_350.pt",
         "bytes": 77877959,
         "sha256": "cd559ac12dd294fc586aadfabdf60f52e311181f5e46c66b0c55d6cc20b44eab",
         "tensor_sha256": "9fcb14fb308c6fdf66be38f22c58b2d5181b24274ef30b31b58b652cf6c74463"
@@ -244,28 +244,28 @@
     "Chaffee_Infante_equation": {
       "eqgpt_reference": {
         "asset": "Chaffee_Infante_equation_eqgpt_reference.pt",
-        "path": "release_assets/weights/searched/Chaffee_Infante_equation/eqgpt_reference.pt",
+        "path": "data/weights/searched/Chaffee_Infante_equation/eqgpt_reference.pt",
         "bytes": 76076615,
         "sha256": "af4877e81e46287c55d6651b260fced0f1d345da359c74cd4eaaefb4471facd5",
         "tensor_sha256": "032ac918e6ddfe4b8d4d568577f5167cc77b4a50d8acc827f4668dfb61a6d46b"
       },
       "ast_bpe_280": {
         "asset": "Chaffee_Infante_equation_ast_bpe_280.pt",
-        "path": "release_assets/weights/searched/Chaffee_Infante_equation/ast_bpe_280.pt",
+        "path": "data/weights/searched/Chaffee_Infante_equation/ast_bpe_280.pt",
         "bytes": 77447623,
         "sha256": "06fbec9ff54df14bcee0be27e17ef8fa8d887aeedcd21e2090824f12d0208166",
         "tensor_sha256": "d9f05f9bd9226af1d18d4f52d0f817d135f614e75f2a103b9e23ab583669bb0f"
       },
       "ast_bpe_315": {
         "asset": "Chaffee_Infante_equation_ast_bpe_315.pt",
-        "path": "release_assets/weights/searched/Chaffee_Infante_equation/ast_bpe_315.pt",
+        "path": "data/weights/searched/Chaffee_Infante_equation/ast_bpe_315.pt",
         "bytes": 77662791,
         "sha256": "1bdc02ee0656ecbae8d29ea0e7a8fc0d5d026b01680cea8a0dfa26eef7dc06ef",
         "tensor_sha256": "05b8be259238a11549c04be213ae27c405cc13f575498e9ddee3c3650cb3b98c"
       },
       "ast_bpe_350": {
         "asset": "Chaffee_Infante_equation_ast_bpe_350.pt",
-        "path": "release_assets/weights/searched/Chaffee_Infante_equation/ast_bpe_350.pt",
+        "path": "data/weights/searched/Chaffee_Infante_equation/ast_bpe_350.pt",
         "bytes": 77877959,
         "sha256": "62602fad11d1c83522139063e8a80e2469595e8aaddbbe28a3d521de8ed24f8e",
         "tensor_sha256": "4bc30e1e71dca3a52ce7d5f2398562578faf9bf3600cd3dc3beadfaa64338cec"

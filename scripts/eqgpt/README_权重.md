@@ -1,17 +1,18 @@
 # 已训练权重直接使用
 
-本仓库的缩小版八案例实验使用共享预训练模型：**4 份预训练权重**（Hard 280/315/350，EqGPT GRE 57）和 **32 份搜索后权重**（8 案例 × 4 arm）。文件已经逐一对照 `training.json` / `search.json` 中保存的张量哈希核验。因普通 Git 仓库不适合存放约 2.6 GB 的二进制权重，权重以本仓库的**私有 GitHub Release** 资产提供；清单在 [`benchmark/weights_manifest.json`](../../benchmark/weights_manifest.json)。模型权重仍只有仓库授权成员可以下载。**请克隆研究仓库的最新 `main` 获取加载脚本；Release 标签用于下载权重，不以标签的自动源码归档作为最新运行代码。**
+缩小版八案例实验共保存 36 份 Transformer 权重：4 份共享预训练权重和 32 份搜索后权重。Hard AST-BPE 有 280、315、350 ID 三种大小，EqGPT GRE 为 57 ID。文件和张量哈希已与训练、搜索记录核对。
+
+权重在 [公开的 GitHub Release](https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/eqgpt-fast-20261022-weights-v1)，下载后统一放入 `data/weights/`。文件清单见 [`data/weights/manifest.json`](../../data/weights/manifest.json)。请使用仓库最新代码；Release 标签只用于下载权重。
 
 ## 1. 安装环境与权重
 
 ```bash
 python -m venv .venv
 .venv/bin/pip install -r requirements-eqgpt.lock.txt
-gh auth login
 PYTHONPATH=src .venv/bin/python scripts/eqgpt/使用已训练模型.py --download
 ```
 
-脚本将 36 个 Release 资产按清单还原到被 `.gitignore` 忽略的 `release_assets/weights/`，逐一核对文件 SHA-256。Llama 3 等上游分词器的依赖见根目录 `requirements.lock.txt`。已有的八案例 MLP 拟合结果则**直接位于 Git 仓库**，无须从 Release 下载，也无须再次进行 50,000 次拟合。
+下载无需 GitHub 登录。脚本将 36 个 Release 资产按清单保存到 `data/weights/`，逐一核对文件 SHA-256；已有且正确的文件会跳过。Llama 3 等上游分词器的依赖见根目录 `requirements.lock.txt`。已有的八案例 MLP 拟合结果位于 `data/surrogates/<case>/`，随 Git 仓库提供，无须从 Release 下载，也无须再次进行 50,000 次拟合。
 
 ## 2. 直接生成与评价
 

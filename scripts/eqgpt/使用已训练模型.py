@@ -5,7 +5,8 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-import subprocess
+import urllib.request
+from urllib.parse import quote
 
 import torch
 
@@ -19,7 +20,7 @@ from math_tokenizer.eqgpt.latex_experiment import RewardEvaluator, search_latex
 from math_tokenizer.eqgpt.tokenizer_adapters import Adapter
 
 
-MANIFEST = ROOT / "benchmark/weights_manifest.json"
+MANIFEST = ROOT / "data/weights/manifest.json"
 VERSION = "eqgpt-fast-20261022-weights-v1"
 
 
@@ -64,28 +65,35 @@ def load_checkpoint(case, arm, stage, device):
 
 
 def download():
-    if subprocess.run(["gh", "auth", "status"], capture_output=True).returncode:
-        raise RuntimeError("请先使用 gh auth login 登录可访问私有仓库的 GitHub 账号")
-    directory = ROOT / "release_assets/download"
-    directory.mkdir(parents=True, exist_ok=True)
-    subprocess.run(["gh", "release", "download", VERSION, "--repo", "xtr1976536/math-tokenizer-lab",
-                    "--dir", str(directory), "--clobber"], check=True)
     manifest = json.loads(MANIFEST.read_text())
     records = [*manifest["pretrained"].values(),
                *(record for case in manifest["searched"].values() for record in case.values())]
+    directory = ROOT / "data/weights/.downloads"
+    directory.mkdir(parents=True, exist_ok=True)
     for record in records:
-        source = directory / record["asset"]
         target = ROOT / record["path"]
-        if sha(source) != record["sha256"]:
-            raise ValueError(f"Release 文件哈希不匹配：{source}")
+        if target.exists() and sha(target) == record["sha256"]:
+            print("已有且校验通过：", record["path"])
+            continue
+        url = ("https://github.com/xtr1976536/math-tokenizer-lab/releases/download/"
+               + VERSION + "/" + quote(record["asset"]))
+        temporary = directory / (record["asset"] + ".part")
+        request = urllib.request.Request(url, headers={"User-Agent": "math-tokenizer-lab"})
+        with urllib.request.urlopen(request, timeout=120) as response, temporary.open("wb") as stream:
+            while chunk := response.read(1024 * 1024):
+                stream.write(chunk)
+        if temporary.stat().st_size != record["bytes"] or sha(temporary) != record["sha256"]:
+            temporary.unlink()
+            raise ValueError(f"Release 文件大小或哈希不匹配：{record['asset']}")
         target.parent.mkdir(parents=True, exist_ok=True)
-        source.replace(target)
-    print(f"已校验并安装 {len(records)} 个模型权重")
+        temporary.replace(target)
+        print("已下载并校验：", record["path"])
+    print(f"{len(records)} 个模型权重已就绪：data/weights/")
 
 
 def load_surrogate(case, device):
-    folder = ROOT / "experiments/downstream" / case
-    cache = folder / "surrogate/surrogate_cache.pt"
+    folder = ROOT / "data/surrogates" / case
+    cache = folder / "surrogate_cache.pt"
     quality = json.loads((folder / "surrogate_quality.json").read_text())
     if sha(cache) != quality["cache_sha256"]:
         raise ValueError("MLP 缓存文件哈希不匹配")
@@ -142,7 +150,7 @@ def run(args):
         return
     if args.stage != "pretrained":
         raise ValueError("继续搜索须从共享预训练权重开始；请指定 --stage pretrained")
-    output = ROOT / "release_assets/new_search" / args.case / args.arm
+    output = ROOT / "experiments/new_search" / args.case / args.arm
     output.mkdir(parents=True, exist_ok=True)
     history = search_latex(core, adapter, net, database, args.case, ["x", "t"], output,
                            args.device, args.seed, attempts=args.attempts, cycles=3,
@@ -154,7 +162,7 @@ def run(args):
 
 def main():
     parser = argparse.ArgumentParser(description="使用已训练的 Hard AST-BPE 或缩小版 EqGPT 模型")
-    parser.add_argument("--download", action="store_true", help="从私有 GitHub Release 下载并校验权重")
+    parser.add_argument("--download", action="store_true", help="从公开 GitHub Release 下载并校验权重")
     parser.add_argument("--case", default="Wave_equation")
     parser.add_argument("--arm", choices=("eqgpt_reference", "ast_bpe_280", "ast_bpe_315", "ast_bpe_350"), default="ast_bpe_350")
     parser.add_argument("--stage", choices=("pretrained", "searched"), default="searched")

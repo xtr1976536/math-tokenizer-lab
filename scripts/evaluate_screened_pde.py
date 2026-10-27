@@ -99,12 +99,13 @@ def token_coverage(model,rows):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--output',required=True)
-    parser.add_argument('--data',default='data/benchmark_pde1500_20261022/pde_equations.jsonl.gz')
+    parser.add_argument('--data',default='data/corpora/benchmark_pde1500_20261022/pde_equations.jsonl.gz')
     parser.add_argument('--sizes',default='256')
     parser.add_argument('--ast-only',action='store_true')
     args=parser.parse_args();out=ROOT/args.output
     out.mkdir(parents=True,exist_ok=True)
-    snapshot=out/'equations.jsonl.gz'
+    snapshot=ROOT/'data/corpora/snapshots'/out.name/'equations.jsonl.gz'
+    snapshot.parent.mkdir(parents=True,exist_ok=True)
     if not snapshot.exists():
         snapshot.write_bytes((ROOT/args.data).read_bytes())
     rows=list(map(json.loads,gzip.open(snapshot,'rt')))

@@ -13,7 +13,7 @@ from math_tokenizer.eqgpt.author import tensor_hash
 
 ROOT = Path(__file__).resolve().parents[2]
 ORIGINAL = ROOT.parent / "math_tokenizer_project"
-DEST = ROOT / "release_assets/weights"
+DEST = ROOT / "data/weights"
 RUNS = {
     "Wave_equation": "eqgpt_fast_reward_20261022",
     "Convection_diffusion_equation": "eqgpt_fast_reward_Convection_diffusion_equation_20261022",
@@ -65,7 +65,7 @@ def main():
             if not alias.exists():
                 alias.symlink_to(destination.relative_to(DEST))
         print("WEIGHTS_VERIFIED", case, flush=True)
-    target = ROOT / "benchmark/weights_manifest.json"
+    target = ROOT / "data/weights/manifest.json"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     print("权重矩阵校验完成：", len(manifest["pretrained"]), "组预训练，", sum(map(len, manifest["searched"].values())), "组搜索后权重")

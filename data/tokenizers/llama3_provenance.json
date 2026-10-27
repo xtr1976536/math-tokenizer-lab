@@ -1,7 +1,7 @@
 {
   "repo": "meta-llama/Meta-Llama-3-8B",
   "revision": "8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
-  "local": "models/Meta-Llama-3-8B/NousResearch--Meta-Llama-3-8B.json",
+  "local": "data/tokenizers/Meta-Llama-3-8B/NousResearch--Meta-Llama-3-8B.json",
   "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
   "role": "fixed_pretrained_reference",
   "status": "downloaded",
@@ -17,15 +17,15 @@
   "official_code_revision": "a0940f9cf7065d45bb6675660f80d305c041a754",
   "official_code_files": {
     "llama/tokenizer.py": {
-      "local": "models/Meta-Llama-3-8B/tokenizer.py",
+      "local": "data/tokenizers/Meta-Llama-3-8B/tokenizer.py",
       "sha256": "e29045cbbae33e07bb1ad92bd8249032c4a802f7d9676f115c19aeebd114f9cd"
     },
     "LICENSE": {
-      "local": "models/Meta-Llama-3-8B/LICENSE",
+      "local": "data/tokenizers/Meta-Llama-3-8B/LICENSE",
       "sha256": "4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f"
     }
   },
-  "official_ranks_path": "models/Meta-Llama-3-8B/tokenizer.model",
+  "official_ranks_path": "data/tokenizers/Meta-Llama-3-8B/tokenizer.model",
   "official_ranks_sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
   "rank_conversion": "Unmodified official HF token ID to mergeable rank; ByteLevel inverse; official Meta reference independently replayed against HF."
 }

@@ -18,9 +18,9 @@ def load(method, fold="pde_fold_1", size=256):
             path = ROOT / f"experiments/pde1500_sweep_200_450_20261022/{fold}/ast_bpe_{size}.model.json"
         return CompactAlphabet.load(path)
     if method == "qwen2.5":
-        return HFTokenizer(Tokenizer.from_file(str(ROOT / "models/Qwen2.5-0.5B/qwen-tokenizer.json")))
+        return HFTokenizer(Tokenizer.from_file(str(ROOT / "data/tokenizers/Qwen2.5-0.5B/qwen-tokenizer.json")))
     if method == "llama3":
-        record = json.loads((ROOT / "models/llama3_provenance.json").read_text())
+        record = json.loads((ROOT / "data/tokenizers/llama3_provenance.json").read_text())
         return Llama3Official(record)
     if method == "o200k_base":
         return TikToken("o200k_base")

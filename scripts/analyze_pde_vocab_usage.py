@@ -138,7 +138,7 @@ def plot(metrics, summaries, rows):
 
 def main():
     OUTPUT.mkdir(parents=True,exist_ok=True)
-    manifest=json.loads((ROOT/'data/benchmark_pde1500_20261022/manifest.json').read_text())
+    manifest=json.loads((ROOT/'data/corpora/benchmark_pde1500_20261022/manifest.json').read_text())
     protocol=json.loads((EXPERIMENT/'protocol.json').read_text())
     audit=json.loads((ROOT/'experiments/pde1500_main_final_20261022/audit.json').read_text())
     assert protocol['data_sha256']==manifest['pde_sha256'] and audit['status']=='PASS'

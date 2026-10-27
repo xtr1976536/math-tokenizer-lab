@@ -43,7 +43,7 @@ def main():
     out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
     verify_source()
     torch.set_num_threads(8)
-    source_dir=out/'source';source_dir.mkdir(exist_ok=True)
+    source_dir=ROOT/'data/corpora/eqgpt/augmented'/args.case;source_dir.mkdir(exist_ok=True)
     sequences,source=augment_training(SHARED8_TARGETS,source_dir,SEED)
     texts=[structure_to_latex(seq) for seq in sequences]
     assert source['training_sequences']==6784
@@ -66,16 +66,19 @@ def main():
     if p.exists():assert json.loads(p.read_text())==protocol
     else:dump(p,protocol)
     started=time.perf_counter()
-    shared_dir=out/'surrogate'/args.case
+    shared_dir=ROOT/'data/surrogates'/args.case
     env,net,database,state,shared=shared_surrogate(shared_dir,args.case,OBSERVATIONS,0,SEED,args.device,False)
     surrogate_seconds=time.perf_counter()-started
-    loss_path=next((shared_dir/'model_save'/args.case).glob('*/loss.txt'))
-    loss_lines=loss_path.read_text().splitlines()
-    assert len(loss_lines)>=100
-    dump(out/'surrogate_quality.json',dict(case=args.case,shared=shared,
-        loss_first=loss_lines[0],loss_last=loss_lines[-1],
-        loss_file_sha256=digest(loss_path),fit_or_cache_load_seconds=surrogate_seconds,
-        cache_sha256=digest(shared_dir/'surrogate_cache.pt')))
+    quality_path=shared_dir/'surrogate_quality.json'
+    if not quality_path.exists():
+        loss_path=next((shared_dir/'model_save'/args.case).glob('*/loss.txt'))
+        loss_lines=loss_path.read_text().splitlines()
+        assert len(loss_lines)>=100
+        dump(quality_path,dict(case=args.case,shared=shared,
+            loss_first=loss_lines[0],loss_last=loss_lines[-1],
+            loss_file_sha256=digest(loss_path),fit_or_cache_load_seconds=surrogate_seconds,
+            cache_sha256=digest(shared_dir/'surrogate_cache.pt')))
+    assert json.loads(quality_path.read_text())['cache_sha256']==digest(shared_dir/'surrogate_cache.pt')
     print('SURROGATE_READY',args.case,'seconds',round(surrogate_seconds,2),flush=True)
     models,initial=build_models(adapters,positions,SEED,args.device,n_layers=LAYERS)
     dump(out/'initial_models.json',initial)
