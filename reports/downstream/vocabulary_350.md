@@ -1,6 +1,6 @@
 # Hard AST-BPE 350-ID vocabulary
 
-Frozen model: `experiments/eqgpt_fast_reward_20261022/tokenizers/ast_bpe_350.model.json`.
+Frozen model: `experiments/downstream/Wave_equation/tokenizers/ast_bpe_350.model.json`.
 IDs 0-2 are control tokens; content token ID = compact vocabulary index + 3.
 Escapes use Python string notation; e.g. `\\` represents one backslash byte.
 
