@@ -1,8 +1,7 @@
 """Load the author's actual definitions without executing script side effects.
 
 Definitions are compiled from the pinned source AST, not reimplemented. The
-original files remain byte-identical. All namespace and call-site adaptations
-are listed in docs/eqgpt/changes.json.
+original files remain byte-identical. The original source is stored in eqgpt_original/.
 """
 from __future__ import annotations
 
@@ -36,7 +35,7 @@ from tqdm import tqdm
 
 from math_tokenizer.corpus import ROOT
 
-UPSTREAM = ROOT / "third_party/eqgpt"
+UPSTREAM = ROOT / "eqgpt_original"
 CODE = UPSTREAM / "code"
 DICTIONARY = json.loads((CODE / "dict_datas_0725.json").read_text())
 ARCHITECTURE = dict(d_model=768, d_ff=2048, d_k=64, d_v=64,

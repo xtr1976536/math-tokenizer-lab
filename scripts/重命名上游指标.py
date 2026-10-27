@@ -20,7 +20,7 @@ def main():
     for name in FILES:
         path = REPORT / name
         rename(path)
-    rename(ROOT / "reports/pde1500_vocab_200_450_20261022/three_metrics.csv")
+    rename(ROOT / "reports/vocab_usage/three_metrics.csv")
 
 
 def rename(path):

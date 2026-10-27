@@ -10,8 +10,8 @@ import matplotlib.pyplot as plt
 
 from math_tokenizer.corpus import ROOT
 
-EXPERIMENT = ROOT / 'experiments/pde1500_sweep_200_450_20261022'
-OUTPUT = ROOT / 'reports/pde1500_vocab_200_450_20261022'
+EXPERIMENT = ROOT / 'experiments/upstream_vocab_size'
+OUTPUT = ROOT / 'reports/vocab_usage'
 METHODS = ('ast_bpe',)
 
 
@@ -138,9 +138,9 @@ def plot(metrics, summaries, rows):
 
 def main():
     OUTPUT.mkdir(parents=True,exist_ok=True)
-    manifest=json.loads((ROOT/'data/corpora/benchmark_pde1500_20261022/manifest.json').read_text())
+    manifest=json.loads((ROOT/'data/formulas/pde/manifest.json').read_text())
     protocol=json.loads((EXPERIMENT/'protocol.json').read_text())
-    audit=json.loads((ROOT/'experiments/pde1500_main_final_20261022/audit.json').read_text())
+    audit=json.loads((ROOT/'experiments/upstream_main/audit.json').read_text())
     assert protocol['data_sha256']==manifest['pde_sha256'] and audit['status']=='PASS'
     metrics=pooled_metrics(json.loads((EXPERIMENT/'results.json').read_text()))
     rows=usage_rows();summaries=summarize(rows)

@@ -13,9 +13,9 @@ import json
 
 def load(method, fold="pde_fold_1", size=256):
     if method == "hard_ast_bpe":
-        path = ROOT / f"experiments/pde1500_main_final_20261022/{fold}/ast_bpe_{size}.model.json"
+        path = ROOT / f"experiments/upstream_main/{fold}/ast_bpe_{size}.model.json"
         if not path.exists():
-            path = ROOT / f"experiments/pde1500_sweep_200_450_20261022/{fold}/ast_bpe_{size}.model.json"
+            path = ROOT / f"experiments/upstream_vocab_size/{fold}/ast_bpe_{size}.model.json"
         return CompactAlphabet.load(path)
     if method == "qwen2.5":
         return HFTokenizer(Tokenizer.from_file(str(ROOT / "data/tokenizers/Qwen2.5-0.5B/qwen-tokenizer.json")))

@@ -43,7 +43,7 @@ def main():
     out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
     verify_source()
     torch.set_num_threads(8)
-    source_dir=ROOT/'data/corpora/eqgpt/augmented'/args.case;source_dir.mkdir(exist_ok=True)
+    source_dir=ROOT/'data/formulas/eqgpt/augmented'/args.case;source_dir.mkdir(exist_ok=True)
     sequences,source=augment_training(SHARED8_TARGETS,source_dir,SEED)
     texts=[structure_to_latex(seq) for seq in sequences]
     assert source['training_sequences']==6784
@@ -66,7 +66,7 @@ def main():
     if p.exists():assert json.loads(p.read_text())==protocol
     else:dump(p,protocol)
     started=time.perf_counter()
-    shared_dir=ROOT/'data/surrogates'/args.case
+    shared_dir=ROOT/'data/mlp_cache'/args.case
     env,net,database,state,shared=shared_surrogate(shared_dir,args.case,OBSERVATIONS,0,SEED,args.device,False)
     surrogate_seconds=time.perf_counter()-started
     quality_path=shared_dir/'surrogate_quality.json'

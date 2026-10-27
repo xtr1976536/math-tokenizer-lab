@@ -1,4 +1,4 @@
-"""固定 1500 条 PDE 上四分词器评估：三折及简单训练到复杂测试。"""
+"""固定 1500 条 PDE 上四分词器评估：分成 3 份，每次选 2 份训练、1 份测试及简单训练到复杂测试。"""
 import argparse
 import bisect
 from collections import Counter, defaultdict
@@ -99,12 +99,12 @@ def token_coverage(model,rows):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--output',required=True)
-    parser.add_argument('--data',default='data/corpora/benchmark_pde1500_20261022/pde_equations.jsonl.gz')
+    parser.add_argument('--data',default='data/formulas/pde/pde_equations.jsonl.gz')
     parser.add_argument('--sizes',default='256')
     parser.add_argument('--ast-only',action='store_true')
     args=parser.parse_args();out=ROOT/args.output
     out.mkdir(parents=True,exist_ok=True)
-    snapshot=ROOT/'data/corpora/snapshots'/out.name/'equations.jsonl.gz'
+    snapshot=ROOT/'data/formulas/experiment_inputs'/out.name/'equations.jsonl.gz'
     snapshot.parent.mkdir(parents=True,exist_ok=True)
     if not snapshot.exists():
         snapshot.write_bytes((ROOT/args.data).read_bytes())

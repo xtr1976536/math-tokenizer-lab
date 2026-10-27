@@ -92,7 +92,7 @@ def download():
 
 
 def load_surrogate(case, device):
-    folder = ROOT / "data/surrogates" / case
+    folder = ROOT / "data/mlp_cache" / case
     cache = folder / "surrogate_cache.pt"
     quality = json.loads((folder / "surrogate_quality.json").read_text())
     if sha(cache) != quality["cache_sha256"]:

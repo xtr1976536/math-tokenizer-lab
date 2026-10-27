@@ -12,7 +12,7 @@ python -m venv .venv
 PYTHONPATH=src .venv/bin/python scripts/eqgpt/使用已训练模型.py --download
 ```
 
-下载无需 GitHub 登录。脚本将 36 个 Release 资产按清单保存到 `data/weights/`，逐一核对文件 SHA-256；已有且正确的文件会跳过。Llama 3 等上游分词器的依赖见根目录 `requirements.lock.txt`。已有的八案例 MLP 拟合结果位于 `data/surrogates/<case>/`，随 Git 仓库提供，无须从 Release 下载，也无须再次进行 50,000 次拟合。
+下载无需 GitHub 登录。脚本将 36 个 Release 资产按清单保存到 `data/weights/`，逐一核对文件 SHA-256；已有且正确的文件会跳过。Llama 3 等上游分词器的依赖见根目录 `requirements.lock.txt`。已有的八案例 MLP 拟合结果位于 `data/mlp_cache/<case>/`，随 Git 仓库提供，无须从 Release 下载，也无须再次进行 50,000 次拟合。
 
 ## 2. 直接生成与评价
 

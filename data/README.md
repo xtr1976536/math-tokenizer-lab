@@ -6,33 +6,33 @@
 
 | 路径 | 内容 |
 |---|---|
-| [`corpora/benchmark_pde1500_20261022/`](corpora/benchmark_pde1500_20261022/) | 1500 条 PDE、原有 55,644 条非 PDE 公式、来源与筛查记录。当前上游实验只使用 PDE。 |
-| [`corpora/eqgpt/PDE_dataset_0725.xlsx`](corpora/eqgpt/PDE_dataset_0725.xlsx) | EqGPT 原作者的 221 条公式工作簿。 |
-| [`corpora/eqgpt/augmented/`](corpora/eqgpt/augmented/) | 八案例下游实验实际使用的增强训练序列及目标排除记录，各案例分别保存。 |
-| [`corpora/snapshots/`](corpora/snapshots/) | 两套已完成上游实验读取的 PDE 语料快照。 |
+| [`formulas/pde/`](formulas/pde/) | 1500 条 PDE、原有 55,644 条非 PDE 公式、来源与筛查记录。当前上游实验只使用 PDE。 |
+| [`formulas/eqgpt/PDE_dataset_0725.xlsx`](formulas/eqgpt/PDE_dataset_0725.xlsx) | EqGPT 原作者的 221 条公式。 |
+| [`formulas/eqgpt/augmented/`](formulas/eqgpt/augmented/) | 八案例下游实验实际使用的增强训练序列及目标排除记录，各案例分别保存。 |
+| [`formulas/experiment_inputs/`](formulas/experiment_inputs/) | 各次上游实验使用的公式。 |
 | [`cases/`](cases/) | 八个案例的原始 MAT、CSV、NPY 数据及作者的数据说明。 |
-| [`surrogates/`](surrogates/) | 各案例已拟合的 MLP、采样坐标、预测值和拟合质量记录。 |
+| [`mlp_cache/`](mlp_cache/) | 各案例已拟合的 MLP、采样坐标、预测值和拟合质量记录。 |
 | [`tokenizers/`](tokenizers/) | Qwen2.5、Llama 3 的分词器文件、来源和许可。 |
 | [`weights/manifest.json`](weights/manifest.json) | 36 份 Transformer 权重的下载文件名、保存路径、大小与哈希。 |
 | `weights/pretrained/` | 4 份共享预训练权重：Hard 280/315/350 与 EqGPT GRE 57。运行下载脚本后生成。 |
 | `weights/searched/<case>/` | 每个案例的 4 份搜索后权重，共 32 份。运行下载脚本后生成。 |
 
-Hard AST-BPE 的冻结词表仍与对应实验一起保存在 `experiments/`，入口见 [根目录 README](../README.md#分词器代码与词表)。
+训练好的 Hard AST-BPE 词表仍与对应实验一起保存在 `experiments/`，入口见 [根目录 README](../README.md#分词器代码与词表)。
 
 ## 八个案例
 
 | 案例 | 原始数据 | 已拟合 MLP |
 |---|---|---|
-| Wave | [Wave_equation](cases/Wave_equation/) | [缓存](surrogates/Wave_equation/surrogate_cache.pt) |
-| Convection-diffusion | [Convection_diffusion_equation](cases/Convection_diffusion_equation/) | [缓存](surrogates/Convection_diffusion_equation/surrogate_cache.pt) |
-| Klein-Gordon | [KG_equation](cases/KG_equation/) | [缓存](surrogates/KG_equation/surrogate_cache.pt) |
-| Burgers | [Burgers_equation](cases/Burgers_equation/) | [缓存](surrogates/Burgers_equation/surrogate_cache.pt) |
-| Eq. 6.2.12 | [Eq_6_2_12](cases/Eq_6_2_12/) | [缓存](surrogates/Eq_6_2_12/surrogate_cache.pt) |
-| PDE divide | [PDE_divide](cases/PDE_divide/) | [缓存](surrogates/PDE_divide/surrogate_cache.pt) |
-| KdV | [KdV_equation](cases/KdV_equation/) | [缓存](surrogates/KdV_equation/surrogate_cache.pt) |
-| Chafee-Infante | [Chaffee_Infante_equation](cases/Chaffee_Infante_equation/) | [缓存](surrogates/Chaffee_Infante_equation/surrogate_cache.pt) |
+| Wave | [Wave_equation](cases/Wave_equation/) | [缓存](mlp_cache/Wave_equation/surrogate_cache.pt) |
+| Convection-diffusion | [Convection_diffusion_equation](cases/Convection_diffusion_equation/) | [缓存](mlp_cache/Convection_diffusion_equation/surrogate_cache.pt) |
+| Klein-Gordon | [KG_equation](cases/KG_equation/) | [缓存](mlp_cache/KG_equation/surrogate_cache.pt) |
+| Burgers | [Burgers_equation](cases/Burgers_equation/) | [缓存](mlp_cache/Burgers_equation/surrogate_cache.pt) |
+| Eq. 6.2.12 | [Eq_6_2_12](cases/Eq_6_2_12/) | [缓存](mlp_cache/Eq_6_2_12/surrogate_cache.pt) |
+| PDE divide | [PDE_divide](cases/PDE_divide/) | [缓存](mlp_cache/PDE_divide/surrogate_cache.pt) |
+| KdV | [KdV_equation](cases/KdV_equation/) | [缓存](mlp_cache/KdV_equation/surrogate_cache.pt) |
+| Chafee-Infante | [Chaffee_Infante_equation](cases/Chaffee_Infante_equation/) | [缓存](mlp_cache/Chaffee_Infante_equation/surrogate_cache.pt) |
 
-每个 `surrogates/<case>/` 目录包含：
+每个 `mlp_cache/<case>/` 目录包含：
 
 - `surrogate_cache.pt`：MLP 参数、供 reward 求导的 10,000 个采样坐标及预测值。
 - `shared_manifest.json`：网络配置、数据哈希与预处理记录。
@@ -52,24 +52,10 @@ PYTHONPATH=src python scripts/eqgpt/使用已训练模型.py --download
 
 生成候选、计算 reward 和继续搜索的命令见 [使用已训练模型](../scripts/eqgpt/README_权重.md)。
 
-## 来源和旧路径
+## 来源
 
-八案例数据及公式工作簿来自 [EqGPT 原作者仓库](https://github.com/woshixuhao/EqGPT)。固定版本、许可和原始文件哈希见 [`third_party/eqgpt/provenance.json`](../third_party/eqgpt/provenance.json)。原版程序在 [`third_party/eqgpt/code/`](../third_party/eqgpt/code/)，其中包含完整 PINN 流程。
+八案例数据及公式表来自 [EqGPT 原作者仓库](https://github.com/woshixuhao/EqGPT)。版本、许可和原始文件校验值见 [`eqgpt_original/provenance.json`](../eqgpt_original/provenance.json)。原版程序在 [`eqgpt_original/code/`](../eqgpt_original/code/)，包含完整 PINN 流程。
 
-本次只调整存放位置，语料、缓存和权重内容未重算。旧路径对应关系如下：
+原版代码需要的数据路径和公式表路径保留了相对链接，实际文件都在 `data/`。历史日志中的旧目录名保留原样。
 
-| 旧位置 | 新位置 |
-|---|---|
-| `data/benchmark_pde1500_20261022/` | `data/corpora/benchmark_pde1500_20261022/` |
-| `third_party/eqgpt/data/` | `data/cases/` |
-| `third_party/eqgpt/code/PDE_dataset_0725.xlsx` | `data/corpora/eqgpt/PDE_dataset_0725.xlsx` |
-| `experiments/downstream/<case>/source/` | `data/corpora/eqgpt/augmented/<case>/` |
-| `experiments/downstream/<case>/surrogate/` 及 `surrogate_quality.json` | `data/surrogates/<case>/` |
-| `experiments/<run>/equations.jsonl.gz` | `data/corpora/snapshots/<run>/equations.jsonl.gz` |
-| `models/` | `data/tokenizers/` |
-| `benchmark/weights_manifest.json` | `data/weights/manifest.json` |
-| `release_assets/weights/` | `data/weights/` |
-
-EqGPT 原版代码目录中的数据路径和公式工作簿路径保留相对链接，指向这里的唯一一份文件。原版 Python 源码没有改动。历史日志及配置中记录的运行时路径保留原样，可按上表查找。
-
-八案例用于已知方程结构恢复；未知控制方程的数据尚未纳入。
+八案例用于已知方程结构恢复，未知控制方程的数据尚未纳入。

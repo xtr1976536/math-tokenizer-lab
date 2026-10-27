@@ -13,10 +13,10 @@
 
 | 项目 | 链接 | 本仓库用途 |
 |---|---|---|
-| EqGPT 原作者仓库 | https://github.com/woshixuhao/EqGPT | 下游实验原作者代码及八案例数据来源；本地快照见 `third_party/eqgpt/` |
+| EqGPT 原作者仓库 | https://github.com/woshixuhao/EqGPT | 下游实验原作者代码及八案例数据来源；本地副本见 `eqgpt_original/` |
 | Qwen2.5-0.5B | https://huggingface.co/Qwen/Qwen2.5-0.5B | 上游固定通用分词器 |
 | Llama 3 | https://github.com/meta-llama/llama3 | 上游固定通用分词器；原作者 tokenizer 文件与许可证见 `data/tokenizers/Meta-Llama-3-8B/` |
 | tiktoken | https://github.com/openai/tiktoken | `o200k_base` 的官方实现，由安装依赖提供 |
 | Hugging Face tokenizers | https://github.com/huggingface/tokenizers | Qwen 词表的加载实现 |
 
-版本、文件校验值及第三方许可见各数据目录、`third_party/eqgpt/provenance.json` 和 `data/tokenizers/llama3_provenance.json`。
+版本、文件校验值及第三方许可见各数据目录、`eqgpt_original/provenance.json` 和 `data/tokenizers/llama3_provenance.json`。
