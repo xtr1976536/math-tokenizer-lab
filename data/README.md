@@ -46,6 +46,15 @@
 
 ## 下载权重
 
+下面第一个命令仅下载方案一（50-token）权重。方案二使用独立命令：
+
+```bash
+PYTHONPATH=.:src python scripts/eqgpt/download_expanded_80_weights.py
+```
+
+方案二权重保存到 `experiments/expanded_downstream_80_v1/shared_pretrain/` 和 `cases/<case>/<arm>/`，共36份；[清单](../experiments/expanded_downstream_80_v1/weight_manifest.json)与[使用说明](../scripts/eqgpt/README_方案二模型使用.md)独立于方案一。环境安装先看[环境说明](../ENVIRONMENT.md)。
+
+
 在已安装下游依赖的 Python 环境中，从仓库根目录运行：
 
 ```bash

@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "rounds": {
+    "1": {
+      "status": "PASS",
+      "tests": "............................................................             [100%]\n60 passed in 1.46s",
+      "round": 1,
+      "unchanged_protected_files": 1291,
+      "interpreter": "3.11.15 (main, Jun 23 2026, 15:46:51) [Clang 22.1.3 ]"
+    },
+    "2": {
+      "status": "PASS",
+      "upstream_formulas": 1500,
+      "split": {
+        "train": 1200,
+        "validation": 150,
+        "test": 150
+      },
+      "validation_combinations": 132,
+      "validated_tokenizers": 78,
+      "reaggregated_metric_files": 162,
+      "study1_upstream_metric_files": 16,
+      "test_arms": 6,
+      "downstream_results": 64,
+      "checkpoint_files_hashed": 72,
+      "study2_tensor_hashes": 36,
+      "old_212_preserved": true,
+      "current_expanded_runtime_gate": "PASS",
+      "downstream_summary": {
+        "study1": {
+          "eqgpt_reference": {
+            "top1": 3,
+            "top10": 3,
+            "evaluated": 4800
+          },
+          "ast_bpe_280": {
+            "top1": 3,
+            "top10": 3,
+            "evaluated": 2347
+          },
+          "ast_bpe_315": {
+            "top1": 3,
+            "top10": 3,
+            "evaluated": 2396
+          },
+          "ast_bpe_350": {
+            "top1": 4,
+            "top10": 5,
+            "evaluated": 2397
+          }
+        },
+        "study2": {
+          "eqgpt_reference": {
+            "top1": 2,
+            "top10": 2,
+            "evaluated": 4800
+          },
+          "ast_bpe_280": {
+            "top1": 1,
+            "top10": 1,
+            "evaluated": 2702
+          },
+          "ast_bpe_315": {
+            "top1": 3,
+            "top10": 3,
+            "evaluated": 2603
+          },
+          "ast_bpe_350": {
+            "top1": 1,
+            "top10": 1,
+            "evaluated": 2763
+          }
+        }
+      },
+      "round": 2,
+      "unchanged_protected_files": 1291,
+      "interpreter": "3.11.15 (main, Jun 23 2026, 15:46:51) [Clang 22.1.3 ]"
+    },
+    "3": {
+      "status": "PASS",
+      "documentation_links": 9,
+      "required_tracked_files": 800,
+      "release_records": {
+        "eqgpt-fast-20261022-weights-v1": {
+          "url": "https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/eqgpt-fast-20261022-weights-v1",
+          "matched_weights": 36
+        },
+        "expanded-downstream-80-v1-weights": {
+          "url": "https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/expanded-downstream-80-v1-weights",
+          "matched_weights": 36
+        }
+      },
+      "study1_results_unchanged_since_5953ce5": true,
+      "updated_documentation_links_checked": 8,
+      "model_usage_smoke": "eight Wave searched arms; CPU",
+      "round": 3,
+      "unchanged_protected_files": 1291,
+      "interpreter": "3.11.15 (main, Jun 23 2026, 15:46:51) [Clang 22.1.3 ]"
+    }
+  },
+  "usage_smoke": "usage_smoke.json",
+  "model_smoke": "model_smoke.json"
+}

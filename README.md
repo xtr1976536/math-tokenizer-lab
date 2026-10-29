@@ -20,6 +20,12 @@
 
 两套的详细文件对应、运行命令、审计记录与保留范围见[实验总索引](reports/实验方案索引.md)。新外部 benchmark 的大部分记录是来源明确的参数/函数族实例，不应把结构数当作独立论文或独立 PDE 家族数。
 
+## 快速查看与使用
+
+只查看结论时，打开[两套实验索引](reports/实验方案索引.md)、[方案一下游结果](reports/downstream/对比结果.csv)、[方案二下游结果](reports/expanded_downstream_80_v1/report_zh.md)及[两轮对照与限制](reports/expanded_downstream_80_v1/comparison_previous_zh.md)，无需下载权重或重新训练。
+
+安装环境见[环境说明](ENVIRONMENT.md)。方案一模型使用见[50-token模型入口](scripts/eqgpt/README_权重.md)，方案二见[80-token模型入口](scripts/eqgpt/README_方案二模型使用.md)。两套下游各36份、共72份权重；权重文件、词表及位置容量必须配套。本次环境与入口维护的保护快照、独立环境和三轮核验见[维护记录](reports/repository_two_studies/maintenance/README.md)。
+
 ## 目录用途
 
 | 文件夹 | 用途 |
@@ -50,7 +56,7 @@ data/
     └── searched/          # 搜索后的权重，下载后放在这里
 ```
 
-语料、原始数据和 MLP 缓存随仓库提供。约 2.6 GB 的 Transformer 权重从 [GitHub Release](https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/eqgpt-fast-20261022-weights-v1) 下载后放入 `data/weights/`，方法见 [数据说明](data/README.md)。
+语料、原始数据和 MLP 缓存随仓库提供。方案一约 2.6 GiB 的 Transformer 权重从 [GitHub Release](https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/eqgpt-fast-20261022-weights-v1) 下载后放入 `data/weights/`，方法见 [数据说明](data/README.md)。方案二另有36份权重，下载到其独立实验目录，见[模型使用入口](scripts/eqgpt/README_方案二模型使用.md)。
 
 实验和结果目录：
 
@@ -76,14 +82,16 @@ Hard AST-BPE 的训练、编码和解码在 [`hard_ast_2026.py`](src/math_tokeni
 
 训练好的词表保存在实验目录：
 
-- **上游主实验，256 ID**：[`experiments/upstream_main/`](experiments/upstream_main/)。
-- **上游词表大小实验，200–450 ID**：[`experiments/upstream_vocab_size/`](experiments/upstream_vocab_size/)。
-- **下游，280、315、350 ID**：各案例的 `tokenizers/` 目录，例如 [`Wave_equation/tokenizers/`](experiments/downstream/Wave_equation/tokenizers/)。
-- **逐项查看词表**：[280 ID](reports/downstream/vocabulary_280.md)、[315 ID](reports/downstream/vocabulary_315.md)、[350 ID](reports/downstream/vocabulary_350.md)。上游各实验目录中的 `*.tokens.csv` 还记录 token 的使用次数和频率。
+- **方案二上游，多基础表、64–512-ID 容量扫描**：[词表与划分](experiments/upstream_811/README.md)。
+- **方案二下游，280/315/350 ID**：[实际训练词表](data/formulas/expanded_downstream_80_v1/tokenizers_round_0/)。
+- **方案一上游主实验，256 ID**：[`experiments/upstream_main/`](experiments/upstream_main/)。
+- **方案一上游词表大小实验，200–450 ID**：[`experiments/upstream_vocab_size/`](experiments/upstream_vocab_size/)。
+- **方案一下游，280、315、350 ID**：各案例的 `tokenizers/` 目录，例如 [`Wave_equation/tokenizers/`](experiments/downstream/Wave_equation/tokenizers/)。
+- **逐项查看方案一下游词表**：[280 ID](reports/downstream/vocabulary_280.md)、[315 ID](reports/downstream/vocabulary_315.md)、[350 ID](reports/downstream/vocabulary_350.md)。上游各实验目录中的 `*.tokens.csv` 还记录 token 的使用次数和频率。
 
 每份词表需要两个文件：`ast_bpe_<size>.model.json` 保存基础字符表和 ID 数量，`ast_bpe_<size>.model.backend.json` 保存 token 字节和合并规则。加载时两个文件须放在同一目录。
 
-现有实验使用 98 个基础字节字符。总词表大小包含三个控制 ID：`PAD=0`、`EOS=1`、`BOS=2`，因此 256-ID 词表有 253 个内容 token。底层 backend 还保留部分内部字节条目，其条目数不能直接作为最终词表大小。
+方案一和两套下游使用 98 个基础字节字符；方案二上游比较多种基础表，其中可运行配置包含91、95、98字符。总词表大小包含三个控制 ID：`PAD=0`、`EOS=1`、`BOS=2`，因此 256-ID 词表有 253 个内容 token。底层 backend 还保留部分内部字节条目，其条目数不能直接作为最终词表大小。
 
 在已安装依赖的环境中，从仓库根目录运行 Python，并设置 `PYTHONPATH=src`：
 
@@ -162,4 +170,4 @@ PYTHONPATH=src python scripts/当前四分词器.py hard_ast_bpe 'u_t+u_x=0'
 
 [参考资料](参考资料/README.md) 收录论文 PDF 和参考仓库链接。[EqGPT 论文原版说明](eqgpt_original/论文原版说明.md) 对应作者的完整代码，与本项目的缩小版实验分开保存。
 
-依赖见 [`requirements.lock.txt`](requirements.lock.txt) 和 [`requirements-eqgpt.lock.txt`](requirements-eqgpt.lock.txt)，项目配置见 [`pyproject.toml`](pyproject.toml)。许可与第三方材料说明见 [`LICENSE`](LICENSE) 和 [`NOTICE.md`](NOTICE.md)。
+环境安装与历史依赖区别见 [ENVIRONMENT.md](ENVIRONMENT.md)，当前环境直接依赖参考见 [requirements-runtime.lock.txt](requirements-runtime.lock.txt)。原有两份依赖文件保留其历史身份，不应同时安装来覆盖版本。项目配置见 [`pyproject.toml`](pyproject.toml)。许可与第三方材料说明见 [`LICENSE`](LICENSE) 和 [`NOTICE.md`](NOTICE.md)。

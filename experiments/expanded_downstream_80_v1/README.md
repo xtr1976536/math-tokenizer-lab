@@ -32,3 +32,7 @@ Search JSON records contain the tensor hashes of the corresponding weights. The 
 ## The two formula benchmarks
 
 The older benchmark is the 221-formula EqGPT handbook collection. The new external benchmark is separate and has 2,045 screened formulas before the run-specific length filter. This run selects 1,643 of those formulas and combines them with the 212 old, non-target EqGPT formulas. It does not overwrite either benchmark; the eight case datasets remain the evaluation set. Dataset provenance and filtering are documented in [`data/README.md`](../../data/README.md), [`data/formulas/gre_benchmark_filtered/README.md`](../../data/formulas/gre_benchmark_filtered/README.md), and the per-pass audit files under `data/formulas/expanded_downstream_80_v1/`.
+
+## Direct model use
+
+For inspect/generate/score and new-output search commands, see the [study-2 usage guide](../../scripts/eqgpt/README_方案二模型使用.md). This utility loads the 80-position model and the study-2 tokenizer; it does not change the archived experiment runtime. Install dependencies as described in [ENVIRONMENT.md](../../ENVIRONMENT.md).

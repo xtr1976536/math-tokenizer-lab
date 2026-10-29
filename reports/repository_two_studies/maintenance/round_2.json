@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "upstream_formulas": 1500,
+  "split": {
+    "train": 1200,
+    "validation": 150,
+    "test": 150
+  },
+  "validation_combinations": 132,
+  "validated_tokenizers": 78,
+  "reaggregated_metric_files": 162,
+  "study1_upstream_metric_files": 16,
+  "test_arms": 6,
+  "downstream_results": 64,
+  "checkpoint_files_hashed": 72,
+  "study2_tensor_hashes": 36,
+  "old_212_preserved": true,
+  "current_expanded_runtime_gate": "PASS",
+  "downstream_summary": {
+    "study1": {
+      "eqgpt_reference": {
+        "top1": 3,
+        "top10": 3,
+        "evaluated": 4800
+      },
+      "ast_bpe_280": {
+        "top1": 3,
+        "top10": 3,
+        "evaluated": 2347
+      },
+      "ast_bpe_315": {
+        "top1": 3,
+        "top10": 3,
+        "evaluated": 2396
+      },
+      "ast_bpe_350": {
+        "top1": 4,
+        "top10": 5,
+        "evaluated": 2397
+      }
+    },
+    "study2": {
+      "eqgpt_reference": {
+        "top1": 2,
+        "top10": 2,
+        "evaluated": 4800
+      },
+      "ast_bpe_280": {
+        "top1": 1,
+        "top10": 1,
+        "evaluated": 2702
+      },
+      "ast_bpe_315": {
+        "top1": 3,
+        "top10": 3,
+        "evaluated": 2603
+      },
+      "ast_bpe_350": {
+        "top1": 1,
+        "top10": 1,
+        "evaluated": 2763
+      }
+    }
+  },
+  "round": 2,
+  "unchanged_protected_files": 1291,
+  "interpreter": "3.11.15 (main, Jun 23 2026, 15:46:51) [Clang 22.1.3 ]"
+}

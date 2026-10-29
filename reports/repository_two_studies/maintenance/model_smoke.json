@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "scope": "All 8 Wave searched arms; generation is a usage smoke, not a new experiment.",
+  "checks": [
+    {
+      "study": 1,
+      "arm": "eqgpt_reference",
+      "capacity": 50,
+      "loaded": true,
+      "samples": 2
+    },
+    {
+      "study": 1,
+      "arm": "ast_bpe_280",
+      "capacity": 50,
+      "loaded": true,
+      "samples": 2
+    },
+    {
+      "study": 1,
+      "arm": "ast_bpe_315",
+      "capacity": 50,
+      "loaded": true,
+      "samples": 2
+    },
+    {
+      "study": 1,
+      "arm": "ast_bpe_350",
+      "capacity": 50,
+      "loaded": true,
+      "samples": 2
+    },
+    {
+      "study": 2,
+      "arm": "eqgpt_reference",
+      "capacity": 80,
+      "loaded": true,
+      "samples": 2
+    },
+    {
+      "study": 2,
+      "arm": "ast_bpe_280",
+      "capacity": 80,
+      "loaded": true,
+      "samples": 2
+    },
+    {
+      "study": 2,
+      "arm": "ast_bpe_315",
+      "capacity": 80,
+      "loaded": true,
+      "samples": 2
+    },
+    {
+      "study": 2,
+      "arm": "ast_bpe_350",
+      "capacity": 80,
+      "loaded": true,
+      "samples": 2
+    }
+  ]
+}

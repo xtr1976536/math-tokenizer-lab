@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "isolated_environment": true,
+  "study2_inspect": "Hard315 searched, 80 positions",
+  "study2_score": {
+    "case": "Wave_equation",
+    "latex": "u_{tt}-u_{xx}=0",
+    "status": "evaluated",
+    "reward": 0.9315067155140354
+  },
+  "study2_new_output_search": {
+    "cycles": 3,
+    "attempts_per_cycle": 4,
+    "total_attempts": 12,
+    "continuation_epochs": 2,
+    "max_tokens": 30,
+    "output_scope": "temporary directory outside repository"
+  },
+  "dependency_check": "51 packages; compatible",
+  "scope": "Usage verification only; formal experiment results unchanged"
+}

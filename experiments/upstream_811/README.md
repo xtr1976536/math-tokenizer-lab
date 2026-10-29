@@ -20,7 +20,7 @@
 
 ## 运行与复核
 
-在仓库根目录安装锁定依赖和上游分词依赖后运行：
+在仓库根目录按[环境说明](../../ENVIRONMENT.md)安装依赖后运行：
 
 ```bash
 PYTHONPATH=.:src python scripts/run_upstream_811.py

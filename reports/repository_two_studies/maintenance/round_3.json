@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "documentation_links": 9,
+  "required_tracked_files": 800,
+  "release_records": {
+    "eqgpt-fast-20261022-weights-v1": {
+      "url": "https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/eqgpt-fast-20261022-weights-v1",
+      "matched_weights": 36
+    },
+    "expanded-downstream-80-v1-weights": {
+      "url": "https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/expanded-downstream-80-v1-weights",
+      "matched_weights": 36
+    }
+  },
+  "study1_results_unchanged_since_5953ce5": true,
+  "updated_documentation_links_checked": 8,
+  "model_usage_smoke": "eight Wave searched arms; CPU",
+  "round": 3,
+  "unchanged_protected_files": 1291,
+  "interpreter": "3.11.15 (main, Jun 23 2026, 15:46:51) [Clang 22.1.3 ]"
+}
