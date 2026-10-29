@@ -1,0 +1,28 @@
+{
+  "training_seconds": 1599.387083586902,
+  "search_seconds": 132.86332704099186,
+  "top1": "redundant",
+  "top10_correct": false,
+  "top10_has_redundant": true,
+  "ranked_classes": [
+    "redundant",
+    "redundant",
+    "redundant",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect"
+  ],
+  "attempted_statuses": {
+    "variable_or_numeric_unavailable": 208,
+    "evaluated": 323,
+    "syntax_error": 65,
+    "incomplete": 4
+  },
+  "first_correct": null,
+  "reward_calls": 225,
+  "cache_hits": 98
+}

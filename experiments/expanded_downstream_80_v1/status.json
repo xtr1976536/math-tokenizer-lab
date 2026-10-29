@@ -1,0 +1,50 @@
+{
+  "device": "mps",
+  "source_records": 1855,
+  "samples": 59360,
+  "settings": {
+    "status": "USER_CONFIRMED",
+    "epochs": 25,
+    "layers": 3,
+    "position_capacity": 80,
+    "search_max_tokens": 80,
+    "gre_generation_limit": 80,
+    "augmentation": "sampled_equivalent_32_preserve_original_latex",
+    "batch_size": 128,
+    "lr": 0.0001,
+    "clip": 1,
+    "seed": 525,
+    "attempts_per_cycle": 200,
+    "cycles": 3,
+    "continuation_epochs": 2,
+    "tokenizer_sizes": [
+      280,
+      315,
+      350
+    ],
+    "base_bytes": 98,
+    "mlp": "reuse_only",
+    "user_choices": {
+      "epochs": "沿用最新设置：25 epoch",
+      "limit": "80，如果能容纳足够多则80，不需要111",
+      "augmentation": "采用32次等价排列采样并修正EOS"
+    },
+    "source_retention": 0.8218874612317235,
+    "common_subset_filter": "exclude source from all arms if any of its 32 variants exceeds80; no truncation"
+  },
+  "started_at": "2026-10-29T04:32:48.949023+00:00",
+  "completed_stages": [
+    "pretrain",
+    "search_Wave_equation",
+    "search_Convection_diffusion_equation",
+    "search_KG_equation",
+    "search_Burgers_equation",
+    "search_Eq_6_2_12",
+    "search_PDE_divide",
+    "search_KdV_equation",
+    "search_Chaffee_Infante_equation"
+  ],
+  "status": "COMPLETE",
+  "stage": null,
+  "ended_at": "2026-10-29T05:14:27.041883+00:00"
+}

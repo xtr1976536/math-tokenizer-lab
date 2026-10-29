@@ -1,0 +1,223 @@
+{
+  "status": "LOCAL_CHECKPOINTS_HASHED",
+  "count": 36,
+  "total_bytes": 2784902652,
+  "files": [
+    {
+      "path": "cases/Burgers_equation/ast_bpe_280/searched.pt",
+      "size_bytes": 77539783,
+      "sha256": "c5b33f7dfd39603d00b8fa685ff562b019f437b6af8c5edf8fd044e389bca6db",
+      "asset": "searched_Burgers_equation_ast_bpe_280.pt"
+    },
+    {
+      "path": "cases/Burgers_equation/ast_bpe_315/searched.pt",
+      "size_bytes": 77754951,
+      "sha256": "c108284a62e27448e802205b9e5440d5af02a6bcda653923aefbb0ca7fd79017",
+      "asset": "searched_Burgers_equation_ast_bpe_315.pt"
+    },
+    {
+      "path": "cases/Burgers_equation/ast_bpe_350/searched.pt",
+      "size_bytes": 77970119,
+      "sha256": "8967038f6c49057c6af67eae9d063c6153ef0fbd9267a40a145d732d481d5d8d",
+      "asset": "searched_Burgers_equation_ast_bpe_350.pt"
+    },
+    {
+      "path": "cases/Burgers_equation/eqgpt_reference/searched.pt",
+      "size_bytes": 76168775,
+      "sha256": "5d918e499aaece8288f785a2bb9c44392fc567b048824f5dbc1d12ae228cb12d",
+      "asset": "searched_Burgers_equation_eqgpt_reference.pt"
+    },
+    {
+      "path": "cases/Chaffee_Infante_equation/ast_bpe_280/searched.pt",
+      "size_bytes": 77539783,
+      "sha256": "f6e4f4d6898034120e59c350c590382306ea63fc0bd1b3e1f1b9c74574e7c8a7",
+      "asset": "searched_Chaffee_Infante_equation_ast_bpe_280.pt"
+    },
+    {
+      "path": "cases/Chaffee_Infante_equation/ast_bpe_315/searched.pt",
+      "size_bytes": 77754951,
+      "sha256": "0e8a775856ee203980051093930afa04c425520460a7ab8e4eb165ca6030d757",
+      "asset": "searched_Chaffee_Infante_equation_ast_bpe_315.pt"
+    },
+    {
+      "path": "cases/Chaffee_Infante_equation/ast_bpe_350/searched.pt",
+      "size_bytes": 77970119,
+      "sha256": "06f56f20d6ab024c31a65c05f8deed96dbc86fd3bbe6999040d5ed8b4792a150",
+      "asset": "searched_Chaffee_Infante_equation_ast_bpe_350.pt"
+    },
+    {
+      "path": "cases/Chaffee_Infante_equation/eqgpt_reference/searched.pt",
+      "size_bytes": 76168775,
+      "sha256": "ba488fbf31cbdb27bdd7557b460c80ecc9bbfdc5fa723cea3ab5bc0be6857e80",
+      "asset": "searched_Chaffee_Infante_equation_eqgpt_reference.pt"
+    },
+    {
+      "path": "cases/Convection_diffusion_equation/ast_bpe_280/searched.pt",
+      "size_bytes": 77539783,
+      "sha256": "8cc321f1faeeac8cae77e00bc2fa34371441de3ab49933628a8aad5ee41d6bfd",
+      "asset": "searched_Convection_diffusion_equation_ast_bpe_280.pt"
+    },
+    {
+      "path": "cases/Convection_diffusion_equation/ast_bpe_315/searched.pt",
+      "size_bytes": 77754951,
+      "sha256": "d1ab8229fd3706dde0d9828c27a8a6d0a10ce6ed89235b3a583a23b0618fbe89",
+      "asset": "searched_Convection_diffusion_equation_ast_bpe_315.pt"
+    },
+    {
+      "path": "cases/Convection_diffusion_equation/ast_bpe_350/searched.pt",
+      "size_bytes": 77970119,
+      "sha256": "8f044c8b8290f69c9bcfccbba8f447267ebf182d29622e45434e37f50795017f",
+      "asset": "searched_Convection_diffusion_equation_ast_bpe_350.pt"
+    },
+    {
+      "path": "cases/Convection_diffusion_equation/eqgpt_reference/searched.pt",
+      "size_bytes": 76168775,
+      "sha256": "fac1be6f5460add0d1818919da0be468ecfc86b6448187f04de66cd3d5168cd4",
+      "asset": "searched_Convection_diffusion_equation_eqgpt_reference.pt"
+    },
+    {
+      "path": "cases/Eq_6_2_12/ast_bpe_280/searched.pt",
+      "size_bytes": 77539783,
+      "sha256": "c5a13cbaf1607b784ae16088dc258c3cd159139fe10e577147883c0f61391078",
+      "asset": "searched_Eq_6_2_12_ast_bpe_280.pt"
+    },
+    {
+      "path": "cases/Eq_6_2_12/ast_bpe_315/searched.pt",
+      "size_bytes": 77754951,
+      "sha256": "dd12a4bd16e3b958ec3f41005b1723e71efe477ada518332b13bfb2847768fc4",
+      "asset": "searched_Eq_6_2_12_ast_bpe_315.pt"
+    },
+    {
+      "path": "cases/Eq_6_2_12/ast_bpe_350/searched.pt",
+      "size_bytes": 77970119,
+      "sha256": "731f82318b723cde85845f747d81b76d52da83f035c6b7bf2f1d7dbd82fc8455",
+      "asset": "searched_Eq_6_2_12_ast_bpe_350.pt"
+    },
+    {
+      "path": "cases/Eq_6_2_12/eqgpt_reference/searched.pt",
+      "size_bytes": 76168775,
+      "sha256": "30c58db71da459e20262aa3b1d43825e361a5ea776c5fbe09fb4caac0c7f13b5",
+      "asset": "searched_Eq_6_2_12_eqgpt_reference.pt"
+    },
+    {
+      "path": "cases/KG_equation/ast_bpe_280/searched.pt",
+      "size_bytes": 77539783,
+      "sha256": "8e41b748561c3c7bf9c07d9fdc37dc5f3526533bd07090866cc64ee7ccdfead5",
+      "asset": "searched_KG_equation_ast_bpe_280.pt"
+    },
+    {
+      "path": "cases/KG_equation/ast_bpe_315/searched.pt",
+      "size_bytes": 77754951,
+      "sha256": "7300b0cbf6f02a968ee71a81fdb7fadccbb87fa215e85dacedf393fb66257d91",
+      "asset": "searched_KG_equation_ast_bpe_315.pt"
+    },
+    {
+      "path": "cases/KG_equation/ast_bpe_350/searched.pt",
+      "size_bytes": 77970119,
+      "sha256": "e45343cc508864397e3bdcd45a5be0c1d5aa058301826156346c0f970455843e",
+      "asset": "searched_KG_equation_ast_bpe_350.pt"
+    },
+    {
+      "path": "cases/KG_equation/eqgpt_reference/searched.pt",
+      "size_bytes": 76168775,
+      "sha256": "a68058a1503c8b01d4722def7d0ad14121de3057f9be79a43c9820e973480d15",
+      "asset": "searched_KG_equation_eqgpt_reference.pt"
+    },
+    {
+      "path": "cases/KdV_equation/ast_bpe_280/searched.pt",
+      "size_bytes": 77539783,
+      "sha256": "e4c57de089c432a4f65c6a9c27e6258794a00ddaac89f7c8797c56ae64b69b41",
+      "asset": "searched_KdV_equation_ast_bpe_280.pt"
+    },
+    {
+      "path": "cases/KdV_equation/ast_bpe_315/searched.pt",
+      "size_bytes": 77754951,
+      "sha256": "3c34cf6952a45ca2051f7a4752b1ba58270b3f9283934aff1048ee0a65c6a44a",
+      "asset": "searched_KdV_equation_ast_bpe_315.pt"
+    },
+    {
+      "path": "cases/KdV_equation/ast_bpe_350/searched.pt",
+      "size_bytes": 77970119,
+      "sha256": "3349acb18e5f15ad9b7c801921988b014c99e51bd620d3072f4fbb78e46e7aed",
+      "asset": "searched_KdV_equation_ast_bpe_350.pt"
+    },
+    {
+      "path": "cases/KdV_equation/eqgpt_reference/searched.pt",
+      "size_bytes": 76168775,
+      "sha256": "f44b52bb4aa671511e08a72f5b9d3133886d3aeefe16f0ff58d967cd88be6ff4",
+      "asset": "searched_KdV_equation_eqgpt_reference.pt"
+    },
+    {
+      "path": "cases/PDE_divide/ast_bpe_280/searched.pt",
+      "size_bytes": 77539783,
+      "sha256": "77f7ef02b15b3beda071787afa95f89a31074b4b0e45ddb728764affad87ca0b",
+      "asset": "searched_PDE_divide_ast_bpe_280.pt"
+    },
+    {
+      "path": "cases/PDE_divide/ast_bpe_315/searched.pt",
+      "size_bytes": 77754951,
+      "sha256": "05aec96916cd46812f3fac6b4ec562338298910d5f77c91351c01c68935b13f5",
+      "asset": "searched_PDE_divide_ast_bpe_315.pt"
+    },
+    {
+      "path": "cases/PDE_divide/ast_bpe_350/searched.pt",
+      "size_bytes": 77970119,
+      "sha256": "31c2db1f01143282d6d1208269f09d86229c12735d65cce6907771fbe5024475",
+      "asset": "searched_PDE_divide_ast_bpe_350.pt"
+    },
+    {
+      "path": "cases/PDE_divide/eqgpt_reference/searched.pt",
+      "size_bytes": 76168775,
+      "sha256": "b4e6c135d2186e20a23902ba7dccb4590b176dacf3b139b8da3459400c9ae4ef",
+      "asset": "searched_PDE_divide_eqgpt_reference.pt"
+    },
+    {
+      "path": "cases/Wave_equation/ast_bpe_280/searched.pt",
+      "size_bytes": 77539783,
+      "sha256": "670f021a46550ea6897385e6153383a420d69258c83b1c4989d47ccfa8652e24",
+      "asset": "searched_Wave_equation_ast_bpe_280.pt"
+    },
+    {
+      "path": "cases/Wave_equation/ast_bpe_315/searched.pt",
+      "size_bytes": 77754951,
+      "sha256": "bbee9e5a3036cfa53bb14df63ec6203fb76e28bd182b645f2dcd3c3889637fe1",
+      "asset": "searched_Wave_equation_ast_bpe_315.pt"
+    },
+    {
+      "path": "cases/Wave_equation/ast_bpe_350/searched.pt",
+      "size_bytes": 77970119,
+      "sha256": "3e3aa5524e5a7e3e7ccd1f39e597e3ff78f2b2c77c0f609abe7b15e46d83768c",
+      "asset": "searched_Wave_equation_ast_bpe_350.pt"
+    },
+    {
+      "path": "cases/Wave_equation/eqgpt_reference/searched.pt",
+      "size_bytes": 76168775,
+      "sha256": "35004eae678cf89b6b08d59c632bfc17ae5f17891d5d6d3dfad48b39649d74ca",
+      "asset": "searched_Wave_equation_eqgpt_reference.pt"
+    },
+    {
+      "path": "shared_pretrain/ast_bpe_280/pretrained.pt",
+      "size_bytes": 77539783,
+      "sha256": "e87110bde6ce5254f3355e6d3402044dc37a6059761928004b15b60029cff7a0",
+      "asset": "pretrained_ast_bpe_280.pt"
+    },
+    {
+      "path": "shared_pretrain/ast_bpe_315/pretrained.pt",
+      "size_bytes": 77754951,
+      "sha256": "4e4b3b8aa05b92bc56d4eaadc416ba97102bee244349d71591178afe1645b810",
+      "asset": "pretrained_ast_bpe_315.pt"
+    },
+    {
+      "path": "shared_pretrain/ast_bpe_350/pretrained.pt",
+      "size_bytes": 77970119,
+      "sha256": "8207f41ff20aaf4b770138c2548d5b9be499405209106f3e6b2f77c27ea84d12",
+      "asset": "pretrained_ast_bpe_350.pt"
+    },
+    {
+      "path": "shared_pretrain/eqgpt_reference/pretrained.pt",
+      "size_bytes": 76168775,
+      "sha256": "d552bec4ee508c3e0580fa8acad49f9bfad4b2a68a31ce7abec202126bd8df0b",
+      "asset": "pretrained_eqgpt_reference.pt"
+    }
+  ]
+}

@@ -1,0 +1,1085 @@
+{
+  "experiment": "expanded_downstream_80_v1",
+  "status": "COMPLETE",
+  "corpus": {
+    "source_records": 1855,
+    "external_benchmark": 1643,
+    "eqgpt_non_target": 212,
+    "augmented_samples": 59360
+  },
+  "protocol": {
+    "seed": 525,
+    "layers": 3,
+    "epochs": 25,
+    "capacity": 80,
+    "attempts_per_cycle": 200,
+    "cycles": 3,
+    "continuation_epochs": 2
+  },
+  "cases": {
+    "Wave_equation": {
+      "eqgpt_reference": {
+        "training_seconds": 4968.923462249033,
+        "search_seconds": 68.6063697500067,
+        "top1": "correct",
+        "top10_correct": true,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "correct",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant"
+        ],
+        "attempted_statuses": {
+          "evaluated": 600
+        },
+        "first_correct": 13,
+        "reward_calls": 559,
+        "cache_hits": 41,
+        "top1_equation": "(u_{xx})+(u_{tt})=0",
+        "valid_candidates": 600,
+        "attempts": 600,
+        "valid_rate": 1.0,
+        "pretrained_sha256": "ca7fb58e352c85d50c23dcd03f07818d4e1b0f9e31b2e1592b9bd279fe09df89",
+        "searched_tensor_sha256": "e3e1294b9c216ba7c77bf021c846efc3acdabf84f0148c68f015e8ce71e797b4"
+      },
+      "ast_bpe_280": {
+        "training_seconds": 1599.387083586902,
+        "search_seconds": 75.3530243330024,
+        "top1": "redundant",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 207,
+          "evaluated": 323,
+          "syntax_error": 67,
+          "incomplete": 3
+        },
+        "first_correct": null,
+        "reward_calls": 209,
+        "cache_hits": 114,
+        "top1_equation": "(u_{tt})+(u_{xx})+(u_{xxxx})=0",
+        "valid_candidates": 323,
+        "attempts": 600,
+        "valid_rate": 0.5383333333333333,
+        "pretrained_sha256": "88d4956db6d1bb6579dfcdf50e90c6d4d66231080faa9558bc4346b95f0e10e2",
+        "searched_tensor_sha256": "59c7c5f30326c80f7abad20150d6e59b5399429cf8150daef7996e954b7c1094"
+      },
+      "ast_bpe_315": {
+        "training_seconds": 1530.8533646620199,
+        "search_seconds": 164.7841315419937,
+        "top1": "redundant",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "redundant"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 220,
+          "evaluated": 333,
+          "syntax_error": 47
+        },
+        "first_correct": null,
+        "reward_calls": 246,
+        "cache_hits": 87,
+        "top1_equation": "(u_{tt})+(u_{xx})+(u_{x})/(x)=0",
+        "valid_candidates": 333,
+        "attempts": 600,
+        "valid_rate": 0.555,
+        "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+        "searched_tensor_sha256": "bf449b70dc11526a4a2765187b6ed2b89d86fee04ad5fd6e7e3dacd2e58862a9"
+      },
+      "ast_bpe_350": {
+        "training_seconds": 1533.8634235410282,
+        "search_seconds": 174.56293225000263,
+        "top1": "redundant",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 179,
+          "syntax_error": 76,
+          "evaluated": 345
+        },
+        "first_correct": null,
+        "reward_calls": 255,
+        "cache_hits": 90,
+        "top1_equation": "(u_{tt})+(u_{xx})+(u_{x})/(x)=0",
+        "valid_candidates": 345,
+        "attempts": 600,
+        "valid_rate": 0.575,
+        "pretrained_sha256": "b1ed7419207457058dfab4822cf16adb00897fd224e897469f8c5cd6879aaba5",
+        "searched_tensor_sha256": "c25c60f43eb5ae9fe4302e5854494342e6e56f1686cea5b2141e277f0ff99f67"
+      }
+    },
+    "Convection_diffusion_equation": {
+      "eqgpt_reference": {
+        "training_seconds": 4968.923462249033,
+        "search_seconds": 76.35072099999525,
+        "top1": "redundant",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "evaluated": 600
+        },
+        "first_correct": null,
+        "reward_calls": 558,
+        "cache_hits": 42,
+        "top1_equation": "(u_{xx})+(u_{x})+({u}^{2})+(u)+(u_{t})=0",
+        "valid_candidates": 600,
+        "attempts": 600,
+        "valid_rate": 1.0,
+        "pretrained_sha256": "ca7fb58e352c85d50c23dcd03f07818d4e1b0f9e31b2e1592b9bd279fe09df89",
+        "searched_tensor_sha256": "3acd3946fe3ed2f9401174f9eac39cc2a70f04bd882a9452a923acfcf3e8fd4d"
+      },
+      "ast_bpe_280": {
+        "training_seconds": 1599.387083586902,
+        "search_seconds": 132.86332704099186,
+        "top1": "redundant",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 208,
+          "evaluated": 323,
+          "syntax_error": 65,
+          "incomplete": 4
+        },
+        "first_correct": null,
+        "reward_calls": 225,
+        "cache_hits": 98,
+        "top1_equation": "(u_{t})+(u)\\cdot (u_{x})+(u_{x})+(u_{xx})=0",
+        "valid_candidates": 323,
+        "attempts": 600,
+        "valid_rate": 0.5383333333333333,
+        "pretrained_sha256": "88d4956db6d1bb6579dfcdf50e90c6d4d66231080faa9558bc4346b95f0e10e2",
+        "searched_tensor_sha256": "c8f267ced272e90686c2ba2ca30ebf0f69e9c2e20f0dd4cf9d2737292a7699e2"
+      },
+      "ast_bpe_315": {
+        "training_seconds": 1530.8533646620199,
+        "search_seconds": 209.2373247499927,
+        "top1": "correct",
+        "top10_correct": true,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "correct",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 226,
+          "evaluated": 324,
+          "syntax_error": 50
+        },
+        "first_correct": 365,
+        "reward_calls": 238,
+        "cache_hits": 86,
+        "top1_equation": "(u_{xx})+(u_{x})+(u_{t})=0",
+        "valid_candidates": 324,
+        "attempts": 600,
+        "valid_rate": 0.54,
+        "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+        "searched_tensor_sha256": "604614e93478062b22caa57720d007c51e0ea12d2a3561b558971e6ff85b03a7"
+      },
+      "ast_bpe_350": {
+        "training_seconds": 1533.8634235410282,
+        "search_seconds": 78.76619133299391,
+        "top1": "redundant",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 209,
+          "syntax_error": 62,
+          "evaluated": 329
+        },
+        "first_correct": null,
+        "reward_calls": 237,
+        "cache_hits": 92,
+        "top1_equation": "(u_{x})+(u_{xx})+(t)\\cdot (u_{x})+(u_{t})=0",
+        "valid_candidates": 329,
+        "attempts": 600,
+        "valid_rate": 0.5483333333333333,
+        "pretrained_sha256": "b1ed7419207457058dfab4822cf16adb00897fd224e897469f8c5cd6879aaba5",
+        "searched_tensor_sha256": "bee50b0385ab6d8c93d3016eb13ffbb30035aa91e200c77bf3ce26528ae59ac0"
+      }
+    },
+    "KG_equation": {
+      "eqgpt_reference": {
+        "training_seconds": 4968.923462249033,
+        "search_seconds": 82.11626029200852,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "evaluated": 600
+        },
+        "first_correct": null,
+        "reward_calls": 566,
+        "cache_hits": 34,
+        "top1_equation": "(u_{tt})+(\\sin{u})+(u_{xx})=0",
+        "valid_candidates": 600,
+        "attempts": 600,
+        "valid_rate": 1.0,
+        "pretrained_sha256": "ca7fb58e352c85d50c23dcd03f07818d4e1b0f9e31b2e1592b9bd279fe09df89",
+        "searched_tensor_sha256": "f0e3ebc8b417c2b57b1a4f28447d2887effac2f936e7adceca4ec850f55d3510"
+      },
+      "ast_bpe_280": {
+        "training_seconds": 1599.387083586902,
+        "search_seconds": 84.01736995800456,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 183,
+          "evaluated": 353,
+          "syntax_error": 60,
+          "incomplete": 4
+        },
+        "first_correct": null,
+        "reward_calls": 237,
+        "cache_hits": 116,
+        "top1_equation": "(u_{tt})+(\\sin{u})+(u_{xx})=0",
+        "valid_candidates": 353,
+        "attempts": 600,
+        "valid_rate": 0.5883333333333334,
+        "pretrained_sha256": "88d4956db6d1bb6579dfcdf50e90c6d4d66231080faa9558bc4346b95f0e10e2",
+        "searched_tensor_sha256": "3c87e4f2fa4f647b382412b2ba8fbad372e5e3c26302bfeff815dd0ae6ddfe5f"
+      },
+      "ast_bpe_315": {
+        "training_seconds": 1530.8533646620199,
+        "search_seconds": 157.64454629099055,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "incorrect",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "redundant",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 234,
+          "evaluated": 319,
+          "syntax_error": 47
+        },
+        "first_correct": null,
+        "reward_calls": 232,
+        "cache_hits": 87,
+        "top1_equation": "(u_{xx})+(u_{tt})+(\\sin{u})=0",
+        "valid_candidates": 319,
+        "attempts": 600,
+        "valid_rate": 0.5316666666666666,
+        "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+        "searched_tensor_sha256": "7e47f3abf6bd2e1fb62728e42a68e8a65d0ae08b2c9413d77d7e3c52a2a5d361"
+      },
+      "ast_bpe_350": {
+        "training_seconds": 1533.8634235410282,
+        "search_seconds": 94.01400287500292,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 186,
+          "syntax_error": 60,
+          "evaluated": 354
+        },
+        "first_correct": null,
+        "reward_calls": 252,
+        "cache_hits": 102,
+        "top1_equation": "(u_{tt})+(\\sin{u})+(u_{xx})=0",
+        "valid_candidates": 354,
+        "attempts": 600,
+        "valid_rate": 0.59,
+        "pretrained_sha256": "b1ed7419207457058dfab4822cf16adb00897fd224e897469f8c5cd6879aaba5",
+        "searched_tensor_sha256": "74e1cf86d9c328adfbbcb569691ca0f99d1bee5cfef708562c694a9ce458f94d"
+      }
+    },
+    "Burgers_equation": {
+      "eqgpt_reference": {
+        "training_seconds": 4968.923462249033,
+        "search_seconds": 104.2103447910049,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "incorrect",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "evaluated": 600
+        },
+        "first_correct": null,
+        "reward_calls": 569,
+        "cache_hits": 31,
+        "top1_equation": "(u_{x})\\cdot (u)\\cdot (u_{x})+(u_{t})+(u)\\cdot ({u_{x}}^{2})+({u}^{2})\\cdot (u_{xx})\\cdot (u)\\cdot (u)\\cdot (u)\\cdot (u)\\cdot (u)+(u_{xxx})=0",
+        "valid_candidates": 600,
+        "attempts": 600,
+        "valid_rate": 1.0,
+        "pretrained_sha256": "ca7fb58e352c85d50c23dcd03f07818d4e1b0f9e31b2e1592b9bd279fe09df89",
+        "searched_tensor_sha256": "7251d6393dc6a69bfd34d09f948c72568dac8a925c1d3a083b60664131bbd2f2"
+      },
+      "ast_bpe_280": {
+        "training_seconds": 1599.387083586902,
+        "search_seconds": 77.91051629200228,
+        "top1": "correct",
+        "top10_correct": true,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "correct",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 206,
+          "evaluated": 332,
+          "syntax_error": 57,
+          "incomplete": 5
+        },
+        "first_correct": 462,
+        "reward_calls": 221,
+        "cache_hits": 111,
+        "top1_equation": "(u)\\cdot (u_{x})+(u_{t})+(u_{xx})=0",
+        "valid_candidates": 332,
+        "attempts": 600,
+        "valid_rate": 0.5533333333333333,
+        "pretrained_sha256": "88d4956db6d1bb6579dfcdf50e90c6d4d66231080faa9558bc4346b95f0e10e2",
+        "searched_tensor_sha256": "68df5eec716f184a9b9916f65bbbbc8de6519cbcf86ff163dc617a035216835b"
+      },
+      "ast_bpe_315": {
+        "training_seconds": 1530.8533646620199,
+        "search_seconds": 110.12330658298742,
+        "top1": "correct",
+        "top10_correct": true,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "correct",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 229,
+          "evaluated": 319,
+          "syntax_error": 52
+        },
+        "first_correct": 377,
+        "reward_calls": 238,
+        "cache_hits": 81,
+        "top1_equation": "(u_{t})+(u_{xx})+(u)\\cdot (u_{x})=0",
+        "valid_candidates": 319,
+        "attempts": 600,
+        "valid_rate": 0.5316666666666666,
+        "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+        "searched_tensor_sha256": "0a5cf32d04e95d4747292b44318072e9b47d2055b4dc2bcc06c23f7c7c595f22"
+      },
+      "ast_bpe_350": {
+        "training_seconds": 1533.8634235410282,
+        "search_seconds": 85.90702362499724,
+        "top1": "redundant",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 182,
+          "syntax_error": 68,
+          "evaluated": 350
+        },
+        "first_correct": null,
+        "reward_calls": 247,
+        "cache_hits": 103,
+        "top1_equation": "(u)\\cdot (u_{x})+(u_{t})+(u_{xxx})+(u_{xx})=0",
+        "valid_candidates": 350,
+        "attempts": 600,
+        "valid_rate": 0.5833333333333334,
+        "pretrained_sha256": "b1ed7419207457058dfab4822cf16adb00897fd224e897469f8c5cd6879aaba5",
+        "searched_tensor_sha256": "e419ede7455b7f4dd4207459475d87564a9dc5f5ef9684283aa766e0c228359b"
+      }
+    },
+    "Eq_6_2_12": {
+      "eqgpt_reference": {
+        "training_seconds": 4968.923462249033,
+        "search_seconds": 96.21753212501062,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "evaluated": 600
+        },
+        "first_correct": null,
+        "reward_calls": 558,
+        "cache_hits": 42,
+        "top1_equation": "(u_{xt})+(u_{tt})+(u_{xx})=0",
+        "valid_candidates": 600,
+        "attempts": 600,
+        "valid_rate": 1.0,
+        "pretrained_sha256": "ca7fb58e352c85d50c23dcd03f07818d4e1b0f9e31b2e1592b9bd279fe09df89",
+        "searched_tensor_sha256": "166d1adf6684950f523be5a1433759d7975b3c5feb62fafcc482af42d4aedc57"
+      },
+      "ast_bpe_280": {
+        "training_seconds": 1599.387083586902,
+        "search_seconds": 194.14766775000317,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 192,
+          "evaluated": 350,
+          "syntax_error": 56,
+          "incomplete": 2
+        },
+        "first_correct": null,
+        "reward_calls": 245,
+        "cache_hits": 105,
+        "top1_equation": "(u_{t})+(u_{x})+(u_{xx})+(u_{tt})=0",
+        "valid_candidates": 350,
+        "attempts": 600,
+        "valid_rate": 0.5833333333333334,
+        "pretrained_sha256": "88d4956db6d1bb6579dfcdf50e90c6d4d66231080faa9558bc4346b95f0e10e2",
+        "searched_tensor_sha256": "795f15f5cb31a9fe2b0309dd56ae27497349c234c810ce8dc55e54b836226d5f"
+      },
+      "ast_bpe_315": {
+        "training_seconds": 1530.8533646620199,
+        "search_seconds": 211.58283037498768,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 214,
+          "evaluated": 329,
+          "syntax_error": 57
+        },
+        "first_correct": null,
+        "reward_calls": 242,
+        "cache_hits": 87,
+        "top1_equation": "(u_{x})+(u_{xx})+(u_{t})+(u_{tt})=0",
+        "valid_candidates": 329,
+        "attempts": 600,
+        "valid_rate": 0.5483333333333333,
+        "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+        "searched_tensor_sha256": "84410cd056614c1c8849549d2f554c413076d2e24d50027ea39cb2286220c7af"
+      },
+      "ast_bpe_350": {
+        "training_seconds": 1533.8634235410282,
+        "search_seconds": 261.1251992920006,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 202,
+          "syntax_error": 58,
+          "evaluated": 340
+        },
+        "first_correct": null,
+        "reward_calls": 245,
+        "cache_hits": 95,
+        "top1_equation": "(u_{t})+(u_{x})+(u_{xxx})=0",
+        "valid_candidates": 340,
+        "attempts": 600,
+        "valid_rate": 0.5666666666666667,
+        "pretrained_sha256": "b1ed7419207457058dfab4822cf16adb00897fd224e897469f8c5cd6879aaba5",
+        "searched_tensor_sha256": "4e02a158415b795480ff134cdd80912e443212879d819fc7845d4bffc33eefe4"
+      }
+    },
+    "PDE_divide": {
+      "eqgpt_reference": {
+        "training_seconds": 4968.923462249033,
+        "search_seconds": 138.1234367920115,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "evaluated": 600
+        },
+        "first_correct": null,
+        "reward_calls": 562,
+        "cache_hits": 38,
+        "top1_equation": "(u_{x})\\cdot ({u}^{3})+(u_{x})\\cdot (u)\\cdot (u)\\cdot (u)+(u_{tt})=0",
+        "valid_candidates": 600,
+        "attempts": 600,
+        "valid_rate": 1.0,
+        "pretrained_sha256": "ca7fb58e352c85d50c23dcd03f07818d4e1b0f9e31b2e1592b9bd279fe09df89",
+        "searched_tensor_sha256": "a7d8dec002e89e8b5f73522369d2432a773d1f9b80571cb7b39250b9fa9f03ff"
+      },
+      "ast_bpe_280": {
+        "training_seconds": 1599.387083586902,
+        "search_seconds": 233.11819058399124,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 195,
+          "evaluated": 345,
+          "syntax_error": 59,
+          "incomplete": 1
+        },
+        "first_correct": null,
+        "reward_calls": 246,
+        "cache_hits": 99,
+        "top1_equation": "(u_{t})+(u)+(u)\\cdot (u_{x})=0",
+        "valid_candidates": 345,
+        "attempts": 600,
+        "valid_rate": 0.575,
+        "pretrained_sha256": "88d4956db6d1bb6579dfcdf50e90c6d4d66231080faa9558bc4346b95f0e10e2",
+        "searched_tensor_sha256": "ff1f67d4679a82c3a926724fd4dc2a141e2536da692cbac503a4f0cb110eab1d"
+      },
+      "ast_bpe_315": {
+        "training_seconds": 1530.8533646620199,
+        "search_seconds": 255.9994318329991,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 232,
+          "evaluated": 316,
+          "syntax_error": 52
+        },
+        "first_correct": null,
+        "reward_calls": 229,
+        "cache_hits": 87,
+        "top1_equation": "(u)+(u)\\cdot (u_{x})+(u_{t})=0",
+        "valid_candidates": 316,
+        "attempts": 600,
+        "valid_rate": 0.5266666666666666,
+        "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+        "searched_tensor_sha256": "0d53c6af60c22b07ba5c4fbbac25ec017166b5cb1dec817528fa88821a65c343"
+      },
+      "ast_bpe_350": {
+        "training_seconds": 1533.8634235410282,
+        "search_seconds": 130.54045354200935,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 190,
+          "syntax_error": 69,
+          "evaluated": 341
+        },
+        "first_correct": null,
+        "reward_calls": 248,
+        "cache_hits": 93,
+        "top1_equation": "(x)\\cdot (u_{xx})+(u_{t})+(u_{xx})=0",
+        "valid_candidates": 341,
+        "attempts": 600,
+        "valid_rate": 0.5683333333333334,
+        "pretrained_sha256": "b1ed7419207457058dfab4822cf16adb00897fd224e897469f8c5cd6879aaba5",
+        "searched_tensor_sha256": "6703bd34ae9c537a6ff8cb4eed528fa2bdeabb0f8a14d38620e84bc7cd5047a9"
+      }
+    },
+    "KdV_equation": {
+      "eqgpt_reference": {
+        "training_seconds": 4968.923462249033,
+        "search_seconds": 39.89114183399943,
+        "top1": "correct",
+        "top10_correct": true,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "correct",
+          "incorrect",
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "redundant"
+        ],
+        "attempted_statuses": {
+          "evaluated": 600
+        },
+        "first_correct": 136,
+        "reward_calls": 569,
+        "cache_hits": 31,
+        "top1_equation": "(u_{x})\\cdot (u)+(u_{xxx})+(u_{t})=0",
+        "valid_candidates": 600,
+        "attempts": 600,
+        "valid_rate": 1.0,
+        "pretrained_sha256": "ca7fb58e352c85d50c23dcd03f07818d4e1b0f9e31b2e1592b9bd279fe09df89",
+        "searched_tensor_sha256": "4cfc511e3998bf4843c9846fe492f9409fc8de3b014e02f57ff305df19933f55"
+      },
+      "ast_bpe_280": {
+        "training_seconds": 1599.387083586902,
+        "search_seconds": 8.379095333002624,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "incorrect",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 192,
+          "evaluated": 352,
+          "syntax_error": 54,
+          "incomplete": 2
+        },
+        "first_correct": null,
+        "reward_calls": 235,
+        "cache_hits": 117,
+        "top1_equation": "(u_{xxx})\\cdot (u)+({u}^{2})\\cdot (u_{x})+(u_{t})=0",
+        "valid_candidates": 352,
+        "attempts": 600,
+        "valid_rate": 0.5866666666666667,
+        "pretrained_sha256": "88d4956db6d1bb6579dfcdf50e90c6d4d66231080faa9558bc4346b95f0e10e2",
+        "searched_tensor_sha256": "1247591d8e577ad61a43d6a625b247eecf2c0e2ca7cf8a1012cffd0214c19488"
+      },
+      "ast_bpe_315": {
+        "training_seconds": 1530.8533646620199,
+        "search_seconds": 6.7348821249906905,
+        "top1": "correct",
+        "top10_correct": true,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "correct",
+          "correct",
+          "incorrect",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 205,
+          "evaluated": 344,
+          "syntax_error": 51
+        },
+        "first_correct": 177,
+        "reward_calls": 259,
+        "cache_hits": 85,
+        "top1_equation": "(u)\\cdot (u_{x})+(u_{xxx})+(u_{t})=0",
+        "valid_candidates": 344,
+        "attempts": 600,
+        "valid_rate": 0.5733333333333334,
+        "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+        "searched_tensor_sha256": "b67059c8da9cef724a23c45f864be886808b15f57c5743c749357b2318e1294e"
+      },
+      "ast_bpe_350": {
+        "training_seconds": 1533.8634235410282,
+        "search_seconds": 6.196377583008143,
+        "top1": "correct",
+        "top10_correct": true,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "correct",
+          "correct",
+          "incorrect",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "redundant",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 174,
+          "syntax_error": 65,
+          "evaluated": 361
+        },
+        "first_correct": 329,
+        "reward_calls": 248,
+        "cache_hits": 113,
+        "top1_equation": "(u)\\cdot (u_{x})+(u_{t})+(u_{xxx})=0",
+        "valid_candidates": 361,
+        "attempts": 600,
+        "valid_rate": 0.6016666666666667,
+        "pretrained_sha256": "b1ed7419207457058dfab4822cf16adb00897fd224e897469f8c5cd6879aaba5",
+        "searched_tensor_sha256": "95cb426e833ffcb90b092810f0ab32f4509f164bed57eeae499c22c58cb403fd"
+      }
+    },
+    "Chaffee_Infante_equation": {
+      "eqgpt_reference": {
+        "training_seconds": 4968.923462249033,
+        "search_seconds": 95.74349037499633,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "evaluated": 600
+        },
+        "first_correct": null,
+        "reward_calls": 562,
+        "cache_hits": 38,
+        "top1_equation": "({u}^{2})+(u_{xx})+({u}^{3})+(u_{t})=0",
+        "valid_candidates": 600,
+        "attempts": 600,
+        "valid_rate": 1.0,
+        "pretrained_sha256": "ca7fb58e352c85d50c23dcd03f07818d4e1b0f9e31b2e1592b9bd279fe09df89",
+        "searched_tensor_sha256": "aea4e174f75be3082ac0a4c37420e4e2ce5c025b2a3ab93827f4c003092f763b"
+      },
+      "ast_bpe_280": {
+        "training_seconds": 1599.387083586902,
+        "search_seconds": 194.09941620800237,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 209,
+          "evaluated": 324,
+          "syntax_error": 64,
+          "incomplete": 3
+        },
+        "first_correct": null,
+        "reward_calls": 226,
+        "cache_hits": 98,
+        "top1_equation": "({u}^{3})+(u_{tt})+(u)+(u_{xx})=0",
+        "valid_candidates": 324,
+        "attempts": 600,
+        "valid_rate": 0.54,
+        "pretrained_sha256": "88d4956db6d1bb6579dfcdf50e90c6d4d66231080faa9558bc4346b95f0e10e2",
+        "searched_tensor_sha256": "675daf5b5a6ceafb48acee44bd297fd757030af26afa9a020ff712f3e58b1853"
+      },
+      "ast_bpe_315": {
+        "training_seconds": 1530.8533646620199,
+        "search_seconds": 198.1635484580038,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": false,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 220,
+          "evaluated": 319,
+          "syntax_error": 61
+        },
+        "first_correct": null,
+        "reward_calls": 236,
+        "cache_hits": 83,
+        "top1_equation": "({u}^{2})+(u_{xx})+(u_{t})+(u)=0",
+        "valid_candidates": 319,
+        "attempts": 600,
+        "valid_rate": 0.5316666666666666,
+        "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+        "searched_tensor_sha256": "19e9ef4a197708cfed79fa15e8920fc0a6f65989b62d83976033fb31e7c4e473"
+      },
+      "ast_bpe_350": {
+        "training_seconds": 1533.8634235410282,
+        "search_seconds": 187.87372812499234,
+        "top1": "incorrect",
+        "top10_correct": false,
+        "top10_has_redundant": true,
+        "ranked_classes": [
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "incorrect",
+          "redundant"
+        ],
+        "attempted_statuses": {
+          "variable_or_numeric_unavailable": 172,
+          "syntax_error": 85,
+          "evaluated": 343
+        },
+        "first_correct": null,
+        "reward_calls": 247,
+        "cache_hits": 96,
+        "top1_equation": "({u}^{2})+(u_{xx})+(u_{t})+(u)=0",
+        "valid_candidates": 343,
+        "attempts": 600,
+        "valid_rate": 0.5716666666666667,
+        "pretrained_sha256": "b1ed7419207457058dfab4822cf16adb00897fd224e897469f8c5cd6879aaba5",
+        "searched_tensor_sha256": "bab1d9dd8396303b6780bb424c8d213f5db0fb75675cbdf0e7828892b0f7b0a2"
+      }
+    }
+  }
+}

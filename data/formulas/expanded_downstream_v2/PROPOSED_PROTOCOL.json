@@ -1,0 +1,28 @@
+{
+  "status": "PENDING_LIMIT_SCOPE",
+  "epochs": 25,
+  "alternative_epochs": 100,
+  "layers": 3,
+  "position_capacity": 111,
+  "search_max_tokens": 50,
+  "gre_generation_limit": 50,
+  "augmentation": "sampled_equivalent_32_preserve_original_latex",
+  "batch_size": 128,
+  "lr": 0.0001,
+  "clip": 1,
+  "seed": 525,
+  "attempts_per_cycle": 200,
+  "cycles": 3,
+  "continuation_epochs": 2,
+  "tokenizer_sizes": [
+    280,
+    315,
+    350
+  ],
+  "base_bytes": 98,
+  "mlp": "reuse_only",
+  "formal_training_started": false,
+  "user_answered_augmentation": "sampled_equivalent_32_preserve_original_latex",
+  "user_requested_limit": 80,
+  "limit_scope": "PENDING_USER_CLARIFICATION"
+}

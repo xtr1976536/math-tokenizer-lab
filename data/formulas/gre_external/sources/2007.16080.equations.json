@@ -1,0 +1,666 @@
+[
+  {
+    "location": "S2.EGx1",
+    "latex": [
+      "\\displaystyle\\mathcal{F}[\\psi]",
+      "\\displaystyle\\vcentcolon=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[(q_{0}^{2}+\\nabla^{2})\\psi\\right]^{2}-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\};",
+      "\\displaystyle\\dfrac{\\partial\\mathcal{F}[\\psi]}{\\partial t}",
+      "\\displaystyle=-\\int_{\\Omega}{d\\mathbf{x}}\\left(\\dfrac{\\partial\\psi}{\\partial t}\\right)^{2}\\leq 0."
+    ],
+    "context": "The SH equation has the so-called gradient dynamics, which means\nthere is a potential function of the order parameter ψ ⁡ ( 𝐱 , t ) \\psi\\left({\\bf x},t\\right) , (known as a Lyapunov functional),\nthat has the property of decreasing monotonically during the\nevolution [ 29 ] . This dynamic equation can be derived\nfrom the L 2 L^{2} -gradient flow of the Lyapunov energy functional: ℱ ⁡ [ ψ ] \\displaystyle\\mathcal{F}[\\psi] : = ∫ Ω d 𝐱 1 2 { − ϵ ( 𝐱 ) ψ 2 + α [ ( q 0 2 + ∇ 2 ) ψ ] 2 − β 2 ψ 4 + γ 3 ψ 6 } ; \\displaystyle\\vcentcolon=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[(q_{0}^{2}+\\nabla^{2})\\psi\\right]^{2}-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}; (1) ∂ ℱ ⁡ [ ψ ] ∂ t \\displaystyle\\dfrac{\\partial\\mathcal{F}[\\psi]}{\\partial t} = − ∫ Ω d 𝐱 ( ∂ ψ ∂ t ) 2 ≤ 0 . \\displaystyle=-\\int_{\\Omega}{d\\mathbf{x}}\\left(\\dfrac{\\partial\\psi}{\\partial t}\\right)^{2}\\leq 0. (2) where Ω \\Omega represents the domain whose size is commensurate with\nthe length scales of the patterns. We consider a regular domain Ω : { x ∈ [ 0 , L x ] \\Omega:\\{x\\in[0,L_{x}] , y ∈ [ 0 , L y ] } y\\in[0,L_{y}]\\} . Also, Eq. 2 denotes the nonincreasing behavior of the Lyapunov functional,\nwhich monotonically decreases until steady state is\nreached [ 29 ] . By taking the variational derivative of\nEq. 1 in L 2 L^{2} norm, the following Swift-Hohenberg\nequation is obtained:"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\mathcal{F}[\\psi]",
+      "\\displaystyle\\vcentcolon=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[(q_{0}^{2}+\\nabla^{2})\\psi\\right]^{2}-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\};"
+    ],
+    "context": "ℱ ⁡ [ ψ ] \\displaystyle\\mathcal{F}[\\psi] : = ∫ Ω d 𝐱 1 2 { − ϵ ( 𝐱 ) ψ 2 + α [ ( q 0 2 + ∇ 2 ) ψ ] 2 − β 2 ψ 4 + γ 3 ψ 6 } ; \\displaystyle\\vcentcolon=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[(q_{0}^{2}+\\nabla^{2})\\psi\\right]^{2}-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}; (1)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial\\mathcal{F}[\\psi]}{\\partial t}",
+      "\\displaystyle=-\\int_{\\Omega}{d\\mathbf{x}}\\left(\\dfrac{\\partial\\psi}{\\partial t}\\right)^{2}\\leq 0."
+    ],
+    "context": "∂ ℱ ⁡ [ ψ ] ∂ t \\displaystyle\\dfrac{\\partial\\mathcal{F}[\\psi]}{\\partial t} = − ∫ Ω d 𝐱 ( ∂ ψ ∂ t ) 2 ≤ 0 . \\displaystyle=-\\int_{\\Omega}{d\\mathbf{x}}\\left(\\dfrac{\\partial\\psi}{\\partial t}\\right)^{2}\\leq 0. (2)"
+  },
+  {
+    "location": "S2.E3",
+    "latex": [
+      "\\centering\\dfrac{\\partial\\psi}{\\partial t}=-\\dfrac{\\delta\\mathcal{F}[\\psi]}{\\delta\\psi}=\\epsilon(\\mathbf{x})\\psi-\\alpha\\left(q_{0}^{2}+\\nabla^{2}\\right)^{2}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5}.\\@add@centering"
+    ],
+    "context": "∂ ψ ∂ t = − δ ​ ℱ ​ [ ψ ] δ ​ ψ = ϵ ⁡ ( 𝐱 ) ​ ψ − α ​ ( q 0 2 + ∇ 2 ) 2 ​ ψ + β ​ ψ 3 − γ ​ ψ 5 . \\centering\\dfrac{\\partial\\psi}{\\partial t}=-\\dfrac{\\delta\\mathcal{F}[\\psi]}{\\delta\\psi}=\\epsilon(\\mathbf{x})\\psi-\\alpha\\left(q_{0}^{2}+\\nabla^{2}\\right)^{2}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5}.\\@add@centering (3)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\centering\\dfrac{\\partial\\psi}{\\partial t}=-\\dfrac{\\delta\\mathcal{F}[\\psi]}{\\delta\\psi}=\\epsilon(\\mathbf{x})\\psi-\\alpha\\left(q_{0}^{2}+\\nabla^{2}\\right)^{2}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5}.\\@add@centering"
+    ],
+    "context": "∂ ψ ∂ t = − δ ​ ℱ ​ [ ψ ] δ ​ ψ = ϵ ⁡ ( 𝐱 ) ​ ψ − α ​ ( q 0 2 + ∇ 2 ) 2 ​ ψ + β ​ ψ 3 − γ ​ ψ 5 . \\centering\\dfrac{\\partial\\psi}{\\partial t}=-\\dfrac{\\delta\\mathcal{F}[\\psi]}{\\delta\\psi}=\\epsilon(\\mathbf{x})\\psi-\\alpha\\left(q_{0}^{2}+\\nabla^{2}\\right)^{2}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5}.\\@add@centering (3)"
+  },
+  {
+    "location": "S2.E4",
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial\\psi}{\\partial t}=",
+      "\\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\nabla^{2}\\psi-\\alpha\\nabla^{4}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5}",
+      "\\displaystyle=",
+      "\\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial y^{4}}+\\beta\\psi^{3}-\\gamma\\psi^{5}."
+    ],
+    "context": "∂ ψ ∂ t = \\displaystyle\\dfrac{\\partial\\psi}{\\partial t}= ϵ ⁡ ( 𝐱 ) ​ ψ − α ​ q 0 4 ​ ψ − 2 ​ α ​ q 0 2 ​ ∇ 2 ψ − α ​ ∇ 4 ψ + β ​ ψ 3 − γ ​ ψ 5 \\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\nabla^{2}\\psi-\\alpha\\nabla^{4}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5} (4) = \\displaystyle= ϵ ⁡ ( 𝐱 ) ​ ψ − α ​ q 0 4 ​ ψ − 2 ​ α ​ q 0 2 ​ ∂ 2 ψ ∂ x 2 − 2 ​ α ​ q 0 2 ​ ∂ 2 ψ ∂ y 2 − α ​ ∂ 4 ψ ∂ x 4 − 2 ​ α ​ ∂ 4 ψ ∂ x 2 ​ ∂ y 2 − α ​ ∂ 4 ψ ∂ y 4 + β ​ ψ 3 − γ ​ ψ 5 . \\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial y^{4}}+\\beta\\psi^{3}-\\gamma\\psi^{5}."
+  },
+  {
+    "location": "S2.E4X",
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial\\psi}{\\partial t}=",
+      "\\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\nabla^{2}\\psi-\\alpha\\nabla^{4}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5}"
+    ],
+    "context": "∂ ψ ∂ t = \\displaystyle\\dfrac{\\partial\\psi}{\\partial t}= ϵ ⁡ ( 𝐱 ) ​ ψ − α ​ q 0 4 ​ ψ − 2 ​ α ​ q 0 2 ​ ∇ 2 ψ − α ​ ∇ 4 ψ + β ​ ψ 3 − γ ​ ψ 5 \\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\nabla^{2}\\psi-\\alpha\\nabla^{4}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5} (4) = \\displaystyle= ϵ ⁡ ( 𝐱 ) ​ ψ − α ​ q 0 4 ​ ψ − 2 ​ α ​ q 0 2 ​ ∂ 2 ψ ∂ x 2 − 2 ​ α ​ q 0 2 ​ ∂ 2 ψ ∂ y 2 − α ​ ∂ 4 ψ ∂ x 4 − 2 ​ α ​ ∂ 4 ψ ∂ x 2 ​ ∂ y 2 − α ​ ∂ 4 ψ ∂ y 4 + β ​ ψ 3 − γ ​ ψ 5 . \\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial y^{4}}+\\beta\\psi^{3}-\\gamma\\psi^{5}."
+  },
+  {
+    "location": "S2.E4Xa",
+    "latex": [
+      "\\displaystyle=",
+      "\\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial y^{4}}+\\beta\\psi^{3}-\\gamma\\psi^{5}."
+    ],
+    "context": "∂ ψ ∂ t = \\displaystyle\\dfrac{\\partial\\psi}{\\partial t}= ϵ ⁡ ( 𝐱 ) ​ ψ − α ​ q 0 4 ​ ψ − 2 ​ α ​ q 0 2 ​ ∇ 2 ψ − α ​ ∇ 4 ψ + β ​ ψ 3 − γ ​ ψ 5 \\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\nabla^{2}\\psi-\\alpha\\nabla^{4}\\psi+\\beta\\psi^{3}-\\gamma\\psi^{5} (4) = \\displaystyle= ϵ ⁡ ( 𝐱 ) ​ ψ − α ​ q 0 4 ​ ψ − 2 ​ α ​ q 0 2 ​ ∂ 2 ψ ∂ x 2 − 2 ​ α ​ q 0 2 ​ ∂ 2 ψ ∂ y 2 − α ​ ∂ 4 ψ ∂ x 4 − 2 ​ α ​ ∂ 4 ψ ∂ x 2 ​ ∂ y 2 − α ​ ∂ 4 ψ ∂ y 4 + β ​ ψ 3 − γ ​ ψ 5 . \\displaystyle\\epsilon(\\mathbf{x})\\psi-\\alpha q_{0}^{4}\\psi-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}\\psi}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}\\psi}{\\partial y^{4}}+\\beta\\psi^{3}-\\gamma\\psi^{5}."
+  },
+  {
+    "location": "S2.EGx2",
+    "latex": [
+      "\\displaystyle\\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}\\,=\\,\\left[\\epsilon(\\mathbf{x})-\\alpha q_{0}^{4}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}}{\\partial y^{4}}\\right.",
+      "\\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right]\\left(\\dfrac{\\psi^{n+1}+\\psi^{n}}{2}\\right)."
+    ],
+    "context": "In order to construct a Crank-Nicolson second order in time\nnumerical scheme, we adopt the following representation proposed by\nChristov and Pontes (2002) [ 29 ] for the time derivative\nof Eq. 3 , where the RHS is evaluated at the middle of the\ntime step Δ ​ t \\Delta t . The updated scheme, now including a quintic\nterm takes the form: ψ n + 1 − ψ n Δ ​ t = [ ϵ ( 𝐱 ) − α q 0 4 − 2 α q 0 2 ∂ 2 ∂ x 2 − 2 α q 0 2 ∂ 2 ∂ y 2 − α ∂ 4 ∂ x 4 − 2 α ∂ 4 ∂ x 2 ​ ∂ y 2 − α ∂ 4 ∂ y 4 \\displaystyle\\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}\\,=\\,\\left[\\epsilon(\\mathbf{x})-\\alpha q_{0}^{4}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}}{\\partial y^{4}}\\right. + β ( ψ n + 1 ) 2 + ( ψ n ) 2 2 − γ ( ψ n + 1 ) 4 + ( ψ n ) 4 2 ] ( ψ n + 1 + ψ n 2 ) . \\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right]\\left(\\dfrac{\\psi^{n+1}+\\psi^{n}}{2}\\right). (5) The superscript ( n + 1 ) (n+1) refers to the next time to be evaluated and n n , to the current one. The parameter values for α \\alpha , β \\beta , γ \\gamma and q 0 q_{0} are chosen according to Tab. 1 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}\\,=\\,\\left[\\epsilon(\\mathbf{x})-\\alpha q_{0}^{4}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}}{\\partial y^{4}}\\right."
+    ],
+    "context": "ψ n + 1 − ψ n Δ ​ t = [ ϵ ( 𝐱 ) − α q 0 4 − 2 α q 0 2 ∂ 2 ∂ x 2 − 2 α q 0 2 ∂ 2 ∂ y 2 − α ∂ 4 ∂ x 4 − 2 α ∂ 4 ∂ x 2 ​ ∂ y 2 − α ∂ 4 ∂ y 4 \\displaystyle\\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}\\,=\\,\\left[\\epsilon(\\mathbf{x})-\\alpha q_{0}^{4}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}-2\\alpha q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}}{\\partial x^{4}}-2\\alpha\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}-\\alpha\\dfrac{\\partial^{4}}{\\partial y^{4}}\\right."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right]\\left(\\dfrac{\\psi^{n+1}+\\psi^{n}}{2}\\right)."
+    ],
+    "context": "+ β ( ψ n + 1 ) 2 + ( ψ n ) 2 2 − γ ( ψ n + 1 ) 4 + ( ψ n ) 4 2 ] ( ψ n + 1 + ψ n 2 ) . \\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right]\\left(\\dfrac{\\psi^{n+1}+\\psi^{n}}{2}\\right). (5)"
+  },
+  {
+    "location": "S2.E6",
+    "latex": [
+      "\\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2}+\\Lambda_{y}^{n+1/2}\\right)\\left(\\psi^{n+1}+\\psi^{n}\\right)+f^{n+1/2}."
+    ],
+    "context": "The RHS terms of Eq. 5 are grouped in three parts, the\nfirst and the second ones containing the semi-implicit operators Λ x n + 1 / 2 \\Lambda^{n+1/2}_{x} and Λ y n + 1 / 2 \\Lambda^{n+1/2}_{y} that will act on the variable ( ψ n + 1 + ψ n ) / 2 \\left(\\psi^{n+1}+\\psi^{n}\\right)/2 , and a function f n + 1 / 2 f^{n+1/2} , evaluated at\nthe middle of the time step Δ ​ t \\Delta t . This function will contain explicit\nterms only, in the final discrete form of Eq. 5 . Space\nderivatives are represented by centered second order formulæ. Implicit\nterms are chosen having in mind to construct negative definite operators that\nwill assure the stability of the scheme. The factor 1 / 2 1/2 multiplying ( ψ n + 1 + ψ n ) \\left(\\psi^{n+1}+\\psi^{n}\\right) in the RHS of the above equation is included\nin the operators Λ x n + 1 / 2 \\Lambda_{x}^{n+1/2} and Λ y n + 1 / 2 \\Lambda_{y}^{n+1/2} , leading to the\nfollowing target scheme: ψ n + 1 − ψ n Δ ​ t = ( Λ x n + 1 / 2 + Λ y n + 1 / 2 ) ​ ( ψ n + 1 + ψ n ) + f n + 1 / 2 . \\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2}+\\Lambda_{y}^{n+1/2}\\right)\\left(\\psi^{n+1}+\\psi^{n}\\right)+f^{n+1/2}. (6) For the SH3 equation, the operators Λ x n + 1 / 2 \\Lambda_{x}^{n+1/2} , Λ y n + 1 / 2 \\Lambda_{y}^{n+1/2} and f n + 1 / 2 f^{n+1/2} are defined as: Λ x n + 1 / 2 = \\displaystyle\\Lambda_{x}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; (7) Λ y n + 1 / 2 = \\displaystyle\\Lambda_{y}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2}+\\Lambda_{y}^{n+1/2}\\right)\\left(\\psi^{n+1}+\\psi^{n}\\right)+f^{n+1/2}."
+    ],
+    "context": "ψ n + 1 − ψ n Δ ​ t = ( Λ x n + 1 / 2 + Λ y n + 1 / 2 ) ​ ( ψ n + 1 + ψ n ) + f n + 1 / 2 . \\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2}+\\Lambda_{y}^{n+1/2}\\right)\\left(\\psi^{n+1}+\\psi^{n}\\right)+f^{n+1/2}. (6)"
+  },
+  {
+    "location": "S2.E7",
+    "latex": [
+      "\\displaystyle\\Lambda_{x}^{n+1/2}=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right];",
+      "\\displaystyle\\Lambda_{y}^{n+1/2}=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right];",
+      "\\displaystyle f^{n+1/2}=",
+      "\\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1}+\\psi^{n}\\right),"
+    ],
+    "context": "The RHS terms of Eq. 5 are grouped in three parts, the\nfirst and the second ones containing the semi-implicit operators Λ x n + 1 / 2 \\Lambda^{n+1/2}_{x} and Λ y n + 1 / 2 \\Lambda^{n+1/2}_{y} that will act on the variable ( ψ n + 1 + ψ n ) / 2 \\left(\\psi^{n+1}+\\psi^{n}\\right)/2 , and a function f n + 1 / 2 f^{n+1/2} , evaluated at\nthe middle of the time step Δ ​ t \\Delta t . This function will contain explicit\nterms only, in the final discrete form of Eq. 5 . Space\nderivatives are represented by centered second order formulæ. Implicit\nterms are chosen having in mind to construct negative definite operators that\nwill assure the stability of the scheme. The factor 1 / 2 1/2 multiplying ( ψ n + 1 + ψ n ) \\left(\\psi^{n+1}+\\psi^{n}\\right) in the RHS of the above equation is included\nin the operators Λ x n + 1 / 2 \\Lambda_{x}^{n+1/2} and Λ y n + 1 / 2 \\Lambda_{y}^{n+1/2} , leading to the\nfollowing target scheme: ψ n + 1 − ψ n Δ ​ t = ( Λ x n + 1 / 2 + Λ y n + 1 / 2 ) ​ ( ψ n + 1 + ψ n ) + f n + 1 / 2 . \\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2}+\\Lambda_{y}^{n+1/2}\\right)\\left(\\psi^{n+1}+\\psi^{n}\\right)+f^{n+1/2}. (6) For the SH3 equation, the operators Λ x n + 1 / 2 \\Lambda_{x}^{n+1/2} , Λ y n + 1 / 2 \\Lambda_{y}^{n+1/2} and f n + 1 / 2 f^{n+1/2} are defined as: Λ x n + 1 / 2 = \\displaystyle\\Lambda_{x}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; (7) Λ y n + 1 / 2 = \\displaystyle\\Lambda_{y}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial"
+  },
+  {
+    "location": "S2.E7X",
+    "latex": [
+      "\\displaystyle\\Lambda_{x}^{n+1/2}=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right];"
+    ],
+    "context": "Λ x n + 1 / 2 = \\displaystyle\\Lambda_{x}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; (7) Λ y n + 1 / 2 = \\displaystyle\\Lambda_{y}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; f n + 1 / 2 = \\displaystyle f^{n+1/2}= 1 2 ​ [ ϵ ⁡ ( 𝐱 ) − α ⁡ ( 2 ​ q 0 2 ​ ∂ 2 ∂ x 2 + 2 ​ q 0 2 ​ ∂ 2 ∂ y 2 + 2 ​ ∂ 4 ∂ x 2 ​ ∂ y 2 ) ] ​ ( ψ n + 1 + ψ n ) , \\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1}+\\psi^{n}\\right),"
+  },
+  {
+    "location": "S2.E7Xa",
+    "latex": [
+      "\\displaystyle\\Lambda_{y}^{n+1/2}=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right];"
+    ],
+    "context": "Λ x n + 1 / 2 = \\displaystyle\\Lambda_{x}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; (7) Λ y n + 1 / 2 = \\displaystyle\\Lambda_{y}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; f n + 1 / 2 = \\displaystyle f^{n+1/2}= 1 2 ​ [ ϵ ⁡ ( 𝐱 ) − α ⁡ ( 2 ​ q 0 2 ​ ∂ 2 ∂ x 2 + 2 ​ q 0 2 ​ ∂ 2 ∂ y 2 + 2 ​ ∂ 4 ∂ x 2 ​ ∂ y 2 ) ] ​ ( ψ n + 1 + ψ n ) , \\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1}+\\psi^{n}\\right),"
+  },
+  {
+    "location": "S2.E7Xb",
+    "latex": [
+      "\\displaystyle f^{n+1/2}=",
+      "\\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1}+\\psi^{n}\\right),"
+    ],
+    "context": "Λ x n + 1 / 2 = \\displaystyle\\Lambda_{x}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; (7) Λ y n + 1 / 2 = \\displaystyle\\Lambda_{y}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; f n + 1 / 2 = \\displaystyle f^{n+1/2}= 1 2 ​ [ ϵ ⁡ ( 𝐱 ) − α ⁡ ( 2 ​ q 0 2 ​ ∂ 2 ∂ x 2 + 2 ​ q 0 2 ​ ∂ 2 ∂ y 2 + 2 ​ ∂ 4 ∂ x 2 ​ ∂ y 2 ) ] ​ ( ψ n + 1 + ψ n ) , \\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1}+\\psi^{n}\\right),"
+  },
+  {
+    "location": "S2.EGx3",
+    "latex": [
+      "\\displaystyle\\Lambda_{x}^{n+1/2}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right];",
+      "\\displaystyle\\Lambda_{y}^{n+1/2}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right];",
+      "\\displaystyle f^{n+1/2}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right.",
+      "\\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]\\left(\\psi^{n+1}+\\psi^{n}\\right)."
+    ],
+    "context": "The RHS terms of Eq. 5 are grouped in three parts, the\nfirst and the second ones containing the semi-implicit operators Λ x n + 1 / 2 \\Lambda^{n+1/2}_{x} and Λ y n + 1 / 2 \\Lambda^{n+1/2}_{y} that will act on the variable ( ψ n + 1 + ψ n ) / 2 \\left(\\psi^{n+1}+\\psi^{n}\\right)/2 , and a function f n + 1 / 2 f^{n+1/2} , evaluated at\nthe middle of the time step Δ ​ t \\Delta t . This function will contain explicit\nterms only, in the final discrete form of Eq. 5 . Space\nderivatives are represented by centered second order formulæ. Implicit\nterms are chosen having in mind to construct negative definite operators that\nwill assure the stability of the scheme. The factor 1 / 2 1/2 multiplying ( ψ n + 1 + ψ n ) \\left(\\psi^{n+1}+\\psi^{n}\\right) in the RHS of the above equation is included\nin the operators Λ x n + 1 / 2 \\Lambda_{x}^{n+1/2} and Λ y n + 1 / 2 \\Lambda_{y}^{n+1/2} , leading to the\nfollowing target scheme: ψ n + 1 − ψ n Δ ​ t = ( Λ x n + 1 / 2 + Λ y n + 1 / 2 ) ​ ( ψ n + 1 + ψ n ) + f n + 1 / 2 . \\dfrac{\\psi^{n+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2}+\\Lambda_{y}^{n+1/2}\\right)\\left(\\psi^{n+1}+\\psi^{n}\\right)+f^{n+1/2}. (6) For the SH3 equation, the operators Λ x n + 1 / 2 \\Lambda_{x}^{n+1/2} , Λ y n + 1 / 2 \\Lambda_{y}^{n+1/2} and f n + 1 / 2 f^{n+1/2} are defined as: Λ x n + 1 / 2 = \\displaystyle\\Lambda_{x}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]; (7) Λ y n + 1 / 2 = \\displaystyle\\Lambda_{y}^{n+1/2}= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − β ​ ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\Lambda_{x}^{n+1/2}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right];"
+    ],
+    "context": "Λ x n + 1 / 2 \\displaystyle\\Lambda_{x}^{n+1/2} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − γ ​ ( ψ n + 1 ) 4 + ( ψ n ) 4 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right];"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\Lambda_{y}^{n+1/2}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right];"
+    ],
+    "context": "Λ y n + 1 / 2 \\displaystyle\\Lambda_{y}^{n+1/2} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − γ ​ ( ψ n + 1 ) 4 + ( ψ n ) 4 2 ] ; \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right];"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle f^{n+1/2}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right."
+    ],
+    "context": "f n + 1 / 2 \\displaystyle f^{n+1/2} = \\displaystyle= 1 2 [ ϵ ( 𝐱 ) − α ( 2 q 0 2 ∂ 2 ∂ x 2 + 2 q 0 2 ∂ 2 ∂ y 2 + 2 ∂ 4 ∂ x 2 ​ ∂ y 2 ) \\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right. (8) + β ( ψ n + 1 ) 2 + ( ψ n ) 2 2 ] ( ψ n + 1 + ψ n ) . \\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]\\left(\\psi^{n+1}+\\psi^{n}\\right)."
+  },
+  {
+    "location": "S2.E9",
+    "latex": [
+      "\\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p}\\right)\\left(\\psi^{n+1,p+1}+\\psi^{n}\\right)+f^{n+1/2,p},"
+    ],
+    "context": "ψ n + 1 , p + 1 − ψ n Δ ​ t = ( Λ x n + 1 / 2 , p + Λ y n + 1 / 2 , p ) ​ ( ψ n + 1 , p + 1 + ψ n ) + f n + 1 / 2 , p , \\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p}\\right)\\left(\\psi^{n+1,p+1}+\\psi^{n}\\right)+f^{n+1/2,p}, (9) where the index ( p ) (p) refers to the internal iteration number. The\nsuperscript ( n + 1 , p + 1 ) (n+1,p+1) identifies the new iteration, while ( n ) (n) are\nthe values of the previous time step. The superscript ( n + 1 ) (n+1) for\nthe nonlinear term in the function f n + 1 / 2 f^{n+1/2} will be replaced by ( n , p ) (n,p) , which stands for the values obtained from the previous\niteration."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p}\\right)\\left(\\psi^{n+1,p+1}+\\psi^{n}\\right)+f^{n+1/2,p},"
+    ],
+    "context": "ψ n + 1 , p + 1 − ψ n Δ ​ t = ( Λ x n + 1 / 2 , p + Λ y n + 1 / 2 , p ) ​ ( ψ n + 1 , p + 1 + ψ n ) + f n + 1 / 2 , p , \\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}=\\left(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p}\\right)\\left(\\psi^{n+1,p+1}+\\psi^{n}\\right)+f^{n+1/2,p}, (9)"
+  },
+  {
+    "location": "S2.EGx4",
+    "latex": [
+      "\\displaystyle\\Lambda_{x}^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right],",
+      "\\displaystyle\\Lambda_{y}^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right],",
+      "\\displaystyle f^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1,p}+\\psi^{n}\\right),"
+    ],
+    "context": "Λ x n + 1 / 2 , p \\displaystyle\\Lambda_{x}^{n+1/2,p} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − β ​ ( ψ n + 1 , p ) 2 + ( ψ n ) 2 2 ] , \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right], Λ y n + 1 / 2 , p \\displaystyle\\Lambda_{y}^{n+1/2,p} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − β ​ ( ψ n + 1 , p ) 2 + ( ψ n ) 2 2 ] , \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right], f n + 1 / 2 , p \\displaystyle f^{n+1/2,p} = \\displaystyle= 1 2 ​ [ ϵ ⁡ ( 𝐱 ) − α ⁡ ( 2 ​ q 0 2 ​ ∂ 2 ∂ x 2 + 2 ​ q 0 2 ​ ∂ 2 ∂ y 2 + 2 ​ ∂ 4 ∂ x 2 ​ ∂ y 2 ) ] ​ ( ψ n + 1 , p + ψ n ) , \\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1,p}+\\psi^{n}\\right), (10) and for the SH35:"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\Lambda_{x}^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right],"
+    ],
+    "context": "Λ x n + 1 / 2 , p \\displaystyle\\Lambda_{x}^{n+1/2,p} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − β ​ ( ψ n + 1 , p ) 2 + ( ψ n ) 2 2 ] , \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right],"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\Lambda_{y}^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right],"
+    ],
+    "context": "Λ y n + 1 / 2 , p \\displaystyle\\Lambda_{y}^{n+1/2,p} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − β ​ ( ψ n + 1 , p ) 2 + ( ψ n ) 2 2 ] , \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right],"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle f^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1,p}+\\psi^{n}\\right),"
+    ],
+    "context": "f n + 1 / 2 , p \\displaystyle f^{n+1/2,p} = \\displaystyle= 1 2 ​ [ ϵ ⁡ ( 𝐱 ) − α ⁡ ( 2 ​ q 0 2 ​ ∂ 2 ∂ x 2 + 2 ​ q 0 2 ​ ∂ 2 ∂ y 2 + 2 ​ ∂ 4 ∂ x 2 ​ ∂ y 2 ) ] ​ ( ψ n + 1 , p + ψ n ) , \\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right]\\left(\\psi^{n+1,p}+\\psi^{n}\\right), (10)"
+  },
+  {
+    "location": "S2.EGx5",
+    "latex": [
+      "\\displaystyle\\Lambda_{x}^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1,p}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right],",
+      "\\displaystyle\\Lambda_{y}^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1,p}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right],",
+      "\\displaystyle f^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right.",
+      "\\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]\\left(\\psi^{n+1,p}+\\psi^{n}\\right)."
+    ],
+    "context": "Λ x n + 1 / 2 , p \\displaystyle\\Lambda_{x}^{n+1/2,p} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − γ ​ ( ψ n + 1 , p ) 4 + ( ψ n ) 4 2 ] , \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1,p}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right], Λ y n + 1 / 2 , p \\displaystyle\\Lambda_{y}^{n+1/2,p} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − γ ​ ( ψ n + 1 , p ) 4 + ( ψ n ) 4 2 ] , \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1,p}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right], f n + 1 / 2 , p \\displaystyle f^{n+1/2,p} = \\displaystyle= 1 2 [ ϵ ( 𝐱 ) − α ( 2 q 0 2 ∂ 2 ∂ x 2 + 2 q 0 2 ∂ 2 ∂ y 2 + 2 ∂ 4 ∂ x 2 ​ ∂ y 2 ) \\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right. (11) + β ( ψ n + 1 , p ) 2 + ( ψ n ) 2 2 ] ( ψ n + 1 , p + ψ n ) . \\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]\\left(\\psi^{n+1,p}+\\psi^{n}\\right)."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\Lambda_{x}^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1,p}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right],"
+    ],
+    "context": "Λ x n + 1 / 2 , p \\displaystyle\\Lambda_{x}^{n+1/2,p} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ x 4 + q 0 4 2 ) − γ ​ ( ψ n + 1 , p ) 4 + ( ψ n ) 4 2 ] , \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial x^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1,p}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right],"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\Lambda_{y}^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1,p}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right],"
+    ],
+    "context": "Λ y n + 1 / 2 , p \\displaystyle\\Lambda_{y}^{n+1/2,p} = \\displaystyle= 1 2 ​ [ − α ⁡ ( ∂ 4 ∂ y 4 + q 0 4 2 ) − γ ​ ( ψ n + 1 , p ) 4 + ( ψ n ) 4 2 ] , \\displaystyle\\dfrac{1}{2}\\left[-\\alpha\\left(\\dfrac{\\partial^{4}}{\\partial y^{4}}+\\dfrac{q_{0}^{4}}{2}\\right)-\\gamma\\dfrac{\\left(\\psi^{n+1,p}\\right)^{4}+\\left(\\psi^{n}\\right)^{4}}{2}\\right],"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle f^{n+1/2,p}",
+      "\\displaystyle=",
+      "\\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right."
+    ],
+    "context": "f n + 1 / 2 , p \\displaystyle f^{n+1/2,p} = \\displaystyle= 1 2 [ ϵ ( 𝐱 ) − α ( 2 q 0 2 ∂ 2 ∂ x 2 + 2 q 0 2 ∂ 2 ∂ y 2 + 2 ∂ 4 ∂ x 2 ​ ∂ y 2 ) \\displaystyle\\dfrac{1}{2}\\left[\\epsilon(\\mathbf{x})-\\alpha\\left(2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial x^{2}}+2q_{0}^{2}\\dfrac{\\partial^{2}}{\\partial y^{2}}+2\\dfrac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}\\right)\\right. (11) + β ( ψ n + 1 , p ) 2 + ( ψ n ) 2 2 ] ( ψ n + 1 , p + ψ n ) . \\displaystyle\\left.+\\beta\\dfrac{\\left(\\psi^{n+1,p}\\right)^{2}+\\left(\\psi^{n}\\right)^{2}}{2}\\right]\\left(\\psi^{n+1,p}+\\psi^{n}\\right)."
+  },
+  {
+    "location": "S2.E12",
+    "latex": [
+      "L_{\\infty}=\\dfrac{\\max\\mid\\psi^{n+1,p+1}-\\psi^{n+1,p}\\mid}{\\max\\mid\\psi^{n+1,p+1}\\mid}\\leq\\delta;"
+    ],
+    "context": "The iterations proceed until the following criterion for the L ∞ L_{\\infty} norm is satisfied with δ = 1.0 × 10 − 8 \\delta=1.0\\times 10^{-8} : L ∞ = max ⁡ ∣ ψ n + 1 , p + 1 − ψ n + 1 , p ∣ max ⁡ ∣ ψ n + 1 , p + 1 ∣ ≤ δ ; L_{\\infty}=\\dfrac{\\max\\mid\\psi^{n+1,p+1}-\\psi^{n+1,p}\\mid}{\\max\\mid\\psi^{n+1,p+1}\\mid}\\leq\\delta; (12) so that the last iteration gives the sought function ψ \\psi in the new time ψ n + 1 ≡ ψ n + 1 , p + 1 \\psi^{n+1}\\equiv\\psi^{n+1,p+1} ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "L_{\\infty}=\\dfrac{\\max\\mid\\psi^{n+1,p+1}-\\psi^{n+1,p}\\mid}{\\max\\mid\\psi^{n+1,p+1}\\mid}\\leq\\delta;"
+    ],
+    "context": "L ∞ = max ⁡ ∣ ψ n + 1 , p + 1 − ψ n + 1 , p ∣ max ⁡ ∣ ψ n + 1 , p + 1 ∣ ≤ δ ; L_{\\infty}=\\dfrac{\\max\\mid\\psi^{n+1,p+1}-\\psi^{n+1,p}\\mid}{\\max\\mid\\psi^{n+1,p+1}\\mid}\\leq\\delta; (12)"
+  },
+  {
+    "location": "S2.EGx6",
+    "latex": [
+      "\\displaystyle\\dfrac{\\widetilde{\\psi}-\\psi^{n}}{\\Delta t}=",
+      "\\displaystyle\\;\\Lambda_{x}^{n+1/2,p}\\widetilde{\\psi}+\\Lambda_{y}^{n+1/2,p}\\psi^{n}+f^{n+1/2,p}+(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})\\psi^{n},",
+      "\\displaystyle\\dfrac{\\psi^{n+1,p+1}-\\widetilde{\\psi}}{\\Delta t}=",
+      "\\displaystyle\\;\\Lambda_{y}^{n+1/2,p}(\\psi^{n+1,p+1}-\\psi^{n}),"
+    ],
+    "context": "ψ ~ − ψ n Δ ​ t = \\displaystyle\\dfrac{\\widetilde{\\psi}-\\psi^{n}}{\\Delta t}= Λ x n + 1 / 2 , p ​ ψ ~ + Λ y n + 1 / 2 , p ​ ψ n + f n + 1 / 2 , p + ( Λ x n + 1 / 2 , p + Λ y n + 1 / 2 , p ) ​ ψ n , \\displaystyle\\;\\Lambda_{x}^{n+1/2,p}\\widetilde{\\psi}+\\Lambda_{y}^{n+1/2,p}\\psi^{n}+f^{n+1/2,p}+(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})\\psi^{n}, (13) ψ n + 1 , p + 1 − ψ ~ Δ ​ t = \\displaystyle\\dfrac{\\psi^{n+1,p+1}-\\widetilde{\\psi}}{\\Delta t}= Λ y n + 1 / 2 , p ​ ( ψ n + 1 , p + 1 − ψ n ) , \\displaystyle\\;\\Lambda_{y}^{n+1/2,p}(\\psi^{n+1,p+1}-\\psi^{n}), (14) where ψ ~ \\widetilde{\\psi} is an intermediary estimation of ψ \\psi at the new time step. In order\nto show that the splitting represents the original scheme, we\nrewrite Eqs. 13 and 14 in the form: ( E − Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ψ ~ = \\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\widetilde{\\psi}= ( E + Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ψ n + 2 ​ Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n + Δ ​ t ​ f n + 1 / 2 , p , \\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+\\Delta tf^{n+1/2,p}, (15) ( E − Δ ​ t ​ Λ y n + 1 / 2 , p ) ​ ψ n + 1 , p + 1 = \\displaystyle\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}= ψ ~ − Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n , \\displaystyle\\;\\widetilde{\\psi}-\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}, (16)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\dfrac{\\widetilde{\\psi}-\\psi^{n}}{\\Delta t}=",
+      "\\displaystyle\\;\\Lambda_{x}^{n+1/2,p}\\widetilde{\\psi}+\\Lambda_{y}^{n+1/2,p}\\psi^{n}+f^{n+1/2,p}+(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})\\psi^{n},"
+    ],
+    "context": "ψ ~ − ψ n Δ ​ t = \\displaystyle\\dfrac{\\widetilde{\\psi}-\\psi^{n}}{\\Delta t}= Λ x n + 1 / 2 , p ​ ψ ~ + Λ y n + 1 / 2 , p ​ ψ n + f n + 1 / 2 , p + ( Λ x n + 1 / 2 , p + Λ y n + 1 / 2 , p ) ​ ψ n , \\displaystyle\\;\\Lambda_{x}^{n+1/2,p}\\widetilde{\\psi}+\\Lambda_{y}^{n+1/2,p}\\psi^{n}+f^{n+1/2,p}+(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})\\psi^{n}, (13)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\dfrac{\\psi^{n+1,p+1}-\\widetilde{\\psi}}{\\Delta t}=",
+      "\\displaystyle\\;\\Lambda_{y}^{n+1/2,p}(\\psi^{n+1,p+1}-\\psi^{n}),"
+    ],
+    "context": "ψ n + 1 , p + 1 − ψ ~ Δ ​ t = \\displaystyle\\dfrac{\\psi^{n+1,p+1}-\\widetilde{\\psi}}{\\Delta t}= Λ y n + 1 / 2 , p ​ ( ψ n + 1 , p + 1 − ψ n ) , \\displaystyle\\;\\Lambda_{y}^{n+1/2,p}(\\psi^{n+1,p+1}-\\psi^{n}), (14)"
+  },
+  {
+    "location": "S2.EGx7",
+    "latex": [
+      "\\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\widetilde{\\psi}=",
+      "\\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+\\Delta tf^{n+1/2,p},",
+      "\\displaystyle\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}=",
+      "\\displaystyle\\;\\widetilde{\\psi}-\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n},"
+    ],
+    "context": "ψ ~ − ψ n Δ ​ t = \\displaystyle\\dfrac{\\widetilde{\\psi}-\\psi^{n}}{\\Delta t}= Λ x n + 1 / 2 , p ​ ψ ~ + Λ y n + 1 / 2 , p ​ ψ n + f n + 1 / 2 , p + ( Λ x n + 1 / 2 , p + Λ y n + 1 / 2 , p ) ​ ψ n , \\displaystyle\\;\\Lambda_{x}^{n+1/2,p}\\widetilde{\\psi}+\\Lambda_{y}^{n+1/2,p}\\psi^{n}+f^{n+1/2,p}+(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})\\psi^{n}, (13) ψ n + 1 , p + 1 − ψ ~ Δ ​ t = \\displaystyle\\dfrac{\\psi^{n+1,p+1}-\\widetilde{\\psi}}{\\Delta t}= Λ y n + 1 / 2 , p ​ ( ψ n + 1 , p + 1 − ψ n ) , \\displaystyle\\;\\Lambda_{y}^{n+1/2,p}(\\psi^{n+1,p+1}-\\psi^{n}), (14) where ψ ~ \\widetilde{\\psi} is an intermediary estimation of ψ \\psi at the new time step. In order\nto show that the splitting represents the original scheme, we\nrewrite Eqs. 13 and 14 in the form: ( E − Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ψ ~ = \\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\widetilde{\\psi}= ( E + Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ψ n + 2 ​ Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n + Δ ​ t ​ f n + 1 / 2 , p , \\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+\\Delta tf^{n+1/2,p}, (15) ( E − Δ ​ t ​ Λ y n + 1 / 2 , p ) ​ ψ n + 1 , p + 1 = \\displaystyle\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}= ψ ~ − Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n , \\displaystyle\\;\\widetilde{\\psi}-\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}, (16)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\widetilde{\\psi}=",
+      "\\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+\\Delta tf^{n+1/2,p},"
+    ],
+    "context": "( E − Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ψ ~ = \\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\widetilde{\\psi}= ( E + Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ψ n + 2 ​ Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n + Δ ​ t ​ f n + 1 / 2 , p , \\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+\\Delta tf^{n+1/2,p}, (15)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}=",
+      "\\displaystyle\\;\\widetilde{\\psi}-\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n},"
+    ],
+    "context": "( E − Δ ​ t ​ Λ y n + 1 / 2 , p ) ​ ψ n + 1 , p + 1 = \\displaystyle\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}= ψ ~ − Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n , \\displaystyle\\;\\widetilde{\\psi}-\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}, (16)"
+  },
+  {
+    "location": "S2.EGx8",
+    "latex": [
+      "\\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}=",
+      "\\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+",
+      "\\displaystyle+\\Delta tf^{n+1/2,p}-\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}."
+    ],
+    "context": "( E − Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ( E − Δ ​ t ​ Λ y n + 1 / 2 , p ) ​ ψ n + 1 , p + 1 = \\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}= ( E + Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ψ n + 2 ​ Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n + \\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+ + Δ ​ t ​ f n + 1 / 2 , p − ( E − Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n . \\displaystyle+\\Delta tf^{n+1/2,p}-\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}. (17)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}=",
+      "\\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+"
+    ],
+    "context": "( E − Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ( E − Δ ​ t ​ Λ y n + 1 / 2 , p ) ​ ψ n + 1 , p + 1 = \\displaystyle\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\left(E-\\Delta t\\Lambda_{y}^{n+1/2,p}\\right)\\psi^{n+1,p+1}= ( E + Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ ψ n + 2 ​ Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n + \\displaystyle\\left(E+\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\psi^{n}+2\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}+"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle+\\Delta tf^{n+1/2,p}-\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}."
+    ],
+    "context": "+ Δ ​ t ​ f n + 1 / 2 , p − ( E − Δ ​ t ​ Λ x n + 1 / 2 , p ) ​ Δ ​ t ​ Λ y n + 1 / 2 , p ​ ψ n . \\displaystyle+\\Delta tf^{n+1/2,p}-\\left(E-\\Delta t\\Lambda_{x}^{n+1/2,p}\\right)\\Delta t\\Lambda_{y}^{n+1/2,p}\\psi^{n}. (17)"
+  },
+  {
+    "location": "S2.EGx9",
+    "latex": [
+      "\\displaystyle\\left(E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}\\right)\\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}=",
+      "\\displaystyle\\;(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})(\\psi^{n+1,p+1}+\\psi^{n})+f^{n+1/2,p},"
+    ],
+    "context": "( E + Δ ​ t 2 ​ Λ x n + 1 / 2 , p ​ Λ y n + 1 / 2 , p ) ​ ψ n + 1 , p + 1 − ψ n Δ ​ t = \\displaystyle\\left(E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}\\right)\\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}= ( Λ x n + 1 / 2 , p + Λ y n + 1 / 2 , p ) ​ ( ψ n + 1 , p + 1 + ψ n ) + f n + 1 / 2 , p , \\displaystyle\\;(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})(\\psi^{n+1,p+1}+\\psi^{n})+f^{n+1/2,p}, (18) where E E is the unity operator. A comparison with Eq. 6 shows that Eq. 18 is actually equivalent to the former\nexcept by the positive definite operator having a norm greater than\none: B ≡ E + Δ ​ t 2 ​ Λ x n + 1 / 2 , p ​ Λ y n + 1 / 2 , p = E + O ⁡ ( Δ ​ t 2 ) , B\\equiv E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}=E+O(\\Delta t^{2}), (19) which acts on the term ( ψ n + 1 , p + 1 − ψ n ) / Δ ​ t (\\psi^{n+1,p+1}-\\psi^{n})/{\\Delta t} . This\nmeans that this operator does not change the steady state solution.\nFurthermore, since ‖ B ‖ > 1 ||B||>1 , the scheme given by\nEqs. 15 , and 16 is more stable than the target one\n(Eq. 6 )."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\left(E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}\\right)\\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}=",
+      "\\displaystyle\\;(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})(\\psi^{n+1,p+1}+\\psi^{n})+f^{n+1/2,p},"
+    ],
+    "context": "( E + Δ ​ t 2 ​ Λ x n + 1 / 2 , p ​ Λ y n + 1 / 2 , p ) ​ ψ n + 1 , p + 1 − ψ n Δ ​ t = \\displaystyle\\left(E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}\\right)\\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}= ( Λ x n + 1 / 2 , p + Λ y n + 1 / 2 , p ) ​ ( ψ n + 1 , p + 1 + ψ n ) + f n + 1 / 2 , p , \\displaystyle\\;(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})(\\psi^{n+1,p+1}+\\psi^{n})+f^{n+1/2,p}, (18)"
+  },
+  {
+    "location": "S2.E19",
+    "latex": [
+      "B\\equiv E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}=E+O(\\Delta t^{2}),"
+    ],
+    "context": "( E + Δ ​ t 2 ​ Λ x n + 1 / 2 , p ​ Λ y n + 1 / 2 , p ) ​ ψ n + 1 , p + 1 − ψ n Δ ​ t = \\displaystyle\\left(E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}\\right)\\dfrac{\\psi^{n+1,p+1}-\\psi^{n}}{\\Delta t}= ( Λ x n + 1 / 2 , p + Λ y n + 1 / 2 , p ) ​ ( ψ n + 1 , p + 1 + ψ n ) + f n + 1 / 2 , p , \\displaystyle\\;(\\Lambda_{x}^{n+1/2,p}+\\Lambda_{y}^{n+1/2,p})(\\psi^{n+1,p+1}+\\psi^{n})+f^{n+1/2,p}, (18) where E E is the unity operator. A comparison with Eq. 6 shows that Eq. 18 is actually equivalent to the former\nexcept by the positive definite operator having a norm greater than\none: B ≡ E + Δ ​ t 2 ​ Λ x n + 1 / 2 , p ​ Λ y n + 1 / 2 , p = E + O ⁡ ( Δ ​ t 2 ) , B\\equiv E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}=E+O(\\Delta t^{2}), (19) which acts on the term ( ψ n + 1 , p + 1 − ψ n ) / Δ ​ t (\\psi^{n+1,p+1}-\\psi^{n})/{\\Delta t} . This\nmeans that this operator does not change the steady state solution.\nFurthermore, since ‖ B ‖ > 1 ||B||>1 , the scheme given by\nEqs. 15 , and 16 is more stable than the target one\n(Eq. 6 )."
+  },
+  {
+    "location": null,
+    "latex": [
+      "B\\equiv E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}=E+O(\\Delta t^{2}),"
+    ],
+    "context": "B ≡ E + Δ ​ t 2 ​ Λ x n + 1 / 2 , p ​ Λ y n + 1 / 2 , p = E + O ⁡ ( Δ ​ t 2 ) , B\\equiv E+\\Delta t^{2}\\Lambda_{x}^{n+1/2,p}\\Lambda_{y}^{n+1/2,p}=E+O(\\Delta t^{2}), (19)"
+  },
+  {
+    "location": "S2.Ex11",
+    "latex": [
+      "x_{i}=-\\dfrac{\\Delta x}{2}+i\\,\\Delta x,\\quad\\Delta x\\equiv\\dfrac{L_{x}}{n_{x}-2},\\quad y_{j}=-\\dfrac{\\Delta y}{2}+j\\,\\Delta y,\\quad\\Delta y\\equiv\\dfrac{L_{y}}{n_{y}-2},"
+    ],
+    "context": "We solve numerically the SH equation with GDBC and PBC. For\nthe case of rigid boundary conditions we adopt a staggered grid, as\nillustrated in Fig. 1 . Consider a staggered mesh in\nboth spatial directions, namely x i = − Δ ​ x 2 + i ​ Δ ​ x , Δ ​ x ≡ L x n x − 2 , y j = − Δ ​ y 2 + j ​ Δ ​ y , Δ ​ y ≡ L y n y − 2 , x_{i}=-\\dfrac{\\Delta x}{2}+i\\,\\Delta x,\\quad\\Delta x\\equiv\\dfrac{L_{x}}{n_{x}-2},\\quad y_{j}=-\\dfrac{\\Delta y}{2}+j\\,\\Delta y,\\quad\\Delta y\\equiv\\dfrac{L_{y}}{n_{y}-2}, where n x n_{x} and n y n_{y} are the number of points in x x -and y y -directions, respectively. The mesh pattern is shown in\nFig. 1 . Let ψ i , j \\psi_{i,j} be an arbitrary set function\ndefined on the above described mesh. We confine ourselves to the\ncase of constant coefficients. The PBC, which is less restrictive\nthan the GDBC, borrows the crystallography concept of unit cell,\nwhich is a repeating pattern representative of the material. That is,\nusing PBC we have a domain that would also act as a unit cell for a\ninfinite two-dimensional surface, with cells being periodically\nrepeated all around the bidimensional domain."
+  },
+  {
+    "location": null,
+    "latex": [
+      "x_{i}=-\\dfrac{\\Delta x}{2}+i\\,\\Delta x,\\quad\\Delta x\\equiv\\dfrac{L_{x}}{n_{x}-2},\\quad y_{j}=-\\dfrac{\\Delta y}{2}+j\\,\\Delta y,\\quad\\Delta y\\equiv\\dfrac{L_{y}}{n_{y}-2},"
+    ],
+    "context": "x i = − Δ ​ x 2 + i ​ Δ ​ x , Δ ​ x ≡ L x n x − 2 , y j = − Δ ​ y 2 + j ​ Δ ​ y , Δ ​ y ≡ L y n y − 2 , x_{i}=-\\dfrac{\\Delta x}{2}+i\\,\\Delta x,\\quad\\Delta x\\equiv\\dfrac{L_{x}}{n_{x}-2},\\quad y_{j}=-\\dfrac{\\Delta y}{2}+j\\,\\Delta y,\\quad\\Delta y\\equiv\\dfrac{L_{y}}{n_{y}-2},"
+  },
+  {
+    "location": "S2.E20",
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial x^{2}}=",
+      "\\displaystyle\\dfrac{\\psi_{i,j-1}-2\\psi_{i,j}+\\psi_{i,j+1}}{\\Delta x^{2}};",
+      "\\displaystyle{{\\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial y^{2}}=}}",
+      "\\displaystyle{{\\displaystyle\\dfrac{\\psi_{i-1,j}-2\\psi_{i,j}+\\psi_{i+1,j}}{\\Delta y^{2}}}}."
+    ],
+    "context": "Second derivatives with second order accuracy can be written as: ∂ 2 ψ i , j ∂ x 2 = \\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial x^{2}}= ψ i , j − 1 − 2 ​ ψ i , j + ψ i , j + 1 Δ ​ x 2 ; \\displaystyle\\dfrac{\\psi_{i,j-1}-2\\psi_{i,j}+\\psi_{i,j+1}}{\\Delta x^{2}}; ∂ 2 ψ i , j ∂ y 2 = \\displaystyle{{\\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial y^{2}}=}} ψ i − 1 , j − 2 ​ ψ i , j + ψ i + 1 , j Δ ​ y 2 . \\displaystyle{{\\displaystyle\\dfrac{\\psi_{i-1,j}-2\\psi_{i,j}+\\psi_{i+1,j}}{\\Delta y^{2}}}}. (20) And fourth derivatives with second order accuracy are written as: ∂ 4 ψ i , j ∂ x 4 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{4}}= ψ i − 2 , j − 4 ​ ψ i − 1 , j + 6 ​ ψ i , j − 4 ​ ψ i + 1 , j + ψ i + 2 , j Δ ​ x 4 , \\displaystyle\\dfrac{\\psi_{i-2,j}-4\\psi_{i-1,j}+6\\psi_{i,j}-4\\psi_{i+1,j}+\\psi_{i+2,j}}{\\Delta x^{4}}, ∂ 4 ψ i , j ∂ y 4 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial y^{4}}= ψ i , j − 2 − 4 ​ ψ i , j − 1 + 6 ​ ψ i , j − 4 ​ ψ i , j + 1 + ψ i , j + 2 Δ ​ y 4 , \\displaystyle\\dfrac{\\psi_{i,j-2}-4\\psi_{i,j-1}+6\\psi_{i,j}-4\\psi_{i,j+1}+\\psi_{i,j+2}}{\\Delta y^{4}}, ∂ 4 ψ i , j ∂ x 2 ​ ∂ y 2 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{2}\\partial y^{2}}= 1 Δ ​ x 2 ​ Δ ​ y 2 ​ ( ψ i − 1 , j − 1 − 2 ​ ψ i , j − 1 + ψ i + 1 , j − 1 − 2 ​ ψ i − 1 , j + 4 ​ ψ i , j − 2 ​ ψ i + 1 , j + CLOSE \\displaystyle\\dfrac{1}{\\Delta x^{2}\\Delta y^{2}}\\Bigg(\\psi_{i-1,j-1}-2\\psi_{i,j-1}+\\psi_{i+1,j-1}-2\\psi_{i-1,j}+4\\psi_{i,j}-2\\psi_{i+1,j}+ OPEN + ψ i − 1 , j + 1 − 2 ​ ψ i , j + 1 + ψ i + 1 , j + 1 ) . \\displaystyle+\\psi_{i-1,j+1}-2\\psi_{i,j+1}+\\psi_{i+1,j+1}\\Bigg)."
+  },
+  {
+    "location": "S2.E20X",
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial x^{2}}=",
+      "\\displaystyle\\dfrac{\\psi_{i,j-1}-2\\psi_{i,j}+\\psi_{i,j+1}}{\\Delta x^{2}};",
+      "\\displaystyle{{\\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial y^{2}}=}}",
+      "\\displaystyle{{\\displaystyle\\dfrac{\\psi_{i-1,j}-2\\psi_{i,j}+\\psi_{i+1,j}}{\\Delta y^{2}}}}."
+    ],
+    "context": "∂ 2 ψ i , j ∂ x 2 = \\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial x^{2}}= ψ i , j − 1 − 2 ​ ψ i , j + ψ i , j + 1 Δ ​ x 2 ; \\displaystyle\\dfrac{\\psi_{i,j-1}-2\\psi_{i,j}+\\psi_{i,j+1}}{\\Delta x^{2}}; ∂ 2 ψ i , j ∂ y 2 = \\displaystyle{{\\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial y^{2}}=}} ψ i − 1 , j − 2 ​ ψ i , j + ψ i + 1 , j Δ ​ y 2 . \\displaystyle{{\\displaystyle\\dfrac{\\psi_{i-1,j}-2\\psi_{i,j}+\\psi_{i+1,j}}{\\Delta y^{2}}}}. (20)"
+  },
+  {
+    "location": "S2.EGx10",
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{4}}=",
+      "\\displaystyle\\dfrac{\\psi_{i-2,j}-4\\psi_{i-1,j}+6\\psi_{i,j}-4\\psi_{i+1,j}+\\psi_{i+2,j}}{\\Delta x^{4}},",
+      "\\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial y^{4}}=",
+      "\\displaystyle\\dfrac{\\psi_{i,j-2}-4\\psi_{i,j-1}+6\\psi_{i,j}-4\\psi_{i,j+1}+\\psi_{i,j+2}}{\\Delta y^{4}},",
+      "\\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{2}\\partial y^{2}}=",
+      "\\displaystyle\\dfrac{1}{\\Delta x^{2}\\Delta y^{2}}\\Bigg(\\psi_{i-1,j-1}-2\\psi_{i,j-1}+\\psi_{i+1,j-1}-2\\psi_{i-1,j}+4\\psi_{i,j}-2\\psi_{i+1,j}+",
+      "\\displaystyle+\\psi_{i-1,j+1}-2\\psi_{i,j+1}+\\psi_{i+1,j+1}\\Bigg)."
+    ],
+    "context": "Second derivatives with second order accuracy can be written as: ∂ 2 ψ i , j ∂ x 2 = \\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial x^{2}}= ψ i , j − 1 − 2 ​ ψ i , j + ψ i , j + 1 Δ ​ x 2 ; \\displaystyle\\dfrac{\\psi_{i,j-1}-2\\psi_{i,j}+\\psi_{i,j+1}}{\\Delta x^{2}}; ∂ 2 ψ i , j ∂ y 2 = \\displaystyle{{\\displaystyle\\dfrac{\\partial^{2}\\psi_{i,j}}{\\partial y^{2}}=}} ψ i − 1 , j − 2 ​ ψ i , j + ψ i + 1 , j Δ ​ y 2 . \\displaystyle{{\\displaystyle\\dfrac{\\psi_{i-1,j}-2\\psi_{i,j}+\\psi_{i+1,j}}{\\Delta y^{2}}}}. (20) And fourth derivatives with second order accuracy are written as: ∂ 4 ψ i , j ∂ x 4 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{4}}= ψ i − 2 , j − 4 ​ ψ i − 1 , j + 6 ​ ψ i , j − 4 ​ ψ i + 1 , j + ψ i + 2 , j Δ ​ x 4 , \\displaystyle\\dfrac{\\psi_{i-2,j}-4\\psi_{i-1,j}+6\\psi_{i,j}-4\\psi_{i+1,j}+\\psi_{i+2,j}}{\\Delta x^{4}}, ∂ 4 ψ i , j ∂ y 4 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial y^{4}}= ψ i , j − 2 − 4 ​ ψ i , j − 1 + 6 ​ ψ i , j − 4 ​ ψ i , j + 1 + ψ i , j + 2 Δ ​ y 4 , \\displaystyle\\dfrac{\\psi_{i,j-2}-4\\psi_{i,j-1}+6\\psi_{i,j}-4\\psi_{i,j+1}+\\psi_{i,j+2}}{\\Delta y^{4}}, ∂ 4 ψ i , j ∂ x 2 ​ ∂ y 2 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{2}\\partial y^{2}}= 1 Δ ​ x 2 ​ Δ ​ y 2 ​ ( ψ i − 1 , j − 1 − 2 ​ ψ i , j − 1 + ψ i + 1 , j − 1 − 2 ​ ψ i − 1 , j + 4 ​ ψ i , j − 2 ​ ψ i + 1 , j + CLOSE \\displaystyle\\dfrac{1}{\\Delta x^{2}\\Delta y^{2}}\\Bigg(\\psi_{i-1,j-1}-2\\psi_{i,j-1}+\\psi_{i+1,j-1}-2\\psi_{i-1,j}+4\\psi_{i,j}-2\\psi_{i+1,j}+ OPEN + ψ i − 1 , j + 1 − 2 ​ ψ i , j + 1 + ψ i + 1 , j + 1 ) . \\displaystyle+\\psi_{i-1,j+1}-2\\psi_{i,j+1}+\\psi_{i+1,j+1}\\Bigg)."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{4}}=",
+      "\\displaystyle\\dfrac{\\psi_{i-2,j}-4\\psi_{i-1,j}+6\\psi_{i,j}-4\\psi_{i+1,j}+\\psi_{i+2,j}}{\\Delta x^{4}},"
+    ],
+    "context": "∂ 4 ψ i , j ∂ x 4 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{4}}= ψ i − 2 , j − 4 ​ ψ i − 1 , j + 6 ​ ψ i , j − 4 ​ ψ i + 1 , j + ψ i + 2 , j Δ ​ x 4 , \\displaystyle\\dfrac{\\psi_{i-2,j}-4\\psi_{i-1,j}+6\\psi_{i,j}-4\\psi_{i+1,j}+\\psi_{i+2,j}}{\\Delta x^{4}},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial y^{4}}=",
+      "\\displaystyle\\dfrac{\\psi_{i,j-2}-4\\psi_{i,j-1}+6\\psi_{i,j}-4\\psi_{i,j+1}+\\psi_{i,j+2}}{\\Delta y^{4}},"
+    ],
+    "context": "∂ 4 ψ i , j ∂ y 4 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial y^{4}}= ψ i , j − 2 − 4 ​ ψ i , j − 1 + 6 ​ ψ i , j − 4 ​ ψ i , j + 1 + ψ i , j + 2 Δ ​ y 4 , \\displaystyle\\dfrac{\\psi_{i,j-2}-4\\psi_{i,j-1}+6\\psi_{i,j}-4\\psi_{i,j+1}+\\psi_{i,j+2}}{\\Delta y^{4}},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{2}\\partial y^{2}}=",
+      "\\displaystyle\\dfrac{1}{\\Delta x^{2}\\Delta y^{2}}\\Bigg(\\psi_{i-1,j-1}-2\\psi_{i,j-1}+\\psi_{i+1,j-1}-2\\psi_{i-1,j}+4\\psi_{i,j}-2\\psi_{i+1,j}+"
+    ],
+    "context": "∂ 4 ψ i , j ∂ x 2 ​ ∂ y 2 = \\displaystyle\\dfrac{\\partial^{4}\\psi_{i,j}}{\\partial x^{2}\\partial y^{2}}= 1 Δ ​ x 2 ​ Δ ​ y 2 ​ ( ψ i − 1 , j − 1 − 2 ​ ψ i , j − 1 + ψ i + 1 , j − 1 − 2 ​ ψ i − 1 , j + 4 ​ ψ i , j − 2 ​ ψ i + 1 , j + CLOSE \\displaystyle\\dfrac{1}{\\Delta x^{2}\\Delta y^{2}}\\Bigg(\\psi_{i-1,j-1}-2\\psi_{i,j-1}+\\psi_{i+1,j-1}-2\\psi_{i-1,j}+4\\psi_{i,j}-2\\psi_{i+1,j}+"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle+\\psi_{i-1,j+1}-2\\psi_{i,j+1}+\\psi_{i+1,j+1}\\Bigg)."
+    ],
+    "context": "OPEN + ψ i − 1 , j + 1 − 2 ​ ψ i , j + 1 + ψ i + 1 , j + 1 ) . \\displaystyle+\\psi_{i-1,j+1}-2\\psi_{i,j+1}+\\psi_{i+1,j+1}\\Bigg)."
+  },
+  {
+    "location": "S3.E21",
+    "latex": [
+      "\\dot{L}_{1}\\;=\\dfrac{1}{\\Delta t}\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid\\psi_{i,j}^{n+1}-\\psi_{i,j}^{n}\\mid}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid\\psi_{i,j}^{n+1}\\mid}\\right),"
+    ],
+    "context": "L ˙ 1 = 1 Δ ​ t ​ ( ∑ i = 1 n x ∑ j = 1 n y ∣ ψ i , j n + 1 − ψ i , j n ∣ ∑ i = 1 n x ∑ j = 1 n y ∣ ψ i , j n + 1 ∣ ) , \\dot{L}_{1}\\;=\\dfrac{1}{\\Delta t}\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid\\psi_{i,j}^{n+1}-\\psi_{i,j}^{n}\\mid}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid\\psi_{i,j}^{n+1}\\mid}\\right), (21) which roughly corresponds to the ratio between the spatial average of\nthe modulus of time derivative ∂ ψ / ∂ t {\\partial\\psi}/{\\partial t} and the\nspatial average of the modulus of the function itself. The\ncalculations begin from a random initial condition and proceeded\nuntil L ˙ 1 ≤ 5 × 10 − 7 \\dot{L}_{1}\\leq 5\\times 10^{-7} , which is our criterion for\nreaching the steady state. Following this implementation,\nFig. 2 shows the system state at t = 100 t=100 and\nthe steady state attained in six simulations run with different time\nsteps Δ ​ t \\Delta t . Fig. 3 shows the evolution\nof the associated L ˙ 1 \\dot{L}_{1} and the curves of the accomplished\ninternal iterations at each time step. This group of simulations was\nrun with GDBC."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\dot{L}_{1}\\;=\\dfrac{1}{\\Delta t}\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid\\psi_{i,j}^{n+1}-\\psi_{i,j}^{n}\\mid}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid\\psi_{i,j}^{n+1}\\mid}\\right),"
+    ],
+    "context": "L ˙ 1 = 1 Δ ​ t ​ ( ∑ i = 1 n x ∑ j = 1 n y ∣ ψ i , j n + 1 − ψ i , j n ∣ ∑ i = 1 n x ∑ j = 1 n y ∣ ψ i , j n + 1 ∣ ) , \\dot{L}_{1}\\;=\\dfrac{1}{\\Delta t}\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid\\psi_{i,j}^{n+1}-\\psi_{i,j}^{n}\\mid}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid\\psi_{i,j}^{n+1}\\mid}\\right), (21)"
+  },
+  {
+    "location": "S3.E22",
+    "latex": [
+      "F\\left(\\psi\\right)\\;=\\;0,"
+    ],
+    "context": "F ⁡ ( ψ ) = 0 , F\\left(\\psi\\right)\\;=\\;0, (22)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "F\\left(\\psi\\right)\\;=\\;0,"
+    ],
+    "context": "F ⁡ ( ψ ) = 0 , F\\left(\\psi\\right)\\;=\\;0, (22)"
+  },
+  {
+    "location": "S3.E23",
+    "latex": [
+      "\\bar{F}\\left(\\psi\\right)\\equiv F\\left(\\psi\\right)-s_{m}."
+    ],
+    "context": "F ¯ ​ ( ψ ) ≡ F ⁡ ( ψ ) − s m . \\bar{F}\\left(\\psi\\right)\\equiv F\\left(\\psi\\right)-s_{m}. (23)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\bar{F}\\left(\\psi\\right)\\equiv F\\left(\\psi\\right)-s_{m}."
+    ],
+    "context": "F ¯ ​ ( ψ ) ≡ F ⁡ ( ψ ) − s m . \\bar{F}\\left(\\psi\\right)\\equiv F\\left(\\psi\\right)-s_{m}. (23)"
+  },
+  {
+    "location": "S3.E24",
+    "latex": [
+      "\\psi_{m}(\\mathbf{x},t)\\;=\\;\\psi_{0}+\\psi_{xy}\\cos[q_{1}(x+y)]e^{at},"
+    ],
+    "context": "ψ m ​ ( 𝐱 , t ) = ψ 0 + ψ x ​ y ​ cos ⁡ [ q 1 ​ ( x + y ) ] ​ e a ​ t , \\psi_{m}(\\mathbf{x},t)\\;=\\;\\psi_{0}+\\psi_{xy}\\cos[q_{1}(x+y)]e^{at}, (24)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\psi_{m}(\\mathbf{x},t)\\;=\\;\\psi_{0}+\\psi_{xy}\\cos[q_{1}(x+y)]e^{at},"
+    ],
+    "context": "ψ m ​ ( 𝐱 , t ) = ψ 0 + ψ x ​ y ​ cos ⁡ [ q 1 ​ ( x + y ) ] ​ e a ​ t , \\psi_{m}(\\mathbf{x},t)\\;=\\;\\psi_{0}+\\psi_{xy}\\cos[q_{1}(x+y)]e^{at}, (24)"
+  },
+  {
+    "location": "S3.E25",
+    "latex": [
+      "L_{2}\\;=\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{k})_{i,j}^{n}-(\\psi_{m})_{i,j}^{n}\\mid^{2}}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{m})_{i,j}^{n}\\mid^{2}}\\right)^{1/2}."
+    ],
+    "context": "The global discretization error was examined by the L 2 L_{2} norm, defined as\nfollows: L 2 = ( ∑ i = 1 n x ∑ j = 1 n y ∣ ( ψ k ) i , j n − ( ψ m ) i , j n ∣ 2 ∑ i = 1 n x ∑ j = 1 n y ∣ ( ψ m ) i , j n ∣ 2 ) 1 / 2 . L_{2}\\;=\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{k})_{i,j}^{n}-(\\psi_{m})_{i,j}^{n}\\mid^{2}}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{m})_{i,j}^{n}\\mid^{2}}\\right)^{1/2}. (25) In the previous section, a second-order scheme was presented and\ntherefore the formal order of accuracy is two. The observed order of\naccuracy of the code can be acquired from the global discretization\nerror for meshes with different grid spacing, and can described by\nthe following relation: p = ln ⁡ ( L 2 B / L 2 A ) ln ⁡ ( r ) , p\\;=\\;\\dfrac{\\ln\\left({L_{2}^{B}}/{L_{2}^{A}}\\right)}{\\ln(r)}, (26) where L 2 A L_{2}^{A} and L 2 B L_{2}^{B} are the L 2 L_{2} norm for meshes A and B respectively,\nand r r is the ratio of the grid resolution, g r g_{r} , given in number of mesh\nnodes per critical wavelength of mesh B to A. The meshes employed for the\npresent tests, the number of nodes, and grid resolutions are shown in\nTab. 4 , and the L 2 L_{2} curves for the numerical\nexperiments can be seen in Fig. 4 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "L_{2}\\;=\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{k})_{i,j}^{n}-(\\psi_{m})_{i,j}^{n}\\mid^{2}}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{m})_{i,j}^{n}\\mid^{2}}\\right)^{1/2}."
+    ],
+    "context": "L 2 = ( ∑ i = 1 n x ∑ j = 1 n y ∣ ( ψ k ) i , j n − ( ψ m ) i , j n ∣ 2 ∑ i = 1 n x ∑ j = 1 n y ∣ ( ψ m ) i , j n ∣ 2 ) 1 / 2 . L_{2}\\;=\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{k})_{i,j}^{n}-(\\psi_{m})_{i,j}^{n}\\mid^{2}}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{m})_{i,j}^{n}\\mid^{2}}\\right)^{1/2}. (25)"
+  },
+  {
+    "location": "S3.E26",
+    "latex": [
+      "p\\;=\\;\\dfrac{\\ln\\left({L_{2}^{B}}/{L_{2}^{A}}\\right)}{\\ln(r)},"
+    ],
+    "context": "The global discretization error was examined by the L 2 L_{2} norm, defined as\nfollows: L 2 = ( ∑ i = 1 n x ∑ j = 1 n y ∣ ( ψ k ) i , j n − ( ψ m ) i , j n ∣ 2 ∑ i = 1 n x ∑ j = 1 n y ∣ ( ψ m ) i , j n ∣ 2 ) 1 / 2 . L_{2}\\;=\\;\\left(\\frac{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{k})_{i,j}^{n}-(\\psi_{m})_{i,j}^{n}\\mid^{2}}{\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\mid(\\psi_{m})_{i,j}^{n}\\mid^{2}}\\right)^{1/2}. (25) In the previous section, a second-order scheme was presented and\ntherefore the formal order of accuracy is two. The observed order of\naccuracy of the code can be acquired from the global discretization\nerror for meshes with different grid spacing, and can described by\nthe following relation: p = ln ⁡ ( L 2 B / L 2 A ) ln ⁡ ( r ) , p\\;=\\;\\dfrac{\\ln\\left({L_{2}^{B}}/{L_{2}^{A}}\\right)}{\\ln(r)}, (26) where L 2 A L_{2}^{A} and L 2 B L_{2}^{B} are the L 2 L_{2} norm for meshes A and B respectively,\nand r r is the ratio of the grid resolution, g r g_{r} , given in number of mesh\nnodes per critical wavelength of mesh B to A. The meshes employed for the\npresent tests, the number of nodes, and grid resolutions are shown in\nTab. 4 , and the L 2 L_{2} curves for the numerical\nexperiments can be seen in Fig. 4 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "p\\;=\\;\\dfrac{\\ln\\left({L_{2}^{B}}/{L_{2}^{A}}\\right)}{\\ln(r)},"
+    ],
+    "context": "p = ln ⁡ ( L 2 B / L 2 A ) ln ⁡ ( r ) , p\\;=\\;\\dfrac{\\ln\\left({L_{2}^{B}}/{L_{2}^{A}}\\right)}{\\ln(r)}, (26)"
+  },
+  {
+    "location": "S3.E27",
+    "latex": [
+      "\\int_{\\Omega}d\\mathbf{x}\\left(\\psi\\nabla^{2}\\psi\\right)=\\oint_{\\partial\\Omega}\\psi\\dfrac{\\partial\\psi}{\\partial n}dl-\\int_{\\Omega}d\\mathbf{x}(\\nabla\\psi)^{2},"
+    ],
+    "context": "The decay of the “free energy\" (Lyapunov) functional is monitored so that we\ncan confirm it is always monotonically decreasing until a minimum value\nis reached in the steady state. In order to take into account the assumed\nboundary conditions adopted in this work, we expand the bulk integrals to\nshow that boundary integrals vanish, leading to a new expression for the free\nenergy functional, which is going to be discretized. Using integration by\nparts and the 2D Gauss theorem (first Green identity), we have: ∫ Ω d ​ 𝐱 ​ ( ψ ​ ∇ 2 ψ ) = ∮ ∂ Ω ψ ​ ∂ ψ ∂ n ​ 𝑑 l − ∫ Ω d ​ 𝐱 ​ ( ∇ ψ ) 2 , \\int_{\\Omega}d\\mathbf{x}\\left(\\psi\\nabla^{2}\\psi\\right)=\\oint_{\\partial\\Omega}\\psi\\dfrac{\\partial\\psi}{\\partial n}dl-\\int_{\\Omega}d\\mathbf{x}(\\nabla\\psi)^{2}, (27) where the first integral from RHS vanishes for the assumed GDBC,\nabove mentioned. Now Eq. 1 can be rewritten as: ℱ ⁡ [ ψ ] = ∫ Ω d ​ 𝐱 ​ 1 2 ​ { − ϵ ⁡ ( 𝐱 ) ​ ψ 2 + α ⁡ [ q 0 4 ​ ψ 2 − 2 ​ q 0 2 ​ ( ∇ ψ ) 2 + ( ∇ 2 ψ ) 2 ] − β 2 ​ ψ 4 + γ 3 ​ ψ 6 } . \\mathcal{F}[\\psi]=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[q_{0}^{4}\\psi^{2}-2q_{0}^{2}(\\nabla\\psi)^{2}+(\\nabla^{2}\\psi)^{2}\\right]-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}. (28) The Lyapunov functional associated to the SH equation is implemented\nthrough the discrete formula derived by Christov &\nPontes (2001) [ 29 ] for the cubic version, and now extended\nfor the quintic one. The formula presents a 𝒪 ⁡ ( Δ ​ t 2 + Δ ​ x 2 + Δ ​ y 2 ) {\\cal O}\\left(\\Delta t^{2}+\\Delta x^{2}+\\Delta y^{2}\\right) approximation of the functional\ngiven by Eq. 2 . As pointed by those authors, the\nmonotonic decay of the finite differences version is enforced,\nprovided that the internal iterations converge. The decay is\nmonitored by: ℱ n + "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\int_{\\Omega}d\\mathbf{x}\\left(\\psi\\nabla^{2}\\psi\\right)=\\oint_{\\partial\\Omega}\\psi\\dfrac{\\partial\\psi}{\\partial n}dl-\\int_{\\Omega}d\\mathbf{x}(\\nabla\\psi)^{2},"
+    ],
+    "context": "∫ Ω d ​ 𝐱 ​ ( ψ ​ ∇ 2 ψ ) = ∮ ∂ Ω ψ ​ ∂ ψ ∂ n ​ 𝑑 l − ∫ Ω d ​ 𝐱 ​ ( ∇ ψ ) 2 , \\int_{\\Omega}d\\mathbf{x}\\left(\\psi\\nabla^{2}\\psi\\right)=\\oint_{\\partial\\Omega}\\psi\\dfrac{\\partial\\psi}{\\partial n}dl-\\int_{\\Omega}d\\mathbf{x}(\\nabla\\psi)^{2}, (27)"
+  },
+  {
+    "location": "S3.E28",
+    "latex": [
+      "\\mathcal{F}[\\psi]=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[q_{0}^{4}\\psi^{2}-2q_{0}^{2}(\\nabla\\psi)^{2}+(\\nabla^{2}\\psi)^{2}\\right]-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}."
+    ],
+    "context": "The decay of the “free energy\" (Lyapunov) functional is monitored so that we\ncan confirm it is always monotonically decreasing until a minimum value\nis reached in the steady state. In order to take into account the assumed\nboundary conditions adopted in this work, we expand the bulk integrals to\nshow that boundary integrals vanish, leading to a new expression for the free\nenergy functional, which is going to be discretized. Using integration by\nparts and the 2D Gauss theorem (first Green identity), we have: ∫ Ω d ​ 𝐱 ​ ( ψ ​ ∇ 2 ψ ) = ∮ ∂ Ω ψ ​ ∂ ψ ∂ n ​ 𝑑 l − ∫ Ω d ​ 𝐱 ​ ( ∇ ψ ) 2 , \\int_{\\Omega}d\\mathbf{x}\\left(\\psi\\nabla^{2}\\psi\\right)=\\oint_{\\partial\\Omega}\\psi\\dfrac{\\partial\\psi}{\\partial n}dl-\\int_{\\Omega}d\\mathbf{x}(\\nabla\\psi)^{2}, (27) where the first integral from RHS vanishes for the assumed GDBC,\nabove mentioned. Now Eq. 1 can be rewritten as: ℱ ⁡ [ ψ ] = ∫ Ω d ​ 𝐱 ​ 1 2 ​ { − ϵ ⁡ ( 𝐱 ) ​ ψ 2 + α ⁡ [ q 0 4 ​ ψ 2 − 2 ​ q 0 2 ​ ( ∇ ψ ) 2 + ( ∇ 2 ψ ) 2 ] − β 2 ​ ψ 4 + γ 3 ​ ψ 6 } . \\mathcal{F}[\\psi]=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[q_{0}^{4}\\psi^{2}-2q_{0}^{2}(\\nabla\\psi)^{2}+(\\nabla^{2}\\psi)^{2}\\right]-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}. (28) The Lyapunov functional associated to the SH equation is implemented\nthrough the discrete formula derived by Christov &\nPontes (2001) [ 29 ] for the cubic version, and now extended\nfor the quintic one. The formula presents a 𝒪 ⁡ ( Δ ​ t 2 + Δ ​ x 2 + Δ ​ y 2 ) {\\cal O}\\left(\\Delta t^{2}+\\Delta x^{2}+\\Delta y^{2}\\right) approximation of the functional\ngiven by Eq. 2 . As pointed by those authors, the\nmonotonic decay of the finite differences version is enforced,\nprovided that the internal iterations converge. The decay is\nmonitored by: ℱ n + "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathcal{F}[\\psi]=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[q_{0}^{4}\\psi^{2}-2q_{0}^{2}(\\nabla\\psi)^{2}+(\\nabla^{2}\\psi)^{2}\\right]-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}."
+    ],
+    "context": "ℱ ⁡ [ ψ ] = ∫ Ω d ​ 𝐱 ​ 1 2 ​ { − ϵ ⁡ ( 𝐱 ) ​ ψ 2 + α ⁡ [ q 0 4 ​ ψ 2 − 2 ​ q 0 2 ​ ( ∇ ψ ) 2 + ( ∇ 2 ψ ) 2 ] − β 2 ​ ψ 4 + γ 3 ​ ψ 6 } . \\mathcal{F}[\\psi]=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[q_{0}^{4}\\psi^{2}-2q_{0}^{2}(\\nabla\\psi)^{2}+(\\nabla^{2}\\psi)^{2}\\right]-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}. (28)"
+  },
+  {
+    "location": "S3.EGx11",
+    "latex": [
+      "\\displaystyle\\frac{{\\cal F}^{n+1}-{\\cal F}^{n}}{\\Delta t}=",
+      "\\displaystyle-\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left({\\psi^{n+1}_{i,j}-\\psi^{n}_{i,j}\\over\\Delta t}\\right)^{2}\\!\\!",
+      "\\displaystyle{\\cal F}^{n}=",
+      "\\displaystyle\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left[-{\\epsilon\\over 2}\\left(\\psi^{n}_{i,j}\\right)^{2}-{\\beta\\over 4}\\left(\\psi^{n}_{i,j}\\right)^{4}+{\\gamma\\over 6}\\left(\\psi^{n}_{i,j}\\right)^{6}+{\\alpha q_{0}^{4}\\over 2}\\left(\\psi^{n}_{i,j}\\right)^{2}\\right]",
+      "\\displaystyle-\\frac{2\\alpha q_{0}^{2}}{4}\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}",
+      "\\displaystyle\\left[{\\psi^{n}_{i+1,j}-\\psi^{n}_{i,j}\\over\\Delta x}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j}-\\psi^{n}_{i-1,j}\\over\\Delta x}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j+1}-\\psi^{n}_{i,j}\\over\\Delta y}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j}-\\psi^{n}_{i,j-1}\\over\\Delta y}\\right]^{2}",
+      "\\displaystyle+\\frac{\\alpha}{2}",
+      "\\displaystyle\\sum\\limits_{i=1}h^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left[{\\psi^{n}_{i+1,j}-2\\psi^{n}_{i,j}+\\psi^{n}_{i-1,j}\\over\\Delta x^{2}}+{\\psi^{n}_{i,j+1}-2\\psi^{n}_{i,j}+\\psi^{n}_{i,j-1}\\over\\Delta y^{2}}.\\right]^{2}"
+    ],
+    "context": "The decay of the “free energy\" (Lyapunov) functional is monitored so that we\ncan confirm it is always monotonically decreasing until a minimum value\nis reached in the steady state. In order to take into account the assumed\nboundary conditions adopted in this work, we expand the bulk integrals to\nshow that boundary integrals vanish, leading to a new expression for the free\nenergy functional, which is going to be discretized. Using integration by\nparts and the 2D Gauss theorem (first Green identity), we have: ∫ Ω d ​ 𝐱 ​ ( ψ ​ ∇ 2 ψ ) = ∮ ∂ Ω ψ ​ ∂ ψ ∂ n ​ 𝑑 l − ∫ Ω d ​ 𝐱 ​ ( ∇ ψ ) 2 , \\int_{\\Omega}d\\mathbf{x}\\left(\\psi\\nabla^{2}\\psi\\right)=\\oint_{\\partial\\Omega}\\psi\\dfrac{\\partial\\psi}{\\partial n}dl-\\int_{\\Omega}d\\mathbf{x}(\\nabla\\psi)^{2}, (27) where the first integral from RHS vanishes for the assumed GDBC,\nabove mentioned. Now Eq. 1 can be rewritten as: ℱ ⁡ [ ψ ] = ∫ Ω d ​ 𝐱 ​ 1 2 ​ { − ϵ ⁡ ( 𝐱 ) ​ ψ 2 + α ⁡ [ q 0 4 ​ ψ 2 − 2 ​ q 0 2 ​ ( ∇ ψ ) 2 + ( ∇ 2 ψ ) 2 ] − β 2 ​ ψ 4 + γ 3 ​ ψ 6 } . \\mathcal{F}[\\psi]=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[q_{0}^{4}\\psi^{2}-2q_{0}^{2}(\\nabla\\psi)^{2}+(\\nabla^{2}\\psi)^{2}\\right]-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}. (28) The Lyapunov functional associated to the SH equation is implemented\nthrough the discrete formula derived by Christov &\nPontes (2001) [ 29 ] for the cubic version, and now extended\nfor the quintic one. The formula presents a 𝒪 ⁡ ( Δ ​ t 2 + Δ ​ x 2 + Δ ​ y 2 ) {\\cal O}\\left(\\Delta t^{2}+\\Delta x^{2}+\\Delta y^{2}\\right) approximation of the functional\ngiven by Eq. 2 . As pointed by those authors, the\nmonotonic decay of the finite differences version is enforced,\nprovided that the internal iterations converge. The decay is\nmonitored by: ℱ n + "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\frac{{\\cal F}^{n+1}-{\\cal F}^{n}}{\\Delta t}=",
+      "\\displaystyle-\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left({\\psi^{n+1}_{i,j}-\\psi^{n}_{i,j}\\over\\Delta t}\\right)^{2}\\!\\!"
+    ],
+    "context": "ℱ n + 1 − ℱ n Δ ​ t = \\displaystyle\\frac{{\\cal F}^{n+1}-{\\cal F}^{n}}{\\Delta t}= − ∑ i = 1 n x ∑ j = 1 n y ( ψ i , j n + 1 − ψ i , j n Δ ​ t ) 2 \\displaystyle-\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left({\\psi^{n+1}_{i,j}-\\psi^{n}_{i,j}\\over\\Delta t}\\right)^{2}\\!\\! (29)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle{\\cal F}^{n}=",
+      "\\displaystyle\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left[-{\\epsilon\\over 2}\\left(\\psi^{n}_{i,j}\\right)^{2}-{\\beta\\over 4}\\left(\\psi^{n}_{i,j}\\right)^{4}+{\\gamma\\over 6}\\left(\\psi^{n}_{i,j}\\right)^{6}+{\\alpha q_{0}^{4}\\over 2}\\left(\\psi^{n}_{i,j}\\right)^{2}\\right]"
+    ],
+    "context": "ℱ n = \\displaystyle{\\cal F}^{n}= ∑ i = 1 n x ∑ j = 1 n y [ − ϵ 2 ​ ( ψ i , j n ) 2 − β 4 ​ ( ψ i , j n ) 4 + γ 6 ​ ( ψ i , j n ) 6 + α ​ q 0 4 2 ​ ( ψ i , j n ) 2 ] \\displaystyle\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left[-{\\epsilon\\over 2}\\left(\\psi^{n}_{i,j}\\right)^{2}-{\\beta\\over 4}\\left(\\psi^{n}_{i,j}\\right)^{4}+{\\gamma\\over 6}\\left(\\psi^{n}_{i,j}\\right)^{6}+{\\alpha q_{0}^{4}\\over 2}\\left(\\psi^{n}_{i,j}\\right)^{2}\\right]"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle-\\frac{2\\alpha q_{0}^{2}}{4}\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}",
+      "\\displaystyle\\left[{\\psi^{n}_{i+1,j}-\\psi^{n}_{i,j}\\over\\Delta x}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j}-\\psi^{n}_{i-1,j}\\over\\Delta x}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j+1}-\\psi^{n}_{i,j}\\over\\Delta y}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j}-\\psi^{n}_{i,j-1}\\over\\Delta y}\\right]^{2}"
+    ],
+    "context": "− 2 ​ α ​ q 0 2 4 ∑ i = 1 n x ∑ j = 1 n y \\displaystyle-\\frac{2\\alpha q_{0}^{2}}{4}\\sum\\limits_{i=1}^{n_{x}}\\sum\\limits_{j=1}^{n_{y}} [ ψ i + 1 , j n − ψ i , j n Δ ​ x ] 2 + [ ψ i , j n − ψ i − 1 , j n Δ ​ x ] 2 + [ ψ i , j + 1 n − ψ i , j n Δ ​ y ] 2 + [ ψ i , j n − ψ i , j − 1 n Δ ​ y ] 2 \\displaystyle\\left[{\\psi^{n}_{i+1,j}-\\psi^{n}_{i,j}\\over\\Delta x}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j}-\\psi^{n}_{i-1,j}\\over\\Delta x}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j+1}-\\psi^{n}_{i,j}\\over\\Delta y}\\right]^{2}\\!\\!\\!+\\!\\left[{\\psi^{n}_{i,j}-\\psi^{n}_{i,j-1}\\over\\Delta y}\\right]^{2}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle+\\frac{\\alpha}{2}",
+      "\\displaystyle\\sum\\limits_{i=1}h^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left[{\\psi^{n}_{i+1,j}-2\\psi^{n}_{i,j}+\\psi^{n}_{i-1,j}\\over\\Delta x^{2}}+{\\psi^{n}_{i,j+1}-2\\psi^{n}_{i,j}+\\psi^{n}_{i,j-1}\\over\\Delta y^{2}}.\\right]^{2}"
+    ],
+    "context": "+ α 2 \\displaystyle+\\frac{\\alpha}{2} ∑ i = 1 h n x ∑ j = 1 n y [ ψ i + 1 , j n − 2 ​ ψ i , j n + ψ i − 1 , j n Δ ​ x 2 + ψ i , j + 1 n − 2 ​ ψ i , j n + ψ i , j − 1 n Δ ​ y 2 . ] 2 \\displaystyle\\sum\\limits_{i=1}h^{n_{x}}\\sum\\limits_{j=1}^{n_{y}}\\left[{\\psi^{n}_{i+1,j}-2\\psi^{n}_{i,j}+\\psi^{n}_{i-1,j}\\over\\Delta x^{2}}+{\\psi^{n}_{i,j+1}-2\\psi^{n}_{i,j}+\\psi^{n}_{i,j-1}\\over\\Delta y^{2}}.\\right]^{2}"
+  },
+  {
+    "location": "S3.E30",
+    "latex": [
+      "\\psi(\\mathbf{x},0)=A_{0}\\cos(q_{0}x),"
+    ],
+    "context": "The decay of the “free energy\" (Lyapunov) functional is monitored so that we\ncan confirm it is always monotonically decreasing until a minimum value\nis reached in the steady state. In order to take into account the assumed\nboundary conditions adopted in this work, we expand the bulk integrals to\nshow that boundary integrals vanish, leading to a new expression for the free\nenergy functional, which is going to be discretized. Using integration by\nparts and the 2D Gauss theorem (first Green identity), we have: ∫ Ω d ​ 𝐱 ​ ( ψ ​ ∇ 2 ψ ) = ∮ ∂ Ω ψ ​ ∂ ψ ∂ n ​ 𝑑 l − ∫ Ω d ​ 𝐱 ​ ( ∇ ψ ) 2 , \\int_{\\Omega}d\\mathbf{x}\\left(\\psi\\nabla^{2}\\psi\\right)=\\oint_{\\partial\\Omega}\\psi\\dfrac{\\partial\\psi}{\\partial n}dl-\\int_{\\Omega}d\\mathbf{x}(\\nabla\\psi)^{2}, (27) where the first integral from RHS vanishes for the assumed GDBC,\nabove mentioned. Now Eq. 1 can be rewritten as: ℱ ⁡ [ ψ ] = ∫ Ω d ​ 𝐱 ​ 1 2 ​ { − ϵ ⁡ ( 𝐱 ) ​ ψ 2 + α ⁡ [ q 0 4 ​ ψ 2 − 2 ​ q 0 2 ​ ( ∇ ψ ) 2 + ( ∇ 2 ψ ) 2 ] − β 2 ​ ψ 4 + γ 3 ​ ψ 6 } . \\mathcal{F}[\\psi]=\\int_{\\Omega}{d\\mathbf{x}}\\dfrac{1}{2}\\left\\{-{\\epsilon(\\mathbf{x})}\\psi^{2}+{\\alpha}\\left[q_{0}^{4}\\psi^{2}-2q_{0}^{2}(\\nabla\\psi)^{2}+(\\nabla^{2}\\psi)^{2}\\right]-\\dfrac{\\beta}{2}\\psi^{4}+\\dfrac{\\gamma}{3}\\psi^{6}\\right\\}. (28) The Lyapunov functional associated to the SH equation is implemented\nthrough the discrete formula derived by Christov &\nPontes (2001) [ 29 ] for the cubic version, and now extended\nfor the quintic one. The formula presents a 𝒪 ⁡ ( Δ ​ t 2 + Δ ​ x 2 + Δ ​ y 2 ) {\\cal O}\\left(\\Delta t^{2}+\\Delta x^{2}+\\Delta y^{2}\\right) approximation of the functional\ngiven by Eq. 2 . As pointed by those authors, the\nmonotonic decay of the finite differences version is enforced,\nprovided that the internal iterations converge. The decay is\nmonitored by: ℱ n + "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\psi(\\mathbf{x},0)=A_{0}\\cos(q_{0}x),"
+    ],
+    "context": "ψ ⁡ ( 𝐱 , 0 ) = A 0 ​ cos ⁡ ( q 0 ​ x ) , \\psi(\\mathbf{x},0)=A_{0}\\cos(q_{0}x), (30)"
+  },
+  {
+    "location": "S4.E31",
+    "latex": [
+      "\\epsilon(\\mathbf{x})=Ae^{-R((x-x_{0})^{2}+(y-y_{0})^{2})}\\;,"
+    ],
+    "context": "ϵ ⁡ ( 𝐱 ) = A ​ e − R ⁡ ( ( x − x 0 ) 2 + ( y − y 0 ) 2 ) , \\epsilon(\\mathbf{x})=Ae^{-R((x-x_{0})^{2}+(y-y_{0})^{2})}\\;, (31)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\epsilon(\\mathbf{x})=Ae^{-R((x-x_{0})^{2}+(y-y_{0})^{2})}\\;,"
+    ],
+    "context": "ϵ ⁡ ( 𝐱 ) = A ​ e − R ⁡ ( ( x − x 0 ) 2 + ( y − y 0 ) 2 ) , \\epsilon(\\mathbf{x})=Ae^{-R((x-x_{0})^{2}+(y-y_{0})^{2})}\\;, (31)"
+  }
+]

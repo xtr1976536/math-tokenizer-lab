@@ -1,0 +1,1294 @@
+[
+  {
+    "location": "S0.EGx1",
+    "latex": [
+      "\\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u+\\mu u^{k}\\partial_{x}u=0,\\,&x\\in\\mathbb{R},\\,t\\in\\mathbb{R},\\\\\nu(x,0)=u_{0}(x),\\end{cases}"
+    ],
+    "context": "Abstract. We consider the initial value problema (IVP) for the generalized Korteweg-de Vries (gKdV) equation { ∂ t u + ∂ x 3 u + μ ​ u k ​ ∂ x u = 0 , x ∈ ℝ , t ∈ ℝ , u ⁡ ( x , 0 ) = u 0 ​ ( x ) , \\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u+\\mu u^{k}\\partial_{x}u=0,\\,&x\\in\\mathbb{R},\\,t\\in\\mathbb{R},\\\\\nu(x,0)=u_{0}(x),\\end{cases} where u ⁡ ( x , t ) u(x,\\,t) is a real valued function, u 0 ​ ( x ) u_{0}(x) is a real analytic function, μ = ± 1 \\mu=\\pm 1 and k ≥ 4 k\\geq 4 . We prove that if the initial data u 0 u_{0} has radius of analyticity σ 0 \\sigma_{0} , than there exists T 0 > 0 T_{0}>0 such that the radius of spatial analyticity of the solution remains the same in the time interval [ − T 0 , T 0 ] [-T_{0},\\,T_{0}] . In the defocusing case, for k ≥ 4 k\\geq 4 even, we prove that when the local solution extends globally in time, then for any T ≥ T 0 T\\geq T_{0} , the radius of analyticity cannot decay faster than c ​ T − ( 2 ​ k k + 4 + ϵ ) cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)} , ϵ > 0 \\epsilon>0 arbitrarily small and c > 0 c>0 a constant. The result of this work improves the one obtained by Bona et al. in [ 5 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u+\\mu u^{k}\\partial_{x}u=0,\\,&x\\in\\mathbb{R},\\,t\\in\\mathbb{R},\\\\\nu(x,0)=u_{0}(x),\\end{cases}"
+    ],
+    "context": "{ ∂ t u + ∂ x 3 u + μ ​ u k ​ ∂ x u = 0 , x ∈ ℝ , t ∈ ℝ , u ⁡ ( x , 0 ) = u 0 ​ ( x ) , \\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u+\\mu u^{k}\\partial_{x}u=0,\\,&x\\in\\mathbb{R},\\,t\\in\\mathbb{R},\\\\\nu(x,0)=u_{0}(x),\\end{cases}"
+  },
+  {
+    "location": "S1.EGx2",
+    "latex": [
+      "\\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u+\\mu u^{k}\\partial_{x}u=0,\\,&x\\in\\mathbb{R},\\,t\\in\\mathbb{R},\\\\\nu(x,0)=u_{0}(x),\\end{cases}"
+    ],
+    "context": "Consider the initial value problem (IVP) for the generalized Korteweg-de Vries (gKdV) equation: { ∂ t u + ∂ x 3 u + μ ​ u k ​ ∂ x u = 0 , x ∈ ℝ , t ∈ ℝ , u ⁡ ( x , 0 ) = u 0 ​ ( x ) , \\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u+\\mu u^{k}\\partial_{x}u=0,\\,&x\\in\\mathbb{R},\\,t\\in\\mathbb{R},\\\\\nu(x,0)=u_{0}(x),\\end{cases} (1.1) where the unknown u ⁡ ( x , t ) u(x,t) and the initial data u 0 ​ ( x ) u_{0}(x) are real-valued, μ = ± 1 \\mu=\\pm 1 and k ≥ 4 k\\geq 4 . When μ = 1 \\mu=1 , the equation ( 1.1 ) is known as focusing and defocusing for μ = − 1 \\mu=-1 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u+\\mu u^{k}\\partial_{x}u=0,\\,&x\\in\\mathbb{R},\\,t\\in\\mathbb{R},\\\\\nu(x,0)=u_{0}(x),\\end{cases}"
+    ],
+    "context": "{ ∂ t u + ∂ x 3 u + μ ​ u k ​ ∂ x u = 0 , x ∈ ℝ , t ∈ ℝ , u ⁡ ( x , 0 ) = u 0 ​ ( x ) , \\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u+\\mu u^{k}\\partial_{x}u=0,\\,&x\\in\\mathbb{R},\\,t\\in\\mathbb{R},\\\\\nu(x,0)=u_{0}(x),\\end{cases} (1.1)"
+  },
+  {
+    "location": "S1.E2",
+    "latex": [
+      "M(u(t))=\\int_{\\mathbb{R}}u^{2}(x,\\,t)dx=M(u_{0}),"
+    ],
+    "context": "It is well-known that the real solution for the IVP ( 1.1 ) enjoys the mass conservation M ⁡ ( u ⁡ ( t ) ) = ∫ ℝ u 2 ​ ( x , t ) ​ 𝑑 x = M ⁡ ( u 0 ) , M(u(t))=\\int_{\\mathbb{R}}u^{2}(x,\\,t)dx=M(u_{0}), (1.2) and the energy conservation E ⁡ ( u ⁡ ( t ) ) = ∫ ℝ ( ∂ x u ) 2 ​ ( x , t ) ​ 𝑑 x − 2 ​ μ ( k + 1 ) ​ ( k + 2 ) ​ ∫ ℝ u k + 2 ​ ( x , t ) ​ 𝑑 x , E(u(t))=\\int_{\\mathbb{R}}(\\partial_{x}u)^{2}(x,\\,t)dx-\\frac{2\\mu}{(k+1)(k+2)}\\int_{\\mathbb{R}}u^{k+2}(x,\\,t)dx, (1.3) and these quantities will be useful in this work."
+  },
+  {
+    "location": null,
+    "latex": [
+      "M(u(t))=\\int_{\\mathbb{R}}u^{2}(x,\\,t)dx=M(u_{0}),"
+    ],
+    "context": "M ⁡ ( u ⁡ ( t ) ) = ∫ ℝ u 2 ​ ( x , t ) ​ 𝑑 x = M ⁡ ( u 0 ) , M(u(t))=\\int_{\\mathbb{R}}u^{2}(x,\\,t)dx=M(u_{0}), (1.2)"
+  },
+  {
+    "location": "S1.E3",
+    "latex": [
+      "E(u(t))=\\int_{\\mathbb{R}}(\\partial_{x}u)^{2}(x,\\,t)dx-\\frac{2\\mu}{(k+1)(k+2)}\\int_{\\mathbb{R}}u^{k+2}(x,\\,t)dx,"
+    ],
+    "context": "It is well-known that the real solution for the IVP ( 1.1 ) enjoys the mass conservation M ⁡ ( u ⁡ ( t ) ) = ∫ ℝ u 2 ​ ( x , t ) ​ 𝑑 x = M ⁡ ( u 0 ) , M(u(t))=\\int_{\\mathbb{R}}u^{2}(x,\\,t)dx=M(u_{0}), (1.2) and the energy conservation E ⁡ ( u ⁡ ( t ) ) = ∫ ℝ ( ∂ x u ) 2 ​ ( x , t ) ​ 𝑑 x − 2 ​ μ ( k + 1 ) ​ ( k + 2 ) ​ ∫ ℝ u k + 2 ​ ( x , t ) ​ 𝑑 x , E(u(t))=\\int_{\\mathbb{R}}(\\partial_{x}u)^{2}(x,\\,t)dx-\\frac{2\\mu}{(k+1)(k+2)}\\int_{\\mathbb{R}}u^{k+2}(x,\\,t)dx, (1.3) and these quantities will be useful in this work."
+  },
+  {
+    "location": null,
+    "latex": [
+      "E(u(t))=\\int_{\\mathbb{R}}(\\partial_{x}u)^{2}(x,\\,t)dx-\\frac{2\\mu}{(k+1)(k+2)}\\int_{\\mathbb{R}}u^{k+2}(x,\\,t)dx,"
+    ],
+    "context": "E ⁡ ( u ⁡ ( t ) ) = ∫ ℝ ( ∂ x u ) 2 ​ ( x , t ) ​ 𝑑 x − 2 ​ μ ( k + 1 ) ​ ( k + 2 ) ​ ∫ ℝ u k + 2 ​ ( x , t ) ​ 𝑑 x , E(u(t))=\\int_{\\mathbb{R}}(\\partial_{x}u)^{2}(x,\\,t)dx-\\frac{2\\mu}{(k+1)(k+2)}\\int_{\\mathbb{R}}u^{k+2}(x,\\,t)dx, (1.3)"
+  },
+  {
+    "location": "S1.Ex1",
+    "latex": [
+      "G^{\\sigma,\\,s}(\\mathbb{R})=\\left\\{f\\in L^{2}(\\mathbb{R}):\\,||f||_{G^{\\sigma,\\,s}(\\mathbb{R})}^{2}=\\int_{\\mathbb{R}}\\langle\\xi\\rangle^{2s}e^{2\\sigma|\\xi|}|\\hat{f}(\\xi)|^{2}d\\xi<\\infty\\right\\},"
+    ],
+    "context": "In this work we are interested in studying the well-posedness of the IVP ( 1.1 ) with real analytic initial data u 0 u_{0} . For this purpose, we consider u 0 u_{0} in the Gevrey space G σ , s ​ ( ℝ ) G^{\\sigma,\\,s}(\\mathbb{R}) , σ > 0 \\sigma>0 and s ∈ ℝ s\\in\\mathbb{R} , defined as G σ , s ​ ( ℝ ) = { f ∈ L 2 ​ ( ℝ ) : ‖ f ‖ G σ , s ​ ( ℝ ) 2 = ∫ ℝ ⟨ ξ ⟩ 2 ​ s ​ e 2 ​ σ ​ | ξ | ​ | f ^ ​ ( ξ ) | 2 ​ 𝑑 ξ < ∞ } , G^{\\sigma,\\,s}(\\mathbb{R})=\\left\\{f\\in L^{2}(\\mathbb{R}):\\,||f||_{G^{\\sigma,\\,s}(\\mathbb{R})}^{2}=\\int_{\\mathbb{R}}\\langle\\xi\\rangle^{2s}e^{2\\sigma|\\xi|}|\\hat{f}(\\xi)|^{2}d\\xi<\\infty\\right\\}, where f ^ \\hat{f} denotes the spatial Fourier transform of f f , f ^ ​ ( ξ ) = 1 2 ​ π ​ ∫ ℝ e − i ​ x ​ ξ ​ f ​ ( x ) ​ 𝑑 x . \\hat{f}(\\xi)=\\frac{1}{\\sqrt{2\\pi}}\\int_{\\mathbb{R}}e^{-ix\\xi}f(x)dx. The interest in these spaces is due to the following fact."
+  },
+  {
+    "location": null,
+    "latex": [
+      "G^{\\sigma,\\,s}(\\mathbb{R})=\\left\\{f\\in L^{2}(\\mathbb{R}):\\,||f||_{G^{\\sigma,\\,s}(\\mathbb{R})}^{2}=\\int_{\\mathbb{R}}\\langle\\xi\\rangle^{2s}e^{2\\sigma|\\xi|}|\\hat{f}(\\xi)|^{2}d\\xi<\\infty\\right\\},"
+    ],
+    "context": "G σ , s ​ ( ℝ ) = { f ∈ L 2 ​ ( ℝ ) : ‖ f ‖ G σ , s ​ ( ℝ ) 2 = ∫ ℝ ⟨ ξ ⟩ 2 ​ s ​ e 2 ​ σ ​ | ξ | ​ | f ^ ​ ( ξ ) | 2 ​ 𝑑 ξ < ∞ } , G^{\\sigma,\\,s}(\\mathbb{R})=\\left\\{f\\in L^{2}(\\mathbb{R}):\\,||f||_{G^{\\sigma,\\,s}(\\mathbb{R})}^{2}=\\int_{\\mathbb{R}}\\langle\\xi\\rangle^{2s}e^{2\\sigma|\\xi|}|\\hat{f}(\\xi)|^{2}d\\xi<\\infty\\right\\},"
+  },
+  {
+    "location": "S1.Ex2",
+    "latex": [
+      "\\hat{f}(\\xi)=\\frac{1}{\\sqrt{2\\pi}}\\int_{\\mathbb{R}}e^{-ix\\xi}f(x)dx."
+    ],
+    "context": "In this work we are interested in studying the well-posedness of the IVP ( 1.1 ) with real analytic initial data u 0 u_{0} . For this purpose, we consider u 0 u_{0} in the Gevrey space G σ , s ​ ( ℝ ) G^{\\sigma,\\,s}(\\mathbb{R}) , σ > 0 \\sigma>0 and s ∈ ℝ s\\in\\mathbb{R} , defined as G σ , s ​ ( ℝ ) = { f ∈ L 2 ​ ( ℝ ) : ‖ f ‖ G σ , s ​ ( ℝ ) 2 = ∫ ℝ ⟨ ξ ⟩ 2 ​ s ​ e 2 ​ σ ​ | ξ | ​ | f ^ ​ ( ξ ) | 2 ​ 𝑑 ξ < ∞ } , G^{\\sigma,\\,s}(\\mathbb{R})=\\left\\{f\\in L^{2}(\\mathbb{R}):\\,||f||_{G^{\\sigma,\\,s}(\\mathbb{R})}^{2}=\\int_{\\mathbb{R}}\\langle\\xi\\rangle^{2s}e^{2\\sigma|\\xi|}|\\hat{f}(\\xi)|^{2}d\\xi<\\infty\\right\\}, where f ^ \\hat{f} denotes the spatial Fourier transform of f f , f ^ ​ ( ξ ) = 1 2 ​ π ​ ∫ ℝ e − i ​ x ​ ξ ​ f ​ ( x ) ​ 𝑑 x . \\hat{f}(\\xi)=\\frac{1}{\\sqrt{2\\pi}}\\int_{\\mathbb{R}}e^{-ix\\xi}f(x)dx. The interest in these spaces is due to the following fact."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\hat{f}(\\xi)=\\frac{1}{\\sqrt{2\\pi}}\\int_{\\mathbb{R}}e^{-ix\\xi}f(x)dx."
+    ],
+    "context": "f ^ ​ ( ξ ) = 1 2 ​ π ​ ∫ ℝ e − i ​ x ​ ξ ​ f ​ ( x ) ​ 𝑑 x . \\hat{f}(\\xi)=\\frac{1}{\\sqrt{2\\pi}}\\int_{\\mathbb{R}}e^{-ix\\xi}f(x)dx."
+  },
+  {
+    "location": "S1.Ex3",
+    "latex": [
+      "S_{\\sigma}=\\{x+iy:\\,x,\\,y\\in\\mathbb{R},\\,|y|<\\sigma\\}"
+    ],
+    "context": "f f is the restriction to the real line of a function F F which is holomorphic in the strip S σ = { x + i y : x , y ∈ ℝ , | y | < σ } S_{\\sigma}=\\{x+iy:\\,x,\\,y\\in\\mathbb{R},\\,|y|<\\sigma\\} and satisfies sup | y | < σ ‖ F ⁡ ( x + i ​ y ) ‖ H x s < ∞ . \\sup_{|y|<\\sigma}||F(x+iy)||_{H_{x}^{s}}<\\infty."
+  },
+  {
+    "location": null,
+    "latex": [
+      "S_{\\sigma}=\\{x+iy:\\,x,\\,y\\in\\mathbb{R},\\,|y|<\\sigma\\}"
+    ],
+    "context": "S σ = { x + i y : x , y ∈ ℝ , | y | < σ } S_{\\sigma}=\\{x+iy:\\,x,\\,y\\in\\mathbb{R},\\,|y|<\\sigma\\}"
+  },
+  {
+    "location": "S1.Ex4",
+    "latex": [
+      "\\sup_{|y|<\\sigma}||F(x+iy)||_{H_{x}^{s}}<\\infty."
+    ],
+    "context": "f f is the restriction to the real line of a function F F which is holomorphic in the strip S σ = { x + i y : x , y ∈ ℝ , | y | < σ } S_{\\sigma}=\\{x+iy:\\,x,\\,y\\in\\mathbb{R},\\,|y|<\\sigma\\} and satisfies sup | y | < σ ‖ F ⁡ ( x + i ​ y ) ‖ H x s < ∞ . \\sup_{|y|<\\sigma}||F(x+iy)||_{H_{x}^{s}}<\\infty."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\sup_{|y|<\\sigma}||F(x+iy)||_{H_{x}^{s}}<\\infty."
+    ],
+    "context": "sup | y | < σ ‖ F ⁡ ( x + i ​ y ) ‖ H x s < ∞ . \\sup_{|y|<\\sigma}||F(x+iy)||_{H_{x}^{s}}<\\infty."
+  },
+  {
+    "location": "S1.Ex5",
+    "latex": [
+      "u\\in C([-T,\\,T];G^{\\sigma(T),\\,s}(\\mathbb{R})),\\quad\\text{with }\\sigma(T)\\geq\\min\\left\\{\\sigma_{0},\\,cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)}\\right\\},"
+    ],
+    "context": "Let σ 0 > 0 \\sigma_{0}>0 , k ≥ 4 k\\geq 4 even, s > k − 4 2 ​ k s>\\frac{k-4}{2k} , u 0 ∈ G σ , s ​ ( ℝ ) u_{0}\\in G^{\\sigma,\\,s}(\\mathbb{R}) and u u be the local solution to the IVP ( 1.1 ) in the defocusing case ( μ = − 1 \\mu=-1 ) given by Theorem 1.1 . Then, for any T ≥ T 0 T\\geq T_{0} , the local solution u u extends globally in time satisfying u ∈ C ⁡ ( [ − T , T ] , G σ ⁡ ( T ) , s ​ ( ℝ ) ) , with ​ σ ​ ( T ) ≥ min ⁡ { σ 0 , c ​ T − ( 2 ​ k k + 4 + ϵ ) } , u\\in C([-T,\\,T];G^{\\sigma(T),\\,s}(\\mathbb{R})),\\quad\\text{with }\\sigma(T)\\geq\\min\\left\\{\\sigma_{0},\\,cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)}\\right\\}, where ϵ > 0 \\epsilon>0 is arbitrarily small and c c is a positive constant depending on k k , s s , σ 0 \\sigma_{0} and ‖ u 0 ‖ G σ , s ||u_{0}||_{G^{\\sigma,\\,s}} ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u\\in C([-T,\\,T];G^{\\sigma(T),\\,s}(\\mathbb{R})),\\quad\\text{with }\\sigma(T)\\geq\\min\\left\\{\\sigma_{0},\\,cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)}\\right\\},"
+    ],
+    "context": "u ∈ C ⁡ ( [ − T , T ] , G σ ⁡ ( T ) , s ​ ( ℝ ) ) , with ​ σ ​ ( T ) ≥ min ⁡ { σ 0 , c ​ T − ( 2 ​ k k + 4 + ϵ ) } , u\\in C([-T,\\,T];G^{\\sigma(T),\\,s}(\\mathbb{R})),\\quad\\text{with }\\sigma(T)\\geq\\min\\left\\{\\sigma_{0},\\,cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)}\\right\\},"
+  },
+  {
+    "location": "S2.E1",
+    "latex": [
+      "G^{\\sigma,\\,s}\\subset G^{\\sigma^{\\prime},\\,s^{\\prime}}\\quad\\text{for all }0<\\sigma^{\\prime}<\\sigma\\text{ and }s,\\,s^{\\prime}\\in\\mathbb{R},"
+    ],
+    "context": "First, regarding the Gevrey space defined in Section 1 , we have the embedding G σ , s ⊂ G σ ′ , s ′ for all ​ 0 < σ ′ < σ ​ and ​ s , s ′ ∈ ℝ , G^{\\sigma,\\,s}\\subset G^{\\sigma^{\\prime},\\,s^{\\prime}}\\quad\\text{for all }0<\\sigma^{\\prime}<\\sigma\\text{ and }s,\\,s^{\\prime}\\in\\mathbb{R}, (2.1) and the inclusion is continuous in the sense that there exists a constant C > 0 C>0 depending on σ , σ ′ , s , s ′ \\sigma,\\,\\sigma^{\\prime},\\,s,\\,s^{\\prime} such that ‖ f ‖ G σ ′ , s ′ ≤ C ​ ‖ f ‖ G σ , s . ||f||_{G^{\\sigma^{\\prime},\\,s^{\\prime}}}\\leq C||f||_{G^{\\sigma,\\,s}}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "G^{\\sigma,\\,s}\\subset G^{\\sigma^{\\prime},\\,s^{\\prime}}\\quad\\text{for all }0<\\sigma^{\\prime}<\\sigma\\text{ and }s,\\,s^{\\prime}\\in\\mathbb{R},"
+    ],
+    "context": "G σ , s ⊂ G σ ′ , s ′ for all ​ 0 < σ ′ < σ ​ and ​ s , s ′ ∈ ℝ , G^{\\sigma,\\,s}\\subset G^{\\sigma^{\\prime},\\,s^{\\prime}}\\quad\\text{for all }0<\\sigma^{\\prime}<\\sigma\\text{ and }s,\\,s^{\\prime}\\in\\mathbb{R}, (2.1)"
+  },
+  {
+    "location": "S2.Ex1",
+    "latex": [
+      "||f||_{G^{\\sigma^{\\prime},\\,s^{\\prime}}}\\leq C||f||_{G^{\\sigma,\\,s}}."
+    ],
+    "context": "First, regarding the Gevrey space defined in Section 1 , we have the embedding G σ , s ⊂ G σ ′ , s ′ for all ​ 0 < σ ′ < σ ​ and ​ s , s ′ ∈ ℝ , G^{\\sigma,\\,s}\\subset G^{\\sigma^{\\prime},\\,s^{\\prime}}\\quad\\text{for all }0<\\sigma^{\\prime}<\\sigma\\text{ and }s,\\,s^{\\prime}\\in\\mathbb{R}, (2.1) and the inclusion is continuous in the sense that there exists a constant C > 0 C>0 depending on σ , σ ′ , s , s ′ \\sigma,\\,\\sigma^{\\prime},\\,s,\\,s^{\\prime} such that ‖ f ‖ G σ ′ , s ′ ≤ C ​ ‖ f ‖ G σ , s . ||f||_{G^{\\sigma^{\\prime},\\,s^{\\prime}}}\\leq C||f||_{G^{\\sigma,\\,s}}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||f||_{G^{\\sigma^{\\prime},\\,s^{\\prime}}}\\leq C||f||_{G^{\\sigma,\\,s}}."
+    ],
+    "context": "‖ f ‖ G σ ′ , s ′ ≤ C ​ ‖ f ‖ G σ , s . ||f||_{G^{\\sigma^{\\prime},\\,s^{\\prime}}}\\leq C||f||_{G^{\\sigma,\\,s}}."
+  },
+  {
+    "location": "S2.Ex2",
+    "latex": [
+      "||u||_{X^{\\sigma,\\,s,\\,b}}=||e^{\\sigma|\\xi|}\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}},"
+    ],
+    "context": "In addition to the Gevrey space, we use a space that is a mix between the Gevrey space and the Bourgain’s space introduced in [ 3 ] and [ 4 ] . Given σ ≥ 0 \\sigma\\geq 0 and s , b ∈ ℝ s,\\,b\\in\\mathbb{R} , we define the Gevrey-Bourgain space, denoted by X σ , s , b ​ ( ℝ 2 ) X^{\\sigma,\\,s,\\,b}(\\mathbb{R}^{2}) , as the closure of the Schwartz space under the norm ‖ u ‖ X σ , s , b = ‖ e σ ​ | ξ | ​ ⟨ ξ ⟩ s ​ ⟨ τ − ξ 3 ⟩ b ​ u ~ ​ ( ξ , τ ) ‖ L τ , ξ 2 , ||u||_{X^{\\sigma,\\,s,\\,b}}=||e^{\\sigma|\\xi|}\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}}, where ⟨ ξ ⟩ = 1 + | ξ | \\langle\\xi\\rangle=1+|\\xi| and u ~ \\tilde{u} denotes the space-time Fourier transform of u u . For σ = 0 \\sigma=0 , we recover the classical Bourgain’s space X s , b ​ ( ℝ 2 ) X^{s,\\,b}(\\mathbb{R}^{2}) with the norm given by ‖ u ‖ X s , b = ‖ ⟨ ξ ⟩ s ​ ⟨ τ − ξ 3 ⟩ b ​ u ~ ​ ( ξ , τ ) ‖ L τ , ξ 2 . ||u||_{X^{s,\\,b}}=||\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||u||_{X^{\\sigma,\\,s,\\,b}}=||e^{\\sigma|\\xi|}\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}},"
+    ],
+    "context": "‖ u ‖ X σ , s , b = ‖ e σ ​ | ξ | ​ ⟨ ξ ⟩ s ​ ⟨ τ − ξ 3 ⟩ b ​ u ~ ​ ( ξ , τ ) ‖ L τ , ξ 2 , ||u||_{X^{\\sigma,\\,s,\\,b}}=||e^{\\sigma|\\xi|}\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}},"
+  },
+  {
+    "location": "S2.Ex3",
+    "latex": [
+      "||u||_{X^{s,\\,b}}=||\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}}."
+    ],
+    "context": "In addition to the Gevrey space, we use a space that is a mix between the Gevrey space and the Bourgain’s space introduced in [ 3 ] and [ 4 ] . Given σ ≥ 0 \\sigma\\geq 0 and s , b ∈ ℝ s,\\,b\\in\\mathbb{R} , we define the Gevrey-Bourgain space, denoted by X σ , s , b ​ ( ℝ 2 ) X^{\\sigma,\\,s,\\,b}(\\mathbb{R}^{2}) , as the closure of the Schwartz space under the norm ‖ u ‖ X σ , s , b = ‖ e σ ​ | ξ | ​ ⟨ ξ ⟩ s ​ ⟨ τ − ξ 3 ⟩ b ​ u ~ ​ ( ξ , τ ) ‖ L τ , ξ 2 , ||u||_{X^{\\sigma,\\,s,\\,b}}=||e^{\\sigma|\\xi|}\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}}, where ⟨ ξ ⟩ = 1 + | ξ | \\langle\\xi\\rangle=1+|\\xi| and u ~ \\tilde{u} denotes the space-time Fourier transform of u u . For σ = 0 \\sigma=0 , we recover the classical Bourgain’s space X s , b ​ ( ℝ 2 ) X^{s,\\,b}(\\mathbb{R}^{2}) with the norm given by ‖ u ‖ X s , b = ‖ ⟨ ξ ⟩ s ​ ⟨ τ − ξ 3 ⟩ b ​ u ~ ​ ( ξ , τ ) ‖ L τ , ξ 2 . ||u||_{X^{s,\\,b}}=||\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||u||_{X^{s,\\,b}}=||\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}}."
+    ],
+    "context": "‖ u ‖ X s , b = ‖ ⟨ ξ ⟩ s ​ ⟨ τ − ξ 3 ⟩ b ​ u ~ ​ ( ξ , τ ) ‖ L τ , ξ 2 . ||u||_{X^{s,\\,b}}=||\\langle\\xi\\rangle^{s}\\langle\\tau-\\xi^{3}\\rangle^{b}\\tilde{u}(\\xi,\\tau)||_{L^{2}_{\\tau,\\,\\xi}}."
+  },
+  {
+    "location": "S2.EGx3",
+    "latex": [
+      "\\displaystyle||u||_{X_{T}^{s,\\,b}}",
+      "\\displaystyle=\\text{inf}\\{||v||_{X^{s,\\,b}}:v=u\\text{ on }\\mathbb{R}\\times(-T,\\,T)\\},",
+      "\\displaystyle||u||_{X_{T}^{\\sigma,\\,s,\\,b}}",
+      "\\displaystyle=\\text{inf}\\{||v||_{X^{\\sigma,\\,s,\\,b}}:v=u\\text{ on }\\mathbb{R}\\times(-T,\\,T)\\}."
+    ],
+    "context": "For T > 0 T>0 the restrictions of X s , b ​ ( ℝ 2 ) X^{s,\\,b}(\\mathbb{R}^{2}) and X σ , s , b ​ ( ℝ 2 ) X^{\\sigma,\\,s,\\,b}(\\mathbb{R}^{2}) to a time slab ℝ × ( − T , T ) \\mathbb{R}\\times(-T,\\,T) , denoted by X T s , b ​ ( ℝ 2 ) X_{T}^{s,\\,b}(\\mathbb{R}^{2}) and X T σ , s , b ​ ( ℝ 2 ) X_{T}^{\\sigma,\\,s,\\,b}(\\mathbb{R}^{2}) , respectively, are Banach spaces when equipped with the norms ‖ u ‖ X T s , b \\displaystyle||u||_{X_{T}^{s,\\,b}} = inf ​ { ‖ v ‖ X s , b : v = u ​ on ​ ℝ × ( − T , T ) } , \\displaystyle=\\text{inf}\\{||v||_{X^{s,\\,b}}:v=u\\text{ on }\\mathbb{R}\\times(-T,\\,T)\\}, ‖ u ‖ X T σ , s , b \\displaystyle||u||_{X_{T}^{\\sigma,\\,s,\\,b}} = inf ​ { ‖ v ‖ X σ , s , b : v = u ​ on ​ ℝ × ( − T , T ) } . \\displaystyle=\\text{inf}\\{||v||_{X^{\\sigma,\\,s,\\,b}}:v=u\\text{ on }\\mathbb{R}\\times(-T,\\,T)\\}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle||u||_{X_{T}^{s,\\,b}}",
+      "\\displaystyle=\\text{inf}\\{||v||_{X^{s,\\,b}}:v=u\\text{ on }\\mathbb{R}\\times(-T,\\,T)\\},"
+    ],
+    "context": "‖ u ‖ X T s , b \\displaystyle||u||_{X_{T}^{s,\\,b}} = inf ​ { ‖ v ‖ X s , b : v = u ​ on ​ ℝ × ( − T , T ) } , \\displaystyle=\\text{inf}\\{||v||_{X^{s,\\,b}}:v=u\\text{ on }\\mathbb{R}\\times(-T,\\,T)\\},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle||u||_{X_{T}^{\\sigma,\\,s,\\,b}}",
+      "\\displaystyle=\\text{inf}\\{||v||_{X^{\\sigma,\\,s,\\,b}}:v=u\\text{ on }\\mathbb{R}\\times(-T,\\,T)\\}."
+    ],
+    "context": "‖ u ‖ X T σ , s , b \\displaystyle||u||_{X_{T}^{\\sigma,\\,s,\\,b}} = inf ​ { ‖ v ‖ X σ , s , b : v = u ​ on ​ ℝ × ( − T , T ) } . \\displaystyle=\\text{inf}\\{||v||_{X^{\\sigma,\\,s,\\,b}}:v=u\\text{ on }\\mathbb{R}\\times(-T,\\,T)\\}."
+  },
+  {
+    "location": "S2.Ex6",
+    "latex": [
+      "\\widehat{e^{\\sigma|D_{x}|}u}(\\xi)=e^{\\sigma|\\xi|}\\hat{u}(\\xi)"
+    ],
+    "context": "To simplify the exposition we introduce the operator e σ ​ | D x | e^{\\sigma|D_{x}|} given by e σ ​ | D x | ​ u ^ ​ ( ξ ) = e σ ​ | ξ | ​ u ^ ​ ( ξ ) \\widehat{e^{\\sigma|D_{x}|}u}(\\xi)=e^{\\sigma|\\xi|}\\hat{u}(\\xi) so that, one has ‖ e σ ​ | D x | ​ u ‖ X s , b = ‖ u ‖ X σ , s , b . ||e^{\\sigma|D_{x}|}u||_{X^{s,\\,b}}=||u||_{X^{\\sigma,\\,s,\\,b}}. (2.2) Substituting u u by e σ ​ | D x | ​ u e^{\\sigma|D_{x}|}u , the relation ( 2.2 ) allows us to carry out the properties of X s , b X^{s,\\,b} and X T s , b X_{T}^{s,\\,b} spaces over X σ , s , b X^{\\sigma,\\,s,\\,b} and X T σ , s , b X_{T}^{\\sigma,\\,s,\\,b} spaces."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\widehat{e^{\\sigma|D_{x}|}u}(\\xi)=e^{\\sigma|\\xi|}\\hat{u}(\\xi)"
+    ],
+    "context": "e σ ​ | D x | ​ u ^ ​ ( ξ ) = e σ ​ | ξ | ​ u ^ ​ ( ξ ) \\widehat{e^{\\sigma|D_{x}|}u}(\\xi)=e^{\\sigma|\\xi|}\\hat{u}(\\xi)"
+  },
+  {
+    "location": "S2.E2",
+    "latex": [
+      "||e^{\\sigma|D_{x}|}u||_{X^{s,\\,b}}=||u||_{X^{\\sigma,\\,s,\\,b}}."
+    ],
+    "context": "To simplify the exposition we introduce the operator e σ ​ | D x | e^{\\sigma|D_{x}|} given by e σ ​ | D x | ​ u ^ ​ ( ξ ) = e σ ​ | ξ | ​ u ^ ​ ( ξ ) \\widehat{e^{\\sigma|D_{x}|}u}(\\xi)=e^{\\sigma|\\xi|}\\hat{u}(\\xi) so that, one has ‖ e σ ​ | D x | ​ u ‖ X s , b = ‖ u ‖ X σ , s , b . ||e^{\\sigma|D_{x}|}u||_{X^{s,\\,b}}=||u||_{X^{\\sigma,\\,s,\\,b}}. (2.2) Substituting u u by e σ ​ | D x | ​ u e^{\\sigma|D_{x}|}u , the relation ( 2.2 ) allows us to carry out the properties of X s , b X^{s,\\,b} and X T s , b X_{T}^{s,\\,b} spaces over X σ , s , b X^{\\sigma,\\,s,\\,b} and X T σ , s , b X_{T}^{\\sigma,\\,s,\\,b} spaces."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||e^{\\sigma|D_{x}|}u||_{X^{s,\\,b}}=||u||_{X^{\\sigma,\\,s,\\,b}}."
+    ],
+    "context": "‖ e σ ​ | D x | ​ u ‖ X s , b = ‖ u ‖ X σ , s , b . ||e^{\\sigma|D_{x}|}u||_{X^{s,\\,b}}=||u||_{X^{\\sigma,\\,s,\\,b}}. (2.2)"
+  },
+  {
+    "location": "S2.Ex7",
+    "latex": [
+      "\\sup_{t\\in\\mathbb{R}}||u(t)||_{G^{\\sigma,\\,s}}\\leq C||u||_{X^{\\sigma,\\,s,\\,b}},"
+    ],
+    "context": "Let σ ≥ 0 \\sigma\\geq 0 , s ∈ ℝ s\\in\\mathbb{R} and b > 1 2 b>\\frac{1}{2} . Then, X σ , s , b ​ ( ℝ 2 ) ⊂ C ⁡ ( ℝ , G σ , s ) X^{\\sigma,\\,s,\\,b}(\\mathbb{R}^{2})\\subset C(\\mathbb{R},\\,G^{\\sigma,\\,s}) and sup t ∈ ℝ ‖ u ⁡ ( t ) ‖ G σ , s ≤ C | | u | | X σ , s , b , \\sup_{t\\in\\mathbb{R}}||u(t)||_{G^{\\sigma,\\,s}}\\leq C||u||_{X^{\\sigma,\\,s,\\,b}}, where the constant C > 0 C>0 depends only on b b ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\sup_{t\\in\\mathbb{R}}||u(t)||_{G^{\\sigma,\\,s}}\\leq C||u||_{X^{\\sigma,\\,s,\\,b}},"
+    ],
+    "context": "sup t ∈ ℝ ‖ u ⁡ ( t ) ‖ G σ , s ≤ C | | u | | X σ , s , b , \\sup_{t\\in\\mathbb{R}}||u(t)||_{G^{\\sigma,\\,s}}\\leq C||u||_{X^{\\sigma,\\,s,\\,b}},"
+  },
+  {
+    "location": "S2.Ex8",
+    "latex": [
+      "||\\chi_{I}u||_{X^{\\sigma,\\,s,\\,b}}\\leq C||u||_{X_{T}^{\\sigma,\\,s,\\,b}},"
+    ],
+    "context": "Let σ ≥ 0 \\sigma\\geq 0 , s ∈ ℝ s\\in\\mathbb{R} and − 1 2 < b < 1 2 -\\frac{1}{2}<b<\\frac{1}{2} e T > 0 T>0 . Then, for any time interval I ⊂ [ − T , T ] I\\subset[-T,\\,T] , we have ‖ χ I ​ u ‖ X σ , s , b ≤ C ​ ‖ u ‖ X T σ , s , b , ||\\chi_{I}u||_{X^{\\sigma,\\,s,\\,b}}\\leq C||u||_{X_{T}^{\\sigma,\\,s,\\,b}}, where χ I \\chi_{I} is the characteristic function of I I and C > 0 C>0 depends only on b b ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||\\chi_{I}u||_{X^{\\sigma,\\,s,\\,b}}\\leq C||u||_{X_{T}^{\\sigma,\\,s,\\,b}},"
+    ],
+    "context": "‖ χ I ​ u ‖ X σ , s , b ≤ C ​ ‖ u ‖ X T σ , s , b , ||\\chi_{I}u||_{X^{\\sigma,\\,s,\\,b}}\\leq C||u||_{X_{T}^{\\sigma,\\,s,\\,b}},"
+  },
+  {
+    "location": "S2.EGx4",
+    "latex": [
+      "\\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u=F,\\\\\nu(x,0)=u_{0}(x).\\end{cases}"
+    ],
+    "context": "Consider the following IVP, for given F ⁡ ( x , t ) F(x,t) and u 0 ​ ( x ) u_{0}(x) , { ∂ t u + ∂ x 3 u = F , u ⁡ ( x , 0 ) = u 0 ​ ( x ) . \\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u=F,\\\\\nu(x,0)=u_{0}(x).\\end{cases} (2.3) Using the Duhamel’s formula we may write the IVP ( 2.3 ) in its equivalent integral equation form as u ⁡ ( t ) = W ⁡ ( t ) ​ u 0 − ∫ 0 t W ⁡ ( t − t ′ ) ​ F ​ ( t ′ ) ​ d ​ t ′ , u(t)=W(t)u_{0}-\\int_{0}^{t}W(t-t^{\\prime})F(t^{\\prime})dt^{\\prime}, where W ( t ) = e − t ∂ x 3 = e i ​ t ​ D x 3 W(t)=e^{-t\\partial_{x}^{3}}=e^{itD_{x}^{3}} is the semigroup associated to the linear problem. The semigroup W ⁡ ( t ) W(t) satisfies the following estimates in the X σ , s , b X^{\\sigma,\\,s,\\,b} spaces. For a detailed proof we refer to [ 5 ] , [ 11 ] and references therein."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u=F,\\\\\nu(x,0)=u_{0}(x).\\end{cases}"
+    ],
+    "context": "{ ∂ t u + ∂ x 3 u = F , u ⁡ ( x , 0 ) = u 0 ​ ( x ) . \\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u=F,\\\\\nu(x,0)=u_{0}(x).\\end{cases} (2.3)"
+  },
+  {
+    "location": "S2.Ex9",
+    "latex": [
+      "u(t)=W(t)u_{0}-\\int_{0}^{t}W(t-t^{\\prime})F(t^{\\prime})dt^{\\prime},"
+    ],
+    "context": "Consider the following IVP, for given F ⁡ ( x , t ) F(x,t) and u 0 ​ ( x ) u_{0}(x) , { ∂ t u + ∂ x 3 u = F , u ⁡ ( x , 0 ) = u 0 ​ ( x ) . \\displaystyle\\begin{cases}\\partial_{t}u+\\partial_{x}^{3}u=F,\\\\\nu(x,0)=u_{0}(x).\\end{cases} (2.3) Using the Duhamel’s formula we may write the IVP ( 2.3 ) in its equivalent integral equation form as u ⁡ ( t ) = W ⁡ ( t ) ​ u 0 − ∫ 0 t W ⁡ ( t − t ′ ) ​ F ​ ( t ′ ) ​ d ​ t ′ , u(t)=W(t)u_{0}-\\int_{0}^{t}W(t-t^{\\prime})F(t^{\\prime})dt^{\\prime}, where W ( t ) = e − t ∂ x 3 = e i ​ t ​ D x 3 W(t)=e^{-t\\partial_{x}^{3}}=e^{itD_{x}^{3}} is the semigroup associated to the linear problem. The semigroup W ⁡ ( t ) W(t) satisfies the following estimates in the X σ , s , b X^{\\sigma,\\,s,\\,b} spaces. For a detailed proof we refer to [ 5 ] , [ 11 ] and references therein."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u(t)=W(t)u_{0}-\\int_{0}^{t}W(t-t^{\\prime})F(t^{\\prime})dt^{\\prime},"
+    ],
+    "context": "u ⁡ ( t ) = W ⁡ ( t ) ​ u 0 − ∫ 0 t W ⁡ ( t − t ′ ) ​ F ​ ( t ′ ) ​ d ​ t ′ , u(t)=W(t)u_{0}-\\int_{0}^{t}W(t-t^{\\prime})F(t^{\\prime})dt^{\\prime},"
+  },
+  {
+    "location": "S2.E4",
+    "latex": [
+      "||\\psi(t)W(t)f(x)||_{X^{\\sigma,\\,s,\\,b}}\\leq C||f||_{G^{\\sigma,\\,s}},"
+    ],
+    "context": "Let σ ≥ 0 \\sigma\\geq 0 , s ∈ ℝ s\\in\\mathbb{R} and 1 2 < b < b ′ < 1 \\frac{1}{2}<b<b^{\\prime}<1 . Then, for all 0 < T ≤ 1 0<T\\leq 1 , there is a constant C = C ⁡ ( s , b ) C=C(s,b) such that ‖ ψ ⁡ ( t ) ​ W ​ ( t ) ​ f ​ ( x ) ‖ X σ , s , b ≤ C ​ ‖ f ‖ G σ , s , ||\\psi(t)W(t)f(x)||_{X^{\\sigma,\\,s,\\,b}}\\leq C||f||_{G^{\\sigma,\\,s}}, (2.4) and | | ψ T ​ ( t ) ​ ∫ 0 t W ⁡ ( t − t ′ ) ​ f ​ ( x , t ′ ) ​ d ​ t ′ | | X σ , s , b ≤ C ​ T b ′ − b ​ ‖ f ‖ X σ , s , b ′ − 1 . \\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})f(x,t^{\\prime})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\leq CT^{b^{\\prime}-b}||f||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}. (2.5)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "||\\psi(t)W(t)f(x)||_{X^{\\sigma,\\,s,\\,b}}\\leq C||f||_{G^{\\sigma,\\,s}},"
+    ],
+    "context": "‖ ψ ⁡ ( t ) ​ W ​ ( t ) ​ f ​ ( x ) ‖ X σ , s , b ≤ C ​ ‖ f ‖ G σ , s , ||\\psi(t)W(t)f(x)||_{X^{\\sigma,\\,s,\\,b}}\\leq C||f||_{G^{\\sigma,\\,s}}, (2.4)"
+  },
+  {
+    "location": "S2.E5",
+    "latex": [
+      "\\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})f(x,t^{\\prime})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\leq CT^{b^{\\prime}-b}||f||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}."
+    ],
+    "context": "Let σ ≥ 0 \\sigma\\geq 0 , s ∈ ℝ s\\in\\mathbb{R} and 1 2 < b < b ′ < 1 \\frac{1}{2}<b<b^{\\prime}<1 . Then, for all 0 < T ≤ 1 0<T\\leq 1 , there is a constant C = C ⁡ ( s , b ) C=C(s,b) such that ‖ ψ ⁡ ( t ) ​ W ​ ( t ) ​ f ​ ( x ) ‖ X σ , s , b ≤ C ​ ‖ f ‖ G σ , s , ||\\psi(t)W(t)f(x)||_{X^{\\sigma,\\,s,\\,b}}\\leq C||f||_{G^{\\sigma,\\,s}}, (2.4) and | | ψ T ​ ( t ) ​ ∫ 0 t W ⁡ ( t − t ′ ) ​ f ​ ( x , t ′ ) ​ d ​ t ′ | | X σ , s , b ≤ C ​ T b ′ − b ​ ‖ f ‖ X σ , s , b ′ − 1 . \\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})f(x,t^{\\prime})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\leq CT^{b^{\\prime}-b}||f||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}. (2.5)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})f(x,t^{\\prime})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\leq CT^{b^{\\prime}-b}||f||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}."
+    ],
+    "context": "| | ψ T ​ ( t ) ​ ∫ 0 t W ⁡ ( t − t ′ ) ​ f ​ ( x , t ′ ) ​ d ​ t ′ | | X σ , s , b ≤ C ​ T b ′ − b ​ ‖ f ‖ X σ , s , b ′ − 1 . \\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})f(x,t^{\\prime})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\leq CT^{b^{\\prime}-b}||f||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}. (2.5)"
+  },
+  {
+    "location": "S2.E6",
+    "latex": [
+      "||\\partial_{x}(u_{1}\\cdots u_{k+1})||_{X^{s,-\\frac{1}{2}+2\\epsilon}}\\leq C\\prod_{i=1}^{k+1}||u_{i}||_{X^{s,\\frac{1}{2}+\\epsilon}},"
+    ],
+    "context": "Let k ∈ ℕ k\\in\\mathbb{N} , k ≥ 4 k\\geq 4 and s > k − 4 2 ​ k s>\\frac{k-4}{2k} . Then, for all 0 < ϵ ≪ 1 0<\\epsilon\\ll 1 , we have | | ∂ x ( u 1 ⋯ u k + 1 ) | | X s , − 1 2 + 2 ​ ϵ ≤ C ∏ i = 1 k + 1 | | u i | | X s , 1 2 + ϵ , ||\\partial_{x}(u_{1}\\cdots u_{k+1})||_{X^{s,-\\frac{1}{2}+2\\epsilon}}\\leq C\\prod_{i=1}^{k+1}||u_{i}||_{X^{s,\\frac{1}{2}+\\epsilon}}, (2.6) where C > 0 C>0 depends on s s , k k and ϵ \\epsilon ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||\\partial_{x}(u_{1}\\cdots u_{k+1})||_{X^{s,-\\frac{1}{2}+2\\epsilon}}\\leq C\\prod_{i=1}^{k+1}||u_{i}||_{X^{s,\\frac{1}{2}+\\epsilon}},"
+    ],
+    "context": "| | ∂ x ( u 1 ⋯ u k + 1 ) | | X s , − 1 2 + 2 ​ ϵ ≤ C ∏ i = 1 k + 1 | | u i | | X s , 1 2 + ϵ , ||\\partial_{x}(u_{1}\\cdots u_{k+1})||_{X^{s,-\\frac{1}{2}+2\\epsilon}}\\leq C\\prod_{i=1}^{k+1}||u_{i}||_{X^{s,\\frac{1}{2}+\\epsilon}}, (2.6)"
+  },
+  {
+    "location": "S2.E7",
+    "latex": [
+      "||\\partial_{x}(u_{1}\\cdots u_{k+1})||_{X^{\\sigma,\\,s,\\,-\\frac{1}{2}+2\\epsilon}}\\leq C\\prod_{i=1}^{k+1}||u_{i}||_{X^{\\sigma,\\,s,\\frac{1}{2}+2\\epsilon}},"
+    ],
+    "context": "Let σ ≥ 0 \\sigma\\geq 0 , k ∈ ℕ k\\in\\mathbb{N} , k ≥ 4 k\\geq 4 and s > k − 4 2 ​ k s>\\frac{k-4}{2k} be given.Then, for all 0 < ϵ ≪ 1 0<\\epsilon\\ll 1 , we have | | ∂ x ( u 1 ⋯ u k + 1 ) | | X σ , s , − 1 2 + 2 ​ ϵ ≤ C ∏ i = 1 k + 1 | | u i | | X σ , s , 1 2 + 2 ​ ϵ , ||\\partial_{x}(u_{1}\\cdots u_{k+1})||_{X^{\\sigma,\\,s,\\,-\\frac{1}{2}+2\\epsilon}}\\leq C\\prod_{i=1}^{k+1}||u_{i}||_{X^{\\sigma,\\,s,\\frac{1}{2}+2\\epsilon}}, (2.7) where C > 0 C>0 depends on s s , k k and ϵ \\epsilon ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||\\partial_{x}(u_{1}\\cdots u_{k+1})||_{X^{\\sigma,\\,s,\\,-\\frac{1}{2}+2\\epsilon}}\\leq C\\prod_{i=1}^{k+1}||u_{i}||_{X^{\\sigma,\\,s,\\frac{1}{2}+2\\epsilon}},"
+    ],
+    "context": "| | ∂ x ( u 1 ⋯ u k + 1 ) | | X σ , s , − 1 2 + 2 ​ ϵ ≤ C ∏ i = 1 k + 1 | | u i | | X σ , s , 1 2 + 2 ​ ϵ , ||\\partial_{x}(u_{1}\\cdots u_{k+1})||_{X^{\\sigma,\\,s,\\,-\\frac{1}{2}+2\\epsilon}}\\leq C\\prod_{i=1}^{k+1}||u_{i}||_{X^{\\sigma,\\,s,\\frac{1}{2}+2\\epsilon}}, (2.7)"
+  },
+  {
+    "location": "S2.E8",
+    "latex": [
+      "||u||_{L_{t}^{8}L_{x}^{8}}\\leq C||u||_{X^{0,b}},\\text{ for all }b>\\frac{1}{2}."
+    ],
+    "context": "We recall the following well known Strichartz type estimate from [ 22 ] (see also Grünrock [ 14 ] ) ‖ u ‖ L t 8 ​ L x 8 ≤ C ​ ‖ u ‖ X 0 , b , for all ​ b > 1 2 . ||u||_{L_{t}^{8}L_{x}^{8}}\\leq C||u||_{X^{0,b}},\\text{ for all }b>\\frac{1}{2}. (2.8) Moreover, by Sobolev’s embedding in the space and time variables, we have the estimate ‖ u ‖ L t ∞ ​ L x ∞ ≤ C ​ ‖ u ‖ X 1 2 + , 1 2 + , ||u||_{L_{t}^{\\infty}L_{x}^{\\infty}}\\leq C||u||_{X^{\\frac{1}{2}+,\\frac{1}{2}+}}, (2.9) where 1 2 + = 1 2 + ϵ \\frac{1}{2}+=\\frac{1}{2}+\\epsilon ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||u||_{L_{t}^{8}L_{x}^{8}}\\leq C||u||_{X^{0,b}},\\text{ for all }b>\\frac{1}{2}."
+    ],
+    "context": "‖ u ‖ L t 8 ​ L x 8 ≤ C ​ ‖ u ‖ X 0 , b , for all ​ b > 1 2 . ||u||_{L_{t}^{8}L_{x}^{8}}\\leq C||u||_{X^{0,b}},\\text{ for all }b>\\frac{1}{2}. (2.8)"
+  },
+  {
+    "location": "S2.E9",
+    "latex": [
+      "||u||_{L_{t}^{\\infty}L_{x}^{\\infty}}\\leq C||u||_{X^{\\frac{1}{2}+,\\frac{1}{2}+}},"
+    ],
+    "context": "We recall the following well known Strichartz type estimate from [ 22 ] (see also Grünrock [ 14 ] ) ‖ u ‖ L t 8 ​ L x 8 ≤ C ​ ‖ u ‖ X 0 , b , for all ​ b > 1 2 . ||u||_{L_{t}^{8}L_{x}^{8}}\\leq C||u||_{X^{0,b}},\\text{ for all }b>\\frac{1}{2}. (2.8) Moreover, by Sobolev’s embedding in the space and time variables, we have the estimate ‖ u ‖ L t ∞ ​ L x ∞ ≤ C ​ ‖ u ‖ X 1 2 + , 1 2 + , ||u||_{L_{t}^{\\infty}L_{x}^{\\infty}}\\leq C||u||_{X^{\\frac{1}{2}+,\\frac{1}{2}+}}, (2.9) where 1 2 + = 1 2 + ϵ \\frac{1}{2}+=\\frac{1}{2}+\\epsilon ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||u||_{L_{t}^{\\infty}L_{x}^{\\infty}}\\leq C||u||_{X^{\\frac{1}{2}+,\\frac{1}{2}+}},"
+    ],
+    "context": "‖ u ‖ L t ∞ ​ L x ∞ ≤ C ​ ‖ u ‖ X 1 2 + , 1 2 + , ||u||_{L_{t}^{\\infty}L_{x}^{\\infty}}\\leq C||u||_{X^{\\frac{1}{2}+,\\frac{1}{2}+}}, (2.9)"
+  },
+  {
+    "location": "S2.E10",
+    "latex": [
+      "||u_{1}\\cdots u_{k+1}||_{L_{t}^{2}L_{x}^{2}}\\leq C\\prod_{i=1}^{k-3}||u_{i}||_{X^{\\frac{1}{2}+,b}}||u_{k-2}||_{X^{0,b}}\\cdots||u_{k+1}||_{X^{0,b}}."
+    ],
+    "context": "For k ∈ ℕ k\\in\\mathbb{N} , k ≥ 4 k\\geq 4 and b > 1 2 b>\\frac{1}{2} , we have | | u 1 ⋯ u k + 1 | | L t 2 ​ L x 2 ≤ C ∏ i = 1 k − 3 | | u i | | X 1 2 + , b | | u k − 2 | | X 0 , b ⋯ | | u k + 1 | | X 0 , b . ||u_{1}\\cdots u_{k+1}||_{L_{t}^{2}L_{x}^{2}}\\leq C\\prod_{i=1}^{k-3}||u_{i}||_{X^{\\frac{1}{2}+,b}}||u_{k-2}||_{X^{0,b}}\\cdots||u_{k+1}||_{X^{0,b}}. (2.10)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "||u_{1}\\cdots u_{k+1}||_{L_{t}^{2}L_{x}^{2}}\\leq C\\prod_{i=1}^{k-3}||u_{i}||_{X^{\\frac{1}{2}+,b}}||u_{k-2}||_{X^{0,b}}\\cdots||u_{k+1}||_{X^{0,b}}."
+    ],
+    "context": "| | u 1 ⋯ u k + 1 | | L t 2 ​ L x 2 ≤ C ∏ i = 1 k − 3 | | u i | | X 1 2 + , b | | u k − 2 | | X 0 , b ⋯ | | u k + 1 | | X 0 , b . ||u_{1}\\cdots u_{k+1}||_{L_{t}^{2}L_{x}^{2}}\\leq C\\prod_{i=1}^{k-3}||u_{i}||_{X^{\\frac{1}{2}+,b}}||u_{k-2}||_{X^{0,b}}\\cdots||u_{k+1}||_{X^{0,b}}. (2.10)"
+  },
+  {
+    "location": "S3.Ex1",
+    "latex": [
+      "\\Phi_{T}(u)=\\psi(t)W(t)u_{0}-\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}."
+    ],
+    "context": "Let σ > 0 \\sigma>0 , u 0 ∈ G σ , s ​ ( ℝ ) u_{0}\\in G^{\\sigma,\\,s}(\\mathbb{R}) with s > k − 4 2 ​ k s>\\frac{k-4}{2k} . For 0 < T ≤ 1 0<T\\leq 1 , let ψ T \\psi_{T} be the cut-off function as defined earlier and consider a solution map given by Φ T ​ ( u ) = ψ ⁡ ( t ) ​ W ​ ( t ) ​ u 0 − ψ T ​ ( t ) ​ ∫ 0 t W ⁡ ( t − t ′ ) ​ μ 5 ​ ∂ x ( u k + 1 ) ​ d ​ t ′ . \\Phi_{T}(u)=\\psi(t)W(t)u_{0}-\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}. Our main goal is to show that there are b > 1 2 b>\\frac{1}{2} , r > 0 r>0 and T 0 = T 0 ​ ( ‖ u 0 ‖ G σ , s ) T_{0}=T_{0}(||u_{0}||_{G^{\\sigma,\\,s}}) such that Φ T 0 : B ⁡ ( r ) → B ⁡ ( r ) \\Phi_{T_{0}}:B(r)\\rightarrow B(r) is a contraction map, where B ⁡ ( r ) = { u ∈ X T 0 σ , s , b : ‖ u ‖ X σ , s , b ≤ r } . B(r)=\\left\\{u\\in X_{T_{0}}^{\\sigma,\\,s,\\,b}:||u||_{X^{\\sigma,\\,s,\\,b}}\\leq r\\right\\}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\Phi_{T}(u)=\\psi(t)W(t)u_{0}-\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}."
+    ],
+    "context": "Φ T ​ ( u ) = ψ ⁡ ( t ) ​ W ​ ( t ) ​ u 0 − ψ T ​ ( t ) ​ ∫ 0 t W ⁡ ( t − t ′ ) ​ μ 5 ​ ∂ x ( u k + 1 ) ​ d ​ t ′ . \\Phi_{T}(u)=\\psi(t)W(t)u_{0}-\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}."
+  },
+  {
+    "location": "S3.Ex2",
+    "latex": [
+      "B(r)=\\left\\{u\\in X_{T_{0}}^{\\sigma,\\,s,\\,b}:||u||_{X^{\\sigma,\\,s,\\,b}}\\leq r\\right\\}."
+    ],
+    "context": "Let σ > 0 \\sigma>0 , u 0 ∈ G σ , s ​ ( ℝ ) u_{0}\\in G^{\\sigma,\\,s}(\\mathbb{R}) with s > k − 4 2 ​ k s>\\frac{k-4}{2k} . For 0 < T ≤ 1 0<T\\leq 1 , let ψ T \\psi_{T} be the cut-off function as defined earlier and consider a solution map given by Φ T ​ ( u ) = ψ ⁡ ( t ) ​ W ​ ( t ) ​ u 0 − ψ T ​ ( t ) ​ ∫ 0 t W ⁡ ( t − t ′ ) ​ μ 5 ​ ∂ x ( u k + 1 ) ​ d ​ t ′ . \\Phi_{T}(u)=\\psi(t)W(t)u_{0}-\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}. Our main goal is to show that there are b > 1 2 b>\\frac{1}{2} , r > 0 r>0 and T 0 = T 0 ​ ( ‖ u 0 ‖ G σ , s ) T_{0}=T_{0}(||u_{0}||_{G^{\\sigma,\\,s}}) such that Φ T 0 : B ⁡ ( r ) → B ⁡ ( r ) \\Phi_{T_{0}}:B(r)\\rightarrow B(r) is a contraction map, where B ⁡ ( r ) = { u ∈ X T 0 σ , s , b : ‖ u ‖ X σ , s , b ≤ r } . B(r)=\\left\\{u\\in X_{T_{0}}^{\\sigma,\\,s,\\,b}:||u||_{X^{\\sigma,\\,s,\\,b}}\\leq r\\right\\}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "B(r)=\\left\\{u\\in X_{T_{0}}^{\\sigma,\\,s,\\,b}:||u||_{X^{\\sigma,\\,s,\\,b}}\\leq r\\right\\}."
+    ],
+    "context": "B ⁡ ( r ) = { u ∈ X T 0 σ , s , b : ‖ u ‖ X σ , s , b ≤ r } . B(r)=\\left\\{u\\in X_{T_{0}}^{\\sigma,\\,s,\\,b}:||u||_{X^{\\sigma,\\,s,\\,b}}\\leq r\\right\\}."
+  },
+  {
+    "location": "S3.E1",
+    "latex": [
+      "\\begin{split}||\\Phi_{T}(u)||_{X^{\\sigma,\\,s,\\,b}}&\\leq||\\psi(t)W(t)u_{0}||_{X^{\\sigma,\\,s,\\,b}}+\\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\\\\n&\\leq C||u_{0}||_{G^{\\sigma,\\,s}}+CT^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}\\\\\n&\\leq C||u_{0}||_{G^{\\sigma,\\,s}}+CT^{\\frac{1}{a}}||u||_{X^{\\sigma,\\,s,\\,b}}^{k+1}\\\\\n&\\leq\\frac{r}{2}+CT^{\\frac{1}{a}}r^{k+1},\\end{split}"
+    ],
+    "context": "For u ∈ B ⁡ ( r ) u\\in B(r) , applying the linear inequalities ( 2.4 ) and ( 2.5 ) and the estimate ( 2.7 ) with b = 1 2 + ϵ b=\\frac{1}{2}+\\epsilon and b ′ = 1 2 + 2 ​ ϵ b^{\\prime}=\\frac{1}{2}+2\\epsilon as in the Proposition 2.5 , we obtain ‖ Φ T ​ ( u ) ‖ X σ , s , b ≤ ‖ ψ ⁡ ( t ) ​ W ​ ( t ) ​ u 0 ‖ X σ , s , b + | | ψ T ​ ( t ) ​ ∫ 0 t W ⁡ ( t − t ′ ) ​ μ 5 ​ ∂ x ( u k + 1 ) ​ d ​ t ′ | | X σ , s , b ≤ C ​ ‖ u 0 ‖ G σ , s + C ​ T 1 a ​ ‖ ∂ x ( u k + 1 ) ‖ X σ , s , b ′ − 1 ≤ C ​ ‖ u 0 ‖ G σ , s + C ​ T 1 a ​ ‖ u ‖ X σ , s , b k + 1 ≤ r 2 + C ​ T 1 a ​ r k + 1 , \\begin{split}||\\Phi_{T}(u)||_{X^{\\sigma,\\,s,\\,b}}&\\leq||\\psi(t)W(t)u_{0}||_{X^{\\sigma,\\,s,\\,b}}+\\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\\\\n&\\leq C||u_{0}||_{G^{\\sigma,\\,s}}+CT^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}\\\\\n&\\leq C||u_{0}||_{G^{\\sigma,\\,s}}+CT^{\\frac{1}{a}}||u||_{X^{\\sigma,\\,s,\\,b}}^{k+1}\\\\\n&\\leq\\frac{r}{2}+CT^{\\frac{1}{a}}r^{k+1},\\end{split} (3.1) where 1 a = b ′ − b \\frac{1}{a}=b^{\\prime}-b and r = 2 ​ C ​ ‖ u 0 ‖ G σ , s r=2C||u_{0}||_{G^{\\sigma,\\,s}} ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}||\\Phi_{T}(u)||_{X^{\\sigma,\\,s,\\,b}}&\\leq||\\psi(t)W(t)u_{0}||_{X^{\\sigma,\\,s,\\,b}}+\\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\\\\n&\\leq C||u_{0}||_{G^{\\sigma,\\,s}}+CT^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}\\\\\n&\\leq C||u_{0}||_{G^{\\sigma,\\,s}}+CT^{\\frac{1}{a}}||u||_{X^{\\sigma,\\,s,\\,b}}^{k+1}\\\\\n&\\leq\\frac{r}{2}+CT^{\\frac{1}{a}}r^{k+1},\\end{split}"
+    ],
+    "context": "‖ Φ T ​ ( u ) ‖ X σ , s , b ≤ ‖ ψ ⁡ ( t ) ​ W ​ ( t ) ​ u 0 ‖ X σ , s , b + | | ψ T ​ ( t ) ​ ∫ 0 t W ⁡ ( t − t ′ ) ​ μ 5 ​ ∂ x ( u k + 1 ) ​ d ​ t ′ | | X σ , s , b ≤ C ​ ‖ u 0 ‖ G σ , s + C ​ T 1 a ​ ‖ ∂ x ( u k + 1 ) ‖ X σ , s , b ′ − 1 ≤ C ​ ‖ u 0 ‖ G σ , s + C ​ T 1 a ​ ‖ u ‖ X σ , s , b k + 1 ≤ r 2 + C ​ T 1 a ​ r k + 1 , \\begin{split}||\\Phi_{T}(u)||_{X^{\\sigma,\\,s,\\,b}}&\\leq||\\psi(t)W(t)u_{0}||_{X^{\\sigma,\\,s,\\,b}}+\\left|\\left|\\psi_{T}(t)\\int_{0}^{t}W(t-t^{\\prime})\\frac{\\mu}{5}\\partial_{x}(u^{k+1})dt^{\\prime}\\right|\\right|_{X^{\\sigma,\\,s,\\,b}}\\\\\n&\\leq C||u_{0}||_{G^{\\sigma,\\,s}}+CT^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}-1}}\\\\\n&\\leq C||u_{0}||_{G^{\\sigma,\\,s}}+CT^{\\frac{1}{a}}||u||_{X^{\\sigma,\\,s,\\,b}}^{k+1}\\\\\n&\\leq\\frac{r}{2}+CT^{\\frac{1}{a}}r^{k+1},\\end{split} (3.1)"
+  },
+  {
+    "location": "S3.E2",
+    "latex": [
+      "T_{0}\\leq\\frac{1}{(2Cr^{k})^{a}},"
+    ],
+    "context": "By choosing T 0 ≤ 1 ( 2 ​ C ​ r k ) a , T_{0}\\leq\\frac{1}{(2Cr^{k})^{a}}, (3.2) one gets from ( 3.1 ) that ‖ Φ T 0 ​ ( u ) ‖ X σ , s , b ≤ r ||\\Phi_{T_{0}}(u)||_{X^{\\sigma,\\,s,\\,b}}\\leq r for all u ∈ B ⁡ ( r ) u\\in B(r) showing that Φ T 0 ​ ( B ⁡ ( r ) ) ⊂ B ⁡ ( r ) \\Phi_{T_{0}}(B(r))\\subset B(r) ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "T_{0}\\leq\\frac{1}{(2Cr^{k})^{a}},"
+    ],
+    "context": "T 0 ≤ 1 ( 2 ​ C ​ r k ) a , T_{0}\\leq\\frac{1}{(2Cr^{k})^{a}}, (3.2)"
+  },
+  {
+    "location": "S3.Ex3",
+    "latex": [
+      "||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq CT_{0}^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})-\\partial_{x}(v^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}}}."
+    ],
+    "context": "Now, for u u , v ∈ B ⁡ ( r ) v\\in B(r) , using ( 2.5 ) once again, we have ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ ‖ ∂ x ( u k + 1 ) − ∂ x ( v k + 1 ) ‖ X σ , s , b ′ . ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq CT_{0}^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})-\\partial_{x}(v^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}}}. Since u k + 1 − v k + 1 = ( u − v ) ​ ∑ i = 0 k u i ​ v k − i , u^{k+1}-v^{k+1}=(u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}, from ( 2.6 ) we conclude that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ | | ∂ x ( ( u − v ) ​ ∑ i = 0 k u i ​ v k − i ) | | X σ , s , b ′ ≤ C ​ T 0 1 a | | u − v | ​ | ∑ i = 0 k X σ , s , b ⁡ ‖ u ‖ X σ , s , b i | ​ | v | | X σ , s , b k − i ≤ C ​ T 0 1 a ​ ( k + 1 ) ​ r k ​ ‖ u − v ‖ X σ , s , b \\begin{split}||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}&\\leq CT_{0}^{\\frac{1}{a}}\\left|\\left|\\partial_{x}\\left((u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}\\right)\\right|\\right|_{X^{\\sigma,\\,s,\\,b^{\\prime}}}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\sum_{i=0}^{k}||u||_{X^{\\sigma,\\,s,\\,b}}^{i}||v||_{X^{\\sigma,\\,s,\\,b}}^{k-i}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}(k+1)r^{k}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\end{split} (3.3) By choosing T 0 ≤ 1 ( 2 ​ C ​ ( k + 1 ) ​ r k ) a , T_{0}\\leq\\frac{1}{(2C(k+1)r^{k})^{a}}, (3.4) it follows from ( 3.3 ) that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ 1 2 ​ ‖ u − v ‖ X σ , s , b ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq\\frac{1}{2}||u-v||_{X^{\\sigma,\\,s,\\,b}} and Φ T 0 \\Phi_{T_{0}} is a contraction map."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq CT_{0}^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})-\\partial_{x}(v^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}}}."
+    ],
+    "context": "‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ ‖ ∂ x ( u k + 1 ) − ∂ x ( v k + 1 ) ‖ X σ , s , b ′ . ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq CT_{0}^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})-\\partial_{x}(v^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}}}."
+  },
+  {
+    "location": "S3.Ex4",
+    "latex": [
+      "u^{k+1}-v^{k+1}=(u-v)\\sum_{i=0}^{k}u^{i}v^{k-i},"
+    ],
+    "context": "Now, for u u , v ∈ B ⁡ ( r ) v\\in B(r) , using ( 2.5 ) once again, we have ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ ‖ ∂ x ( u k + 1 ) − ∂ x ( v k + 1 ) ‖ X σ , s , b ′ . ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq CT_{0}^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})-\\partial_{x}(v^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}}}. Since u k + 1 − v k + 1 = ( u − v ) ​ ∑ i = 0 k u i ​ v k − i , u^{k+1}-v^{k+1}=(u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}, from ( 2.6 ) we conclude that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ | | ∂ x ( ( u − v ) ​ ∑ i = 0 k u i ​ v k − i ) | | X σ , s , b ′ ≤ C ​ T 0 1 a | | u − v | ​ | ∑ i = 0 k X σ , s , b ⁡ ‖ u ‖ X σ , s , b i | ​ | v | | X σ , s , b k − i ≤ C ​ T 0 1 a ​ ( k + 1 ) ​ r k ​ ‖ u − v ‖ X σ , s , b \\begin{split}||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}&\\leq CT_{0}^{\\frac{1}{a}}\\left|\\left|\\partial_{x}\\left((u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}\\right)\\right|\\right|_{X^{\\sigma,\\,s,\\,b^{\\prime}}}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\sum_{i=0}^{k}||u||_{X^{\\sigma,\\,s,\\,b}}^{i}||v||_{X^{\\sigma,\\,s,\\,b}}^{k-i}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}(k+1)r^{k}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\end{split} (3.3) By choosing T 0 ≤ 1 ( 2 ​ C ​ ( k + 1 ) ​ r k ) a , T_{0}\\leq\\frac{1}{(2C(k+1)r^{k})^{a}}, (3.4) it follows from ( 3.3 ) that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ 1 2 ​ ‖ u − v ‖ X σ , s , b ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq\\frac{1}{2}||u-v||_{X^{\\sigma,\\,s,\\,b}} and Φ T 0 \\Phi_{T_{0}} is a contraction map."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u^{k+1}-v^{k+1}=(u-v)\\sum_{i=0}^{k}u^{i}v^{k-i},"
+    ],
+    "context": "u k + 1 − v k + 1 = ( u − v ) ​ ∑ i = 0 k u i ​ v k − i , u^{k+1}-v^{k+1}=(u-v)\\sum_{i=0}^{k}u^{i}v^{k-i},"
+  },
+  {
+    "location": "S3.E3",
+    "latex": [
+      "\\begin{split}||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}&\\leq CT_{0}^{\\frac{1}{a}}\\left|\\left|\\partial_{x}\\left((u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}\\right)\\right|\\right|_{X^{\\sigma,\\,s,\\,b^{\\prime}}}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\sum_{i=0}^{k}||u||_{X^{\\sigma,\\,s,\\,b}}^{i}||v||_{X^{\\sigma,\\,s,\\,b}}^{k-i}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}(k+1)r^{k}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\end{split}"
+    ],
+    "context": "Now, for u u , v ∈ B ⁡ ( r ) v\\in B(r) , using ( 2.5 ) once again, we have ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ ‖ ∂ x ( u k + 1 ) − ∂ x ( v k + 1 ) ‖ X σ , s , b ′ . ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq CT_{0}^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})-\\partial_{x}(v^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}}}. Since u k + 1 − v k + 1 = ( u − v ) ​ ∑ i = 0 k u i ​ v k − i , u^{k+1}-v^{k+1}=(u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}, from ( 2.6 ) we conclude that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ | | ∂ x ( ( u − v ) ​ ∑ i = 0 k u i ​ v k − i ) | | X σ , s , b ′ ≤ C ​ T 0 1 a | | u − v | ​ | ∑ i = 0 k X σ , s , b ⁡ ‖ u ‖ X σ , s , b i | ​ | v | | X σ , s , b k − i ≤ C ​ T 0 1 a ​ ( k + 1 ) ​ r k ​ ‖ u − v ‖ X σ , s , b \\begin{split}||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}&\\leq CT_{0}^{\\frac{1}{a}}\\left|\\left|\\partial_{x}\\left((u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}\\right)\\right|\\right|_{X^{\\sigma,\\,s,\\,b^{\\prime}}}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\sum_{i=0}^{k}||u||_{X^{\\sigma,\\,s,\\,b}}^{i}||v||_{X^{\\sigma,\\,s,\\,b}}^{k-i}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}(k+1)r^{k}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\end{split} (3.3) By choosing T 0 ≤ 1 ( 2 ​ C ​ ( k + 1 ) ​ r k ) a , T_{0}\\leq\\frac{1}{(2C(k+1)r^{k})^{a}}, (3.4) it follows from ( 3.3 ) that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ 1 2 ​ ‖ u − v ‖ X σ , s , b ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq\\frac{1}{2}||u-v||_{X^{\\sigma,\\,s,\\,b}} and Φ T 0 \\Phi_{T_{0}} is a contraction map."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}&\\leq CT_{0}^{\\frac{1}{a}}\\left|\\left|\\partial_{x}\\left((u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}\\right)\\right|\\right|_{X^{\\sigma,\\,s,\\,b^{\\prime}}}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\sum_{i=0}^{k}||u||_{X^{\\sigma,\\,s,\\,b}}^{i}||v||_{X^{\\sigma,\\,s,\\,b}}^{k-i}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}(k+1)r^{k}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\end{split}"
+    ],
+    "context": "‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ | | ∂ x ( ( u − v ) ​ ∑ i = 0 k u i ​ v k − i ) | | X σ , s , b ′ ≤ C ​ T 0 1 a | | u − v | ​ | ∑ i = 0 k X σ , s , b ⁡ ‖ u ‖ X σ , s , b i | ​ | v | | X σ , s , b k − i ≤ C ​ T 0 1 a ​ ( k + 1 ) ​ r k ​ ‖ u − v ‖ X σ , s , b \\begin{split}||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}&\\leq CT_{0}^{\\frac{1}{a}}\\left|\\left|\\partial_{x}\\left((u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}\\right)\\right|\\right|_{X^{\\sigma,\\,s,\\,b^{\\prime}}}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\sum_{i=0}^{k}||u||_{X^{\\sigma,\\,s,\\,b}}^{i}||v||_{X^{\\sigma,\\,s,\\,b}}^{k-i}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}(k+1)r^{k}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\end{split} (3.3)"
+  },
+  {
+    "location": "S3.E4",
+    "latex": [
+      "T_{0}\\leq\\frac{1}{(2C(k+1)r^{k})^{a}},"
+    ],
+    "context": "Now, for u u , v ∈ B ⁡ ( r ) v\\in B(r) , using ( 2.5 ) once again, we have ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ ‖ ∂ x ( u k + 1 ) − ∂ x ( v k + 1 ) ‖ X σ , s , b ′ . ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq CT_{0}^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})-\\partial_{x}(v^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}}}. Since u k + 1 − v k + 1 = ( u − v ) ​ ∑ i = 0 k u i ​ v k − i , u^{k+1}-v^{k+1}=(u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}, from ( 2.6 ) we conclude that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ | | ∂ x ( ( u − v ) ​ ∑ i = 0 k u i ​ v k − i ) | | X σ , s , b ′ ≤ C ​ T 0 1 a | | u − v | ​ | ∑ i = 0 k X σ , s , b ⁡ ‖ u ‖ X σ , s , b i | ​ | v | | X σ , s , b k − i ≤ C ​ T 0 1 a ​ ( k + 1 ) ​ r k ​ ‖ u − v ‖ X σ , s , b \\begin{split}||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}&\\leq CT_{0}^{\\frac{1}{a}}\\left|\\left|\\partial_{x}\\left((u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}\\right)\\right|\\right|_{X^{\\sigma,\\,s,\\,b^{\\prime}}}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\sum_{i=0}^{k}||u||_{X^{\\sigma,\\,s,\\,b}}^{i}||v||_{X^{\\sigma,\\,s,\\,b}}^{k-i}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}(k+1)r^{k}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\end{split} (3.3) By choosing T 0 ≤ 1 ( 2 ​ C ​ ( k + 1 ) ​ r k ) a , T_{0}\\leq\\frac{1}{(2C(k+1)r^{k})^{a}}, (3.4) it follows from ( 3.3 ) that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ 1 2 ​ ‖ u − v ‖ X σ , s , b ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq\\frac{1}{2}||u-v||_{X^{\\sigma,\\,s,\\,b}} and Φ T 0 \\Phi_{T_{0}} is a contraction map."
+  },
+  {
+    "location": null,
+    "latex": [
+      "T_{0}\\leq\\frac{1}{(2C(k+1)r^{k})^{a}},"
+    ],
+    "context": "T 0 ≤ 1 ( 2 ​ C ​ ( k + 1 ) ​ r k ) a , T_{0}\\leq\\frac{1}{(2C(k+1)r^{k})^{a}}, (3.4)"
+  },
+  {
+    "location": "S3.Ex5",
+    "latex": [
+      "||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq\\frac{1}{2}||u-v||_{X^{\\sigma,\\,s,\\,b}}"
+    ],
+    "context": "Now, for u u , v ∈ B ⁡ ( r ) v\\in B(r) , using ( 2.5 ) once again, we have ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ ‖ ∂ x ( u k + 1 ) − ∂ x ( v k + 1 ) ‖ X σ , s , b ′ . ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq CT_{0}^{\\frac{1}{a}}||\\partial_{x}(u^{k+1})-\\partial_{x}(v^{k+1})||_{X^{\\sigma,\\,s,\\,b^{\\prime}}}. Since u k + 1 − v k + 1 = ( u − v ) ​ ∑ i = 0 k u i ​ v k − i , u^{k+1}-v^{k+1}=(u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}, from ( 2.6 ) we conclude that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ C ​ T 0 1 a ​ | | ∂ x ( ( u − v ) ​ ∑ i = 0 k u i ​ v k − i ) | | X σ , s , b ′ ≤ C ​ T 0 1 a | | u − v | ​ | ∑ i = 0 k X σ , s , b ⁡ ‖ u ‖ X σ , s , b i | ​ | v | | X σ , s , b k − i ≤ C ​ T 0 1 a ​ ( k + 1 ) ​ r k ​ ‖ u − v ‖ X σ , s , b \\begin{split}||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}&\\leq CT_{0}^{\\frac{1}{a}}\\left|\\left|\\partial_{x}\\left((u-v)\\sum_{i=0}^{k}u^{i}v^{k-i}\\right)\\right|\\right|_{X^{\\sigma,\\,s,\\,b^{\\prime}}}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\sum_{i=0}^{k}||u||_{X^{\\sigma,\\,s,\\,b}}^{i}||v||_{X^{\\sigma,\\,s,\\,b}}^{k-i}\\\\\n&\\leq CT_{0}^{\\frac{1}{a}}(k+1)r^{k}||u-v||_{X^{\\sigma,\\,s,\\,b}}\\end{split} (3.3) By choosing T 0 ≤ 1 ( 2 ​ C ​ ( k + 1 ) ​ r k ) a , T_{0}\\leq\\frac{1}{(2C(k+1)r^{k})^{a}}, (3.4) it follows from ( 3.3 ) that ‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ 1 2 ​ ‖ u − v ‖ X σ , s , b ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq\\frac{1}{2}||u-v||_{X^{\\sigma,\\,s,\\,b}} and Φ T 0 \\Phi_{T_{0}} is a contraction map."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq\\frac{1}{2}||u-v||_{X^{\\sigma,\\,s,\\,b}}"
+    ],
+    "context": "‖ Φ T 0 ​ ( u ) − Φ T 0 ​ ( v ) ‖ X σ , s , b ≤ 1 2 ​ ‖ u − v ‖ X σ , s , b ||\\Phi_{T_{0}}(u)-\\Phi_{T_{0}}(v)||_{X^{\\sigma,\\,s,\\,b}}\\leq\\frac{1}{2}||u-v||_{X^{\\sigma,\\,s,\\,b}}"
+  },
+  {
+    "location": "S3.E5",
+    "latex": [
+      "T_{0}=\\frac{c_{0}}{(1+||u_{0}||_{G^{\\sigma,\\,s}}^{2})^{\\frac{k}{2}a}}"
+    ],
+    "context": "Finally, it is sufficient to choose 0 < T 0 ≤ 1 0<T_{0}\\leq 1 satisfying ( 3.2 ) and ( 3.4 ). More precisely, considering T 0 = c 0 ( 1 + ‖ u 0 ‖ G σ , s 2 ) k 2 ​ a T_{0}=\\frac{c_{0}}{(1+||u_{0}||_{G^{\\sigma,\\,s}}^{2})^{\\frac{k}{2}a}} (3.5) for an appropriate constant c 0 > 0 c_{0}>0 depending on k k , s s and b b , we conclude that Φ T 0 \\Phi_{T_{0}} admits a unique fixed point which is a local solution of the IVP ( 1.1 ). Moreover, the solution satisfies ‖ u ‖ X T 0 σ , s , b ≤ r = C ​ ‖ u 0 ‖ G σ , s . ||u||_{X_{T_{0}}^{\\sigma,\\,s,\\,b}}\\leq r=C||u_{0}||_{G^{\\sigma,\\,s}}. (3.6)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "T_{0}=\\frac{c_{0}}{(1+||u_{0}||_{G^{\\sigma,\\,s}}^{2})^{\\frac{k}{2}a}}"
+    ],
+    "context": "T 0 = c 0 ( 1 + ‖ u 0 ‖ G σ , s 2 ) k 2 ​ a T_{0}=\\frac{c_{0}}{(1+||u_{0}||_{G^{\\sigma,\\,s}}^{2})^{\\frac{k}{2}a}} (3.5)"
+  },
+  {
+    "location": "S3.E6",
+    "latex": [
+      "||u||_{X_{T_{0}}^{\\sigma,\\,s,\\,b}}\\leq r=C||u_{0}||_{G^{\\sigma,\\,s}}."
+    ],
+    "context": "Finally, it is sufficient to choose 0 < T 0 ≤ 1 0<T_{0}\\leq 1 satisfying ( 3.2 ) and ( 3.4 ). More precisely, considering T 0 = c 0 ( 1 + ‖ u 0 ‖ G σ , s 2 ) k 2 ​ a T_{0}=\\frac{c_{0}}{(1+||u_{0}||_{G^{\\sigma,\\,s}}^{2})^{\\frac{k}{2}a}} (3.5) for an appropriate constant c 0 > 0 c_{0}>0 depending on k k , s s and b b , we conclude that Φ T 0 \\Phi_{T_{0}} admits a unique fixed point which is a local solution of the IVP ( 1.1 ). Moreover, the solution satisfies ‖ u ‖ X T 0 σ , s , b ≤ r = C ​ ‖ u 0 ‖ G σ , s . ||u||_{X_{T_{0}}^{\\sigma,\\,s,\\,b}}\\leq r=C||u_{0}||_{G^{\\sigma,\\,s}}. (3.6)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "||u||_{X_{T_{0}}^{\\sigma,\\,s,\\,b}}\\leq r=C||u_{0}||_{G^{\\sigma,\\,s}}."
+    ],
+    "context": "‖ u ‖ X T 0 σ , s , b ≤ r = C ​ ‖ u 0 ‖ G σ , s . ||u||_{X_{T_{0}}^{\\sigma,\\,s,\\,b}}\\leq r=C||u_{0}||_{G^{\\sigma,\\,s}}. (3.6)"
+  },
+  {
+    "location": "S4.E1",
+    "latex": [
+      "E_{\\sigma}(t)=\\int(e^{\\sigma|D_{x}|}u)^{2}dx+\\int(\\partial_{x}(e^{\\sigma|D_{x}|}u))^{2}dx-\\frac{2\\mu}{(k+1)(k+2)}\\int(e^{\\sigma|D_{x}|}u)^{k+2}dx."
+    ],
+    "context": "In order to apply the local result repeatedly to cover arbitrary time interval [ − T , T ] [-T,\\,T] , for any T > 0 T>0 , we will introduce almost conserved quantity associated to the gKdV equation ( 1.1 ) and find some estimates for it. Taking in consideration the conserved quantities ( 1.2 ) and ( 1.3 ), we define E σ ​ ( t ) = ∫ ( e σ ​ | D x | ​ u ) 2 ​ 𝑑 x + ∫ ( ∂ x ( e σ ​ | D x | ​ u ) ) 2 ​ 𝑑 x − 2 ​ μ ( k + 1 ) ​ ( k + 2 ) ​ ∫ ( e σ ​ | D x | ​ u ) k + 2 ​ 𝑑 x . E_{\\sigma}(t)=\\int(e^{\\sigma|D_{x}|}u)^{2}dx+\\int(\\partial_{x}(e^{\\sigma|D_{x}|}u))^{2}dx-\\frac{2\\mu}{(k+1)(k+2)}\\int(e^{\\sigma|D_{x}|}u)^{k+2}dx. (4.1)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "E_{\\sigma}(t)=\\int(e^{\\sigma|D_{x}|}u)^{2}dx+\\int(\\partial_{x}(e^{\\sigma|D_{x}|}u))^{2}dx-\\frac{2\\mu}{(k+1)(k+2)}\\int(e^{\\sigma|D_{x}|}u)^{k+2}dx."
+    ],
+    "context": "E σ ​ ( t ) = ∫ ( e σ ​ | D x | ​ u ) 2 ​ 𝑑 x + ∫ ( ∂ x ( e σ ​ | D x | ​ u ) ) 2 ​ 𝑑 x − 2 ​ μ ( k + 1 ) ​ ( k + 2 ) ​ ∫ ( e σ ​ | D x | ​ u ) k + 2 ​ 𝑑 x . E_{\\sigma}(t)=\\int(e^{\\sigma|D_{x}|}u)^{2}dx+\\int(\\partial_{x}(e^{\\sigma|D_{x}|}u))^{2}dx-\\frac{2\\mu}{(k+1)(k+2)}\\int(e^{\\sigma|D_{x}|}u)^{k+2}dx. (4.1)"
+  },
+  {
+    "location": "S4.E2",
+    "latex": [
+      "\\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx."
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2) Applying the operator e σ ​ | D x | e^{\\sigma|D_{x}|} to the gKdV equation ( 1.1 ) equation, we get ∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3) where F ⁡ ( U ) F(U) is given by F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4) Using ( 4.3 ) in each term of ( 4.2 ), one has ∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split} We can assume that U U and all its partial derivatives tend to zero as | x | → ∞ |x|\\rightarrow\\infty (see [ 25 ] for a detailed argument) and it follows from integration by parts that ∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5) "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx."
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2)"
+  },
+  {
+    "location": "S4.E3",
+    "latex": [
+      "\\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U),"
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2) Applying the operator e σ ​ | D x | e^{\\sigma|D_{x}|} to the gKdV equation ( 1.1 ) equation, we get ∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3) where F ⁡ ( U ) F(U) is given by F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4) Using ( 4.3 ) in each term of ( 4.2 ), one has ∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split} We can assume that U U and all its partial derivatives tend to zero as | x | → ∞ |x|\\rightarrow\\infty (see [ 25 ] for a detailed argument) and it follows from integration by parts that ∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5) "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U),"
+    ],
+    "context": "∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3)"
+  },
+  {
+    "location": "S4.E4",
+    "latex": [
+      "F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]."
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2) Applying the operator e σ ​ | D x | e^{\\sigma|D_{x}|} to the gKdV equation ( 1.1 ) equation, we get ∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3) where F ⁡ ( U ) F(U) is given by F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4) Using ( 4.3 ) in each term of ( 4.2 ), one has ∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split} We can assume that U U and all its partial derivatives tend to zero as | x | → ∞ |x|\\rightarrow\\infty (see [ 25 ] for a detailed argument) and it follows from integration by parts that ∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5) "
+  },
+  {
+    "location": null,
+    "latex": [
+      "F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]."
+    ],
+    "context": "F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4)"
+  },
+  {
+    "location": "S4.Ex1",
+    "latex": [
+      "\\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split}"
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2) Applying the operator e σ ​ | D x | e^{\\sigma|D_{x}|} to the gKdV equation ( 1.1 ) equation, we get ∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3) where F ⁡ ( U ) F(U) is given by F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4) Using ( 4.3 ) in each term of ( 4.2 ), one has ∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split} We can assume that U U and all its partial derivatives tend to zero as | x | → ∞ |x|\\rightarrow\\infty (see [ 25 ] for a detailed argument) and it follows from integration by parts that ∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5) "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split}"
+    ],
+    "context": "∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split}"
+  },
+  {
+    "location": "S4.EGx5",
+    "latex": [
+      "\\displaystyle\\int U\\partial_{t}Udx",
+      "\\displaystyle=\\int UF(U)dx,",
+      "\\displaystyle\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx",
+      "\\displaystyle=-\\frac{\\mu}{k+1}\\int U^{k+1}\\partial_{x}^{3}Udx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,",
+      "\\displaystyle\\int U^{k+1}\\partial_{t}Udx",
+      "\\displaystyle=-\\int U^{k+1}\\partial_{x}^{3}Udx+\\int U^{k+1}F(U)dx."
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2) Applying the operator e σ ​ | D x | e^{\\sigma|D_{x}|} to the gKdV equation ( 1.1 ) equation, we get ∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3) where F ⁡ ( U ) F(U) is given by F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4) Using ( 4.3 ) in each term of ( 4.2 ), one has ∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split} We can assume that U U and all its partial derivatives tend to zero as | x | → ∞ |x|\\rightarrow\\infty (see [ 25 ] for a detailed argument) and it follows from integration by parts that ∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5) "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\int U\\partial_{t}Udx",
+      "\\displaystyle=\\int UF(U)dx,"
+    ],
+    "context": "∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx",
+      "\\displaystyle=-\\frac{\\mu}{k+1}\\int U^{k+1}\\partial_{x}^{3}Udx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,"
+    ],
+    "context": "∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x \\displaystyle\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx = − μ k + 1 ∫ U k + 1 ∂ x 3 U d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , \\displaystyle=-\\frac{\\mu}{k+1}\\int U^{k+1}\\partial_{x}^{3}Udx+\\int\\partial_{x}U\\partial_{x}(F(U))dx, (4.6)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\int U^{k+1}\\partial_{t}Udx",
+      "\\displaystyle=-\\int U^{k+1}\\partial_{x}^{3}Udx+\\int U^{k+1}F(U)dx."
+    ],
+    "context": "∫ U k + 1 ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U^{k+1}\\partial_{t}Udx = − ∫ U k + 1 ∂ x 3 U d x + ∫ U k + 1 F ( U ) d x . \\displaystyle=-\\int U^{k+1}\\partial_{x}^{3}Udx+\\int U^{k+1}F(U)dx. (4.7)"
+  },
+  {
+    "location": "S4.E8",
+    "latex": [
+      "\\frac{d}{dt}E_{\\sigma}(t)=2\\int UF(U)dx+2\\int\\partial_{x}U\\partial_{x}(F(U))dx-\\frac{2\\mu}{k+1}\\int U^{k+1}F(U)dx."
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2) Applying the operator e σ ​ | D x | e^{\\sigma|D_{x}|} to the gKdV equation ( 1.1 ) equation, we get ∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3) where F ⁡ ( U ) F(U) is given by F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4) Using ( 4.3 ) in each term of ( 4.2 ), one has ∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split} We can assume that U U and all its partial derivatives tend to zero as | x | → ∞ |x|\\rightarrow\\infty (see [ 25 ] for a detailed argument) and it follows from integration by parts that ∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5) "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\frac{d}{dt}E_{\\sigma}(t)=2\\int UF(U)dx+2\\int\\partial_{x}U\\partial_{x}(F(U))dx-\\frac{2\\mu}{k+1}\\int U^{k+1}F(U)dx."
+    ],
+    "context": "d d ​ t ​ E σ ​ ( t ) = 2 ​ ∫ U ​ F ​ ( U ) ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( F ⁡ ( U ) ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ F ​ ( U ) ​ 𝑑 x . \\frac{d}{dt}E_{\\sigma}(t)=2\\int UF(U)dx+2\\int\\partial_{x}U\\partial_{x}(F(U))dx-\\frac{2\\mu}{k+1}\\int U^{k+1}F(U)dx. (4.8)"
+  },
+  {
+    "location": "S4.E9",
+    "latex": [
+      "E_{\\sigma}(t^{\\prime})=E_{\\sigma}(0)+R_{\\sigma}(t^{\\prime}),"
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2) Applying the operator e σ ​ | D x | e^{\\sigma|D_{x}|} to the gKdV equation ( 1.1 ) equation, we get ∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3) where F ⁡ ( U ) F(U) is given by F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4) Using ( 4.3 ) in each term of ( 4.2 ), one has ∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split} We can assume that U U and all its partial derivatives tend to zero as | x | → ∞ |x|\\rightarrow\\infty (see [ 25 ] for a detailed argument) and it follows from integration by parts that ∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5) "
+  },
+  {
+    "location": null,
+    "latex": [
+      "E_{\\sigma}(t^{\\prime})=E_{\\sigma}(0)+R_{\\sigma}(t^{\\prime}),"
+    ],
+    "context": "E σ ​ ( t ′ ) = E σ ​ ( 0 ) + R σ ​ ( t ′ ) , E_{\\sigma}(t^{\\prime})=E_{\\sigma}(0)+R_{\\sigma}(t^{\\prime}), (4.9)"
+  },
+  {
+    "location": "S4.E10",
+    "latex": [
+      "\\begin{split}R_{\\sigma}(t^{\\prime})=&\\,\\,2\\int\\int\\chi_{[0,\\,t^{\\prime}]}UF(U)dxdt+2\\int\\int\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U\\partial_{x}(F(U))dxdt\\,\\,-\\\\\n&-\\frac{2\\mu}{k+1}\\int\\int\\chi_{[0,\\,t^{\\prime}]}U^{k+1}F(U)dxdt.\\end{split}"
+    ],
+    "context": "d d ​ t ​ ( E σ ​ ( t ) ) = 2 ​ ∫ U ​ U t ​ 𝑑 x + 2 ​ ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x − 2 ​ μ k + 1 ​ ∫ U k + 1 ​ ∂ t U ​ 𝑑 x . \\frac{d}{dt}(E_{\\sigma}(t))=2\\int UU_{t}dx+2\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx-\\frac{2\\mu}{k+1}\\int U^{k+1}\\partial_{t}Udx. (4.2) Applying the operator e σ ​ | D x | e^{\\sigma|D_{x}|} to the gKdV equation ( 1.1 ) equation, we get ∂ t U + ∂ x 3 U + μ ​ U k ​ ∂ x U = F ⁡ ( U ) , \\partial_{t}U+\\partial_{x}^{3}U+\\mu U^{k}\\partial_{x}U=F(U), (4.3) where F ⁡ ( U ) F(U) is given by F ⁡ ( U ) = μ k + 1 ​ ∂ x [ U k + 1 − e σ ​ | D x | ​ ( ( e − σ ​ | D x | ​ U ) k + 1 ) ] . F(U)=\\frac{\\mu}{k+1}\\partial_{x}\\left[U^{k+1}-e^{\\sigma|D_{x}|}\\big((e^{-\\sigma|D_{x}|}U)^{k+1}\\big)\\right]. (4.4) Using ( 4.3 ) in each term of ( 4.2 ), one has ∫ U ​ ∂ t U ​ 𝑑 x = − ∫ U ∂ x 3 U d x − μ k + 2 ∂ x ( U k + 2 ) d x + ∫ U F ( U ) d x , ∫ ∂ x U ​ ∂ x ( ∂ t U ) ​ 𝑑 x = − ∫ ∂ x U ∂ x 4 U d x − μ ∫ ∂ x U ∂ x ( U k ∂ x U ) d x + ∫ ∂ x U ∂ x ( F ( U ) ) d x , ∫ U k + 1 ​ ∂ t U ​ 𝑑 x = − ∫ U k + 1 ∂ x 3 U d x − μ ∫ U k + 1 ∂ x U d x + ∫ U k + 1 F ( U ) d x . \\begin{split}\\int U\\partial_{t}Udx&=-\\int U\\partial_{x}^{3}Udx-\\frac{\\mu}{k+2}\\partial_{x}(U^{k+2})dx+\\int UF(U)dx,\\\\\n\\int\\partial_{x}U\\partial_{x}(\\partial_{t}U)dx&=-\\int\\partial_{x}U\\partial_{x}^{4}Udx-\\mu\\int\\partial_{x}U\\partial_{x}(U^{k}\\partial_{x}U)dx+\\int\\partial_{x}U\\partial_{x}(F(U))dx,\\\\\n\\int U^{k+1}\\partial_{t}Udx&=-\\int U^{k+1}\\partial_{x}^{3}Udx-\\mu\\int U^{k+1}\\partial_{x}Udx+\\int U^{k+1}F(U)dx.\\end{split} We can assume that U U and all its partial derivatives tend to zero as | x | → ∞ |x|\\rightarrow\\infty (see [ 25 ] for a detailed argument) and it follows from integration by parts that ∫ U ​ ∂ t U ​ 𝑑 x \\displaystyle\\int U\\partial_{t}Udx = ∫ U ​ F ​ ( U ) ​ 𝑑 x , \\displaystyle=\\int UF(U)dx, (4.5) "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}R_{\\sigma}(t^{\\prime})=&\\,\\,2\\int\\int\\chi_{[0,\\,t^{\\prime}]}UF(U)dxdt+2\\int\\int\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U\\partial_{x}(F(U))dxdt\\,\\,-\\\\\n&-\\frac{2\\mu}{k+1}\\int\\int\\chi_{[0,\\,t^{\\prime}]}U^{k+1}F(U)dxdt.\\end{split}"
+    ],
+    "context": "R σ ​ ( t ′ ) = 2 ​ ∫ ∫ χ [ 0 , t ′ ] ​ U ​ F ​ ( U ) ​ d x ​ d t + 2 ​ ∫ ∫ χ [ 0 , t ′ ] ​ ∂ x U ​ ∂ x ( F ⁡ ( U ) ) ​ d x ​ d t − − 2 ​ μ k + 1 ∫ ∫ χ [ 0 , t ′ ] U k + 1 F ( U ) d x d t . \\begin{split}R_{\\sigma}(t^{\\prime})=&\\,\\,2\\int\\int\\chi_{[0,\\,t^{\\prime}]}UF(U)dxdt+2\\int\\int\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U\\partial_{x}(F(U))dxdt\\,\\,-\\\\\n&-\\frac{2\\mu}{k+1}\\int\\int\\chi_{[0,\\,t^{\\prime}]}U^{k+1}F(U)dxdt.\\end{split} (4.10)"
+  },
+  {
+    "location": "S4.E11",
+    "latex": [
+      "||F(U)||_{L_{x}^{2}L_{t}^{2}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1},"
+    ],
+    "context": "Let F F be as defined in ( 4.4 ) and σ > 0 \\sigma>0 . Then, for any b = 1 2 + ϵ b=\\frac{1}{2}+\\epsilon , 0 < ϵ ≪ 1 0<\\epsilon\\ll 1 , and for all α ∈ [ 0 , k + 4 2 ​ k ) \\alpha\\in\\left[0,\\frac{k+4}{2k}\\right) , ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 , ||F(U)||_{L_{x}^{2}L_{t}^{2}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1}, (4.11) ‖ ∂ x ( F ⁡ ( U ) ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 ||\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1} (4.12) for some constant C > 0 C>0 independent on σ \\sigma ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||F(U)||_{L_{x}^{2}L_{t}^{2}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1},"
+    ],
+    "context": "‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 , ||F(U)||_{L_{x}^{2}L_{t}^{2}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1}, (4.11)"
+  },
+  {
+    "location": "S4.E12",
+    "latex": [
+      "||\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1}"
+    ],
+    "context": "Let F F be as defined in ( 4.4 ) and σ > 0 \\sigma>0 . Then, for any b = 1 2 + ϵ b=\\frac{1}{2}+\\epsilon , 0 < ϵ ≪ 1 0<\\epsilon\\ll 1 , and for all α ∈ [ 0 , k + 4 2 ​ k ) \\alpha\\in\\left[0,\\frac{k+4}{2k}\\right) , ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 , ||F(U)||_{L_{x}^{2}L_{t}^{2}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1}, (4.11) ‖ ∂ x ( F ⁡ ( U ) ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 ||\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1} (4.12) for some constant C > 0 C>0 independent on σ \\sigma ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "||\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1}"
+    ],
+    "context": "‖ ∂ x ( F ⁡ ( U ) ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 ||\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,\\,b}}^{k+1} (4.12)"
+  },
+  {
+    "location": "S4.E13",
+    "latex": [
+      "|\\widehat{F(U)}(\\xi,\\tau)|\\leq C|\\xi|\\int_{*}\\big(1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\big)|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|,"
+    ],
+    "context": "Observe that | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ | ξ | ​ ∫ ∗ ( 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ) ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | , |\\widehat{F(U)}(\\xi,\\tau)|\\leq C|\\xi|\\int_{*}\\big(1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\big)|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|, (4.13) where ∗ * denotes the integral over the set ξ = ξ 1 + ⋯ + ξ k + 1 \\xi=\\xi_{1}+\\cdots+\\xi_{k+1} and τ = τ 1 + ⋯ + τ k + 1 \\tau=\\tau_{1}+\\cdots+\\tau_{k+1} ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "|\\widehat{F(U)}(\\xi,\\tau)|\\leq C|\\xi|\\int_{*}\\big(1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\big)|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|,"
+    ],
+    "context": "| F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ | ξ | ​ ∫ ∗ ( 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ) ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | , |\\widehat{F(U)}(\\xi,\\tau)|\\leq C|\\xi|\\int_{*}\\big(1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\big)|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|, (4.13)"
+  },
+  {
+    "location": "S4.Ex2",
+    "latex": [
+      "e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1],"
+    ],
+    "context": "Now, from the inequality e x − 1 ≤ x α ​ e x , ∀ x ≥ 0 ​ and ​ α ∈ [ 0 , 1 ] , e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1], we get 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ σ α ​ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}. (4.14) Without loss of generality, we can assume that | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| . A simple calculation shows | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ≤ 2 ​ k ​ | ξ k | , |\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|, and consequently, the estimate ( 4.14 ) yields 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ C ​ σ α ​ | ξ k | α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}. (4.15) Using ( 4.15 ) in ( 4.13 ), we have | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ σ α ​ | ξ | ​ ∫ ∗ | ξ k | α ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | . |\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|. (4.16) Moreover, one has | ξ | ​ | ξ k | α ≤ ( k + 1 ) ​ | ξ k + 1 | ​ | ξ k | α . |\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}. (4.17) Now, using ( 4.17 ) in ( 4.16 ) and an use of Plancherel’s identity implies that ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ | | ∫ ∗ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k − 1 , τ k − 1 ) ​ ‖ D x α ​ U ^ ​ ( ξ k , τ k ) ‖ ​ D x ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | w 1 ⋯ w k + 1 | | L x 2 ​ L t 2 , \\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1],"
+    ],
+    "context": "e x − 1 ≤ x α ​ e x , ∀ x ≥ 0 ​ and ​ α ∈ [ 0 , 1 ] , e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1],"
+  },
+  {
+    "location": "S4.E14",
+    "latex": [
+      "1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}."
+    ],
+    "context": "Now, from the inequality e x − 1 ≤ x α ​ e x , ∀ x ≥ 0 ​ and ​ α ∈ [ 0 , 1 ] , e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1], we get 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ σ α ​ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}. (4.14) Without loss of generality, we can assume that | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| . A simple calculation shows | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ≤ 2 ​ k ​ | ξ k | , |\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|, and consequently, the estimate ( 4.14 ) yields 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ C ​ σ α ​ | ξ k | α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}. (4.15) Using ( 4.15 ) in ( 4.13 ), we have | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ σ α ​ | ξ | ​ ∫ ∗ | ξ k | α ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | . |\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|. (4.16) Moreover, one has | ξ | ​ | ξ k | α ≤ ( k + 1 ) ​ | ξ k + 1 | ​ | ξ k | α . |\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}. (4.17) Now, using ( 4.17 ) in ( 4.16 ) and an use of Plancherel’s identity implies that ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ | | ∫ ∗ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k − 1 , τ k − 1 ) ​ ‖ D x α ​ U ^ ​ ( ξ k , τ k ) ‖ ​ D x ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | w 1 ⋯ w k + 1 | | L x 2 ​ L t 2 , \\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}."
+    ],
+    "context": "1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ σ α ​ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}. (4.14)"
+  },
+  {
+    "location": "S4.Ex3",
+    "latex": [
+      "|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|,"
+    ],
+    "context": "Now, from the inequality e x − 1 ≤ x α ​ e x , ∀ x ≥ 0 ​ and ​ α ∈ [ 0 , 1 ] , e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1], we get 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ σ α ​ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}. (4.14) Without loss of generality, we can assume that | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| . A simple calculation shows | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ≤ 2 ​ k ​ | ξ k | , |\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|, and consequently, the estimate ( 4.14 ) yields 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ C ​ σ α ​ | ξ k | α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}. (4.15) Using ( 4.15 ) in ( 4.13 ), we have | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ σ α ​ | ξ | ​ ∫ ∗ | ξ k | α ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | . |\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|. (4.16) Moreover, one has | ξ | ​ | ξ k | α ≤ ( k + 1 ) ​ | ξ k + 1 | ​ | ξ k | α . |\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}. (4.17) Now, using ( 4.17 ) in ( 4.16 ) and an use of Plancherel’s identity implies that ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ | | ∫ ∗ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k − 1 , τ k − 1 ) ​ ‖ D x α ​ U ^ ​ ( ξ k , τ k ) ‖ ​ D x ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | w 1 ⋯ w k + 1 | | L x 2 ​ L t 2 , \\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|,"
+    ],
+    "context": "| ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ≤ 2 ​ k ​ | ξ k | , |\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|,"
+  },
+  {
+    "location": "S4.E15",
+    "latex": [
+      "1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}."
+    ],
+    "context": "Now, from the inequality e x − 1 ≤ x α ​ e x , ∀ x ≥ 0 ​ and ​ α ∈ [ 0 , 1 ] , e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1], we get 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ σ α ​ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}. (4.14) Without loss of generality, we can assume that | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| . A simple calculation shows | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ≤ 2 ​ k ​ | ξ k | , |\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|, and consequently, the estimate ( 4.14 ) yields 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ C ​ σ α ​ | ξ k | α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}. (4.15) Using ( 4.15 ) in ( 4.13 ), we have | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ σ α ​ | ξ | ​ ∫ ∗ | ξ k | α ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | . |\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|. (4.16) Moreover, one has | ξ | ​ | ξ k | α ≤ ( k + 1 ) ​ | ξ k + 1 | ​ | ξ k | α . |\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}. (4.17) Now, using ( 4.17 ) in ( 4.16 ) and an use of Plancherel’s identity implies that ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ | | ∫ ∗ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k − 1 , τ k − 1 ) ​ ‖ D x α ​ U ^ ​ ( ξ k , τ k ) ‖ ​ D x ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | w 1 ⋯ w k + 1 | | L x 2 ​ L t 2 , \\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}."
+    ],
+    "context": "1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ C ​ σ α ​ | ξ k | α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}. (4.15)"
+  },
+  {
+    "location": "S4.E16",
+    "latex": [
+      "|\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|."
+    ],
+    "context": "Now, from the inequality e x − 1 ≤ x α ​ e x , ∀ x ≥ 0 ​ and ​ α ∈ [ 0 , 1 ] , e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1], we get 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ σ α ​ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}. (4.14) Without loss of generality, we can assume that | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| . A simple calculation shows | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ≤ 2 ​ k ​ | ξ k | , |\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|, and consequently, the estimate ( 4.14 ) yields 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ C ​ σ α ​ | ξ k | α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}. (4.15) Using ( 4.15 ) in ( 4.13 ), we have | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ σ α ​ | ξ | ​ ∫ ∗ | ξ k | α ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | . |\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|. (4.16) Moreover, one has | ξ | ​ | ξ k | α ≤ ( k + 1 ) ​ | ξ k + 1 | ​ | ξ k | α . |\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}. (4.17) Now, using ( 4.17 ) in ( 4.16 ) and an use of Plancherel’s identity implies that ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ | | ∫ ∗ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k − 1 , τ k − 1 ) ​ ‖ D x α ​ U ^ ​ ( ξ k , τ k ) ‖ ​ D x ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | w 1 ⋯ w k + 1 | | L x 2 ​ L t 2 , \\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "|\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|."
+    ],
+    "context": "| F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ σ α ​ | ξ | ​ ∫ ∗ | ξ k | α ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | . |\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|. (4.16)"
+  },
+  {
+    "location": "S4.E17",
+    "latex": [
+      "|\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}."
+    ],
+    "context": "Now, from the inequality e x − 1 ≤ x α ​ e x , ∀ x ≥ 0 ​ and ​ α ∈ [ 0 , 1 ] , e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1], we get 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ σ α ​ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}. (4.14) Without loss of generality, we can assume that | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| . A simple calculation shows | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ≤ 2 ​ k ​ | ξ k | , |\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|, and consequently, the estimate ( 4.14 ) yields 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ C ​ σ α ​ | ξ k | α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}. (4.15) Using ( 4.15 ) in ( 4.13 ), we have | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ σ α ​ | ξ | ​ ∫ ∗ | ξ k | α ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | . |\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|. (4.16) Moreover, one has | ξ | ​ | ξ k | α ≤ ( k + 1 ) ​ | ξ k + 1 | ​ | ξ k | α . |\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}. (4.17) Now, using ( 4.17 ) in ( 4.16 ) and an use of Plancherel’s identity implies that ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ | | ∫ ∗ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k − 1 , τ k − 1 ) ​ ‖ D x α ​ U ^ ​ ( ξ k , τ k ) ‖ ​ D x ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | w 1 ⋯ w k + 1 | | L x 2 ​ L t 2 , \\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "|\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}."
+    ],
+    "context": "| ξ | ​ | ξ k | α ≤ ( k + 1 ) ​ | ξ k + 1 | ​ | ξ k | α . |\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}. (4.17)"
+  },
+  {
+    "location": "S4.E18",
+    "latex": [
+      "\\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},\\tau_{k-1})||\\widehat{D_{x}^{\\alpha}U}(\\xi_{k},\\tau_{k})||\\widehat{D_{x}U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&=C\\sigma^{\\alpha}||w_{1}\\cdots w_{k+1}||_{L_{x}^{2}L_{t}^{2}},\\end{split}"
+    ],
+    "context": "Now, from the inequality e x − 1 ≤ x α ​ e x , ∀ x ≥ 0 ​ and ​ α ∈ [ 0 , 1 ] , e^{x}-1\\leq x^{\\alpha}e^{x},\\quad\\forall\\,x\\geq 0\\text{ and }\\alpha\\in[0,\\,1], we get 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ σ α ​ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq\\sigma^{\\alpha}(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)^{\\alpha}. (4.14) Without loss of generality, we can assume that | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| . A simple calculation shows | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ≤ 2 ​ k ​ | ξ k | , |\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|\\leq 2k|\\xi_{k}|, and consequently, the estimate ( 4.14 ) yields 1 − e − σ ⁡ ( | ξ 1 | + ⋯ + | ξ k + 1 | − | ξ | ) ≤ C ​ σ α ​ | ξ k | α . 1-e^{-\\sigma(|\\xi_{1}|+\\cdots+|\\xi_{k+1}|-|\\xi|)}\\leq C\\sigma^{\\alpha}|\\xi_{k}|^{\\alpha}. (4.15) Using ( 4.15 ) in ( 4.13 ), we have | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ≤ C ​ σ α ​ | ξ | ​ ∫ ∗ | ξ k | α ​ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | . |\\widehat{F(U)}(\\xi,\\tau)|\\leq C\\sigma^{\\alpha}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|. (4.16) Moreover, one has | ξ | ​ | ξ k | α ≤ ( k + 1 ) ​ | ξ k + 1 | ​ | ξ k | α . |\\xi||\\xi_{k}|^{\\alpha}\\leq(k+1)|\\xi_{k+1}||\\xi_{k}|^{\\alpha}. (4.17) Now, using ( 4.17 ) in ( 4.16 ) and an use of Plancherel’s identity implies that ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ | | ∫ ∗ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k − 1 , τ k − 1 ) ​ ‖ D x α ​ U ^ ​ ( ξ k , τ k ) ‖ ​ D x ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | w 1 ⋯ w k + 1 | | L x 2 ​ L t 2 , \\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},\\tau_{k-1})||\\widehat{D_{x}^{\\alpha}U}(\\xi_{k},\\tau_{k})||\\widehat{D_{x}U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&=C\\sigma^{\\alpha}||w_{1}\\cdots w_{k+1}||_{L_{x}^{2}L_{t}^{2}},\\end{split}"
+    ],
+    "context": "‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C ​ σ α ​ | | ∫ ∗ | U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k − 1 , τ k − 1 ) ​ ‖ D x α ​ U ^ ​ ( ξ k , τ k ) ‖ ​ D x ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | w 1 ⋯ w k + 1 | | L x 2 ​ L t 2 , \\begin{split}\\!\\!\\!\\!\\!\\!\\!||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\int_{*}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k-1},\\tau_{k-1})||\\widehat{D_{x}^{\\alpha}U}(\\xi_{k},\\tau_{k})||\\widehat{D_{x}U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&=C\\sigma^{\\alpha}||w_{1}\\cdots w_{k+1}||_{L_{x}^{2}L_{t}^{2}},\\end{split} (4.18)"
+  },
+  {
+    "location": "S4.Ex4",
+    "latex": [
+      "\\begin{split}||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C{\\sigma}^{\\alpha}\\prod_{i=1}^{k-3}||w_{i}||_{X^{\\frac{1}{2}+,b}}||w_{k-2}||_{X^{0,b}}\\cdots||w_{k+1}||_{X^{0,b}}\\\\\n&=C{\\sigma}^{\\alpha}\\left(\\prod_{i=1}^{k-3}||U||_{X^{\\frac{1}{2}+,b}}\\right)||U||^{2}_{X^{0,b}}||D_{x}^{\\alpha}U||_{X^{0,b}}||D_{x}U||_{X^{0,b}}\\\\\n&\\leq C{\\sigma}^{\\alpha}||U||_{X^{1,b}}^{k+1}.\\end{split}"
+    ],
+    "context": "By applying Lemma 2.6 it follows from ( 4.18 ) that ‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C σ α ∏ i = 1 k − 3 | | w i | | X 1 2 + , b | | w k − 2 | | X 0 , b ⋯ | | w k + 1 | | X 0 , b = C ​ σ α ​ ( ∏ i = 1 k − 3 ‖ U ‖ X 1 2 + , b ) ​ ‖ U ‖ X 0 , b 2 ​ ‖ D x α ​ U ‖ X 0 , b | | D x ​ U | | X 0 , b ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 . \\begin{split}||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C{\\sigma}^{\\alpha}\\prod_{i=1}^{k-3}||w_{i}||_{X^{\\frac{1}{2}+,b}}||w_{k-2}||_{X^{0,b}}\\cdots||w_{k+1}||_{X^{0,b}}\\\\\n&=C{\\sigma}^{\\alpha}\\left(\\prod_{i=1}^{k-3}||U||_{X^{\\frac{1}{2}+,b}}\\right)||U||^{2}_{X^{0,b}}||D_{x}^{\\alpha}U||_{X^{0,b}}||D_{x}U||_{X^{0,b}}\\\\\n&\\leq C{\\sigma}^{\\alpha}||U||_{X^{1,b}}^{k+1}.\\end{split} This completes the proof of ( 4.11 )."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C{\\sigma}^{\\alpha}\\prod_{i=1}^{k-3}||w_{i}||_{X^{\\frac{1}{2}+,b}}||w_{k-2}||_{X^{0,b}}\\cdots||w_{k+1}||_{X^{0,b}}\\\\\n&=C{\\sigma}^{\\alpha}\\left(\\prod_{i=1}^{k-3}||U||_{X^{\\frac{1}{2}+,b}}\\right)||U||^{2}_{X^{0,b}}||D_{x}^{\\alpha}U||_{X^{0,b}}||D_{x}U||_{X^{0,b}}\\\\\n&\\leq C{\\sigma}^{\\alpha}||U||_{X^{1,b}}^{k+1}.\\end{split}"
+    ],
+    "context": "‖ F ⁡ ( U ) ‖ L x 2 ​ L t 2 ≤ C σ α ∏ i = 1 k − 3 | | w i | | X 1 2 + , b | | w k − 2 | | X 0 , b ⋯ | | w k + 1 | | X 0 , b = C ​ σ α ​ ( ∏ i = 1 k − 3 ‖ U ‖ X 1 2 + , b ) ​ ‖ U ‖ X 0 , b 2 ​ ‖ D x α ​ U ‖ X 0 , b | | D x ​ U | | X 0 , b ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 . \\begin{split}||F(U)||_{L_{x}^{2}L_{t}^{2}}&\\leq C{\\sigma}^{\\alpha}\\prod_{i=1}^{k-3}||w_{i}||_{X^{\\frac{1}{2}+,b}}||w_{k-2}||_{X^{0,b}}\\cdots||w_{k+1}||_{X^{0,b}}\\\\\n&=C{\\sigma}^{\\alpha}\\left(\\prod_{i=1}^{k-3}||U||_{X^{\\frac{1}{2}+,b}}\\right)||U||^{2}_{X^{0,b}}||D_{x}^{\\alpha}U||_{X^{0,b}}||D_{x}U||_{X^{0,b}}\\\\\n&\\leq C{\\sigma}^{\\alpha}||U||_{X^{1,b}}^{k+1}.\\end{split}"
+  },
+  {
+    "location": "S4.E19",
+    "latex": [
+      "\\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&=||\\langle\\tau-\\xi^{3}\\rangle^{b-1}|\\xi||\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq||\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}.\\end{split}"
+    ],
+    "context": "To prove ( 4.12 ), first observe that for 0 ≤ j ≤ 1 0\\leq j\\leq 1 , one has ⟨ ξ ⟩ − j ≤ | ξ | − j \\langle\\xi\\rangle^{-j}\\leq|\\xi|^{-j} for all ξ ≠ 0 \\xi\\neq 0 . Using this fact, we obtain ‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 = ‖ ⟨ τ − ξ 3 ⟩ b − 1 ​ | ξ | ​ | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ‖ L ξ 2 ​ L τ 2 ≤ ‖ ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ | 1 − j ​ | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ‖ L ξ 2 ​ L τ 2 . \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&=||\\langle\\tau-\\xi^{3}\\rangle^{b-1}|\\xi||\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq||\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}.\\end{split} (4.19) Assuming | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| , one has | ξ | 1 − j ≤ ( k + 1 ) 1 − j ​ | ξ k + 1 | 1 − j |\\xi|^{1-j}\\leq(k+1)^{1-j}|\\xi_{k+1}|^{1-j} and using ( 4.16 ), the estimate ( 4.19 ) yields ‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ | | ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ | 1 − j ​ | ξ ​ | ∫ ∗ | ξ k | α | ​ U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 ≤ C ​ σ α ​ | | ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ ​ | ∫ ∗ | ξ k | α ​ | ξ k + 1 | 1 − j | ​ U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | ∂ x ( v 1 ⋯ v k + 1 ) | | X j , b − 1 , \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\xi_{k+1}|^{1-j}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&=||\\langle\\tau-\\xi^{3}\\rangle^{b-1}|\\xi||\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq||\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}.\\end{split}"
+    ],
+    "context": "‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 = ‖ ⟨ τ − ξ 3 ⟩ b − 1 ​ | ξ | ​ | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ‖ L ξ 2 ​ L τ 2 ≤ ‖ ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ | 1 − j ​ | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ‖ L ξ 2 ​ L τ 2 . \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&=||\\langle\\tau-\\xi^{3}\\rangle^{b-1}|\\xi||\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq||\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}.\\end{split} (4.19)"
+  },
+  {
+    "location": "S4.E20",
+    "latex": [
+      "\\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\xi_{k+1}|^{1-j}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&=C\\sigma^{\\alpha}||\\partial_{x}(v_{1}\\cdots v_{k+1})||_{X^{j,\\,b-1}},\\end{split}"
+    ],
+    "context": "To prove ( 4.12 ), first observe that for 0 ≤ j ≤ 1 0\\leq j\\leq 1 , one has ⟨ ξ ⟩ − j ≤ | ξ | − j \\langle\\xi\\rangle^{-j}\\leq|\\xi|^{-j} for all ξ ≠ 0 \\xi\\neq 0 . Using this fact, we obtain ‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 = ‖ ⟨ τ − ξ 3 ⟩ b − 1 ​ | ξ | ​ | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ‖ L ξ 2 ​ L τ 2 ≤ ‖ ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ | 1 − j ​ | F ⁡ ( U ) ^ ​ ( ξ , τ ) | ‖ L ξ 2 ​ L τ 2 . \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&=||\\langle\\tau-\\xi^{3}\\rangle^{b-1}|\\xi||\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq||\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\widehat{F(U)}(\\xi,\\tau)|||_{L_{\\xi}^{2}L_{\\tau}^{2}}.\\end{split} (4.19) Assuming | ξ 1 | ≤ ⋯ ≤ | ξ k + 1 | |\\xi_{1}|\\leq\\cdots\\leq|\\xi_{k+1}| , one has | ξ | 1 − j ≤ ( k + 1 ) 1 − j ​ | ξ k + 1 | 1 − j |\\xi|^{1-j}\\leq(k+1)^{1-j}|\\xi_{k+1}|^{1-j} and using ( 4.16 ), the estimate ( 4.19 ) yields ‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ | | ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ | 1 − j ​ | ξ ​ | ∫ ∗ | ξ k | α | ​ U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 ≤ C ​ σ α ​ | | ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ ​ | ∫ ∗ | ξ k | α ​ | ξ k + 1 | 1 − j | ​ U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | ∂ x ( v 1 ⋯ v k + 1 ) | | X j , b − 1 , \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\xi_{k+1}|^{1-j}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\xi_{k+1}|^{1-j}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&=C\\sigma^{\\alpha}||\\partial_{x}(v_{1}\\cdots v_{k+1})||_{X^{j,\\,b-1}},\\end{split}"
+    ],
+    "context": "‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ | | ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ | 1 − j ​ | ξ ​ | ∫ ∗ | ξ k | α | ​ U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 ≤ C ​ σ α ​ | | ⟨ τ − ξ 3 ⟩ b − 1 ​ ⟨ ξ ⟩ j ​ | ξ ​ | ∫ ∗ | ξ k | α ​ | ξ k + 1 | 1 − j | ​ U ^ ​ ( ξ 1 , τ 1 ) ​ | ⋯ | ​ U ^ ​ ( ξ k + 1 , τ k + 1 ) | | | L ξ 2 ​ L τ 2 = C σ α | | ∂ x ( v 1 ⋯ v k + 1 ) | | X j , b − 1 , \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|^{1-j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left|\\left|\\langle\\tau-\\xi^{3}\\rangle^{b-1}\\langle\\xi\\rangle^{j}|\\xi|\\int_{*}|\\xi_{k}|^{\\alpha}|\\xi_{k+1}|^{1-j}|\\widehat{U}(\\xi_{1},\\tau_{1})|\\cdots|\\widehat{U}(\\xi_{k+1},\\tau_{k+1})|\\right|\\right|_{L_{\\xi}^{2}L_{\\tau}^{2}}\\\\\n&=C\\sigma^{\\alpha}||\\partial_{x}(v_{1}\\cdots v_{k+1})||_{X^{j,\\,b-1}},\\end{split} (4.20)"
+  },
+  {
+    "location": "S4.E21",
+    "latex": [
+      "\\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}||v_{1}||_{X^{j,\\,b}}\\cdots||v_{k+1}||_{X^{j,\\,b}}\\\\\n&=C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{j,\\,b}}\\right)||D_{x}^{\\alpha}U||_{X^{j,\\,b}}||D_{x}^{1-j}U||_{X^{j,\\,b}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{1,\\,b}}\\right)||U||_{X^{j+\\alpha,\\,b}}||U||_{X^{1,\\,b}}.\\\\\n\\end{split}"
+    ],
+    "context": "For every j > k − 4 2 ​ k j>\\frac{k-4}{2k} , we can use the estimate ( 2.7 ) with b = 1 2 + ϵ b=\\frac{1}{2}+\\epsilon , to obtain from ( 4.20 ) that ‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C σ α | | v 1 | | X j , b ⋯ | | v k + 1 | | X j , b = C ​ σ α ​ ( ∏ i = 1 k − 1 ‖ U ‖ X j , b ) ​ ‖ D x α ​ U ‖ X j , b | | D x 1 − j ​ U | | X j , b ≤ C ​ σ α ​ ( ∏ i = 1 k − 1 ‖ U ‖ X 1 , b ) ​ ‖ U ‖ X j + α , b | | U | | X 1 , b . \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}||v_{1}||_{X^{j,\\,b}}\\cdots||v_{k+1}||_{X^{j,\\,b}}\\\\\n&=C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{j,\\,b}}\\right)||D_{x}^{\\alpha}U||_{X^{j,\\,b}}||D_{x}^{1-j}U||_{X^{j,\\,b}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{1,\\,b}}\\right)||U||_{X^{j+\\alpha,\\,b}}||U||_{X^{1,\\,b}}.\\\\\n\\end{split} (4.21) Now, we choose j > k − 4 2 ​ k j>\\frac{k-4}{2k} and α ∈ [ 0 , 1 ] \\alpha\\in[0,1] such that j + α ≤ 1 j+\\alpha\\leq 1 . Indeed, for δ > 0 \\delta>0 arbitrarialy small, considering j = k − 4 2 ​ k + δ j=\\frac{k-4}{2k}+\\delta we get j + α ≤ 1 j+\\alpha\\leq 1 if we choose α ≤ k + 4 2 ​ k − δ \\alpha\\leq\\frac{k+4}{2k}-\\delta . Therefore, for 0 < α ≤ k + 4 2 ​ k − δ 0<\\alpha\\leq\\frac{k+4}{2k}-\\delta , from ( 4.21 ) one has ‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 , ||\\partial_{x}F(U)||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,b}}^{k+1}, as desired.\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}||v_{1}||_{X^{j,\\,b}}\\cdots||v_{k+1}||_{X^{j,\\,b}}\\\\\n&=C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{j,\\,b}}\\right)||D_{x}^{\\alpha}U||_{X^{j,\\,b}}||D_{x}^{1-j}U||_{X^{j,\\,b}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{1,\\,b}}\\right)||U||_{X^{j+\\alpha,\\,b}}||U||_{X^{1,\\,b}}.\\\\\n\\end{split}"
+    ],
+    "context": "‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C σ α | | v 1 | | X j , b ⋯ | | v k + 1 | | X j , b = C ​ σ α ​ ( ∏ i = 1 k − 1 ‖ U ‖ X j , b ) ​ ‖ D x α ​ U ‖ X j , b | | D x 1 − j ​ U | | X j , b ≤ C ​ σ α ​ ( ∏ i = 1 k − 1 ‖ U ‖ X 1 , b ) ​ ‖ U ‖ X j + α , b | | U | | X 1 , b . \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}||v_{1}||_{X^{j,\\,b}}\\cdots||v_{k+1}||_{X^{j,\\,b}}\\\\\n&=C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{j,\\,b}}\\right)||D_{x}^{\\alpha}U||_{X^{j,\\,b}}||D_{x}^{1-j}U||_{X^{j,\\,b}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{1,\\,b}}\\right)||U||_{X^{j+\\alpha,\\,b}}||U||_{X^{1,\\,b}}.\\\\\n\\end{split} (4.21)"
+  },
+  {
+    "location": "S4.Ex5",
+    "latex": [
+      "||\\partial_{x}F(U)||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,b}}^{k+1},"
+    ],
+    "context": "For every j > k − 4 2 ​ k j>\\frac{k-4}{2k} , we can use the estimate ( 2.7 ) with b = 1 2 + ϵ b=\\frac{1}{2}+\\epsilon , to obtain from ( 4.20 ) that ‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C σ α | | v 1 | | X j , b ⋯ | | v k + 1 | | X j , b = C ​ σ α ​ ( ∏ i = 1 k − 1 ‖ U ‖ X j , b ) ​ ‖ D x α ​ U ‖ X j , b | | D x 1 − j ​ U | | X j , b ≤ C ​ σ α ​ ( ∏ i = 1 k − 1 ‖ U ‖ X 1 , b ) ​ ‖ U ‖ X j + α , b | | U | | X 1 , b . \\begin{split}||\\partial_{x}F(U)||_{X^{0,\\,b-1}}&\\leq C\\sigma^{\\alpha}||v_{1}||_{X^{j,\\,b}}\\cdots||v_{k+1}||_{X^{j,\\,b}}\\\\\n&=C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{j,\\,b}}\\right)||D_{x}^{\\alpha}U||_{X^{j,\\,b}}||D_{x}^{1-j}U||_{X^{j,\\,b}}\\\\\n&\\leq C\\sigma^{\\alpha}\\left(\\prod_{i=1}^{k-1}||U||_{X^{1,\\,b}}\\right)||U||_{X^{j+\\alpha,\\,b}}||U||_{X^{1,\\,b}}.\\\\\n\\end{split} (4.21) Now, we choose j > k − 4 2 ​ k j>\\frac{k-4}{2k} and α ∈ [ 0 , 1 ] \\alpha\\in[0,1] such that j + α ≤ 1 j+\\alpha\\leq 1 . Indeed, for δ > 0 \\delta>0 arbitrarialy small, considering j = k − 4 2 ​ k + δ j=\\frac{k-4}{2k}+\\delta we get j + α ≤ 1 j+\\alpha\\leq 1 if we choose α ≤ k + 4 2 ​ k − δ \\alpha\\leq\\frac{k+4}{2k}-\\delta . Therefore, for 0 < α ≤ k + 4 2 ​ k − δ 0<\\alpha\\leq\\frac{k+4}{2k}-\\delta , from ( 4.21 ) one has ‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 , ||\\partial_{x}F(U)||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,b}}^{k+1}, as desired.\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "||\\partial_{x}F(U)||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,b}}^{k+1},"
+    ],
+    "context": "‖ ∂ x F ⁡ ( U ) ‖ X 0 , b − 1 ≤ C ​ σ α ​ ‖ U ‖ X 1 , b k + 1 , ||\\partial_{x}F(U)||_{X^{0,\\,b-1}}\\leq C\\sigma^{\\alpha}||U||_{X^{1,b}}^{k+1},"
+  },
+  {
+    "location": "S4.E22",
+    "latex": [
+      "\\sup_{t\\in[0,\\,T]}E_{\\sigma}(t)\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}(1+||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k})."
+    ],
+    "context": "Let σ > 0 \\sigma>0 and α ∈ [ 0 , k + 4 2 ​ k ) \\alpha\\in[0,\\,\\frac{k+4}{2k}) . Then for any b = 1 2 + ϵ b=\\frac{1}{2}+\\epsilon , 0 < ϵ ≪ 1 0<\\epsilon\\ll 1 , there exists C > 0 C>0 such that for any solution u ∈ X T σ , 1 , b u\\in X_{T}^{\\sigma,\\,1,\\,b} to the IVP ( 1.1 ) in the interval [ 0 , T ] [0,\\,T] , we have sup t ∈ [ 0 , T ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ ‖ u ‖ X T σ , 1 , b k + 2 ​ ( 1 + ‖ u ‖ X T σ , 1 , b k ) . \\sup_{t\\in[0,\\,T]}E_{\\sigma}(t)\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}(1+||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k}). (4.22)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\sup_{t\\in[0,\\,T]}E_{\\sigma}(t)\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}(1+||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k})."
+    ],
+    "context": "sup t ∈ [ 0 , T ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ ‖ u ‖ X T σ , 1 , b k + 2 ​ ( 1 + ‖ u ‖ X T σ , 1 , b k ) . \\sup_{t\\in[0,\\,T]}E_{\\sigma}(t)\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}(1+||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k}). (4.22)"
+  },
+  {
+    "location": "S4.E23",
+    "latex": [
+      "\\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}UF(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}\\end{split}"
+    ],
+    "context": "Recalling ( 4.9 ) and ( 4.10 ), we have to estimate each term of | R σ ​ ( t ′ ) | |R_{\\sigma}(t^{\\prime})| for all 0 < t ′ ≤ T 0<t^{\\prime}\\leq T . For the first and the third terms in ( 4.10 ) we use the Cauchy-Schwarz inequality, Lemmas 2.2 and 2.4 and the estimate ( 4.11 ) restricted to the time slab and obtain that for any b = 1 2 + ϵ b=\\frac{1}{2}+\\epsilon , 0 < ϵ ≪ 1 0<\\epsilon\\ll 1 , there exists C > 0 C>0 such that | ∫ ∫ ⁡ χ [ 0 , t ′ ] ​ U ​ F ​ ( U ) ​ d x ​ d t | ≤ ‖ χ [ 0 , t ′ ] ​ U ‖ L x 2 ​ L t 2 ​ ‖ χ [ 0 , t ′ ] ​ F ​ ( U ) ‖ L x 2 ​ L t 2 ≤ ‖ U ‖ X T 0 , 0 | | F ⁡ ( U ) | | X T 0 , 0 ≤ C ​ σ α ​ ‖ u ‖ X T σ , 1 , b k + 2 \\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}UF(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}\\end{split} (4.23) and | ∫ ∫ ⁡ χ [ 0 , t ′ ] ​ U k + 1 ​ F ​ ( U ) ​ d x ​ d t | ≤ ‖ χ [ 0 , t ′ ] ​ U k + 1 ‖ L x 2 ​ L t 2 ​ ‖ χ [ 0 , t ′ ] ​ F ​ ( U ) ‖ L x 2 ​ L t 2 ≤ ‖ U k + 1 ‖ X T 0 , 0 | | F ⁡ ( U ) | | X T 0 , 0 ≤ C ​ σ α ​ ‖ u ‖ X T σ , 1 , b 2 ​ ( k + 1 ) , \\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}U^{k+1}F(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U^{k+1}||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U^{k+1}||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{2(k+1)},\\end{split} (4.24) for all 0 < t ′ ≤ T 0<t^{\\prime}\\leq T ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}UF(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}\\end{split}"
+    ],
+    "context": "| ∫ ∫ ⁡ χ [ 0 , t ′ ] ​ U ​ F ​ ( U ) ​ d x ​ d t | ≤ ‖ χ [ 0 , t ′ ] ​ U ‖ L x 2 ​ L t 2 ​ ‖ χ [ 0 , t ′ ] ​ F ​ ( U ) ‖ L x 2 ​ L t 2 ≤ ‖ U ‖ X T 0 , 0 | | F ⁡ ( U ) | | X T 0 , 0 ≤ C ​ σ α ​ ‖ u ‖ X T σ , 1 , b k + 2 \\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}UF(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}\\end{split} (4.23)"
+  },
+  {
+    "location": "S4.E24",
+    "latex": [
+      "\\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}U^{k+1}F(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U^{k+1}||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U^{k+1}||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{2(k+1)},\\end{split}"
+    ],
+    "context": "Recalling ( 4.9 ) and ( 4.10 ), we have to estimate each term of | R σ ​ ( t ′ ) | |R_{\\sigma}(t^{\\prime})| for all 0 < t ′ ≤ T 0<t^{\\prime}\\leq T . For the first and the third terms in ( 4.10 ) we use the Cauchy-Schwarz inequality, Lemmas 2.2 and 2.4 and the estimate ( 4.11 ) restricted to the time slab and obtain that for any b = 1 2 + ϵ b=\\frac{1}{2}+\\epsilon , 0 < ϵ ≪ 1 0<\\epsilon\\ll 1 , there exists C > 0 C>0 such that | ∫ ∫ ⁡ χ [ 0 , t ′ ] ​ U ​ F ​ ( U ) ​ d x ​ d t | ≤ ‖ χ [ 0 , t ′ ] ​ U ‖ L x 2 ​ L t 2 ​ ‖ χ [ 0 , t ′ ] ​ F ​ ( U ) ‖ L x 2 ​ L t 2 ≤ ‖ U ‖ X T 0 , 0 | | F ⁡ ( U ) | | X T 0 , 0 ≤ C ​ σ α ​ ‖ u ‖ X T σ , 1 , b k + 2 \\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}UF(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2}\\end{split} (4.23) and | ∫ ∫ ⁡ χ [ 0 , t ′ ] ​ U k + 1 ​ F ​ ( U ) ​ d x ​ d t | ≤ ‖ χ [ 0 , t ′ ] ​ U k + 1 ‖ L x 2 ​ L t 2 ​ ‖ χ [ 0 , t ′ ] ​ F ​ ( U ) ‖ L x 2 ​ L t 2 ≤ ‖ U k + 1 ‖ X T 0 , 0 | | F ⁡ ( U ) | | X T 0 , 0 ≤ C ​ σ α ​ ‖ u ‖ X T σ , 1 , b 2 ​ ( k + 1 ) , \\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}U^{k+1}F(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U^{k+1}||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U^{k+1}||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{2(k+1)},\\end{split} (4.24) for all 0 < t ′ ≤ T 0<t^{\\prime}\\leq T ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}U^{k+1}F(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U^{k+1}||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U^{k+1}||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{2(k+1)},\\end{split}"
+    ],
+    "context": "| ∫ ∫ ⁡ χ [ 0 , t ′ ] ​ U k + 1 ​ F ​ ( U ) ​ d x ​ d t | ≤ ‖ χ [ 0 , t ′ ] ​ U k + 1 ‖ L x 2 ​ L t 2 ​ ‖ χ [ 0 , t ′ ] ​ F ​ ( U ) ‖ L x 2 ​ L t 2 ≤ ‖ U k + 1 ‖ X T 0 , 0 | | F ⁡ ( U ) | | X T 0 , 0 ≤ C ​ σ α ​ ‖ u ‖ X T σ , 1 , b 2 ​ ( k + 1 ) , \\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}U^{k+1}F(U)dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}U^{k+1}||_{L_{x}^{2}L_{t}^{2}}||\\chi_{[0,\\,t^{\\prime}]}F(U)||_{L_{x}^{2}L_{t}^{2}}\\\\\n&\\leq||U^{k+1}||_{X_{T}^{0,\\,0}}||F(U)||_{X_{T}^{0,\\,0}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{2(k+1)},\\end{split} (4.24)"
+  },
+  {
+    "location": "S4.E25",
+    "latex": [
+      "\\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U\\partial_{x}(F(U))dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U||_{X^{0,\\,1-b}}||\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\\\\n&\\leq||\\partial_{x}U||_{X_{T}^{0,\\,1-b}}||\\partial_{x}(F(U))||_{X_{T}^{0,\\,b-1}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2},\\end{split}"
+    ],
+    "context": "For the second term in ( 4.10 ), we use the Cauchy-Schwarz inequality, Lemma 2.2 and estimate ( 4.12 ), to obtain | ∫ ∫ χ [ 0 , t ′ ] ​ ∂ x U ​ ∂ x ( F ⁡ ( U ) ) ​ d x ​ d t | ≤ ‖ χ [ 0 , t ′ ] ​ ∂ x U ‖ X 0 , 1 − b | | χ [ 0 , t ′ ] ​ ∂ x ( F ⁡ ( U ) ) | | X 0 , b − 1 ≤ ‖ ∂ x U ‖ X T 0 , 1 − b | | ∂ x ( F ⁡ ( U ) ) | | X T 0 , b − 1 ≤ C ​ σ α ​ ‖ u ‖ X T σ , 1 , b k + 2 , \\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U\\partial_{x}(F(U))dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U||_{X^{0,\\,1-b}}||\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\\\\n&\\leq||\\partial_{x}U||_{X_{T}^{0,\\,1-b}}||\\partial_{x}(F(U))||_{X_{T}^{0,\\,b-1}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2},\\end{split} (4.25) for all 0 < t ′ ≤ T 0<t^{\\prime}\\leq T , where 1 2 < b < 1 \\frac{1}{2}<b<1 is the same as before."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U\\partial_{x}(F(U))dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U||_{X^{0,\\,1-b}}||\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\\\\n&\\leq||\\partial_{x}U||_{X_{T}^{0,\\,1-b}}||\\partial_{x}(F(U))||_{X_{T}^{0,\\,b-1}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2},\\end{split}"
+    ],
+    "context": "| ∫ ∫ χ [ 0 , t ′ ] ​ ∂ x U ​ ∂ x ( F ⁡ ( U ) ) ​ d x ​ d t | ≤ ‖ χ [ 0 , t ′ ] ​ ∂ x U ‖ X 0 , 1 − b | | χ [ 0 , t ′ ] ​ ∂ x ( F ⁡ ( U ) ) | | X 0 , b − 1 ≤ ‖ ∂ x U ‖ X T 0 , 1 − b | | ∂ x ( F ⁡ ( U ) ) | | X T 0 , b − 1 ≤ C ​ σ α ​ ‖ u ‖ X T σ , 1 , b k + 2 , \\begin{split}\\left|\\int\\int\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U\\partial_{x}(F(U))dxdt\\right|&\\leq||\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}U||_{X^{0,\\,1-b}}||\\chi_{[0,\\,t^{\\prime}]}\\partial_{x}(F(U))||_{X^{0,\\,b-1}}\\\\\n&\\leq||\\partial_{x}U||_{X_{T}^{0,\\,1-b}}||\\partial_{x}(F(U))||_{X_{T}^{0,\\,b-1}}\\\\\n&\\leq C\\sigma^{\\alpha}||u||_{X_{T}^{\\sigma,\\,1,\\,b}}^{k+2},\\end{split} (4.25)"
+  },
+  {
+    "location": "S4.E26",
+    "latex": [
+      "\\sup_{t\\in[0,\\,T]}E_{\\sigma}(t)\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})."
+    ],
+    "context": "Let σ > 0 \\sigma>0 , k k even and α ∈ [ 0 , k + 2 2 ​ k ) \\alpha\\in[0,\\frac{k+2}{2k}) . Then there exists C > 0 C>0 such that the solution u ∈ X T σ , 1 , b u\\in X_{T}^{\\sigma,\\,1,\\,b} to the IVP ( 1.1 ) in the defocusing case ( μ = − 1 \\mu=-1 ) given by Theorem 1.1 , we have sup t ∈ [ 0 , T ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ ​ ( 0 ) k 2 ) . \\sup_{t\\in[0,\\,T]}E_{\\sigma}(t)\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}}). (4.26)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\sup_{t\\in[0,\\,T]}E_{\\sigma}(t)\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})."
+    ],
+    "context": "sup t ∈ [ 0 , T ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ ​ ( 0 ) k 2 ) . \\sup_{t\\in[0,\\,T]}E_{\\sigma}(t)\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}}). (4.26)"
+  },
+  {
+    "location": "S4.E27",
+    "latex": [
+      "E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\geq||u_{0}||_{G^{\\sigma,\\,1}}^{2}."
+    ],
+    "context": "For μ = − 1 \\mu=-1 , from ( 4.1 ), since k k is even, we have E σ ​ ( 0 ) = ‖ u 0 ‖ G σ , 1 2 + 2 ( k + 1 ) ​ ( k + 2 ) ​ ‖ e σ ​ | D x | ​ u 0 ‖ L x k + 2 k + 2 ≥ | | u 0 | | G σ , 1 2 . E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\geq||u_{0}||_{G^{\\sigma,\\,1}}^{2}. (4.27) From ( 3.6 ) and ( 4.27 ), we get ‖ u ‖ X T σ , 1 , b ≤ C ​ E σ ​ ( 0 ) 1 2 . ||u||_{X_{T}^{\\sigma,\\,1,\\,b}}\\leq CE_{\\sigma}(0)^{\\frac{1}{2}}. (4.28) The required estimate follows from ( 4.22 ) and the estimate ( 4.28 ).\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\geq||u_{0}||_{G^{\\sigma,\\,1}}^{2}."
+    ],
+    "context": "E σ ​ ( 0 ) = ‖ u 0 ‖ G σ , 1 2 + 2 ( k + 1 ) ​ ( k + 2 ) ​ ‖ e σ ​ | D x | ​ u 0 ‖ L x k + 2 k + 2 ≥ | | u 0 | | G σ , 1 2 . E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\geq||u_{0}||_{G^{\\sigma,\\,1}}^{2}. (4.27)"
+  },
+  {
+    "location": "S4.E28",
+    "latex": [
+      "||u||_{X_{T}^{\\sigma,\\,1,\\,b}}\\leq CE_{\\sigma}(0)^{\\frac{1}{2}}."
+    ],
+    "context": "For μ = − 1 \\mu=-1 , from ( 4.1 ), since k k is even, we have E σ ​ ( 0 ) = ‖ u 0 ‖ G σ , 1 2 + 2 ( k + 1 ) ​ ( k + 2 ) ​ ‖ e σ ​ | D x | ​ u 0 ‖ L x k + 2 k + 2 ≥ | | u 0 | | G σ , 1 2 . E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\geq||u_{0}||_{G^{\\sigma,\\,1}}^{2}. (4.27) From ( 3.6 ) and ( 4.27 ), we get ‖ u ‖ X T σ , 1 , b ≤ C ​ E σ ​ ( 0 ) 1 2 . ||u||_{X_{T}^{\\sigma,\\,1,\\,b}}\\leq CE_{\\sigma}(0)^{\\frac{1}{2}}. (4.28) The required estimate follows from ( 4.22 ) and the estimate ( 4.28 ).\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "||u||_{X_{T}^{\\sigma,\\,1,\\,b}}\\leq CE_{\\sigma}(0)^{\\frac{1}{2}}."
+    ],
+    "context": "‖ u ‖ X T σ , 1 , b ≤ C ​ E σ ​ ( 0 ) 1 2 . ||u||_{X_{T}^{\\sigma,\\,1,\\,b}}\\leq CE_{\\sigma}(0)^{\\frac{1}{2}}. (4.28)"
+  },
+  {
+    "location": "S4.E29",
+    "latex": [
+      "E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}-\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\leq||u_{0}||_{G^{\\sigma,\\,1}}^{2},"
+    ],
+    "context": "For the solutions to the IVP ( 1.1 ) in the focusing case ( μ = 1 \\mu=1 ) with k k even, from ( 4.1 ), one has E σ ​ ( 0 ) = ‖ u 0 ‖ G σ , 1 2 − 2 ( k + 1 ) ​ ( k + 2 ) ​ ‖ e σ ​ | D x | ​ u 0 ‖ L x k + 2 k + 2 ≤ | | u 0 | | G σ , 1 2 , E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}-\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\leq||u_{0}||_{G^{\\sigma,\\,1}}^{2}, (4.29) This estimate cannot be used to obtain an estimate of the form ( 4.26 ) which plays a crucial role in the argument used to prove the Theorem 1.2 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}-\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\leq||u_{0}||_{G^{\\sigma,\\,1}}^{2},"
+    ],
+    "context": "E σ ​ ( 0 ) = ‖ u 0 ‖ G σ , 1 2 − 2 ( k + 1 ) ​ ( k + 2 ) ​ ‖ e σ ​ | D x | ​ u 0 ‖ L x k + 2 k + 2 ≤ | | u 0 | | G σ , 1 2 , E_{\\sigma}(0)=||u_{0}||_{G^{\\sigma,\\,1}}^{2}-\\frac{2}{(k+1)(k+2)}||e^{\\sigma|D_{x}|}u_{0}||_{L^{k+2}_{x}}^{k+2}\\leq||u_{0}||_{G^{\\sigma,\\,1}}^{2}, (4.29)"
+  },
+  {
+    "location": "S5.Ex1",
+    "latex": [
+      "u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T>0,"
+    ],
+    "context": "Fix σ 0 > 0 \\sigma_{0}>0 , μ = − 1 \\mu=-1 , k ≥ 4 k\\geq 4 even, s > k − 4 2 ​ k s>\\frac{k-4}{2k} and u 0 ∈ G σ 0 , s ​ ( ℝ ) u_{0}\\in G^{\\sigma_{0},\\,s}(\\mathbb{R}) . Moreover, let α ∈ [ 0 , k − 4 2 ​ k ) \\alpha\\in[0,\\frac{k-4}{2k}) and let b ∈ ( 1 2 , 1 ) b\\in(\\frac{1}{2},1) be as in Corollary 4.3 . By invariance of the gKdV equation under reflection ( t , x ) → ( − t , − x ) (t,\\,x)\\rightarrow(-t,\\,-x) , it suffices to consider t ≥ 0 t\\geq 0 . Thus, we have to prove that the local solution u u given by the Theorem 1.1 can be extended to any time interval [ 0 , T ] [0,\\,T] and satisfies u ∈ C ⁡ ( [ 0 , T ] : G σ ⁡ ( T ) , s ) for all ​ T > 0 , u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T>0, where σ ⁡ ( T ) ≥ c ​ T − 1 α \\sigma(T)\\geq cT^{-\\frac{1}{\\alpha}} (5.1) and c > 0 c>0 is a constant depending on ‖ u 0 ‖ G σ 0 , s , σ 0 , k , s \\|u_{0}\\|_{G^{\\sigma_{0},\\,s}},\\,\\sigma_{0},\\,k,\\,s and α \\alpha ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T>0,"
+    ],
+    "context": "u ∈ C ⁡ ( [ 0 , T ] : G σ ⁡ ( T ) , s ) for all ​ T > 0 , u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T>0,"
+  },
+  {
+    "location": "S5.E1",
+    "latex": [
+      "\\sigma(T)\\geq cT^{-\\frac{1}{\\alpha}}"
+    ],
+    "context": "Fix σ 0 > 0 \\sigma_{0}>0 , μ = − 1 \\mu=-1 , k ≥ 4 k\\geq 4 even, s > k − 4 2 ​ k s>\\frac{k-4}{2k} and u 0 ∈ G σ 0 , s ​ ( ℝ ) u_{0}\\in G^{\\sigma_{0},\\,s}(\\mathbb{R}) . Moreover, let α ∈ [ 0 , k − 4 2 ​ k ) \\alpha\\in[0,\\frac{k-4}{2k}) and let b ∈ ( 1 2 , 1 ) b\\in(\\frac{1}{2},1) be as in Corollary 4.3 . By invariance of the gKdV equation under reflection ( t , x ) → ( − t , − x ) (t,\\,x)\\rightarrow(-t,\\,-x) , it suffices to consider t ≥ 0 t\\geq 0 . Thus, we have to prove that the local solution u u given by the Theorem 1.1 can be extended to any time interval [ 0 , T ] [0,\\,T] and satisfies u ∈ C ⁡ ( [ 0 , T ] : G σ ⁡ ( T ) , s ) for all ​ T > 0 , u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T>0, where σ ⁡ ( T ) ≥ c ​ T − 1 α \\sigma(T)\\geq cT^{-\\frac{1}{\\alpha}} (5.1) and c > 0 c>0 is a constant depending on ‖ u 0 ‖ G σ 0 , s , σ 0 , k , s \\|u_{0}\\|_{G^{\\sigma_{0},\\,s}},\\,\\sigma_{0},\\,k,\\,s and α \\alpha ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\sigma(T)\\geq cT^{-\\frac{1}{\\alpha}}"
+    ],
+    "context": "σ ⁡ ( T ) ≥ c ​ T − 1 α \\sigma(T)\\geq cT^{-\\frac{1}{\\alpha}} (5.1)"
+  },
+  {
+    "location": "S5.Ex2",
+    "latex": [
+      "u\\in C([0,\\,T^{*}):G^{\\sigma_{0},\\,s})."
+    ],
+    "context": "By Theorem 1.1 , there is a maximal time T ∗ = T ∗ ​ ( ‖ u 0 ‖ G σ 0 , s , σ 0 , k , s ) ∈ ( 0 , ∞ ] T^{*}=T^{*}(\\|u_{0}\\|_{G^{\\sigma_{0},\\,s}},\\,\\sigma_{0},\\,k,\\,s)\\in(0,\\,\\infty] such that u ∈ C ⁡ ( [ 0 , T ∗ ) : G σ 0 , s ) . u\\in C([0,\\,T^{*}):G^{\\sigma_{0},\\,s}). If T ∗ = ∞ T^{*}=\\infty , we are done. We assume that T ∗ < ∞ T^{*}<\\infty and in this case it remains to prove u ∈ C ⁡ ( [ 0 , T ] : G σ ⁡ ( T ) , s ) for all ​ T ≥ T ∗ . u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T\\geq T^{*}. If we prove this in the case s = 1 s=1 then the general case will essentially reduces to s = 1 s=1 using the inclusion ( 2.1 ). For more details we refer the work [ 25 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u\\in C([0,\\,T^{*}):G^{\\sigma_{0},\\,s})."
+    ],
+    "context": "u ∈ C ⁡ ( [ 0 , T ∗ ) : G σ 0 , s ) . u\\in C([0,\\,T^{*}):G^{\\sigma_{0},\\,s})."
+  },
+  {
+    "location": "S5.Ex3",
+    "latex": [
+      "u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T\\geq T^{*}."
+    ],
+    "context": "By Theorem 1.1 , there is a maximal time T ∗ = T ∗ ​ ( ‖ u 0 ‖ G σ 0 , s , σ 0 , k , s ) ∈ ( 0 , ∞ ] T^{*}=T^{*}(\\|u_{0}\\|_{G^{\\sigma_{0},\\,s}},\\,\\sigma_{0},\\,k,\\,s)\\in(0,\\,\\infty] such that u ∈ C ⁡ ( [ 0 , T ∗ ) : G σ 0 , s ) . u\\in C([0,\\,T^{*}):G^{\\sigma_{0},\\,s}). If T ∗ = ∞ T^{*}=\\infty , we are done. We assume that T ∗ < ∞ T^{*}<\\infty and in this case it remains to prove u ∈ C ⁡ ( [ 0 , T ] : G σ ⁡ ( T ) , s ) for all ​ T ≥ T ∗ . u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T\\geq T^{*}. If we prove this in the case s = 1 s=1 then the general case will essentially reduces to s = 1 s=1 using the inclusion ( 2.1 ). For more details we refer the work [ 25 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T\\geq T^{*}."
+    ],
+    "context": "u ∈ C ⁡ ( [ 0 , T ] : G σ ⁡ ( T ) , s ) for all ​ T ≥ T ∗ . u\\in C([0,\\,T]:G^{\\sigma(T),\\,s})\\quad\\text{for all }T\\geq T^{*}."
+  },
+  {
+    "location": "S5.Ex4",
+    "latex": [
+      "T_{0}=\\frac{c_{0}}{(1+E_{\\sigma_{0}}(0))^{a}}"
+    ],
+    "context": "Assume s = 1 s=1 . From ( 4.27 ), we have E σ 0 ​ ( 0 ) ≥ ‖ u 0 ‖ G σ 0 , 1 2 E_{\\sigma_{0}}(0)\\geq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2} and from Theorem 1.1 with s = 1 s=1 , we can take the lifespan T 0 T_{0} given in ( 3.5 ) as T 0 = c 0 ( 1 + E σ 0 ​ ( 0 ) ) a T_{0}=\\frac{c_{0}}{(1+E_{\\sigma_{0}}(0))^{a}} for appropriate constants c 0 > 0 c_{0}>0 and a > 1 a>1 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "T_{0}=\\frac{c_{0}}{(1+E_{\\sigma_{0}}(0))^{a}}"
+    ],
+    "context": "T 0 = c 0 ( 1 + E σ 0 ​ ( 0 ) ) a T_{0}=\\frac{c_{0}}{(1+E_{\\sigma_{0}}(0))^{a}}"
+  },
+  {
+    "location": "S5.E2",
+    "latex": [
+      "E_{\\sigma}(t)\\leq 2E_{\\sigma_{0}}(0)\\quad\\text{for }t\\in[0,\\,T]."
+    ],
+    "context": "Let T ≥ T ∗ T\\geq T^{*} . We will show that, for σ > 0 \\sigma>0 sufficiently small, E σ ​ ( t ) ≤ 2 ​ E σ 0 ​ ( 0 ) for ​ t ∈ [ 0 , T ] . E_{\\sigma}(t)\\leq 2E_{\\sigma_{0}}(0)\\quad\\text{for }t\\in[0,\\,T]. (5.2) The desired result will follow since, in this case, ‖ u ⁡ ( t ) ‖ G σ , 1 ≤ E σ ​ ( t ) ||u(t)||_{G^{\\sigma,\\,1}}\\leq E_{\\sigma}(t) and E σ 0 ​ ( 0 ) = ‖ u 0 ‖ G σ 0 , 1 2 + 2 ( k + 1 ) ​ ( k + 2 ) ​ ‖ e σ 0 ​ | D x | ​ u 0 ‖ L k + 2 k + 2 ≤ ‖ u 0 ‖ G σ 0 , 1 2 + C ​ ‖ D x ​ ( e σ 0 ​ | D x | ​ u 0 ) ‖ L 2 k 2 ​ ‖ e σ 0 ​ | D x | ​ u 0 ‖ L 2 k 2 + 2 ≤ | | u 0 | | G σ 0 , 1 2 + C ​ ‖ u 0 ‖ G σ 0 , 1 k + 2 < ∞ , \\begin{split}E_{\\sigma_{0}}(0)&=||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{k+2}}^{k+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||D_{x}(e^{\\sigma_{0}|D_{x}|}u_{0})||_{L^{2}}^{\\frac{k}{2}}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{2}}^{\\frac{k}{2}+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||u_{0}||_{G^{\\sigma_{0},\\,1}}^{k+2}<\\infty,\\end{split} where we used Gagliardo-Niremberg inequality."
+  },
+  {
+    "location": null,
+    "latex": [
+      "E_{\\sigma}(t)\\leq 2E_{\\sigma_{0}}(0)\\quad\\text{for }t\\in[0,\\,T]."
+    ],
+    "context": "E σ ​ ( t ) ≤ 2 ​ E σ 0 ​ ( 0 ) for ​ t ∈ [ 0 , T ] . E_{\\sigma}(t)\\leq 2E_{\\sigma_{0}}(0)\\quad\\text{for }t\\in[0,\\,T]. (5.2)"
+  },
+  {
+    "location": "S5.Ex5",
+    "latex": [
+      "\\begin{split}E_{\\sigma_{0}}(0)&=||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{k+2}}^{k+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||D_{x}(e^{\\sigma_{0}|D_{x}|}u_{0})||_{L^{2}}^{\\frac{k}{2}}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{2}}^{\\frac{k}{2}+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||u_{0}||_{G^{\\sigma_{0},\\,1}}^{k+2}<\\infty,\\end{split}"
+    ],
+    "context": "Let T ≥ T ∗ T\\geq T^{*} . We will show that, for σ > 0 \\sigma>0 sufficiently small, E σ ​ ( t ) ≤ 2 ​ E σ 0 ​ ( 0 ) for ​ t ∈ [ 0 , T ] . E_{\\sigma}(t)\\leq 2E_{\\sigma_{0}}(0)\\quad\\text{for }t\\in[0,\\,T]. (5.2) The desired result will follow since, in this case, ‖ u ⁡ ( t ) ‖ G σ , 1 ≤ E σ ​ ( t ) ||u(t)||_{G^{\\sigma,\\,1}}\\leq E_{\\sigma}(t) and E σ 0 ​ ( 0 ) = ‖ u 0 ‖ G σ 0 , 1 2 + 2 ( k + 1 ) ​ ( k + 2 ) ​ ‖ e σ 0 ​ | D x | ​ u 0 ‖ L k + 2 k + 2 ≤ ‖ u 0 ‖ G σ 0 , 1 2 + C ​ ‖ D x ​ ( e σ 0 ​ | D x | ​ u 0 ) ‖ L 2 k 2 ​ ‖ e σ 0 ​ | D x | ​ u 0 ‖ L 2 k 2 + 2 ≤ | | u 0 | | G σ 0 , 1 2 + C ​ ‖ u 0 ‖ G σ 0 , 1 k + 2 < ∞ , \\begin{split}E_{\\sigma_{0}}(0)&=||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{k+2}}^{k+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||D_{x}(e^{\\sigma_{0}|D_{x}|}u_{0})||_{L^{2}}^{\\frac{k}{2}}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{2}}^{\\frac{k}{2}+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||u_{0}||_{G^{\\sigma_{0},\\,1}}^{k+2}<\\infty,\\end{split} where we used Gagliardo-Niremberg inequality."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}E_{\\sigma_{0}}(0)&=||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{k+2}}^{k+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||D_{x}(e^{\\sigma_{0}|D_{x}|}u_{0})||_{L^{2}}^{\\frac{k}{2}}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{2}}^{\\frac{k}{2}+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||u_{0}||_{G^{\\sigma_{0},\\,1}}^{k+2}<\\infty,\\end{split}"
+    ],
+    "context": "E σ 0 ​ ( 0 ) = ‖ u 0 ‖ G σ 0 , 1 2 + 2 ( k + 1 ) ​ ( k + 2 ) ​ ‖ e σ 0 ​ | D x | ​ u 0 ‖ L k + 2 k + 2 ≤ ‖ u 0 ‖ G σ 0 , 1 2 + C ​ ‖ D x ​ ( e σ 0 ​ | D x | ​ u 0 ) ‖ L 2 k 2 ​ ‖ e σ 0 ​ | D x | ​ u 0 ‖ L 2 k 2 + 2 ≤ | | u 0 | | G σ 0 , 1 2 + C ​ ‖ u 0 ‖ G σ 0 , 1 k + 2 < ∞ , \\begin{split}E_{\\sigma_{0}}(0)&=||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+\\frac{2}{(k+1)(k+2)}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{k+2}}^{k+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||D_{x}(e^{\\sigma_{0}|D_{x}|}u_{0})||_{L^{2}}^{\\frac{k}{2}}||e^{\\sigma_{0}|D_{x}|}u_{0}||_{L^{2}}^{\\frac{k}{2}+2}\\\\\n&\\leq||u_{0}||_{G^{\\sigma_{0},\\,1}}^{2}+C||u_{0}||_{G^{\\sigma_{0},\\,1}}^{k+2}<\\infty,\\end{split}"
+  },
+  {
+    "location": "S5.E3",
+    "latex": [
+      "\\delta=\\frac{c_{0}}{(1+2E_{\\sigma_{0}}(0))^{a}}."
+    ],
+    "context": "To prove ( 5.2 ), we will use repeatedly Theorem 1.1 and Corollary 4.3 with the time step δ = c 0 ( 1 + 2 ​ E σ 0 ​ ( 0 ) ) a . \\delta=\\frac{c_{0}}{(1+2E_{\\sigma_{0}}(0))^{a}}. (5.3) Since δ ≤ T 0 ≤ T ∗ ≤ T \\delta\\leq T_{0}\\leq T^{*}\\leq T , it follows that there exists n ∈ ℕ n\\in\\mathbb{N} such that T ∈ [ n ​ δ , ( n + 1 ) ​ δ ) T\\in[n\\delta,\\,(n+1)\\delta) and by induction, we will show that for j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} , sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ j ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) , \\displaystyle\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}jE_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}), (5.4) sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ 2 ​ E σ 0 ​ ( 0 ) , \\displaystyle\\leq 2E_{\\sigma_{0}}(0), (5.5) under the smallness conditions σ ≤ σ 0 \\sigma\\leq\\sigma_{0} (5.6) and 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 1 , 2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\leq 1, (5.7) where C > 0 C>0 is the constant in Corollary 4.3 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\delta=\\frac{c_{0}}{(1+2E_{\\sigma_{0}}(0))^{a}}."
+    ],
+    "context": "δ = c 0 ( 1 + 2 ​ E σ 0 ​ ( 0 ) ) a . \\delta=\\frac{c_{0}}{(1+2E_{\\sigma_{0}}(0))^{a}}. (5.3)"
+  },
+  {
+    "location": "S5.EGx6",
+    "latex": [
+      "\\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t)",
+      "\\displaystyle\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}jE_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}),",
+      "\\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t)",
+      "\\displaystyle\\leq 2E_{\\sigma_{0}}(0),"
+    ],
+    "context": "To prove ( 5.2 ), we will use repeatedly Theorem 1.1 and Corollary 4.3 with the time step δ = c 0 ( 1 + 2 ​ E σ 0 ​ ( 0 ) ) a . \\delta=\\frac{c_{0}}{(1+2E_{\\sigma_{0}}(0))^{a}}. (5.3) Since δ ≤ T 0 ≤ T ∗ ≤ T \\delta\\leq T_{0}\\leq T^{*}\\leq T , it follows that there exists n ∈ ℕ n\\in\\mathbb{N} such that T ∈ [ n ​ δ , ( n + 1 ) ​ δ ) T\\in[n\\delta,\\,(n+1)\\delta) and by induction, we will show that for j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} , sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ j ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) , \\displaystyle\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}jE_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}), (5.4) sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ 2 ​ E σ 0 ​ ( 0 ) , \\displaystyle\\leq 2E_{\\sigma_{0}}(0), (5.5) under the smallness conditions σ ≤ σ 0 \\sigma\\leq\\sigma_{0} (5.6) and 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 1 , 2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\leq 1, (5.7) where C > 0 C>0 is the constant in Corollary 4.3 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t)",
+      "\\displaystyle\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}jE_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}),"
+    ],
+    "context": "sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ j ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) , \\displaystyle\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}jE_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}), (5.4)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t)",
+      "\\displaystyle\\leq 2E_{\\sigma_{0}}(0),"
+    ],
+    "context": "sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ 2 ​ E σ 0 ​ ( 0 ) , \\displaystyle\\leq 2E_{\\sigma_{0}}(0), (5.5)"
+  },
+  {
+    "location": "S5.E6",
+    "latex": [
+      "\\sigma\\leq\\sigma_{0}"
+    ],
+    "context": "To prove ( 5.2 ), we will use repeatedly Theorem 1.1 and Corollary 4.3 with the time step δ = c 0 ( 1 + 2 ​ E σ 0 ​ ( 0 ) ) a . \\delta=\\frac{c_{0}}{(1+2E_{\\sigma_{0}}(0))^{a}}. (5.3) Since δ ≤ T 0 ≤ T ∗ ≤ T \\delta\\leq T_{0}\\leq T^{*}\\leq T , it follows that there exists n ∈ ℕ n\\in\\mathbb{N} such that T ∈ [ n ​ δ , ( n + 1 ) ​ δ ) T\\in[n\\delta,\\,(n+1)\\delta) and by induction, we will show that for j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} , sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ j ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) , \\displaystyle\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}jE_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}), (5.4) sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ 2 ​ E σ 0 ​ ( 0 ) , \\displaystyle\\leq 2E_{\\sigma_{0}}(0), (5.5) under the smallness conditions σ ≤ σ 0 \\sigma\\leq\\sigma_{0} (5.6) and 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 1 , 2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\leq 1, (5.7) where C > 0 C>0 is the constant in Corollary 4.3 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\sigma\\leq\\sigma_{0}"
+    ],
+    "context": "σ ≤ σ 0 \\sigma\\leq\\sigma_{0} (5.6)"
+  },
+  {
+    "location": "S5.E7",
+    "latex": [
+      "2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\leq 1,"
+    ],
+    "context": "To prove ( 5.2 ), we will use repeatedly Theorem 1.1 and Corollary 4.3 with the time step δ = c 0 ( 1 + 2 ​ E σ 0 ​ ( 0 ) ) a . \\delta=\\frac{c_{0}}{(1+2E_{\\sigma_{0}}(0))^{a}}. (5.3) Since δ ≤ T 0 ≤ T ∗ ≤ T \\delta\\leq T_{0}\\leq T^{*}\\leq T , it follows that there exists n ∈ ℕ n\\in\\mathbb{N} such that T ∈ [ n ​ δ , ( n + 1 ) ​ δ ) T\\in[n\\delta,\\,(n+1)\\delta) and by induction, we will show that for j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} , sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ j ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) , \\displaystyle\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}jE_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}), (5.4) sup t ∈ [ 0 , j ​ δ ] E σ ​ ( t ) \\displaystyle\\sup_{t\\in[0,\\,j\\delta]}E_{\\sigma}(t) ≤ 2 ​ E σ 0 ​ ( 0 ) , \\displaystyle\\leq 2E_{\\sigma_{0}}(0), (5.5) under the smallness conditions σ ≤ σ 0 \\sigma\\leq\\sigma_{0} (5.6) and 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 1 , 2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\leq 1, (5.7) where C > 0 C>0 is the constant in Corollary 4.3 ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\leq 1,"
+    ],
+    "context": "2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 1 , 2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\leq 1, (5.7)"
+  },
+  {
+    "location": "S5.E8",
+    "latex": [
+      "\\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split}"
+    ],
+    "context": "In the first step, we cover the interval [ 0 , δ ] [0,\\,\\delta] and by Corollary 4.3 , we have sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split} (5.8) Using the conditions ( 5.6 ) and ( 5.7 ) in ( 5.8 ) we conclude that sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 2 ​ E σ 0 ​ ( 0 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split} Now, assume that ( 5.4 ) and ( 5.5 ) hold for some j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} . For j + 1 j+1 , applying the local well posedness result with initial data u ⁡ ( j ​ δ ) u(j\\delta) and the estimate ( 4.27 ), we have sup t ∈ [ j ​ δ , ( j + 1 ) ​ δ ] E σ ​ ( t ) ≤ E σ ​ ( j ​ δ ) + C ​ σ α ​ E σ ​ ( j ​ δ ) k 2 + 1 ​ ( 1 + E σ ​ ( j ​ δ ) k 2 ) ≤ E σ ​ ( j ​ δ ) + 2 k + 1 ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ ( j + 1 ) ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[j\\delta,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(j\\delta)+C\\sigma^{\\alpha}E_{\\sigma}(j\\delta)^{\\frac{k}{2}+1}(1+E_{\\sigma}(j\\delta)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(j\\delta)+2^{k+1}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split}"
+    ],
+    "context": "sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split} (5.8)"
+  },
+  {
+    "location": "S5.Ex6",
+    "latex": [
+      "\\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split}"
+    ],
+    "context": "In the first step, we cover the interval [ 0 , δ ] [0,\\,\\delta] and by Corollary 4.3 , we have sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split} (5.8) Using the conditions ( 5.6 ) and ( 5.7 ) in ( 5.8 ) we conclude that sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 2 ​ E σ 0 ​ ( 0 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split} Now, assume that ( 5.4 ) and ( 5.5 ) hold for some j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} . For j + 1 j+1 , applying the local well posedness result with initial data u ⁡ ( j ​ δ ) u(j\\delta) and the estimate ( 4.27 ), we have sup t ∈ [ j ​ δ , ( j + 1 ) ​ δ ] E σ ​ ( t ) ≤ E σ ​ ( j ​ δ ) + C ​ σ α ​ E σ ​ ( j ​ δ ) k 2 + 1 ​ ( 1 + E σ ​ ( j ​ δ ) k 2 ) ≤ E σ ​ ( j ​ δ ) + 2 k + 1 ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ ( j + 1 ) ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[j\\delta,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(j\\delta)+C\\sigma^{\\alpha}E_{\\sigma}(j\\delta)^{\\frac{k}{2}+1}(1+E_{\\sigma}(j\\delta)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(j\\delta)+2^{k+1}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split}"
+    ],
+    "context": "sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 2 ​ E σ 0 ​ ( 0 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split}"
+  },
+  {
+    "location": "S5.E9",
+    "latex": [
+      "\\begin{split}\\sup_{t\\in[j\\delta,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(j\\delta)+C\\sigma^{\\alpha}E_{\\sigma}(j\\delta)^{\\frac{k}{2}+1}(1+E_{\\sigma}(j\\delta)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(j\\delta)+2^{k+1}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}(j+1)E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split}"
+    ],
+    "context": "In the first step, we cover the interval [ 0 , δ ] [0,\\,\\delta] and by Corollary 4.3 , we have sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split} (5.8) Using the conditions ( 5.6 ) and ( 5.7 ) in ( 5.8 ) we conclude that sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 2 ​ E σ 0 ​ ( 0 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split} Now, assume that ( 5.4 ) and ( 5.5 ) hold for some j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} . For j + 1 j+1 , applying the local well posedness result with initial data u ⁡ ( j ​ δ ) u(j\\delta) and the estimate ( 4.27 ), we have sup t ∈ [ j ​ δ , ( j + 1 ) ​ δ ] E σ ​ ( t ) ≤ E σ ​ ( j ​ δ ) + C ​ σ α ​ E σ ​ ( j ​ δ ) k 2 + 1 ​ ( 1 + E σ ​ ( j ​ δ ) k 2 ) ≤ E σ ​ ( j ​ δ ) + 2 k + 1 ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ ( j + 1 ) ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[j\\delta,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(j\\delta)+C\\sigma^{\\alpha}E_{\\sigma}(j\\delta)^{\\frac{k}{2}+1}(1+E_{\\sigma}(j\\delta)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(j\\delta)+2^{k+1}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\sup_{t\\in[j\\delta,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(j\\delta)+C\\sigma^{\\alpha}E_{\\sigma}(j\\delta)^{\\frac{k}{2}+1}(1+E_{\\sigma}(j\\delta)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(j\\delta)+2^{k+1}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}(j+1)E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split}"
+    ],
+    "context": "sup t ∈ [ j ​ δ , ( j + 1 ) ​ δ ] E σ ​ ( t ) ≤ E σ ​ ( j ​ δ ) + C ​ σ α ​ E σ ​ ( j ​ δ ) k 2 + 1 ​ ( 1 + E σ ​ ( j ​ δ ) k 2 ) ≤ E σ ​ ( j ​ δ ) + 2 k + 1 ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ ( j + 1 ) ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[j\\delta,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(j\\delta)+C\\sigma^{\\alpha}E_{\\sigma}(j\\delta)^{\\frac{k}{2}+1}(1+E_{\\sigma}(j\\delta)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(j\\delta)+2^{k+1}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+2^{k+1}C\\sigma^{\\alpha}(j+1)E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split} (5.9)"
+  },
+  {
+    "location": "S5.Ex7",
+    "latex": [
+      "j+1\\leq n+1\\leq\\frac{T}{\\delta}+1\\leq\\frac{2T}{\\delta},"
+    ],
+    "context": "In the first step, we cover the interval [ 0 , δ ] [0,\\,\\delta] and by Corollary 4.3 , we have sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split} (5.8) Using the conditions ( 5.6 ) and ( 5.7 ) in ( 5.8 ) we conclude that sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 2 ​ E σ 0 ​ ( 0 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split} Now, assume that ( 5.4 ) and ( 5.5 ) hold for some j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} . For j + 1 j+1 , applying the local well posedness result with initial data u ⁡ ( j ​ δ ) u(j\\delta) and the estimate ( 4.27 ), we have sup t ∈ [ j ​ δ , ( j + 1 ) ​ δ ] E σ ​ ( t ) ≤ E σ ​ ( j ​ δ ) + C ​ σ α ​ E σ ​ ( j ​ δ ) k 2 + 1 ​ ( 1 + E σ ​ ( j ​ δ ) k 2 ) ≤ E σ ​ ( j ​ δ ) + 2 k + 1 ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ ( j + 1 ) ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[j\\delta,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(j\\delta)+C\\sigma^{\\alpha}E_{\\sigma}(j\\delta)^{\\frac{k}{2}+1}(1+E_{\\sigma}(j\\delta)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(j\\delta)+2^{k+1}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^"
+  },
+  {
+    "location": null,
+    "latex": [
+      "j+1\\leq n+1\\leq\\frac{T}{\\delta}+1\\leq\\frac{2T}{\\delta},"
+    ],
+    "context": "j + 1 ≤ n + 1 ≤ T δ + 1 ≤ 2 ​ T δ , j+1\\leq n+1\\leq\\frac{T}{\\delta}+1\\leq\\frac{2T}{\\delta},"
+  },
+  {
+    "location": "S5.Ex8",
+    "latex": [
+      "\\begin{split}\\sup_{t\\in[j\\delta,\\,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}C\\sigma^{\\alpha}\\frac{2T}{\\delta}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split}"
+    ],
+    "context": "In the first step, we cover the interval [ 0 , δ ] [0,\\,\\delta] and by Corollary 4.3 , we have sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma}(0)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(0)+C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}}).\\end{split} (5.8) Using the conditions ( 5.6 ) and ( 5.7 ) in ( 5.8 ) we conclude that sup t ∈ [ 0 , δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 2 ​ E σ 0 ​ ( 0 ) . \\begin{split}\\sup_{t\\in[0,\\,\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split} Now, assume that ( 5.4 ) and ( 5.5 ) hold for some j ∈ { 1 , ⋯ , n } j\\in\\{1,\\cdots,\\,n\\} . For j + 1 j+1 , applying the local well posedness result with initial data u ⁡ ( j ​ δ ) u(j\\delta) and the estimate ( 4.27 ), we have sup t ∈ [ j ​ δ , ( j + 1 ) ​ δ ] E σ ​ ( t ) ≤ E σ ​ ( j ​ δ ) + C ​ σ α ​ E σ ​ ( j ​ δ ) k 2 + 1 ​ ( 1 + E σ ​ ( j ​ δ ) k 2 ) ≤ E σ ​ ( j ​ δ ) + 2 k + 1 ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ E σ ​ ( 0 ) + 2 k + 1 ​ C ​ σ α ​ ( j + 1 ) ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) . \\begin{split}\\sup_{t\\in[j\\delta,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(j\\delta)+C\\sigma^{\\alpha}E_{\\sigma}(j\\delta)^{\\frac{k}{2}+1}(1+E_{\\sigma}(j\\delta)^{\\frac{k}{2}})\\\\\n&\\leq E_{\\sigma}(j\\delta)+2^{k+1}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{split}\\sup_{t\\in[j\\delta,\\,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}C\\sigma^{\\alpha}\\frac{2T}{\\delta}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split}"
+    ],
+    "context": "sup t ∈ [ j ​ δ , ( j + 1 ) ​ δ ] E σ ​ ( t ) ≤ E σ ​ ( 0 ) + 2 k + 2 ​ C ​ σ α ​ 2 ​ T δ ​ E σ 0 ​ ( 0 ) k 2 + 1 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ≤ 2 ​ E σ 0 ​ ( 0 ) . \\begin{split}\\sup_{t\\in[j\\delta,\\,(j+1)\\delta]}E_{\\sigma}(t)&\\leq E_{\\sigma}(0)+2^{k+2}C\\sigma^{\\alpha}\\frac{2T}{\\delta}E_{\\sigma_{0}}(0)^{\\frac{k}{2}+1}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})\\\\\n&\\leq 2E_{\\sigma_{0}}(0).\\end{split}"
+  },
+  {
+    "location": "S5.E10",
+    "latex": [
+      "2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})=1."
+    ],
+    "context": "Thus, we proved ( 5.2 ) under the assumptions ( 5.6 ) and ( 5.7 ). Since T ≥ T ∗ T\\geq T^{*} , the condition ( 5.7 ) must fail for σ = σ 0 \\sigma=\\sigma_{0} since otherwise we would be able to continue the solution in G σ 0 , 1 G^{\\sigma_{0},\\,1} beyond the time T T , contradicting the maximality of T ∗ T^{*} . Therefore, there is some σ ∈ ( 0 , σ 0 ) \\sigma\\in(0,\\,\\sigma_{0}) such that 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) = 1 . 2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})=1. (5.10) and hence σ ⁡ ( T ) = [ δ 2 k + 2 ​ T ​ C ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ] 1 α = : c 1 ​ T − 1 α , \\sigma(T)=\\left[\\frac{\\delta}{2^{k+2}TCE_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})}\\right]^{\\frac{1}{\\alpha}}=:c_{1}T^{-\\frac{1}{\\alpha}}, which gives ( 5.1 ) if we choose c ≤ c 1 c\\leq c_{1} ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})=1."
+    ],
+    "context": "2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) = 1 . 2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})=1. (5.10)"
+  },
+  {
+    "location": "S5.Ex9",
+    "latex": [
+      "\\sigma(T)=\\left[\\frac{\\delta}{2^{k+2}TCE_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})}\\right]^{\\frac{1}{\\alpha}}=:c_{1}T^{-\\frac{1}{\\alpha}},"
+    ],
+    "context": "Thus, we proved ( 5.2 ) under the assumptions ( 5.6 ) and ( 5.7 ). Since T ≥ T ∗ T\\geq T^{*} , the condition ( 5.7 ) must fail for σ = σ 0 \\sigma=\\sigma_{0} since otherwise we would be able to continue the solution in G σ 0 , 1 G^{\\sigma_{0},\\,1} beyond the time T T , contradicting the maximality of T ∗ T^{*} . Therefore, there is some σ ∈ ( 0 , σ 0 ) \\sigma\\in(0,\\,\\sigma_{0}) such that 2 k + 2 ​ T δ ​ C ​ σ α ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) = 1 . 2^{k+2}\\frac{T}{\\delta}C\\sigma^{\\alpha}E_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})=1. (5.10) and hence σ ⁡ ( T ) = [ δ 2 k + 2 ​ T ​ C ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ] 1 α = : c 1 ​ T − 1 α , \\sigma(T)=\\left[\\frac{\\delta}{2^{k+2}TCE_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})}\\right]^{\\frac{1}{\\alpha}}=:c_{1}T^{-\\frac{1}{\\alpha}}, which gives ( 5.1 ) if we choose c ≤ c 1 c\\leq c_{1} ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\sigma(T)=\\left[\\frac{\\delta}{2^{k+2}TCE_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})}\\right]^{\\frac{1}{\\alpha}}=:c_{1}T^{-\\frac{1}{\\alpha}},"
+    ],
+    "context": "σ ⁡ ( T ) = [ δ 2 k + 2 ​ T ​ C ​ E σ 0 ​ ( 0 ) k 2 ​ ( 1 + E σ 0 ​ ( 0 ) k 2 ) ] 1 α = : c 1 ​ T − 1 α , \\sigma(T)=\\left[\\frac{\\delta}{2^{k+2}TCE_{\\sigma_{0}}(0)^{\\frac{k}{2}}(1+E_{\\sigma_{0}}(0)^{\\frac{k}{2}})}\\right]^{\\frac{1}{\\alpha}}=:c_{1}T^{-\\frac{1}{\\alpha}},"
+  },
+  {
+    "location": "S5.Ex10",
+    "latex": [
+      "\\sigma(T)\\geq cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)}"
+    ],
+    "context": "From Corollary 4.3 , one can consider α ∈ [ 0 , k + 4 2 ​ k ) \\alpha\\in[0,\\,\\frac{k+4}{2k}) . Choosing the maximum value of α \\alpha , one has σ ⁡ ( T ) ≥ c ​ T − ( 2 ​ k k + 4 + ϵ ) \\sigma(T)\\geq cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)} for ϵ > 0 \\epsilon>0 arbitrarily small and the proof for s = 1 s=1 is concluded. For other values of s ∈ ℝ s\\in\\mathbb{R} , the proof follows using the inclusion ( 2.1 ) as described above.\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\sigma(T)\\geq cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)}"
+    ],
+    "context": "σ ⁡ ( T ) ≥ c ​ T − ( 2 ​ k k + 4 + ϵ ) \\sigma(T)\\geq cT^{-\\left(\\frac{2k}{k+4}+\\epsilon\\right)}"
+  }
+]

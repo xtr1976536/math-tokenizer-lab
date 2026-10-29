@@ -1,0 +1,34 @@
+{
+  "pretrained_sha256": "d973fe6ad6a9b94a962e9d7be93d191555625360bb1ca02a949374f7e073bd14",
+  "mlp_sha256": "44b1f5ec9e2bfb349579f3f8b14ef4d5438a9ec5ae5e8ff198f3f67e8493dedc",
+  "settings": {
+    "status": "USER_CONFIRMED",
+    "epochs": 25,
+    "layers": 3,
+    "position_capacity": 80,
+    "search_max_tokens": 80,
+    "gre_generation_limit": 80,
+    "augmentation": "sampled_equivalent_32_preserve_original_latex",
+    "batch_size": 128,
+    "lr": 0.0001,
+    "clip": 1,
+    "seed": 525,
+    "attempts_per_cycle": 200,
+    "cycles": 3,
+    "continuation_epochs": 2,
+    "tokenizer_sizes": [
+      280,
+      315,
+      350
+    ],
+    "base_bytes": 98,
+    "mlp": "reuse_only",
+    "user_choices": {
+      "epochs": "沿用最新设置：25 epoch",
+      "limit": "80，如果能容纳足够多则80，不需要111",
+      "augmentation": "采用32次等价排列采样并修正EOS"
+    },
+    "source_retention": 0.8218874612317235,
+    "common_subset_filter": "exclude source from all arms if any of its 32 variants exceeds80; no truncation"
+  }
+}

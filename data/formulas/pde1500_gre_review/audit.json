@@ -1,0 +1,109 @@
+{
+  "original_rows": 1500,
+  "row_status_counts": {
+    "unresolved": 1480,
+    "has_eligible_component": 17,
+    "target_only": 3
+  },
+  "components": 2395,
+  "component_status_counts": {
+    "unresolved": 2375,
+    "eligible_component": 17,
+    "target_excluded": 3
+  },
+  "whole_expression_eligible": 11,
+  "unresolved_reasons": {
+    "syntax": 12,
+    "unsupported_token": 239,
+    "coefficient_inside_derivative_unresolved": 11,
+    "operator_or_dimension_unresolved": 561,
+    "field_unresolved": 259,
+    "multiple_fields": 795,
+    "unknown_function": 69,
+    "unsupported_power": 88,
+    "unsupported_derivative": 136,
+    "trailing_content": 15,
+    "outside_57_vocabulary": 2,
+    "unsupported_field_arguments": 87,
+    "system_or_multiline": 17,
+    "not_differential_equation": 17,
+    "unsupported_index": 43,
+    "unresolved_differentiated_field": 9,
+    "constant_forcing": 10,
+    "complex_coefficient": 1,
+    "ambiguous_derivative": 3,
+    "variable_coefficient_context": 1
+  },
+  "author_atom_audit": {
+    "6": {
+      "word": "ut",
+      "status": "PASS",
+      "max_absolute_error": 1.0658141036401503e-14
+    },
+    "7": {
+      "word": "u",
+      "status": "PASS",
+      "max_absolute_error": 7.105427357601002e-15
+    },
+    "8": {
+      "word": "ux",
+      "status": "PASS",
+      "max_absolute_error": 7.105427357601002e-15
+    },
+    "9": {
+      "word": "uxx",
+      "status": "PASS",
+      "max_absolute_error": 7.105427357601002e-15
+    },
+    "10": {
+      "word": "uxxt",
+      "status": "PASS",
+      "max_absolute_error": 2.842170943040401e-14
+    },
+    "12": {
+      "word": "uxt",
+      "status": "PASS",
+      "max_absolute_error": 1.7763568394002505e-14
+    },
+    "13": {
+      "word": "utt",
+      "status": "PASS",
+      "max_absolute_error": 1.4210854715202004e-14
+    },
+    "14": {
+      "word": "ux^2",
+      "status": "PASS",
+      "max_absolute_error": 2.8421709430404007e-13
+    },
+    "19": {
+      "word": "u^2",
+      "status": "PASS",
+      "max_absolute_error": 2.2737367544323206e-13
+    },
+    "20": {
+      "word": "uxxx",
+      "status": "PASS",
+      "max_absolute_error": 1.0658141036401503e-14
+    },
+    "21": {
+      "word": "u^3",
+      "status": "PASS",
+      "max_absolute_error": 3.183231456205249e-12
+    },
+    "23": {
+      "word": "uyy",
+      "status": "PASS",
+      "max_absolute_error": 1.0658141036401503e-14
+    },
+    "39": {
+      "word": "uz",
+      "status": "PASS",
+      "max_absolute_error": 1.0658141036401503e-14
+    }
+  },
+  "policy": "Each parent retained; independent scalar PDE components reported separately; original systems never claimed fully represented",
+  "limitations": [
+    "Context-based dimension evidence is explicit and retained; not a proof of arbitrary semantic equivalence",
+    "Unresolved inputs are not proved mathematically impossible; all have an outcome and reason"
+  ]
+}

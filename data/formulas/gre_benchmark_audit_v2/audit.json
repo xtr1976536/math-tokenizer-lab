@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "external_records": 2049,
+  "external_unique_keys": 2049,
+  "all_external_replayed": true,
+  "external_no_221_overlap": true,
+  "eqgpt_221_rows_after_target_exclusion": 212,
+  "eqgpt_target_rows_excluded": 9,
+  "all_eqgpt_rows_replayed": true,
+  "source_hashes_checked": true
+}

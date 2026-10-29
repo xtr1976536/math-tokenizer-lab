@@ -1,0 +1,19 @@
+{
+  "status": "length_impact_only_no_data_removed",
+  "limit_including_controls": 80,
+  "source_records": 2257,
+  "sources_exceeding_limit": 402,
+  "sources_retained_if_common_filter": 1855,
+  "excluded_source_kinds": {
+    "external_benchmark": 402
+  },
+  "samples": 72224,
+  "samples_exceeding_limit": 12864,
+  "over_80_by_arm": {
+    "ast_bpe_280": 96,
+    "ast_bpe_315": 40,
+    "ast_bpe_350": 40,
+    "eqgpt_reference": 12768
+  },
+  "training_started": false
+}

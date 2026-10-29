@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "epochs": 25,
+  "samples": 59360,
+  "methods": [
+    "eqgpt_reference",
+    "ast_bpe_280",
+    "ast_bpe_315",
+    "ast_bpe_350"
+  ]
+}

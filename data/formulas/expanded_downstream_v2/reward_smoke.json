@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "device": "mps",
+  "existing_cache": {
+    "cache_sha256": "a763e9428d7251000e7a221f931f6e1fedf1666a663f30678671566a1988ea49",
+    "device": "mps",
+    "exact_weight_and_coordinate_hashes": true,
+    "stored_prediction_hash_exact": true,
+    "prediction_replay_rtol": 1e-05,
+    "prediction_replay_atol": 1e-06,
+    "maximum_absolute_difference": 0.0,
+    "fit_called": false
+  },
+  "raw_LaTeX": "\\partial_t^2 u-2\\partial_x^2 u=0",
+  "raw_and_GRE_reward_identical": true,
+  "reward": 0.9276621623254708,
+  "reward_calls": 1,
+  "raw_text_preserved": true,
+  "cache_retrained": false
+}

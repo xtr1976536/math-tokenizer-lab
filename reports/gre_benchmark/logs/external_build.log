@@ -1,0 +1,46 @@
+{
+  "candidate_records": 66,
+  "status_counts": {
+    "eligible": 40,
+    "duplicate_structure": 21,
+    "excluded_original221_structure": 5
+  },
+  "benchmark_unique_structures": 40,
+  "fits_current_50_positions": 37,
+  "source_groups": 8,
+  "families": {
+    "fifth_order_KdV_Burgers_Fisher": 1,
+    "KdV_Burgers_Fisher": 1,
+    "dispersive_KS": 1,
+    "KS": 1,
+    "generalized_KS": 5,
+    "Rosenau_Hyman_Kmn": 21,
+    "supercritical_gKdV": 4,
+    "Cahn_Hilliard_1D": 1,
+    "rational_integrable_5_5": 1,
+    "rational_integrable_5_6": 1,
+    "rational_integrable_5_9": 1,
+    "Swift_Hohenberg_quadratic_cubic": 1,
+    "Swift_Hohenberg_cubic_quintic": 1
+  },
+  "explicit_source_equations": 8,
+  "declared_family_or_dimension_instances": 32,
+  "dictionary_size": 57,
+  "no_oov": true,
+  "original221_all_rows_compared": 221,
+  "original221_unique_expanded_supports": 192,
+  "deduplication": "coefficient-free exact expanded support under x/y/z permutations; no arbitrary nonlinear transformations",
+  "limitations": [
+    "Original1500 overlap checked by source and all successfully converted components; unresolved mathematical equivalences are not exhaustively ruled out",
+    "Parameterized instances do not count as independently sourced PDE families; split by source/family to prevent leakage",
+    "Only bounded integer family instances sampled; no fabricated combinations or zero-coefficient ablations",
+    "No claim of thousands of independent structures; downstream model and augmentation not changed",
+    "EqWorld database endpoints searched but direct TLS/timeout failures prevented verified new formula inclusion"
+  ],
+  "files_sha256": {
+    "candidate_records.jsonl": "4a779ae67967a5aa2511ece4a42dfd93ad0678c099eb540d62e7e8d4f0d44e17",
+    "benchmark.jsonl": "fbc03d35d403285d2c318f3d938bf0cabdf002ca0ed71822b3b6b6d5ab365f2e",
+    "benchmark_maxpos50.jsonl": "e7e81ed2c2ddb25d4aa3ef8557ef60d51b778a56ca138577e684ec27e78803ed",
+    "benchmark.csv": "07c2a5b3c4ac0f8559eff3cced49c318d36b70537b29b9fd0aa1e31a192ef278"
+  }
+}

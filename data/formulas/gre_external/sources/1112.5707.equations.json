@@ -1,0 +1,422 @@
+[
+  {
+    "location": "S1.E1",
+    "latex": [
+      "\\begin{gathered}u_{t}+u^{m}\\,u_{x}+\\alpha\\,u_{xx}+\\beta\\,u_{xxx}+\\gamma\\,u_{xxxx}=0\\end{gathered}"
+    ],
+    "context": "In this paper we present exact solutions of the generalized Kuramoto\n- Sivashinsky equation u t + u m ​ u x + α ​ u x ​ x + β ​ u x ​ x ​ x + γ ​ u x ​ x ​ x ​ x = 0 \\begin{gathered}u_{t}+u^{m}\\,u_{x}+\\alpha\\,u_{xx}+\\beta\\,u_{xxx}+\\gamma\\,u_{xxxx}=0\\end{gathered} (1.1) Nonlinear evolution equation ( 1.1 ) at m = 1 m=1 has been studied\nby a number of authors from various viewpoints. This equation has\ndrown much attention not only because it is interesting as a simple\none - dimensional nonlinear evolution equation including effects of\ninstability, dissipation and dispersion but also it is important for\ndescription in engineering and scientific problems. Equation\n( 1.1 ) in work [ 1 ] was used for explanation of\nthe origin of persistent wave propagation through medium of reaction\n- diffusion type. In paper [ 2 ] equation ( 1.1 )\nwas obtained at m = 1 m=1 for description of the nonlinear evolution of\nthe disturbed flame front. We can meet the application of equation\n( 1.1 ) for studying of motion of a viscous incompressible\nflowing down an inclined plane [ 3 , 4 , 5 ] .\nMathematical model for consideration dissipative waves in plasma\nphysics by means of equation ( 1.1 ) was presented in [ 6 ] . Elementary particles as solutions of the Kuramoto -\nSivashinsky equation were studied in [ 7 ] . Equation\n( 1.1 ) at m ≠ 1 m\\neq 1 also can be used for the description of\nphysical applications. For a example this equation were derived for\ndescription of nonlinear long waves in viscous - elastic tube [ 8 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}u_{t}+u^{m}\\,u_{x}+\\alpha\\,u_{xx}+\\beta\\,u_{xxx}+\\gamma\\,u_{xxxx}=0\\end{gathered}"
+    ],
+    "context": "u t + u m ​ u x + α ​ u x ​ x + β ​ u x ​ x ​ x + γ ​ u x ​ x ​ x ​ x = 0 \\begin{gathered}u_{t}+u^{m}\\,u_{x}+\\alpha\\,u_{xx}+\\beta\\,u_{xxx}+\\gamma\\,u_{xxxx}=0\\end{gathered} (1.1)"
+  },
+  {
+    "location": "S1.E2",
+    "latex": [
+      "\\begin{gathered}\\alpha=\\frac{\\beta^{2}}{16\\,\\gamma}\\quad\\alpha=\\frac{47\\,\\beta^{2}}{144\\,\\gamma},\\quad\\alpha=\\frac{73\\,\\beta^{2}}{256\\,\\gamma}.\\end{gathered}"
+    ],
+    "context": "Exact solution of equation ( 2.2 ) in the form of the solitary\nwave at m = 1 m=1 and at β = 0 \\beta=0 were obtained in [ 1 , 9 ] . Solitary wave solutions of equation ( 2.2 ) at m = 1 m=1 in the case β ≠ 0 \\beta\\neq 0 were found in works [ 10 , 11 , 12 ] for cases: α = β 2 16 ​ γ α = 47 ​ β 2 144 ​ γ , α = 73 ​ β 2 256 ​ γ . \\begin{gathered}\\alpha=\\frac{\\beta^{2}}{16\\,\\gamma}\\quad\\alpha=\\frac{47\\,\\beta^{2}}{144\\,\\gamma},\\quad\\alpha=\\frac{73\\,\\beta^{2}}{256\\,\\gamma}.\\end{gathered} (1.2)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}\\alpha=\\frac{\\beta^{2}}{16\\,\\gamma}\\quad\\alpha=\\frac{47\\,\\beta^{2}}{144\\,\\gamma},\\quad\\alpha=\\frac{73\\,\\beta^{2}}{256\\,\\gamma}.\\end{gathered}"
+    ],
+    "context": "α = β 2 16 ​ γ α = 47 ​ β 2 144 ​ γ , α = 73 ​ β 2 256 ​ γ . \\begin{gathered}\\alpha=\\frac{\\beta^{2}}{16\\,\\gamma}\\quad\\alpha=\\frac{47\\,\\beta^{2}}{144\\,\\gamma},\\quad\\alpha=\\frac{73\\,\\beta^{2}}{256\\,\\gamma}.\\end{gathered} (1.2)"
+  },
+  {
+    "location": "S1.E3",
+    "latex": [
+      "\\begin{gathered}\\alpha=\\frac{2\\,\\beta^{2}}{25\\,\\gamma}\\quad\\alpha=\\frac{71\\,\\beta^{2}}{225\\,\\gamma},\\quad\\alpha=\\frac{121\\,\\beta^{2}}{55\\,\\gamma},\\quad\\alpha=\\frac{374\\,\\beta^{2}}{2025\\,\\gamma}.\\end{gathered}"
+    ],
+    "context": "Exact solutions of equation ( 2.2 ) at m = 2 m=2 recently were\nobtained [ 8 ] for the four cases: α = 2 ​ β 2 25 ​ γ α = 71 ​ β 2 225 ​ γ , α = 121 ​ β 2 55 ​ γ , α = 374 ​ β 2 2025 ​ γ . \\begin{gathered}\\alpha=\\frac{2\\,\\beta^{2}}{25\\,\\gamma}\\quad\\alpha=\\frac{71\\,\\beta^{2}}{225\\,\\gamma},\\quad\\alpha=\\frac{121\\,\\beta^{2}}{55\\,\\gamma},\\quad\\alpha=\\frac{374\\,\\beta^{2}}{2025\\,\\gamma}.\\end{gathered} (1.3)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}\\alpha=\\frac{2\\,\\beta^{2}}{25\\,\\gamma}\\quad\\alpha=\\frac{71\\,\\beta^{2}}{225\\,\\gamma},\\quad\\alpha=\\frac{121\\,\\beta^{2}}{55\\,\\gamma},\\quad\\alpha=\\frac{374\\,\\beta^{2}}{2025\\,\\gamma}.\\end{gathered}"
+    ],
+    "context": "α = 2 ​ β 2 25 ​ γ α = 71 ​ β 2 225 ​ γ , α = 121 ​ β 2 55 ​ γ , α = 374 ​ β 2 2025 ​ γ . \\begin{gathered}\\alpha=\\frac{2\\,\\beta^{2}}{25\\,\\gamma}\\quad\\alpha=\\frac{71\\,\\beta^{2}}{225\\,\\gamma},\\quad\\alpha=\\frac{121\\,\\beta^{2}}{55\\,\\gamma},\\quad\\alpha=\\frac{374\\,\\beta^{2}}{2025\\,\\gamma}.\\end{gathered} (1.3)"
+  },
+  {
+    "location": "S2.E1",
+    "latex": [
+      "\\begin{gathered}u(x,t)=w(z),\\,\\qquad z=x-C_{0}\\,t\\end{gathered}"
+    ],
+    "context": "Using traveling wave u ⁡ ( x , t ) = w ⁡ ( z ) , z = x − C 0 ​ t \\begin{gathered}u(x,t)=w(z),\\,\\qquad z=x-C_{0}\\,t\\end{gathered} (2.1) from equation ( 1.1 ) we have w z ​ z ​ z + σ ​ w z ​ z + w z − C 0 ​ w + 1 m + 1 ​ w m + 1 = 0 , m ≠ − 1 \\begin{gathered}w_{zzz}+\\sigma\\,w_{zz}+w_{z}-C_{0}\\,w+\\frac{1}{m+1}\\,w^{m+1}=0,\\qquad m\\neq-1\\end{gathered} (2.2)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}u(x,t)=w(z),\\,\\qquad z=x-C_{0}\\,t\\end{gathered}"
+    ],
+    "context": "u ⁡ ( x , t ) = w ⁡ ( z ) , z = x − C 0 ​ t \\begin{gathered}u(x,t)=w(z),\\,\\qquad z=x-C_{0}\\,t\\end{gathered} (2.1)"
+  },
+  {
+    "location": "S2.E2",
+    "latex": [
+      "\\begin{gathered}w_{zzz}+\\sigma\\,w_{zz}+w_{z}-C_{0}\\,w+\\frac{1}{m+1}\\,w^{m+1}=0,\\qquad m\\neq-1\\end{gathered}"
+    ],
+    "context": "Using traveling wave u ⁡ ( x , t ) = w ⁡ ( z ) , z = x − C 0 ​ t \\begin{gathered}u(x,t)=w(z),\\,\\qquad z=x-C_{0}\\,t\\end{gathered} (2.1) from equation ( 1.1 ) we have w z ​ z ​ z + σ ​ w z ​ z + w z − C 0 ​ w + 1 m + 1 ​ w m + 1 = 0 , m ≠ − 1 \\begin{gathered}w_{zzz}+\\sigma\\,w_{zz}+w_{z}-C_{0}\\,w+\\frac{1}{m+1}\\,w^{m+1}=0,\\qquad m\\neq-1\\end{gathered} (2.2)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}w_{zzz}+\\sigma\\,w_{zz}+w_{z}-C_{0}\\,w+\\frac{1}{m+1}\\,w^{m+1}=0,\\qquad m\\neq-1\\end{gathered}"
+    ],
+    "context": "w z ​ z ​ z + σ ​ w z ​ z + w z − C 0 ​ w + 1 m + 1 ​ w m + 1 = 0 , m ≠ − 1 \\begin{gathered}w_{zzz}+\\sigma\\,w_{zz}+w_{z}-C_{0}\\,w+\\frac{1}{m+1}\\,w^{m+1}=0,\\qquad m\\neq-1\\end{gathered} (2.2)"
+  },
+  {
+    "location": "S2.E3",
+    "latex": [
+      "\\begin{gathered}w(z)=v(z)^{\\frac{1}{m}}\\end{gathered}"
+    ],
+    "context": "Assuming in ( 2.2 ) w ⁡ ( z ) = v ​ ( z ) 1 m \\begin{gathered}w(z)=v(z)^{\\frac{1}{m}}\\end{gathered} (2.3) we have equation in the form"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}w(z)=v(z)^{\\frac{1}{m}}\\end{gathered}"
+    ],
+    "context": "w ⁡ ( z ) = v ​ ( z ) 1 m \\begin{gathered}w(z)=v(z)^{\\frac{1}{m}}\\end{gathered} (2.3)"
+  },
+  {
+    "location": "S2.E4",
+    "latex": [
+      "\\begin{gathered}\\gamma\\,{m}^{3}\\,{v}^{2}\\,v_{{{zzz}}}+\\gamma\\,{m}^{2}\\,{v}^{2}\\,v_{{{zzz}}}+3\\,\\gamma\\,m\\,v\\,v_{{z}}\\,v_{{{zz}}}+\\beta\\,{m}^{3}\\,{v}^{2}\\,v_{{{zz}}}-2\\,\\gamma\\,m\\,{v_{{z}}}^{3}-\\\\\n\\\\\n-3\\,\\gamma\\,{m}^{3}v\\,v_{{z}}\\,v_{{{zz}}}+\\gamma\\,{v_{{z}}}^{3}-\\gamma\\,{m}^{2}\\,{v_{{z}}}^{3}+2\\,\\gamma\\,{m}^{3}\\,{v_{{z}}}^{3}+\\beta\\,m\\,v\\,{v_{{z}}}^{2}-\\\\\n\\\\\n-\\beta\\,{m}^{3}\\,v\\,{v_{{z}}}^{2}+\\beta\\,{m}^{2}\\,{v}^{2}\\,v_{{{zz}}}+\\alpha\\,{m}^{3}\\,{v}^{2}\\,v_{{z}}+\\alpha\\,{m}^{2}\\,{v}^{2}\\,v_{{z}}+{m}^{3}\\,{v}^{4}-\\\\\n\\\\\n-{C_{0}}\\,{m}^{4}\\,{v}^{3}-{C_{0}}\\,{m}^{3}\\,{v}^{3}=0\\end{gathered}"
+    ],
+    "context": "γ ​ m 3 ​ v 2 ​ v z ​ z ​ z + γ ​ m 2 ​ v 2 ​ v z ​ z ​ z + 3 ​ γ ​ m ​ v ​ v z ​ v z ​ z + β ​ m 3 ​ v 2 ​ v z ​ z − 2 ​ γ ​ m ​ v z 3 − − 3 ​ γ ​ m 3 ​ v ​ v z ​ v z ​ z + γ ​ v z 3 − γ ​ m 2 ​ v z 3 + 2 ​ γ ​ m 3 ​ v z 3 + β ​ m ​ v ​ v z 2 − − β ​ m 3 ​ v ​ v z 2 + β ​ m 2 ​ v 2 ​ v z ​ z + α ​ m 3 ​ v 2 ​ v z + α ​ m 2 ​ v 2 ​ v z + m 3 ​ v 4 − − C 0 ​ m 4 ​ v 3 − C 0 ​ m 3 ​ v 3 = 0 \\begin{gathered}\\gamma\\,{m}^{3}\\,{v}^{2}\\,v_{{{zzz}}}+\\gamma\\,{m}^{2}\\,{v}^{2}\\,v_{{{zzz}}}+3\\,\\gamma\\,m\\,v\\,v_{{z}}\\,v_{{{zz}}}+\\beta\\,{m}^{3}\\,{v}^{2}\\,v_{{{zz}}}-2\\,\\gamma\\,m\\,{v_{{z}}}^{3}-\\\\\n\\\\\n-3\\,\\gamma\\,{m}^{3}v\\,v_{{z}}\\,v_{{{zz}}}+\\gamma\\,{v_{{z}}}^{3}-\\gamma\\,{m}^{2}\\,{v_{{z}}}^{3}+2\\,\\gamma\\,{m}^{3}\\,{v_{{z}}}^{3}+\\beta\\,m\\,v\\,{v_{{z}}}^{2}-\\\\\n\\\\\n-\\beta\\,{m}^{3}\\,v\\,{v_{{z}}}^{2}+\\beta\\,{m}^{2}\\,{v}^{2}\\,v_{{{zz}}}+\\alpha\\,{m}^{3}\\,{v}^{2}\\,v_{{z}}+\\alpha\\,{m}^{2}\\,{v}^{2}\\,v_{{z}}+{m}^{3}\\,{v}^{4}-\\\\\n\\\\\n-{C_{0}}\\,{m}^{4}\\,{v}^{3}-{C_{0}}\\,{m}^{3}\\,{v}^{3}=0\\end{gathered} (2.4)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}\\gamma\\,{m}^{3}\\,{v}^{2}\\,v_{{{zzz}}}+\\gamma\\,{m}^{2}\\,{v}^{2}\\,v_{{{zzz}}}+3\\,\\gamma\\,m\\,v\\,v_{{z}}\\,v_{{{zz}}}+\\beta\\,{m}^{3}\\,{v}^{2}\\,v_{{{zz}}}-2\\,\\gamma\\,m\\,{v_{{z}}}^{3}-\\\\\n\\\\\n-3\\,\\gamma\\,{m}^{3}v\\,v_{{z}}\\,v_{{{zz}}}+\\gamma\\,{v_{{z}}}^{3}-\\gamma\\,{m}^{2}\\,{v_{{z}}}^{3}+2\\,\\gamma\\,{m}^{3}\\,{v_{{z}}}^{3}+\\beta\\,m\\,v\\,{v_{{z}}}^{2}-\\\\\n\\\\\n-\\beta\\,{m}^{3}\\,v\\,{v_{{z}}}^{2}+\\beta\\,{m}^{2}\\,{v}^{2}\\,v_{{{zz}}}+\\alpha\\,{m}^{3}\\,{v}^{2}\\,v_{{z}}+\\alpha\\,{m}^{2}\\,{v}^{2}\\,v_{{z}}+{m}^{3}\\,{v}^{4}-\\\\\n\\\\\n-{C_{0}}\\,{m}^{4}\\,{v}^{3}-{C_{0}}\\,{m}^{3}\\,{v}^{3}=0\\end{gathered}"
+    ],
+    "context": "γ ​ m 3 ​ v 2 ​ v z ​ z ​ z + γ ​ m 2 ​ v 2 ​ v z ​ z ​ z + 3 ​ γ ​ m ​ v ​ v z ​ v z ​ z + β ​ m 3 ​ v 2 ​ v z ​ z − 2 ​ γ ​ m ​ v z 3 − − 3 ​ γ ​ m 3 ​ v ​ v z ​ v z ​ z + γ ​ v z 3 − γ ​ m 2 ​ v z 3 + 2 ​ γ ​ m 3 ​ v z 3 + β ​ m ​ v ​ v z 2 − − β ​ m 3 ​ v ​ v z 2 + β ​ m 2 ​ v 2 ​ v z ​ z + α ​ m 3 ​ v 2 ​ v z + α ​ m 2 ​ v 2 ​ v z + m 3 ​ v 4 − − C 0 ​ m 4 ​ v 3 − C 0 ​ m 3 ​ v 3 = 0 \\begin{gathered}\\gamma\\,{m}^{3}\\,{v}^{2}\\,v_{{{zzz}}}+\\gamma\\,{m}^{2}\\,{v}^{2}\\,v_{{{zzz}}}+3\\,\\gamma\\,m\\,v\\,v_{{z}}\\,v_{{{zz}}}+\\beta\\,{m}^{3}\\,{v}^{2}\\,v_{{{zz}}}-2\\,\\gamma\\,m\\,{v_{{z}}}^{3}-\\\\\n\\\\\n-3\\,\\gamma\\,{m}^{3}v\\,v_{{z}}\\,v_{{{zz}}}+\\gamma\\,{v_{{z}}}^{3}-\\gamma\\,{m}^{2}\\,{v_{{z}}}^{3}+2\\,\\gamma\\,{m}^{3}\\,{v_{{z}}}^{3}+\\beta\\,m\\,v\\,{v_{{z}}}^{2}-\\\\\n\\\\\n-\\beta\\,{m}^{3}\\,v\\,{v_{{z}}}^{2}+\\beta\\,{m}^{2}\\,{v}^{2}\\,v_{{{zz}}}+\\alpha\\,{m}^{3}\\,{v}^{2}\\,v_{{z}}+\\alpha\\,{m}^{2}\\,{v}^{2}\\,v_{{z}}+{m}^{3}\\,{v}^{4}-\\\\\n\\\\\n-{C_{0}}\\,{m}^{4}\\,{v}^{3}-{C_{0}}\\,{m}^{3}\\,{v}^{3}=0\\end{gathered} (2.4)"
+  },
+  {
+    "location": "S2.E5",
+    "latex": [
+      "\\begin{gathered}\\alpha={\\frac{{\\beta}^{2}\\,m\\,}{\\gamma\\left(m+3\\right)^{2}}},\\qquad\\alpha=\\,{\\frac{{\\beta}^{2}\\,\\left(2\\,{m}^{2}+18\\,m+27\\right)\\,}{9\\,\\gamma\\left(m+3\\right)^{2}}}\\end{gathered}"
+    ],
+    "context": "Study of analytical properties of equation ( 2.4 ) allows us to\ndetermine that in the general case the meromorphic solutions of\nequation ( 2.4 ) can be found taking into account two cases: α = β 2 ​ m γ ​ ( m + 3 ) 2 , α = β 2 ​ ( 2 ​ m 2 + 18 ​ m + 27 ) 9 ​ γ ​ ( m + 3 ) 2 \\begin{gathered}\\alpha={\\frac{{\\beta}^{2}\\,m\\,}{\\gamma\\left(m+3\\right)^{2}}},\\qquad\\alpha=\\,{\\frac{{\\beta}^{2}\\,\\left(2\\,{m}^{2}+18\\,m+27\\right)\\,}{9\\,\\gamma\\left(m+3\\right)^{2}}}\\end{gathered} (2.5) Consider the first case. The pole order of the solution of equation\n( 2.4 ) is equal to three therefore we look for exact solutions\nof equation ( 2.4 ) in the form v ⁡ ( z ) = A 0 + A 1 ​ Y ​ ( z ) + A 2 ​ Y ​ ( z ) 2 + A 3 ​ Y ​ ( z ) 3 , \\begin{gathered}v(z)=A_{0}+A_{1}\\,Y(z)+A_{2}\\,Y(z)^{2}+A_{3}\\,Y(z)^{3},\\end{gathered} (2.6) where Y ⁡ ( z ) Y(z) is solution of equation with the first order pole. Let\nus take simplest equation in the form [ 20 , 21 ] Y z = − Y 2 + b . \\begin{gathered}Y_{z}=-Y^{2}+b.\\end{gathered} (2.7) Substituting ( 2.6 ) into ( 2.4 ) and taking into account\nequation ( 2.7 ) we have b = β 2 ​ m 2 4 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{4\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered} (2.8)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}\\alpha={\\frac{{\\beta}^{2}\\,m\\,}{\\gamma\\left(m+3\\right)^{2}}},\\qquad\\alpha=\\,{\\frac{{\\beta}^{2}\\,\\left(2\\,{m}^{2}+18\\,m+27\\right)\\,}{9\\,\\gamma\\left(m+3\\right)^{2}}}\\end{gathered}"
+    ],
+    "context": "α = β 2 ​ m γ ​ ( m + 3 ) 2 , α = β 2 ​ ( 2 ​ m 2 + 18 ​ m + 27 ) 9 ​ γ ​ ( m + 3 ) 2 \\begin{gathered}\\alpha={\\frac{{\\beta}^{2}\\,m\\,}{\\gamma\\left(m+3\\right)^{2}}},\\qquad\\alpha=\\,{\\frac{{\\beta}^{2}\\,\\left(2\\,{m}^{2}+18\\,m+27\\right)\\,}{9\\,\\gamma\\left(m+3\\right)^{2}}}\\end{gathered} (2.5)"
+  },
+  {
+    "location": "S2.E6",
+    "latex": [
+      "\\begin{gathered}v(z)=A_{0}+A_{1}\\,Y(z)+A_{2}\\,Y(z)^{2}+A_{3}\\,Y(z)^{3},\\end{gathered}"
+    ],
+    "context": "Study of analytical properties of equation ( 2.4 ) allows us to\ndetermine that in the general case the meromorphic solutions of\nequation ( 2.4 ) can be found taking into account two cases: α = β 2 ​ m γ ​ ( m + 3 ) 2 , α = β 2 ​ ( 2 ​ m 2 + 18 ​ m + 27 ) 9 ​ γ ​ ( m + 3 ) 2 \\begin{gathered}\\alpha={\\frac{{\\beta}^{2}\\,m\\,}{\\gamma\\left(m+3\\right)^{2}}},\\qquad\\alpha=\\,{\\frac{{\\beta}^{2}\\,\\left(2\\,{m}^{2}+18\\,m+27\\right)\\,}{9\\,\\gamma\\left(m+3\\right)^{2}}}\\end{gathered} (2.5) Consider the first case. The pole order of the solution of equation\n( 2.4 ) is equal to three therefore we look for exact solutions\nof equation ( 2.4 ) in the form v ⁡ ( z ) = A 0 + A 1 ​ Y ​ ( z ) + A 2 ​ Y ​ ( z ) 2 + A 3 ​ Y ​ ( z ) 3 , \\begin{gathered}v(z)=A_{0}+A_{1}\\,Y(z)+A_{2}\\,Y(z)^{2}+A_{3}\\,Y(z)^{3},\\end{gathered} (2.6) where Y ⁡ ( z ) Y(z) is solution of equation with the first order pole. Let\nus take simplest equation in the form [ 20 , 21 ] Y z = − Y 2 + b . \\begin{gathered}Y_{z}=-Y^{2}+b.\\end{gathered} (2.7) Substituting ( 2.6 ) into ( 2.4 ) and taking into account\nequation ( 2.7 ) we have b = β 2 ​ m 2 4 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{4\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered} (2.8)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}v(z)=A_{0}+A_{1}\\,Y(z)+A_{2}\\,Y(z)^{2}+A_{3}\\,Y(z)^{3},\\end{gathered}"
+    ],
+    "context": "v ⁡ ( z ) = A 0 + A 1 ​ Y ​ ( z ) + A 2 ​ Y ​ ( z ) 2 + A 3 ​ Y ​ ( z ) 3 , \\begin{gathered}v(z)=A_{0}+A_{1}\\,Y(z)+A_{2}\\,Y(z)^{2}+A_{3}\\,Y(z)^{3},\\end{gathered} (2.6)"
+  },
+  {
+    "location": "S2.E7",
+    "latex": [
+      "\\begin{gathered}Y_{z}=-Y^{2}+b.\\end{gathered}"
+    ],
+    "context": "Study of analytical properties of equation ( 2.4 ) allows us to\ndetermine that in the general case the meromorphic solutions of\nequation ( 2.4 ) can be found taking into account two cases: α = β 2 ​ m γ ​ ( m + 3 ) 2 , α = β 2 ​ ( 2 ​ m 2 + 18 ​ m + 27 ) 9 ​ γ ​ ( m + 3 ) 2 \\begin{gathered}\\alpha={\\frac{{\\beta}^{2}\\,m\\,}{\\gamma\\left(m+3\\right)^{2}}},\\qquad\\alpha=\\,{\\frac{{\\beta}^{2}\\,\\left(2\\,{m}^{2}+18\\,m+27\\right)\\,}{9\\,\\gamma\\left(m+3\\right)^{2}}}\\end{gathered} (2.5) Consider the first case. The pole order of the solution of equation\n( 2.4 ) is equal to three therefore we look for exact solutions\nof equation ( 2.4 ) in the form v ⁡ ( z ) = A 0 + A 1 ​ Y ​ ( z ) + A 2 ​ Y ​ ( z ) 2 + A 3 ​ Y ​ ( z ) 3 , \\begin{gathered}v(z)=A_{0}+A_{1}\\,Y(z)+A_{2}\\,Y(z)^{2}+A_{3}\\,Y(z)^{3},\\end{gathered} (2.6) where Y ⁡ ( z ) Y(z) is solution of equation with the first order pole. Let\nus take simplest equation in the form [ 20 , 21 ] Y z = − Y 2 + b . \\begin{gathered}Y_{z}=-Y^{2}+b.\\end{gathered} (2.7) Substituting ( 2.6 ) into ( 2.4 ) and taking into account\nequation ( 2.7 ) we have b = β 2 ​ m 2 4 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{4\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered} (2.8)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}Y_{z}=-Y^{2}+b.\\end{gathered}"
+    ],
+    "context": "Y z = − Y 2 + b . \\begin{gathered}Y_{z}=-Y^{2}+b.\\end{gathered} (2.7)"
+  },
+  {
+    "location": "S2.E8",
+    "latex": [
+      "\\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{4\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered}"
+    ],
+    "context": "Study of analytical properties of equation ( 2.4 ) allows us to\ndetermine that in the general case the meromorphic solutions of\nequation ( 2.4 ) can be found taking into account two cases: α = β 2 ​ m γ ​ ( m + 3 ) 2 , α = β 2 ​ ( 2 ​ m 2 + 18 ​ m + 27 ) 9 ​ γ ​ ( m + 3 ) 2 \\begin{gathered}\\alpha={\\frac{{\\beta}^{2}\\,m\\,}{\\gamma\\left(m+3\\right)^{2}}},\\qquad\\alpha=\\,{\\frac{{\\beta}^{2}\\,\\left(2\\,{m}^{2}+18\\,m+27\\right)\\,}{9\\,\\gamma\\left(m+3\\right)^{2}}}\\end{gathered} (2.5) Consider the first case. The pole order of the solution of equation\n( 2.4 ) is equal to three therefore we look for exact solutions\nof equation ( 2.4 ) in the form v ⁡ ( z ) = A 0 + A 1 ​ Y ​ ( z ) + A 2 ​ Y ​ ( z ) 2 + A 3 ​ Y ​ ( z ) 3 , \\begin{gathered}v(z)=A_{0}+A_{1}\\,Y(z)+A_{2}\\,Y(z)^{2}+A_{3}\\,Y(z)^{3},\\end{gathered} (2.6) where Y ⁡ ( z ) Y(z) is solution of equation with the first order pole. Let\nus take simplest equation in the form [ 20 , 21 ] Y z = − Y 2 + b . \\begin{gathered}Y_{z}=-Y^{2}+b.\\end{gathered} (2.7) Substituting ( 2.6 ) into ( 2.4 ) and taking into account\nequation ( 2.7 ) we have b = β 2 ​ m 2 4 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{4\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered} (2.8)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{4\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered}"
+    ],
+    "context": "b = β 2 ​ m 2 4 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{4\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered} (2.8)"
+  },
+  {
+    "location": "S2.E9",
+    "latex": [
+      "\\begin{gathered}A_{{3}}={\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,{m}^{2}}},\\quad A_{{1}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\left(m+3\\right)m\\,\\gamma}},\\\\\n\\\\\nC_{{0}}=\\,{\\frac{2\\,\\left(m+2\\right){\\beta}^{3}}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\quad A_{0}=\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{{8\\,\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered}"
+    ],
+    "context": "We have also the following values of coefficients in ( 2.6 ) A 3 = 3 ​ γ ​ ( 2 ​ m + 3 ) ​ ( m + 3 ) ​ ( m + 1 ) m 3 , A 2 = − 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 ​ m 2 , A 1 = − 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 4 ​ ( m + 3 ) ​ m ​ γ , C 0 = 2 ​ ( m + 2 ) ​ β 3 γ 2 ​ ( m + 3 ) 3 , A 0 = 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 3 8 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}A_{{3}}={\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,{m}^{2}}},\\quad A_{{1}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\left(m+3\\right)m\\,\\gamma}},\\\\\n\\\\\nC_{{0}}=\\,{\\frac{2\\,\\left(m+2\\right){\\beta}^{3}}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\quad A_{0}=\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{{8\\,\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered} (2.9)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}A_{{3}}={\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,{m}^{2}}},\\quad A_{{1}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\left(m+3\\right)m\\,\\gamma}},\\\\\n\\\\\nC_{{0}}=\\,{\\frac{2\\,\\left(m+2\\right){\\beta}^{3}}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\quad A_{0}=\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{{8\\,\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered}"
+    ],
+    "context": "A 3 = 3 ​ γ ​ ( 2 ​ m + 3 ) ​ ( m + 3 ) ​ ( m + 1 ) m 3 , A 2 = − 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 ​ m 2 , A 1 = − 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 4 ​ ( m + 3 ) ​ m ​ γ , C 0 = 2 ​ ( m + 2 ) ​ β 3 γ 2 ​ ( m + 3 ) 3 , A 0 = 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 3 8 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}A_{{3}}={\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,{m}^{2}}},\\quad A_{{1}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\left(m+3\\right)m\\,\\gamma}},\\\\\n\\\\\nC_{{0}}=\\,{\\frac{2\\,\\left(m+2\\right){\\beta}^{3}}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\quad A_{0}=\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{{8\\,\\gamma}^{2}\\left(m+3\\right)^{2}}}.\\end{gathered} (2.9)"
+  },
+  {
+    "location": "S2.E10",
+    "latex": [
+      "\\begin{gathered}Y(z)\\,=\\,\\frac{\\beta\\,m}{2\\,{\\gamma}\\,\\left(m+3\\right)}\\,\\,\\tanh\\left\\{\\,{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}.\\end{gathered}"
+    ],
+    "context": "We have solutions of equation ( 2.7 ) in the form Y ( z ) = β ​ m 2 ​ γ ​ ( m + 3 ) tanh { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } . \\begin{gathered}Y(z)\\,=\\,\\frac{\\beta\\,m}{2\\,{\\gamma}\\,\\left(m+3\\right)}\\,\\,\\tanh\\left\\{\\,{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}.\\end{gathered} (2.10) Solution of equation ( 2.2 ) takes the form w ⁡ ( z ) = ( 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 3 8 ​ γ ​ ( m + 3 ) ) 1 m ​ ( 1 − tanh ⁡ { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } ) 2 m ( 1 + tanh ⁡ { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } ) 1 m , m ≠ 0 , m ≠ − 3 , m ≠ − 1 . \\begin{gathered}w(z)=\\left(\\frac{3\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{8\\,\\gamma\\,\\left(m+3\\right)}\\right)^{\\frac{1}{m}}\\,\\,\\left(1-\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{2}{m}}\\\\\n\\left(1+\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{1}{m}},\\quad m\\neq 0,\\quad m\\neq-3,\\quad m\\neq-1.\\end{gathered} (2.11)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}Y(z)\\,=\\,\\frac{\\beta\\,m}{2\\,{\\gamma}\\,\\left(m+3\\right)}\\,\\,\\tanh\\left\\{\\,{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}.\\end{gathered}"
+    ],
+    "context": "Y ( z ) = β ​ m 2 ​ γ ​ ( m + 3 ) tanh { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } . \\begin{gathered}Y(z)\\,=\\,\\frac{\\beta\\,m}{2\\,{\\gamma}\\,\\left(m+3\\right)}\\,\\,\\tanh\\left\\{\\,{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}.\\end{gathered} (2.10)"
+  },
+  {
+    "location": "S2.E11",
+    "latex": [
+      "\\begin{gathered}w(z)=\\left(\\frac{3\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{8\\,\\gamma\\,\\left(m+3\\right)}\\right)^{\\frac{1}{m}}\\,\\,\\left(1-\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{2}{m}}\\\\\n\\left(1+\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{1}{m}},\\quad m\\neq 0,\\quad m\\neq-3,\\quad m\\neq-1.\\end{gathered}"
+    ],
+    "context": "We have solutions of equation ( 2.7 ) in the form Y ( z ) = β ​ m 2 ​ γ ​ ( m + 3 ) tanh { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } . \\begin{gathered}Y(z)\\,=\\,\\frac{\\beta\\,m}{2\\,{\\gamma}\\,\\left(m+3\\right)}\\,\\,\\tanh\\left\\{\\,{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}.\\end{gathered} (2.10) Solution of equation ( 2.2 ) takes the form w ⁡ ( z ) = ( 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 3 8 ​ γ ​ ( m + 3 ) ) 1 m ​ ( 1 − tanh ⁡ { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } ) 2 m ( 1 + tanh ⁡ { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } ) 1 m , m ≠ 0 , m ≠ − 3 , m ≠ − 1 . \\begin{gathered}w(z)=\\left(\\frac{3\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{8\\,\\gamma\\,\\left(m+3\\right)}\\right)^{\\frac{1}{m}}\\,\\,\\left(1-\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{2}{m}}\\\\\n\\left(1+\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{1}{m}},\\quad m\\neq 0,\\quad m\\neq-3,\\quad m\\neq-1.\\end{gathered} (2.11)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}w(z)=\\left(\\frac{3\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{8\\,\\gamma\\,\\left(m+3\\right)}\\right)^{\\frac{1}{m}}\\,\\,\\left(1-\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{2}{m}}\\\\\n\\left(1+\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{1}{m}},\\quad m\\neq 0,\\quad m\\neq-3,\\quad m\\neq-1.\\end{gathered}"
+    ],
+    "context": "w ⁡ ( z ) = ( 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 3 8 ​ γ ​ ( m + 3 ) ) 1 m ​ ( 1 − tanh ⁡ { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } ) 2 m ( 1 + tanh ⁡ { β ​ m ​ ( z − z 0 ) 2 ​ γ ​ ( m + 3 ) } ) 1 m , m ≠ 0 , m ≠ − 3 , m ≠ − 1 . \\begin{gathered}w(z)=\\left(\\frac{3\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{3}}{8\\,\\gamma\\,\\left(m+3\\right)}\\right)^{\\frac{1}{m}}\\,\\,\\left(1-\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{2}{m}}\\\\\n\\left(1+\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{2\\,\\gamma\\left(m+3\\right)}}\\right\\}\\right)^{\\frac{1}{m}},\\quad m\\neq 0,\\quad m\\neq-3,\\quad m\\neq-1.\\end{gathered} (2.11)"
+  },
+  {
+    "location": "S2.E12",
+    "latex": [
+      "\\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{36\\,{\\gamma}^{2}\\,\\left(m+3\\right)^{2}}}.\\end{gathered}"
+    ],
+    "context": "Consider the second case. Solutions of equation ( 2.4 ) we look\nfor taking into consideration the transformation ( 2.6 ) again.\nFunction Y ⁡ ( z ) Y(z) satisfies equation ( 2.8 ) as well. In this case\nwe obtain the expression for the parameter b b in the form b = β 2 ​ m 2 36 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{36\\,{\\gamma}^{2}\\,\\left(m+3\\right)^{2}}}.\\end{gathered} (2.12) We also obtain coefficients A 3 A_{3} , A 2 A_{2} , A 1 A_{1} , C 0 C_{0} and A 0 A_{0} as\nfollowing A 3 = 3 ​ γ ​ ( 2 ​ m + 3 ) ​ ( m + 3 ) ​ ( m + 1 ) m 3 , A 2 = − 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 ​ m 2 , A 1 = ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 4 ​ γ ​ m ​ ( m + 3 ) , C 0 = − ( 2 ​ m + 3 ) ​ β 3 9 ​ ( m + 3 ) 2 ​ γ 2 , A 0 = − β 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) 72 ​ ( m + 3 ) 2 ​ γ 2 . \\begin{gathered}A_{{3}}=\\,{\\frac{3\\,\\gamma\\,\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,\\,{m}^{2}}},\\quad A_{{1}}=\\,{\\frac{\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\gamma\\,m\\,\\left(m+3\\right)}},\\\\\n\\\\\nC_{{0}}=-\\,{\\frac{\\left(2\\,m+3\\right){\\beta}^{3}}{9\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}},\\quad A_{{0}}=-\\,{\\frac{{\\beta}^{3}\\left(2\\,m+3\\right)\\left(m+1\\right)}{72\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}}.\\end{gathered} (2.13)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{36\\,{\\gamma}^{2}\\,\\left(m+3\\right)^{2}}}.\\end{gathered}"
+    ],
+    "context": "b = β 2 ​ m 2 36 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{36\\,{\\gamma}^{2}\\,\\left(m+3\\right)^{2}}}.\\end{gathered} (2.12)"
+  },
+  {
+    "location": "S2.E13",
+    "latex": [
+      "\\begin{gathered}A_{{3}}=\\,{\\frac{3\\,\\gamma\\,\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,\\,{m}^{2}}},\\quad A_{{1}}=\\,{\\frac{\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\gamma\\,m\\,\\left(m+3\\right)}},\\\\\n\\\\\nC_{{0}}=-\\,{\\frac{\\left(2\\,m+3\\right){\\beta}^{3}}{9\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}},\\quad A_{{0}}=-\\,{\\frac{{\\beta}^{3}\\left(2\\,m+3\\right)\\left(m+1\\right)}{72\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}}.\\end{gathered}"
+    ],
+    "context": "Consider the second case. Solutions of equation ( 2.4 ) we look\nfor taking into consideration the transformation ( 2.6 ) again.\nFunction Y ⁡ ( z ) Y(z) satisfies equation ( 2.8 ) as well. In this case\nwe obtain the expression for the parameter b b in the form b = β 2 ​ m 2 36 ​ γ 2 ​ ( m + 3 ) 2 . \\begin{gathered}b\\,=\\,{\\frac{{\\beta}^{2}{m}^{2}}{36\\,{\\gamma}^{2}\\,\\left(m+3\\right)^{2}}}.\\end{gathered} (2.12) We also obtain coefficients A 3 A_{3} , A 2 A_{2} , A 1 A_{1} , C 0 C_{0} and A 0 A_{0} as\nfollowing A 3 = 3 ​ γ ​ ( 2 ​ m + 3 ) ​ ( m + 3 ) ​ ( m + 1 ) m 3 , A 2 = − 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 ​ m 2 , A 1 = ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 4 ​ γ ​ m ​ ( m + 3 ) , C 0 = − ( 2 ​ m + 3 ) ​ β 3 9 ​ ( m + 3 ) 2 ​ γ 2 , A 0 = − β 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) 72 ​ ( m + 3 ) 2 ​ γ 2 . \\begin{gathered}A_{{3}}=\\,{\\frac{3\\,\\gamma\\,\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,\\,{m}^{2}}},\\quad A_{{1}}=\\,{\\frac{\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\gamma\\,m\\,\\left(m+3\\right)}},\\\\\n\\\\\nC_{{0}}=-\\,{\\frac{\\left(2\\,m+3\\right){\\beta}^{3}}{9\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}},\\quad A_{{0}}=-\\,{\\frac{{\\beta}^{3}\\left(2\\,m+3\\right)\\left(m+1\\right)}{72\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}}.\\end{gathered} (2.13)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}A_{{3}}=\\,{\\frac{3\\,\\gamma\\,\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,\\,{m}^{2}}},\\quad A_{{1}}=\\,{\\frac{\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\gamma\\,m\\,\\left(m+3\\right)}},\\\\\n\\\\\nC_{{0}}=-\\,{\\frac{\\left(2\\,m+3\\right){\\beta}^{3}}{9\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}},\\quad A_{{0}}=-\\,{\\frac{{\\beta}^{3}\\left(2\\,m+3\\right)\\left(m+1\\right)}{72\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}}.\\end{gathered}"
+    ],
+    "context": "A 3 = 3 ​ γ ​ ( 2 ​ m + 3 ) ​ ( m + 3 ) ​ ( m + 1 ) m 3 , A 2 = − 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 ​ m 2 , A 1 = ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ β 2 4 ​ γ ​ m ​ ( m + 3 ) , C 0 = − ( 2 ​ m + 3 ) ​ β 3 9 ​ ( m + 3 ) 2 ​ γ 2 , A 0 = − β 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) 72 ​ ( m + 3 ) 2 ​ γ 2 . \\begin{gathered}A_{{3}}=\\,{\\frac{3\\,\\gamma\\,\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{{m}^{3}}},\\\\\n\\\\\nA_{{2}}=-\\,{\\frac{3\\,\\left(2\\,m+3\\right)\\left(m+1\\right)\\beta}{2\\,\\,{m}^{2}}},\\quad A_{{1}}=\\,{\\frac{\\left(2\\,m+3\\right)\\left(m+1\\right){\\beta}^{2}}{4\\,\\gamma\\,m\\,\\left(m+3\\right)}},\\\\\n\\\\\nC_{{0}}=-\\,{\\frac{\\left(2\\,m+3\\right){\\beta}^{3}}{9\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}},\\quad A_{{0}}=-\\,{\\frac{{\\beta}^{3}\\left(2\\,m+3\\right)\\left(m+1\\right)}{72\\,\\left(m+3\\right)^{2}{\\gamma}^{2}}}.\\end{gathered} (2.13)"
+  },
+  {
+    "location": "S2.E14",
+    "latex": [
+      "\\begin{gathered}w(z)=\\left({\\frac{{\\beta}^{3}\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)}{72\\,\\gamma^{2}\\,\\left(m+3\\right)^{2}\\,}}\\right)^{\\frac{1}{m}}\\,\\left(\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{6\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}-1\\right)^{\\frac{3}{m}},\\\\\n\\\\\nm\\neq 0,\\quad m\\neq-1,\\quad m\\neq-3.\\end{gathered}"
+    ],
+    "context": "Using these coefficients we have solution of equation ( 2.2 ).\nIt takes the form w ⁡ ( z ) = ( β 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) 72 ​ γ 2 ​ ( m + 3 ) 2 ) 1 m ​ ( tanh ⁡ { β ​ m ​ ( z − z 0 ) 6 ​ γ ​ ( m + 3 ) } − 1 ) 3 m , m ≠ 0 , m ≠ − 1 , m ≠ − 3 . \\begin{gathered}w(z)=\\left({\\frac{{\\beta}^{3}\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)}{72\\,\\gamma^{2}\\,\\left(m+3\\right)^{2}\\,}}\\right)^{\\frac{1}{m}}\\,\\left(\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{6\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}-1\\right)^{\\frac{3}{m}},\\\\\n\\\\\nm\\neq 0,\\quad m\\neq-1,\\quad m\\neq-3.\\end{gathered} (2.14) Other forms of this solution were found in works [ 22 , 23 , 24 ] . At m = 1 m=1 from ( 2.14 ) we have one of the\nsolitary solutions of work [ 10 ] . In the case m = 2 m=2 we\nget solution [ 8 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}w(z)=\\left({\\frac{{\\beta}^{3}\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)}{72\\,\\gamma^{2}\\,\\left(m+3\\right)^{2}\\,}}\\right)^{\\frac{1}{m}}\\,\\left(\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{6\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}-1\\right)^{\\frac{3}{m}},\\\\\n\\\\\nm\\neq 0,\\quad m\\neq-1,\\quad m\\neq-3.\\end{gathered}"
+    ],
+    "context": "w ⁡ ( z ) = ( β 3 ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) 72 ​ γ 2 ​ ( m + 3 ) 2 ) 1 m ​ ( tanh ⁡ { β ​ m ​ ( z − z 0 ) 6 ​ γ ​ ( m + 3 ) } − 1 ) 3 m , m ≠ 0 , m ≠ − 1 , m ≠ − 3 . \\begin{gathered}w(z)=\\left({\\frac{{\\beta}^{3}\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)}{72\\,\\gamma^{2}\\,\\left(m+3\\right)^{2}\\,}}\\right)^{\\frac{1}{m}}\\,\\left(\\tanh\\left\\{{\\frac{\\beta\\,m\\,\\left(z-{z_{0}}\\right)}{6\\,\\gamma\\,\\left(m+3\\right)}}\\right\\}-1\\right)^{\\frac{3}{m}},\\\\\n\\\\\nm\\neq 0,\\quad m\\neq-1,\\quad m\\neq-3.\\end{gathered} (2.14)"
+  },
+  {
+    "location": "S3.E1",
+    "latex": [
+      "\\begin{gathered}w(z)=A_{0}+A_{1}\\,R+A_{2}\\,R_{z},\\qquad R\\equiv R(z),\\end{gathered}"
+    ],
+    "context": "Let us find periodical solutions of equation ( 2.2 ) taking into\nconsideration the formula [ 18 ] w ( z ) = A 0 + A 1 R + A 2 R z , R ≡ R ( z ) , \\begin{gathered}w(z)=A_{0}+A_{1}\\,R+A_{2}\\,R_{z},\\qquad R\\equiv R(z),\\end{gathered} (3.1) taking into account the relation for the parameter α \\alpha α = β 2 ​ m γ ​ ( m + 3 ) 2 . \\begin{gathered}\\alpha\\,=\\,{\\frac{{\\beta}^{2}\\,m}{\\gamma\\left(m+3\\right)^{2}}}.\\end{gathered} (3.2)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}w(z)=A_{0}+A_{1}\\,R+A_{2}\\,R_{z},\\qquad R\\equiv R(z),\\end{gathered}"
+    ],
+    "context": "w ( z ) = A 0 + A 1 R + A 2 R z , R ≡ R ( z ) , \\begin{gathered}w(z)=A_{0}+A_{1}\\,R+A_{2}\\,R_{z},\\qquad R\\equiv R(z),\\end{gathered} (3.1)"
+  },
+  {
+    "location": "S3.E2",
+    "latex": [
+      "\\begin{gathered}\\alpha\\,=\\,{\\frac{{\\beta}^{2}\\,m}{\\gamma\\left(m+3\\right)^{2}}}.\\end{gathered}"
+    ],
+    "context": "Let us find periodical solutions of equation ( 2.2 ) taking into\nconsideration the formula [ 18 ] w ( z ) = A 0 + A 1 R + A 2 R z , R ≡ R ( z ) , \\begin{gathered}w(z)=A_{0}+A_{1}\\,R+A_{2}\\,R_{z},\\qquad R\\equiv R(z),\\end{gathered} (3.1) taking into account the relation for the parameter α \\alpha α = β 2 ​ m γ ​ ( m + 3 ) 2 . \\begin{gathered}\\alpha\\,=\\,{\\frac{{\\beta}^{2}\\,m}{\\gamma\\left(m+3\\right)^{2}}}.\\end{gathered} (3.2)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}\\alpha\\,=\\,{\\frac{{\\beta}^{2}\\,m}{\\gamma\\left(m+3\\right)^{2}}}.\\end{gathered}"
+    ],
+    "context": "α = β 2 ​ m γ ​ ( m + 3 ) 2 . \\begin{gathered}\\alpha\\,=\\,{\\frac{{\\beta}^{2}\\,m}{\\gamma\\left(m+3\\right)^{2}}}.\\end{gathered} (3.2)"
+  },
+  {
+    "location": "S3.E3",
+    "latex": [
+      "\\begin{gathered}R_{{{zz}}}+6\\,{R}^{2}-a\\,R-b=0\\end{gathered}"
+    ],
+    "context": "We assume that R ⁡ ( z ) R(z) is solution of equation for the Weierstrass\nfunction R z ​ z + 6 ​ R 2 − a ​ R − b = 0 \\begin{gathered}R_{{{zz}}}+6\\,{R}^{2}-a\\,R-b=0\\end{gathered} (3.3) From equation ( 3.3 ) we have equation R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ b ​ R + d = 0 \\begin{gathered}R_{{{z}}}^{2}+4\\,{R}^{3}-a\\,R^{2}-2\\,b\\,R+d=0\\end{gathered} (3.4)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}R_{{{zz}}}+6\\,{R}^{2}-a\\,R-b=0\\end{gathered}"
+    ],
+    "context": "R z ​ z + 6 ​ R 2 − a ​ R − b = 0 \\begin{gathered}R_{{{zz}}}+6\\,{R}^{2}-a\\,R-b=0\\end{gathered} (3.3)"
+  },
+  {
+    "location": "S3.E4",
+    "latex": [
+      "\\begin{gathered}R_{{{z}}}^{2}+4\\,{R}^{3}-a\\,R^{2}-2\\,b\\,R+d=0\\end{gathered}"
+    ],
+    "context": "We assume that R ⁡ ( z ) R(z) is solution of equation for the Weierstrass\nfunction R z ​ z + 6 ​ R 2 − a ​ R − b = 0 \\begin{gathered}R_{{{zz}}}+6\\,{R}^{2}-a\\,R-b=0\\end{gathered} (3.3) From equation ( 3.3 ) we have equation R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ b ​ R + d = 0 \\begin{gathered}R_{{{z}}}^{2}+4\\,{R}^{3}-a\\,R^{2}-2\\,b\\,R+d=0\\end{gathered} (3.4)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}R_{{{z}}}^{2}+4\\,{R}^{3}-a\\,R^{2}-2\\,b\\,R+d=0\\end{gathered}"
+    ],
+    "context": "R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ b ​ R + d = 0 \\begin{gathered}R_{{{z}}}^{2}+4\\,{R}^{3}-a\\,R^{2}-2\\,b\\,R+d=0\\end{gathered} (3.4)"
+  },
+  {
+    "location": "S3.E5",
+    "latex": [
+      "\\begin{gathered}b=\\,{\\frac{{m}^{4}{\\beta}^{4}-\\gamma^{4}\\,a^{2}\\,\\left(m+3\\right)^{2}\\,}{{24\\,\\gamma}^{4}\\left(m+3\\right)^{4}}},\\quad A_{2}==\\,{\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{2\\,{m}^{3}}},\\\\\n\\\\\nA_{{1}}=\\,{\\frac{3\\,\\beta\\,\\left(2\\,m+3\\right)\\left(m+1\\right)}{2\\,{m}^{2}}},\\quad C_{0}=\\,{\\frac{2\\,{\\beta}^{3}\\,\\left(m+2\\right)}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\\\\n\\\\\nA_{0}=\\,{\\frac{\\beta\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)\\,\\left({\\beta}^{2}\\,{m}^{2}-{\\gamma}^{2}\\,({m+3})^{2}\\,a\\,\\right)}{{8\\,\\gamma}^{2}{m}^{2}\\left(m+3\\right)^{2}}},\\end{gathered}"
+    ],
+    "context": "Substituting ( 3.1 ) into equation ( 2.3 ) and taking into\naccount equations ( 3.3 ) and ( 3.4 ) we have b = m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 2 24 ​ γ 4 ​ ( m + 3 ) 4 , A 2 = = 3 ​ γ ​ ( 2 ​ m + 3 ) ​ ( m + 3 ) ​ ( m + 1 ) 2 ​ m 3 , A 1 = 3 ​ β ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) 2 ​ m 2 , C 0 = 2 ​ β 3 ​ ( m + 2 ) γ 2 ​ ( m + 3 ) 3 , A 0 = β ⁡ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 8 ​ γ 2 ​ m 2 ​ ( m + 3 ) 2 , \\begin{gathered}b=\\,{\\frac{{m}^{4}{\\beta}^{4}-\\gamma^{4}\\,a^{2}\\,\\left(m+3\\right)^{2}\\,}{{24\\,\\gamma}^{4}\\left(m+3\\right)^{4}}},\\quad A_{2}==\\,{\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{2\\,{m}^{3}}},\\\\\n\\\\\nA_{{1}}=\\,{\\frac{3\\,\\beta\\,\\left(2\\,m+3\\right)\\left(m+1\\right)}{2\\,{m}^{2}}},\\quad C_{0}=\\,{\\frac{2\\,{\\beta}^{3}\\,\\left(m+2\\right)}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\\\\n\\\\\nA_{0}=\\,{\\frac{\\beta\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)\\,\\left({\\beta}^{2}\\,{m}^{2}-{\\gamma}^{2}\\,({m+3})^{2}\\,a\\,\\right)}{{8\\,\\gamma}^{2}{m}^{2}\\left(m+3\\right)^{2}}},\\end{gathered} (3.5) d = ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 \\begin{gathered}d=\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}\\end{gathered} (3.6)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}b=\\,{\\frac{{m}^{4}{\\beta}^{4}-\\gamma^{4}\\,a^{2}\\,\\left(m+3\\right)^{2}\\,}{{24\\,\\gamma}^{4}\\left(m+3\\right)^{4}}},\\quad A_{2}==\\,{\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{2\\,{m}^{3}}},\\\\\n\\\\\nA_{{1}}=\\,{\\frac{3\\,\\beta\\,\\left(2\\,m+3\\right)\\left(m+1\\right)}{2\\,{m}^{2}}},\\quad C_{0}=\\,{\\frac{2\\,{\\beta}^{3}\\,\\left(m+2\\right)}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\\\\n\\\\\nA_{0}=\\,{\\frac{\\beta\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)\\,\\left({\\beta}^{2}\\,{m}^{2}-{\\gamma}^{2}\\,({m+3})^{2}\\,a\\,\\right)}{{8\\,\\gamma}^{2}{m}^{2}\\left(m+3\\right)^{2}}},\\end{gathered}"
+    ],
+    "context": "b = m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 2 24 ​ γ 4 ​ ( m + 3 ) 4 , A 2 = = 3 ​ γ ​ ( 2 ​ m + 3 ) ​ ( m + 3 ) ​ ( m + 1 ) 2 ​ m 3 , A 1 = 3 ​ β ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) 2 ​ m 2 , C 0 = 2 ​ β 3 ​ ( m + 2 ) γ 2 ​ ( m + 3 ) 3 , A 0 = β ⁡ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 8 ​ γ 2 ​ m 2 ​ ( m + 3 ) 2 , \\begin{gathered}b=\\,{\\frac{{m}^{4}{\\beta}^{4}-\\gamma^{4}\\,a^{2}\\,\\left(m+3\\right)^{2}\\,}{{24\\,\\gamma}^{4}\\left(m+3\\right)^{4}}},\\quad A_{2}==\\,{\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{2\\,{m}^{3}}},\\\\\n\\\\\nA_{{1}}=\\,{\\frac{3\\,\\beta\\,\\left(2\\,m+3\\right)\\left(m+1\\right)}{2\\,{m}^{2}}},\\quad C_{0}=\\,{\\frac{2\\,{\\beta}^{3}\\,\\left(m+2\\right)}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\\\\n\\\\\nA_{0}=\\,{\\frac{\\beta\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)\\,\\left({\\beta}^{2}\\,{m}^{2}-{\\gamma}^{2}\\,({m+3})^{2}\\,a\\,\\right)}{{8\\,\\gamma}^{2}{m}^{2}\\left(m+3\\right)^{2}}},\\end{gathered} (3.5)"
+  },
+  {
+    "location": "S3.E6",
+    "latex": [
+      "\\begin{gathered}d=\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}\\end{gathered}"
+    ],
+    "context": "Substituting ( 3.1 ) into equation ( 2.3 ) and taking into\naccount equations ( 3.3 ) and ( 3.4 ) we have b = m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 2 24 ​ γ 4 ​ ( m + 3 ) 4 , A 2 = = 3 ​ γ ​ ( 2 ​ m + 3 ) ​ ( m + 3 ) ​ ( m + 1 ) 2 ​ m 3 , A 1 = 3 ​ β ​ ( 2 ​ m + 3 ) ​ ( m + 1 ) 2 ​ m 2 , C 0 = 2 ​ β 3 ​ ( m + 2 ) γ 2 ​ ( m + 3 ) 3 , A 0 = β ⁡ ( 2 ​ m + 3 ) ​ ( m + 1 ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 8 ​ γ 2 ​ m 2 ​ ( m + 3 ) 2 , \\begin{gathered}b=\\,{\\frac{{m}^{4}{\\beta}^{4}-\\gamma^{4}\\,a^{2}\\,\\left(m+3\\right)^{2}\\,}{{24\\,\\gamma}^{4}\\left(m+3\\right)^{4}}},\\quad A_{2}==\\,{\\frac{3\\,\\gamma\\left(2\\,m+3\\right)\\left(m+3\\right)\\left(m+1\\right)}{2\\,{m}^{3}}},\\\\\n\\\\\nA_{{1}}=\\,{\\frac{3\\,\\beta\\,\\left(2\\,m+3\\right)\\left(m+1\\right)}{2\\,{m}^{2}}},\\quad C_{0}=\\,{\\frac{2\\,{\\beta}^{3}\\,\\left(m+2\\right)}{{\\gamma}^{2}\\left(m+3\\right)^{3}}},\\\\\n\\\\\nA_{0}=\\,{\\frac{\\beta\\,\\left(2\\,m+3\\right)\\,\\left(m+1\\right)\\,\\left({\\beta}^{2}\\,{m}^{2}-{\\gamma}^{2}\\,({m+3})^{2}\\,a\\,\\right)}{{8\\,\\gamma}^{2}{m}^{2}\\left(m+3\\right)^{2}}},\\end{gathered} (3.5) d = ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 \\begin{gathered}d=\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}\\end{gathered} (3.6)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}d=\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}\\end{gathered}"
+    ],
+    "context": "d = ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 \\begin{gathered}d=\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}\\end{gathered} (3.6)"
+  },
+  {
+    "location": "S3.E7",
+    "latex": [
+      "\\begin{gathered}w(z)=\\left(\\frac{3\\,\\left(m+1\\right)\\,\\left(2\\,m+3\\right)}{2\\,{m}^{2}}\\,\\right)^{\\frac{1}{m}}\\\\\n\\left(\\beta\\,R\\left(z\\right)+{\\frac{\\gamma\\left(m+3\\right)}{m}}\\,R_{z}+\\,{\\frac{\\beta\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,\\left(m+3\\right)^{2}a\\,\\right)}{12\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}\\right)^{\\frac{1}{m}},\\end{gathered}"
+    ],
+    "context": "Solution of equation ( 2.2 ) in this case takes the form w ⁡ ( z ) = ( 3 ​ ( m + 1 ) ​ ( 2 ​ m + 3 ) 2 ​ m 2 ) 1 m ( β ​ R ​ ( z ) + γ ⁡ ( m + 3 ) m ​ R z + β ⁡ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 12 ​ γ 2 ​ ( m + 3 ) 2 ) 1 m , \\begin{gathered}w(z)=\\left(\\frac{3\\,\\left(m+1\\right)\\,\\left(2\\,m+3\\right)}{2\\,{m}^{2}}\\,\\right)^{\\frac{1}{m}}\\\\\n\\left(\\beta\\,R\\left(z\\right)+{\\frac{\\gamma\\left(m+3\\right)}{m}}\\,R_{z}+\\,{\\frac{\\beta\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,\\left(m+3\\right)^{2}a\\,\\right)}{12\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}\\right)^{\\frac{1}{m}},\\end{gathered} (3.7) where R ⁡ ( z ) R(z) satisfies equation R z 2 + 4 ​ R 3 − a ​ R 2 − ( m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 4 ) 12 ​ γ 4 ​ ( m + 3 ) 4 ​ R − − ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n-\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered} (3.8) In general case solutions of equation ( 3.8 ) expressed via\nhyperbolic function because the algebraic equation 4 ​ R 3 − a ​ R 2 − ( m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 4 ) 12 ​ γ 4 ​ ( m + 3 ) 4 ​ R − ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 = 0 \\begin{gathered}4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}w(z)=\\left(\\frac{3\\,\\left(m+1\\right)\\,\\left(2\\,m+3\\right)}{2\\,{m}^{2}}\\,\\right)^{\\frac{1}{m}}\\\\\n\\left(\\beta\\,R\\left(z\\right)+{\\frac{\\gamma\\left(m+3\\right)}{m}}\\,R_{z}+\\,{\\frac{\\beta\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,\\left(m+3\\right)^{2}a\\,\\right)}{12\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}\\right)^{\\frac{1}{m}},\\end{gathered}"
+    ],
+    "context": "w ⁡ ( z ) = ( 3 ​ ( m + 1 ) ​ ( 2 ​ m + 3 ) 2 ​ m 2 ) 1 m ( β ​ R ​ ( z ) + γ ⁡ ( m + 3 ) m ​ R z + β ⁡ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 12 ​ γ 2 ​ ( m + 3 ) 2 ) 1 m , \\begin{gathered}w(z)=\\left(\\frac{3\\,\\left(m+1\\right)\\,\\left(2\\,m+3\\right)}{2\\,{m}^{2}}\\,\\right)^{\\frac{1}{m}}\\\\\n\\left(\\beta\\,R\\left(z\\right)+{\\frac{\\gamma\\left(m+3\\right)}{m}}\\,R_{z}+\\,{\\frac{\\beta\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,\\left(m+3\\right)^{2}a\\,\\right)}{12\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}\\right)^{\\frac{1}{m}},\\end{gathered} (3.7)"
+  },
+  {
+    "location": "S3.E8",
+    "latex": [
+      "\\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n-\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered}"
+    ],
+    "context": "Solution of equation ( 2.2 ) in this case takes the form w ⁡ ( z ) = ( 3 ​ ( m + 1 ) ​ ( 2 ​ m + 3 ) 2 ​ m 2 ) 1 m ( β ​ R ​ ( z ) + γ ⁡ ( m + 3 ) m ​ R z + β ⁡ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 12 ​ γ 2 ​ ( m + 3 ) 2 ) 1 m , \\begin{gathered}w(z)=\\left(\\frac{3\\,\\left(m+1\\right)\\,\\left(2\\,m+3\\right)}{2\\,{m}^{2}}\\,\\right)^{\\frac{1}{m}}\\\\\n\\left(\\beta\\,R\\left(z\\right)+{\\frac{\\gamma\\left(m+3\\right)}{m}}\\,R_{z}+\\,{\\frac{\\beta\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,\\left(m+3\\right)^{2}a\\,\\right)}{12\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}\\right)^{\\frac{1}{m}},\\end{gathered} (3.7) where R ⁡ ( z ) R(z) satisfies equation R z 2 + 4 ​ R 3 − a ​ R 2 − ( m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 4 ) 12 ​ γ 4 ​ ( m + 3 ) 4 ​ R − − ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n-\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered} (3.8) In general case solutions of equation ( 3.8 ) expressed via\nhyperbolic function because the algebraic equation 4 ​ R 3 − a ​ R 2 − ( m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 4 ) 12 ​ γ 4 ​ ( m + 3 ) 4 ​ R − ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 = 0 \\begin{gathered}4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n-\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered}"
+    ],
+    "context": "R z 2 + 4 ​ R 3 − a ​ R 2 − ( m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 4 ) 12 ​ γ 4 ​ ( m + 3 ) 4 ​ R − − ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n-\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered} (3.8)"
+  },
+  {
+    "location": "S3.E9",
+    "latex": [
+      "\\begin{gathered}4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered}"
+    ],
+    "context": "Solution of equation ( 2.2 ) in this case takes the form w ⁡ ( z ) = ( 3 ​ ( m + 1 ) ​ ( 2 ​ m + 3 ) 2 ​ m 2 ) 1 m ( β ​ R ​ ( z ) + γ ⁡ ( m + 3 ) m ​ R z + β ⁡ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 12 ​ γ 2 ​ ( m + 3 ) 2 ) 1 m , \\begin{gathered}w(z)=\\left(\\frac{3\\,\\left(m+1\\right)\\,\\left(2\\,m+3\\right)}{2\\,{m}^{2}}\\,\\right)^{\\frac{1}{m}}\\\\\n\\left(\\beta\\,R\\left(z\\right)+{\\frac{\\gamma\\left(m+3\\right)}{m}}\\,R_{z}+\\,{\\frac{\\beta\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,\\left(m+3\\right)^{2}a\\,\\right)}{12\\,{\\gamma}^{2}\\left(m+3\\right)^{2}}}\\right)^{\\frac{1}{m}},\\end{gathered} (3.7) where R ⁡ ( z ) R(z) satisfies equation R z 2 + 4 ​ R 3 − a ​ R 2 − ( m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 4 ) 12 ​ γ 4 ​ ( m + 3 ) 4 ​ R − − ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n-\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered} (3.8) In general case solutions of equation ( 3.8 ) expressed via\nhyperbolic function because the algebraic equation 4 ​ R 3 − a ​ R 2 − ( m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 4 ) 12 ​ γ 4 ​ ( m + 3 ) 4 ​ R − ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 = 0 \\begin{gathered}4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered}"
+    ],
+    "context": "4 ​ R 3 − a ​ R 2 − ( m 4 ​ β 4 − γ 4 ​ a 2 ​ ( m + 3 ) 4 ) 12 ​ γ 4 ​ ( m + 3 ) 4 ​ R − ( 2 ​ β 2 ​ m 2 + γ 2 ​ ( m + 3 ) 2 ​ a ) ​ ( β 2 ​ m 2 − γ 2 ​ ( m + 3 ) 2 ​ a ) 2 432 ​ γ 6 ​ ( m + 3 ) 6 = 0 \\begin{gathered}4\\,{R}^{3}-a\\,{R}^{2}-\\,{\\frac{\\left({m}^{4}{\\beta}^{4}-{\\gamma}^{4}\\,{a}^{2}\\,\\left(m+3\\right)^{4}\\right)}{12\\,{\\gamma}^{4}\\left(m+3\\right)^{4}}}\\,\\,R-\\\\\n\\\\\n\\,{\\frac{\\left(2\\,{\\beta}^{2}{m}^{2}+{\\gamma}^{2}\\,(m+3)^{2}\\,a\\,\\right)\\,\\left({\\beta}^{2}{m}^{2}-{\\gamma}^{2}\\,{(m+3)}^{2}\\,a\\,\\right)^{2}}{432\\,\\,{\\gamma}^{6}\\left(m+3\\right)^{6}}}=0\\end{gathered} (3.9)"
+  },
+  {
+    "location": "S3.E10",
+    "latex": [
+      "\\begin{gathered}y(z)={C_{0}}-\\frac{5}{4}\\,\\beta\\,a-{\\frac{1}{64}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+15\\,\\beta\\,\\,R+60\\,\\gamma\\,\\,{R_{z}}\\end{gathered}"
+    ],
+    "context": "In the case m = 1 m=1 we have α = β 2 16 ​ γ \\alpha=\\frac{\\beta^{2}}{16\\,\\gamma} .\nSolution of equation ( 1.1 ) takes the form [ 18 ] y ⁡ ( z ) = C 0 − 5 4 ​ β ​ a − 1 64 ​ β 3 γ 2 + 15 ​ β ​ R + 60 ​ γ ​ R z \\begin{gathered}y(z)={C_{0}}-\\frac{5}{4}\\,\\beta\\,a-{\\frac{1}{64}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+15\\,\\beta\\,\\,R+60\\,\\gamma\\,\\,{R_{z}}\\end{gathered} (3.10) where R ⁡ ( z ) R(z) satisfies equation for the Weierstrass function R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ ( β 4 6144 ​ γ 4 − a 2 24 ) ​ R + + 13 ​ β 6 4423680 ​ γ 6 + a ​ β 4 36864 ​ γ 4 − C 0 2 2160 ​ γ 2 − a 3 432 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a{R}^{2}-2\\,\\left(\\,{\\frac{{\\beta}^{4}}{6144\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R+\\\\\n\\\\\n+{\\frac{13\\,{\\beta}^{6}}{4423680\\,\\gamma^{6}}}\\,+\\,\\,{\\frac{a\\,{\\beta}^{4}}{{36864\\,\\gamma}^{4}}}-\\,{\\frac{{C_{{0}}}^{2}}{2160\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered} (3.11)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}y(z)={C_{0}}-\\frac{5}{4}\\,\\beta\\,a-{\\frac{1}{64}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+15\\,\\beta\\,\\,R+60\\,\\gamma\\,\\,{R_{z}}\\end{gathered}"
+    ],
+    "context": "y ⁡ ( z ) = C 0 − 5 4 ​ β ​ a − 1 64 ​ β 3 γ 2 + 15 ​ β ​ R + 60 ​ γ ​ R z \\begin{gathered}y(z)={C_{0}}-\\frac{5}{4}\\,\\beta\\,a-{\\frac{1}{64}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+15\\,\\beta\\,\\,R+60\\,\\gamma\\,\\,{R_{z}}\\end{gathered} (3.10)"
+  },
+  {
+    "location": "S3.E11",
+    "latex": [
+      "\\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a{R}^{2}-2\\,\\left(\\,{\\frac{{\\beta}^{4}}{6144\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R+\\\\\n\\\\\n+{\\frac{13\\,{\\beta}^{6}}{4423680\\,\\gamma^{6}}}\\,+\\,\\,{\\frac{a\\,{\\beta}^{4}}{{36864\\,\\gamma}^{4}}}-\\,{\\frac{{C_{{0}}}^{2}}{2160\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered}"
+    ],
+    "context": "In the case m = 1 m=1 we have α = β 2 16 ​ γ \\alpha=\\frac{\\beta^{2}}{16\\,\\gamma} .\nSolution of equation ( 1.1 ) takes the form [ 18 ] y ⁡ ( z ) = C 0 − 5 4 ​ β ​ a − 1 64 ​ β 3 γ 2 + 15 ​ β ​ R + 60 ​ γ ​ R z \\begin{gathered}y(z)={C_{0}}-\\frac{5}{4}\\,\\beta\\,a-{\\frac{1}{64}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+15\\,\\beta\\,\\,R+60\\,\\gamma\\,\\,{R_{z}}\\end{gathered} (3.10) where R ⁡ ( z ) R(z) satisfies equation for the Weierstrass function R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ ( β 4 6144 ​ γ 4 − a 2 24 ) ​ R + + 13 ​ β 6 4423680 ​ γ 6 + a ​ β 4 36864 ​ γ 4 − C 0 2 2160 ​ γ 2 − a 3 432 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a{R}^{2}-2\\,\\left(\\,{\\frac{{\\beta}^{4}}{6144\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R+\\\\\n\\\\\n+{\\frac{13\\,{\\beta}^{6}}{4423680\\,\\gamma^{6}}}\\,+\\,\\,{\\frac{a\\,{\\beta}^{4}}{{36864\\,\\gamma}^{4}}}-\\,{\\frac{{C_{{0}}}^{2}}{2160\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered} (3.11)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a{R}^{2}-2\\,\\left(\\,{\\frac{{\\beta}^{4}}{6144\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R+\\\\\n\\\\\n+{\\frac{13\\,{\\beta}^{6}}{4423680\\,\\gamma^{6}}}\\,+\\,\\,{\\frac{a\\,{\\beta}^{4}}{{36864\\,\\gamma}^{4}}}-\\,{\\frac{{C_{{0}}}^{2}}{2160\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered}"
+    ],
+    "context": "R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ ( β 4 6144 ​ γ 4 − a 2 24 ) ​ R + + 13 ​ β 6 4423680 ​ γ 6 + a ​ β 4 36864 ​ γ 4 − C 0 2 2160 ​ γ 2 − a 3 432 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a{R}^{2}-2\\,\\left(\\,{\\frac{{\\beta}^{4}}{6144\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R+\\\\\n\\\\\n+{\\frac{13\\,{\\beta}^{6}}{4423680\\,\\gamma^{6}}}\\,+\\,\\,{\\frac{a\\,{\\beta}^{4}}{{36864\\,\\gamma}^{4}}}-\\,{\\frac{{C_{{0}}}^{2}}{2160\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered} (3.11)"
+  },
+  {
+    "location": "S3.E12",
+    "latex": [
+      "\\begin{gathered}y(z)=\\left(3\\,{C_{0}}-\\frac{1}{2}\\,\\beta\\,a-{\\frac{1}{72}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+6\\,\\beta\\,R+12\\,\\gamma\\,R_{{z}}\\right)^{\\frac{1}{3}}\\end{gathered}"
+    ],
+    "context": "In the case m = 3 m=3 we have α = β 2 12 ​ γ \\alpha=\\frac{\\beta^{2}}{12\\,\\gamma} .\nPeriodic solution of equation ( 1.1 ) in this case can be\nwritten in the form y ⁡ ( z ) = ( 3 ​ C 0 − 1 2 ​ β ​ a − 1 72 ​ β 3 γ 2 + 6 ​ β ​ R + 12 ​ γ ​ R z ) 1 3 \\begin{gathered}y(z)=\\left(3\\,{C_{0}}-\\frac{1}{2}\\,\\beta\\,a-{\\frac{1}{72}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+6\\,\\beta\\,R+12\\,\\gamma\\,R_{{z}}\\right)^{\\frac{1}{3}}\\end{gathered} (3.12) where R ⁡ ( z ) R(z) satisfies equation for the Weierstrass function in the\nform R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ ( C 0 ​ β 8 ​ γ 2 − 11 ​ β 4 3456 ​ γ 4 − a 2 24 ) ​ R − − 11 ​ β 4 ​ a 20736 ​ γ 4 + 13 ​ β 6 373248 ​ γ 6 + C 0 ​ β 3 1728 ​ γ 4 + C 0 ​ β ​ a 48 ​ γ 2 − C 0 2 16 ​ γ 2 − a 3 432 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-2\\,\\left(\\,{\\frac{C_{{0}}\\beta}{8\\,{\\gamma}^{2}}}-{\\frac{11\\,{\\beta}^{4}}{3456\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R-\\\\\n\\\\\n-{\\frac{11\\,{\\beta}^{4}a}{20736\\,{\\gamma}^{4}}}+{\\frac{13\\,{\\beta}^{6}}{373248\\,{\\gamma}^{6}}}+{\\frac{C_{{0}}{\\beta}^{3}}{{1728\\,\\gamma}^{4}}}+{\\frac{C_{{0}}\\beta\\,a}{48\\,{\\gamma}^{2}}}-{\\frac{{C_{{0}}}^{2}}{16\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered} (3.13) This solution of equation ( 1.1 ) is a new. Let us note that\nperiodical solutions of equation ( 1.1 ) are appeared at m = 1 m=1 and at m = 3 m=3 when there is meromorphic solutions in the form of\nsolitary waves of equation ( 1.1 )."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}y(z)=\\left(3\\,{C_{0}}-\\frac{1}{2}\\,\\beta\\,a-{\\frac{1}{72}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+6\\,\\beta\\,R+12\\,\\gamma\\,R_{{z}}\\right)^{\\frac{1}{3}}\\end{gathered}"
+    ],
+    "context": "y ⁡ ( z ) = ( 3 ​ C 0 − 1 2 ​ β ​ a − 1 72 ​ β 3 γ 2 + 6 ​ β ​ R + 12 ​ γ ​ R z ) 1 3 \\begin{gathered}y(z)=\\left(3\\,{C_{0}}-\\frac{1}{2}\\,\\beta\\,a-{\\frac{1}{72}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+6\\,\\beta\\,R+12\\,\\gamma\\,R_{{z}}\\right)^{\\frac{1}{3}}\\end{gathered} (3.12)"
+  },
+  {
+    "location": "S3.E13",
+    "latex": [
+      "\\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-2\\,\\left(\\,{\\frac{C_{{0}}\\beta}{8\\,{\\gamma}^{2}}}-{\\frac{11\\,{\\beta}^{4}}{3456\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R-\\\\\n\\\\\n-{\\frac{11\\,{\\beta}^{4}a}{20736\\,{\\gamma}^{4}}}+{\\frac{13\\,{\\beta}^{6}}{373248\\,{\\gamma}^{6}}}+{\\frac{C_{{0}}{\\beta}^{3}}{{1728\\,\\gamma}^{4}}}+{\\frac{C_{{0}}\\beta\\,a}{48\\,{\\gamma}^{2}}}-{\\frac{{C_{{0}}}^{2}}{16\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered}"
+    ],
+    "context": "In the case m = 3 m=3 we have α = β 2 12 ​ γ \\alpha=\\frac{\\beta^{2}}{12\\,\\gamma} .\nPeriodic solution of equation ( 1.1 ) in this case can be\nwritten in the form y ⁡ ( z ) = ( 3 ​ C 0 − 1 2 ​ β ​ a − 1 72 ​ β 3 γ 2 + 6 ​ β ​ R + 12 ​ γ ​ R z ) 1 3 \\begin{gathered}y(z)=\\left(3\\,{C_{0}}-\\frac{1}{2}\\,\\beta\\,a-{\\frac{1}{72}}\\,{\\frac{{\\beta}^{3}}{{\\gamma}^{2}}}+6\\,\\beta\\,R+12\\,\\gamma\\,R_{{z}}\\right)^{\\frac{1}{3}}\\end{gathered} (3.12) where R ⁡ ( z ) R(z) satisfies equation for the Weierstrass function in the\nform R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ ( C 0 ​ β 8 ​ γ 2 − 11 ​ β 4 3456 ​ γ 4 − a 2 24 ) ​ R − − 11 ​ β 4 ​ a 20736 ​ γ 4 + 13 ​ β 6 373248 ​ γ 6 + C 0 ​ β 3 1728 ​ γ 4 + C 0 ​ β ​ a 48 ​ γ 2 − C 0 2 16 ​ γ 2 − a 3 432 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-2\\,\\left(\\,{\\frac{C_{{0}}\\beta}{8\\,{\\gamma}^{2}}}-{\\frac{11\\,{\\beta}^{4}}{3456\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R-\\\\\n\\\\\n-{\\frac{11\\,{\\beta}^{4}a}{20736\\,{\\gamma}^{4}}}+{\\frac{13\\,{\\beta}^{6}}{373248\\,{\\gamma}^{6}}}+{\\frac{C_{{0}}{\\beta}^{3}}{{1728\\,\\gamma}^{4}}}+{\\frac{C_{{0}}\\beta\\,a}{48\\,{\\gamma}^{2}}}-{\\frac{{C_{{0}}}^{2}}{16\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered} (3.13) This solution of equation ( 1.1 ) is a new. Let us note that\nperiodical solutions of equation ( 1.1 ) are appeared at m = 1 m=1 and at m = 3 m=3 when there is meromorphic solutions in the form of\nsolitary waves of equation ( 1.1 )."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-2\\,\\left(\\,{\\frac{C_{{0}}\\beta}{8\\,{\\gamma}^{2}}}-{\\frac{11\\,{\\beta}^{4}}{3456\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R-\\\\\n\\\\\n-{\\frac{11\\,{\\beta}^{4}a}{20736\\,{\\gamma}^{4}}}+{\\frac{13\\,{\\beta}^{6}}{373248\\,{\\gamma}^{6}}}+{\\frac{C_{{0}}{\\beta}^{3}}{{1728\\,\\gamma}^{4}}}+{\\frac{C_{{0}}\\beta\\,a}{48\\,{\\gamma}^{2}}}-{\\frac{{C_{{0}}}^{2}}{16\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered}"
+    ],
+    "context": "R z 2 + 4 ​ R 3 − a ​ R 2 − 2 ​ ( C 0 ​ β 8 ​ γ 2 − 11 ​ β 4 3456 ​ γ 4 − a 2 24 ) ​ R − − 11 ​ β 4 ​ a 20736 ​ γ 4 + 13 ​ β 6 373248 ​ γ 6 + C 0 ​ β 3 1728 ​ γ 4 + C 0 ​ β ​ a 48 ​ γ 2 − C 0 2 16 ​ γ 2 − a 3 432 = 0 \\begin{gathered}{R_{{z}}}^{2}+4\\,{R}^{3}-a\\,{R}^{2}-2\\,\\left(\\,{\\frac{C_{{0}}\\beta}{8\\,{\\gamma}^{2}}}-{\\frac{11\\,{\\beta}^{4}}{3456\\,{\\gamma}^{4}}}-\\frac{{a}^{2}}{24}\\,\\right)R-\\\\\n\\\\\n-{\\frac{11\\,{\\beta}^{4}a}{20736\\,{\\gamma}^{4}}}+{\\frac{13\\,{\\beta}^{6}}{373248\\,{\\gamma}^{6}}}+{\\frac{C_{{0}}{\\beta}^{3}}{{1728\\,\\gamma}^{4}}}+{\\frac{C_{{0}}\\beta\\,a}{48\\,{\\gamma}^{2}}}-{\\frac{{C_{{0}}}^{2}}{16\\,{\\gamma}^{2}}}-{\\frac{{a}^{3}}{432}}\\,=0\\end{gathered} (3.13)"
+  }
+]

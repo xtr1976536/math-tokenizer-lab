@@ -1,0 +1,25 @@
+{
+  "full_pool": {
+    "input": 2257,
+    "retained50": 725,
+    "retained_by_kind": {
+      "eqgpt_handbook_non_target": 212,
+      "external_benchmark": 513
+    },
+    "augmented_samples": 23200,
+    "gre_only_fit": 726,
+    "hard_all_fit": 2253
+  },
+  "current80_pool": {
+    "input": 1855,
+    "retained50": 725,
+    "retained_by_kind": {
+      "eqgpt_handbook_non_target": 212,
+      "external_benchmark": 513
+    },
+    "augmented_samples": 23200,
+    "gre_only_fit": 726,
+    "hard_all_fit": 1854
+  },
+  "method": "All 32 variants per source <=50 including sequence controls; fixed current80 tokenizers; no retraining or truncation."
+}

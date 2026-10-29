@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "all_1500_ids_reviewed": true,
+  "all_components_accounted": true,
+  "new_unique_structures": 1250,
+  "all_221_reference_rows_compared": true,
+  "new_formula_symbolic_and_codec_replay": true,
+  "all_source_hashes_verified": true,
+  "no_GRE_OOV": true,
+  "position_limit_separately_reported": true,
+  "source_family_instances_explicit": true,
+  "original1500_full_Hard_roundtrip": true,
+  "arbitrary91_no_OOV_claim_disproved": true
+}

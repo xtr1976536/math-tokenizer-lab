@@ -1,0 +1,725 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        22
+      ]
+    ],
+    "date-time": "2026-07-22T18:37:23Z",
+    "timestamp": 1784745443834,
+    "version": "3.55.0"
+  },
+  "reference-count": 33,
+  "publisher": "Elsevier BV",
+  "issue": "2-3",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2019-01-01T00:00:00Z",
+        "timestamp": 1546300800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2019-01-01T00:00:00Z",
+        "timestamp": 1546300800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            1,
+            15
+          ]
+        ],
+        "date-time": "2023-01-15T00:00:00Z",
+        "timestamp": 1673740800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 1475,
+      "URL": "http://www.elsevier.com/open-access/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2019-01-01T00:00:00Z",
+        "timestamp": 1546300800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2019-01-01T00:00:00Z",
+        "timestamp": 1546300800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2019-01-01T00:00:00Z",
+        "timestamp": 1546300800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2019-01-01T00:00:00Z",
+        "timestamp": 1546300800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2019-01-01T00:00:00Z",
+        "timestamp": 1546300800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "DMS-1148284"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "DMS-1148284"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "DMS-1408742"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "DMS-1408742"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Differential Equations"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jde.2018.07.064",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        8,
+        3
+      ]
+    ],
+    "date-time": "2018-08-03T19:32:12Z",
+    "timestamp": 1533324732000
+  },
+  "page": "1073-1120",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 17,
+  "title": [
+    "Existence and stability of spatially localized patterns"
+  ],
+  "prefix": "10.1016",
+  "volume": "266",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-2216-5936",
+      "authenticated-orcid": false,
+      "given": "Elizabeth",
+      "family": "Makrides",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-5432-1235",
+      "authenticated-orcid": false,
+      "given": "Björn",
+      "family": "Sandstede",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0010",
+      "first-page": "167",
+      "article-title": "A topological invariant arising in the stability analysis of travelling waves",
+      "volume": "410",
+      "author": "Alexander",
+      "year": "1990",
+      "journal-title": "J. Reine Angew. Math."
+    },
+    {
+      "issue": "16",
+      "key": "10.1016/j.jde.2018.07.064_br0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "2983",
+      "DOI": "10.1103/PhysRevLett.79.2983",
+      "article-title": "Formation of clusters of localized states in a gas discharge system via a self-completion scenario",
+      "volume": "79",
+      "author": "Astrov",
+      "year": "1997",
+      "journal-title": "Phys. Rev. Lett."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jde.2018.07.064_br0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "704",
+      "DOI": "10.1137/100782747",
+      "article-title": "To snake or not to snake in the planar Swift–Hohenberg equation",
+      "volume": "9",
+      "author": "Avitabile",
+      "year": "2010",
+      "journal-title": "SIAM J. Appl. Dyn. Syst."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jde.2018.07.064_br0040",
+      "doi-asserted-by": "crossref",
+      "first-page": "936",
+      "DOI": "10.1137/080713306",
+      "article-title": "Snakes, ladders, and isolas of localized patterns",
+      "volume": "41",
+      "author": "Beck",
+      "year": "2009",
+      "journal-title": "SIAM J. Math. Anal."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.jde.2018.07.064_br0050",
+      "first-page": "74",
+      "article-title": "Magnetohydrodynamic convectons",
+      "volume": "261",
+      "author": "Blanchflower",
+      "year": "1999",
+      "journal-title": "Phys. A"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0060",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1088/1367-2630/11/9/093037",
+      "article-title": "Solitary localized structures in a liquid crystal light-valve experiment",
+      "volume": "11",
+      "author": "Bortolozzo",
+      "year": "2009",
+      "journal-title": "New J. Phys."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.jde.2018.07.064_br0070",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1103/PhysRevE.73.056211",
+      "article-title": "Localized states in the generalized Swift–Hohenberg equation",
+      "volume": "73",
+      "author": "Burke",
+      "year": "2006",
+      "journal-title": "Phys. Rev. E"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jde.2018.07.064_br0080",
+      "doi-asserted-by": "crossref",
+      "first-page": "851",
+      "DOI": "10.1103/RevModPhys.65.851",
+      "article-title": "Pattern formation outside of equilibrium",
+      "volume": "65",
+      "author": "Cross",
+      "year": "1993",
+      "journal-title": "Rev. Modern Phys."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jde.2018.07.064_br0090",
+      "article-title": "An extended continuation problem for bifurcation analysis in the presence of constraints",
+      "volume": "6",
+      "author": "Dankowicz",
+      "year": "2011",
+      "journal-title": "ASME J. Comput. Nonlinear Dyn."
+    },
+    {
+      "issue": "1924",
+      "key": "10.1016/j.jde.2018.07.064_br0100",
+      "first-page": "3519",
+      "article-title": "The emergence of a coherent structure for coherent structures: localized states in nonlinear systems",
+      "volume": "368",
+      "author": "Dawes",
+      "year": "2010",
+      "journal-title": "Philos. Trans. R. Soc. Lond. Ser. A Math. Phys. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0110",
+      "article-title": "Geometric Theory of Semilinear Parabolic Equations",
+      "volume": "vol. 840",
+      "author": "Henry",
+      "year": "1981"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jde.2018.07.064_br0120",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "DOI": "10.1023/A:1008398006403",
+      "article-title": "Cellular buckling in long structures",
+      "volume": "21",
+      "author": "Hunt",
+      "year": "2000",
+      "journal-title": "Nonlinear Dynam."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.jde.2018.07.064_br0130",
+      "doi-asserted-by": "crossref",
+      "first-page": "1117",
+      "DOI": "10.1137/S0036141000372301",
+      "article-title": "Edge bifurcations for near integrable systems via Evans function techniques",
+      "volume": "33",
+      "author": "Kapitula",
+      "year": "2002",
+      "journal-title": "SIAM J. Math. Anal."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.jde.2018.07.064_br0140",
+      "doi-asserted-by": "crossref",
+      "first-page": "857",
+      "DOI": "10.3934/dcds.2004.10.857",
+      "article-title": "Eigenvalues and resonances using the Evans function",
+      "volume": "10",
+      "author": "Kapitula",
+      "year": "2004",
+      "journal-title": "Discrete Contin. Dyn. Syst."
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0150",
+      "doi-asserted-by": "crossref",
+      "first-page": "113",
+      "DOI": "10.1016/0022-0396(82)90058-4",
+      "article-title": "Wave-solutions of reversible systems and applications",
+      "volume": "45",
+      "author": "Kirchgässner",
+      "year": "1982",
+      "journal-title": "J. Differential Equations"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0160",
+      "doi-asserted-by": "crossref",
+      "first-page": "45",
+      "DOI": "10.1088/0951-7715/21/4/T02",
+      "article-title": "Spatially localized structures in dissipative systems: open problems",
+      "volume": "21",
+      "author": "Knobloch",
+      "year": "2008",
+      "journal-title": "Nonlinearity"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0170",
+      "doi-asserted-by": "crossref",
+      "first-page": "325",
+      "DOI": "10.1146/annurev-conmatphys-031214-014514",
+      "article-title": "Spatial localization in dissipative systems",
+      "volume": "6",
+      "author": "Knobloch",
+      "year": "2015",
+      "journal-title": "Ann. Rev. Condens. Matter Phys."
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0180",
+      "doi-asserted-by": "crossref",
+      "first-page": "23",
+      "DOI": "10.1016/j.physd.2013.02.005",
+      "article-title": "On localised hotspots of an urban crime model",
+      "volume": "253",
+      "author": "Lloyd",
+      "year": "2013",
+      "journal-title": "Phys. D"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0190",
+      "doi-asserted-by": "crossref",
+      "first-page": "1049",
+      "DOI": "10.1137/070707622",
+      "article-title": "Localized hexagon patterns of the planar Swift–Hohenberg equation",
+      "volume": "7",
+      "author": "Lloyd",
+      "year": "2008",
+      "journal-title": "SIAM J. Appl. Dyn. Syst."
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0200",
+      "series-title": "Existence and Stability of Spatially Localized Planar Patterns",
+      "author": "Makrides",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0210",
+      "doi-asserted-by": "crossref",
+      "first-page": "59",
+      "DOI": "10.1016/j.physd.2013.11.009",
+      "article-title": "Predicting the bifurcation structure of localized snaking patterns",
+      "volume": "268",
+      "author": "Makrides",
+      "year": "2014",
+      "journal-title": "Phys. D"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0220",
+      "unstructured": "E. Makrides, B. Sandstede, Spatially localized patterns and eigenvalues in the essential, or absolute spectrum, unpublished, 2018."
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0230",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1103/PhysRevE.66.046606",
+      "article-title": "Computationally determined existence and stability of transverse structures II. Multipeaked cavity solitons",
+      "volume": "66",
+      "author": "McSloy",
+      "year": "2002",
+      "journal-title": "Phys. Rev. E"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0240",
+      "doi-asserted-by": "crossref",
+      "first-page": "70",
+      "DOI": "10.1016/j.ecolmodel.2011.05.035",
+      "article-title": "Pattern-formation approach to modelling spatially extended ecosystems",
+      "volume": "234",
+      "author": "Meron",
+      "year": "2012",
+      "journal-title": "Ecol. Model."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jde.2018.07.064_br0250",
+      "doi-asserted-by": "crossref",
+      "first-page": "402",
+      "DOI": "10.1137/S003614109427878X",
+      "article-title": "An extension of the stability index for traveling-wave solutions and its application to bifurcations",
+      "volume": "28",
+      "author": "Nii",
+      "year": "1997",
+      "journal-title": "SIAM J. Math. Anal."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jde.2018.07.064_br0260",
+      "doi-asserted-by": "crossref",
+      "first-page": "266",
+      "DOI": "10.1006/jdeq.1997.3303",
+      "article-title": "Exponential dichotomies for solitary-wave solutions of semilinear elliptic equations on infinite cylinders",
+      "volume": "140",
+      "author": "Peterhof",
+      "year": "1997",
+      "journal-title": "J. Differential Equations"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0270",
+      "doi-asserted-by": "crossref",
+      "first-page": "413",
+      "DOI": "10.1080/02678299308026314",
+      "article-title": "Forming process and stability of bubble domains in dielectrically positive cholesteric liquid crystals",
+      "volume": "13",
+      "author": "Pirkl",
+      "year": "1993",
+      "journal-title": "Liq. Cryst."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jde.2018.07.064_br0280",
+      "doi-asserted-by": "crossref",
+      "first-page": "429",
+      "DOI": "10.1090/S0002-9947-98-01673-0",
+      "article-title": "Stability of multiple-pulse solutions",
+      "volume": "350",
+      "author": "Sandstede",
+      "year": "1998",
+      "journal-title": "Trans. Amer. Math. Soc."
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0290",
+      "series-title": "Handbook of Dynamical Systems II",
+      "first-page": "983",
+      "article-title": "Stability of traveling waves",
+      "author": "Sandstede",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0300",
+      "doi-asserted-by": "crossref",
+      "first-page": "233",
+      "DOI": "10.1016/S0167-2789(00)00114-7",
+      "article-title": "Absolute and convective instabilities of waves on unbounded and large bounded domains",
+      "volume": "145",
+      "author": "Sandstede",
+      "year": "2000",
+      "journal-title": "Phys. D"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jde.2018.07.064_br0310",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1137/030600192",
+      "article-title": "Defects in oscillatory media: toward a classification",
+      "volume": "3",
+      "author": "Sandstede",
+      "year": "2004",
+      "journal-title": "SIAM J. Appl. Dyn. Syst."
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0320",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1103/PhysRevLett.104.104501",
+      "article-title": "Snakes and ladders: localized solutions of plane Couette flow",
+      "volume": "104",
+      "author": "Schneider",
+      "year": "2010",
+      "journal-title": "Phys. Rev. Lett."
+    },
+    {
+      "key": "10.1016/j.jde.2018.07.064_br0330",
+      "doi-asserted-by": "crossref",
+      "first-page": "1249",
+      "DOI": "10.1142/S0218202508003029",
+      "article-title": "A statistical model of criminal behavior",
+      "volume": "18",
+      "author": "Short",
+      "year": "2008",
+      "journal-title": "Math. Models Methods Appl. Sci."
+    }
+  ],
+  "container-title": [
+    "Journal of Differential Equations"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0022039618304285?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0022039618304285?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        19
+      ]
+    ],
+    "date-time": "2025-09-19T11:28:01Z",
+    "timestamp": 1758281281000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0022039618304285"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        1
+      ]
+    ]
+  },
+  "references-count": 33,
+  "journal-issue": {
+    "issue": "2-3",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S0022039618304285"
+  ],
+  "URL": "https://doi.org/10.1016/j.jde.2018.07.064",
+  "relation": {},
+  "ISSN": [
+    "0022-0396"
+  ],
+  "issn-type": [
+    {
+      "value": "0022-0396",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        1
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Existence and stability of spatially localized patterns",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Differential Equations",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jde.2018.07.064",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2018 Elsevier Inc.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

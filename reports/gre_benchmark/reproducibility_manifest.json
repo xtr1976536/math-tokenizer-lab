@@ -1,0 +1,12 @@
+{
+  "src/math_tokenizer/eqgpt/corpus_conversion.py": "11e460e726d006b74b6d4905dae88507dc0b3fe80a0677ab2268e5002192a1ce",
+  "src/math_tokenizer/eqgpt/paper_normalization.py": "a270d58c81da9c3bb94b5fe4ddcb631cf411c719a4fe01c45c67fce4b544e1c8",
+  "scripts/build_gre_external.py": "d5ed681fb1c110a47c7cc2bfed5b41fe3e5f6127939f22e91d6031a1aea018e3",
+  "scripts/review_pde1500_gre.py": "393dc3b56c102174e3f627272fe831914caadd95d06f6d8f18a43d5d15644bc4",
+  "scripts/report_gre_benchmark.py": "37f9f9bb2586f258ee88fb69877e4a74fb2c2e027b9af48c3e8e1a3e39095ac7",
+  "tests/test_pde_preparation.py": "0f378479a2922240b7749b47ea51b850df842115d579daf3e12a5090f7ec67b3",
+  "data/formulas/pde/pde_equations.jsonl.gz": "93b36f70cfc7ab0d3f78d88bde72b3201043c2b21f9f6bf6b0543770a8510258",
+  "eqgpt_original/code/dict_datas_0725.json": "6cec0ef67d61fc385e30826a7799e7cd42ff4759c729f51eab409ad2f128fc30",
+  "data/formulas/gre_external/benchmark.jsonl": "fbc03d35d403285d2c318f3d938bf0cabdf002ca0ed71822b3b6b6d5ab365f2e",
+  "data/formulas/pde1500_gre_review/components.jsonl": "af98a627ad63144f5ed5e1199b1edd6f548faa139e023479b08c81a1c0ba133b"
+}

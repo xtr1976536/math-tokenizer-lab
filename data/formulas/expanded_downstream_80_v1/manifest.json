@@ -1,0 +1,80 @@
+{
+  "version": "expanded-downstream-80-v1",
+  "source_records": 1855,
+  "augmented_samples": 59360,
+  "source_kinds": {
+    "external_benchmark": 1643,
+    "eqgpt_handbook_non_target": 212
+  },
+  "original_source_records": 2257,
+  "excluded_source_records": 402,
+  "retention_fraction": 0.8218874612317235,
+  "common_filter": "all 32 augmentations of a source must fit all arms; remove source from every arm; never truncate",
+  "training_position_capacity": 80,
+  "search_max_tokens": 80,
+  "required_common_positions": 79,
+  "tokenizer_folder": "tokenizers_round_0",
+  "tokenizer_corpus": "retained unaugmented original LaTeX only; old fixed 98-byte alphabet",
+  "augmentation": "32 sampled equivalent paired variants; original raw LaTeX signed substrings; GRE factors; EOS only last",
+  "lengths": {
+    "eqgpt_reference": {
+      "min": 3,
+      "median": 55.0,
+      "p95": 77.0,
+      "max": 79,
+      "over_50": 36128,
+      "over_80": 0
+    },
+    "ast_bpe_280": {
+      "min": 4,
+      "median": 13.0,
+      "p95": 14.0,
+      "max": 56,
+      "over_50": 32,
+      "over_80": 0
+    },
+    "ast_bpe_315": {
+      "min": 4,
+      "median": 13.0,
+      "p95": 14.0,
+      "max": 56,
+      "over_50": 32,
+      "over_80": 0
+    },
+    "ast_bpe_350": {
+      "min": 4,
+      "median": 13.0,
+      "p95": 14.0,
+      "max": 56,
+      "over_50": 32,
+      "over_80": 0
+    }
+  },
+  "closure_iterations": [
+    {
+      "round": 0,
+      "sources": 1855,
+      "oversize_sources": 0,
+      "tokenizer_folder": "tokenizers_round_0"
+    }
+  ],
+  "input_files": {
+    "data/formulas/gre_benchmark_filtered/benchmark.jsonl": "568200a773fcdb93d9d924b3385ede435cbe3e86dc88f0e128d155950ebff2f7",
+    "data/formulas/gre_benchmark_audit_v2/eqgpt_221_after_target_exclusion.jsonl": "8a6a30ed73222a91d1c6544069ec369717750e5437efae565c4438266fe1a9e0"
+  },
+  "files": {
+    "sources.jsonl": "3789635810b48b867441ba7336823152c0c70eeb15918f62bf3bf0cf53bb90a5",
+    "paired_augmented.jsonl.gz": "1f351adca0d2942177b3265c7718aee67c03952aada7e2ed8b6163f6867703c9",
+    "excluded_length80.jsonl": "4cacd297e367c7d15c08f8d45fb903af2670a9ffa630c5dce407e08a4607580b",
+    "tokenizers_round_0/ast_bpe_280.model.backend.json": "c33431c8d9212227f3bc72f35270a26cec5c2c4a0e2fc16d2316d6dc98ae3f1f",
+    "tokenizers_round_0/ast_bpe_280.model.json": "d8503a8b6607fe7c2e1c00bc8990dc0702210505f5a1b39d522fce715b4fe7c3",
+    "tokenizers_round_0/ast_bpe_315.model.backend.json": "15e4c7f7f210b151c8763cdcca787fda66fef686e513e738d53b3a6c0cf8b5f3",
+    "tokenizers_round_0/ast_bpe_315.model.json": "2ef7b697a3bddba88f5a0139e8aad9fcf0a228f5519977c64bdd61d7761ef67f",
+    "tokenizers_round_0/ast_bpe_350.model.backend.json": "000de5e2c16dc97c054637f15f702978ea52b40d3a8246ca54c5abdeddd4bf99",
+    "tokenizers_round_0/ast_bpe_350.model.json": "3e7b82a5919d5ce33be9f675119cdc379bbb52f8ea7dc21d3bc03a07bd8d1e54",
+    "tokenizers_round_0/manifest.json": "53c720460c50ab96664e07fbd1f22608e4b171c66d0d9c08ccff825be65c275a"
+  },
+  "status": "AUDITED_AND_USED_IN_COMPLETED_EXPERIMENT",
+  "formal_training_started": true,
+  "formal_training_completed": true
+}

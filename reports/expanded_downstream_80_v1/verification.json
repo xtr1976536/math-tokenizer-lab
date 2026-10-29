@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "pretrained_models": 4,
+  "search_results": 32,
+  "candidates": 19200,
+  "mlp_caches_unchanged": 8,
+  "summary": [
+    {
+      "model": "eqgpt_reference",
+      "top1": 2,
+      "top10": 2,
+      "redundant": 1,
+      "evaluated": 4800,
+      "attempts": 4800,
+      "elapsed_seconds": 701.2592969590332
+    },
+    {
+      "model": "ast_bpe_280",
+      "top1": 1,
+      "top10": 1,
+      "redundant": 2,
+      "evaluated": 2702,
+      "attempts": 4800,
+      "elapsed_seconds": 999.8886074990005
+    },
+    {
+      "model": "ast_bpe_315",
+      "top1": 3,
+      "top10": 3,
+      "redundant": 1,
+      "evaluated": 2603,
+      "attempts": 4800,
+      "elapsed_seconds": 1314.2700019569456
+    },
+    {
+      "model": "ast_bpe_350",
+      "top1": 1,
+      "top10": 1,
+      "redundant": 3,
+      "evaluated": 2763,
+      "attempts": 4800,
+      "elapsed_seconds": 1018.9859086250071
+    }
+  ]
+}

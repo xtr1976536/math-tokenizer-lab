@@ -1,0 +1,506 @@
+[
+  {
+    "location": "S0.E1",
+    "latex": [
+      "u_{t}=au_{5x}+bu_{xxx}+f(u)u_{x},"
+    ],
+    "context": "Below we consider the following natural generalization of the Kawahara equation: u t = a ​ u 5 ​ x + b ​ u x ​ x ​ x + f ⁡ ( u ) ​ u x , u_{t}=au_{5x}+bu_{xxx}+f(u)u_{x}, (1) where a , b a,b are constants and f = f ⁡ ( u ) f=f(u) is a function of u u only. For the sake of brevity we will refer to ( 1 ) as to the generalized Kawahara equation (GKE). Upon rescaling of t t we can get rid of the coefficient a a , so from now on we assume without loss of generality that a = 1 a=1 . Note that the equation ( 1 ) includes as special cases some other known generalizations of ( ), cf. e.g. [ 5 , 16 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}=au_{5x}+bu_{xxx}+f(u)u_{x},"
+    ],
+    "context": "u t = a ​ u 5 ​ x + b ​ u x ​ x ​ x + f ⁡ ( u ) ​ u x , u_{t}=au_{5x}+bu_{xxx}+f(u)u_{x}, (1)"
+  },
+  {
+    "location": "S0.E2",
+    "latex": [
+      "u_{t}=a(t)u_{5x}+b(t)u_{xxx}+c(t)f(u)u_{x},"
+    ],
+    "context": "Note that while the authors of [ 7 ] consider a slightly broader generalization of ( ) than ( 1 ), namely, u t = a ⁡ ( t ) ​ u 5 ​ x + b ⁡ ( t ) ​ u x ​ x ​ x + c ⁡ ( t ) ​ f ​ ( u ) ​ u x , u_{t}=a(t)u_{5x}+b(t)u_{xxx}+c(t)f(u)u_{x}, (2) but, unlike our paper, their research dealt only with the Lie point symmetries rather than the generalized ones."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}=a(t)u_{5x}+b(t)u_{xxx}+c(t)f(u)u_{x},"
+    ],
+    "context": "u t = a ⁡ ( t ) ​ u 5 ​ x + b ⁡ ( t ) ​ u x ​ x ​ x + c ⁡ ( t ) ​ f ​ ( u ) ​ u x , u_{t}=a(t)u_{5x}+b(t)u_{xxx}+c(t)f(u)u_{x}, (2)"
+  },
+  {
+    "location": "S1.Ex1",
+    "latex": [
+      "\\begin{array}[]{rcl}\\sigma_{1}&=&\\displaystyle\\frac{1}{2}\\frac{\\partial{f}}{\\partial{u}}u^{2}+u_{xx}b+u_{4x},\\\\[8.53581pt]\n\\sigma_{2}&=&\\displaystyle uu_{4x}-u_{xxx}u_{x}+\\frac{1}{2}u_{xx}^{2}+buu_{xx}-\\frac{1}{2}bu_{x}^{2}+\\frac{1}{3}\\frac{\\partial{f}}{\\partial{u}}u^{3},\\\\[8.53581pt]\n\\sigma_{3}&=&\\displaystyle-fbu_{x}^{2}+\\frac{\\partial{f}}{\\partial{u}}u_{x}^{2}u_{xx}-b^{2}u_{x}u_{xxx}+\\frac{1}{2}b^{2}u_{xx}^{2}+rbu_{xx}-fu_{x}u_{xxx}+fu_{xx}^{2}\\\\[8.53581pt]\n&&\\displaystyle+2bu_{4x}u_{xx}-bu_{5x}u_{x}-bu_{xxx}^{2}+\\frac{1}{2}r^{2}+ru_{4x}+\\frac{1}{2}u_{4x}^{2}-u_{5x}u_{xxx}+u_{xx}u_{6x};\\end{array}"
+    ],
+    "context": "if ∂ 2 f / ∂ u 2 ≠ 0 \\partial^{2}f/\\partial u^{2}\\neq 0 , then equation ( 1 ) has just three linearly independent local conservation laws with the conserved densities ρ 1 = u \\rho_{1}=u , ρ 2 = u 2 \\rho_{2}=u^{2} and ρ 3 = ( u x ​ x 2 − b ​ u x 2 ) / 2 + r ^ \\rho_{3}=(u_{xx}^{2}-bu_{x}^{2})/2+\\widehat{r} , where r ^ ​ ( u ) \\hat{r}(u) is defined by the formula ∂ r ^ / ∂ u = r ⁡ ( u ) \\partial\\hat{r}/\\partial u=r(u) , and the associated fluxes σ 1 = 1 2 ​ ∂ f ∂ u ​ u 2 + u x ​ x ​ b + u 4 ​ x , σ 2 = u ​ u 4 ​ x − u x ​ x ​ x ​ u x + 1 2 ​ u x ​ x 2 + b ​ u ​ u x ​ x − 1 2 ​ b ​ u x 2 + 1 3 ​ ∂ f ∂ u ​ u 3 , σ 3 = − f ​ b ​ u x 2 + ∂ f ∂ u ​ u x 2 ​ u x ​ x − b 2 ​ u x ​ u x ​ x ​ x + 1 2 ​ b 2 ​ u x ​ x 2 + r ​ b ​ u x ​ x − f ​ u x ​ u x ​ x ​ x + f ​ u x ​ x 2 + 2 ​ b ​ u 4 ​ x ​ u x ​ x − b ​ u 5 ​ x ​ u x − b ​ u x ​ x ​ x 2 + 1 2 ​ r 2 + r ​ u 4 ​ x + 1 2 ​ u 4 ​ x 2 − u 5 ​ x ​ u x ​ x ​ x + u x ​ x ​ u 6 ​ x ; \\begin{array}[]{rcl}\\sigma_{1}&=&\\displaystyle\\frac{1}{2}\\frac{\\partial{f}}{\\partial{u}}u^{2}+u_{xx}b+u_{4x},\\\\[8.53581pt]\n\\sigma_{2}&=&\\displaystyle uu_{4x}-u_{xxx}u_{x}+\\frac{1}{2}u_{xx}^{2}+buu_{xx}-\\frac{1}{2}bu_{x}^{2}+\\frac{1}{3}\\frac{\\partial{f}}{\\partial{u}}u^{3},\\\\[8.53581pt]\n\\sigma_{3}&=&\\displaystyle-fbu_{x}^{2}+\\frac{\\partial{f}}{\\partial{u}}u_{x}^{2}u_{xx}-b^{2}u_{x}u_{xxx}+\\frac{1}{2}b^{2}u_{xx}^{2}+rbu_{xx}-fu_{x}u_{xxx}+fu_{xx}^{2}\\\\[8.53581pt]\n&&\\displaystyle+2bu_{4x}u_{xx}-bu_{5x}u_{x}-bu_{xxx}^{2}+\\frac{1}{2}r^{2}+ru_{4x}+\\frac{1}{2}u_{4x}^{2}-u_{5x}u_{xxx}+u_{xx}u_{6x};\\end{array}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{rcl}\\sigma_{1}&=&\\displaystyle\\frac{1}{2}\\frac{\\partial{f}}{\\partial{u}}u^{2}+u_{xx}b+u_{4x},\\\\[8.53581pt]\n\\sigma_{2}&=&\\displaystyle uu_{4x}-u_{xxx}u_{x}+\\frac{1}{2}u_{xx}^{2}+buu_{xx}-\\frac{1}{2}bu_{x}^{2}+\\frac{1}{3}\\frac{\\partial{f}}{\\partial{u}}u^{3},\\\\[8.53581pt]\n\\sigma_{3}&=&\\displaystyle-fbu_{x}^{2}+\\frac{\\partial{f}}{\\partial{u}}u_{x}^{2}u_{xx}-b^{2}u_{x}u_{xxx}+\\frac{1}{2}b^{2}u_{xx}^{2}+rbu_{xx}-fu_{x}u_{xxx}+fu_{xx}^{2}\\\\[8.53581pt]\n&&\\displaystyle+2bu_{4x}u_{xx}-bu_{5x}u_{x}-bu_{xxx}^{2}+\\frac{1}{2}r^{2}+ru_{4x}+\\frac{1}{2}u_{4x}^{2}-u_{5x}u_{xxx}+u_{xx}u_{6x};\\end{array}"
+    ],
+    "context": "σ 1 = 1 2 ​ ∂ f ∂ u ​ u 2 + u x ​ x ​ b + u 4 ​ x , σ 2 = u ​ u 4 ​ x − u x ​ x ​ x ​ u x + 1 2 ​ u x ​ x 2 + b ​ u ​ u x ​ x − 1 2 ​ b ​ u x 2 + 1 3 ​ ∂ f ∂ u ​ u 3 , σ 3 = − f ​ b ​ u x 2 + ∂ f ∂ u ​ u x 2 ​ u x ​ x − b 2 ​ u x ​ u x ​ x ​ x + 1 2 ​ b 2 ​ u x ​ x 2 + r ​ b ​ u x ​ x − f ​ u x ​ u x ​ x ​ x + f ​ u x ​ x 2 + 2 ​ b ​ u 4 ​ x ​ u x ​ x − b ​ u 5 ​ x ​ u x − b ​ u x ​ x ​ x 2 + 1 2 ​ r 2 + r ​ u 4 ​ x + 1 2 ​ u 4 ​ x 2 − u 5 ​ x ​ u x ​ x ​ x + u x ​ x ​ u 6 ​ x ; \\begin{array}[]{rcl}\\sigma_{1}&=&\\displaystyle\\frac{1}{2}\\frac{\\partial{f}}{\\partial{u}}u^{2}+u_{xx}b+u_{4x},\\\\[8.53581pt]\n\\sigma_{2}&=&\\displaystyle uu_{4x}-u_{xxx}u_{x}+\\frac{1}{2}u_{xx}^{2}+buu_{xx}-\\frac{1}{2}bu_{x}^{2}+\\frac{1}{3}\\frac{\\partial{f}}{\\partial{u}}u^{3},\\\\[8.53581pt]\n\\sigma_{3}&=&\\displaystyle-fbu_{x}^{2}+\\frac{\\partial{f}}{\\partial{u}}u_{x}^{2}u_{xx}-b^{2}u_{x}u_{xxx}+\\frac{1}{2}b^{2}u_{xx}^{2}+rbu_{xx}-fu_{x}u_{xxx}+fu_{xx}^{2}\\\\[8.53581pt]\n&&\\displaystyle+2bu_{4x}u_{xx}-bu_{5x}u_{x}-bu_{xxx}^{2}+\\frac{1}{2}r^{2}+ru_{4x}+\\frac{1}{2}u_{4x}^{2}-u_{5x}u_{xxx}+u_{xx}u_{6x};\\end{array}"
+  },
+  {
+    "location": "S1.Ex2",
+    "latex": [
+      "\\begin{array}[]{rcl}\\sigma_{4}&=&\\displaystyle\\frac{1}{6}\\alpha((-3bu_{x}^{2}+6buu_{xx}+6u_{4x}u-6u_{xxx}u_{x}+3u_{xx}^{2})t+3xu^{2})+\\frac{1}{2}\\alpha^{2}tu^{3}\\\\[8.53581pt]\n&&+3b(xu_{xx}-u_{x})+xu_{4x}-u_{xxx}.\\end{array}"
+    ],
+    "context": "if ∂ 2 f / ∂ u 2 = 0 \\partial^{2}f/\\partial u^{2}=0 , then f = α ​ u + β f=\\alpha u+\\beta , where α , β \\alpha,\\beta are constants, and ( 1 ) admits, in addition to the local conservation laws listed in 1), a local conservation law with the conserved density ρ 4 = x ​ u + α ​ t ​ u 2 / 2 \\rho_{4}=xu+\\alpha tu^{2}/2 and the associated flux σ 4 = 1 6 ​ α ​ ( ( − 3 ​ b ​ u x 2 + 6 ​ b ​ u ​ u x ​ x + 6 ​ u 4 ​ x ​ u − 6 ​ u x ​ x ​ x ​ u x + 3 ​ u x ​ x 2 ) ​ t + 3 ​ x ​ u 2 ) + 1 2 ​ α 2 ​ t ​ u 3 + 3 ​ b ​ ( x ​ u x ​ x − u x ) + x ​ u 4 ​ x − u x ​ x ​ x . \\begin{array}[]{rcl}\\sigma_{4}&=&\\displaystyle\\frac{1}{6}\\alpha((-3bu_{x}^{2}+6buu_{xx}+6u_{4x}u-6u_{xxx}u_{x}+3u_{xx}^{2})t+3xu^{2})+\\frac{1}{2}\\alpha^{2}tu^{3}\\\\[8.53581pt]\n&&+3b(xu_{xx}-u_{x})+xu_{4x}-u_{xxx}.\\end{array}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{rcl}\\sigma_{4}&=&\\displaystyle\\frac{1}{6}\\alpha((-3bu_{x}^{2}+6buu_{xx}+6u_{4x}u-6u_{xxx}u_{x}+3u_{xx}^{2})t+3xu^{2})+\\frac{1}{2}\\alpha^{2}tu^{3}\\\\[8.53581pt]\n&&+3b(xu_{xx}-u_{x})+xu_{4x}-u_{xxx}.\\end{array}"
+    ],
+    "context": "σ 4 = 1 6 ​ α ​ ( ( − 3 ​ b ​ u x 2 + 6 ​ b ​ u ​ u x ​ x + 6 ​ u 4 ​ x ​ u − 6 ​ u x ​ x ​ x ​ u x + 3 ​ u x ​ x 2 ) ​ t + 3 ​ x ​ u 2 ) + 1 2 ​ α 2 ​ t ​ u 3 + 3 ​ b ​ ( x ​ u x ​ x − u x ) + x ​ u 4 ​ x − u x ​ x ​ x . \\begin{array}[]{rcl}\\sigma_{4}&=&\\displaystyle\\frac{1}{6}\\alpha((-3bu_{x}^{2}+6buu_{xx}+6u_{4x}u-6u_{xxx}u_{x}+3u_{xx}^{2})t+3xu^{2})+\\frac{1}{2}\\alpha^{2}tu^{3}\\\\[8.53581pt]\n&&+3b(xu_{xx}-u_{x})+xu_{4x}-u_{xxx}.\\end{array}"
+  },
+  {
+    "location": "S2.E3",
+    "latex": [
+      "u_{t}=K(x,u,u_{x},\\dots,u_{nx}),\\hskip 28.80008ptn\\geq 2."
+    ],
+    "context": "We consider an evolution equation in two independent and one dependent variable of the form u t = K ⁡ ( x , u , u x , … , u n ​ x ) , n ≥ 2 . u_{t}=K(x,u,u_{x},\\dots,u_{nx}),\\hskip 28.80008ptn\\geq 2. (3) For partial derivatives in x x we employ the usual abbreviated notation, for example ∂ 3 u / ∂ x 3 = u 3 ​ x = u x ​ x ​ x \\partial^{3}u/\\partial x^{3}=u_{3x}=u_{xxx} , ∂ 4 u / ∂ x 4 = u 4 ​ x \\partial^{4}u/\\partial x^{4}=u_{4x} , and so on, including u 0 ​ x ≡ u u_{0x}\\equiv u ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}=K(x,u,u_{x},\\dots,u_{nx}),\\hskip 28.80008ptn\\geq 2."
+    ],
+    "context": "u t = K ⁡ ( x , u , u x , … , u n ​ x ) , n ≥ 2 . u_{t}=K(x,u,u_{x},\\dots,u_{nx}),\\hskip 28.80008ptn\\geq 2. (3)"
+  },
+  {
+    "location": "S2.Ex3",
+    "latex": [
+      "D_{x}=\\frac{\\partial{}}{\\partial{x}}+\\sum_{i=0}^{\\infty}{u_{(i+1)x}}\\frac{\\partial{}}{\\partial{u_{ix}}},\\hskip 28.80008ptD_{t}=\\frac{\\partial{}}{\\partial{t}}+\\sum_{i=0}^{\\infty}{D_{x}^{i}(K)\\frac{\\partial{}}{\\partial{u_{ix}}}}"
+    ],
+    "context": "Furthermore let D x D_{x} and D t D_{t} be total derivatives in x x and t t restricted to ( 3 ), that is: D x = ∂ ∂ x + ∑ i = 0 ∞ u ( i + 1 ) ​ x ​ ∂ ∂ u i ​ x , D t = ∂ ∂ t + ∑ i = 0 ∞ D x i ​ ( K ) ​ ∂ ∂ u i ​ x D_{x}=\\frac{\\partial{}}{\\partial{x}}+\\sum_{i=0}^{\\infty}{u_{(i+1)x}}\\frac{\\partial{}}{\\partial{u_{ix}}},\\hskip 28.80008ptD_{t}=\\frac{\\partial{}}{\\partial{t}}+\\sum_{i=0}^{\\infty}{D_{x}^{i}(K)\\frac{\\partial{}}{\\partial{u_{ix}}}}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "D_{x}=\\frac{\\partial{}}{\\partial{x}}+\\sum_{i=0}^{\\infty}{u_{(i+1)x}}\\frac{\\partial{}}{\\partial{u_{ix}}},\\hskip 28.80008ptD_{t}=\\frac{\\partial{}}{\\partial{t}}+\\sum_{i=0}^{\\infty}{D_{x}^{i}(K)\\frac{\\partial{}}{\\partial{u_{ix}}}}"
+    ],
+    "context": "D x = ∂ ∂ x + ∑ i = 0 ∞ u ( i + 1 ) ​ x ​ ∂ ∂ u i ​ x , D t = ∂ ∂ t + ∑ i = 0 ∞ D x i ​ ( K ) ​ ∂ ∂ u i ​ x D_{x}=\\frac{\\partial{}}{\\partial{x}}+\\sum_{i=0}^{\\infty}{u_{(i+1)x}}\\frac{\\partial{}}{\\partial{u_{ix}}},\\hskip 28.80008ptD_{t}=\\frac{\\partial{}}{\\partial{t}}+\\sum_{i=0}^{\\infty}{D_{x}^{i}(K)\\frac{\\partial{}}{\\partial{u_{ix}}}}"
+  },
+  {
+    "location": "S2.Ex4",
+    "latex": [
+      "f=\\frac{g}{h},"
+    ],
+    "context": "A function f ⁡ ( x , t , u , … , u s ​ x ) f(x,t,u,\\dots,u_{sx}) is called a rational local function if and only if it can be written as f = g h , f=\\frac{g}{h}, where g , h g,h are local functions polynomial in all their arguments. We shall denote the (differential) field of rational local functions by 𝒜 0 \\mathscr{A}_{0} , cf. e.g. [ 4 , 18 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "f=\\frac{g}{h},"
+    ],
+    "context": "f = g h , f=\\frac{g}{h},"
+  },
+  {
+    "location": "S2.Ex5",
+    "latex": [
+      "\\mathbf{v}_{Q}=Q\\frac{\\partial{}}{\\partial{u}}."
+    ],
+    "context": "An evolutionary vector field with the characteristic Q Q from 𝒜 \\mathscr{A} has the form 𝐯 Q = Q ​ ∂ ∂ u . \\mathbf{v}_{Q}=Q\\frac{\\partial{}}{\\partial{u}}. Such a vector field 𝐯 Q \\mathbf{v}_{Q} is called a generalized symmetry for ( 3 ) iff its characteristic Q Q satisfies D t ​ ( Q ) = D K ​ ( Q ) . D_{t}(Q)=\\mathrm{\\textbf{D}}_{K}(Q). (4) Here, for F = F ⁡ ( x , t , u , u x , … , u k ​ x ) ∈ 𝒜 F=F(x,t,u,u_{x},\\dots,u_{kx})\\in\\mathscr{A} we denote by D F \\mathrm{\\textbf{D}}_{F} the (formal) Fréchet derivative D F = ∑ i = 0 k ∂ F ∂ u i ​ D x i . \\mathrm{\\textbf{D}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}D_{x}^{i}}. (5)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathbf{v}_{Q}=Q\\frac{\\partial{}}{\\partial{u}}."
+    ],
+    "context": "𝐯 Q = Q ​ ∂ ∂ u . \\mathbf{v}_{Q}=Q\\frac{\\partial{}}{\\partial{u}}."
+  },
+  {
+    "location": "S2.E4",
+    "latex": [
+      "D_{t}(Q)=\\mathrm{\\textbf{D}}_{K}(Q)."
+    ],
+    "context": "An evolutionary vector field with the characteristic Q Q from 𝒜 \\mathscr{A} has the form 𝐯 Q = Q ​ ∂ ∂ u . \\mathbf{v}_{Q}=Q\\frac{\\partial{}}{\\partial{u}}. Such a vector field 𝐯 Q \\mathbf{v}_{Q} is called a generalized symmetry for ( 3 ) iff its characteristic Q Q satisfies D t ​ ( Q ) = D K ​ ( Q ) . D_{t}(Q)=\\mathrm{\\textbf{D}}_{K}(Q). (4) Here, for F = F ⁡ ( x , t , u , u x , … , u k ​ x ) ∈ 𝒜 F=F(x,t,u,u_{x},\\dots,u_{kx})\\in\\mathscr{A} we denote by D F \\mathrm{\\textbf{D}}_{F} the (formal) Fréchet derivative D F = ∑ i = 0 k ∂ F ∂ u i ​ D x i . \\mathrm{\\textbf{D}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}D_{x}^{i}}. (5)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "D_{t}(Q)=\\mathrm{\\textbf{D}}_{K}(Q)."
+    ],
+    "context": "D t ​ ( Q ) = D K ​ ( Q ) . D_{t}(Q)=\\mathrm{\\textbf{D}}_{K}(Q). (4)"
+  },
+  {
+    "location": "S2.E5",
+    "latex": [
+      "\\mathrm{\\textbf{D}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}D_{x}^{i}}."
+    ],
+    "context": "An evolutionary vector field with the characteristic Q Q from 𝒜 \\mathscr{A} has the form 𝐯 Q = Q ​ ∂ ∂ u . \\mathbf{v}_{Q}=Q\\frac{\\partial{}}{\\partial{u}}. Such a vector field 𝐯 Q \\mathbf{v}_{Q} is called a generalized symmetry for ( 3 ) iff its characteristic Q Q satisfies D t ​ ( Q ) = D K ​ ( Q ) . D_{t}(Q)=\\mathrm{\\textbf{D}}_{K}(Q). (4) Here, for F = F ⁡ ( x , t , u , u x , … , u k ​ x ) ∈ 𝒜 F=F(x,t,u,u_{x},\\dots,u_{kx})\\in\\mathscr{A} we denote by D F \\mathrm{\\textbf{D}}_{F} the (formal) Fréchet derivative D F = ∑ i = 0 k ∂ F ∂ u i ​ D x i . \\mathrm{\\textbf{D}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}D_{x}^{i}}. (5)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathrm{\\textbf{D}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}D_{x}^{i}}."
+    ],
+    "context": "D F = ∑ i = 0 k ∂ F ∂ u i ​ D x i . \\mathrm{\\textbf{D}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}D_{x}^{i}}. (5)"
+  },
+  {
+    "location": "S2.E6",
+    "latex": [
+      "L=\\sum_{i=-\\infty}^{k}a_{i}\\xi^{i},"
+    ],
+    "context": "L = ∑ i = − ∞ k a i ​ ξ i , L=\\sum_{i=-\\infty}^{k}a_{i}\\xi^{i}, (6) where the coefficients a i a_{i} are from the differential field 𝒜 \\mathscr{A} . The degree of such a formal series is defined as the greatest j j such that a j ≠ 0 a_{j}\\neq 0 , with the convention that deg ⁡ 0 = − ∞ \\deg 0=-\\infty ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "L=\\sum_{i=-\\infty}^{k}a_{i}\\xi^{i},"
+    ],
+    "context": "L = ∑ i = − ∞ k a i ​ ξ i , L=\\sum_{i=-\\infty}^{k}a_{i}\\xi^{i}, (6)"
+  },
+  {
+    "location": "S2.Ex6",
+    "latex": [
+      "a\\xi^{i}\\circ b\\xi^{j}=a\\sum_{k=0}^{\\infty}{\\frac{i(i-1)\\cdot\\cdot\\cdot(i-k+1)}{k!}D_{x}^{k}(b)\\xi^{i+j-k}},"
+    ],
+    "context": "The multiplication of two monomials is defined by the formula a ​ ξ i ∘ b ​ ξ j = a ​ ∑ k = 0 ∞ i ( i − 1 ) ⋯ ( i − k + 1 ) k ! ​ D x k ​ ( b ) ​ ξ i + j − k , a\\xi^{i}\\circ b\\xi^{j}=a\\sum_{k=0}^{\\infty}{\\frac{i(i-1)\\cdot\\cdot\\cdot(i-k+1)}{k!}D_{x}^{k}(b)\\xi^{i+j-k}}, which by virtue of linearity is extended to the whole ℒ \\mathscr{L} . Such a multiplication can be shown to be associative which implies that the commutator [ P , Q ] = P ∘ Q − Q ∘ P \\left[P,Q\\right]=P\\circ Q-Q\\circ P endows ℒ \\mathscr{L} with a Lie algebra structure. To simplify writing, in what follows ∘ \\circ would be omitted whenever there is no risk of confusion."
+  },
+  {
+    "location": null,
+    "latex": [
+      "a\\xi^{i}\\circ b\\xi^{j}=a\\sum_{k=0}^{\\infty}{\\frac{i(i-1)\\cdot\\cdot\\cdot(i-k+1)}{k!}D_{x}^{k}(b)\\xi^{i+j-k}},"
+    ],
+    "context": "a ​ ξ i ∘ b ​ ξ j = a ​ ∑ k = 0 ∞ i ( i − 1 ) ⋯ ( i − k + 1 ) k ! ​ D x k ​ ( b ) ​ ξ i + j − k , a\\xi^{i}\\circ b\\xi^{j}=a\\sum_{k=0}^{\\infty}{\\frac{i(i-1)\\cdot\\cdot\\cdot(i-k+1)}{k!}D_{x}^{k}(b)\\xi^{i+j-k}},"
+  },
+  {
+    "location": "S2.E7",
+    "latex": [
+      "\\mathrm{if}\\hskip 14.40004ptL=\\sum_{i=-\\infty}^{q}{a_{i}\\xi^{i}},\\hskip 14.40004pt\\mathrm{then}\\hskip 14.40004ptL^{*}=\\sum_{i=-\\infty}^{q}{(-\\xi)^{i}\\circ a_{i}}."
+    ],
+    "context": "if L = ∑ i = − ∞ q a i ​ ξ i , then L ∗ = ∑ i = − ∞ q ( − ξ ) i ∘ a i . \\mathrm{if}\\hskip 14.40004ptL=\\sum_{i=-\\infty}^{q}{a_{i}\\xi^{i}},\\hskip 14.40004pt\\mathrm{then}\\hskip 14.40004ptL^{*}=\\sum_{i=-\\infty}^{q}{(-\\xi)^{i}\\circ a_{i}}. (7)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathrm{if}\\hskip 14.40004ptL=\\sum_{i=-\\infty}^{q}{a_{i}\\xi^{i}},\\hskip 14.40004pt\\mathrm{then}\\hskip 14.40004ptL^{*}=\\sum_{i=-\\infty}^{q}{(-\\xi)^{i}\\circ a_{i}}."
+    ],
+    "context": "if L = ∑ i = − ∞ q a i ​ ξ i , then L ∗ = ∑ i = − ∞ q ( − ξ ) i ∘ a i . \\mathrm{if}\\hskip 14.40004ptL=\\sum_{i=-\\infty}^{q}{a_{i}\\xi^{i}},\\hskip 14.40004pt\\mathrm{then}\\hskip 14.40004ptL^{*}=\\sum_{i=-\\infty}^{q}{(-\\xi)^{i}\\circ a_{i}}. (7)"
+  },
+  {
+    "location": "S2.Ex7",
+    "latex": [
+      "L=\\underbrace{{L}^{1/n}\\circ{L}^{1/n}\\circ\\dots\\circ{L}^{1/n}}_{n\\emph{~times}}=(L^{1/n})^{n}."
+    ],
+    "context": "It is known that every L ∈ ℒ L\\in\\mathscr{L} with deg ⁡ L = n > 0 \\deg L=n>0 has its n n -th root which satisfies L = L 1 / n ∘ L 1 / n ∘ ⋯ ∘ L 1 / n ⏟ n ​ ​ t ​ i ​ m ​ e ​ s = ( L 1 / n ) n . L=\\underbrace{{L}^{1/n}\\circ{L}^{1/n}\\circ\\dots\\circ{L}^{1/n}}_{n\\emph{~times}}=(L^{1/n})^{n}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "L=\\underbrace{{L}^{1/n}\\circ{L}^{1/n}\\circ\\dots\\circ{L}^{1/n}}_{n\\emph{~times}}=(L^{1/n})^{n}."
+    ],
+    "context": "L = L 1 / n ∘ L 1 / n ∘ ⋯ ∘ L 1 / n ⏟ n ​ ​ t ​ i ​ m ​ e ​ s = ( L 1 / n ) n . L=\\underbrace{{L}^{1/n}\\circ{L}^{1/n}\\circ\\dots\\circ{L}^{1/n}}_{n\\emph{~times}}=(L^{1/n})^{n}."
+  },
+  {
+    "location": "S2.E8",
+    "latex": [
+      "\\mathrm{deg}(D_{t}(L)-[\\widehat{\\emph{\\textbf{D}}}_{K},L])\\leq m+n-k,"
+    ],
+    "context": "A formal symmetry of rank k k for ( 3 ) is a formal series L ∈ ℒ L\\in\\mathscr{L} of order m m which satisfies deg ⁡ ( D t ​ ( L ) − [ D ^ K , L ] ) ≤ m + n − k , \\mathrm{deg}(D_{t}(L)-[\\widehat{\\emph{\\textbf{D}}}_{K},L])\\leq m+n-k, (8) where for any F = F ⁡ ( x , t , u , u x , … , u k ​ x ) ∈ 𝒜 F=F(x,t,u,u_{x},\\dots,u_{kx})\\in\\mathscr{A} we define D ^ F = ∑ i = 0 k ∂ F ∂ u i ​ ξ i . \\widehat{\\emph{\\textbf{D}}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}\\xi^{i}}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathrm{deg}(D_{t}(L)-[\\widehat{\\emph{\\textbf{D}}}_{K},L])\\leq m+n-k,"
+    ],
+    "context": "deg ⁡ ( D t ​ ( L ) − [ D ^ K , L ] ) ≤ m + n − k , \\mathrm{deg}(D_{t}(L)-[\\widehat{\\emph{\\textbf{D}}}_{K},L])\\leq m+n-k, (8)"
+  },
+  {
+    "location": "S2.Ex8",
+    "latex": [
+      "\\widehat{\\emph{\\textbf{D}}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}\\xi^{i}}."
+    ],
+    "context": "A formal symmetry of rank k k for ( 3 ) is a formal series L ∈ ℒ L\\in\\mathscr{L} of order m m which satisfies deg ⁡ ( D t ​ ( L ) − [ D ^ K , L ] ) ≤ m + n − k , \\mathrm{deg}(D_{t}(L)-[\\widehat{\\emph{\\textbf{D}}}_{K},L])\\leq m+n-k, (8) where for any F = F ⁡ ( x , t , u , u x , … , u k ​ x ) ∈ 𝒜 F=F(x,t,u,u_{x},\\dots,u_{kx})\\in\\mathscr{A} we define D ^ F = ∑ i = 0 k ∂ F ∂ u i ​ ξ i . \\widehat{\\emph{\\textbf{D}}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}\\xi^{i}}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\widehat{\\emph{\\textbf{D}}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}\\xi^{i}}."
+    ],
+    "context": "D ^ F = ∑ i = 0 k ∂ F ∂ u i ​ ξ i . \\widehat{\\emph{\\textbf{D}}}_{F}=\\sum_{i=0}^{k}{\\frac{\\partial{F}}{\\partial{u_{i}}}\\xi^{i}}."
+  },
+  {
+    "location": "S2.E9",
+    "latex": [
+      "D_{t}(\\rho)=D_{x}(\\sigma),"
+    ],
+    "context": "Without loss of generality any local conservation law for ( 3 ) can be assumed to take the form, D t ​ ( ρ ) = D x ​ ( σ ) , D_{t}(\\rho)=D_{x}(\\sigma), (9) where a function ρ ∈ 𝒜 \\rho\\in\\mathscr{A} is called a conserved density of such conservation law and σ ∈ 𝒜 \\sigma\\in\\mathscr{A} is the associated flux . We shall omit the word local , since we will deal only with local conservation laws, densities and fluxes.\nThe characteristic of a conservation law ( 9 ) for ( 3 ) is a differential function P ∈ 𝒜 P\\in\\mathscr{A} , which satisfies D t ​ ( ρ ) − D x ​ ( σ ) = P ⋅ ( u t − K ) . D_{t}(\\rho)-D_{x}(\\sigma)=P\\cdot(u_{t}-K)."
+  },
+  {
+    "location": null,
+    "latex": [
+      "D_{t}(\\rho)=D_{x}(\\sigma),"
+    ],
+    "context": "D t ​ ( ρ ) = D x ​ ( σ ) , D_{t}(\\rho)=D_{x}(\\sigma), (9)"
+  },
+  {
+    "location": "S2.Ex9",
+    "latex": [
+      "D_{t}(\\rho)-D_{x}(\\sigma)=P\\cdot(u_{t}-K)."
+    ],
+    "context": "Without loss of generality any local conservation law for ( 3 ) can be assumed to take the form, D t ​ ( ρ ) = D x ​ ( σ ) , D_{t}(\\rho)=D_{x}(\\sigma), (9) where a function ρ ∈ 𝒜 \\rho\\in\\mathscr{A} is called a conserved density of such conservation law and σ ∈ 𝒜 \\sigma\\in\\mathscr{A} is the associated flux . We shall omit the word local , since we will deal only with local conservation laws, densities and fluxes.\nThe characteristic of a conservation law ( 9 ) for ( 3 ) is a differential function P ∈ 𝒜 P\\in\\mathscr{A} , which satisfies D t ​ ( ρ ) − D x ​ ( σ ) = P ⋅ ( u t − K ) . D_{t}(\\rho)-D_{x}(\\sigma)=P\\cdot(u_{t}-K)."
+  },
+  {
+    "location": null,
+    "latex": [
+      "D_{t}(\\rho)-D_{x}(\\sigma)=P\\cdot(u_{t}-K)."
+    ],
+    "context": "D t ​ ( ρ ) − D x ​ ( σ ) = P ⋅ ( u t − K ) . D_{t}(\\rho)-D_{x}(\\sigma)=P\\cdot(u_{t}-K)."
+  },
+  {
+    "location": "S2.E10",
+    "latex": [
+      "\\frac{\\partial{u}}{\\partial{t}}=\\mathscr{D}\\delta\\mathscr{H},"
+    ],
+    "context": "An evolutionary partial differential equation ( 3 ) is said to be Hamiltonian if it can be written in the form ∂ u ∂ t = 𝒟 ​ δ ​ ℋ , \\frac{\\partial{u}}{\\partial{t}}=\\mathscr{D}\\delta\\mathscr{H}, (10) where 𝒟 \\mathscr{D} is a Hamiltonian operator, see e.g. Ch. 7 of [ 15 ] for details, δ \\delta is the operator of variational derivative and ℋ = ∫ H ​ 𝑑 x \\mathscr{H}=\\int{H}\\,dx , where H ∈ 𝒜 H\\in\\mathscr{A} , is usually referred to as the Hamiltonian functional , or just the Hamiltonian ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\frac{\\partial{u}}{\\partial{t}}=\\mathscr{D}\\delta\\mathscr{H},"
+    ],
+    "context": "∂ u ∂ t = 𝒟 ​ δ ​ ℋ , \\frac{\\partial{u}}{\\partial{t}}=\\mathscr{D}\\delta\\mathscr{H}, (10)"
+  },
+  {
+    "location": "S2.E11",
+    "latex": [
+      "\\delta\\mathscr{H}=\\frac{\\delta}{\\delta u}H=\\sum_{i=1}^{\\infty}{(-D_{x})^{i}\\biggl(\\frac{\\partial{H}}{\\partial{u_{i}}}}\\biggr)."
+    ],
+    "context": "Recall that the operator of variational derivative δ ​ ℋ \\delta\\mathscr{H} is defined as follows: δ ​ ℋ = δ δ ​ u ​ H = ∑ i = 1 ∞ ( − D x ) i ​ ( ∂ H ∂ u i ) . \\delta\\mathscr{H}=\\frac{\\delta}{\\delta u}H=\\sum_{i=1}^{\\infty}{(-D_{x})^{i}\\biggl(\\frac{\\partial{H}}{\\partial{u_{i}}}}\\biggr). (11)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\delta\\mathscr{H}=\\frac{\\delta}{\\delta u}H=\\sum_{i=1}^{\\infty}{(-D_{x})^{i}\\biggl(\\frac{\\partial{H}}{\\partial{u_{i}}}}\\biggr)."
+    ],
+    "context": "δ ​ ℋ = δ δ ​ u ​ H = ∑ i = 1 ∞ ( − D x ) i ​ ( ∂ H ∂ u i ) . \\delta\\mathscr{H}=\\frac{\\delta}{\\delta u}H=\\sum_{i=1}^{\\infty}{(-D_{x})^{i}\\biggl(\\frac{\\partial{H}}{\\partial{u_{i}}}}\\biggr). (11)"
+  },
+  {
+    "location": "S3.E12",
+    "latex": [
+      "\\mathrm{deg}\\,(D_{t}(L)-[\\widehat{\\mathrm{\\textbf{D}}}_{K},L])\\leq\\mathrm{deg}\\,L+\\mathrm{deg}\\,\\widehat{\\mathrm{\\textbf{D}}}_{K}-13."
+    ],
+    "context": "deg ⁡ ( D t ​ ( L ) − [ D ^ K , L ] ) ≤ deg ​ L + deg ​ D ^ K − 13 . \\mathrm{deg}\\,(D_{t}(L)-[\\widehat{\\mathrm{\\textbf{D}}}_{K},L])\\leq\\mathrm{deg}\\,L+\\mathrm{deg}\\,\\widehat{\\mathrm{\\textbf{D}}}_{K}-13. (12)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathrm{deg}\\,(D_{t}(L)-[\\widehat{\\mathrm{\\textbf{D}}}_{K},L])\\leq\\mathrm{deg}\\,L+\\mathrm{deg}\\,\\widehat{\\mathrm{\\textbf{D}}}_{K}-13."
+    ],
+    "context": "deg ⁡ ( D t ​ ( L ) − [ D ^ K , L ] ) ≤ deg ​ L + deg ​ D ^ K − 13 . \\mathrm{deg}\\,(D_{t}(L)-[\\widehat{\\mathrm{\\textbf{D}}}_{K},L])\\leq\\mathrm{deg}\\,L+\\mathrm{deg}\\,\\widehat{\\mathrm{\\textbf{D}}}_{K}-13. (12)"
+  },
+  {
+    "location": "S3.Ex10",
+    "latex": [
+      "L=g\\xi+\\sum_{i=0}^{\\infty}{l_{i}\\xi^{-i}},"
+    ],
+    "context": "L = g ​ ξ + ∑ i = 0 ∞ l i ​ ξ − i , L=g\\xi+\\sum_{i=0}^{\\infty}{l_{i}\\xi^{-i}}, with g , l i ∈ 𝒜 g,l_{i}\\in\\mathscr{A} . Then equation ( 12 ) boils down to"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L=g\\xi+\\sum_{i=0}^{\\infty}{l_{i}\\xi^{-i}},"
+    ],
+    "context": "L = g ​ ξ + ∑ i = 0 ∞ l i ​ ξ − i , L=g\\xi+\\sum_{i=0}^{\\infty}{l_{i}\\xi^{-i}},"
+  },
+  {
+    "location": "S3.E13",
+    "latex": [
+      "\\mathrm{deg}(D_{t}(L)-[\\widehat{\\mathrm{\\textbf{D}}}_{K},L])\\leq-7."
+    ],
+    "context": "deg ⁡ ( D t ​ ( L ) − [ D ^ K , L ] ) ≤ − 7 . \\mathrm{deg}(D_{t}(L)-[\\widehat{\\mathrm{\\textbf{D}}}_{K},L])\\leq-7. (13)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathrm{deg}(D_{t}(L)-[\\widehat{\\mathrm{\\textbf{D}}}_{K},L])\\leq-7."
+    ],
+    "context": "deg ⁡ ( D t ​ ( L ) − [ D ^ K , L ] ) ≤ − 7 . \\mathrm{deg}(D_{t}(L)-[\\widehat{\\mathrm{\\textbf{D}}}_{K},L])\\leq-7. (13)"
+  },
+  {
+    "location": "S3.Ex11",
+    "latex": [
+      "-5D_{x}(g)=0."
+    ],
+    "context": "For i = 5 i=5 we get − 5 ​ D x ​ ( g ) = 0 . -5D_{x}(g)=0. This means that g g is an arbitrary function of t t only, as the kernel of D x D_{x} is exhausted by such functions [ 15 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "-5D_{x}(g)=0."
+    ],
+    "context": "− 5 ​ D x ​ ( g ) = 0 . -5D_{x}(g)=0."
+  },
+  {
+    "location": "S3.Ex12",
+    "latex": [
+      "-5D_{x}(l_{0})=0,"
+    ],
+    "context": "Next we equate to zero the coefficient at ξ 4 \\xi^{4} which yields − 5 ​ D x ​ ( l 0 ) = 0 , -5D_{x}(l_{0})=0, so likewise l 0 l_{0} is a function of t t alone."
+  },
+  {
+    "location": null,
+    "latex": [
+      "-5D_{x}(l_{0})=0,"
+    ],
+    "context": "− 5 ​ D x ​ ( l 0 ) = 0 , -5D_{x}(l_{0})=0,"
+  },
+  {
+    "location": "S3.Ex13",
+    "latex": [
+      "-5D_{x}(l_{i})=0,"
+    ],
+    "context": "If we continue as above for i = 4 , 3 , 2 i=4,3,2 we obtain equations of the same shape as above, − 5 ​ D x ​ ( l i ) = 0 , -5D_{x}(l_{i})=0, which are solved in the same way as the one for g g ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "-5D_{x}(l_{i})=0,"
+    ],
+    "context": "− 5 ​ D x ​ ( l i ) = 0 , -5D_{x}(l_{i})=0,"
+  },
+  {
+    "location": "S3.E14",
+    "latex": [
+      "-5D_{x}(l_{i})=F_{i}"
+    ],
+    "context": "− 5 ​ D x ​ ( l i ) = F i -5D_{x}(l_{i})=F_{i} (14) for some F i ∈ 𝒜 F_{i}\\in\\mathscr{A} which for i = 1 , 0 , − 1 , − 2 i=1,0,-1,-2 are however solved just as easily as above. Recall [ 15 ] that a necessary condition for this kind of equations to be solvable in the class of differential functions is that the equality δ ​ F i / δ ​ u = 0 \\delta F_{i}/\\delta u=0 holds."
+  },
+  {
+    "location": null,
+    "latex": [
+      "-5D_{x}(l_{i})=F_{i}"
+    ],
+    "context": "− 5 ​ D x ​ ( l i ) = F i -5D_{x}(l_{i})=F_{i} (14)"
+  },
+  {
+    "location": "S3.E15",
+    "latex": [
+      "-\\frac{1}{5}g\\frac{\\partial^{3}f}{\\partial u^{3}}=0,\\hskip 28.80008pt\\frac{3}{25}\\frac{\\partial f}{\\partial u}\\frac{\\partial g}{\\partial t}=0."
+    ],
+    "context": "It can be readily checked that for δ ​ F − 3 / δ ​ u = 0 \\delta F_{-3}/\\delta u=0 to hold we have to solve the following system: − 1 5 ​ g ​ ∂ 3 f ∂ u 3 = 0 , 3 25 ​ ∂ f ∂ u ​ ∂ g ∂ t = 0 . -\\frac{1}{5}g\\frac{\\partial^{3}f}{\\partial u^{3}}=0,\\hskip 28.80008pt\\frac{3}{25}\\frac{\\partial f}{\\partial u}\\frac{\\partial g}{\\partial t}=0. (15)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "-\\frac{1}{5}g\\frac{\\partial^{3}f}{\\partial u^{3}}=0,\\hskip 28.80008pt\\frac{3}{25}\\frac{\\partial f}{\\partial u}\\frac{\\partial g}{\\partial t}=0."
+    ],
+    "context": "− 1 5 ​ g ​ ∂ 3 f ∂ u 3 = 0 , 3 25 ​ ∂ f ∂ u ​ ∂ g ∂ t = 0 . -\\frac{1}{5}g\\frac{\\partial^{3}f}{\\partial u^{3}}=0,\\hskip 28.80008pt\\frac{3}{25}\\frac{\\partial f}{\\partial u}\\frac{\\partial g}{\\partial t}=0. (15)"
+  },
+  {
+    "location": "S3.Ex14",
+    "latex": [
+      "f(u)=u^{2}."
+    ],
+    "context": "We shall now continue with the case where f f is at most quadratic polynomial in u u . Using the transformation u ⟶ u − p 1 / ( 2 ​ p 2 ) u\\longrightarrow u-p_{1}/(2p_{2}) we can turn any polynomial f = p 2 ​ u 2 + p 1 ​ u + p 0 f=p_{2}u^{2}+p_{1}u+p_{0} into f ~ ​ ( u ) = p 2 ​ u 2 + p 0 ~ \\widetilde{f}(u)=p_{2}u^{2}+\\widetilde{p_{0}} . Quite similarly we can eliminate p 0 ~ \\widetilde{p_{0}} by transformation x ⟶ x + p 0 ~ ​ t x\\longrightarrow x+\\widetilde{p_{0}}t and by rescaling u ⟶ u / p 2 u\\longrightarrow u/\\sqrt{p_{2}} to get rid of p 2 p_{2} . Thus without loss of generality we are left with the case f ⁡ ( u ) = u 2 . f(u)=u^{2}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "f(u)=u^{2}."
+    ],
+    "context": "f ⁡ ( u ) = u 2 . f(u)=u^{2}."
+  },
+  {
+    "location": "S3.E16",
+    "latex": [
+      "\\frac{\\partial{g}}{\\partial{t}}=0,"
+    ],
+    "context": "Then, if we take a closer look at the second equation in ( 15 ), we see that ∂ g ∂ t = 0 , \\frac{\\partial{g}}{\\partial{t}}=0, (16) which can be satisfied only if g g is a constant."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\frac{\\partial{g}}{\\partial{t}}=0,"
+    ],
+    "context": "∂ g ∂ t = 0 , \\frac{\\partial{g}}{\\partial{t}}=0, (16)"
+  },
+  {
+    "location": "S3.Ex15",
+    "latex": [
+      "\\frac{6}{25}u\\frac{\\partial l_{0}}{\\partial t}=0,"
+    ],
+    "context": "For i = − 4 i=-4 the condition δ ​ F − 4 / δ ​ u = 0 \\delta F_{-4}/\\delta u=0 yields 6 25 ​ u ​ ∂ l 0 ∂ t = 0 , \\frac{6}{25}u\\frac{\\partial l_{0}}{\\partial t}=0, so l 0 l_{0} turns out to be a constant rather than a function of t t ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\frac{6}{25}u\\frac{\\partial l_{0}}{\\partial t}=0,"
+    ],
+    "context": "6 25 ​ u ​ ∂ l 0 ∂ t = 0 , \\frac{6}{25}u\\frac{\\partial l_{0}}{\\partial t}=0,"
+  },
+  {
+    "location": "S3.Ex16",
+    "latex": [
+      "g=0,"
+    ],
+    "context": "Finally for i = − 7 i=-7 we obtain the system which contains, among other, the equation g = 0 , g=0, which contradicts the initial assumption that deg L = 1 L=1 so the proof is completed.\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "g=0,"
+    ],
+    "context": "g = 0 , g=0,"
+  },
+  {
+    "location": "S4.Ex17",
+    "latex": [
+      "D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]-\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})=0,"
+    ],
+    "context": "Indeed, suppose that G G is a characteristic of a symmetry, then by virtue of D t ​ ( G ) = D K ​ ( G ) D_{t}(G)=\\mathrm{\\textbf{D}}_{K}(G) , where K K now denotes the right-hand side of ( 1 ), we have [ 23 ] D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] − D G ​ ( D ^ K ) = 0 , D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]-\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})=0, so deg ⁡ ( D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] ) = deg ⁡ ( D G ​ ( D ^ K ) ) \\deg\\left(D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]\\right)=\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right) but as in our case D ^ K = ξ 5 + b ​ ξ 3 + f ​ ξ + ∂ f ∂ u ​ u x , \\widehat{\\mathrm{\\textbf{D}}}_{K}=\\xi^{5}+b\\xi^{3}+f\\xi+\\frac{\\partial{f}}{\\partial{u}}u_{x}, we have deg ⁡ ( D G ​ ( D ^ K ) ) ≤ 1 , \\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)\\leq 1, and we see that D ^ G \\widehat{\\mathrm{\\textbf{D}}}_{G} indeed is a formal symmetry for ( 1 ) of rank (at least) s + 4 s+4 , where s s is the order of G G .\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]-\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})=0,"
+    ],
+    "context": "D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] − D G ​ ( D ^ K ) = 0 , D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]-\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})=0,"
+  },
+  {
+    "location": "S4.Ex18",
+    "latex": [
+      "\\deg\\left(D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]\\right)=\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)"
+    ],
+    "context": "Indeed, suppose that G G is a characteristic of a symmetry, then by virtue of D t ​ ( G ) = D K ​ ( G ) D_{t}(G)=\\mathrm{\\textbf{D}}_{K}(G) , where K K now denotes the right-hand side of ( 1 ), we have [ 23 ] D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] − D G ​ ( D ^ K ) = 0 , D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]-\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})=0, so deg ⁡ ( D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] ) = deg ⁡ ( D G ​ ( D ^ K ) ) \\deg\\left(D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]\\right)=\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right) but as in our case D ^ K = ξ 5 + b ​ ξ 3 + f ​ ξ + ∂ f ∂ u ​ u x , \\widehat{\\mathrm{\\textbf{D}}}_{K}=\\xi^{5}+b\\xi^{3}+f\\xi+\\frac{\\partial{f}}{\\partial{u}}u_{x}, we have deg ⁡ ( D G ​ ( D ^ K ) ) ≤ 1 , \\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)\\leq 1, and we see that D ^ G \\widehat{\\mathrm{\\textbf{D}}}_{G} indeed is a formal symmetry for ( 1 ) of rank (at least) s + 4 s+4 , where s s is the order of G G .\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\deg\\left(D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]\\right)=\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)"
+    ],
+    "context": "deg ⁡ ( D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] ) = deg ⁡ ( D G ​ ( D ^ K ) ) \\deg\\left(D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]\\right)=\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)"
+  },
+  {
+    "location": "S4.Ex19",
+    "latex": [
+      "\\widehat{\\mathrm{\\textbf{D}}}_{K}=\\xi^{5}+b\\xi^{3}+f\\xi+\\frac{\\partial{f}}{\\partial{u}}u_{x},"
+    ],
+    "context": "Indeed, suppose that G G is a characteristic of a symmetry, then by virtue of D t ​ ( G ) = D K ​ ( G ) D_{t}(G)=\\mathrm{\\textbf{D}}_{K}(G) , where K K now denotes the right-hand side of ( 1 ), we have [ 23 ] D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] − D G ​ ( D ^ K ) = 0 , D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]-\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})=0, so deg ⁡ ( D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] ) = deg ⁡ ( D G ​ ( D ^ K ) ) \\deg\\left(D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]\\right)=\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right) but as in our case D ^ K = ξ 5 + b ​ ξ 3 + f ​ ξ + ∂ f ∂ u ​ u x , \\widehat{\\mathrm{\\textbf{D}}}_{K}=\\xi^{5}+b\\xi^{3}+f\\xi+\\frac{\\partial{f}}{\\partial{u}}u_{x}, we have deg ⁡ ( D G ​ ( D ^ K ) ) ≤ 1 , \\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)\\leq 1, and we see that D ^ G \\widehat{\\mathrm{\\textbf{D}}}_{G} indeed is a formal symmetry for ( 1 ) of rank (at least) s + 4 s+4 , where s s is the order of G G .\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\widehat{\\mathrm{\\textbf{D}}}_{K}=\\xi^{5}+b\\xi^{3}+f\\xi+\\frac{\\partial{f}}{\\partial{u}}u_{x},"
+    ],
+    "context": "D ^ K = ξ 5 + b ​ ξ 3 + f ​ ξ + ∂ f ∂ u ​ u x , \\widehat{\\mathrm{\\textbf{D}}}_{K}=\\xi^{5}+b\\xi^{3}+f\\xi+\\frac{\\partial{f}}{\\partial{u}}u_{x},"
+  },
+  {
+    "location": "S4.Ex20",
+    "latex": [
+      "\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)\\leq 1,"
+    ],
+    "context": "Indeed, suppose that G G is a characteristic of a symmetry, then by virtue of D t ​ ( G ) = D K ​ ( G ) D_{t}(G)=\\mathrm{\\textbf{D}}_{K}(G) , where K K now denotes the right-hand side of ( 1 ), we have [ 23 ] D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] − D G ​ ( D ^ K ) = 0 , D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]-\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})=0, so deg ⁡ ( D t ​ ( D ^ G ) − [ D ^ K , D ^ G ] ) = deg ⁡ ( D G ​ ( D ^ K ) ) \\deg\\left(D_{t}(\\widehat{\\mathrm{\\textbf{D}}}_{G})-[\\widehat{\\mathrm{\\textbf{D}}}_{K},\\widehat{\\mathrm{\\textbf{D}}}_{G}]\\right)=\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right) but as in our case D ^ K = ξ 5 + b ​ ξ 3 + f ​ ξ + ∂ f ∂ u ​ u x , \\widehat{\\mathrm{\\textbf{D}}}_{K}=\\xi^{5}+b\\xi^{3}+f\\xi+\\frac{\\partial{f}}{\\partial{u}}u_{x}, we have deg ⁡ ( D G ​ ( D ^ K ) ) ≤ 1 , \\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)\\leq 1, and we see that D ^ G \\widehat{\\mathrm{\\textbf{D}}}_{G} indeed is a formal symmetry for ( 1 ) of rank (at least) s + 4 s+4 , where s s is the order of G G .\n∎"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)\\leq 1,"
+    ],
+    "context": "deg ⁡ ( D G ​ ( D ^ K ) ) ≤ 1 , \\deg\\left(\\mathrm{\\textbf{D}}_{G}(\\widehat{\\mathrm{\\textbf{D}}}_{K})\\right)\\leq 1,"
+  }
+]

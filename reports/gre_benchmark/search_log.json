@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-28",
+  "queries": [
+    "arxiv generalized Kuramoto Sivashinsky",
+    "arxiv generalized KdV",
+    "arxiv compacton Rosenau Hyman CSS",
+    "arxiv fifth order KdV Burgers Fisher",
+    "PDE journal Swift Hohenberg quadratic cubic quintic",
+    "EqWorld EqArchive nonlinear PDE database"
+  ],
+  "verified_source_groups": [
+    "arxiv:2604.17606",
+    "arxiv:2402.07789",
+    "arxiv:2402.03788",
+    "arxiv:1112.5707",
+    "arxiv:1904.01291",
+    "arxiv:2308.08541",
+    "arxiv:1202.1735",
+    "doi:10.1016/j.jde.2018.07.064"
+  ],
+  "database_attempts": [
+    {
+      "url": "https://eqworld.ipmnet.ru/en/solutions/npde.htm",
+      "result": "terminal TLS EOF and web fetch timeout"
+    },
+    {
+      "url": "https://eqworld.ipmnet.ru/eqarchive/list_sec.php",
+      "result": "terminal TLS EOF; search-index discovery only"
+    }
+  ],
+  "journal_access": "Publisher search-index/full-equation retrieval plus Crossref DOI metadata; public NSF repository PDF cached",
+  "discovery_cache": "data/formulas/gre_external/sources/",
+  "source_policy": "Equation evidence required before inclusion; search snippets without full equations not added"
+}

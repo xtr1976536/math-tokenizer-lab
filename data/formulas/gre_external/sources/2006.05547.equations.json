@@ -1,0 +1,460 @@
+[
+  {
+    "location": "S2.E1",
+    "latex": [
+      "\\frac{\\partial x}{\\partial t}=F\\left(x\\right),"
+    ],
+    "context": "We consider dynamical systems of the form: ∂ x ∂ t = F ⁡ ( x ) , \\frac{\\partial x}{\\partial t}=F\\left(x\\right), (1) where x x is a state vector with x ∈ ℛ N x\\in\\mathcal{R}^{N} and F F () is the function that describes the dynamics of the\nsystem. For instance, F F would be the Navier-Stokes equations for fluid dynamic applications, the Schrodinger equation for quantum\nmechanics, Maxwell’s equations for electrodynamics, etc. While dynamical systems can be either continuous or discrete in time, the\nabove form of the equation represents a dynamical system in the continuous setting. This paper will focus only on discrete dynamical systems, and\nin this setting, the dynamical system evolves in time as: x t + 1 = F ⁡ ( x t ) . x_{t+1}=F\\left(x_{t}\\right). (2) Most dynamical systems are non-linear and so one cannot obtain a linear system of the form x t + 1 = 𝒜 ​ x t x_{t+1}=\\mathcal{A}x_{t} to evolve in time from t t to t + 1 t+1 , with 𝒜 ∈ ℛ N × N \\mathcal{A}\\in\\mathcal{R}^{N\\times N} . For instance, for a linear dynamical system, if we have snapshots in time x 1 : T + 1 x_{1:T+1} up to T + 1 T+1 , one can construct the\nmatrices: X \\displaystyle X = \\displaystyle= [ x 1 , x 2 , ⋯ , x T ] \\displaystyle\\left[x_{1},x_{2},\\cdots,x_{T}\\right] Y \\displaystyle Y = \\displaystyle= [ x 2 , x 3 , ⋯ , x T + 1 ] \\displaystyle\\left[x_{2},x_{3},\\cdots,x_{T+1}\\right] (3) and then determine a matrix 𝒜 \\mathcal{A} such that 𝒜 = Y ​ X † \\mathcal{A}=YX^{\\dagger} where X † X^{\\dagger} is the Moore-Penrose pseudoinverse of X X .\nThis is only valid for a linear dynamical system. However, since most real-world dynamical system are non-linear, this linearized\ntreatment will be erroneous. This calls for the development of alternate linearizations of non-linear dynamical systems."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\frac{\\partial x}{\\partial t}=F\\left(x\\right),"
+    ],
+    "context": "∂ x ∂ t = F ⁡ ( x ) , \\frac{\\partial x}{\\partial t}=F\\left(x\\right), (1)"
+  },
+  {
+    "location": "S2.E2",
+    "latex": [
+      "x_{t+1}=F\\left(x_{t}\\right)."
+    ],
+    "context": "We consider dynamical systems of the form: ∂ x ∂ t = F ⁡ ( x ) , \\frac{\\partial x}{\\partial t}=F\\left(x\\right), (1) where x x is a state vector with x ∈ ℛ N x\\in\\mathcal{R}^{N} and F F () is the function that describes the dynamics of the\nsystem. For instance, F F would be the Navier-Stokes equations for fluid dynamic applications, the Schrodinger equation for quantum\nmechanics, Maxwell’s equations for electrodynamics, etc. While dynamical systems can be either continuous or discrete in time, the\nabove form of the equation represents a dynamical system in the continuous setting. This paper will focus only on discrete dynamical systems, and\nin this setting, the dynamical system evolves in time as: x t + 1 = F ⁡ ( x t ) . x_{t+1}=F\\left(x_{t}\\right). (2) Most dynamical systems are non-linear and so one cannot obtain a linear system of the form x t + 1 = 𝒜 ​ x t x_{t+1}=\\mathcal{A}x_{t} to evolve in time from t t to t + 1 t+1 , with 𝒜 ∈ ℛ N × N \\mathcal{A}\\in\\mathcal{R}^{N\\times N} . For instance, for a linear dynamical system, if we have snapshots in time x 1 : T + 1 x_{1:T+1} up to T + 1 T+1 , one can construct the\nmatrices: X \\displaystyle X = \\displaystyle= [ x 1 , x 2 , ⋯ , x T ] \\displaystyle\\left[x_{1},x_{2},\\cdots,x_{T}\\right] Y \\displaystyle Y = \\displaystyle= [ x 2 , x 3 , ⋯ , x T + 1 ] \\displaystyle\\left[x_{2},x_{3},\\cdots,x_{T+1}\\right] (3) and then determine a matrix 𝒜 \\mathcal{A} such that 𝒜 = Y ​ X † \\mathcal{A}=YX^{\\dagger} where X † X^{\\dagger} is the Moore-Penrose pseudoinverse of X X .\nThis is only valid for a linear dynamical system. However, since most real-world dynamical system are non-linear, this linearized\ntreatment will be erroneous. This calls for the development of alternate linearizations of non-linear dynamical systems."
+  },
+  {
+    "location": null,
+    "latex": [
+      "x_{t+1}=F\\left(x_{t}\\right)."
+    ],
+    "context": "x t + 1 = F ⁡ ( x t ) . x_{t+1}=F\\left(x_{t}\\right). (2)"
+  },
+  {
+    "location": "S2.EGx1",
+    "latex": [
+      "\\displaystyle X",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{1},x_{2},\\cdots,x_{T}\\right]",
+      "\\displaystyle Y",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{2},x_{3},\\cdots,x_{T+1}\\right]"
+    ],
+    "context": "We consider dynamical systems of the form: ∂ x ∂ t = F ⁡ ( x ) , \\frac{\\partial x}{\\partial t}=F\\left(x\\right), (1) where x x is a state vector with x ∈ ℛ N x\\in\\mathcal{R}^{N} and F F () is the function that describes the dynamics of the\nsystem. For instance, F F would be the Navier-Stokes equations for fluid dynamic applications, the Schrodinger equation for quantum\nmechanics, Maxwell’s equations for electrodynamics, etc. While dynamical systems can be either continuous or discrete in time, the\nabove form of the equation represents a dynamical system in the continuous setting. This paper will focus only on discrete dynamical systems, and\nin this setting, the dynamical system evolves in time as: x t + 1 = F ⁡ ( x t ) . x_{t+1}=F\\left(x_{t}\\right). (2) Most dynamical systems are non-linear and so one cannot obtain a linear system of the form x t + 1 = 𝒜 ​ x t x_{t+1}=\\mathcal{A}x_{t} to evolve in time from t t to t + 1 t+1 , with 𝒜 ∈ ℛ N × N \\mathcal{A}\\in\\mathcal{R}^{N\\times N} . For instance, for a linear dynamical system, if we have snapshots in time x 1 : T + 1 x_{1:T+1} up to T + 1 T+1 , one can construct the\nmatrices: X \\displaystyle X = \\displaystyle= [ x 1 , x 2 , ⋯ , x T ] \\displaystyle\\left[x_{1},x_{2},\\cdots,x_{T}\\right] Y \\displaystyle Y = \\displaystyle= [ x 2 , x 3 , ⋯ , x T + 1 ] \\displaystyle\\left[x_{2},x_{3},\\cdots,x_{T+1}\\right] (3) and then determine a matrix 𝒜 \\mathcal{A} such that 𝒜 = Y ​ X † \\mathcal{A}=YX^{\\dagger} where X † X^{\\dagger} is the Moore-Penrose pseudoinverse of X X .\nThis is only valid for a linear dynamical system. However, since most real-world dynamical system are non-linear, this linearized\ntreatment will be erroneous. This calls for the development of alternate linearizations of non-linear dynamical systems."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle X",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{1},x_{2},\\cdots,x_{T}\\right]"
+    ],
+    "context": "X \\displaystyle X = \\displaystyle= [ x 1 , x 2 , ⋯ , x T ] \\displaystyle\\left[x_{1},x_{2},\\cdots,x_{T}\\right]"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle Y",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{2},x_{3},\\cdots,x_{T+1}\\right]"
+    ],
+    "context": "Y \\displaystyle Y = \\displaystyle= [ x 2 , x 3 , ⋯ , x T + 1 ] \\displaystyle\\left[x_{2},x_{3},\\cdots,x_{T+1}\\right] (3)"
+  },
+  {
+    "location": "S2.E4",
+    "latex": [
+      "\\mathcal{K}g\\left(x_{t}\\right)=g\\left(F\\left(x_{t}\\right)\\right)=g\\left(x_{t+1}\\right)."
+    ],
+    "context": "𝒦 ​ g ​ ( x t ) = g ⁡ ( F ⁡ ( x t ) ) = g ⁡ ( x t + 1 ) . \\mathcal{K}g\\left(x_{t}\\right)=g\\left(F\\left(x_{t}\\right)\\right)=g\\left(x_{t+1}\\right). (4) The system is then re-projected back to the state vector space using an inverse function g − 1 g^{-1} [ 23 , 7 , 24 ] :"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathcal{K}g\\left(x_{t}\\right)=g\\left(F\\left(x_{t}\\right)\\right)=g\\left(x_{t+1}\\right)."
+    ],
+    "context": "𝒦 ​ g ​ ( x t ) = g ⁡ ( F ⁡ ( x t ) ) = g ⁡ ( x t + 1 ) . \\mathcal{K}g\\left(x_{t}\\right)=g\\left(F\\left(x_{t}\\right)\\right)=g\\left(x_{t+1}\\right). (4)"
+  },
+  {
+    "location": "S2.E5",
+    "latex": [
+      "g^{-1}\\,\\,\\left(\\mathcal{K}g\\left(x_{t}\\right)\\right)=x_{t+1}."
+    ],
+    "context": "g − 1 ​ ( 𝒦 ​ g ​ ( x t ) ) = x t + 1 . g^{-1}\\,\\,\\left(\\mathcal{K}g\\left(x_{t}\\right)\\right)=x_{t+1}. (5) In practice, however, evaluating such functions g g and g − 1 g^{-1} for many real world systems poses a challenge [ 25 , 26 , 15 ] .\nFinite-dimensional representations of the Koopman operator can be obtained using Dynamic Mode Decomposition (DMD) [ 6 , 7 ] for many\nproblems. In DMD, spatio-temporal coherent structures are identified from a high-dimensional dynamical system. However, since it is based on a\nlinearized analysis, it does not generally capture non-linear transients [ 15 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "g^{-1}\\,\\,\\left(\\mathcal{K}g\\left(x_{t}\\right)\\right)=x_{t+1}."
+    ],
+    "context": "g − 1 ​ ( 𝒦 ​ g ​ ( x t ) ) = x t + 1 . g^{-1}\\,\\,\\left(\\mathcal{K}g\\left(x_{t}\\right)\\right)=x_{t+1}. (5)"
+  },
+  {
+    "location": "S2.EGx2",
+    "latex": [
+      "\\displaystyle Z",
+      "\\displaystyle=",
+      "\\displaystyle\\left[z_{1},z_{2},\\cdots,z_{T}\\right]",
+      "\\displaystyle Z_{+1}",
+      "\\displaystyle=",
+      "\\displaystyle\\left[z_{2},z_{3},\\cdots,z_{T+1}\\right]"
+    ],
+    "context": "Z \\displaystyle Z = \\displaystyle= [ z 1 , z 2 , ⋯ , z T ] \\displaystyle\\left[z_{1},z_{2},\\cdots,z_{T}\\right] Z + 1 \\displaystyle Z_{+1} = \\displaystyle= [ z 2 , z 3 , ⋯ , z T + 1 ] \\displaystyle\\left[z_{2},z_{3},\\cdots,z_{T+1}\\right] (6) In [ 13 , 16 ] least squares fit were undertaken to evaluate an K K -matrix that can propagate the latent embeddings in time as K = Z + 1 ​ Z † K=Z_{+1}Z^{\\dagger} . Subsequently, Z Z and the propagated state embeddings advanced in time, Z + 1 pred Z_{+1}^{\\mathrm{pred}} , are\nfed into a decoder g − 1 g^{-1} to obtain the reconstructed X ^ \\widehat{X} and the time advanced solution Y ^ \\widehat{Y} .\nThe Deep Koopman model is trained to minimize the loss [ 13 , 16 ] :"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle Z",
+      "\\displaystyle=",
+      "\\displaystyle\\left[z_{1},z_{2},\\cdots,z_{T}\\right]"
+    ],
+    "context": "Z \\displaystyle Z = \\displaystyle= [ z 1 , z 2 , ⋯ , z T ] \\displaystyle\\left[z_{1},z_{2},\\cdots,z_{T}\\right]"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle Z_{+1}",
+      "\\displaystyle=",
+      "\\displaystyle\\left[z_{2},z_{3},\\cdots,z_{T+1}\\right]"
+    ],
+    "context": "Z + 1 \\displaystyle Z_{+1} = \\displaystyle= [ z 2 , z 3 , ⋯ , z T + 1 ] \\displaystyle\\left[z_{2},z_{3},\\cdots,z_{T+1}\\right] (6)"
+  },
+  {
+    "location": "S2.E7",
+    "latex": [
+      "\\mathcal{L}=\\parallel X-\\widehat{X}\\parallel^{2}+\\parallel Y-\\widehat{Y}\\parallel^{2}."
+    ],
+    "context": "ℒ = ∥ X − X ^ ∥ 2 + ∥ Y − Y ^ ∥ 2 . \\mathcal{L}=\\parallel X-\\widehat{X}\\parallel^{2}+\\parallel Y-\\widehat{Y}\\parallel^{2}. (7) Here, the first term in the loss function enforces the autoencoder constraint that the decoded output is approximately close to the input.\nThe second term in the loss function ensures that the system dynamics’ time evolution is captured."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mathcal{L}=\\parallel X-\\widehat{X}\\parallel^{2}+\\parallel Y-\\widehat{Y}\\parallel^{2}."
+    ],
+    "context": "ℒ = ∥ X − X ^ ∥ 2 + ∥ Y − Y ^ ∥ 2 . \\mathcal{L}=\\parallel X-\\widehat{X}\\parallel^{2}+\\parallel Y-\\widehat{Y}\\parallel^{2}. (7)"
+  },
+  {
+    "location": "S2.E8",
+    "latex": [
+      "Z_{+1}^{\\mathrm{pred}}=\\left[K\\,z_{1},K^{2}\\,z_{1},\\cdots,K^{T}\\,z_{1}\\right]."
+    ],
+    "context": "Z + 1 pred = [ K ​ z 1 , K 2 ​ z 1 , ⋯ , K T ​ z 1 ] . Z_{+1}^{\\mathrm{pred}}=\\left[K\\,z_{1},K^{2}\\,z_{1},\\cdots,K^{T}\\,z_{1}\\right]. (8) (Note that K T K^{T} is K K raised to the power of T T and not the transpose.) The authors of [ 16 ] used time sequences of 32 and demonstrated lower\nerrors vis-à-vis the one time step dynamical advancement version (i.e., [ 13 ] ) for the\nvon Karman vortex shedding problem [ 18 , 27 ] . In a third variant, [ 15 ] also considered other\nlosses, including a loss in the embedding space: ∥ Z + 1 pred − Z + 1 ∥ 2 \\parallel Z_{+1}^{\\mathrm{pred}}-Z_{+1}\\parallel^{2} with Z + 1 pred Z_{+1}^{\\mathrm{pred}} obtained as shown in\nEqn. ( 8 ), and also L ∞ L_{\\infty} losses to penalize the data point with the largest loss. We will now summarize the Deep Adversarial Koopman model."
+  },
+  {
+    "location": null,
+    "latex": [
+      "Z_{+1}^{\\mathrm{pred}}=\\left[K\\,z_{1},K^{2}\\,z_{1},\\cdots,K^{T}\\,z_{1}\\right]."
+    ],
+    "context": "Z + 1 pred = [ K ​ z 1 , K 2 ​ z 1 , ⋯ , K T ​ z 1 ] . Z_{+1}^{\\mathrm{pred}}=\\left[K\\,z_{1},K^{2}\\,z_{1},\\cdots,K^{T}\\,z_{1}\\right]. (8)"
+  },
+  {
+    "location": "S2.EGx3",
+    "latex": [
+      "\\displaystyle X",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{t},x_{t+1},\\cdots,x_{t+n_{S}-1}\\right]",
+      "\\displaystyle X_{+1}",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{t+1},x_{t+2},\\cdots,x_{t+n_{S}}\\right]",
+      "\\displaystyle X_{+1}^{\\mathrm{pred}}",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{t+1}^{\\mathrm{pred}},x_{t+2}^{\\mathrm{pred}},\\cdots,x_{t+n_{S}}^{\\mathrm{pred}}\\right]."
+    ],
+    "context": "In [ 15 , 16 ] , the authors used\na sequence of snapshots to train the model more accurately, and this approach is used in this study.\nWe train the network at each iteration step using a randomly sampled contiguous sequence of length n S n_{S} , where the\nfirst entry in the sequence is represented as x t x_{t} for this discussion.\nLet us consider the sequences: X \\displaystyle X = \\displaystyle= [ x t , x t + 1 , ⋯ , x t + n S − 1 ] \\displaystyle\\left[x_{t},x_{t+1},\\cdots,x_{t+n_{S}-1}\\right] X + 1 \\displaystyle X_{+1} = \\displaystyle= [ x t + 1 , x t + 2 , ⋯ , x t + n S ] \\displaystyle\\left[x_{t+1},x_{t+2},\\cdots,x_{t+n_{S}}\\right] X + 1 pred \\displaystyle X_{+1}^{\\mathrm{pred}} = \\displaystyle= [ x t + 1 pred , x t + 2 pred , ⋯ , x t + n S pred ] . \\displaystyle\\left[x_{t+1}^{\\mathrm{pred}},x_{t+2}^{\\mathrm{pred}},\\cdots,x_{t+n_{S}}^{\\mathrm{pred}}\\right]. (9) The deep adversarial Koopman model takes x t x_{t} as input and outputs the sequence X + 1 pred X_{+1}^{\\mathrm{pred}} using the Koopman\ndynamics recursively n S n_{S} times. The ground truth values X + 1 X_{+1} from the data is now used to construct the\nGAN losses. Specifically, we have two concatenated pairs: ( X , X + 1 X,X_{+1} ) which we will term as “real” and\n( X , X + 1 pred X,X_{+1}^{\\mathrm{pred}} ) which we will term as “fake,” similar to the parlance used in GAN literature.\nThe GAN discriminator takes as input one of these concatenated pair and outputs a single real value D ⁡ ( ⋅ ) D(\\cdot) , which is\nused to construct the GAN objective, following the Wasserstein GAN [ 29 ] approach due to its robustness against mode collapse:"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle X",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{t},x_{t+1},\\cdots,x_{t+n_{S}-1}\\right]"
+    ],
+    "context": "X \\displaystyle X = \\displaystyle= [ x t , x t + 1 , ⋯ , x t + n S − 1 ] \\displaystyle\\left[x_{t},x_{t+1},\\cdots,x_{t+n_{S}-1}\\right]"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle X_{+1}",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{t+1},x_{t+2},\\cdots,x_{t+n_{S}}\\right]"
+    ],
+    "context": "X + 1 \\displaystyle X_{+1} = \\displaystyle= [ x t + 1 , x t + 2 , ⋯ , x t + n S ] \\displaystyle\\left[x_{t+1},x_{t+2},\\cdots,x_{t+n_{S}}\\right]"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle X_{+1}^{\\mathrm{pred}}",
+      "\\displaystyle=",
+      "\\displaystyle\\left[x_{t+1}^{\\mathrm{pred}},x_{t+2}^{\\mathrm{pred}},\\cdots,x_{t+n_{S}}^{\\mathrm{pred}}\\right]."
+    ],
+    "context": "X + 1 pred \\displaystyle X_{+1}^{\\mathrm{pred}} = \\displaystyle= [ x t + 1 pred , x t + 2 pred , ⋯ , x t + n S pred ] . \\displaystyle\\left[x_{t+1}^{\\mathrm{pred}},x_{t+2}^{\\mathrm{pred}},\\cdots,x_{t+n_{S}}^{\\mathrm{pred}}\\right]. (9)"
+  },
+  {
+    "location": "S2.E10",
+    "latex": [
+      "L^{\\mathrm{GAN\\,objective}}=\\mathop{\\mathbb{E}}_{x\\in(X,X_{+1})}\\left[D(x)\\right]-\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]."
+    ],
+    "context": "L GAN ​ objective = 𝔼 x ∈ ( X , X + 1 ) [ D ⁡ ( x ) ] − 𝔼 x ~ ∈ ( X , X + 1 pred ) [ D ⁡ ( x ~ ) ] . L^{\\mathrm{GAN\\,objective}}=\\mathop{\\mathbb{E}}_{x\\in(X,X_{+1})}\\left[D(x)\\right]-\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]. (10)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{GAN\\,objective}}=\\mathop{\\mathbb{E}}_{x\\in(X,X_{+1})}\\left[D(x)\\right]-\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]."
+    ],
+    "context": "L GAN ​ objective = 𝔼 x ∈ ( X , X + 1 ) [ D ⁡ ( x ) ] − 𝔼 x ~ ∈ ( X , X + 1 pred ) [ D ⁡ ( x ~ ) ] . L^{\\mathrm{GAN\\,objective}}=\\mathop{\\mathbb{E}}_{x\\in(X,X_{+1})}\\left[D(x)\\right]-\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]. (10)"
+  },
+  {
+    "location": "S2.E11",
+    "latex": [
+      "L^{\\mathrm{recon}}=\\parallel x_{t}-g^{-1}g\\left(x_{t}\\right)\\parallel_{\\textrm{MSE}}"
+    ],
+    "context": "L recon = ∥ x t − g − 1 g ( x t ) ∥ MSE L^{\\mathrm{recon}}=\\parallel x_{t}-g^{-1}g\\left(x_{t}\\right)\\parallel_{\\textrm{MSE}} (11)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{recon}}=\\parallel x_{t}-g^{-1}g\\left(x_{t}\\right)\\parallel_{\\textrm{MSE}}"
+    ],
+    "context": "L recon = ∥ x t − g − 1 g ( x t ) ∥ MSE L^{\\mathrm{recon}}=\\parallel x_{t}-g^{-1}g\\left(x_{t}\\right)\\parallel_{\\textrm{MSE}} (11)"
+  },
+  {
+    "location": "S2.E12",
+    "latex": [
+      "L^{\\mathrm{pred}}=\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel x_{t+m}-g^{-1}\\left(K^{m}g\\left(x_{t}\\right)\\right)\\parallel_{\\textrm{MSE}}"
+    ],
+    "context": "L pred = 1 n S ∑ m = 1 n S ∥ x t + m − g − 1 ( K m g ( x t ) ) ∥ MSE L^{\\mathrm{pred}}=\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel x_{t+m}-g^{-1}\\left(K^{m}g\\left(x_{t}\\right)\\right)\\parallel_{\\textrm{MSE}} (12)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{pred}}=\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel x_{t+m}-g^{-1}\\left(K^{m}g\\left(x_{t}\\right)\\right)\\parallel_{\\textrm{MSE}}"
+    ],
+    "context": "L pred = 1 n S ∑ m = 1 n S ∥ x t + m − g − 1 ( K m g ( x t ) ) ∥ MSE L^{\\mathrm{pred}}=\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel x_{t+m}-g^{-1}\\left(K^{m}g\\left(x_{t}\\right)\\right)\\parallel_{\\textrm{MSE}} (12)"
+  },
+  {
+    "location": "S2.E13",
+    "latex": [
+      "L^{\\mathrm{code}}=\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel g\\left(x_{t+m}\\right)-K^{m}g\\left(x_{t}\\right)\\parallel_{\\textrm{MSE}}"
+    ],
+    "context": "L code = 1 n S ∑ m = 1 n S ∥ g ( x t + m ) − K m g ( x t ) ∥ MSE L^{\\mathrm{code}}=\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel g\\left(x_{t+m}\\right)-K^{m}g\\left(x_{t}\\right)\\parallel_{\\textrm{MSE}} (13)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{code}}=\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel g\\left(x_{t+m}\\right)-K^{m}g\\left(x_{t}\\right)\\parallel_{\\textrm{MSE}}"
+    ],
+    "context": "L code = 1 n S ∑ m = 1 n S ∥ g ( x t + m ) − K m g ( x t ) ∥ MSE L^{\\mathrm{code}}=\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel g\\left(x_{t+m}\\right)-K^{m}g\\left(x_{t}\\right)\\parallel_{\\textrm{MSE}} (13)"
+  },
+  {
+    "location": "S2.EGx4",
+    "latex": [
+      "\\displaystyle L^{\\mathrm{grad}}_{k}",
+      "\\displaystyle=",
+      "\\displaystyle\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel\\nabla_{k}\\left[x_{t+m}-g^{-1}\\left(K^{m}g\\left(x_{t}\\right)\\right)\\right]\\parallel_{\\textrm{MSE}},\\textrm{k=1, 2, 4}",
+      "\\displaystyle L^{\\mathrm{grad}}",
+      "\\displaystyle=",
+      "\\displaystyle\\lambda_{1}L^{\\mathrm{grad}}_{1}+\\lambda_{2}L^{\\mathrm{grad}}_{2}+\\lambda_{4}L^{\\mathrm{grad}}_{4}"
+    ],
+    "context": "L k grad \\displaystyle L^{\\mathrm{grad}}_{k} = \\displaystyle= 1 n S ∑ m = 1 n S ∥ ∇ k [ x t + m − g − 1 ( K m g ( x t ) ) ] ∥ MSE , k=1, 2, 4 \\displaystyle\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel\\nabla_{k}\\left[x_{t+m}-g^{-1}\\left(K^{m}g\\left(x_{t}\\right)\\right)\\right]\\parallel_{\\textrm{MSE}},\\textrm{k=1, 2, 4} L grad \\displaystyle L^{\\mathrm{grad}} = \\displaystyle= λ 1 ​ L 1 grad + λ 2 ​ L 2 grad + λ 4 ​ L 4 grad \\displaystyle\\lambda_{1}L^{\\mathrm{grad}}_{1}+\\lambda_{2}L^{\\mathrm{grad}}_{2}+\\lambda_{4}L^{\\mathrm{grad}}_{4} (14)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle L^{\\mathrm{grad}}_{k}",
+      "\\displaystyle=",
+      "\\displaystyle\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel\\nabla_{k}\\left[x_{t+m}-g^{-1}\\left(K^{m}g\\left(x_{t}\\right)\\right)\\right]\\parallel_{\\textrm{MSE}},\\textrm{k=1, 2, 4}"
+    ],
+    "context": "L k grad \\displaystyle L^{\\mathrm{grad}}_{k} = \\displaystyle= 1 n S ∑ m = 1 n S ∥ ∇ k [ x t + m − g − 1 ( K m g ( x t ) ) ] ∥ MSE , k=1, 2, 4 \\displaystyle\\frac{1}{n_{S}}\\sum_{m=1}^{n_{S}}\\parallel\\nabla_{k}\\left[x_{t+m}-g^{-1}\\left(K^{m}g\\left(x_{t}\\right)\\right)\\right]\\parallel_{\\textrm{MSE}},\\textrm{k=1, 2, 4}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle L^{\\mathrm{grad}}",
+      "\\displaystyle=",
+      "\\displaystyle\\lambda_{1}L^{\\mathrm{grad}}_{1}+\\lambda_{2}L^{\\mathrm{grad}}_{2}+\\lambda_{4}L^{\\mathrm{grad}}_{4}"
+    ],
+    "context": "L grad \\displaystyle L^{\\mathrm{grad}} = \\displaystyle= λ 1 ​ L 1 grad + λ 2 ​ L 2 grad + λ 4 ​ L 4 grad \\displaystyle\\lambda_{1}L^{\\mathrm{grad}}_{1}+\\lambda_{2}L^{\\mathrm{grad}}_{2}+\\lambda_{4}L^{\\mathrm{grad}}_{4} (14)"
+  },
+  {
+    "location": "S2.E15",
+    "latex": [
+      "L^{\\mathrm{reg}}=\\lambda_{\\mathrm{reg}}\\sum w_{i}^{2}"
+    ],
+    "context": "L reg = λ reg ​ ∑ w i 2 L^{\\mathrm{reg}}=\\lambda_{\\mathrm{reg}}\\sum w_{i}^{2} (15)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{reg}}=\\lambda_{\\mathrm{reg}}\\sum w_{i}^{2}"
+    ],
+    "context": "L reg = λ reg ​ ∑ w i 2 L^{\\mathrm{reg}}=\\lambda_{\\mathrm{reg}}\\sum w_{i}^{2} (15)"
+  },
+  {
+    "location": "S2.E16",
+    "latex": [
+      "L^{\\mathrm{GAN}}=\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]"
+    ],
+    "context": "L GAN = 𝔼 x ~ ∈ ( X , X + 1 pred ) [ D ⁡ ( x ~ ) ] L^{\\mathrm{GAN}}=\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right] (16)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{GAN}}=\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]"
+    ],
+    "context": "L GAN = 𝔼 x ~ ∈ ( X , X + 1 pred ) [ D ⁡ ( x ~ ) ] L^{\\mathrm{GAN}}=\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right] (16)"
+  },
+  {
+    "location": "S2.E17",
+    "latex": [
+      "L^{\\mathrm{disc}}=\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]-\\mathop{\\mathbb{E}}_{x\\in(X,X_{+1})}\\left[D(x)\\right]"
+    ],
+    "context": "L disc = 𝔼 x ~ ∈ ( X , X + 1 pred ) [ D ⁡ ( x ~ ) ] − 𝔼 x ∈ ( X , X + 1 ) [ D ⁡ ( x ) ] L^{\\mathrm{disc}}=\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]-\\mathop{\\mathbb{E}}_{x\\in(X,X_{+1})}\\left[D(x)\\right] (17)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{disc}}=\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]-\\mathop{\\mathbb{E}}_{x\\in(X,X_{+1})}\\left[D(x)\\right]"
+    ],
+    "context": "L disc = 𝔼 x ~ ∈ ( X , X + 1 pred ) [ D ⁡ ( x ~ ) ] − 𝔼 x ∈ ( X , X + 1 ) [ D ⁡ ( x ) ] L^{\\mathrm{disc}}=\\mathop{\\mathbb{E}}_{\\widetilde{x}\\in(X,X_{+1}^{\\mathrm{pred}})}\\left[D(\\widetilde{x})\\right]-\\mathop{\\mathbb{E}}_{x\\in(X,X_{+1})}\\left[D(x)\\right] (17)"
+  },
+  {
+    "location": "S2.E18",
+    "latex": [
+      "L^{\\mathrm{total}}=L^{\\mathrm{recon}}+L^{\\mathrm{pred}}+L^{\\mathrm{code}}+\\lambda_{\\mathrm{grad}}L^{\\mathrm{grad}}+\\lambda_{\\mathrm{reg}}L^{\\mathrm{reg}}+\\lambda_{\\mathrm{GAN}}L^{\\mathrm{GAN}}."
+    ],
+    "context": "L total = L recon + L pred + L code + λ grad ​ L grad + λ reg ​ L reg + λ GAN ​ L GAN . L^{\\mathrm{total}}=L^{\\mathrm{recon}}+L^{\\mathrm{pred}}+L^{\\mathrm{code}}+\\lambda_{\\mathrm{grad}}L^{\\mathrm{grad}}+\\lambda_{\\mathrm{reg}}L^{\\mathrm{reg}}+\\lambda_{\\mathrm{GAN}}L^{\\mathrm{GAN}}. (18) The λ \\lambda values were experimented to obtain the best results.\nAll the results reported in this paper are with λ reg \\lambda_{\\mathrm{reg}} = 10 -3 . When we use the gradient loss, λ grad \\lambda_{\\mathrm{grad}} = 1, otherwise it is set to 0.\nLikewise, when we use the GAN loss, λ GAN \\lambda_{\\mathrm{GAN}} = 0.01, otherwise it is set to 0. The gradient loss terms are summarized in Appendix B.\nThe discriminator is trained by minimizing L disc L^{\\mathrm{disc}} , along with an additional gradient penalty loss term similar to WGAN-GP [ 29 ] .\nIn the training of GANs, multiple discriminator update steps are often used per update step of the generator [ 12 ] .\nWe use 4 update steps of the discriminator for each update of the deep adversarial Koopman model."
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{total}}=L^{\\mathrm{recon}}+L^{\\mathrm{pred}}+L^{\\mathrm{code}}+\\lambda_{\\mathrm{grad}}L^{\\mathrm{grad}}+\\lambda_{\\mathrm{reg}}L^{\\mathrm{reg}}+\\lambda_{\\mathrm{GAN}}L^{\\mathrm{GAN}}."
+    ],
+    "context": "L total = L recon + L pred + L code + λ grad ​ L grad + λ reg ​ L reg + λ GAN ​ L GAN . L^{\\mathrm{total}}=L^{\\mathrm{recon}}+L^{\\mathrm{pred}}+L^{\\mathrm{code}}+\\lambda_{\\mathrm{grad}}L^{\\mathrm{grad}}+\\lambda_{\\mathrm{reg}}L^{\\mathrm{reg}}+\\lambda_{\\mathrm{GAN}}L^{\\mathrm{GAN}}. (18)"
+  },
+  {
+    "location": "S2.E19",
+    "latex": [
+      "Z_{+1}^{\\mathrm{pred}}=\\left[\\mathcal{K}\\,z_{1},\\mathcal{K}^{2}\\,z_{1},\\cdots,\\mathcal{K}^{T}\\,z_{1}\\right],"
+    ],
+    "context": "We also use a residual Koopman model for the dynamics.\nIn the standard Koopman time advancement, the model of [ 15 , 16 ] use z t + 1 = K ​ z t z_{t+1}=Kz_{t} for advancing the dynamics in time.\nOur experiments however reveal that a slight modification to this is more robust: we undertake the Koopman dynamics as a residual operation: 𝒦 ​ z t = z t + 1 = z t + K ​ z t \\mathcal{K}z_{t}=z_{t+1}=z_{t}+Kz_{t} .\nThis simple modification worked well for all the experiments, and so in this setting the Koopman dynamics learns the residual change in the latent\nembedding space from one time step to the next.\nThe auxiliary network that is used to learn K K converges well with this residual Koopman dynamic model.\nFurthermore, for the recursive multi-step time advancement, we replace Eqn. ( 8 ) with: Z + 1 pred = [ 𝒦 ​ z 1 , 𝒦 2 ​ z 1 , ⋯ , 𝒦 T ​ z 1 ] , Z_{+1}^{\\mathrm{pred}}=\\left[\\mathcal{K}\\,z_{1},\\mathcal{K}^{2}\\,z_{1},\\cdots,\\mathcal{K}^{T}\\,z_{1}\\right], (19) where 𝒦 n \\mathcal{K}^{n} represents the application of the Koopman opertaor 𝒦 \\mathcal{K} n n times."
+  },
+  {
+    "location": null,
+    "latex": [
+      "Z_{+1}^{\\mathrm{pred}}=\\left[\\mathcal{K}\\,z_{1},\\mathcal{K}^{2}\\,z_{1},\\cdots,\\mathcal{K}^{T}\\,z_{1}\\right],"
+    ],
+    "context": "Z + 1 pred = [ 𝒦 ​ z 1 , 𝒦 2 ​ z 1 , ⋯ , 𝒦 T ​ z 1 ] , Z_{+1}^{\\mathrm{pred}}=\\left[\\mathcal{K}\\,z_{1},\\mathcal{K}^{2}\\,z_{1},\\cdots,\\mathcal{K}^{T}\\,z_{1}\\right], (19)"
+  },
+  {
+    "location": "S3.E20",
+    "latex": [
+      "\\frac{\\partial u}{\\partial t}+u\\frac{\\partial u}{\\partial x}+\\frac{\\partial^{2}u}{\\partial x^{2}}+\\frac{\\partial^{4}u}{\\partial x^{4}}=0"
+    ],
+    "context": "∂ u ∂ t + u ​ ∂ u ∂ x + ∂ 2 u ∂ x 2 + ∂ 4 u ∂ x 4 = 0 \\frac{\\partial u}{\\partial t}+u\\frac{\\partial u}{\\partial x}+\\frac{\\partial^{2}u}{\\partial x^{2}}+\\frac{\\partial^{4}u}{\\partial x^{4}}=0 (20) in a domain x ∈ x\\in [0, 128] with periodic boundary conditions. The KS model is chaotic and is used to model the diffusive instabilities in a laminar flame front.\nThe initial condition for KS is given by:"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\frac{\\partial u}{\\partial t}+u\\frac{\\partial u}{\\partial x}+\\frac{\\partial^{2}u}{\\partial x^{2}}+\\frac{\\partial^{4}u}{\\partial x^{4}}=0"
+    ],
+    "context": "∂ u ∂ t + u ​ ∂ u ∂ x + ∂ 2 u ∂ x 2 + ∂ 4 u ∂ x 4 = 0 \\frac{\\partial u}{\\partial t}+u\\frac{\\partial u}{\\partial x}+\\frac{\\partial^{2}u}{\\partial x^{2}}+\\frac{\\partial^{4}u}{\\partial x^{4}}=0 (20)"
+  },
+  {
+    "location": "S3.E21",
+    "latex": [
+      "u\\left(x,0\\right)=\\mathrm{cos}\\left(x\\right)+0.1\\,\\,\\mathrm{cos}\\left(\\frac{x}{16}\\right)\\,\\,\\left(1+2\\,\\,\\mathrm{sin}\\left(\\frac{x}{16}\\right)\\right)."
+    ],
+    "context": "u ⁡ ( x , 0 ) = cos ⁡ ( x ) + 0.1 ​ cos ​ ( x 16 ) ​ ( 1 + 2 ​ sin ​ ( x 16 ) ) . u\\left(x,0\\right)=\\mathrm{cos}\\left(x\\right)+0.1\\,\\,\\mathrm{cos}\\left(\\frac{x}{16}\\right)\\,\\,\\left(1+2\\,\\,\\mathrm{sin}\\left(\\frac{x}{16}\\right)\\right). (21) The system is solved using Crank-Nicholson/Adams-Bashforth (CNAB2) timestepping [ 31 ] with Δ ​ x = 1 8 \\Delta x=\\frac{1}{8} and Δ ​ t = 1 16 \\Delta t=\\frac{1}{16} for 4800 time steps, with the\nsolution at every fourth time step saved for the data corpus. Thus, Δ ​ t \\Delta t = 0.25 for the Koopman analysis and we have a total of 1200 snapshots."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u\\left(x,0\\right)=\\mathrm{cos}\\left(x\\right)+0.1\\,\\,\\mathrm{cos}\\left(\\frac{x}{16}\\right)\\,\\,\\left(1+2\\,\\,\\mathrm{sin}\\left(\\frac{x}{16}\\right)\\right)."
+    ],
+    "context": "u ⁡ ( x , 0 ) = cos ⁡ ( x ) + 0.1 ​ cos ​ ( x 16 ) ​ ( 1 + 2 ​ sin ​ ( x 16 ) ) . u\\left(x,0\\right)=\\mathrm{cos}\\left(x\\right)+0.1\\,\\,\\mathrm{cos}\\left(\\frac{x}{16}\\right)\\,\\,\\left(1+2\\,\\,\\mathrm{sin}\\left(\\frac{x}{16}\\right)\\right). (21)"
+  },
+  {
+    "location": "S3.EGx5",
+    "latex": [
+      "\\displaystyle\\frac{\\partial u}{\\partial t}",
+      "\\displaystyle=",
+      "\\displaystyle D_{u}\\nabla^{2}u-uv^{2}+f\\left(1-u\\right)",
+      "\\displaystyle\\frac{\\partial v}{\\partial t}",
+      "\\displaystyle=",
+      "\\displaystyle D_{v}\\nabla^{2}v+uv^{2}-\\left(f+k\\right)v"
+    ],
+    "context": "∂ u ∂ t \\displaystyle\\frac{\\partial u}{\\partial t} = \\displaystyle= D u ​ ∇ 2 u − u ​ v 2 + f ⁡ ( 1 − u ) \\displaystyle D_{u}\\nabla^{2}u-uv^{2}+f\\left(1-u\\right) ∂ v ∂ t \\displaystyle\\frac{\\partial v}{\\partial t} = \\displaystyle= D v ​ ∇ 2 v + u ​ v 2 − ( f + k ) ​ v \\displaystyle D_{v}\\nabla^{2}v+uv^{2}-\\left(f+k\\right)v (22) with D u D_{u} and D v D_{v} being the diffusion coefficients, ∇ 2 \\nabla^{2} is the Laplacian operator ( ∂ 2 ∂ x 2 + ∂ 2 ∂ y 2 ) \\left(\\frac{\\partial^{2}}{\\partial x^{2}}+\\frac{\\partial^{2}}{\\partial y^{2}}\\right) , and f f and k k are chemical reaction coefficients. Different values of these parameters gives rise to different patterns observed in the animal kingdom [ 22 ] .\nThe GS model is solved in a 2D box of size 2.5 × \\times 2.5 with a mesh of size 256 × \\times 256, with periodic boundary conditions and Δ ​ t \\Delta t = 1.\nThe initial condition is ( u , v ) \\left(u,v\\right) = ( 1 , 0 ) \\left(1,0\\right) everywhere, except in a small circular zone at the center of radius equal to\n20 cells where ( u , v ) \\left(u,v\\right) = ( 0.5 , 0.25 ) \\left(0.5,0.25\\right) superimposed with a Gaussian noise 𝒩 ⁡ ( μ = 0 , σ = 0.05 ) \\mathcal{N}(\\mu=0,\\sigma=0.05) .\nThe values used for the transport and chemistry are: D u D_{u} = 0.16, D v D_{v} = 0.08, f f = 0.035 and k k = 0.060.\nA second order finite difference scheme is used to solve the system for 3000 time steps and the solution at every 25-th time instant is\nsaved for the data corpus. Thus, Δ ​ t \\Delta t = 25 for the Koopman analysis and we have a total of 120 snapshots. Only the central 128 × \\times 128 region of\nthe solution space is used for the Koopman analysis. Snapshots of the data at different time instants are presented in Fig. 1 , as evident\none can observe Turing instability patterns [ 32 ] "
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\frac{\\partial u}{\\partial t}",
+      "\\displaystyle=",
+      "\\displaystyle D_{u}\\nabla^{2}u-uv^{2}+f\\left(1-u\\right)"
+    ],
+    "context": "∂ u ∂ t \\displaystyle\\frac{\\partial u}{\\partial t} = \\displaystyle= D u ​ ∇ 2 u − u ​ v 2 + f ⁡ ( 1 − u ) \\displaystyle D_{u}\\nabla^{2}u-uv^{2}+f\\left(1-u\\right)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\frac{\\partial v}{\\partial t}",
+      "\\displaystyle=",
+      "\\displaystyle D_{v}\\nabla^{2}v+uv^{2}-\\left(f+k\\right)v"
+    ],
+    "context": "∂ v ∂ t \\displaystyle\\frac{\\partial v}{\\partial t} = \\displaystyle= D v ​ ∇ 2 v + u ​ v 2 − ( f + k ) ​ v \\displaystyle D_{v}\\nabla^{2}v+uv^{2}-\\left(f+k\\right)v (22)"
+  },
+  {
+    "location": "S4.E23",
+    "latex": [
+      "z_{t+1}=z_{t}+Kz_{t}+LU_{t},"
+    ],
+    "context": "z t + 1 = z t + K ​ z t + L ​ U t , z_{t+1}=z_{t}+Kz_{t}+LU_{t}, (23) where L L is a prescribed control matrix and U U is a set of control inputs that can be fed into\nthe system to achieve a desired future system dynamics. Note that z ∈ ℛ M z\\in\\mathcal{R}^{M} , K ∈ ℛ M × M K\\in\\mathcal{R}^{M\\times M} , L ∈ ℛ M × M L\\in\\mathcal{R}^{M\\times M} , and U t ∈ ℛ M U_{t}\\in\\mathcal{R}^{M} .\nWe take a similar approach, but here the goal of our control analysis is to\nprovide a control matrix, which the model must use to learn control inputs U t U_{t} so that\nthe future course of the system dynamics can be altered as desired.\nIn this setting, we fix L L and use gradient descent to learn U t U_{t} for a desired objective.\nThe GS data corpus is used for this control analysis."
+  },
+  {
+    "location": null,
+    "latex": [
+      "z_{t+1}=z_{t}+Kz_{t}+LU_{t},"
+    ],
+    "context": "z t + 1 = z t + K ​ z t + L ​ U t , z_{t+1}=z_{t}+Kz_{t}+LU_{t}, (23)"
+  },
+  {
+    "location": "S4.E24",
+    "latex": [
+      "L^{\\mathrm{control}}=\\left(z_{\\mathrm{start}+\\delta}^{\\mathrm{pred}}-z_{\\mathrm{desired}}^{\\mathrm{ground\\,truth}}\\right)^{2}+\\sum_{t=t_{\\mathrm{start}}}^{t=t_{\\mathrm{start}}+\\delta-1}U_{t}^{2}."
+    ],
+    "context": "L control = ( z start + δ pred − z desired ground ​ truth ) 2 + ∑ t = t start t = t start + δ − 1 U t 2 . L^{\\mathrm{control}}=\\left(z_{\\mathrm{start}+\\delta}^{\\mathrm{pred}}-z_{\\mathrm{desired}}^{\\mathrm{ground\\,truth}}\\right)^{2}+\\sum_{t=t_{\\mathrm{start}}}^{t=t_{\\mathrm{start}}+\\delta-1}U_{t}^{2}. (24) The second term in the above loss function enforces the constraint that U t U_{t} values are not large.\nIn Fig. 8 (a) we show the starting flow-field for u ⁡ ( x , y , t ) u(x,y,t) (at t t = 50), the desired\nflow-field 16 time steps into the future (which we want to be the actual flow-field at t t = 80 from the data corpus), and the\npredicted flow-field of u ⁡ ( x , y ) u(x,y) by the model at t t = 66 (i.e., 16 time steps from the start). We also show\nthe actual solution at t t = 66 in the data corpus, which we are trying to circumvent by adding the control inputs.\nAs evident, the model has learned the required control inputs so that the evolution of the Turing structures can be\naccelerated. The error u g ​ t ​ ( x , y , t = t desired ) − u pred ​ ( x , y , t = t start + δ ) u^{gt}(x,y,t=t_{\\mathrm{desired}})-u^{\\mathrm{pred}}(x,y,t=t_{\\mathrm{start}}+\\delta) is shown in Fig. 8 (b). While the\nmodel predicts near zero errors in most of the regions of the flow-field, at the outer front of the instability, the errors are\nslightly high, but are concentrated only in a thin zone at the outer edges of the Turing-instability where the\nreaction rates are high. We believe that the relatively higher errors at the outer edges of the instability is because\nwith the control forcing U t U_{t} , the system evolves at an unnatural rate, and the ensuing latent codes z t z_{t} are unique to the\nforced inputs, and not seen by the decoder at training, which gives rise to slightly higher er"
+  },
+  {
+    "location": null,
+    "latex": [
+      "L^{\\mathrm{control}}=\\left(z_{\\mathrm{start}+\\delta}^{\\mathrm{pred}}-z_{\\mathrm{desired}}^{\\mathrm{ground\\,truth}}\\right)^{2}+\\sum_{t=t_{\\mathrm{start}}}^{t=t_{\\mathrm{start}}+\\delta-1}U_{t}^{2}."
+    ],
+    "context": "L control = ( z start + δ pred − z desired ground ​ truth ) 2 + ∑ t = t start t = t start + δ − 1 U t 2 . L^{\\mathrm{control}}=\\left(z_{\\mathrm{start}+\\delta}^{\\mathrm{pred}}-z_{\\mathrm{desired}}^{\\mathrm{ground\\,truth}}\\right)^{2}+\\sum_{t=t_{\\mathrm{start}}}^{t=t_{\\mathrm{start}}+\\delta-1}U_{t}^{2}. (24)"
+  },
+  {
+    "location": "Sx2.EGx6",
+    "latex": [
+      "\\displaystyle\\frac{\\partial u}{\\partial x}\\approx\\frac{u_{i+1}-u_{i-1}}{2\\Delta x},",
+      "\\displaystyle\\frac{\\partial^{2}u}{\\partial x^{2}}\\approx\\frac{u_{i+1}-2u_{i}+u_{i-1}}{\\Delta x^{2}},",
+      "\\displaystyle\\frac{\\partial^{4}u}{\\partial x^{4}}\\approx\\frac{u_{i+2}-4u_{i+1}+6u_{i}-4u_{i-1}+u_{i-2}}{\\Delta x^{4}},"
+    ],
+    "context": "∂ u ∂ x ≈ u i + 1 − u i − 1 2 ​ Δ ​ x , \\displaystyle\\frac{\\partial u}{\\partial x}\\approx\\frac{u_{i+1}-u_{i-1}}{2\\Delta x}, ∂ 2 u ∂ x 2 ≈ u i + 1 − 2 ​ u i + u i − 1 Δ ​ x 2 , \\displaystyle\\frac{\\partial^{2}u}{\\partial x^{2}}\\approx\\frac{u_{i+1}-2u_{i}+u_{i-1}}{\\Delta x^{2}}, ∂ 4 u ∂ x 4 ≈ u i + 2 − 4 ​ u i + 1 + 6 ​ u i − 4 ​ u i − 1 + u i − 2 Δ ​ x 4 , \\displaystyle\\frac{\\partial^{4}u}{\\partial x^{4}}\\approx\\frac{u_{i+2}-4u_{i+1}+6u_{i}-4u_{i-1}+u_{i-2}}{\\Delta x^{4}}, (25) where i i represents the discretization index.\nExtension to 2D is straightforward and not presented here for brevity."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\frac{\\partial u}{\\partial x}\\approx\\frac{u_{i+1}-u_{i-1}}{2\\Delta x},"
+    ],
+    "context": "∂ u ∂ x ≈ u i + 1 − u i − 1 2 ​ Δ ​ x , \\displaystyle\\frac{\\partial u}{\\partial x}\\approx\\frac{u_{i+1}-u_{i-1}}{2\\Delta x},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\frac{\\partial^{2}u}{\\partial x^{2}}\\approx\\frac{u_{i+1}-2u_{i}+u_{i-1}}{\\Delta x^{2}},"
+    ],
+    "context": "∂ 2 u ∂ x 2 ≈ u i + 1 − 2 ​ u i + u i − 1 Δ ​ x 2 , \\displaystyle\\frac{\\partial^{2}u}{\\partial x^{2}}\\approx\\frac{u_{i+1}-2u_{i}+u_{i-1}}{\\Delta x^{2}},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\frac{\\partial^{4}u}{\\partial x^{4}}\\approx\\frac{u_{i+2}-4u_{i+1}+6u_{i}-4u_{i-1}+u_{i-2}}{\\Delta x^{4}},"
+    ],
+    "context": "∂ 4 u ∂ x 4 ≈ u i + 2 − 4 ​ u i + 1 + 6 ​ u i − 4 ​ u i − 1 + u i − 2 Δ ​ x 4 , \\displaystyle\\frac{\\partial^{4}u}{\\partial x^{4}}\\approx\\frac{u_{i+2}-4u_{i+1}+6u_{i}-4u_{i-1}+u_{i-2}}{\\Delta x^{4}}, (25)"
+  }
+]

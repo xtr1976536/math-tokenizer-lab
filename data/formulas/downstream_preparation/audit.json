@@ -1,0 +1,105 @@
+{
+  "input_formulas": 1500,
+  "input_sha256": "93b36f70cfc7ab0d3f78d88bde72b3201043c2b21f9f6bf6b0543770a8510258",
+  "status_counts": {
+    "rejected": 1489,
+    "common_eligible": 9,
+    "target_excluded": 2
+  },
+  "rejection_reasons": {
+    "system_or_multiline": 537,
+    "unsupported_token": 80,
+    "unresolved_differentiated_field": 11,
+    "operator_or_dimension_unresolved": 328,
+    "field_unresolved": 188,
+    "multiple_fields": 189,
+    "unsupported_power": 58,
+    "unsupported_derivative": 43,
+    "unknown_function": 29,
+    "unsupported_index": 13,
+    "unsupported_field_arguments": 5,
+    "trailing_content": 3,
+    "complex_coefficient": 1,
+    "constant_forcing": 3,
+    "syntax": 1
+  },
+  "converted_before_target_exclusion": 11,
+  "common_eligible": 9,
+  "target_excluded": 2,
+  "excluded_by_case": {
+    "KdV_equation": 1,
+    "Burgers_equation": 1
+  },
+  "dictionary_sha256": "6cec0ef67d61fc385e30826a7799e7cd42ff4759c729f51eab409ad2f128fc30",
+  "dictionary_size": 57,
+  "author_atom_audit": {
+    "6": {
+      "word": "ut",
+      "status": "PASS",
+      "max_absolute_error": 1.0658141036401503e-14
+    },
+    "7": {
+      "word": "u",
+      "status": "PASS",
+      "max_absolute_error": 7.105427357601002e-15
+    },
+    "8": {
+      "word": "ux",
+      "status": "PASS",
+      "max_absolute_error": 7.105427357601002e-15
+    },
+    "9": {
+      "word": "uxx",
+      "status": "PASS",
+      "max_absolute_error": 7.105427357601002e-15
+    },
+    "10": {
+      "word": "uxxt",
+      "status": "PASS",
+      "max_absolute_error": 2.842170943040401e-14
+    },
+    "13": {
+      "word": "utt",
+      "status": "PASS",
+      "max_absolute_error": 1.4210854715202004e-14
+    },
+    "19": {
+      "word": "u^2",
+      "status": "PASS",
+      "max_absolute_error": 2.2737367544323206e-13
+    },
+    "20": {
+      "word": "uxxx",
+      "status": "PASS",
+      "max_absolute_error": 1.0658141036401503e-14
+    },
+    "21": {
+      "word": "u^3",
+      "status": "PASS",
+      "max_absolute_error": 3.183231456205249e-12
+    },
+    "23": {
+      "word": "uyy",
+      "status": "PASS",
+      "max_absolute_error": 1.0658141036401503e-14
+    }
+  },
+  "target_policy": "exact coefficient-free expanded support, scalar u/v/w rename and all permutations of x/y/z; time fixed",
+  "limitations": [
+    "Conservative supported scalar subset, not maximum theoretical representability",
+    "Systems/multiline and unresolved spatial Laplacian dimensions require component/context review",
+    "Unknown scalar coefficient symbols assumed constant and nondegenerate; functional coefficients rejected",
+    "No claim of exhaustive equivalence under arbitrary coordinate transforms, integration or nonlocal identities",
+    "Numerical atom checks use a smooth analytic field at nonsingular points; case-specific derivative quality remains a downstream task"
+  ],
+  "downstream_training_started": false,
+  "upstream_corpus_filtered": false,
+  "checks": [
+    "all 1500 have explicit outcome",
+    "symbolic coefficient-free reconstruction",
+    "existing GRE/LaTeX codec roundtrip",
+    "author numerical atom values versus independent symbolic derivatives",
+    "Hard exact source and normalized roundtrip",
+    "eight target expanded supports absent from common corpus"
+  ]
+}

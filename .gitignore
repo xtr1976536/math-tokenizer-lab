@@ -8,3 +8,6 @@ release_assets/
 data/weights/pretrained/
 data/weights/searched/
 data/weights/.downloads/
+# Expanded 80-capacity run stores 36 large checkpoints locally; hashes and
+# sizes are tracked in experiments/expanded_downstream_80_v1/weight_manifest.json.
+/experiments/expanded_downstream_80_v1/**/*.pt

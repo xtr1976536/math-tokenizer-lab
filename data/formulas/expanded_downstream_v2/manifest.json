@@ -1,0 +1,60 @@
+{
+  "version": "expanded-downstream-v2",
+  "source_records": 2257,
+  "augmented_samples": 72224,
+  "source_kinds": {
+    "external_benchmark": 2045,
+    "eqgpt_handbook_non_target": 212
+  },
+  "tokenizer_corpus": "2257 original_latex records before augmentation; 98 fixed bytes; capacities 280/315/350",
+  "augmentation": "proposed 32 sampled equivalent permutations; original LaTeX signed substrings preserved; GRE additive/numerator/denominator factors permuted; EOS only last",
+  "lengths": {
+    "eqgpt_reference": {
+      "min": 3,
+      "median": 61.0,
+      "p95": 93.0,
+      "max": 111,
+      "over_50": 48992
+    },
+    "ast_bpe_280": {
+      "min": 4,
+      "median": 13.0,
+      "p95": 14.0,
+      "max": 107,
+      "over_50": 128
+    },
+    "ast_bpe_315": {
+      "min": 4,
+      "median": 13.0,
+      "p95": 14.0,
+      "max": 86,
+      "over_50": 128
+    },
+    "ast_bpe_350": {
+      "min": 4,
+      "median": 13.0,
+      "p95": 14.0,
+      "max": 86,
+      "over_50": 128
+    }
+  },
+  "required_common_positions": 111,
+  "input_files": {
+    "data/formulas/gre_benchmark_filtered/benchmark.jsonl": "568200a773fcdb93d9d924b3385ede435cbe3e86dc88f0e128d155950ebff2f7",
+    "data/formulas/gre_benchmark_audit_v2/eqgpt_221_after_target_exclusion.jsonl": "8a6a30ed73222a91d1c6544069ec369717750e5437efae565c4438266fe1a9e0"
+  },
+  "files": {
+    "sources.jsonl": "52320d533029e61e86e2a7d5cc3cedb4b5a92981c1a059f56be9b407cb01c060",
+    "paired_augmented.jsonl.gz": "8bad200d52bf0060e1e43e0bd0de80e65b2e3853bc803467700106df77a25457",
+    "tokenizers/manifest.json": "97a2d098ae53846a6ad6aa9f5b467978f6f3da8b14bc02c343f6c0385257c3b5",
+    "tokenizers/ast_bpe_280.model.backend.json": "d2260f5b8c3d9a982f2eeb425ed8ebf0599ad7a6a68d07df86f98214affeddc4",
+    "tokenizers/ast_bpe_280.model.json": "d8503a8b6607fe7c2e1c00bc8990dc0702210505f5a1b39d522fce715b4fe7c3",
+    "tokenizers/ast_bpe_315.model.backend.json": "855ec9c480cf64a4e38be502f426fb29cb4c4c7313b27d10d703719d4f456dc0",
+    "tokenizers/ast_bpe_315.model.json": "2ef7b697a3bddba88f5a0139e8aad9fcf0a228f5519977c64bdd61d7761ef67f",
+    "tokenizers/ast_bpe_350.model.backend.json": "fb328924168078b9da0ee41bf5df08fc2f90fb332e054386cab11ef7b421bc53",
+    "tokenizers/ast_bpe_350.model.json": "3e7b82a5919d5ce33be9f675119cdc379bbb52f8ea7dc21d3bc03a07bd8d1e54"
+  },
+  "preparation_seconds": 4.632057333001285,
+  "status": "CANDIDATE_PENDING_TWO_PASS_AUDIT_AND_USER_SETTINGS",
+  "formal_training_started": false
+}

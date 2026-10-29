@@ -1,0 +1,57 @@
+REVIEW 100 converted components 2
+REVIEW 200 converted components 2
+REVIEW 300 converted components 4
+REVIEW 400 converted components 6
+REVIEW 500 converted components 6
+REVIEW 600 converted components 7
+REVIEW 700 converted components 7
+REVIEW 800 converted components 8
+REVIEW 900 converted components 10
+REVIEW 1000 converted components 11
+REVIEW 1100 converted components 13
+REVIEW 1200 converted components 14
+REVIEW 1300 converted components 15
+REVIEW 1400 converted components 18
+REVIEW 1500 converted components 20
+{
+  "original_rows": 1500,
+  "row_status_counts": {
+    "unresolved": 1480,
+    "has_eligible_component": 17,
+    "target_only": 3
+  },
+  "components": 2395,
+  "component_status_counts": {
+    "unresolved": 2375,
+    "eligible_component": 17,
+    "target_excluded": 3
+  },
+  "whole_expression_eligible": 11,
+  "unresolved_reasons": {
+    "syntax": 12,
+    "unsupported_token": 239,
+    "coefficient_inside_derivative_unresolved": 11,
+    "operator_or_dimension_unresolved": 561,
+    "field_unresolved": 259,
+    "multiple_fields": 795,
+    "unknown_function": 69,
+    "unsupported_power": 88,
+    "unsupported_derivative": 136,
+    "trailing_content": 15,
+    "outside_57_vocabulary": 2,
+    "unsupported_field_arguments": 87,
+    "system_or_multiline": 17,
+    "not_differential_equation": 17,
+    "unsupported_index": 43,
+    "unresolved_differentiated_field": 9,
+    "constant_forcing": 10,
+    "complex_coefficient": 1,
+    "ambiguous_derivative": 3,
+    "variable_coefficient_context": 1
+  },
+  "policy": "Each parent retained; independent scalar PDE components reported separately; original systems never claimed fully represented",
+  "limitations": [
+    "Context-based dimension evidence is explicit and retained; not a proof of arbitrary semantic equivalence",
+    "Unresolved inputs are not proved mathematically impossible; all have an outcome and reason"
+  ]
+}

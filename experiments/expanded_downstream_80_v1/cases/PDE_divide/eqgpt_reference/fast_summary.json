@@ -1,0 +1,25 @@
+{
+  "training_seconds": 4968.923462249033,
+  "search_seconds": 138.1234367920115,
+  "top1": "incorrect",
+  "top10_correct": false,
+  "top10_has_redundant": false,
+  "ranked_classes": [
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect",
+    "incorrect"
+  ],
+  "attempted_statuses": {
+    "evaluated": 600
+  },
+  "first_correct": null,
+  "reward_calls": 562,
+  "cache_hits": 38
+}

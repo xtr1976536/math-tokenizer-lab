@@ -1,0 +1,912 @@
+[
+  {
+    "location": "S1.E1",
+    "latex": [
+      "u_{t}+\\beta_{1}u_{xx}+\\beta_{2}u_{xxxx}+\\delta u_{xxx}+uu_{x}=0,"
+    ],
+    "context": "The Kuramoto-Sivashinsky (KS) equation u t + β 1 ​ u x ​ x + β 2 ​ u x ​ x ​ x ​ x + δ ​ u x ​ x ​ x + u ​ u x = 0 , u_{t}+\\beta_{1}u_{xx}+\\beta_{2}u_{xxxx}+\\delta u_{xxx}+uu_{x}=0, (1) arises in the modelling of flow on an inclined plane, where β 1 \\beta_{1} , β 2 \\beta_{2} and δ \\delta are constants. This equation was introduced by Kuramoto [ 20 ] in\none-spatial dimension for the study of phase turbulance in the Belousov-Zhabotinsky reaction. Sivashinsky derived it independently in the context of small thermal diffusive instabilities for laminar flame fronts. Some authors have previously studied this equation [ 18 , 19 ] ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}+\\beta_{1}u_{xx}+\\beta_{2}u_{xxxx}+\\delta u_{xxx}+uu_{x}=0,"
+    ],
+    "context": "u t + β 1 ​ u x ​ x + β 2 ​ u x ​ x ​ x ​ x + δ ​ u x ​ x ​ x + u ​ u x = 0 , u_{t}+\\beta_{1}u_{xx}+\\beta_{2}u_{xxxx}+\\delta u_{xxx}+uu_{x}=0, (1)"
+  },
+  {
+    "location": "S1.E2",
+    "latex": [
+      "\\begin{array}[]{l}u_{t}+u_{xx}+ku_{xxxx}+uu_{x}=0,\\qquad(x,t)\\in\\mathbb{R}\\times\\mathbb{R}^{+},\\\\\nu(x,0)=f(x),\\qquad u(x-\\pi,t)=u(x+\\pi,t),\\qquad\\displaystyle\\int_{-\\pi}^{\\pi}f(x)dx=0,\\end{array}"
+    ],
+    "context": "u t + u x ​ x + k u x ​ x ​ x ​ x + u u x = 0 , ( x , t ) ∈ ℝ × ℝ + , u ( x , 0 ) = f ( x ) , u ( x − π , t ) = u ( x + π , t ) , ∫ − π π f ( x ) d x = 0 , \\begin{array}[]{l}u_{t}+u_{xx}+ku_{xxxx}+uu_{x}=0,\\qquad(x,t)\\in\\mathbb{R}\\times\\mathbb{R}^{+},\\\\\nu(x,0)=f(x),\\qquad u(x-\\pi,t)=u(x+\\pi,t),\\qquad\\displaystyle\\int_{-\\pi}^{\\pi}f(x)dx=0,\\end{array} (2)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{l}u_{t}+u_{xx}+ku_{xxxx}+uu_{x}=0,\\qquad(x,t)\\in\\mathbb{R}\\times\\mathbb{R}^{+},\\\\\nu(x,0)=f(x),\\qquad u(x-\\pi,t)=u(x+\\pi,t),\\qquad\\displaystyle\\int_{-\\pi}^{\\pi}f(x)dx=0,\\end{array}"
+    ],
+    "context": "u t + u x ​ x + k u x ​ x ​ x ​ x + u u x = 0 , ( x , t ) ∈ ℝ × ℝ + , u ( x , 0 ) = f ( x ) , u ( x − π , t ) = u ( x + π , t ) , ∫ − π π f ( x ) d x = 0 , \\begin{array}[]{l}u_{t}+u_{xx}+ku_{xxxx}+uu_{x}=0,\\qquad(x,t)\\in\\mathbb{R}\\times\\mathbb{R}^{+},\\\\\nu(x,0)=f(x),\\qquad u(x-\\pi,t)=u(x+\\pi,t),\\qquad\\displaystyle\\int_{-\\pi}^{\\pi}f(x)dx=0,\\end{array} (2)"
+  },
+  {
+    "location": "S1.E3",
+    "latex": [
+      "D_{t}^{\\alpha}u+bu_{xx}+ku_{xxxx}+auu_{x}=0,\\\\\n"
+    ],
+    "context": "where k k represents the viscosity. The authors showed that the KS equation ( 2 ) leads respectively to stability, pitchfork bifurcation and a new type of behaviour. Sahoo and Saha Ray [ 27 ] considered the time-fractional KS equation given by D t α ​ u + b ​ u x ​ x + k ​ u x ​ x ​ x ​ x + a ​ u ​ u x = 0 , D_{t}^{\\alpha}u+bu_{xx}+ku_{xxxx}+auu_{x}=0,\\\\ (3)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "D_{t}^{\\alpha}u+bu_{xx}+ku_{xxxx}+auu_{x}=0,\\\\\n"
+    ],
+    "context": "D t α ​ u + b ​ u x ​ x + k ​ u x ​ x ​ x ​ x + a ​ u ​ u x = 0 , D_{t}^{\\alpha}u+bu_{xx}+ku_{xxxx}+auu_{x}=0,\\\\ (3)"
+  },
+  {
+    "location": "S1.E4",
+    "latex": [
+      "u_{t}+\\left(f(u)\\right)_{x}+\\alpha u_{xx}+\\phi(u)_{xx}+\\beta u_{xxx}+\\gamma u_{xxxx}=g(u),"
+    ],
+    "context": "u t + ( f ⁡ ( u ) ) x + α ​ u x ​ x + ϕ ​ ( u ) x ​ x + β ​ u x ​ x ​ x + γ ​ u x ​ x ​ x ​ x = g ⁡ ( u ) , u_{t}+\\left(f(u)\\right)_{x}+\\alpha u_{xx}+\\phi(u)_{xx}+\\beta u_{xxx}+\\gamma u_{xxxx}=g(u), (4) where α , β \\alpha,\\beta and γ \\gamma are constants, f ⁡ ( u ) , f(u), ϕ ⁡ ( u ) \\phi(u) and g ⁡ ( u ) g(u) are functions of the dependent variable u u . Here, ( f ⁡ ( u ) ) x = ∂ f ⁡ ( u ) ∂ u ​ u x = f u ​ u x \\left(f(u)\\right)_{x}=\\frac{\\partial f(u)}{\\partial u}u_{x}=f_{u}u_{x} .\nIn [ 3 ] Bruzón et al. considered equation ( 4 ) and they made a full\nanalysis of the symmetry reductions and proved that the nonclassical method applied to the equation leads to new reductions which cannot be obtained by Lie classical symmetries. Furthermore, making use of the new similarity solutions that the nonclassical method determines, they obtained some exact solutions which cannot be determined by applying a Lie classical reduction. If α \\alpha and β \\beta are constants, γ = 1 \\gamma=1 , f ⁡ ( u ) = α 1 2 ​ u 2 + β ​ u + α 5 f(u)=\\frac{\\alpha_{1}}{2}u^{2}+\\beta u+\\alpha_{5} , g ⁡ ( u ) = 0 g(u)=0 and ϕ ⁡ ( u ) = α 2 2 ​ u 2 + ( α 3 − α ) ​ u + α 4 \\phi(u)=\\frac{\\alpha_{2}}{2}u^{2}+(\\alpha_{3}-\\alpha)u+\\alpha_{4} , with α i \\alpha_{i} , i = 1 , … , 5 i=1,\\ldots,5 , arbitrary constants, equation ( 4 ) includes the Korteweg-de Vries equation\nsupplements by additional terms of the KS equation which describes nonlinear convection and the input of energy produced by Marangoni forces on\nthe long scales together with energy dissipation on short scales. For this equation Bruzón et al. obtained classical and nonclassical symmetries and the reduced equations [ 2 ] . We propose herein a generalized KS equation u t + ( f ⁡ ( u ) ) x + α ⁡ ( u ) ​ u x ​ x + ( ϕ ⁡ ( u ) ) x ​ x + β ⁡ ( u ) ​ u x ​"
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}+\\left(f(u)\\right)_{x}+\\alpha u_{xx}+\\phi(u)_{xx}+\\beta u_{xxx}+\\gamma u_{xxxx}=g(u),"
+    ],
+    "context": "u t + ( f ⁡ ( u ) ) x + α ​ u x ​ x + ϕ ​ ( u ) x ​ x + β ​ u x ​ x ​ x + γ ​ u x ​ x ​ x ​ x = g ⁡ ( u ) , u_{t}+\\left(f(u)\\right)_{x}+\\alpha u_{xx}+\\phi(u)_{xx}+\\beta u_{xxx}+\\gamma u_{xxxx}=g(u), (4)"
+  },
+  {
+    "location": "S1.E5",
+    "latex": [
+      "u_{t}+\\left(f(u)\\right)_{x}+\\alpha(u)u_{xx}+\\left(\\phi(u)\\right)_{xx}+\\beta(u)u_{xxx}+\\gamma(u)u_{xxxx}=g(u),"
+    ],
+    "context": "u t + ( f ⁡ ( u ) ) x + α ​ u x ​ x + ϕ ​ ( u ) x ​ x + β ​ u x ​ x ​ x + γ ​ u x ​ x ​ x ​ x = g ⁡ ( u ) , u_{t}+\\left(f(u)\\right)_{x}+\\alpha u_{xx}+\\phi(u)_{xx}+\\beta u_{xxx}+\\gamma u_{xxxx}=g(u), (4) where α , β \\alpha,\\beta and γ \\gamma are constants, f ⁡ ( u ) , f(u), ϕ ⁡ ( u ) \\phi(u) and g ⁡ ( u ) g(u) are functions of the dependent variable u u . Here, ( f ⁡ ( u ) ) x = ∂ f ⁡ ( u ) ∂ u ​ u x = f u ​ u x \\left(f(u)\\right)_{x}=\\frac{\\partial f(u)}{\\partial u}u_{x}=f_{u}u_{x} .\nIn [ 3 ] Bruzón et al. considered equation ( 4 ) and they made a full\nanalysis of the symmetry reductions and proved that the nonclassical method applied to the equation leads to new reductions which cannot be obtained by Lie classical symmetries. Furthermore, making use of the new similarity solutions that the nonclassical method determines, they obtained some exact solutions which cannot be determined by applying a Lie classical reduction. If α \\alpha and β \\beta are constants, γ = 1 \\gamma=1 , f ⁡ ( u ) = α 1 2 ​ u 2 + β ​ u + α 5 f(u)=\\frac{\\alpha_{1}}{2}u^{2}+\\beta u+\\alpha_{5} , g ⁡ ( u ) = 0 g(u)=0 and ϕ ⁡ ( u ) = α 2 2 ​ u 2 + ( α 3 − α ) ​ u + α 4 \\phi(u)=\\frac{\\alpha_{2}}{2}u^{2}+(\\alpha_{3}-\\alpha)u+\\alpha_{4} , with α i \\alpha_{i} , i = 1 , … , 5 i=1,\\ldots,5 , arbitrary constants, equation ( 4 ) includes the Korteweg-de Vries equation\nsupplements by additional terms of the KS equation which describes nonlinear convection and the input of energy produced by Marangoni forces on\nthe long scales together with energy dissipation on short scales. For this equation Bruzón et al. obtained classical and nonclassical symmetries and the reduced equations [ 2 ] . We propose herein a generalized KS equation u t + ( f ⁡ ( u ) ) x + α ⁡ ( u ) ​ u x ​ x + ( ϕ ⁡ ( u ) ) x ​ x + β ⁡ ( u ) ​ u x ​"
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}+\\left(f(u)\\right)_{x}+\\alpha(u)u_{xx}+\\left(\\phi(u)\\right)_{xx}+\\beta(u)u_{xxx}+\\gamma(u)u_{xxxx}=g(u),"
+    ],
+    "context": "u t + ( f ⁡ ( u ) ) x + α ⁡ ( u ) ​ u x ​ x + ( ϕ ⁡ ( u ) ) x ​ x + β ⁡ ( u ) ​ u x ​ x ​ x + γ ⁡ ( u ) ​ u x ​ x ​ x ​ x = g ⁡ ( u ) , u_{t}+\\left(f(u)\\right)_{x}+\\alpha(u)u_{xx}+\\left(\\phi(u)\\right)_{xx}+\\beta(u)u_{xxx}+\\gamma(u)u_{xxxx}=g(u), (5)"
+  },
+  {
+    "location": "S1.Ex1",
+    "latex": [
+      "\\begin{array}[]{c}u_{t}+f(u)u_{xxxx}+g(u)u_{x}u_{xxx}+h(u)u_{xx}^{2}+d(u)u_{x}^{2}u_{xx}-p(u)u_{xx}-q(u)u_{x}^{2}=0.\\end{array}"
+    ],
+    "context": "On the other hand, Gandarias and Ibragimov [ 11 ] found and employed the Lie algebra of the generators of the equivalence transformations of a fourth-order non-linear evolutionary equations\ngiven by u t + f ⁡ ( u ) ​ u x ​ x ​ x ​ x + g ⁡ ( u ) ​ u x ​ u x ​ x ​ x + h ⁡ ( u ) ​ u x ​ x 2 + d ⁡ ( u ) ​ u x 2 ​ u x ​ x − p ⁡ ( u ) ​ u x ​ x − q ⁡ ( u ) ​ u x 2 = 0 . \\begin{array}[]{c}u_{t}+f(u)u_{xxxx}+g(u)u_{x}u_{xxx}+h(u)u_{xx}^{2}+d(u)u_{x}^{2}u_{xx}-p(u)u_{xx}-q(u)u_{x}^{2}=0.\\end{array}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{c}u_{t}+f(u)u_{xxxx}+g(u)u_{x}u_{xxx}+h(u)u_{xx}^{2}+d(u)u_{x}^{2}u_{xx}-p(u)u_{xx}-q(u)u_{x}^{2}=0.\\end{array}"
+    ],
+    "context": "u t + f ⁡ ( u ) ​ u x ​ x ​ x ​ x + g ⁡ ( u ) ​ u x ​ u x ​ x ​ x + h ⁡ ( u ) ​ u x ​ x 2 + d ⁡ ( u ) ​ u x 2 ​ u x ​ x − p ⁡ ( u ) ​ u x ​ x − q ⁡ ( u ) ​ u x 2 = 0 . \\begin{array}[]{c}u_{t}+f(u)u_{xxxx}+g(u)u_{x}u_{xxx}+h(u)u_{xx}^{2}+d(u)u_{x}^{2}u_{xx}-p(u)u_{xx}-q(u)u_{x}^{2}=0.\\end{array}"
+  },
+  {
+    "location": "S2.E6",
+    "latex": [
+      "f_{t}=f_{x}=g_{t}=g_{x}=\\alpha_{t}=\\alpha_{x}=\\beta_{t}=\\beta_{x}=\\gamma_{t}=\\gamma_{x}=\\phi_{t}=\\phi_{x}=0."
+    ],
+    "context": "The equivalence transformations for our equation can be obtained by applying Lie’s infinitesimal criterion [ 24 ] . Unlike classical symmetries, we require not only the invariance of class ( 5 ) but also the invariance of the auxiliary system f t = f x = g t = g x = α t = α x = β t = β x = γ t = γ x = ϕ t = ϕ x = 0 . f_{t}=f_{x}=g_{t}=g_{x}=\\alpha_{t}=\\alpha_{x}=\\beta_{t}=\\beta_{x}=\\gamma_{t}=\\gamma_{x}=\\phi_{t}=\\phi_{x}=0. (6)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "f_{t}=f_{x}=g_{t}=g_{x}=\\alpha_{t}=\\alpha_{x}=\\beta_{t}=\\beta_{x}=\\gamma_{t}=\\gamma_{x}=\\phi_{t}=\\phi_{x}=0."
+    ],
+    "context": "f t = f x = g t = g x = α t = α x = β t = β x = γ t = γ x = ϕ t = ϕ x = 0 . f_{t}=f_{x}=g_{t}=g_{x}=\\alpha_{t}=\\alpha_{x}=\\beta_{t}=\\beta_{x}=\\gamma_{t}=\\gamma_{x}=\\phi_{t}=\\phi_{x}=0. (6)"
+  },
+  {
+    "location": "S2.E7",
+    "latex": [
+      "\\begin{array}[]{rcl}\\tilde{t}&=&t+\\epsilon\\,\\tau(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{x}&=&x+\\epsilon\\,\\xi(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{u}&=&u+\\epsilon\\,\\eta(t,x,u)+O(\\epsilon^{2}),\\par\\\\\n\\tilde{f}&=&f+\\epsilon\\,\\omega^{1}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{g}&=&g+\\epsilon\\,\\omega^{2}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\alpha}&=&\\alpha+\\epsilon\\,\\omega^{3}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\beta}&=&\\beta+\\epsilon\\,\\omega^{4}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\gamma}&=&\\gamma+\\epsilon\\,\\omega^{5}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\phi}&=&\\phi+\\epsilon\\,\\omega^{6}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\end{array}"
+    ],
+    "context": "We consider the one-parameter group of equivalence transformations in the augmented space ( t , x , u , f , g , α , β , γ , ϕ ) \\left(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi\\right) given by t ~ = t + ϵ ​ τ ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , x ~ = x + ϵ ​ ξ ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , u ~ = u + ϵ ​ η ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , f ~ = f + ϵ ​ ω 1 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , g ~ = g + ϵ ​ ω 2 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , α ~ = α + ϵ ​ ω 3 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , β ~ = β + ϵ ​ ω 4 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , γ ~ = γ + ϵ ​ ω 5 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , ϕ ~ = ϕ + ϵ ​ ω 6 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , \\begin{array}[]{rcl}\\tilde{t}&=&t+\\epsilon\\,\\tau(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{x}&=&x+\\epsilon\\,\\xi(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{u}&=&u+\\epsilon\\,\\eta(t,x,u)+O(\\epsilon^{2}),\\par\\\\\n\\tilde{f}&=&f+\\epsilon\\,\\omega^{1}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{g}&=&g+\\epsilon\\,\\omega^{2}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\alpha}&=&\\alpha+\\epsilon\\,\\omega^{3}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\beta}&=&\\beta+\\epsilon\\,\\omega^{4}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\gamma}&=&\\gamma+\\epsilon\\,\\omega^{5}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\phi}&=&\\phi+\\epsilon\\,\\omega^{6}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\end{array} (7) where ϵ \\epsilon is the\ngroup parameter. In this case, the vector field takes the following form Y = τ ∂ t + ξ ∂ x + η ∂ u + ω 1 ∂ f + ω 2 ∂ g + ω 3 ∂ α + ω 4 ∂ β + ω 5 ∂ γ + ω 6 ∂ ϕ . Y=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u}+\\omega^{1}\\part"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{rcl}\\tilde{t}&=&t+\\epsilon\\,\\tau(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{x}&=&x+\\epsilon\\,\\xi(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{u}&=&u+\\epsilon\\,\\eta(t,x,u)+O(\\epsilon^{2}),\\par\\\\\n\\tilde{f}&=&f+\\epsilon\\,\\omega^{1}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{g}&=&g+\\epsilon\\,\\omega^{2}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\alpha}&=&\\alpha+\\epsilon\\,\\omega^{3}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\beta}&=&\\beta+\\epsilon\\,\\omega^{4}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\gamma}&=&\\gamma+\\epsilon\\,\\omega^{5}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\phi}&=&\\phi+\\epsilon\\,\\omega^{6}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\end{array}"
+    ],
+    "context": "t ~ = t + ϵ ​ τ ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , x ~ = x + ϵ ​ ξ ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , u ~ = u + ϵ ​ η ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , f ~ = f + ϵ ​ ω 1 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , g ~ = g + ϵ ​ ω 2 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , α ~ = α + ϵ ​ ω 3 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , β ~ = β + ϵ ​ ω 4 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , γ ~ = γ + ϵ ​ ω 5 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , ϕ ~ = ϕ + ϵ ​ ω 6 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , \\begin{array}[]{rcl}\\tilde{t}&=&t+\\epsilon\\,\\tau(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{x}&=&x+\\epsilon\\,\\xi(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{u}&=&u+\\epsilon\\,\\eta(t,x,u)+O(\\epsilon^{2}),\\par\\\\\n\\tilde{f}&=&f+\\epsilon\\,\\omega^{1}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{g}&=&g+\\epsilon\\,\\omega^{2}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\alpha}&=&\\alpha+\\epsilon\\,\\omega^{3}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\beta}&=&\\beta+\\epsilon\\,\\omega^{4}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\gamma}&=&\\gamma+\\epsilon\\,\\omega^{5}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\phi}&=&\\phi+\\epsilon\\,\\omega^{6}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\end{array} (7)"
+  },
+  {
+    "location": "S2.E8",
+    "latex": [
+      "Y=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u}+\\omega^{1}\\partial_{f}+\\omega^{2}\\partial_{g}+\\omega^{3}\\partial_{\\alpha}+\\omega^{4}\\partial_{\\beta}+\\omega^{5}\\partial_{\\gamma}+\\omega^{6}\\partial_{\\phi}."
+    ],
+    "context": "We consider the one-parameter group of equivalence transformations in the augmented space ( t , x , u , f , g , α , β , γ , ϕ ) \\left(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi\\right) given by t ~ = t + ϵ ​ τ ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , x ~ = x + ϵ ​ ξ ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , u ~ = u + ϵ ​ η ​ ( t , x , u ) + O ⁡ ( ϵ 2 ) , f ~ = f + ϵ ​ ω 1 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , g ~ = g + ϵ ​ ω 2 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , α ~ = α + ϵ ​ ω 3 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , β ~ = β + ϵ ​ ω 4 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , γ ~ = γ + ϵ ​ ω 5 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , ϕ ~ = ϕ + ϵ ​ ω 6 ​ ( t , x , u , f , g , α , β , γ , ϕ ) + O ⁡ ( ϵ 2 ) , \\begin{array}[]{rcl}\\tilde{t}&=&t+\\epsilon\\,\\tau(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{x}&=&x+\\epsilon\\,\\xi(t,x,u)+O(\\epsilon^{2}),\\\\\n\\tilde{u}&=&u+\\epsilon\\,\\eta(t,x,u)+O(\\epsilon^{2}),\\par\\\\\n\\tilde{f}&=&f+\\epsilon\\,\\omega^{1}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{g}&=&g+\\epsilon\\,\\omega^{2}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\alpha}&=&\\alpha+\\epsilon\\,\\omega^{3}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\beta}&=&\\beta+\\epsilon\\,\\omega^{4}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\gamma}&=&\\gamma+\\epsilon\\,\\omega^{5}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\\\\n\\tilde{\\phi}&=&\\phi+\\epsilon\\,\\omega^{6}(t,x,u,f,g,\\alpha,\\beta,\\gamma,\\phi)+O(\\epsilon^{2}),\\end{array} (7) where ϵ \\epsilon is the\ngroup parameter. In this case, the vector field takes the following form Y = τ ∂ t + ξ ∂ x + η ∂ u + ω 1 ∂ f + ω 2 ∂ g + ω 3 ∂ α + ω 4 ∂ β + ω 5 ∂ γ + ω 6 ∂ ϕ . Y=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u}+\\omega^{1}\\part"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Y=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u}+\\omega^{1}\\partial_{f}+\\omega^{2}\\partial_{g}+\\omega^{3}\\partial_{\\alpha}+\\omega^{4}\\partial_{\\beta}+\\omega^{5}\\partial_{\\gamma}+\\omega^{6}\\partial_{\\phi}."
+    ],
+    "context": "Y = τ ∂ t + ξ ∂ x + η ∂ u + ω 1 ∂ f + ω 2 ∂ g + ω 3 ∂ α + ω 4 ∂ β + ω 5 ∂ γ + ω 6 ∂ ϕ . Y=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u}+\\omega^{1}\\partial_{f}+\\omega^{2}\\partial_{g}+\\omega^{3}\\partial_{\\alpha}+\\omega^{4}\\partial_{\\beta}+\\omega^{5}\\partial_{\\gamma}+\\omega^{6}\\partial_{\\phi}. (8)"
+  },
+  {
+    "location": "S2.E9",
+    "latex": [
+      "\\tilde{Y}=Y+\\zeta^{t}\\partial_{u_{t}}+\\zeta^{x}\\partial_{u_{x}}+\\zeta^{xx}\\partial_{u_{xx}}+\\zeta^{xxx}\\partial_{u_{xxx}}+\\zeta^{xxxx}\\partial_{u_{xxxx}}+\\tilde{\\omega}^{i}_{t}\\partial_{f^{i}_{t}}+\\tilde{\\omega}^{i}_{x}\\partial_{f^{i}_{x}}+\\tilde{\\omega}^{i}_{u}\\partial_{f^{i}_{u}},"
+    ],
+    "context": "Y ~ = Y + ζ t ∂ u t + ζ x ∂ u x + ζ x ​ x ∂ u x ​ x + ζ x ​ x ​ x ∂ u x ​ x ​ x + ζ x ​ x ​ x ​ x ∂ u x ​ x ​ x ​ x + ω ~ i t ∂ f t i + ω ~ i x ∂ f x i + ω ~ i u ∂ f u i , \\tilde{Y}=Y+\\zeta^{t}\\partial_{u_{t}}+\\zeta^{x}\\partial_{u_{x}}+\\zeta^{xx}\\partial_{u_{xx}}+\\zeta^{xxx}\\partial_{u_{xxx}}+\\zeta^{xxxx}\\partial_{u_{xxxx}}+\\tilde{\\omega}^{i}_{t}\\partial_{f^{i}_{t}}+\\tilde{\\omega}^{i}_{x}\\partial_{f^{i}_{x}}+\\tilde{\\omega}^{i}_{u}\\partial_{f^{i}_{u}}, (9)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\tilde{Y}=Y+\\zeta^{t}\\partial_{u_{t}}+\\zeta^{x}\\partial_{u_{x}}+\\zeta^{xx}\\partial_{u_{xx}}+\\zeta^{xxx}\\partial_{u_{xxx}}+\\zeta^{xxxx}\\partial_{u_{xxxx}}+\\tilde{\\omega}^{i}_{t}\\partial_{f^{i}_{t}}+\\tilde{\\omega}^{i}_{x}\\partial_{f^{i}_{x}}+\\tilde{\\omega}^{i}_{u}\\partial_{f^{i}_{u}},"
+    ],
+    "context": "Y ~ = Y + ζ t ∂ u t + ζ x ∂ u x + ζ x ​ x ∂ u x ​ x + ζ x ​ x ​ x ∂ u x ​ x ​ x + ζ x ​ x ​ x ​ x ∂ u x ​ x ​ x ​ x + ω ~ i t ∂ f t i + ω ~ i x ∂ f x i + ω ~ i u ∂ f u i , \\tilde{Y}=Y+\\zeta^{t}\\partial_{u_{t}}+\\zeta^{x}\\partial_{u_{x}}+\\zeta^{xx}\\partial_{u_{xx}}+\\zeta^{xxx}\\partial_{u_{xxx}}+\\zeta^{xxxx}\\partial_{u_{xxxx}}+\\tilde{\\omega}^{i}_{t}\\partial_{f^{i}_{t}}+\\tilde{\\omega}^{i}_{x}\\partial_{f^{i}_{x}}+\\tilde{\\omega}^{i}_{u}\\partial_{f^{i}_{u}}, (9)"
+  },
+  {
+    "location": "S2.Ex2",
+    "latex": [
+      "\\zeta^{J}(t,x,u^{(4)})=D_{J}(\\eta-\\tau u_{t}-\\xi u_{x})+\\tau u_{Jt}+\\xi u_{Jx},"
+    ],
+    "context": "ζ J ​ ( t , x , u ( 4 ) ) = D J ​ ( η − τ ​ u t − ξ ​ u x ) + τ ​ u J ​ t + ξ ​ u J ​ x , \\zeta^{J}(t,x,u^{(4)})=D_{J}(\\eta-\\tau u_{t}-\\xi u_{x})+\\tau u_{Jt}+\\xi u_{Jx},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\zeta^{J}(t,x,u^{(4)})=D_{J}(\\eta-\\tau u_{t}-\\xi u_{x})+\\tau u_{Jt}+\\xi u_{Jx},"
+    ],
+    "context": "ζ J ​ ( t , x , u ( 4 ) ) = D J ​ ( η − τ ​ u t − ξ ​ u x ) + τ ​ u J ​ t + ξ ​ u J ​ x , \\zeta^{J}(t,x,u^{(4)})=D_{J}(\\eta-\\tau u_{t}-\\xi u_{x})+\\tau u_{Jt}+\\xi u_{Jx},"
+  },
+  {
+    "location": "S2.Ex3",
+    "latex": [
+      "\\tilde{\\omega}^{i}_{r}=\\tilde{D}_{r}(\\omega^{i})-f_{t}^{i}\\,\\tilde{D}_{r}\\left(\\tau\\right)-f_{x}^{i}\\,\\tilde{D}_{r}\\left(\\xi\\right)-f_{u}^{i}\\,\\tilde{D}_{r}\\left(\\eta\\right),"
+    ],
+    "context": "ω ~ r i = D ~ r ​ ( ω i ) − f t i ​ D ~ r ​ ( τ ) − f x i ​ D ~ r ​ ( ξ ) − f u i ​ D ~ r ​ ( η ) , \\tilde{\\omega}^{i}_{r}=\\tilde{D}_{r}(\\omega^{i})-f_{t}^{i}\\,\\tilde{D}_{r}\\left(\\tau\\right)-f_{x}^{i}\\,\\tilde{D}_{r}\\left(\\xi\\right)-f_{u}^{i}\\,\\tilde{D}_{r}\\left(\\eta\\right),"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\tilde{\\omega}^{i}_{r}=\\tilde{D}_{r}(\\omega^{i})-f_{t}^{i}\\,\\tilde{D}_{r}\\left(\\tau\\right)-f_{x}^{i}\\,\\tilde{D}_{r}\\left(\\xi\\right)-f_{u}^{i}\\,\\tilde{D}_{r}\\left(\\eta\\right),"
+    ],
+    "context": "ω ~ r i = D ~ r ​ ( ω i ) − f t i ​ D ~ r ​ ( τ ) − f x i ​ D ~ r ​ ( ξ ) − f u i ​ D ~ r ​ ( η ) , \\tilde{\\omega}^{i}_{r}=\\tilde{D}_{r}(\\omega^{i})-f_{t}^{i}\\,\\tilde{D}_{r}\\left(\\tau\\right)-f_{x}^{i}\\,\\tilde{D}_{r}\\left(\\xi\\right)-f_{u}^{i}\\,\\tilde{D}_{r}\\left(\\eta\\right),"
+  },
+  {
+    "location": "S2.Ex4",
+    "latex": [
+      "\\tilde{D}_{r}=\\partial_{r}+f^{i}_{r}\\partial_{f^{i}}."
+    ],
+    "context": "D ~ r = ∂ r + f i r ∂ f i . \\tilde{D}_{r}=\\partial_{r}+f^{i}_{r}\\partial_{f^{i}}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\tilde{D}_{r}=\\partial_{r}+f^{i}_{r}\\partial_{f^{i}}."
+    ],
+    "context": "D ~ r = ∂ r + f i r ∂ f i . \\tilde{D}_{r}=\\partial_{r}+f^{i}_{r}\\partial_{f^{i}}."
+  },
+  {
+    "location": "S2.Ex10",
+    "latex": [
+      "\\begin{array}[]{l}Y_{1}=\\partial_{t},\\quad Y_{2}=\\partial_{x},\\quad Y_{3}=\\partial_{u},\\\\\n\\\\\nY_{4}=t\\partial_{t}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{5}=x\\partial_{x}+f\\partial_{f}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+2\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{6}=u\\partial_{u}+f\\partial_{f}+g\\partial_{g}+\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{7}=t\\partial_{x}+u\\partial_{f},\\quad Y_{8}=\\partial_{\\alpha}-u\\partial_{\\phi},\\\\\n\\\\\nY_{9}=\\partial_{f},\\quad Y_{10}=\\partial_{\\phi}.\\par\\end{array}"
+    ],
+    "context": "Y 1 = ∂ t , Y 2 = ∂ x , Y 3 = ∂ u , Y 4 = t ∂ t − f ∂ f − g ∂ g − α ∂ α − β ∂ β − γ ∂ γ − ϕ ∂ ϕ , Y 5 = x ∂ x + f ∂ f + 2 α ∂ α + 3 β ∂ β + 4 γ ∂ γ + 2 ϕ ∂ ϕ , Y 6 = u ∂ u + f ∂ f + g ∂ g + ϕ ∂ ϕ , Y 7 = t ∂ x + u ∂ f , Y 8 = ∂ α − u ∂ ϕ , Y 9 = ∂ f , Y 10 = ∂ ϕ . \\begin{array}[]{l}Y_{1}=\\partial_{t},\\quad Y_{2}=\\partial_{x},\\quad Y_{3}=\\partial_{u},\\\\\n\\\\\nY_{4}=t\\partial_{t}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{5}=x\\partial_{x}+f\\partial_{f}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+2\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{6}=u\\partial_{u}+f\\partial_{f}+g\\partial_{g}+\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{7}=t\\partial_{x}+u\\partial_{f},\\quad Y_{8}=\\partial_{\\alpha}-u\\partial_{\\phi},\\\\\n\\\\\nY_{9}=\\partial_{f},\\quad Y_{10}=\\partial_{\\phi}.\\par\\end{array}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{l}Y_{1}=\\partial_{t},\\quad Y_{2}=\\partial_{x},\\quad Y_{3}=\\partial_{u},\\\\\n\\\\\nY_{4}=t\\partial_{t}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{5}=x\\partial_{x}+f\\partial_{f}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+2\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{6}=u\\partial_{u}+f\\partial_{f}+g\\partial_{g}+\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{7}=t\\partial_{x}+u\\partial_{f},\\quad Y_{8}=\\partial_{\\alpha}-u\\partial_{\\phi},\\\\\n\\\\\nY_{9}=\\partial_{f},\\quad Y_{10}=\\partial_{\\phi}.\\par\\end{array}"
+    ],
+    "context": "Y 1 = ∂ t , Y 2 = ∂ x , Y 3 = ∂ u , Y 4 = t ∂ t − f ∂ f − g ∂ g − α ∂ α − β ∂ β − γ ∂ γ − ϕ ∂ ϕ , Y 5 = x ∂ x + f ∂ f + 2 α ∂ α + 3 β ∂ β + 4 γ ∂ γ + 2 ϕ ∂ ϕ , Y 6 = u ∂ u + f ∂ f + g ∂ g + ϕ ∂ ϕ , Y 7 = t ∂ x + u ∂ f , Y 8 = ∂ α − u ∂ ϕ , Y 9 = ∂ f , Y 10 = ∂ ϕ . \\begin{array}[]{l}Y_{1}=\\partial_{t},\\quad Y_{2}=\\partial_{x},\\quad Y_{3}=\\partial_{u},\\\\\n\\\\\nY_{4}=t\\partial_{t}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{5}=x\\partial_{x}+f\\partial_{f}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+2\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{6}=u\\partial_{u}+f\\partial_{f}+g\\partial_{g}+\\phi\\partial_{\\phi},\\\\\n\\\\\nY_{7}=t\\partial_{x}+u\\partial_{f},\\quad Y_{8}=\\partial_{\\alpha}-u\\partial_{\\phi},\\\\\n\\\\\nY_{9}=\\partial_{f},\\quad Y_{10}=\\partial_{\\phi}.\\par\\end{array}"
+  },
+  {
+    "location": "S2.E10",
+    "latex": [
+      "\\begin{array}[]{l}\\displaystyle\\tilde{t}=\\left(t+\\epsilon_{1}\\right)e^{\\epsilon_{4}},\\quad\\tilde{x}=\\left(x+\\epsilon_{7}t+\\epsilon_{2}\\right)e^{\\epsilon_{5}},\\quad\\tilde{u}=\\left(u+\\epsilon_{3}\\right)e^{\\epsilon_{6}},\\\\\n\\\\\n\\tilde{f}=\\displaystyle\\left(f+\\epsilon_{7}u+\\epsilon_{9}\\right)e^{-\\epsilon_{4}+\\epsilon_{5}+\\epsilon_{6}},\\quad\\displaystyle\\tilde{g}=ge^{-\\epsilon_{4}+\\epsilon_{6}},\\quad\\tilde{\\alpha}=\\displaystyle\\left(\\alpha+\\epsilon_{8}\\right)e^{-\\epsilon_{4}+2\\epsilon_{5}},\\\\\n\\\\\n\\tilde{\\beta}=\\displaystyle\\beta e^{-\\epsilon_{4}+3\\epsilon_{5}},\\quad\\tilde{\\gamma}=\\displaystyle\\gamma e^{-\\epsilon_{4}+4\\epsilon_{5}},\\quad\\tilde{\\phi}=\\left(\\phi-\\epsilon_{8}u+\\epsilon_{10}\\right)e^{-\\epsilon_{4}+2\\epsilon_{5}+\\epsilon_{6}},\\end{array}"
+    ],
+    "context": "The equivalence group of class ( 5 ) consists of the transformations t ~ = ( t + ϵ 1 ) e ϵ 4 , x ~ = ( x + ϵ 7 t + ϵ 2 ) e ϵ 5 , u ~ = ( u + ϵ 3 ) e ϵ 6 , f ~ = ( f + ϵ 7 u + ϵ 9 ) e − ϵ 4 + ϵ 5 + ϵ 6 , g ~ = g e − ϵ 4 + ϵ 6 , α ~ = ( α + ϵ 8 ) e − ϵ 4 + 2 ​ ϵ 5 , β ~ = β e − ϵ 4 + 3 ​ ϵ 5 , γ ~ = γ e − ϵ 4 + 4 ​ ϵ 5 , ϕ ~ = ( ϕ − ϵ 8 u + ϵ 10 ) e − ϵ 4 + 2 ​ ϵ 5 + ϵ 6 , \\begin{array}[]{l}\\displaystyle\\tilde{t}=\\left(t+\\epsilon_{1}\\right)e^{\\epsilon_{4}},\\quad\\tilde{x}=\\left(x+\\epsilon_{7}t+\\epsilon_{2}\\right)e^{\\epsilon_{5}},\\quad\\tilde{u}=\\left(u+\\epsilon_{3}\\right)e^{\\epsilon_{6}},\\\\\n\\\\\n\\tilde{f}=\\displaystyle\\left(f+\\epsilon_{7}u+\\epsilon_{9}\\right)e^{-\\epsilon_{4}+\\epsilon_{5}+\\epsilon_{6}},\\quad\\displaystyle\\tilde{g}=ge^{-\\epsilon_{4}+\\epsilon_{6}},\\quad\\tilde{\\alpha}=\\displaystyle\\left(\\alpha+\\epsilon_{8}\\right)e^{-\\epsilon_{4}+2\\epsilon_{5}},\\\\\n\\\\\n\\tilde{\\beta}=\\displaystyle\\beta e^{-\\epsilon_{4}+3\\epsilon_{5}},\\quad\\tilde{\\gamma}=\\displaystyle\\gamma e^{-\\epsilon_{4}+4\\epsilon_{5}},\\quad\\tilde{\\phi}=\\left(\\phi-\\epsilon_{8}u+\\epsilon_{10}\\right)e^{-\\epsilon_{4}+2\\epsilon_{5}+\\epsilon_{6}},\\end{array} (10)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{l}\\displaystyle\\tilde{t}=\\left(t+\\epsilon_{1}\\right)e^{\\epsilon_{4}},\\quad\\tilde{x}=\\left(x+\\epsilon_{7}t+\\epsilon_{2}\\right)e^{\\epsilon_{5}},\\quad\\tilde{u}=\\left(u+\\epsilon_{3}\\right)e^{\\epsilon_{6}},\\\\\n\\\\\n\\tilde{f}=\\displaystyle\\left(f+\\epsilon_{7}u+\\epsilon_{9}\\right)e^{-\\epsilon_{4}+\\epsilon_{5}+\\epsilon_{6}},\\quad\\displaystyle\\tilde{g}=ge^{-\\epsilon_{4}+\\epsilon_{6}},\\quad\\tilde{\\alpha}=\\displaystyle\\left(\\alpha+\\epsilon_{8}\\right)e^{-\\epsilon_{4}+2\\epsilon_{5}},\\\\\n\\\\\n\\tilde{\\beta}=\\displaystyle\\beta e^{-\\epsilon_{4}+3\\epsilon_{5}},\\quad\\tilde{\\gamma}=\\displaystyle\\gamma e^{-\\epsilon_{4}+4\\epsilon_{5}},\\quad\\tilde{\\phi}=\\left(\\phi-\\epsilon_{8}u+\\epsilon_{10}\\right)e^{-\\epsilon_{4}+2\\epsilon_{5}+\\epsilon_{6}},\\end{array}"
+    ],
+    "context": "t ~ = ( t + ϵ 1 ) e ϵ 4 , x ~ = ( x + ϵ 7 t + ϵ 2 ) e ϵ 5 , u ~ = ( u + ϵ 3 ) e ϵ 6 , f ~ = ( f + ϵ 7 u + ϵ 9 ) e − ϵ 4 + ϵ 5 + ϵ 6 , g ~ = g e − ϵ 4 + ϵ 6 , α ~ = ( α + ϵ 8 ) e − ϵ 4 + 2 ​ ϵ 5 , β ~ = β e − ϵ 4 + 3 ​ ϵ 5 , γ ~ = γ e − ϵ 4 + 4 ​ ϵ 5 , ϕ ~ = ( ϕ − ϵ 8 u + ϵ 10 ) e − ϵ 4 + 2 ​ ϵ 5 + ϵ 6 , \\begin{array}[]{l}\\displaystyle\\tilde{t}=\\left(t+\\epsilon_{1}\\right)e^{\\epsilon_{4}},\\quad\\tilde{x}=\\left(x+\\epsilon_{7}t+\\epsilon_{2}\\right)e^{\\epsilon_{5}},\\quad\\tilde{u}=\\left(u+\\epsilon_{3}\\right)e^{\\epsilon_{6}},\\\\\n\\\\\n\\tilde{f}=\\displaystyle\\left(f+\\epsilon_{7}u+\\epsilon_{9}\\right)e^{-\\epsilon_{4}+\\epsilon_{5}+\\epsilon_{6}},\\quad\\displaystyle\\tilde{g}=ge^{-\\epsilon_{4}+\\epsilon_{6}},\\quad\\tilde{\\alpha}=\\displaystyle\\left(\\alpha+\\epsilon_{8}\\right)e^{-\\epsilon_{4}+2\\epsilon_{5}},\\\\\n\\\\\n\\tilde{\\beta}=\\displaystyle\\beta e^{-\\epsilon_{4}+3\\epsilon_{5}},\\quad\\tilde{\\gamma}=\\displaystyle\\gamma e^{-\\epsilon_{4}+4\\epsilon_{5}},\\quad\\tilde{\\phi}=\\left(\\phi-\\epsilon_{8}u+\\epsilon_{10}\\right)e^{-\\epsilon_{4}+2\\epsilon_{5}+\\epsilon_{6}},\\end{array} (10)"
+  },
+  {
+    "location": "S2.E11",
+    "latex": [
+      "u_{t}=\\displaystyle e^{\\epsilon_{4}-\\epsilon_{6}}\\tilde{u}_{\\tilde{t}}+\\epsilon_{7}e^{\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}},\\quad u_{x}=e^{\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}},\\quad u_{xx}=e^{2\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}},\\quad u_{xxx}=e^{3\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}},\\quad u_{xxxx}=e^{4\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}\\tilde{x}}."
+    ],
+    "context": "Proof. From ( 10 ) it follows that u = e − ϵ 6 ​ u ~ − ϵ 3 u=e^{-\\epsilon_{6}}\\tilde{u}-\\epsilon_{3} . Thus, u t = e ϵ 4 − ϵ 6 ​ u ~ t ~ + ϵ 7 ​ e ϵ 5 − ϵ 6 ​ u ~ x ~ , u x = e ϵ 5 − ϵ 6 ​ u ~ x ~ , u x ​ x = e 2 ​ ϵ 5 − ϵ 6 ​ u ~ x ~ ​ x ~ , u x ​ x ​ x = e 3 ​ ϵ 5 − ϵ 6 ​ u ~ x ~ ​ x ~ ​ x ~ , u x ​ x ​ x ​ x = e 4 ​ ϵ 5 − ϵ 6 ​ u ~ x ~ ​ x ~ ​ x ~ ​ x ~ . u_{t}=\\displaystyle e^{\\epsilon_{4}-\\epsilon_{6}}\\tilde{u}_{\\tilde{t}}+\\epsilon_{7}e^{\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}},\\quad u_{x}=e^{\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}},\\quad u_{xx}=e^{2\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}},\\quad u_{xxx}=e^{3\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}},\\quad u_{xxxx}=e^{4\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}\\tilde{x}}. (11)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}=\\displaystyle e^{\\epsilon_{4}-\\epsilon_{6}}\\tilde{u}_{\\tilde{t}}+\\epsilon_{7}e^{\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}},\\quad u_{x}=e^{\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}},\\quad u_{xx}=e^{2\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}},\\quad u_{xxx}=e^{3\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}},\\quad u_{xxxx}=e^{4\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}\\tilde{x}}."
+    ],
+    "context": "u t = e ϵ 4 − ϵ 6 ​ u ~ t ~ + ϵ 7 ​ e ϵ 5 − ϵ 6 ​ u ~ x ~ , u x = e ϵ 5 − ϵ 6 ​ u ~ x ~ , u x ​ x = e 2 ​ ϵ 5 − ϵ 6 ​ u ~ x ~ ​ x ~ , u x ​ x ​ x = e 3 ​ ϵ 5 − ϵ 6 ​ u ~ x ~ ​ x ~ ​ x ~ , u x ​ x ​ x ​ x = e 4 ​ ϵ 5 − ϵ 6 ​ u ~ x ~ ​ x ~ ​ x ~ ​ x ~ . u_{t}=\\displaystyle e^{\\epsilon_{4}-\\epsilon_{6}}\\tilde{u}_{\\tilde{t}}+\\epsilon_{7}e^{\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}},\\quad u_{x}=e^{\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}},\\quad u_{xx}=e^{2\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}},\\quad u_{xxx}=e^{3\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}},\\quad u_{xxxx}=e^{4\\epsilon_{5}-\\epsilon_{6}}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}\\tilde{x}}. (11)"
+  },
+  {
+    "location": "S2.E12",
+    "latex": [
+      "\\begin{array}[]{l}f=\\displaystyle-\\epsilon_{7}u-\\epsilon_{9}+e^{\\epsilon_{4}-\\epsilon_{5}-\\epsilon_{6}}\\tilde{f},\\quad g=\\displaystyle e^{\\epsilon_{4}-\\epsilon_{6}}\\tilde{g},\\quad\\alpha=-\\epsilon_{8}+e^{\\epsilon_{4}-2\\epsilon_{5}}\\tilde{\\alpha},\\\\\n\\\\\n\\beta=e^{\\epsilon_{4}-3\\epsilon_{5}}\\tilde{\\beta},\\quad\\gamma=e^{\\epsilon_{4}-4\\epsilon_{5}}\\tilde{\\gamma},\\quad\\phi=\\displaystyle\\epsilon_{8}u-\\epsilon_{10}+e^{\\epsilon_{4}-2\\epsilon_{5}-\\epsilon_{6}}\\tilde{\\phi}.\\end{array}"
+    ],
+    "context": "f = − ϵ 7 u − ϵ 9 + e ϵ 4 − ϵ 5 − ϵ 6 f ~ , g = e ϵ 4 − ϵ 6 g ~ , α = − ϵ 8 + e ϵ 4 − 2 ​ ϵ 5 α ~ , β = e ϵ 4 − 3 ​ ϵ 5 β ~ , γ = e ϵ 4 − 4 ​ ϵ 5 γ ~ , ϕ = ϵ 8 u − ϵ 10 + e ϵ 4 − 2 ​ ϵ 5 − ϵ 6 ϕ ~ . \\begin{array}[]{l}f=\\displaystyle-\\epsilon_{7}u-\\epsilon_{9}+e^{\\epsilon_{4}-\\epsilon_{5}-\\epsilon_{6}}\\tilde{f},\\quad g=\\displaystyle e^{\\epsilon_{4}-\\epsilon_{6}}\\tilde{g},\\quad\\alpha=-\\epsilon_{8}+e^{\\epsilon_{4}-2\\epsilon_{5}}\\tilde{\\alpha},\\\\\n\\\\\n\\beta=e^{\\epsilon_{4}-3\\epsilon_{5}}\\tilde{\\beta},\\quad\\gamma=e^{\\epsilon_{4}-4\\epsilon_{5}}\\tilde{\\gamma},\\quad\\phi=\\displaystyle\\epsilon_{8}u-\\epsilon_{10}+e^{\\epsilon_{4}-2\\epsilon_{5}-\\epsilon_{6}}\\tilde{\\phi}.\\end{array} (12)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{l}f=\\displaystyle-\\epsilon_{7}u-\\epsilon_{9}+e^{\\epsilon_{4}-\\epsilon_{5}-\\epsilon_{6}}\\tilde{f},\\quad g=\\displaystyle e^{\\epsilon_{4}-\\epsilon_{6}}\\tilde{g},\\quad\\alpha=-\\epsilon_{8}+e^{\\epsilon_{4}-2\\epsilon_{5}}\\tilde{\\alpha},\\\\\n\\\\\n\\beta=e^{\\epsilon_{4}-3\\epsilon_{5}}\\tilde{\\beta},\\quad\\gamma=e^{\\epsilon_{4}-4\\epsilon_{5}}\\tilde{\\gamma},\\quad\\phi=\\displaystyle\\epsilon_{8}u-\\epsilon_{10}+e^{\\epsilon_{4}-2\\epsilon_{5}-\\epsilon_{6}}\\tilde{\\phi}.\\end{array}"
+    ],
+    "context": "f = − ϵ 7 u − ϵ 9 + e ϵ 4 − ϵ 5 − ϵ 6 f ~ , g = e ϵ 4 − ϵ 6 g ~ , α = − ϵ 8 + e ϵ 4 − 2 ​ ϵ 5 α ~ , β = e ϵ 4 − 3 ​ ϵ 5 β ~ , γ = e ϵ 4 − 4 ​ ϵ 5 γ ~ , ϕ = ϵ 8 u − ϵ 10 + e ϵ 4 − 2 ​ ϵ 5 − ϵ 6 ϕ ~ . \\begin{array}[]{l}f=\\displaystyle-\\epsilon_{7}u-\\epsilon_{9}+e^{\\epsilon_{4}-\\epsilon_{5}-\\epsilon_{6}}\\tilde{f},\\quad g=\\displaystyle e^{\\epsilon_{4}-\\epsilon_{6}}\\tilde{g},\\quad\\alpha=-\\epsilon_{8}+e^{\\epsilon_{4}-2\\epsilon_{5}}\\tilde{\\alpha},\\\\\n\\\\\n\\beta=e^{\\epsilon_{4}-3\\epsilon_{5}}\\tilde{\\beta},\\quad\\gamma=e^{\\epsilon_{4}-4\\epsilon_{5}}\\tilde{\\gamma},\\quad\\phi=\\displaystyle\\epsilon_{8}u-\\epsilon_{10}+e^{\\epsilon_{4}-2\\epsilon_{5}-\\epsilon_{6}}\\tilde{\\phi}.\\end{array} (12)"
+  },
+  {
+    "location": "S2.E13",
+    "latex": [
+      "f_{u}=\\displaystyle-\\epsilon_{7}+e^{\\epsilon_{4}-\\epsilon_{5}}\\tilde{f}_{\\tilde{u}},\\qquad\\phi_{u}=\\epsilon_{8}+e^{\\epsilon_{4}-2\\epsilon_{5}}\\tilde{\\phi}_{\\tilde{u}},\\qquad\\phi_{uu}=e^{\\epsilon_{4}-2\\epsilon_{5}+\\epsilon_{6}}\\tilde{\\phi}_{\\tilde{u}\\tilde{u}}."
+    ],
+    "context": "f u = − ϵ 7 + e ϵ 4 − ϵ 5 ​ f ~ u ~ , ϕ u = ϵ 8 + e ϵ 4 − 2 ​ ϵ 5 ​ ϕ ~ u ~ , ϕ u ​ u = e ϵ 4 − 2 ​ ϵ 5 + ϵ 6 ​ ϕ ~ u ~ ​ u ~ . f_{u}=\\displaystyle-\\epsilon_{7}+e^{\\epsilon_{4}-\\epsilon_{5}}\\tilde{f}_{\\tilde{u}},\\qquad\\phi_{u}=\\epsilon_{8}+e^{\\epsilon_{4}-2\\epsilon_{5}}\\tilde{\\phi}_{\\tilde{u}},\\qquad\\phi_{uu}=e^{\\epsilon_{4}-2\\epsilon_{5}+\\epsilon_{6}}\\tilde{\\phi}_{\\tilde{u}\\tilde{u}}. (13)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "f_{u}=\\displaystyle-\\epsilon_{7}+e^{\\epsilon_{4}-\\epsilon_{5}}\\tilde{f}_{\\tilde{u}},\\qquad\\phi_{u}=\\epsilon_{8}+e^{\\epsilon_{4}-2\\epsilon_{5}}\\tilde{\\phi}_{\\tilde{u}},\\qquad\\phi_{uu}=e^{\\epsilon_{4}-2\\epsilon_{5}+\\epsilon_{6}}\\tilde{\\phi}_{\\tilde{u}\\tilde{u}}."
+    ],
+    "context": "f u = − ϵ 7 + e ϵ 4 − ϵ 5 ​ f ~ u ~ , ϕ u = ϵ 8 + e ϵ 4 − 2 ​ ϵ 5 ​ ϕ ~ u ~ , ϕ u ​ u = e ϵ 4 − 2 ​ ϵ 5 + ϵ 6 ​ ϕ ~ u ~ ​ u ~ . f_{u}=\\displaystyle-\\epsilon_{7}+e^{\\epsilon_{4}-\\epsilon_{5}}\\tilde{f}_{\\tilde{u}},\\qquad\\phi_{u}=\\epsilon_{8}+e^{\\epsilon_{4}-2\\epsilon_{5}}\\tilde{\\phi}_{\\tilde{u}},\\qquad\\phi_{uu}=e^{\\epsilon_{4}-2\\epsilon_{5}+\\epsilon_{6}}\\tilde{\\phi}_{\\tilde{u}\\tilde{u}}. (13)"
+  },
+  {
+    "location": "S2.Ex11",
+    "latex": [
+      "\\tilde{u}_{\\tilde{t}}+\\tilde{f}_{\\tilde{u}}\\tilde{u}_{\\tilde{x}}+\\tilde{\\alpha}\\tilde{u}_{\\tilde{x}\\tilde{x}}+\\tilde{\\phi}_{\\tilde{u}\\tilde{u}}\\tilde{u}_{\\tilde{x}}^{2}+\\tilde{\\phi}_{\\tilde{u}}\\tilde{u}_{\\tilde{x}\\tilde{x}}+\\tilde{\\beta}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}}+\\tilde{\\gamma}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}\\tilde{x}}=\\tilde{g}.\\quad{}_{\\square}"
+    ],
+    "context": "u ~ t ~ + f ~ u ~ u ~ x ~ + α ~ u ~ x ~ ​ x ~ + ϕ ~ u ~ ​ u ~ u ~ x ~ 2 + ϕ ~ u ~ u ~ x ~ ​ x ~ + β ~ u ~ x ~ ​ x ~ ​ x ~ + γ ~ u ~ x ~ ​ x ~ ​ x ~ ​ x ~ = g ~ . □ \\tilde{u}_{\\tilde{t}}+\\tilde{f}_{\\tilde{u}}\\tilde{u}_{\\tilde{x}}+\\tilde{\\alpha}\\tilde{u}_{\\tilde{x}\\tilde{x}}+\\tilde{\\phi}_{\\tilde{u}\\tilde{u}}\\tilde{u}_{\\tilde{x}}^{2}+\\tilde{\\phi}_{\\tilde{u}}\\tilde{u}_{\\tilde{x}\\tilde{x}}+\\tilde{\\beta}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}}+\\tilde{\\gamma}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}\\tilde{x}}=\\tilde{g}.\\quad{}_{\\square}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\tilde{u}_{\\tilde{t}}+\\tilde{f}_{\\tilde{u}}\\tilde{u}_{\\tilde{x}}+\\tilde{\\alpha}\\tilde{u}_{\\tilde{x}\\tilde{x}}+\\tilde{\\phi}_{\\tilde{u}\\tilde{u}}\\tilde{u}_{\\tilde{x}}^{2}+\\tilde{\\phi}_{\\tilde{u}}\\tilde{u}_{\\tilde{x}\\tilde{x}}+\\tilde{\\beta}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}}+\\tilde{\\gamma}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}\\tilde{x}}=\\tilde{g}.\\quad{}_{\\square}"
+    ],
+    "context": "u ~ t ~ + f ~ u ~ u ~ x ~ + α ~ u ~ x ~ ​ x ~ + ϕ ~ u ~ ​ u ~ u ~ x ~ 2 + ϕ ~ u ~ u ~ x ~ ​ x ~ + β ~ u ~ x ~ ​ x ~ ​ x ~ + γ ~ u ~ x ~ ​ x ~ ​ x ~ ​ x ~ = g ~ . □ \\tilde{u}_{\\tilde{t}}+\\tilde{f}_{\\tilde{u}}\\tilde{u}_{\\tilde{x}}+\\tilde{\\alpha}\\tilde{u}_{\\tilde{x}\\tilde{x}}+\\tilde{\\phi}_{\\tilde{u}\\tilde{u}}\\tilde{u}_{\\tilde{x}}^{2}+\\tilde{\\phi}_{\\tilde{u}}\\tilde{u}_{\\tilde{x}\\tilde{x}}+\\tilde{\\beta}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}}+\\tilde{\\gamma}\\tilde{u}_{\\tilde{x}\\tilde{x}\\tilde{x}\\tilde{x}}=\\tilde{g}.\\quad{}_{\\square}"
+  },
+  {
+    "location": "S3.E14",
+    "latex": [
+      "X=pr_{({\\rm x},u)}(Y)=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u},"
+    ],
+    "context": "X = p r ( x , u ) ( Y ) = τ ∂ t + ξ ∂ x + η ∂ u , X=pr_{({\\rm x},u)}(Y)=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u}, (14)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "X=pr_{({\\rm x},u)}(Y)=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u},"
+    ],
+    "context": "X = p r ( x , u ) ( Y ) = τ ∂ t + ξ ∂ x + η ∂ u , X=pr_{({\\rm x},u)}(Y)=\\tau\\partial_{t}+\\xi\\partial_{x}+\\eta\\partial_{u}, (14)"
+  },
+  {
+    "location": "S3.E15",
+    "latex": [
+      "Z=pr_{(u,\\Psi)}(Y)=\\eta\\partial_{u}+\\omega^{1}\\partial_{f}+\\omega^{2}\\partial_{g}+\\omega^{3}\\partial_{\\alpha}+\\omega^{4}\\partial_{\\beta}+\\omega^{5}\\partial_{\\gamma}+\\omega^{6}\\partial_{\\phi},"
+    ],
+    "context": "Z = p r ( u , Ψ ) ( Y ) = η ∂ u + ω 1 ∂ f + ω 2 ∂ g + ω 3 ∂ α + ω 4 ∂ β + ω 5 ∂ γ + ω 6 ∂ ϕ , Z=pr_{(u,\\Psi)}(Y)=\\eta\\partial_{u}+\\omega^{1}\\partial_{f}+\\omega^{2}\\partial_{g}+\\omega^{3}\\partial_{\\alpha}+\\omega^{4}\\partial_{\\beta}+\\omega^{5}\\partial_{\\gamma}+\\omega^{6}\\partial_{\\phi}, (15)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Z=pr_{(u,\\Psi)}(Y)=\\eta\\partial_{u}+\\omega^{1}\\partial_{f}+\\omega^{2}\\partial_{g}+\\omega^{3}\\partial_{\\alpha}+\\omega^{4}\\partial_{\\beta}+\\omega^{5}\\partial_{\\gamma}+\\omega^{6}\\partial_{\\phi},"
+    ],
+    "context": "Z = p r ( u , Ψ ) ( Y ) = η ∂ u + ω 1 ∂ f + ω 2 ∂ g + ω 3 ∂ α + ω 4 ∂ β + ω 5 ∂ γ + ω 6 ∂ ϕ , Z=pr_{(u,\\Psi)}(Y)=\\eta\\partial_{u}+\\omega^{1}\\partial_{f}+\\omega^{2}\\partial_{g}+\\omega^{3}\\partial_{\\alpha}+\\omega^{4}\\partial_{\\beta}+\\omega^{5}\\partial_{\\gamma}+\\omega^{6}\\partial_{\\phi}, (15)"
+  },
+  {
+    "location": "S3.E16",
+    "latex": [
+      "\\begin{array}[]{rcl}Y&=&\\displaystyle\\sum_{i=1}^{10}c_{i}Y_{i}\\\\\n\\\\\n&=&\\left(c_{1}+c_{4}t\\right)\\partial_{t}+\\left(c_{2}+c_{5}x+c_{7}t\\right)\\partial_{x}+\\left(c_{3}+c_{6}u\\right)\\partial_{u}+\\left(c_{9}+c_{7}u+\\left(-c_{4}+c_{5}+c_{6}\\right)f\\right)\\partial_{f}\\\\\n\\\\\n&&+\\left(-c_{4}+c_{6}\\right)g\\partial_{g}+\\left(c_{8}+\\left(-c_{4}+2c_{5}\\right)\\alpha\\right)\\partial_{\\alpha}+\\left(-c_{4}+3c_{5}\\right)\\beta\\partial_{\\beta}\\\\\n\\\\\n&&+\\left(-c_{4}+4c_{5}\\right)\\gamma\\partial_{\\gamma}+\\left(c_{10}-c_{8}u+\\left(-c_{4}+2c_{5}+c_{6}\\right)\\phi\\right)\\partial_{\\phi}.\\end{array}"
+    ],
+    "context": "Y = ∑ i = 1 10 c i ​ Y i = ( c 1 + c 4 t ) ∂ t + ( c 2 + c 5 x + c 7 t ) ∂ x + ( c 3 + c 6 u ) ∂ u + ( c 9 + c 7 u + ( − c 4 + c 5 + c 6 ) f ) ∂ f + ( − c 4 + c 6 ) g ∂ g + ( c 8 + ( − c 4 + 2 c 5 ) α ) ∂ α + ( − c 4 + 3 c 5 ) β ∂ β + ( − c 4 + 4 c 5 ) γ ∂ γ + ( c 10 − c 8 u + ( − c 4 + 2 c 5 + c 6 ) ϕ ) ∂ ϕ . \\begin{array}[]{rcl}Y&=&\\displaystyle\\sum_{i=1}^{10}c_{i}Y_{i}\\\\\n\\\\\n&=&\\left(c_{1}+c_{4}t\\right)\\partial_{t}+\\left(c_{2}+c_{5}x+c_{7}t\\right)\\partial_{x}+\\left(c_{3}+c_{6}u\\right)\\partial_{u}+\\left(c_{9}+c_{7}u+\\left(-c_{4}+c_{5}+c_{6}\\right)f\\right)\\partial_{f}\\\\\n\\\\\n&&+\\left(-c_{4}+c_{6}\\right)g\\partial_{g}+\\left(c_{8}+\\left(-c_{4}+2c_{5}\\right)\\alpha\\right)\\partial_{\\alpha}+\\left(-c_{4}+3c_{5}\\right)\\beta\\partial_{\\beta}\\\\\n\\\\\n&&+\\left(-c_{4}+4c_{5}\\right)\\gamma\\partial_{\\gamma}+\\left(c_{10}-c_{8}u+\\left(-c_{4}+2c_{5}+c_{6}\\right)\\phi\\right)\\partial_{\\phi}.\\end{array} (16)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{rcl}Y&=&\\displaystyle\\sum_{i=1}^{10}c_{i}Y_{i}\\\\\n\\\\\n&=&\\left(c_{1}+c_{4}t\\right)\\partial_{t}+\\left(c_{2}+c_{5}x+c_{7}t\\right)\\partial_{x}+\\left(c_{3}+c_{6}u\\right)\\partial_{u}+\\left(c_{9}+c_{7}u+\\left(-c_{4}+c_{5}+c_{6}\\right)f\\right)\\partial_{f}\\\\\n\\\\\n&&+\\left(-c_{4}+c_{6}\\right)g\\partial_{g}+\\left(c_{8}+\\left(-c_{4}+2c_{5}\\right)\\alpha\\right)\\partial_{\\alpha}+\\left(-c_{4}+3c_{5}\\right)\\beta\\partial_{\\beta}\\\\\n\\\\\n&&+\\left(-c_{4}+4c_{5}\\right)\\gamma\\partial_{\\gamma}+\\left(c_{10}-c_{8}u+\\left(-c_{4}+2c_{5}+c_{6}\\right)\\phi\\right)\\partial_{\\phi}.\\end{array}"
+    ],
+    "context": "Y = ∑ i = 1 10 c i ​ Y i = ( c 1 + c 4 t ) ∂ t + ( c 2 + c 5 x + c 7 t ) ∂ x + ( c 3 + c 6 u ) ∂ u + ( c 9 + c 7 u + ( − c 4 + c 5 + c 6 ) f ) ∂ f + ( − c 4 + c 6 ) g ∂ g + ( c 8 + ( − c 4 + 2 c 5 ) α ) ∂ α + ( − c 4 + 3 c 5 ) β ∂ β + ( − c 4 + 4 c 5 ) γ ∂ γ + ( c 10 − c 8 u + ( − c 4 + 2 c 5 + c 6 ) ϕ ) ∂ ϕ . \\begin{array}[]{rcl}Y&=&\\displaystyle\\sum_{i=1}^{10}c_{i}Y_{i}\\\\\n\\\\\n&=&\\left(c_{1}+c_{4}t\\right)\\partial_{t}+\\left(c_{2}+c_{5}x+c_{7}t\\right)\\partial_{x}+\\left(c_{3}+c_{6}u\\right)\\partial_{u}+\\left(c_{9}+c_{7}u+\\left(-c_{4}+c_{5}+c_{6}\\right)f\\right)\\partial_{f}\\\\\n\\\\\n&&+\\left(-c_{4}+c_{6}\\right)g\\partial_{g}+\\left(c_{8}+\\left(-c_{4}+2c_{5}\\right)\\alpha\\right)\\partial_{\\alpha}+\\left(-c_{4}+3c_{5}\\right)\\beta\\partial_{\\beta}\\\\\n\\\\\n&&+\\left(-c_{4}+4c_{5}\\right)\\gamma\\partial_{\\gamma}+\\left(c_{10}-c_{8}u+\\left(-c_{4}+2c_{5}+c_{6}\\right)\\phi\\right)\\partial_{\\phi}.\\end{array} (16)"
+  },
+  {
+    "location": "S3.E17",
+    "latex": [
+      "\\begin{array}[]{rcl}Z&=&\\displaystyle\\left(c_{3}+c_{6}u\\right)\\partial_{u}+\\left(c_{9}+c_{7}u+\\left(-c_{4}+c_{5}+c_{6}\\right)f\\right)\\partial_{f}+\\left(-c_{4}+c_{6}\\right)g\\partial_{g}+\\left(c_{8}+\\left(-c_{4}+2c_{5}\\right)\\alpha\\right)\\partial_{\\alpha}\\\\\n\\\\\n&&+\\left(-c_{4}+3c_{5}\\right)\\beta\\partial_{\\beta}+\\left(-c_{4}+4c_{5}\\right)\\gamma\\partial_{\\gamma}+\\left(c_{10}-c_{8}u+\\left(-c_{4}+2c_{5}+c_{6}\\right)\\phi\\right)\\partial_{\\phi},\\end{array}"
+    ],
+    "context": "Z = ( c 3 + c 6 u ) ∂ u + ( c 9 + c 7 u + ( − c 4 + c 5 + c 6 ) f ) ∂ f + ( − c 4 + c 6 ) g ∂ g + ( c 8 + ( − c 4 + 2 c 5 ) α ) ∂ α + ( − c 4 + 3 c 5 ) β ∂ β + ( − c 4 + 4 c 5 ) γ ∂ γ + ( c 10 − c 8 u + ( − c 4 + 2 c 5 + c 6 ) ϕ ) ∂ ϕ , \\begin{array}[]{rcl}Z&=&\\displaystyle\\left(c_{3}+c_{6}u\\right)\\partial_{u}+\\left(c_{9}+c_{7}u+\\left(-c_{4}+c_{5}+c_{6}\\right)f\\right)\\partial_{f}+\\left(-c_{4}+c_{6}\\right)g\\partial_{g}+\\left(c_{8}+\\left(-c_{4}+2c_{5}\\right)\\alpha\\right)\\partial_{\\alpha}\\\\\n\\\\\n&&+\\left(-c_{4}+3c_{5}\\right)\\beta\\partial_{\\beta}+\\left(-c_{4}+4c_{5}\\right)\\gamma\\partial_{\\gamma}+\\left(c_{10}-c_{8}u+\\left(-c_{4}+2c_{5}+c_{6}\\right)\\phi\\right)\\partial_{\\phi},\\end{array} (17)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{rcl}Z&=&\\displaystyle\\left(c_{3}+c_{6}u\\right)\\partial_{u}+\\left(c_{9}+c_{7}u+\\left(-c_{4}+c_{5}+c_{6}\\right)f\\right)\\partial_{f}+\\left(-c_{4}+c_{6}\\right)g\\partial_{g}+\\left(c_{8}+\\left(-c_{4}+2c_{5}\\right)\\alpha\\right)\\partial_{\\alpha}\\\\\n\\\\\n&&+\\left(-c_{4}+3c_{5}\\right)\\beta\\partial_{\\beta}+\\left(-c_{4}+4c_{5}\\right)\\gamma\\partial_{\\gamma}+\\left(c_{10}-c_{8}u+\\left(-c_{4}+2c_{5}+c_{6}\\right)\\phi\\right)\\partial_{\\phi},\\end{array}"
+    ],
+    "context": "Z = ( c 3 + c 6 u ) ∂ u + ( c 9 + c 7 u + ( − c 4 + c 5 + c 6 ) f ) ∂ f + ( − c 4 + c 6 ) g ∂ g + ( c 8 + ( − c 4 + 2 c 5 ) α ) ∂ α + ( − c 4 + 3 c 5 ) β ∂ β + ( − c 4 + 4 c 5 ) γ ∂ γ + ( c 10 − c 8 u + ( − c 4 + 2 c 5 + c 6 ) ϕ ) ∂ ϕ , \\begin{array}[]{rcl}Z&=&\\displaystyle\\left(c_{3}+c_{6}u\\right)\\partial_{u}+\\left(c_{9}+c_{7}u+\\left(-c_{4}+c_{5}+c_{6}\\right)f\\right)\\partial_{f}+\\left(-c_{4}+c_{6}\\right)g\\partial_{g}+\\left(c_{8}+\\left(-c_{4}+2c_{5}\\right)\\alpha\\right)\\partial_{\\alpha}\\\\\n\\\\\n&&+\\left(-c_{4}+3c_{5}\\right)\\beta\\partial_{\\beta}+\\left(-c_{4}+4c_{5}\\right)\\gamma\\partial_{\\gamma}+\\left(c_{10}-c_{8}u+\\left(-c_{4}+2c_{5}+c_{6}\\right)\\phi\\right)\\partial_{\\phi},\\end{array} (17)"
+  },
+  {
+    "location": "S3.Ex12",
+    "latex": [
+      "c_{3}=c_{4}=c_{5}=c_{6}=c_{7}=c_{8}=c_{9}=c_{10}=0."
+    ],
+    "context": "c 3 = c 4 = c 5 = c 6 = c 7 = c 8 = c 9 = c 10 = 0 . c_{3}=c_{4}=c_{5}=c_{6}=c_{7}=c_{8}=c_{9}=c_{10}=0."
+  },
+  {
+    "location": null,
+    "latex": [
+      "c_{3}=c_{4}=c_{5}=c_{6}=c_{7}=c_{8}=c_{9}=c_{10}=0."
+    ],
+    "context": "c 3 = c 4 = c 5 = c 6 = c 7 = c 8 = c 9 = c 10 = 0 . c_{3}=c_{4}=c_{5}=c_{6}=c_{7}=c_{8}=c_{9}=c_{10}=0."
+  },
+  {
+    "location": "S3.Ex13",
+    "latex": [
+      "X=pr_{({\\rm x},u)}(Y)=c_{1}Y_{1}+c_{2}Y_{2}."
+    ],
+    "context": "X = p ​ r ( x , u ) ​ ( Y ) = c 1 ​ Y 1 + c 2 ​ Y 2 . X=pr_{({\\rm x},u)}(Y)=c_{1}Y_{1}+c_{2}Y_{2}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "X=pr_{({\\rm x},u)}(Y)=c_{1}Y_{1}+c_{2}Y_{2}."
+    ],
+    "context": "X = p ​ r ( x , u ) ​ ( Y ) = c 1 ​ Y 1 + c 2 ​ Y 2 . X=pr_{({\\rm x},u)}(Y)=c_{1}Y_{1}+c_{2}Y_{2}."
+  },
+  {
+    "location": "S3.E18",
+    "latex": [
+      "X_{1}=\\partial_{t},\\qquad X_{2}=\\partial_{x}."
+    ],
+    "context": "Consequently, for arbitrary functions f f , g g , α \\alpha , β \\beta , γ \\gamma and ϕ \\phi , equation ( 5 ) admits the two-dimensional Lie algebra generated by X 1 = ∂ t , X 2 = ∂ x . X_{1}=\\partial_{t},\\qquad X_{2}=\\partial_{x}. (18)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "X_{1}=\\partial_{t},\\qquad X_{2}=\\partial_{x}."
+    ],
+    "context": "X 1 = ∂ t , X 2 = ∂ x . X_{1}=\\partial_{t},\\qquad X_{2}=\\partial_{x}. (18)"
+  },
+  {
+    "location": "S3.E19",
+    "latex": [
+      "f=F(u),\\quad g=G(u),\\quad\\alpha=A(u),\\quad\\beta=B(u),\\quad\\gamma=\\Gamma(u),\\quad\\phi=\\Phi(u),"
+    ],
+    "context": "Let Y Y be an equivalent operator for equation ( 5 ). The operator X = p ​ r ( x , u ) ​ ( Y ) X=pr_{({\\rm x},u)}(Y) is admitted by equation ( 5 ) with specific functions f = F ⁡ ( u ) , g = G ⁡ ( u ) , α = A ⁡ ( u ) , β = B ⁡ ( u ) , γ = Γ ⁡ ( u ) , ϕ = Φ ⁡ ( u ) , f=F(u),\\quad g=G(u),\\quad\\alpha=A(u),\\quad\\beta=B(u),\\quad\\gamma=\\Gamma(u),\\quad\\phi=\\Phi(u), (19) if and only if these functions are invariant with respect to the projection Z = p ​ r ( u , Ψ ) ​ ( Y ) Z=pr_{(u,\\Psi)}(Y) ."
+  },
+  {
+    "location": null,
+    "latex": [
+      "f=F(u),\\quad g=G(u),\\quad\\alpha=A(u),\\quad\\beta=B(u),\\quad\\gamma=\\Gamma(u),\\quad\\phi=\\Phi(u),"
+    ],
+    "context": "f = F ⁡ ( u ) , g = G ⁡ ( u ) , α = A ⁡ ( u ) , β = B ⁡ ( u ) , γ = Γ ⁡ ( u ) , ϕ = Φ ⁡ ( u ) , f=F(u),\\quad g=G(u),\\quad\\alpha=A(u),\\quad\\beta=B(u),\\quad\\gamma=\\Gamma(u),\\quad\\phi=\\Phi(u), (19)"
+  },
+  {
+    "location": "S4.Ex14",
+    "latex": [
+      "\\mbox{Ad}(exp(\\epsilon V))W=\\displaystyle\\sum_{n=0}^{\\infty}\\frac{\\epsilon^{n}}{n!}(\\mbox{ad }V)^{n}(W)=W-\\epsilon[V,W]+\\frac{\\epsilon^{2}}{2}[V,[V,W]]-\\ldots"
+    ],
+    "context": "Ad ​ ( e ​ x ​ p ​ ( ϵ ​ V ) ) ​ W = ∑ n = 0 ∞ ϵ n n ! ​ ( ad ​ V ) n ​ ( W ) = W − ϵ ⁡ [ V , W ] + ϵ 2 2 ​ [ V , [ V , W ] ] − … \\mbox{Ad}(exp(\\epsilon V))W=\\displaystyle\\sum_{n=0}^{\\infty}\\frac{\\epsilon^{n}}{n!}(\\mbox{ad }V)^{n}(W)=W-\\epsilon[V,W]+\\frac{\\epsilon^{2}}{2}[V,[V,W]]-\\ldots"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\mbox{Ad}(exp(\\epsilon V))W=\\displaystyle\\sum_{n=0}^{\\infty}\\frac{\\epsilon^{n}}{n!}(\\mbox{ad }V)^{n}(W)=W-\\epsilon[V,W]+\\frac{\\epsilon^{2}}{2}[V,[V,W]]-\\ldots"
+    ],
+    "context": "Ad ​ ( e ​ x ​ p ​ ( ϵ ​ V ) ) ​ W = ∑ n = 0 ∞ ϵ n n ! ​ ( ad ​ V ) n ​ ( W ) = W − ϵ ⁡ [ V , W ] + ϵ 2 2 ​ [ V , [ V , W ] ] − … \\mbox{Ad}(exp(\\epsilon V))W=\\displaystyle\\sum_{n=0}^{\\infty}\\frac{\\epsilon^{n}}{n!}(\\mbox{ad }V)^{n}(W)=W-\\epsilon[V,W]+\\frac{\\epsilon^{2}}{2}[V,[V,W]]-\\ldots"
+  },
+  {
+    "location": "S4.Ex16",
+    "latex": [
+      "\\begin{array}[]{l}Z_{1}=\\partial_{u},\\quad Z_{2}=-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi},\\quad Z_{3}=f\\partial_{f}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+2\\phi\\partial_{\\phi},\\\\\n\\\\\nZ_{4}=u\\partial_{u}+f\\partial_{f}+g\\partial_{g}+\\phi\\partial_{\\phi},\\quad Z_{5}=u\\partial_{f},\\quad Z_{6}=\\partial_{\\alpha}-u\\partial_{\\phi},\\quad Z_{7}=\\partial_{f},\\quad Z_{8}=\\partial_{\\phi},\\par\\end{array}"
+    ],
+    "context": "Z 1 = ∂ u , Z 2 = − f ∂ f − g ∂ g − α ∂ α − β ∂ β − γ ∂ γ − ϕ ∂ ϕ , Z 3 = f ∂ f + 2 α ∂ α + 3 β ∂ β + 4 γ ∂ γ + 2 ϕ ∂ ϕ , Z 4 = u ∂ u + f ∂ f + g ∂ g + ϕ ∂ ϕ , Z 5 = u ∂ f , Z 6 = ∂ α − u ∂ ϕ , Z 7 = ∂ f , Z 8 = ∂ ϕ , \\begin{array}[]{l}Z_{1}=\\partial_{u},\\quad Z_{2}=-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi},\\quad Z_{3}=f\\partial_{f}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+2\\phi\\partial_{\\phi},\\\\\n\\\\\nZ_{4}=u\\partial_{u}+f\\partial_{f}+g\\partial_{g}+\\phi\\partial_{\\phi},\\quad Z_{5}=u\\partial_{f},\\quad Z_{6}=\\partial_{\\alpha}-u\\partial_{\\phi},\\quad Z_{7}=\\partial_{f},\\quad Z_{8}=\\partial_{\\phi},\\par\\end{array}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{l}Z_{1}=\\partial_{u},\\quad Z_{2}=-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi},\\quad Z_{3}=f\\partial_{f}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+2\\phi\\partial_{\\phi},\\\\\n\\\\\nZ_{4}=u\\partial_{u}+f\\partial_{f}+g\\partial_{g}+\\phi\\partial_{\\phi},\\quad Z_{5}=u\\partial_{f},\\quad Z_{6}=\\partial_{\\alpha}-u\\partial_{\\phi},\\quad Z_{7}=\\partial_{f},\\quad Z_{8}=\\partial_{\\phi},\\par\\end{array}"
+    ],
+    "context": "Z 1 = ∂ u , Z 2 = − f ∂ f − g ∂ g − α ∂ α − β ∂ β − γ ∂ γ − ϕ ∂ ϕ , Z 3 = f ∂ f + 2 α ∂ α + 3 β ∂ β + 4 γ ∂ γ + 2 ϕ ∂ ϕ , Z 4 = u ∂ u + f ∂ f + g ∂ g + ϕ ∂ ϕ , Z 5 = u ∂ f , Z 6 = ∂ α − u ∂ ϕ , Z 7 = ∂ f , Z 8 = ∂ ϕ , \\begin{array}[]{l}Z_{1}=\\partial_{u},\\quad Z_{2}=-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi},\\quad Z_{3}=f\\partial_{f}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+2\\phi\\partial_{\\phi},\\\\\n\\\\\nZ_{4}=u\\partial_{u}+f\\partial_{f}+g\\partial_{g}+\\phi\\partial_{\\phi},\\quad Z_{5}=u\\partial_{f},\\quad Z_{6}=\\partial_{\\alpha}-u\\partial_{\\phi},\\quad Z_{7}=\\partial_{f},\\quad Z_{8}=\\partial_{\\phi},\\par\\end{array}"
+  },
+  {
+    "location": "S4.E20",
+    "latex": [
+      "\\begin{array}[]{l}Z^{(1)}=Z_{1},\\quad Z^{(2)}=Z_{2},\\quad Z^{(3)}=Z_{1}+Z_{2},\\quad Z^{(4)}=Z_{1}+Z_{8},\\quad Z^{(5)}=aZ_{2}+Z_{3},\\quad Z^{(6)}=Z_{7}+aZ_{8},\\\\\n\\\\\nZ^{(7)}=Z_{1}+aZ_{2}+Z_{3},\\quad Z^{(8)}=aZ_{2}+bZ_{3}+Z_{4},\\quad Z^{(9)}=cZ_{2}+dZ_{3}+Z_{5},\\quad Z^{(10)}=aZ_{2}+bZ_{3}+Z_{6},\\\\\n\\\\\nZ^{(11)}=Z_{2}+Z_{3}+Z_{7},\\quad Z^{(12)}=2Z_{2}+Z_{3}+Z_{8},\\quad Z^{(13)}=Z_{4}+Z_{5}+aZ_{6},\\quad Z^{(14)}=Z_{4}-Z_{5}+aZ_{6},\\\\\n\\\\\nZ^{(15)}=Z_{1}+aZ_{2}+bZ_{3}+Z_{5},\\quad Z^{(16)}=-Z_{1}+aZ_{2}+bZ_{3}+Z_{5},\\quad Z^{(17)}=Z_{1}+aZ_{2}+bZ_{3}+Z_{6},\\\\\n\\\\\nZ^{(18)}=-Z_{1}+aZ_{2}+bZ_{3}+Z_{6},\\quad Z^{(19)}=Z_{1}+Z_{2}+Z_{3}+Z_{7},\\quad Z^{(20)}=Z_{1}+2Z_{2}+Z_{3}+Z_{8},\\\\\n\\\\\nZ^{(21)}=mZ_{2}+mZ_{3}+Z_{4}+Z_{5},\\quad Z^{(22)}=2aZ_{2}+aZ_{3}+Z_{4}+Z_{6},\\quad Z^{(23)}=(1+a)Z_{2}+aZ_{3}+Z_{4}+Z_{7},\\\\\n\\\\\nZ^{(24)}=(1+2a)Z_{2}+aZ_{3}+Z_{4}+Z_{8},\\quad Z^{(25)}=aZ_{2}+aZ_{3}+Z_{6}+Z_{7},\\quad Z^{(26)}=Z_{2}+Z_{4}+Z_{7}+mZ_{8},\\\\\n\\\\\nZ^{(27)}=Z_{1}+2aZ_{2}+aZ_{3}+Z_{5}+mZ_{6},\\quad Z^{(28)}=-Z_{1}+2aZ_{2}+aZ_{3}+Z_{5}+mZ_{6},\\\\\n\\\\\nZ^{(29)}=Z_{1}+aZ_{2}+aZ_{3}+Z_{6}+mZ_{7},\\quad Z^{(30)}=-Z_{1}+aZ_{2}+aZ_{3}+Z_{6}+mZ_{7},\\\\\n\\\\\nZ^{(31)}=-Z_{2}-Z_{3}+Z_{4}+Z_{5}+Z_{8},\\quad Z^{(32)}=2Z_{2}+Z_{3}+Z_{4}+mZ_{6}+Z_{7},\\\\\n\\\\\nZ^{(33)}=2aZ_{2}+aZ_{3}+Z_{5}+bZ_{6}+Z_{8},\\quad Z^{(34)}=2aZ_{2}+aZ_{3}+Z_{5}+bZ_{6}-Z_{8},\\\\\n\\\\\n\\end{array}"
+    ],
+    "context": "Z ( 1 ) = Z 1 , Z ( 2 ) = Z 2 , Z ( 3 ) = Z 1 + Z 2 , Z ( 4 ) = Z 1 + Z 8 , Z ( 5 ) = a Z 2 + Z 3 , Z ( 6 ) = Z 7 + a Z 8 , Z ( 7 ) = Z 1 + a Z 2 + Z 3 , Z ( 8 ) = a Z 2 + b Z 3 + Z 4 , Z ( 9 ) = c Z 2 + d Z 3 + Z 5 , Z ( 10 ) = a Z 2 + b Z 3 + Z 6 , Z ( 11 ) = Z 2 + Z 3 + Z 7 , Z ( 12 ) = 2 Z 2 + Z 3 + Z 8 , Z ( 13 ) = Z 4 + Z 5 + a Z 6 , Z ( 14 ) = Z 4 − Z 5 + a Z 6 , Z ( 15 ) = Z 1 + a Z 2 + b Z 3 + Z 5 , Z ( 16 ) = − Z 1 + a Z 2 + b Z 3 + Z 5 , Z ( 17 ) = Z 1 + a Z 2 + b Z 3 + Z 6 , Z ( 18 ) = − Z 1 + a Z 2 + b Z 3 + Z 6 , Z ( 19 ) = Z 1 + Z 2 + Z 3 + Z 7 , Z ( 20 ) = Z 1 + 2 Z 2 + Z 3 + Z 8 , Z ( 21 ) = m Z 2 + m Z 3 + Z 4 + Z 5 , Z ( 22 ) = 2 a Z 2 + a Z 3 + Z 4 + Z 6 , Z ( 23 ) = ( 1 + a ) Z 2 + a Z 3 + Z 4 + Z 7 , Z ( 24 ) = ( 1 + 2 a ) Z 2 + a Z 3 + Z 4 + Z 8 , Z ( 25 ) = a Z 2 + a Z 3 + Z 6 + Z 7 , Z ( 26 ) = Z 2 + Z 4 + Z 7 + m Z 8 , Z ( 27 ) = Z 1 + 2 a Z 2 + a Z 3 + Z 5 + m Z 6 , Z ( 28 ) = − Z 1 + 2 a Z 2 + a Z 3 + Z 5 + m Z 6 , Z ( 29 ) = Z 1 + a Z 2 + a Z 3 + Z 6 + m Z 7 , Z ( 30 ) = − Z 1 + a Z 2 + a Z 3 + Z 6 + m Z 7 , Z ( 31 ) = − Z 2 − Z 3 + Z 4 + Z 5 + Z 8 , Z ( 32 ) = 2 Z 2 + Z 3 + Z 4 + m Z 6 + Z 7 , Z ( 33 ) = 2 a Z 2 + a Z 3 + Z 5 + b Z 6 + Z 8 , Z ( 34 ) = 2 a Z 2 + a Z 3 + Z 5 + b Z 6 − Z 8 , \\begin{array}[]{l}Z^{(1)}=Z_{1},\\quad Z^{(2)}=Z_{2},\\quad Z^{(3)}=Z_{1}+Z_{2},\\quad Z^{(4)}=Z_{1}+Z_{8},\\quad Z^{(5)}=aZ_{2}+Z_{3},\\quad Z^{(6)}=Z_{7}+aZ_{8},\\\\\n\\\\\nZ^{(7)}=Z_{1}+aZ_{2}+Z_{3},\\quad Z^{(8)}=aZ_{2}+bZ_{3}+Z_{4},\\quad Z^{(9)}=cZ_{2}+dZ_{3}+Z_{5},\\quad Z^{(10)}=aZ_{2}+bZ_{3}+Z_{6},\\\\\n\\\\\nZ^{(11)}=Z_{2}+Z_{3}+Z_{7},\\quad Z^{(12)}=2Z_{2}+Z_{3}+Z_{8},\\quad Z^{(13)}=Z_{4}+Z_{5}+aZ_{6},\\quad Z^{(14)}=Z_{4}-Z_{5}+aZ_{6},\\\\\n\\\\\nZ^{(15)}=Z_{1}+aZ_{2}+bZ_{3}+Z_{5},\\quad Z^{(16)}=-Z_{1}+aZ_{2}+bZ_{3}+Z_{5},\\quad Z^{(17)}=Z_{1}+aZ_{2}+bZ_{3}+Z_{6},\\\\\n\\\\\nZ^"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{l}Z^{(1)}=Z_{1},\\quad Z^{(2)}=Z_{2},\\quad Z^{(3)}=Z_{1}+Z_{2},\\quad Z^{(4)}=Z_{1}+Z_{8},\\quad Z^{(5)}=aZ_{2}+Z_{3},\\quad Z^{(6)}=Z_{7}+aZ_{8},\\\\\n\\\\\nZ^{(7)}=Z_{1}+aZ_{2}+Z_{3},\\quad Z^{(8)}=aZ_{2}+bZ_{3}+Z_{4},\\quad Z^{(9)}=cZ_{2}+dZ_{3}+Z_{5},\\quad Z^{(10)}=aZ_{2}+bZ_{3}+Z_{6},\\\\\n\\\\\nZ^{(11)}=Z_{2}+Z_{3}+Z_{7},\\quad Z^{(12)}=2Z_{2}+Z_{3}+Z_{8},\\quad Z^{(13)}=Z_{4}+Z_{5}+aZ_{6},\\quad Z^{(14)}=Z_{4}-Z_{5}+aZ_{6},\\\\\n\\\\\nZ^{(15)}=Z_{1}+aZ_{2}+bZ_{3}+Z_{5},\\quad Z^{(16)}=-Z_{1}+aZ_{2}+bZ_{3}+Z_{5},\\quad Z^{(17)}=Z_{1}+aZ_{2}+bZ_{3}+Z_{6},\\\\\n\\\\\nZ^{(18)}=-Z_{1}+aZ_{2}+bZ_{3}+Z_{6},\\quad Z^{(19)}=Z_{1}+Z_{2}+Z_{3}+Z_{7},\\quad Z^{(20)}=Z_{1}+2Z_{2}+Z_{3}+Z_{8},\\\\\n\\\\\nZ^{(21)}=mZ_{2}+mZ_{3}+Z_{4}+Z_{5},\\quad Z^{(22)}=2aZ_{2}+aZ_{3}+Z_{4}+Z_{6},\\quad Z^{(23)}=(1+a)Z_{2}+aZ_{3}+Z_{4}+Z_{7},\\\\\n\\\\\nZ^{(24)}=(1+2a)Z_{2}+aZ_{3}+Z_{4}+Z_{8},\\quad Z^{(25)}=aZ_{2}+aZ_{3}+Z_{6}+Z_{7},\\quad Z^{(26)}=Z_{2}+Z_{4}+Z_{7}+mZ_{8},\\\\\n\\\\\nZ^{(27)}=Z_{1}+2aZ_{2}+aZ_{3}+Z_{5}+mZ_{6},\\quad Z^{(28)}=-Z_{1}+2aZ_{2}+aZ_{3}+Z_{5}+mZ_{6},\\\\\n\\\\\nZ^{(29)}=Z_{1}+aZ_{2}+aZ_{3}+Z_{6}+mZ_{7},\\quad Z^{(30)}=-Z_{1}+aZ_{2}+aZ_{3}+Z_{6}+mZ_{7},\\\\\n\\\\\nZ^{(31)}=-Z_{2}-Z_{3}+Z_{4}+Z_{5}+Z_{8},\\quad Z^{(32)}=2Z_{2}+Z_{3}+Z_{4}+mZ_{6}+Z_{7},\\\\\n\\\\\nZ^{(33)}=2aZ_{2}+aZ_{3}+Z_{5}+bZ_{6}+Z_{8},\\quad Z^{(34)}=2aZ_{2}+aZ_{3}+Z_{5}+bZ_{6}-Z_{8},\\\\\n\\\\\n\\end{array}"
+    ],
+    "context": "Z ( 1 ) = Z 1 , Z ( 2 ) = Z 2 , Z ( 3 ) = Z 1 + Z 2 , Z ( 4 ) = Z 1 + Z 8 , Z ( 5 ) = a Z 2 + Z 3 , Z ( 6 ) = Z 7 + a Z 8 , Z ( 7 ) = Z 1 + a Z 2 + Z 3 , Z ( 8 ) = a Z 2 + b Z 3 + Z 4 , Z ( 9 ) = c Z 2 + d Z 3 + Z 5 , Z ( 10 ) = a Z 2 + b Z 3 + Z 6 , Z ( 11 ) = Z 2 + Z 3 + Z 7 , Z ( 12 ) = 2 Z 2 + Z 3 + Z 8 , Z ( 13 ) = Z 4 + Z 5 + a Z 6 , Z ( 14 ) = Z 4 − Z 5 + a Z 6 , Z ( 15 ) = Z 1 + a Z 2 + b Z 3 + Z 5 , Z ( 16 ) = − Z 1 + a Z 2 + b Z 3 + Z 5 , Z ( 17 ) = Z 1 + a Z 2 + b Z 3 + Z 6 , Z ( 18 ) = − Z 1 + a Z 2 + b Z 3 + Z 6 , Z ( 19 ) = Z 1 + Z 2 + Z 3 + Z 7 , Z ( 20 ) = Z 1 + 2 Z 2 + Z 3 + Z 8 , Z ( 21 ) = m Z 2 + m Z 3 + Z 4 + Z 5 , Z ( 22 ) = 2 a Z 2 + a Z 3 + Z 4 + Z 6 , Z ( 23 ) = ( 1 + a ) Z 2 + a Z 3 + Z 4 + Z 7 , Z ( 24 ) = ( 1 + 2 a ) Z 2 + a Z 3 + Z 4 + Z 8 , Z ( 25 ) = a Z 2 + a Z 3 + Z 6 + Z 7 , Z ( 26 ) = Z 2 + Z 4 + Z 7 + m Z 8 , Z ( 27 ) = Z 1 + 2 a Z 2 + a Z 3 + Z 5 + m Z 6 , Z ( 28 ) = − Z 1 + 2 a Z 2 + a Z 3 + Z 5 + m Z 6 , Z ( 29 ) = Z 1 + a Z 2 + a Z 3 + Z 6 + m Z 7 , Z ( 30 ) = − Z 1 + a Z 2 + a Z 3 + Z 6 + m Z 7 , Z ( 31 ) = − Z 2 − Z 3 + Z 4 + Z 5 + Z 8 , Z ( 32 ) = 2 Z 2 + Z 3 + Z 4 + m Z 6 + Z 7 , Z ( 33 ) = 2 a Z 2 + a Z 3 + Z 5 + b Z 6 + Z 8 , Z ( 34 ) = 2 a Z 2 + a Z 3 + Z 5 + b Z 6 − Z 8 , \\begin{array}[]{l}Z^{(1)}=Z_{1},\\quad Z^{(2)}=Z_{2},\\quad Z^{(3)}=Z_{1}+Z_{2},\\quad Z^{(4)}=Z_{1}+Z_{8},\\quad Z^{(5)}=aZ_{2}+Z_{3},\\quad Z^{(6)}=Z_{7}+aZ_{8},\\\\\n\\\\\nZ^{(7)}=Z_{1}+aZ_{2}+Z_{3},\\quad Z^{(8)}=aZ_{2}+bZ_{3}+Z_{4},\\quad Z^{(9)}=cZ_{2}+dZ_{3}+Z_{5},\\quad Z^{(10)}=aZ_{2}+bZ_{3}+Z_{6},\\\\\n\\\\\nZ^{(11)}=Z_{2}+Z_{3}+Z_{7},\\quad Z^{(12)}=2Z_{2}+Z_{3}+Z_{8},\\quad Z^{(13)}=Z_{4}+Z_{5}+aZ_{6},\\quad Z^{(14)}=Z_{4}-Z_{5}+aZ_{6},\\\\\n\\\\\nZ^{(15)}=Z_{1}+aZ_{2}+bZ_{3}+Z_{5},\\quad Z^{(16)}=-Z_{1}+aZ_{2}+bZ_{3}+Z_{5},\\quad Z^{(17)}=Z_{1}+aZ_{2}+bZ_{3}+Z_{6},\\\\\n\\\\\nZ^"
+  },
+  {
+    "location": "S5.E21",
+    "latex": [
+      "Y=Y_{3}+Y_{4}=t\\partial_{t}+\\partial_{u}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi}.\\\\\n\\\\\n"
+    ],
+    "context": "Y = Y 3 + Y 4 = t ∂ t + ∂ u − f ∂ f − g ∂ g − α ∂ α − β ∂ β − γ ∂ γ − ϕ ∂ ϕ . Y=Y_{3}+Y_{4}=t\\partial_{t}+\\partial_{u}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi}.\\\\\n\\\\ (21)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Y=Y_{3}+Y_{4}=t\\partial_{t}+\\partial_{u}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi}.\\\\\n\\\\\n"
+    ],
+    "context": "Y = Y 3 + Y 4 = t ∂ t + ∂ u − f ∂ f − g ∂ g − α ∂ α − β ∂ β − γ ∂ γ − ϕ ∂ ϕ . Y=Y_{3}+Y_{4}=t\\partial_{t}+\\partial_{u}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi}.\\\\\n\\\\ (21)"
+  },
+  {
+    "location": "S5.E22",
+    "latex": [
+      "Z^{(3)}=pr_{(u,\\Psi)}(Y)=\\partial_{u}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi}."
+    ],
+    "context": "Z ( 3 ) = p r ( u , Ψ ) ( Y ) = ∂ u − f ∂ f − g ∂ g − α ∂ α − β ∂ β − γ ∂ γ − ϕ ∂ ϕ . Z^{(3)}=pr_{(u,\\Psi)}(Y)=\\partial_{u}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi}. (22)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Z^{(3)}=pr_{(u,\\Psi)}(Y)=\\partial_{u}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi}."
+    ],
+    "context": "Z ( 3 ) = p r ( u , Ψ ) ( Y ) = ∂ u − f ∂ f − g ∂ g − α ∂ α − β ∂ β − γ ∂ γ − ϕ ∂ ϕ . Z^{(3)}=pr_{(u,\\Psi)}(Y)=\\partial_{u}-f\\partial_{f}-g\\partial_{g}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}-\\phi\\partial_{\\phi}. (22)"
+  },
+  {
+    "location": "S5.Ex17",
+    "latex": [
+      "\\begin{array}[]{ccccc}Z^{(3)}(f-F(u))\\,{|}_{f=F(u)}=0,&&Z^{(3)}(g-G(u))\\,{|}_{g=G(u)}=0,&&Z^{(3)}(\\alpha-A(u))\\,{|}_{\\alpha=A(u)}=0,\\\\\n\\\\\nZ^{(3)}(\\beta-B(u))\\,{|}_{\\beta=B(u)}=0,&&Z^{(3)}(\\gamma-\\Gamma(u))\\,{|}_{\\gamma=\\Gamma(u)}=0,&&Z^{(3)}(\\phi-\\Phi(u))\\,{|}_{\\phi=\\Phi(u)}=0,\\end{array}"
+    ],
+    "context": "Z ( 3 ) ​ ( f − F ⁡ ( u ) ) | f = F ⁡ ( u ) = 0 , Z ( 3 ) ​ ( g − G ⁡ ( u ) ) | g = G ⁡ ( u ) = 0 , Z ( 3 ) ​ ( α − A ⁡ ( u ) ) | α = A ⁡ ( u ) = 0 , Z ( 3 ) ​ ( β − B ⁡ ( u ) ) | β = B ⁡ ( u ) = 0 , Z ( 3 ) ​ ( γ − Γ ⁡ ( u ) ) | γ = Γ ⁡ ( u ) = 0 , Z ( 3 ) ​ ( ϕ − Φ ⁡ ( u ) ) | ϕ = Φ ⁡ ( u ) = 0 , \\begin{array}[]{ccccc}Z^{(3)}(f-F(u))\\,{|}_{f=F(u)}=0,&&Z^{(3)}(g-G(u))\\,{|}_{g=G(u)}=0,&&Z^{(3)}(\\alpha-A(u))\\,{|}_{\\alpha=A(u)}=0,\\\\\n\\\\\nZ^{(3)}(\\beta-B(u))\\,{|}_{\\beta=B(u)}=0,&&Z^{(3)}(\\gamma-\\Gamma(u))\\,{|}_{\\gamma=\\Gamma(u)}=0,&&Z^{(3)}(\\phi-\\Phi(u))\\,{|}_{\\phi=\\Phi(u)}=0,\\end{array}"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{ccccc}Z^{(3)}(f-F(u))\\,{|}_{f=F(u)}=0,&&Z^{(3)}(g-G(u))\\,{|}_{g=G(u)}=0,&&Z^{(3)}(\\alpha-A(u))\\,{|}_{\\alpha=A(u)}=0,\\\\\n\\\\\nZ^{(3)}(\\beta-B(u))\\,{|}_{\\beta=B(u)}=0,&&Z^{(3)}(\\gamma-\\Gamma(u))\\,{|}_{\\gamma=\\Gamma(u)}=0,&&Z^{(3)}(\\phi-\\Phi(u))\\,{|}_{\\phi=\\Phi(u)}=0,\\end{array}"
+    ],
+    "context": "Z ( 3 ) ​ ( f − F ⁡ ( u ) ) | f = F ⁡ ( u ) = 0 , Z ( 3 ) ​ ( g − G ⁡ ( u ) ) | g = G ⁡ ( u ) = 0 , Z ( 3 ) ​ ( α − A ⁡ ( u ) ) | α = A ⁡ ( u ) = 0 , Z ( 3 ) ​ ( β − B ⁡ ( u ) ) | β = B ⁡ ( u ) = 0 , Z ( 3 ) ​ ( γ − Γ ⁡ ( u ) ) | γ = Γ ⁡ ( u ) = 0 , Z ( 3 ) ​ ( ϕ − Φ ⁡ ( u ) ) | ϕ = Φ ⁡ ( u ) = 0 , \\begin{array}[]{ccccc}Z^{(3)}(f-F(u))\\,{|}_{f=F(u)}=0,&&Z^{(3)}(g-G(u))\\,{|}_{g=G(u)}=0,&&Z^{(3)}(\\alpha-A(u))\\,{|}_{\\alpha=A(u)}=0,\\\\\n\\\\\nZ^{(3)}(\\beta-B(u))\\,{|}_{\\beta=B(u)}=0,&&Z^{(3)}(\\gamma-\\Gamma(u))\\,{|}_{\\gamma=\\Gamma(u)}=0,&&Z^{(3)}(\\phi-\\Phi(u))\\,{|}_{\\phi=\\Phi(u)}=0,\\end{array}"
+  },
+  {
+    "location": "S5.Ex18",
+    "latex": [
+      "f=c_{1}e^{-u},\\quad g=c_{2}e^{-u},\\quad\\alpha=c_{3}e^{-u},\\quad\\beta=c_{4}e^{-u},\\quad\\gamma=c_{5}e^{-u},\\quad\\phi=c_{6}e^{-u},"
+    ],
+    "context": "f = c 1 ​ e − u , g = c 2 ​ e − u , α = c 3 ​ e − u , β = c 4 ​ e − u , γ = c 5 ​ e − u , ϕ = c 6 ​ e − u , f=c_{1}e^{-u},\\quad g=c_{2}e^{-u},\\quad\\alpha=c_{3}e^{-u},\\quad\\beta=c_{4}e^{-u},\\quad\\gamma=c_{5}e^{-u},\\quad\\phi=c_{6}e^{-u},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "f=c_{1}e^{-u},\\quad g=c_{2}e^{-u},\\quad\\alpha=c_{3}e^{-u},\\quad\\beta=c_{4}e^{-u},\\quad\\gamma=c_{5}e^{-u},\\quad\\phi=c_{6}e^{-u},"
+    ],
+    "context": "f = c 1 ​ e − u , g = c 2 ​ e − u , α = c 3 ​ e − u , β = c 4 ​ e − u , γ = c 5 ​ e − u , ϕ = c 6 ​ e − u , f=c_{1}e^{-u},\\quad g=c_{2}e^{-u},\\quad\\alpha=c_{3}e^{-u},\\quad\\beta=c_{4}e^{-u},\\quad\\gamma=c_{5}e^{-u},\\quad\\phi=c_{6}e^{-u},"
+  },
+  {
+    "location": "S5.E23",
+    "latex": [
+      "u_{t}+e^{-u}\\left(-c_{1}u_{x}+\\left(c_{3}-c_{6}\\right)u_{xx}+c_{6}u_{x}^{2}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}\\right)=0,"
+    ],
+    "context": "u t + e − u ​ ( − c 1 ​ u x + ( c 3 − c 6 ) ​ u x ​ x + c 6 ​ u x 2 + c 4 ​ u x ​ x ​ x + c 5 ​ u x ​ x ​ x ​ x − c 2 ) = 0 , u_{t}+e^{-u}\\left(-c_{1}u_{x}+\\left(c_{3}-c_{6}\\right)u_{xx}+c_{6}u_{x}^{2}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}\\right)=0, (23)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}+e^{-u}\\left(-c_{1}u_{x}+\\left(c_{3}-c_{6}\\right)u_{xx}+c_{6}u_{x}^{2}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}\\right)=0,"
+    ],
+    "context": "u t + e − u ​ ( − c 1 ​ u x + ( c 3 − c 6 ) ​ u x ​ x + c 6 ​ u x 2 + c 4 ​ u x ​ x ​ x + c 5 ​ u x ​ x ​ x ​ x − c 2 ) = 0 , u_{t}+e^{-u}\\left(-c_{1}u_{x}+\\left(c_{3}-c_{6}\\right)u_{xx}+c_{6}u_{x}^{2}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}\\right)=0, (23)"
+  },
+  {
+    "location": "S5.E24",
+    "latex": [
+      "X_{3}=t\\partial_{t}+\\partial_{u}."
+    ],
+    "context": "X 3 = t ∂ t + ∂ u . X_{3}=t\\partial_{t}+\\partial_{u}. (24) The corresponding invariant solution is written in the form z = x , u = ln ​ | t | + h ⁡ ( z ) , z=x,\\qquad u=\\mbox{ln}\\left|t\\right|+h(z), (25) where h ⁡ ( z ) h(z) must satisfy c 5 ​ h ′′′′ + c 4 ​ h ′′′ + ( c 3 − c 6 ) ​ h ′′ + c 6 ​ ( h ′ ) 2 − c 1 ​ h ′ + e h − c 2 = 0 . {c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+{\\left(c_{3}-c_{6}\\right)}\\,h^{\\prime\\prime}+{c_{6}}\\,\\left(h^{\\prime}\\right)^{2}-{c_{1}}\\,h^{\\prime}+e^{h}-{c_{2}}=0. (26)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "X_{3}=t\\partial_{t}+\\partial_{u}."
+    ],
+    "context": "X 3 = t ∂ t + ∂ u . X_{3}=t\\partial_{t}+\\partial_{u}. (24)"
+  },
+  {
+    "location": "S5.E25",
+    "latex": [
+      "z=x,\\qquad u=\\mbox{ln}\\left|t\\right|+h(z),"
+    ],
+    "context": "X 3 = t ∂ t + ∂ u . X_{3}=t\\partial_{t}+\\partial_{u}. (24) The corresponding invariant solution is written in the form z = x , u = ln ​ | t | + h ⁡ ( z ) , z=x,\\qquad u=\\mbox{ln}\\left|t\\right|+h(z), (25) where h ⁡ ( z ) h(z) must satisfy c 5 ​ h ′′′′ + c 4 ​ h ′′′ + ( c 3 − c 6 ) ​ h ′′ + c 6 ​ ( h ′ ) 2 − c 1 ​ h ′ + e h − c 2 = 0 . {c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+{\\left(c_{3}-c_{6}\\right)}\\,h^{\\prime\\prime}+{c_{6}}\\,\\left(h^{\\prime}\\right)^{2}-{c_{1}}\\,h^{\\prime}+e^{h}-{c_{2}}=0. (26)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "z=x,\\qquad u=\\mbox{ln}\\left|t\\right|+h(z),"
+    ],
+    "context": "z = x , u = ln ​ | t | + h ⁡ ( z ) , z=x,\\qquad u=\\mbox{ln}\\left|t\\right|+h(z), (25)"
+  },
+  {
+    "location": "S5.E26",
+    "latex": [
+      "{c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+{\\left(c_{3}-c_{6}\\right)}\\,h^{\\prime\\prime}+{c_{6}}\\,\\left(h^{\\prime}\\right)^{2}-{c_{1}}\\,h^{\\prime}+e^{h}-{c_{2}}=0."
+    ],
+    "context": "X 3 = t ∂ t + ∂ u . X_{3}=t\\partial_{t}+\\partial_{u}. (24) The corresponding invariant solution is written in the form z = x , u = ln ​ | t | + h ⁡ ( z ) , z=x,\\qquad u=\\mbox{ln}\\left|t\\right|+h(z), (25) where h ⁡ ( z ) h(z) must satisfy c 5 ​ h ′′′′ + c 4 ​ h ′′′ + ( c 3 − c 6 ) ​ h ′′ + c 6 ​ ( h ′ ) 2 − c 1 ​ h ′ + e h − c 2 = 0 . {c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+{\\left(c_{3}-c_{6}\\right)}\\,h^{\\prime\\prime}+{c_{6}}\\,\\left(h^{\\prime}\\right)^{2}-{c_{1}}\\,h^{\\prime}+e^{h}-{c_{2}}=0. (26)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "{c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+{\\left(c_{3}-c_{6}\\right)}\\,h^{\\prime\\prime}+{c_{6}}\\,\\left(h^{\\prime}\\right)^{2}-{c_{1}}\\,h^{\\prime}+e^{h}-{c_{2}}=0."
+    ],
+    "context": "c 5 ​ h ′′′′ + c 4 ​ h ′′′ + ( c 3 − c 6 ) ​ h ′′ + c 6 ​ ( h ′ ) 2 − c 1 ​ h ′ + e h − c 2 = 0 . {c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+{\\left(c_{3}-c_{6}\\right)}\\,h^{\\prime\\prime}+{c_{6}}\\,\\left(h^{\\prime}\\right)^{2}-{c_{1}}\\,h^{\\prime}+e^{h}-{c_{2}}=0. (26)"
+  },
+  {
+    "location": "S5.E27",
+    "latex": [
+      "2c_{5}ww^{\\prime\\prime\\prime}+\\left(c_{5}w^{\\prime}\\pm 2c_{4}\\sqrt{w}\\right)w^{\\prime\\prime}+2\\left(c_{3}-c_{6}\\right)w^{\\prime}+4c_{6}w\\mp 4c_{1}\\sqrt{w}-4c_{2}+4e^{h}=0."
+    ],
+    "context": "2 ​ c 5 ​ w ​ w ′′′ + ( c 5 ​ w ′ ± 2 ​ c 4 ​ w ) ​ w ′′ + 2 ​ ( c 3 − c 6 ) ​ w ′ + 4 ​ c 6 ​ w ∓ 4 ​ c 1 ​ w − 4 ​ c 2 + 4 ​ e h = 0 . 2c_{5}ww^{\\prime\\prime\\prime}+\\left(c_{5}w^{\\prime}\\pm 2c_{4}\\sqrt{w}\\right)w^{\\prime\\prime}+2\\left(c_{3}-c_{6}\\right)w^{\\prime}+4c_{6}w\\mp 4c_{1}\\sqrt{w}-4c_{2}+4e^{h}=0. (27)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "2c_{5}ww^{\\prime\\prime\\prime}+\\left(c_{5}w^{\\prime}\\pm 2c_{4}\\sqrt{w}\\right)w^{\\prime\\prime}+2\\left(c_{3}-c_{6}\\right)w^{\\prime}+4c_{6}w\\mp 4c_{1}\\sqrt{w}-4c_{2}+4e^{h}=0."
+    ],
+    "context": "2 ​ c 5 ​ w ​ w ′′′ + ( c 5 ​ w ′ ± 2 ​ c 4 ​ w ) ​ w ′′ + 2 ​ ( c 3 − c 6 ) ​ w ′ + 4 ​ c 6 ​ w ∓ 4 ​ c 1 ​ w − 4 ​ c 2 + 4 ​ e h = 0 . 2c_{5}ww^{\\prime\\prime\\prime}+\\left(c_{5}w^{\\prime}\\pm 2c_{4}\\sqrt{w}\\right)w^{\\prime\\prime}+2\\left(c_{3}-c_{6}\\right)w^{\\prime}+4c_{6}w\\mp 4c_{1}\\sqrt{w}-4c_{2}+4e^{h}=0. (27)"
+  },
+  {
+    "location": "S5.E28",
+    "latex": [
+      "Y=Y_{4}+Y_{6}=t\\partial_{t}+u\\partial_{u}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}.\\\\\n\\\\\n"
+    ],
+    "context": "Example 2. Let us consider generator Y = Y 4 + Y 6 = t ∂ t + u ∂ u − α ∂ α − β ∂ β − γ ∂ γ . Y=Y_{4}+Y_{6}=t\\partial_{t}+u\\partial_{u}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}.\\\\\n\\\\ (28)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Y=Y_{4}+Y_{6}=t\\partial_{t}+u\\partial_{u}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}.\\\\\n\\\\\n"
+    ],
+    "context": "Y = Y 4 + Y 6 = t ∂ t + u ∂ u − α ∂ α − β ∂ β − γ ∂ γ . Y=Y_{4}+Y_{6}=t\\partial_{t}+u\\partial_{u}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}.\\\\\n\\\\ (28)"
+  },
+  {
+    "location": "S5.E29",
+    "latex": [
+      "Z=\\displaystyle\\left.Z^{(8)}\\right|_{a=1,b=0}=u\\partial_{u}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma},"
+    ],
+    "context": "Z = Z ( 8 ) | a = 1 , b = 0 = u ∂ u − α ∂ α − β ∂ β − γ ∂ γ , Z=\\displaystyle\\left.Z^{(8)}\\right|_{a=1,b=0}=u\\partial_{u}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}, (29)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Z=\\displaystyle\\left.Z^{(8)}\\right|_{a=1,b=0}=u\\partial_{u}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma},"
+    ],
+    "context": "Z = Z ( 8 ) | a = 1 , b = 0 = u ∂ u − α ∂ α − β ∂ β − γ ∂ γ , Z=\\displaystyle\\left.Z^{(8)}\\right|_{a=1,b=0}=u\\partial_{u}-\\alpha\\partial_{\\alpha}-\\beta\\partial_{\\beta}-\\gamma\\partial_{\\gamma}, (29)"
+  },
+  {
+    "location": "S5.Ex19",
+    "latex": [
+      "f=c_{1},\\quad g=c_{2},\\quad\\alpha=\\frac{c_{3}}{u},\\quad\\beta=\\frac{c_{4}}{u},\\quad\\gamma=\\frac{c_{5}}{u},\\quad\\phi=c_{6},"
+    ],
+    "context": "f = c 1 , g = c 2 , α = c 3 u , β = c 4 u , γ = c 5 u , ϕ = c 6 , f=c_{1},\\quad g=c_{2},\\quad\\alpha=\\frac{c_{3}}{u},\\quad\\beta=\\frac{c_{4}}{u},\\quad\\gamma=\\frac{c_{5}}{u},\\quad\\phi=c_{6},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "f=c_{1},\\quad g=c_{2},\\quad\\alpha=\\frac{c_{3}}{u},\\quad\\beta=\\frac{c_{4}}{u},\\quad\\gamma=\\frac{c_{5}}{u},\\quad\\phi=c_{6},"
+    ],
+    "context": "f = c 1 , g = c 2 , α = c 3 u , β = c 4 u , γ = c 5 u , ϕ = c 6 , f=c_{1},\\quad g=c_{2},\\quad\\alpha=\\frac{c_{3}}{u},\\quad\\beta=\\frac{c_{4}}{u},\\quad\\gamma=\\frac{c_{5}}{u},\\quad\\phi=c_{6},"
+  },
+  {
+    "location": "S5.E30",
+    "latex": [
+      "uu_{t}+c_{3}u_{xx}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}u=0,"
+    ],
+    "context": "u ​ u t + c 3 ​ u x ​ x + c 4 ​ u x ​ x ​ x + c 5 ​ u x ​ x ​ x ​ x − c 2 ​ u = 0 , uu_{t}+c_{3}u_{xx}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}u=0, (30)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "uu_{t}+c_{3}u_{xx}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}u=0,"
+    ],
+    "context": "u ​ u t + c 3 ​ u x ​ x + c 4 ​ u x ​ x ​ x + c 5 ​ u x ​ x ​ x ​ x − c 2 ​ u = 0 , uu_{t}+c_{3}u_{xx}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}u=0, (30)"
+  },
+  {
+    "location": "S5.E31",
+    "latex": [
+      "X_{3}=t\\partial_{t}+u\\partial_{u}."
+    ],
+    "context": "X 3 = t ∂ t + u ∂ u . X_{3}=t\\partial_{t}+u\\partial_{u}. (31) The corresponding similarity variable and similarity solution are written in the form z = x , u = t ​ h ​ ( z ) , z=x,\\qquad u=t\\,h(z), (32) where h ⁡ ( z ) h(z) must satisfy c 5 ​ h ′′′′ + c 4 ​ h ′′′ + c 3 ​ h ′′ + h 2 − c 2 ​ h = 0 . {c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+c_{3}\\,h^{\\prime\\prime}+h^{2}-{c_{2}}\\,h=0. (33)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "X_{3}=t\\partial_{t}+u\\partial_{u}."
+    ],
+    "context": "X 3 = t ∂ t + u ∂ u . X_{3}=t\\partial_{t}+u\\partial_{u}. (31)"
+  },
+  {
+    "location": "S5.E32",
+    "latex": [
+      "z=x,\\qquad u=t\\,h(z),"
+    ],
+    "context": "X 3 = t ∂ t + u ∂ u . X_{3}=t\\partial_{t}+u\\partial_{u}. (31) The corresponding similarity variable and similarity solution are written in the form z = x , u = t ​ h ​ ( z ) , z=x,\\qquad u=t\\,h(z), (32) where h ⁡ ( z ) h(z) must satisfy c 5 ​ h ′′′′ + c 4 ​ h ′′′ + c 3 ​ h ′′ + h 2 − c 2 ​ h = 0 . {c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+c_{3}\\,h^{\\prime\\prime}+h^{2}-{c_{2}}\\,h=0. (33)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "z=x,\\qquad u=t\\,h(z),"
+    ],
+    "context": "z = x , u = t ​ h ​ ( z ) , z=x,\\qquad u=t\\,h(z), (32)"
+  },
+  {
+    "location": "S5.E33",
+    "latex": [
+      "{c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+c_{3}\\,h^{\\prime\\prime}+h^{2}-{c_{2}}\\,h=0."
+    ],
+    "context": "X 3 = t ∂ t + u ∂ u . X_{3}=t\\partial_{t}+u\\partial_{u}. (31) The corresponding similarity variable and similarity solution are written in the form z = x , u = t ​ h ​ ( z ) , z=x,\\qquad u=t\\,h(z), (32) where h ⁡ ( z ) h(z) must satisfy c 5 ​ h ′′′′ + c 4 ​ h ′′′ + c 3 ​ h ′′ + h 2 − c 2 ​ h = 0 . {c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+c_{3}\\,h^{\\prime\\prime}+h^{2}-{c_{2}}\\,h=0. (33)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "{c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+c_{3}\\,h^{\\prime\\prime}+h^{2}-{c_{2}}\\,h=0."
+    ],
+    "context": "c 5 ​ h ′′′′ + c 4 ​ h ′′′ + c 3 ​ h ′′ + h 2 − c 2 ​ h = 0 . {c_{5}}\\,h^{\\prime\\prime\\prime\\prime}+{c_{4}}\\,h^{\\prime\\prime\\prime}+c_{3}\\,h^{\\prime\\prime}+h^{2}-{c_{2}}\\,h=0. (33)"
+  },
+  {
+    "location": "S5.E34",
+    "latex": [
+      "2c_{5}ww^{\\prime\\prime\\prime}+\\left(c_{5}w^{\\prime}\\pm 2c_{4}\\sqrt{w}\\right)w^{\\prime\\prime}+2c_{3}w^{\\prime}+4h^{2}-4c_{2}h=0."
+    ],
+    "context": "2 ​ c 5 ​ w ​ w ′′′ + ( c 5 ​ w ′ ± 2 ​ c 4 ​ w ) ​ w ′′ + 2 ​ c 3 ​ w ′ + 4 ​ h 2 − 4 ​ c 2 ​ h = 0 . 2c_{5}ww^{\\prime\\prime\\prime}+\\left(c_{5}w^{\\prime}\\pm 2c_{4}\\sqrt{w}\\right)w^{\\prime\\prime}+2c_{3}w^{\\prime}+4h^{2}-4c_{2}h=0. (34)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "2c_{5}ww^{\\prime\\prime\\prime}+\\left(c_{5}w^{\\prime}\\pm 2c_{4}\\sqrt{w}\\right)w^{\\prime\\prime}+2c_{3}w^{\\prime}+4h^{2}-4c_{2}h=0."
+    ],
+    "context": "2 ​ c 5 ​ w ​ w ′′′ + ( c 5 ​ w ′ ± 2 ​ c 4 ​ w ) ​ w ′′ + 2 ​ c 3 ​ w ′ + 4 ​ h 2 − 4 ​ c 2 ​ h = 0 . 2c_{5}ww^{\\prime\\prime\\prime}+\\left(c_{5}w^{\\prime}\\pm 2c_{4}\\sqrt{w}\\right)w^{\\prime\\prime}+2c_{3}w^{\\prime}+4h^{2}-4c_{2}h=0. (34)"
+  },
+  {
+    "location": "S5.E35",
+    "latex": [
+      "Y=Y_{5}+Y_{6}=x\\partial_{x}+u\\partial_{u}+2f\\partial_{f}+g\\partial_{g}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+3\\phi\\partial_{\\phi}.\\\\\n\\\\\n"
+    ],
+    "context": "Y = Y 5 + Y 6 = x ∂ x + u ∂ u + 2 f ∂ f + g ∂ g + 2 α ∂ α + 3 β ∂ β + 4 γ ∂ γ + 3 ϕ ∂ ϕ . Y=Y_{5}+Y_{6}=x\\partial_{x}+u\\partial_{u}+2f\\partial_{f}+g\\partial_{g}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+3\\phi\\partial_{\\phi}.\\\\\n\\\\ (35)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Y=Y_{5}+Y_{6}=x\\partial_{x}+u\\partial_{u}+2f\\partial_{f}+g\\partial_{g}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+3\\phi\\partial_{\\phi}.\\\\\n\\\\\n"
+    ],
+    "context": "Y = Y 5 + Y 6 = x ∂ x + u ∂ u + 2 f ∂ f + g ∂ g + 2 α ∂ α + 3 β ∂ β + 4 γ ∂ γ + 3 ϕ ∂ ϕ . Y=Y_{5}+Y_{6}=x\\partial_{x}+u\\partial_{u}+2f\\partial_{f}+g\\partial_{g}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+3\\phi\\partial_{\\phi}.\\\\\n\\\\ (35)"
+  },
+  {
+    "location": "S5.E36",
+    "latex": [
+      "Z=\\displaystyle\\left.Z^{(8)}\\right|_{a=0,b=1}=u\\partial_{u}+2f\\partial_{f}+g\\partial_{g}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+3\\phi\\partial_{\\phi}."
+    ],
+    "context": "Z = Z ( 8 ) | a = 0 , b = 1 = u ∂ u + 2 f ∂ f + g ∂ g + 2 α ∂ α + 3 β ∂ β + 4 γ ∂ γ + 3 ϕ ∂ ϕ . Z=\\displaystyle\\left.Z^{(8)}\\right|_{a=0,b=1}=u\\partial_{u}+2f\\partial_{f}+g\\partial_{g}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+3\\phi\\partial_{\\phi}. (36)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Z=\\displaystyle\\left.Z^{(8)}\\right|_{a=0,b=1}=u\\partial_{u}+2f\\partial_{f}+g\\partial_{g}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+3\\phi\\partial_{\\phi}."
+    ],
+    "context": "Z = Z ( 8 ) | a = 0 , b = 1 = u ∂ u + 2 f ∂ f + g ∂ g + 2 α ∂ α + 3 β ∂ β + 4 γ ∂ γ + 3 ϕ ∂ ϕ . Z=\\displaystyle\\left.Z^{(8)}\\right|_{a=0,b=1}=u\\partial_{u}+2f\\partial_{f}+g\\partial_{g}+2\\alpha\\partial_{\\alpha}+3\\beta\\partial_{\\beta}+4\\gamma\\partial_{\\gamma}+3\\phi\\partial_{\\phi}. (36)"
+  },
+  {
+    "location": "S5.Ex20",
+    "latex": [
+      "f=c_{1}u^{2},\\quad g=c_{2}u,\\quad\\alpha=c_{3}u^{2},\\quad\\beta=c_{4}u^{3},\\quad\\gamma=c_{5}u^{4},\\quad\\phi=c_{6}u^{3},"
+    ],
+    "context": "f = c 1 ​ u 2 , g = c 2 ​ u , α = c 3 ​ u 2 , β = c 4 ​ u 3 , γ = c 5 ​ u 4 , ϕ = c 6 ​ u 3 , f=c_{1}u^{2},\\quad g=c_{2}u,\\quad\\alpha=c_{3}u^{2},\\quad\\beta=c_{4}u^{3},\\quad\\gamma=c_{5}u^{4},\\quad\\phi=c_{6}u^{3},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "f=c_{1}u^{2},\\quad g=c_{2}u,\\quad\\alpha=c_{3}u^{2},\\quad\\beta=c_{4}u^{3},\\quad\\gamma=c_{5}u^{4},\\quad\\phi=c_{6}u^{3},"
+    ],
+    "context": "f = c 1 ​ u 2 , g = c 2 ​ u , α = c 3 ​ u 2 , β = c 4 ​ u 3 , γ = c 5 ​ u 4 , ϕ = c 6 ​ u 3 , f=c_{1}u^{2},\\quad g=c_{2}u,\\quad\\alpha=c_{3}u^{2},\\quad\\beta=c_{4}u^{3},\\quad\\gamma=c_{5}u^{4},\\quad\\phi=c_{6}u^{3},"
+  },
+  {
+    "location": "S5.E37",
+    "latex": [
+      "u_{t}+2uu_{x}\\left(c_{1}+3c_{6}u_{x}\\right)+u^{2}u_{xx}\\left(c_{3}+3c_{6}\\right)+c_{4}u^{3}u_{xxx}+c_{5}u^{4}u_{xxxx}-c_{2}u=0,"
+    ],
+    "context": "u t + 2 ​ u ​ u x ​ ( c 1 + 3 ​ c 6 ​ u x ) + u 2 ​ u x ​ x ​ ( c 3 + 3 ​ c 6 ) + c 4 ​ u 3 ​ u x ​ x ​ x + c 5 ​ u 4 ​ u x ​ x ​ x ​ x − c 2 ​ u = 0 , u_{t}+2uu_{x}\\left(c_{1}+3c_{6}u_{x}\\right)+u^{2}u_{xx}\\left(c_{3}+3c_{6}\\right)+c_{4}u^{3}u_{xxx}+c_{5}u^{4}u_{xxxx}-c_{2}u=0, (37)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}+2uu_{x}\\left(c_{1}+3c_{6}u_{x}\\right)+u^{2}u_{xx}\\left(c_{3}+3c_{6}\\right)+c_{4}u^{3}u_{xxx}+c_{5}u^{4}u_{xxxx}-c_{2}u=0,"
+    ],
+    "context": "u t + 2 ​ u ​ u x ​ ( c 1 + 3 ​ c 6 ​ u x ) + u 2 ​ u x ​ x ​ ( c 3 + 3 ​ c 6 ) + c 4 ​ u 3 ​ u x ​ x ​ x + c 5 ​ u 4 ​ u x ​ x ​ x ​ x − c 2 ​ u = 0 , u_{t}+2uu_{x}\\left(c_{1}+3c_{6}u_{x}\\right)+u^{2}u_{xx}\\left(c_{3}+3c_{6}\\right)+c_{4}u^{3}u_{xxx}+c_{5}u^{4}u_{xxxx}-c_{2}u=0, (37)"
+  },
+  {
+    "location": "S5.E38",
+    "latex": [
+      "X_{3}=x\\partial_{x}+u\\partial_{u}."
+    ],
+    "context": "X 3 = x ∂ x + u ∂ u . X_{3}=x\\partial_{x}+u\\partial_{u}. (38) The corresponding invariant solution is written in the form z = t , u = x ​ h ​ ( z ) , z=t,\\qquad u=x\\,h(z), (39) where h ⁡ ( z ) h(z) must satisfy h ′ = − 6 ​ c 6 ​ h 3 − 2 ​ c 1 ​ h 2 + c 2 ​ h . \\begin{array}[]{l}h^{\\prime}=-6c_{6}h^{3}-2{c_{1}}h^{2}+{c_{2}}h.\\end{array} (40) If c 6 = 0 c_{6}=0 , equation ( 40 ) is the Bernoulli equation, thus we can obtain the corresponding solution h h of the ODE h ⁡ ( z ) = c 2 ​ e c 2 ​ z 2 ​ c 1 ​ e c 2 ​ z − e c 0 ​ c 2 , h(z)=\\frac{c_{2}e^{c_{2}z}}{2c_{1}e^{c_{2}z}-e^{c_{0}c_{2}}}, where c 0 c_{0} is a constant of integration. In the case that c 6 ≠ 0 c_{6}\\neq 0 , equation ( 40 ) is an Abel equation of the first kind, more specifically is a separable equation whose implicit solution is given by"
+  },
+  {
+    "location": null,
+    "latex": [
+      "X_{3}=x\\partial_{x}+u\\partial_{u}."
+    ],
+    "context": "X 3 = x ∂ x + u ∂ u . X_{3}=x\\partial_{x}+u\\partial_{u}. (38)"
+  },
+  {
+    "location": "S5.E39",
+    "latex": [
+      "z=t,\\qquad u=x\\,h(z),"
+    ],
+    "context": "X 3 = x ∂ x + u ∂ u . X_{3}=x\\partial_{x}+u\\partial_{u}. (38) The corresponding invariant solution is written in the form z = t , u = x ​ h ​ ( z ) , z=t,\\qquad u=x\\,h(z), (39) where h ⁡ ( z ) h(z) must satisfy h ′ = − 6 ​ c 6 ​ h 3 − 2 ​ c 1 ​ h 2 + c 2 ​ h . \\begin{array}[]{l}h^{\\prime}=-6c_{6}h^{3}-2{c_{1}}h^{2}+{c_{2}}h.\\end{array} (40) If c 6 = 0 c_{6}=0 , equation ( 40 ) is the Bernoulli equation, thus we can obtain the corresponding solution h h of the ODE h ⁡ ( z ) = c 2 ​ e c 2 ​ z 2 ​ c 1 ​ e c 2 ​ z − e c 0 ​ c 2 , h(z)=\\frac{c_{2}e^{c_{2}z}}{2c_{1}e^{c_{2}z}-e^{c_{0}c_{2}}}, where c 0 c_{0} is a constant of integration. In the case that c 6 ≠ 0 c_{6}\\neq 0 , equation ( 40 ) is an Abel equation of the first kind, more specifically is a separable equation whose implicit solution is given by"
+  },
+  {
+    "location": null,
+    "latex": [
+      "z=t,\\qquad u=x\\,h(z),"
+    ],
+    "context": "z = t , u = x ​ h ​ ( z ) , z=t,\\qquad u=x\\,h(z), (39)"
+  },
+  {
+    "location": "S5.E40",
+    "latex": [
+      "\\begin{array}[]{l}h^{\\prime}=-6c_{6}h^{3}-2{c_{1}}h^{2}+{c_{2}}h.\\end{array}"
+    ],
+    "context": "X 3 = x ∂ x + u ∂ u . X_{3}=x\\partial_{x}+u\\partial_{u}. (38) The corresponding invariant solution is written in the form z = t , u = x ​ h ​ ( z ) , z=t,\\qquad u=x\\,h(z), (39) where h ⁡ ( z ) h(z) must satisfy h ′ = − 6 ​ c 6 ​ h 3 − 2 ​ c 1 ​ h 2 + c 2 ​ h . \\begin{array}[]{l}h^{\\prime}=-6c_{6}h^{3}-2{c_{1}}h^{2}+{c_{2}}h.\\end{array} (40) If c 6 = 0 c_{6}=0 , equation ( 40 ) is the Bernoulli equation, thus we can obtain the corresponding solution h h of the ODE h ⁡ ( z ) = c 2 ​ e c 2 ​ z 2 ​ c 1 ​ e c 2 ​ z − e c 0 ​ c 2 , h(z)=\\frac{c_{2}e^{c_{2}z}}{2c_{1}e^{c_{2}z}-e^{c_{0}c_{2}}}, where c 0 c_{0} is a constant of integration. In the case that c 6 ≠ 0 c_{6}\\neq 0 , equation ( 40 ) is an Abel equation of the first kind, more specifically is a separable equation whose implicit solution is given by"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{l}h^{\\prime}=-6c_{6}h^{3}-2{c_{1}}h^{2}+{c_{2}}h.\\end{array}"
+    ],
+    "context": "h ′ = − 6 ​ c 6 ​ h 3 − 2 ​ c 1 ​ h 2 + c 2 ​ h . \\begin{array}[]{l}h^{\\prime}=-6c_{6}h^{3}-2{c_{1}}h^{2}+{c_{2}}h.\\end{array} (40)"
+  },
+  {
+    "location": "S5.Ex21",
+    "latex": [
+      "h(z)=\\frac{c_{2}e^{c_{2}z}}{2c_{1}e^{c_{2}z}-e^{c_{0}c_{2}}},"
+    ],
+    "context": "X 3 = x ∂ x + u ∂ u . X_{3}=x\\partial_{x}+u\\partial_{u}. (38) The corresponding invariant solution is written in the form z = t , u = x ​ h ​ ( z ) , z=t,\\qquad u=x\\,h(z), (39) where h ⁡ ( z ) h(z) must satisfy h ′ = − 6 ​ c 6 ​ h 3 − 2 ​ c 1 ​ h 2 + c 2 ​ h . \\begin{array}[]{l}h^{\\prime}=-6c_{6}h^{3}-2{c_{1}}h^{2}+{c_{2}}h.\\end{array} (40) If c 6 = 0 c_{6}=0 , equation ( 40 ) is the Bernoulli equation, thus we can obtain the corresponding solution h h of the ODE h ⁡ ( z ) = c 2 ​ e c 2 ​ z 2 ​ c 1 ​ e c 2 ​ z − e c 0 ​ c 2 , h(z)=\\frac{c_{2}e^{c_{2}z}}{2c_{1}e^{c_{2}z}-e^{c_{0}c_{2}}}, where c 0 c_{0} is a constant of integration. In the case that c 6 ≠ 0 c_{6}\\neq 0 , equation ( 40 ) is an Abel equation of the first kind, more specifically is a separable equation whose implicit solution is given by"
+  },
+  {
+    "location": null,
+    "latex": [
+      "h(z)=\\frac{c_{2}e^{c_{2}z}}{2c_{1}e^{c_{2}z}-e^{c_{0}c_{2}}},"
+    ],
+    "context": "h ⁡ ( z ) = c 2 ​ e c 2 ​ z 2 ​ c 1 ​ e c 2 ​ z − e c 0 ​ c 2 , h(z)=\\frac{c_{2}e^{c_{2}z}}{2c_{1}e^{c_{2}z}-e^{c_{0}c_{2}}},"
+  },
+  {
+    "location": "S5.Ex22",
+    "latex": [
+      "\\displaystyle\\log\\left(2h\\left(3c_{6}y+c_{1}\\right)-c_{2}\\right)-2\\log(h)+\\frac{2\\,c_{1}\\arctan\\left(\\frac{6c_{6}h+c_{1}}{\\sqrt{-c_{1}^{2}-6c_{2}c_{6}}}\\right)}{\\sqrt{-c_{1}^{2}-6c_{2}c_{6}}}=-2c_{2}z+c_{0},"
+    ],
+    "context": "log ⁡ ( 2 ​ h ​ ( 3 ​ c 6 ​ y + c 1 ) − c 2 ) − 2 ​ log ⁡ ( h ) + 2 ​ c 1 ​ arctan ⁡ ( 6 ​ c 6 ​ h + c 1 − c 1 2 − 6 ​ c 2 ​ c 6 ) − c 1 2 − 6 ​ c 2 ​ c 6 = − 2 ​ c 2 ​ z + c 0 , \\displaystyle\\log\\left(2h\\left(3c_{6}y+c_{1}\\right)-c_{2}\\right)-2\\log(h)+\\frac{2\\,c_{1}\\arctan\\left(\\frac{6c_{6}h+c_{1}}{\\sqrt{-c_{1}^{2}-6c_{2}c_{6}}}\\right)}{\\sqrt{-c_{1}^{2}-6c_{2}c_{6}}}=-2c_{2}z+c_{0},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\displaystyle\\log\\left(2h\\left(3c_{6}y+c_{1}\\right)-c_{2}\\right)-2\\log(h)+\\frac{2\\,c_{1}\\arctan\\left(\\frac{6c_{6}h+c_{1}}{\\sqrt{-c_{1}^{2}-6c_{2}c_{6}}}\\right)}{\\sqrt{-c_{1}^{2}-6c_{2}c_{6}}}=-2c_{2}z+c_{0},"
+    ],
+    "context": "log ⁡ ( 2 ​ h ​ ( 3 ​ c 6 ​ y + c 1 ) − c 2 ) − 2 ​ log ⁡ ( h ) + 2 ​ c 1 ​ arctan ⁡ ( 6 ​ c 6 ​ h + c 1 − c 1 2 − 6 ​ c 2 ​ c 6 ) − c 1 2 − 6 ​ c 2 ​ c 6 = − 2 ​ c 2 ​ z + c 0 , \\displaystyle\\log\\left(2h\\left(3c_{6}y+c_{1}\\right)-c_{2}\\right)-2\\log(h)+\\frac{2\\,c_{1}\\arctan\\left(\\frac{6c_{6}h+c_{1}}{\\sqrt{-c_{1}^{2}-6c_{2}c_{6}}}\\right)}{\\sqrt{-c_{1}^{2}-6c_{2}c_{6}}}=-2c_{2}z+c_{0},"
+  },
+  {
+    "location": "S5.E41",
+    "latex": [
+      "Y=Y_{3}+Y_{7}+Y_{8}=t\\partial_{x}+\\partial_{u}+u\\partial_{f}+\\partial_{\\alpha}-u\\partial_{\\phi},\\\\\n\\\\\n"
+    ],
+    "context": "Y = Y 3 + Y 7 + Y 8 = t ∂ x + ∂ u + u ∂ f + ∂ α − u ∂ ϕ , Y=Y_{3}+Y_{7}+Y_{8}=t\\partial_{x}+\\partial_{u}+u\\partial_{f}+\\partial_{\\alpha}-u\\partial_{\\phi},\\\\\n\\\\ (41)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Y=Y_{3}+Y_{7}+Y_{8}=t\\partial_{x}+\\partial_{u}+u\\partial_{f}+\\partial_{\\alpha}-u\\partial_{\\phi},\\\\\n\\\\\n"
+    ],
+    "context": "Y = Y 3 + Y 7 + Y 8 = t ∂ x + ∂ u + u ∂ f + ∂ α − u ∂ ϕ , Y=Y_{3}+Y_{7}+Y_{8}=t\\partial_{x}+\\partial_{u}+u\\partial_{f}+\\partial_{\\alpha}-u\\partial_{\\phi},\\\\\n\\\\ (41)"
+  },
+  {
+    "location": "S5.E42",
+    "latex": [
+      "Z=\\displaystyle\\left.Z^{(27)}\\right|_{a=0,m=1}=\\partial_{u}+u\\partial_{f}+\\partial_{\\alpha}-u\\partial_{\\phi}."
+    ],
+    "context": "Z = Z ( 27 ) | a = 0 , m = 1 = ∂ u + u ∂ f + ∂ α − u ∂ ϕ . Z=\\displaystyle\\left.Z^{(27)}\\right|_{a=0,m=1}=\\partial_{u}+u\\partial_{f}+\\partial_{\\alpha}-u\\partial_{\\phi}. (42)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "Z=\\displaystyle\\left.Z^{(27)}\\right|_{a=0,m=1}=\\partial_{u}+u\\partial_{f}+\\partial_{\\alpha}-u\\partial_{\\phi}."
+    ],
+    "context": "Z = Z ( 27 ) | a = 0 , m = 1 = ∂ u + u ∂ f + ∂ α − u ∂ ϕ . Z=\\displaystyle\\left.Z^{(27)}\\right|_{a=0,m=1}=\\partial_{u}+u\\partial_{f}+\\partial_{\\alpha}-u\\partial_{\\phi}. (42)"
+  },
+  {
+    "location": "S5.Ex23",
+    "latex": [
+      "f=\\frac{u^{2}}{2}+c_{1},\\quad g=c_{2},\\quad\\alpha=u+c_{3},\\quad\\beta=c_{4},\\quad\\gamma=c_{5},\\quad\\phi=-\\frac{u^{2}}{2}+c_{6},"
+    ],
+    "context": "f = u 2 2 + c 1 , g = c 2 , α = u + c 3 , β = c 4 , γ = c 5 , ϕ = − u 2 2 + c 6 , f=\\frac{u^{2}}{2}+c_{1},\\quad g=c_{2},\\quad\\alpha=u+c_{3},\\quad\\beta=c_{4},\\quad\\gamma=c_{5},\\quad\\phi=-\\frac{u^{2}}{2}+c_{6},"
+  },
+  {
+    "location": null,
+    "latex": [
+      "f=\\frac{u^{2}}{2}+c_{1},\\quad g=c_{2},\\quad\\alpha=u+c_{3},\\quad\\beta=c_{4},\\quad\\gamma=c_{5},\\quad\\phi=-\\frac{u^{2}}{2}+c_{6},"
+    ],
+    "context": "f = u 2 2 + c 1 , g = c 2 , α = u + c 3 , β = c 4 , γ = c 5 , ϕ = − u 2 2 + c 6 , f=\\frac{u^{2}}{2}+c_{1},\\quad g=c_{2},\\quad\\alpha=u+c_{3},\\quad\\beta=c_{4},\\quad\\gamma=c_{5},\\quad\\phi=-\\frac{u^{2}}{2}+c_{6},"
+  },
+  {
+    "location": "S5.E43",
+    "latex": [
+      "u_{t}+uu_{x}+c_{3}u_{xx}-u_{x}^{2}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}=0,"
+    ],
+    "context": "u t + u ​ u x + c 3 ​ u x ​ x − u x 2 + c 4 ​ u x ​ x ​ x + c 5 ​ u x ​ x ​ x ​ x − c 2 = 0 , u_{t}+uu_{x}+c_{3}u_{xx}-u_{x}^{2}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}=0, (43)"
+  },
+  {
+    "location": null,
+    "latex": [
+      "u_{t}+uu_{x}+c_{3}u_{xx}-u_{x}^{2}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}=0,"
+    ],
+    "context": "u t + u ​ u x + c 3 ​ u x ​ x − u x 2 + c 4 ​ u x ​ x ​ x + c 5 ​ u x ​ x ​ x ​ x − c 2 = 0 , u_{t}+uu_{x}+c_{3}u_{xx}-u_{x}^{2}+c_{4}u_{xxx}+c_{5}u_{xxxx}-c_{2}=0, (43)"
+  },
+  {
+    "location": "S5.E44",
+    "latex": [
+      "X_{3}=t\\partial_{x}+\\partial_{u}."
+    ],
+    "context": "X 3 = t ∂ x + ∂ u . X_{3}=t\\partial_{x}+\\partial_{u}. (44) The corresponding invariant solution is written in the form z = t , u = x t + h ⁡ ( z ) , z=t,\\qquad u=\\frac{x}{t}+h(z), (45) where h ⁡ ( z ) h(z) must satisfy z 2 ​ h ′ − c 2 ​ z 2 + h ​ z − 1 = 0 . \\begin{array}[]{l}z^{2}h^{\\prime}-{c_{2}}\\,z^{2}+h\\,z-1=0.\\end{array} (46) For this reduction, the ODE is a first order equation whose solution is h ⁡ ( z ) = c 2 ​ z 2 + ln ⁡ ( z ) + c 0 z , h\\left(z\\right)=\\displaystyle\\frac{c_{2}z}{2}+\\frac{\\ln\\left(z\\right)+{c_{0}}}{z}, where c 0 c_{0} is a constant of integration. Undoing transformation ( 45 ), we obtain a solution of equation ( 43 ) which is given by"
+  },
+  {
+    "location": null,
+    "latex": [
+      "X_{3}=t\\partial_{x}+\\partial_{u}."
+    ],
+    "context": "X 3 = t ∂ x + ∂ u . X_{3}=t\\partial_{x}+\\partial_{u}. (44)"
+  },
+  {
+    "location": "S5.E45",
+    "latex": [
+      "z=t,\\qquad u=\\frac{x}{t}+h(z),"
+    ],
+    "context": "X 3 = t ∂ x + ∂ u . X_{3}=t\\partial_{x}+\\partial_{u}. (44) The corresponding invariant solution is written in the form z = t , u = x t + h ⁡ ( z ) , z=t,\\qquad u=\\frac{x}{t}+h(z), (45) where h ⁡ ( z ) h(z) must satisfy z 2 ​ h ′ − c 2 ​ z 2 + h ​ z − 1 = 0 . \\begin{array}[]{l}z^{2}h^{\\prime}-{c_{2}}\\,z^{2}+h\\,z-1=0.\\end{array} (46) For this reduction, the ODE is a first order equation whose solution is h ⁡ ( z ) = c 2 ​ z 2 + ln ⁡ ( z ) + c 0 z , h\\left(z\\right)=\\displaystyle\\frac{c_{2}z}{2}+\\frac{\\ln\\left(z\\right)+{c_{0}}}{z}, where c 0 c_{0} is a constant of integration. Undoing transformation ( 45 ), we obtain a solution of equation ( 43 ) which is given by"
+  },
+  {
+    "location": null,
+    "latex": [
+      "z=t,\\qquad u=\\frac{x}{t}+h(z),"
+    ],
+    "context": "z = t , u = x t + h ⁡ ( z ) , z=t,\\qquad u=\\frac{x}{t}+h(z), (45)"
+  },
+  {
+    "location": "S5.E46",
+    "latex": [
+      "\\begin{array}[]{l}z^{2}h^{\\prime}-{c_{2}}\\,z^{2}+h\\,z-1=0.\\end{array}"
+    ],
+    "context": "X 3 = t ∂ x + ∂ u . X_{3}=t\\partial_{x}+\\partial_{u}. (44) The corresponding invariant solution is written in the form z = t , u = x t + h ⁡ ( z ) , z=t,\\qquad u=\\frac{x}{t}+h(z), (45) where h ⁡ ( z ) h(z) must satisfy z 2 ​ h ′ − c 2 ​ z 2 + h ​ z − 1 = 0 . \\begin{array}[]{l}z^{2}h^{\\prime}-{c_{2}}\\,z^{2}+h\\,z-1=0.\\end{array} (46) For this reduction, the ODE is a first order equation whose solution is h ⁡ ( z ) = c 2 ​ z 2 + ln ⁡ ( z ) + c 0 z , h\\left(z\\right)=\\displaystyle\\frac{c_{2}z}{2}+\\frac{\\ln\\left(z\\right)+{c_{0}}}{z}, where c 0 c_{0} is a constant of integration. Undoing transformation ( 45 ), we obtain a solution of equation ( 43 ) which is given by"
+  },
+  {
+    "location": null,
+    "latex": [
+      "\\begin{array}[]{l}z^{2}h^{\\prime}-{c_{2}}\\,z^{2}+h\\,z-1=0.\\end{array}"
+    ],
+    "context": "z 2 ​ h ′ − c 2 ​ z 2 + h ​ z − 1 = 0 . \\begin{array}[]{l}z^{2}h^{\\prime}-{c_{2}}\\,z^{2}+h\\,z-1=0.\\end{array} (46)"
+  },
+  {
+    "location": "S5.Ex24",
+    "latex": [
+      "h\\left(z\\right)=\\displaystyle\\frac{c_{2}z}{2}+\\frac{\\ln\\left(z\\right)+{c_{0}}}{z},"
+    ],
+    "context": "X 3 = t ∂ x + ∂ u . X_{3}=t\\partial_{x}+\\partial_{u}. (44) The corresponding invariant solution is written in the form z = t , u = x t + h ⁡ ( z ) , z=t,\\qquad u=\\frac{x}{t}+h(z), (45) where h ⁡ ( z ) h(z) must satisfy z 2 ​ h ′ − c 2 ​ z 2 + h ​ z − 1 = 0 . \\begin{array}[]{l}z^{2}h^{\\prime}-{c_{2}}\\,z^{2}+h\\,z-1=0.\\end{array} (46) For this reduction, the ODE is a first order equation whose solution is h ⁡ ( z ) = c 2 ​ z 2 + ln ⁡ ( z ) + c 0 z , h\\left(z\\right)=\\displaystyle\\frac{c_{2}z}{2}+\\frac{\\ln\\left(z\\right)+{c_{0}}}{z}, where c 0 c_{0} is a constant of integration. Undoing transformation ( 45 ), we obtain a solution of equation ( 43 ) which is given by"
+  },
+  {
+    "location": null,
+    "latex": [
+      "h\\left(z\\right)=\\displaystyle\\frac{c_{2}z}{2}+\\frac{\\ln\\left(z\\right)+{c_{0}}}{z},"
+    ],
+    "context": "h ⁡ ( z ) = c 2 ​ z 2 + ln ⁡ ( z ) + c 0 z , h\\left(z\\right)=\\displaystyle\\frac{c_{2}z}{2}+\\frac{\\ln\\left(z\\right)+{c_{0}}}{z},"
+  },
+  {
+    "location": "S5.Ex25",
+    "latex": [
+      "u\\left(t,x\\right)=\\displaystyle\\frac{c_{2}t}{2}+\\frac{x+\\ln\\left(t\\right)+{c_{0}}}{t}."
+    ],
+    "context": "u ⁡ ( t , x ) = c 2 ​ t 2 + x + ln ⁡ ( t ) + c 0 t . u\\left(t,x\\right)=\\displaystyle\\frac{c_{2}t}{2}+\\frac{x+\\ln\\left(t\\right)+{c_{0}}}{t}."
+  },
+  {
+    "location": null,
+    "latex": [
+      "u\\left(t,x\\right)=\\displaystyle\\frac{c_{2}t}{2}+\\frac{x+\\ln\\left(t\\right)+{c_{0}}}{t}."
+    ],
+    "context": "u ⁡ ( t , x ) = c 2 ​ t 2 + x + ln ⁡ ( t ) + c 0 t . u\\left(t,x\\right)=\\displaystyle\\frac{c_{2}t}{2}+\\frac{x+\\ln\\left(t\\right)+{c_{0}}}{t}."
+  }
+]

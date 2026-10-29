@@ -9,6 +9,9 @@
 | [`formulas/pde/`](formulas/pde/) | 1500 条 PDE、原有 55,644 条非 PDE 公式、来源与筛查记录。当前上游实验只使用 PDE。 |
 | [`formulas/eqgpt/PDE_dataset_0725.xlsx`](formulas/eqgpt/PDE_dataset_0725.xlsx) | EqGPT 原作者的 221 条公式。 |
 | [`formulas/eqgpt/augmented/`](formulas/eqgpt/augmented/) | 八案例下游实验实际使用的增强训练序列及目标排除记录，各案例分别保存。 |
+| [`formulas/gre_benchmark_filtered/`](formulas/gre_benchmark_filtered/) | 新的独立外部 PDE benchmark（2,045 条）；来源采集记录位于 `gre_external/`。 |
+| [`formulas/gre_benchmark_merged/`](formulas/gre_benchmark_merged/) | 另一份 GRE 合并资源，合并外部公式与原 1500 条中的通过项；不是新外部 benchmark 的独立清单。 |
+| [`formulas/expanded_downstream_80_v1/`](formulas/expanded_downstream_80_v1/) | 新实验实际使用的 1,855 条共同训练来源及 59,360 条配对增强样本；含原 212 条非目标 EqGPT 公式和 1,643 条新 benchmark 公式。 |
 | [`formulas/experiment_inputs/`](formulas/experiment_inputs/) | 各次上游实验使用的公式。 |
 | [`cases/`](cases/) | 八个案例的原始 MAT、CSV、NPY 数据及作者的数据说明。 |
 | [`mlp_cache/`](mlp_cache/) | 各案例已拟合的 MLP、采样坐标、预测值和拟合质量记录。 |
@@ -55,6 +58,17 @@ PYTHONPATH=src python scripts/eqgpt/使用已训练模型.py --download
 ## 来源
 
 八案例数据及公式表来自 [EqGPT 原作者仓库](https://github.com/woshixuhao/EqGPT)。版本、许可和原始文件校验值见 [`eqgpt_original/provenance.json`](../eqgpt_original/provenance.json)。原版程序在 [`eqgpt_original/code/`](../eqgpt_original/code/)，包含完整 PINN 流程。
+
+### 两套 PDE benchmark 的区别
+
+仓库保留两个用途相关、来源不同的公式 benchmark，二者均可转换为 GRE 结构，但不能视为同一数据集的两个名字：
+
+| 名称 | 来源与规模 | 在下游实验中的用途 |
+|---|---|---|
+| 原 EqGPT benchmark | 数学手册《Nonlinear Partial Differential Equations for Scientists and Engineers》中的 221 条 PDE；每个测试案例排除目标结构及同结构变体后，旧实验使用 212 条。 | `experiments/downstream/` 的旧版训练语料。 |
+| 新外部 benchmark | 从论文、公开数据和 PDE 发现 benchmark 收集、转换并审查的公式；筛查后 2,045 条，80 容量共同筛选后纳入新训练池 1,643 条。 | 与原 EqGPT 排除目标后的 212 条合并，构成新实验 1,855 条来源。 |
+
+新外部 benchmark 的独立清单和结构检查见 [`gre_benchmark_filtered/`](formulas/gre_benchmark_filtered/) 及 [`gre_benchmark_audit_v2/`](formulas/gre_benchmark_audit_v2/)。另一个 `gre_benchmark_merged/` 文件集是外部公式与原 1500 条 PDE 通过项的 GRE 合并资源，不是新外部 benchmark 的独立清单。新下游实际训练子集、来源 ID 和增强配对见 [`expanded_downstream_80_v1/`](formulas/expanded_downstream_80_v1/)。80 容量筛选只决定本实验的训练子集；它没有删除或改写新 benchmark 原始清单，也没有修改旧 221 条 benchmark。新训练子集完整排除八个测试目标及审查出的同结构目标，审计细节见其 `audit_pass1.json`、`audit_pass2.json`。
 
 原版代码需要的数据路径和公式表路径保留了相对链接，实际文件都在 `data/`。历史日志中的旧目录名保留原样。
 

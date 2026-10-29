@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "input_records": 2049,
+  "retained": 2045,
+  "excluded": 4,
+  "all_retained_replayed": true,
+  "no_exact_or_high_target_like_retained": true,
+  "all_exclusions_have_explicit_case_and_extra_term_count": true,
+  "old_external_benchmark_untouched": true
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": {
+    "corpus_counts": true,
+    "source_partition": true,
+    "audit_pass1.json": true,
+    "audit_pass2.json": true,
+    "independent_benchmark_audit": true,
+    "external_benchmark_size": true,
+    "formal_run_complete": true,
+    "32_search_results": true,
+    "all_search_budgets": true,
+    "per_arm_fast_summaries": true,
+    "complete_structured_result": true,
+    "36_local_checkpoint_hashes": true,
+    "all_pretrain_records": true,
+    "all_case_completions": true,
+    "old_benchmark_and_experiment_unchanged": true
+  },
+  "round": 2
+}

@@ -42,8 +42,10 @@ data/
 | `experiments/upstream_vocab_size/` | 上游词表大小实验。 |
 | `experiments/upstream/` | 上游日志。 |
 | `experiments/downstream/` | 下游八案例实验。 |
+| `experiments/expanded_downstream_80_v1/` | 扩大语料下游八案例实验（独立版本，80 token 容量）。 |
 | `reports/upstream/` | 上游结果汇总。 |
 | `reports/downstream/` | 下游结果汇总。 |
+| `reports/expanded_downstream_80_v1/` | 扩大语料实验结果、旧实验逐案例对照和完整性核验。 |
 | `reports/vocab_usage/` | token 使用统计。 |
 
 ## 分词器代码与词表
@@ -119,6 +121,14 @@ PYTHONPATH=src python scripts/当前四分词器.py hard_ast_bpe 'u_t+u_x=0'
 [结果汇总](reports/downstream/对比结果.csv) · [逐案例结果和日志](experiments/downstream/) · [运行脚本](scripts/eqgpt/fast_reward_case.py)
 
 已训练的 36 份 Transformer 权重在 [GitHub Release](https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/eqgpt-fast-20261022-weights-v1)。使用方法见 [模型加载说明](scripts/eqgpt/README_权重.md)，无需重新训练已有案例的 MLP。
+
+### 扩大语料版本（独立实验）
+
+扩大语料实验单独保存在 [`experiments/expanded_downstream_80_v1/`](experiments/expanded_downstream_80_v1/)，不会覆盖上面的旧实验。两套实验使用相同八个已知 PDE 案例、四个模型 arm、25 epoch、种子 525、3 轮×200 次搜索及每轮 2 epoch continuation；新版本将训练/搜索容量从 50 提高到 80，并以 1,855 条共同训练源（1,643 条新外部 benchmark + 原有 212 条非目标 EqGPT 公式）替代旧实验每个目标排除后使用的 212 条公式。新旧语料、增广方法、Hard 输入表示和搜索解析路径也有变化，详细差异见[对照报告](reports/expanded_downstream_80_v1/comparison_previous_zh.md)。因此两轮结果不能解释为只增加语料量的单变量实验。
+
+两个 benchmark 是不同来源的公式集：旧 benchmark 是 EqGPT 手册中的 221 条 PDE 公式；新外部 benchmark 是经来源和结构审查的独立公式集，容量筛选前 2,045 条，80 容量共同筛选后实际训练使用其中 1,643 条。新语料另外保留旧 benchmark 排除八个测试目标后的 212 条公式，故本次总训练池为 1,855 条。两个 benchmark 共用 GRE 结构表示和八案例测试集，但来源、规模和用途不同；旧目录和旧结果均保留。GRE 合并资源 `gre_benchmark_merged/` 是外部公式与原 1500 条通过项的合并文件集，不是新外部 benchmark 清单。组成、排除与来源见[数据说明](data/README.md)和[新外部 benchmark 说明](data/formulas/gre_benchmark_filtered/README.md)。
+
+新版本的逐案例候选、训练记录、配置、词表和结构化运行记录见实验目录；每个模型 arm 均有 `fast_summary.json`，完整结构化结果见[完整结果 JSON](reports/expanded_downstream_80_v1/完整结果.json)。主要结论见[实验报告](reports/expanded_downstream_80_v1/report_zh.md)，新旧逐项比较见[对照 CSV](reports/expanded_downstream_80_v1/comparison_previous.csv)。36 份训练后 Transformer 权重约 2.78 GB，和旧实验相同，通过[独立 GitHub Release](https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/expanded-downstream-80-v1-weights)分发，不放入 Git 历史；每个权重的 SHA-256 和大小见 [`weight_manifest.json`](experiments/expanded_downstream_80_v1/weight_manifest.json)，下载和校验命令见[实验 README](experiments/expanded_downstream_80_v1/README.md)。
 
 ## 数据与参考资料
 

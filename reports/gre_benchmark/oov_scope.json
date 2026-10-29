@@ -1,0 +1,29 @@
+{
+  "corpus_unique_bytes": 90,
+  "corpus_characters": "\t\n\r !&'()*+,-./012345678:;<=>ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~",
+  "declared_base_bytes": 91,
+  "reserved_but_absent_bytes": [
+    57
+  ],
+  "current_corpus_minimum_single_byte_content_ids": 90,
+  "controls": 3,
+  "minimum_current_corpus_total_ids_without_full_digit_reserve": 93,
+  "independently_trained_90_base_128_total_model_roundtrip_all1500": true,
+  "current_protocol_initial_ids": 94,
+  "arbitrary_UTF8_lossless_fallback_base_bytes": 256,
+  "universal_91_claim": false,
+  "counterexamples": [
+    {
+      "latex": "\\text{what?}",
+      "error": "Input outside compact alphabet: 0x3f"
+    },
+    {
+      "latex": "\\#",
+      "error": "Input outside compact alphabet: 0x23"
+    },
+    {
+      "latex": "u_t+αu_x=0",
+      "error": "Input outside compact alphabet: 0xb1,0xce"
+    }
+  ]
+}

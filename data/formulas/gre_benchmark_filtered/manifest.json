@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "input_records": 2049,
+  "retained_records": 2045,
+  "excluded_records": 4,
+  "excluded_by_case": {
+    "Burgers_equation": 2,
+    "KdV_equation": 1,
+    "Chaffee_Infante_equation": 2
+  },
+  "policy": "exact coefficient-free expanded support; subset with at most two extra terms; no coefficient-only variants retained",
+  "source": "data/formulas/gre_external/benchmark.jsonl",
+  "old_benchmark_untouched": true
+}

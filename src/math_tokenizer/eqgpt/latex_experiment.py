@@ -29,16 +29,25 @@ def sync(device):
 
 
 class RewardEvaluator:
-    def __init__(self,net,database,equation,variables,device,epi,normalize_ast=False):
+    def __init__(self,net,database,equation,variables,device,epi,normalize_ast=False,paper_latex=False):
         self.env=numerical_namespace(device,equation);self.net=net;self.database=database
-        self.variables=variables;self.epi=epi;self.normalize_ast=normalize_ast;self.cache={};self.mask=self.env['get_mask_invalid'](variables)
+        self.variables=variables;self.epi=epi;self.normalize_ast=normalize_ast;self.paper_latex=paper_latex;self.cache={};self.mask=self.env['get_mask_invalid'](variables)
         self.mask_values=self.mask.detach().cpu().tolist()
         self.reward_cache={};self.reward_cache_hits=0;self.author_reward_calls=0
     def evaluate(self,attempt):
         r=copy.deepcopy(attempt)
         if not r['stopped']:r.update(status='incomplete',reward=None);return r
         if r.get('text') is None:r.update(status='decode_error',reward=None);return r
-        try:gre=r['gre'] if 'gre' in r else latex_to_structure(r['text'])
+        try:
+            if 'gre' in r:gre=r['gre']
+            else:
+                try:gre=latex_to_structure(r['text'])
+                except (LatexError,ValueError):
+                    if not self.paper_latex:raise
+                    # Raw source spelling (coefficients, partial fractions,
+                    # integer powers) needs the audited paper-LaTeX parser.
+                    from .corpus_conversion import convert
+                    gre=convert(r['text'])['gre_ids']
         except (LatexError,ValueError) as exc:
             r.update(status='unsupported_expression' if isinstance(exc,Unsupported) else 'syntax_error',error=str(exc),reward=None);return r
         if self.normalize_ast and 'gre' not in r:
@@ -90,10 +99,10 @@ def merge_top(previous,current):
 
 def search_latex(model,adapter,net,database,equation,variables,folder,device,seed,
                  attempts=400,cycles=5,finetune_epochs=5,max_tokens=256,batch_size=16,epi=.2,reference=False,gre_limit=50,
-                 normalize_ast=False):
+                 normalize_ast=False,paper_latex=False):
     sync(device);started=time.perf_counter()
-    evaluator=(RewardEvaluator(net,database,equation,variables,device,epi,normalize_ast=True)
-               if normalize_ast else RewardEvaluator(net,database,equation,variables,device,epi))
+    evaluator=RewardEvaluator(net,database,equation,variables,device,epi,
+                              normalize_ast=normalize_ast,paper_latex=paper_latex)
     env=training_namespace(device);optimizer=torch.optim.Adam(model.parameters(),lr=1e-5)
     criterion=nn.CrossEntropyLoss(ignore_index=0);best=[];history=[];trace=[]
     for cycle in range(cycles):

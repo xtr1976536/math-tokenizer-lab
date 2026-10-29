@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "upstream_811_not_started_again": true,
+  "base_vocabulary_research_paused": true,
+  "original1500_rows_reviewed": 1500,
+  "original1500_component_records": 2395,
+  "original1500_whole_expression_eligible": 11,
+  "original1500_non_target_eligible_components": 17,
+  "original1500_target_excluded_components": 3,
+  "external_unique_no_oov": 1250,
+  "merged_unique_no_oov": 1252,
+  "external_current_position_limit_eligible": 468,
+  "all_221_reference_rows_compared": true,
+  "merged_replay_verified": true,
+  "tests": "36 passed",
+  "git_diff_check": true
+}
