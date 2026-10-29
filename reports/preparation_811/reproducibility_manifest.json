@@ -1,0 +1,15 @@
+{
+  "src/math_tokenizer/pde_protocol.py": "ba41a8adceb3269c4ddbc9bcc4c851a53010d2ad0dfbb0012a68bb36042d230f",
+  "src/math_tokenizer/eqgpt/corpus_conversion.py": "64d2609f348db5f5032bef923fac2af9bfcf70de2e5401220212d30b977e0756",
+  "scripts/run_upstream_811.py": "1e48171d53c61f9d2e886640353a66b198870ba3e8ce81927edfa162a6032e6c",
+  "scripts/prepare_downstream_corpus.py": "f681e3ecaa27806a54a1c46449bbef6cf3e991edbfdb0f4de1b95b6b800030a7",
+  "scripts/audit_preparation.py": "50c6d07dc7738424cb2ce22773053221e0cafa9d35510b45c9d772864c6810f1",
+  "tests/test_pde_preparation.py": "210726d921f8c2d3177547ce5a56a7e49a8049f0e97fd29e5a1b9f9159850c78",
+  "data/formulas/pde/pde_equations.jsonl.gz": "93b36f70cfc7ab0d3f78d88bde72b3201043c2b21f9f6bf6b0543770a8510258",
+  "eqgpt_original/code/dict_datas_0725.json": "6cec0ef67d61fc385e30826a7799e7cd42ff4759c729f51eab409ad2f128fc30",
+  "experiments/upstream_811/protocol.json": "c7a5a25398be6500b50e4f5f34efc9c528ac58fcf89aec11157460ce38e60472",
+  "experiments/upstream_811/selection.json": "f85e7e44499b0662c905b5eed797ad7647a9feff18c739c427e2d301e766002a",
+  "experiments/upstream_811/validation_results.json": "b3f490e9edd22bc2d367e25c201e86f6647adfa437e18bd86f62023acd7fd28d",
+  "experiments/upstream_811/test_results.json": "c321920499e4057a1f188861ebac8b3d7207233e06c46f6df07a039671b9144f",
+  "data/formulas/downstream_preparation/audit.json": "29e0bdd85cb1cb1ca022479e1c4e37dbc650a6939dad3cde813e6bfcd0885843"
+}

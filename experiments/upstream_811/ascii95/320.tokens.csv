@@ -1,0 +1,326 @@
+content_id,type,text,hex,train_count,validation_count
+0,base_character,	,09,293,29
+1,base_character,"
+",0a,972,101
+2,base_character,"",0d,15,0
+3,base_character, ,20,4100,478
+4,base_character,!,21,36,6
+5,base_character,%,25,0,0
+6,base_character,&,26,531,65
+7,base_character,',27,149,11
+8,base_character,(,28,1807,222
+9,base_character,),29,1884,217
+10,base_character,*,2a,66,11
+11,base_character,+,2b,1418,152
+12,base_character,",",2c,1003,114
+13,base_character,-,2d,1704,164
+14,base_character,.,2e,234,24
+15,base_character,/,2f,29,6
+16,base_character,0,30,454,60
+17,base_character,1,31,510,48
+18,base_character,2,32,428,40
+19,base_character,3,33,263,11
+20,base_character,4,34,113,14
+21,base_character,5,35,17,1
+22,base_character,6,36,9,0
+23,base_character,7,37,5,1
+24,base_character,8,38,9,0
+25,base_character,9,39,0,0
+26,base_character,:,3a,11,0
+27,base_character,;,3b,66,4
+28,base_character,<,3c,26,10
+29,base_character,=,3d,816,115
+30,base_character,>,3e,72,8
+31,base_character,?,3f,0,0
+32,base_character,@,40,0,0
+33,base_character,A,41,148,11
+34,base_character,B,42,210,17
+35,base_character,C,43,56,1
+36,base_character,D,44,200,23
+37,base_character,E,45,71,5
+38,base_character,F,46,158,19
+39,base_character,G,47,109,20
+40,base_character,H,48,88,37
+41,base_character,I,49,32,0
+42,base_character,J,4a,59,5
+43,base_character,K,4b,43,9
+44,base_character,L,4c,183,11
+45,base_character,M,4d,52,7
+46,base_character,N,4e,157,19
+47,base_character,O,4f,12,2
+48,base_character,P,50,191,16
+49,base_character,Q,51,105,15
+50,base_character,R,52,187,17
+51,base_character,S,53,81,20
+52,base_character,T,54,202,26
+53,base_character,U,55,238,18
+54,base_character,V,56,150,13
+55,base_character,W,57,83,7
+56,base_character,X,58,49,22
+57,base_character,Y,59,77,4
+58,base_character,Z,5a,25,5
+59,base_character,[,5b,189,30
+60,base_character,\,5c,1179,172
+61,base_character,],5d,188,30
+62,base_character,^,5e,1412,142
+63,base_character,_,5f,2235,211
+64,base_character,`,60,0,0
+65,base_character,a,61,491,41
+66,base_character,b,62,160,21
+67,base_character,c,63,267,36
+68,base_character,d,64,188,60
+69,base_character,e,65,496,53
+70,base_character,f,66,408,99
+71,base_character,g,67,613,57
+72,base_character,h,68,304,25
+73,base_character,i,69,721,76
+74,base_character,j,6a,117,16
+75,base_character,k,6b,365,21
+76,base_character,l,6c,394,48
+77,base_character,m,6d,499,98
+78,base_character,n,6e,378,64
+79,base_character,o,6f,98,9
+80,base_character,p,70,779,100
+81,base_character,q,71,289,17
+82,base_character,r,72,709,95
+83,base_character,s,73,345,70
+84,base_character,t,74,692,117
+85,base_character,u,75,926,130
+86,base_character,v,76,841,136
+87,base_character,w,77,451,65
+88,base_character,x,78,795,112
+89,base_character,y,79,461,83
+90,base_character,z,7a,313,20
+91,base_character,{,7b,3908,446
+92,base_character,|,7c,530,80
+93,base_character,},7d,3456,333
+94,base_character,~,7e,32,5
+95,learned_merge,  ,2020,392,38
+96,learned_merge,al,616c,7,7
+97,learned_merge,\p,5c70,166,15
+98,learned_merge,ar,6172,174,6
+99,learned_merge,ti,7469,132,8
+100,learned_merge,\par,5c706172,0,0
+101,learned_merge,tial,7469616c,0,0
+102,learned_merge,\partial,5c7061727469616c,174,29
+103,learned_merge,\partial_,5c7061727469616c5f,680,32
+104,learned_merge,ta,7461,124,4
+105,learned_merge,ig,6967,38,2
+106,learned_merge,\b,5c62,391,28
+107,learned_merge,in,696e,172,23
+108,learned_merge,at,6174,55,11
+109,learned_merge,na,6e61,0,0
+110,learned_merge,la,6c61,8,2
+111,learned_merge,eg,6567,0,0
+112,learned_merge,    ,20202020,185,15
+113,learned_merge,\m,5c6d,126,14
+114,learned_merge,\na,5c6e61,0,0
+115,learned_merge,bla,626c61,0,0
+116,learned_merge,\nabla,5c6e61626c61,371,64
+117,learned_merge,el,656c,30,12
+118,learned_merge,si,7369,37,4
+119,learned_merge,ath,617468,10,0
+120,learned_merge,elta,656c7461,102,7
+121,learned_merge,\math,5c6d617468,250,19
+122,learned_merge,\e,5c65,212,7
+123,learned_merge,\r,5c72,110,11
+124,learned_merge,Delta,44656c7461,0,0
+125,learned_merge,\Delta,5c44656c7461,133,24
+126,learned_merge,\t,5c74,20,1
+127,learned_merge, u,2075,599,96
+128,learned_merge,\\,5c5c,150,19
+129,learned_merge,\o,5c6f,133,14
+130,learned_merge,es,6573,3,0
+131,learned_merge, +,202b,118,16
+132,learned_merge,on,6f6e,44,6
+133,learned_merge,ne,6e65,51,0
+134,learned_merge,d},647d,39,9
+135,learned_merge,ra,7261,13,6
+136,learned_merge,fra,667261,121,1
+137,learned_merge,\partial_t,5c7061727469616c5f74,364,31
+138,learned_merge,{al,7b616c,0,0
+139,learned_merge,igne,69676e65,0,0
+140,learned_merge,{aligne,7b616c69676e65,0,0
+141,learned_merge,{aligned},7b616c69676e65647d,0,0
+142,learned_merge,nd,6e64,21,2
+143,learned_merge,ot,6f74,24,0
+144,learned_merge,\beg,5c626567,0,0
+145,learned_merge,\end,5c656e64,27,9
+146,learned_merge,\begin,5c626567696e,27,9
+147,learned_merge,= ,3d20,152,10
+148,learned_merge,dot,646f74,1,0
+149,learned_merge,er,6572,97,13
+150,learned_merge,\c,5c63,108,6
+151,learned_merge, + ,202b20,593,62
+152,learned_merge,^2,5e32,592,75
+153,learned_merge,{c,7b63,25,4
+154,learned_merge,"\\
+",5c5c0a,329,30
+155,learned_merge,as,6173,17,0
+156,learned_merge,		,0909,189,32
+157,learned_merge,u_,755f,567,80
+158,learned_merge,qu,7175,3,0
+159,learned_merge,ad,6164,0,0
+160,learned_merge,quad,71756164,0,0
+161,learned_merge,es},65737d,0,0
+162,learned_merge,{cas,7b636173,0,0
+163,learned_merge,{cases},7b63617365737d,0,0
+164,learned_merge,frac,66726163,45,11
+165,learned_merge,"0,",302c,168,15
+166,learned_merge,meg,6d6567,0,0
+167,learned_merge,mega,6d656761,0,0
+168,learned_merge,ex,6578,5,0
+169,learned_merge,ext,657874,8,0
+170,learned_merge,\v,5c76,38,1
+171,learned_merge,lon,6c6f6e,6,0
+172,learned_merge,\text,5c74657874,307,45
+173,learned_merge,psi,707369,0,0
+174,learned_merge,psilon,7073696c6f6e,131,0
+175,learned_merge,) ,2920,349,36
+176,learned_merge,\frac,5c66726163,511,51
+177,learned_merge,\cdot,5c63646f74,303,30
+178,learned_merge,\var,5c766172,100,20
+179,learned_merge,(x,2878,99,4
+180,learned_merge,\mathb,5c6d61746862,0,0
+181,learned_merge,\nabla ,5c6e61626c6120,414,56
+182,learned_merge, },207d,51,6
+183,learned_merge,eta,657461,135,4
+184,learned_merge,v},767d,51,3
+185,learned_merge,ho,686f,4,9
+186,learned_merge,le,6c65,110,12
+187,learned_merge,\partial_x,5c7061727469616c5f78,406,23
+188,learned_merge,\rho,5c72686f,404,17
+189,learned_merge, &,2026,216,17
+190,learned_merge,or,6f72,14,11
+191,learned_merge,\quad,5c71756164,196,16
+192,learned_merge,me,6d65,10,0
+193,learned_merge,per,706572,1,0
+194,learned_merge,ator,61746f72,0,0
+195,learned_merge,name,6e616d65,0,0
+196,learned_merge,\oper,5c6f706572,0,0
+197,learned_merge,atorname,61746f726e616d65,0,0
+198,learned_merge,\operatorname,5c6f70657261746f726e616d65,38,5
+199,learned_merge,epsilon,657073696c6f6e,0,0
+200,learned_merge,\varepsilon,5c766172657073696c6f6e,228,31
+201,learned_merge,"
+    ",0a20202020,383,33
+202,learned_merge,\big,5c626967,381,36
+203,learned_merge,\psi,5c707369,378,7
+204,learned_merge,ft,6674,80,9
+205,learned_merge,di,6469,13,2
+206,learned_merge,mb,6d62,80,25
+207,learned_merge,1},317d,50,8
+208,learned_merge,hi,6869,186,11
+209,learned_merge,div},6469767d,1,0
+210,learned_merge,{div},7b6469767d,9,0
+211,learned_merge,de,6465,103,2
+212,learned_merge,\operatorname{div},5c6f70657261746f726e616d657b6469767d,350,31
+213,learned_merge,u^,755e,337,27
+214,learned_merge,Omega,4f6d656761,0,0
+215,learned_merge,\Omega,5c4f6d656761,335,41
+216,learned_merge,\end{aligned},5c656e647b616c69676e65647d,329,38
+217,learned_merge,\begin{aligned},5c626567696e7b616c69676e65647d,329,38
+218,learned_merge, = ,203d20,317,34
+219,learned_merge,2},327d,131,14
+220,learned_merge,\Delta ,5c44656c746120,313,59
+221,learned_merge,)},297d,307,17
+222,learned_merge,ht,6874,0,0
+223,learned_merge,ight,69676874,5,0
+224,learned_merge,\partial_t ,5c7061727469616c5f7420,305,25
+225,learned_merge,\right,5c7269676874,129,16
+226,learned_merge,\le,5c6c65,2,1
+227,learned_merge,{in,7b696e,81,12
+228,learned_merge,(t,2874,125,15
+229,learned_merge,da,6461,4,0
+230,learned_merge,\left,5c6c656674,65,10
+231,learned_merge,", ",2c20,295,33
+232,learned_merge,=0,3d30,295,32
+233,learned_merge,ma,6d61,0,4
+234,learned_merge,mbda,6d626461,49,8
+235,learned_merge,\in,5c696e,287,54
+236,learned_merge,\la,5c6c61,44,5
+237,learned_merge,\end{cases},5c656e647b63617365737d,153,18
+238,learned_merge,\begin{cases},5c626567696e7b63617365737d,279,34
+239,learned_merge,heta,68657461,16,5
+240,learned_merge,\s,5c73,276,26
+241,learned_merge,\ti,5c7469,114,19
+242,learned_merge,_1,5f31,267,30
+243,learned_merge,"
+",0d0a,264,8
+244,learned_merge,- ,2d20,106,17
+245,learned_merge,"\,",5c2c,261,63
+246,learned_merge,\theta,5c7468657461,261,15
+247,learned_merge,",\\
+",2c5c5c0a,253,33
+248,learned_merge,lde,6c6465,94,1
+249,learned_merge,\lambda,5c6c616d626461,243,34
+250,learned_merge,u},757d,17,2
+251,learned_merge,\mathbf,5c6d6174686266,240,14
+252,learned_merge,"=0,",3d302c,238,34
+253,learned_merge,_0,5f30,238,28
+254,learned_merge,{(,7b28,237,2
+255,learned_merge,\left(,5c6c65667428,231,20
+256,learned_merge,{u},7b757d,224,18
+257,learned_merge,x},787d,79,27
+258,learned_merge,{in },7b696e207d,4,2
+259,learned_merge,\n,5c6e,19,0
+260,learned_merge,cal,63616c,0,0
+261,learned_merge,\mathcal,5c6d61746863616c,213,15
+262,learned_merge,\text{in },5c746578747b696e207d,213,33
+263,learned_merge,\omega,5c6f6d656761,209,17
+264,learned_merge,"
+		",0a0909,206,38
+265,learned_merge,\mathbb,5c6d6174686262,205,50
+266,learned_merge,\quad ,5c7175616420,202,27
+267,learned_merge,\Delta u,5c44656c74612075,199,29
+268,learned_merge,"
+ ",0a20,197,28
+269,learned_merge,ph,7068,1,0
+270,learned_merge,\partial ,5c7061727469616c20,197,19
+271,learned_merge,\al,5c616c,0,0
+272,learned_merge,\nu,5c6e75,196,17
+273,learned_merge,pha,706861,0,0
+274,learned_merge,\alpha,5c616c706861,196,16
+275,learned_merge,\cdot ,5c63646f7420,195,23
+276,learned_merge,"(x,",28782c,195,27
+277,learned_merge, & ,202620,187,15
+278,learned_merge,t},747d,186,29
+279,learned_merge,{2},7b327d,186,12
+280,learned_merge,        ,2020202020202020,130,7
+281,learned_merge,\phi,5c706869,180,21
+282,learned_merge,\nabla_,5c6e61626c615f,179,4
+283,learned_merge,-1},2d317d,173,29
+284,learned_merge,\right),5c726967687429,173,14
+285,learned_merge,"(t,",28742c,32,4
+286,learned_merge,\Delta_,5c44656c74615f,170,27
+287,learned_merge,\ta,5c7461,0,0
+288,learned_merge,\tau,5c746175,169,9
+289,learned_merge,) = ,29203d20,165,18
+290,learned_merge,\q,5c71,0,0
+291,learned_merge,_2,5f32,161,16
+292,learned_merge,\qquad,5c7171756164,161,22
+293,learned_merge,_k,5f6b,160,16
+294,learned_merge,igma,69676d61,159,24
+295,learned_merge,\tilde,5c74696c6465,158,7
+296,learned_merge, - ,202d20,157,31
+297,learned_merge,(x),287829,157,22
+298,learned_merge,{\varepsilon,7b5c766172657073696c6f6e,156,0
+299,learned_merge,mes,6d6573,152,25
+300,learned_merge,{n,7b6e,150,13
+301,learned_merge,"(0,",28302c,147,13
+302,learned_merge,on },6f6e207d,145,18
+303,learned_merge,\d,5c64,143,18
+304,learned_merge,{1},7b317d,143,14
+305,learned_merge,|^,7c5e,142,22
+306,learned_merge,am,616d,5,0
+307,learned_merge,"(t,x",28742c78,140,18
+308,learned_merge,{x},7b787d,139,3
+309,learned_merge,)=,293d,138,23
+310,learned_merge,{R,7b52,136,22
+311,learned_merge,amma,616d6d61,136,16
+312,learned_merge,ver,766572,134,8
+313,learned_merge,\dot,5c646f74,130,6
+314,learned_merge,_j,5f6a,128,10
+315,learned_merge,ol,6f6c,128,53
+316,learned_merge,"
+\end{cases}",0a5c656e647b63617365737d,126,16

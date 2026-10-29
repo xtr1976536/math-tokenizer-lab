@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "documentation_links": 9,
+  "required_tracked_files": 800,
+  "release_records": {
+    "eqgpt-fast-20261022-weights-v1": {
+      "url": "https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/eqgpt-fast-20261022-weights-v1",
+      "matched_weights": 36
+    },
+    "expanded-downstream-80-v1-weights": {
+      "url": "https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/expanded-downstream-80-v1-weights",
+      "matched_weights": 36
+    }
+  },
+  "study1_results_unchanged_since_5953ce5": true,
+  "round": 3
+}

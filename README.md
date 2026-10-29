@@ -2,6 +2,24 @@
 
 我们研究数学公式分词器能否改善 PDE 方程发现的效果。仓库包含 Hard AST-BPE 分词器、上游分词实验，以及接入 EqGPT 的下游实验。下文的 equation-BPE 指 Hard AST-BPE。
 
+## 两套完整实验方案
+
+仓库围绕以下两套已完成方案组织；每套均含上游分词评估和下游八案例 PDE 发现。两套共用基础代码与部分原始数据，划分、词表、模型权重和结果分别保存。
+
+| 项目 | 方案一：三划分上游＋原 benchmark 下游 | 方案二：8:1:1 上游＋扩大语料 80-token 下游 |
+|---|---|---|
+| 上游 | 1500 条 PDE，三组轮换训练/测试及简单到复杂对照 | 完整 1500 条，1200/150/150，训练/验证/测试分组隔离 |
+| 上游基础表和容量 | 原 98 字符基础表；256-ID 主实验及 200–450-ID 扫描 | 6 种基础表协议×22 个容量（64–512）；132 个组合，78 个可训练验证配置 |
+| 上游文件 | [主实验](experiments/upstream_main/)、[容量扫描](experiments/upstream_vocab_size/)、[说明](reports/upstream/README.md) | [实验与词表](experiments/upstream_811/README.md)、[报告](reports/preparation_811/README.md) |
+| 下游训练来源 | 原 221 条手册公式排除八案例目标后 212 条 | 1643 条外部来源＋同一批 212 条＝1855 条 |
+| 下游增强样本 | 6784 条 | 59360 条 |
+| 下游容量 | 50 token | 80 token |
+| 下游文件 | [八案例](experiments/downstream/)、[汇总](reports/downstream/README.md) | [八案例与共享预训练](experiments/expanded_downstream_80_v1/README.md)、[汇总](reports/expanded_downstream_80_v1/README.md) |
+
+两套下游均使用 EqGPT GRE 57 ID、Hard AST-BPE 280/315/350 ID，3 层 Transformer、25 epoch、seed 525、每案例每组 3×200 次搜索、每轮 2 epoch continuation，复用相同八案例 MLP 缓存，不做最终 PINN 系数拟合。方案二的上游基础表选择不直接替代下游词表；其下游仍使用固定 98 基础字符、在新语料上重训的三套词表。上游的 8:1:1 划分也不是下游公式池的划分。
+
+两套的详细文件对应、运行命令、审计记录与保留范围见[实验总索引](reports/实验方案索引.md)。新外部 benchmark 的大部分记录是来源明确的参数/函数族实例，不应把结构数当作独立论文或独立 PDE 家族数。
+
 ## 目录用途
 
 | 文件夹 | 用途 |
@@ -38,10 +56,12 @@ data/
 
 | 子目录 | 内容 |
 |---|---|
-| `experiments/upstream_main/` | 上游主实验。 |
-| `experiments/upstream_vocab_size/` | 上游词表大小实验。 |
-| `experiments/upstream/` | 上游日志。 |
-| `experiments/downstream/` | 下游八案例实验。 |
+| `experiments/upstream_main/` | 方案一的三划分上游主实验。 |
+| `experiments/upstream_vocab_size/` | 方案一上游词表大小实验。 |
+| `experiments/upstream/` | 方案一上游日志。 |
+| `experiments/upstream_811/` | 方案二的 8:1:1 上游及基础表×容量扫描。 |
+| `reports/preparation_811/` | 方案二上游报告、验证汇总和准备阶段审计。 |
+| `experiments/downstream/` | 方案一的原 benchmark 下游八案例实验。 |
 | `experiments/expanded_downstream_80_v1/` | 扩大语料下游八案例实验（独立版本，80 token 容量）。 |
 | `reports/upstream/` | 上游结果汇总。 |
 | `reports/downstream/` | 下游结果汇总。 |
@@ -92,6 +112,8 @@ assert model.decode(ids) == formula
 
 ## 上游实验
 
+以下三划分结果属于方案一。方案二的 8:1:1 上游完整说明见 [upstream_811/README.md](experiments/upstream_811/README.md)，使用独立划分与词表，不与此处轮换测试结果混合。
+
 比较 Hard AST-BPE、Qwen2.5、Llama 3 和 `o200k_base` 四个分词器，只使用 1500 条 PDE。
 
 先按公式来源分成 3 份，每份 500 条。每次选其中 2 份作为训练集，1 份作为测试集，轮流测试，共做 3 次。为避免训练集出现与测试集结构重复的公式，第一、第三次各从训练集中删去 1 条，所以三次训练集分别有 999、1000、999 条，测试集均为 500 条。
@@ -111,6 +133,8 @@ PYTHONPATH=src python scripts/当前四分词器.py hard_ast_bpe 'u_t+u_x=0'
 其余方法名为 `qwen2.5`、`llama3` 和 `o200k_base`。实验入口为 [`evaluate_screened_pde.py`](scripts/evaluate_screened_pde.py)，词表统计入口为 [`analyze_pde_vocab_usage.py`](scripts/analyze_pde_vocab_usage.py)。
 
 ## 下游实验
+
+以下 212 条训练语料的八案例结果属于方案一；后面的扩大语料版本属于方案二。两套均保留完整结果，不相互覆盖。
 
 将 Hard AST-BPE（280、315、350 ID）和 EqGPT GRE（57 ID）分别接入从头训练的 GPT-2 架构模型，在八个已知 PDE 案例上比较方程结构发现结果。
 

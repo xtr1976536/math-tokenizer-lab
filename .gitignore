@@ -11,3 +11,12 @@ data/weights/.downloads/
 # Expanded 80-capacity run stores 36 large checkpoints locally; hashes and
 # sizes are tracked in experiments/expanded_downstream_80_v1/weight_manifest.json.
 /experiments/expanded_downstream_80_v1/**/*.pt
+
+# Superseded local drafts and smoke runs; retain on disk, exclude from releases.
+/data/formulas/expanded_downstream_v1/
+/experiments/expanded_downstream_smoke/
+/experiments/expanded_downstream_smoke2/
+/output/
+/scripts/build_newest_report.py
+# Preparation-stage logs before the final 80-token protocol; final audits retained.
+/reports/expanded_downstream_v2/

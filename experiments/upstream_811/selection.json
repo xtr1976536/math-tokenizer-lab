@@ -1,0 +1,20 @@
+{
+  "rule": "validation full-coverage Pareto front on compression/operation/numbers; plus historical ascii98/256 reference",
+  "arms": [
+    {
+      "alphabet": "latex_ascii",
+      "total_ids": 512,
+      "vocabulary_sha256": "f41cda0a98d02745e431839241ab32c783c40aaf2e9441dfd820d7b4c80b43cf"
+    },
+    {
+      "alphabet": "train_observed",
+      "total_ids": 512,
+      "vocabulary_sha256": "f41cda0a98d02745e431839241ab32c783c40aaf2e9441dfd820d7b4c80b43cf"
+    },
+    {
+      "alphabet": "ascii98",
+      "total_ids": 256,
+      "vocabulary_sha256": "2235a0790928703378e7940fae76606b3cfb856cefce5f9c710c85ae33dbdf29"
+    }
+  ]
+}

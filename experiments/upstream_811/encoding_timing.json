@@ -1,0 +1,122 @@
+[
+  {
+    "model": "latex_ascii/128",
+    "formulas": 150,
+    "tokens": 15853,
+    "median_encode_seconds": 0.000778750007157214,
+    "input_bytes_per_second": 26465489.323378272,
+    "repeats": 5
+  },
+  {
+    "model": "latex_ascii/256",
+    "formulas": 150,
+    "tokens": 9950,
+    "median_encode_seconds": 0.001126542003476061,
+    "input_bytes_per_second": 18294923.701385062,
+    "repeats": 5
+  },
+  {
+    "model": "latex_ascii/512",
+    "formulas": 150,
+    "tokens": 7274,
+    "median_encode_seconds": 0.0013412919943220913,
+    "input_bytes_per_second": 15365781.714380989,
+    "repeats": 5
+  },
+  {
+    "model": "ascii95/128",
+    "formulas": 150,
+    "tokens": 16293,
+    "median_encode_seconds": 0.0008253330015577376,
+    "input_bytes_per_second": 24971738.632891916,
+    "repeats": 5
+  },
+  {
+    "model": "ascii95/256",
+    "formulas": 150,
+    "tokens": 10018,
+    "median_encode_seconds": 0.0011185000039404258,
+    "input_bytes_per_second": 18426463.94938926,
+    "repeats": 5
+  },
+  {
+    "model": "ascii95/512",
+    "formulas": 150,
+    "tokens": 7287,
+    "median_encode_seconds": 0.0013472079881466925,
+    "input_bytes_per_second": 15298305.964138815,
+    "repeats": 5
+  },
+  {
+    "model": "ascii98/128",
+    "formulas": 150,
+    "tokens": 16578,
+    "median_encode_seconds": 0.000838791995192878,
+    "input_bytes_per_second": 24571049.936236918,
+    "repeats": 5
+  },
+  {
+    "model": "ascii98/256",
+    "formulas": 150,
+    "tokens": 10086,
+    "median_encode_seconds": 0.0011291249975329265,
+    "input_bytes_per_second": 18253072.10896196,
+    "repeats": 5
+  },
+  {
+    "model": "ascii98/512",
+    "formulas": 150,
+    "tokens": 7302,
+    "median_encode_seconds": 0.0013607079890789464,
+    "input_bytes_per_second": 15146526.782686682,
+    "repeats": 5
+  },
+  {
+    "model": "train_observed/128",
+    "formulas": 150,
+    "tokens": 15853,
+    "median_encode_seconds": 0.0007761249871691689,
+    "input_bytes_per_second": 26555001.24428763,
+    "repeats": 5
+  },
+  {
+    "model": "train_observed/256",
+    "formulas": 150,
+    "tokens": 9950,
+    "median_encode_seconds": 0.0010733749950304627,
+    "input_bytes_per_second": 19201118.05792074,
+    "repeats": 5
+  },
+  {
+    "model": "train_observed/512",
+    "formulas": 150,
+    "tokens": 7274,
+    "median_encode_seconds": 0.0013157909997971728,
+    "input_bytes_per_second": 15663581.832659595,
+    "repeats": 5
+  },
+  {
+    "model": "qwen2.5",
+    "formulas": 150,
+    "tokens": 9531,
+    "median_encode_seconds": 0.005308958003297448,
+    "input_bytes_per_second": 3882117.731426566,
+    "repeats": 5
+  },
+  {
+    "model": "llama3",
+    "formulas": 150,
+    "tokens": 9523,
+    "median_encode_seconds": 0.0018352079932810739,
+    "input_bytes_per_second": 11230334.695280202,
+    "repeats": 5
+  },
+  {
+    "model": "o200k_base",
+    "formulas": 150,
+    "tokens": 9447,
+    "median_encode_seconds": 0.0010504999954719096,
+    "input_bytes_per_second": 19619229.023167673,
+    "repeats": 5
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "full_corpus_formulas": 1500,
+  "split_counts": {
+    "train": 1200,
+    "validation": 150,
+    "test": 150
+  },
+  "all_input_ids_retained": true,
+  "source_template_canonical_disjoint": true,
+  "matrix_rows": 132,
+  "evaluated_arms": 78,
+  "selected_test_arms": 3,
+  "original_experiments_untouched": true,
+  "roundtrip_and_count_reaggregation": true
+}

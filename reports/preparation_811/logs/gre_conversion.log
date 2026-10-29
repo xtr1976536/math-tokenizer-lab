@@ -1,0 +1,53 @@
+CONVERTED 100 of 1500 accepted 1
+CONVERTED 200 of 1500 accepted 1
+CONVERTED 300 of 1500 accepted 2
+CONVERTED 400 of 1500 accepted 2
+CONVERTED 500 of 1500 accepted 2
+CONVERTED 600 of 1500 accepted 2
+CONVERTED 700 of 1500 accepted 2
+CONVERTED 800 of 1500 accepted 3
+CONVERTED 900 of 1500 accepted 5
+CONVERTED 1000 of 1500 accepted 5
+CONVERTED 1100 of 1500 accepted 6
+CONVERTED 1200 of 1500 accepted 6
+CONVERTED 1300 of 1500 accepted 7
+CONVERTED 1400 of 1500 accepted 9
+CONVERTED 1500 of 1500 accepted 11
+{
+  "input_formulas": 1500,
+  "input_sha256": "93b36f70cfc7ab0d3f78d88bde72b3201043c2b21f9f6bf6b0543770a8510258",
+  "status_counts": {
+    "rejected": 1489,
+    "common_eligible": 9,
+    "target_excluded": 2
+  },
+  "rejection_reasons": {
+    "system_or_multiline": 537,
+    "unsupported_token": 80,
+    "unresolved_differentiated_field": 11,
+    "operator_or_dimension_unresolved": 328,
+    "field_unresolved": 188,
+    "multiple_fields": 189,
+    "unsupported_power": 58,
+    "unsupported_derivative": 43,
+    "unknown_function": 29,
+    "unsupported_index": 13,
+    "unsupported_field_arguments": 5,
+    "trailing_content": 3,
+    "complex_coefficient": 1,
+    "constant_forcing": 3,
+    "syntax": 1
+  },
+  "converted_before_target_exclusion": 11,
+  "common_eligible": 9,
+  "target_excluded": 2,
+  "excluded_by_case": {
+    "KdV_equation": 1,
+    "Burgers_equation": 1
+  },
+  "dictionary_sha256": "6cec0ef67d61fc385e30826a7799e7cd42ff4759c729f51eab409ad2f128fc30",
+  "dictionary_size": 57,
+  "target_policy": "exact coefficient-free expanded support, scalar u/v/w rename and all permutations of x/y/z; time fixed",
+  "downstream_training_started": false,
+  "upstream_corpus_filtered": false
+}

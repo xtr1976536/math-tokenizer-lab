@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "matrix_rows": 132,
+  "trained_validation_arms": 78,
+  "full_validation_roundtrip": true,
+  "persisted_counts_reaggregated": true,
+  "metric_denominators_identical": true,
+  "independent_128_training_equals_saved_prefix_on_all_1500": true,
+  "source_formula_content_unchanged": true,
+  "common_corpus_checks": true,
+  "test_selection_file_sha256": "f85e7e44499b0662c905b5eed797ad7647a9feff18c739c427e2d301e766002a",
+  "timing": "five repeats; median; encode only; same 150 validation formulas"
+}
