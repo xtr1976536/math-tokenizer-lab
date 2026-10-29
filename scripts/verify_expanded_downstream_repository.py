@@ -97,7 +97,7 @@ def round_three() -> dict:
         ROOT / "reports/downstream/README.md",
         ROOT / "experiments/expanded_downstream_80_v1/README.md",
         ROOT / "data/formulas/gre_benchmark_filtered/README.md",
-        ROOT / "data/formulas/gre_benchmark_merged/README.md",
+
         REPORT / "report_zh.md", REPORT / "comparison_previous_zh.md",
     ]
     missing = []
@@ -120,7 +120,7 @@ def round_three() -> dict:
         "checkpoint_policy_documented": ignore_rule and ignored,
         "old_and_new_benchmark_explicitly_distinguished": all(
             term in (ROOT / "data/README.md").read_text()
-            for term in ("221 条", "gre_benchmark_filtered", "gre_benchmark_merged")
+            for term in ("221 条", "gre_benchmark_filtered")
         ),
         "separate_experiment_directory_documented": "expanded_downstream_80_v1" in (ROOT / "README.md").read_text(),
     }

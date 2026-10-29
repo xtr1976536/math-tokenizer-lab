@@ -1,0 +1,73 @@
+{
+  "removed": [
+    {
+      "path": "data/formulas/expanded_downstream_v1",
+      "files": 4,
+      "bytes": 80521828
+    },
+    {
+      "path": "experiments/expanded_downstream_smoke",
+      "files": 5,
+      "bytes": 61701
+    },
+    {
+      "path": "experiments/expanded_downstream_smoke2",
+      "files": 1,
+      "bytes": 998
+    },
+    {
+      "path": "reports/expanded_downstream_v2",
+      "files": 6,
+      "bytes": 25844
+    },
+    {
+      "path": "output",
+      "files": 22,
+      "bytes": 1196700
+    },
+    {
+      "path": "scripts/build_newest_report.py",
+      "files": 1,
+      "bytes": 8611
+    },
+    {
+      "path": "data/formulas/gre_benchmark_merged",
+      "files": 3,
+      "bytes": 9503086
+    },
+    {
+      "path": "scripts/merge_gre_benchmark.py",
+      "files": 1,
+      "bytes": 2417
+    },
+    {
+      "path": "参考资料/PDF/数学分词器_中文实验报告.pdf",
+      "files": 1,
+      "bytes": 332938
+    },
+    {
+      "path": "参考资料/PDF/EQGPT_v8_中文最新版.pdf",
+      "files": 1,
+      "bytes": 389610
+    },
+    {
+      "path": "scripts/重命名上游指标.py",
+      "files": 1,
+      "bytes": 1431
+    },
+    {
+      "path": "scripts/prepare_expanded_downstream.py",
+      "files": 1,
+      "bytes": 7054
+    },
+    {
+      "path": "scripts/audit_expanded_downstream.py",
+      "files": 1,
+      "bytes": 4078
+    }
+  ],
+  "retained_early_branch_commit": "1b68100",
+  "early_32_hard_gre_summaries_match": true,
+  "early_extra_soft_arms": 24,
+  "local_dirty_main_worktree_preserved": true
+}
