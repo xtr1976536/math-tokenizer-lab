@@ -1,0 +1,19 @@
+{
+  "case": "Wave_equation",
+  "cohort": "large",
+  "arm": "eqgpt_reference",
+  "files": {
+    "cycle_1_trace.json": "dffbfa89d3172ed9195e102919543d64456e8120e6878823efb83e1000d06427",
+    "search.json": "b4d8100522ed9eba7383024b4e5e2b8e0ffaa000eba215219190030ca58f1221",
+    "cycle_2.pt": "f533532ed2b563ea065caf82c5b2b6001bcbeec40c13334755e134fc0dd7ddc0",
+    "mechanism.json": "dac8af034b9d1cc2adabee2d5acb046b358c75f75c7503ac07ee5b5284544897",
+    "cycle_3_trace.json": "048aa088339b2b13aaba1f36f5c5bc7c786f6cbd511cadb24a55a484406d25d6",
+    "diagnostics.json": "24ee5e359017871d281b13f9406fc41fe08ccaaefcef6a5bd0809d9c6e597f4d",
+    "cycle_3.pt": "65a70a748bfa20c4d9357345424f5922cf9a31d00b91a0f3292a4e9a5fed6bb6",
+    "cycle_0.pt": "e6ad875aecd9eac115c13a92fb381a934ee7736ccaa944b328716613fc14ca6d",
+    "searched.pt": "65a70a748bfa20c4d9357345424f5922cf9a31d00b91a0f3292a4e9a5fed6bb6",
+    "cycle_1.pt": "d8016962aeb1e97dda7135e6df2c63b9b193712056b7ce842e18010f820a9a6d",
+    "cycle_2_trace.json": "a6644ef084753c377c62fbde734ec96718028081898e605437321d2798ac1b1f",
+    "SEARCH_INPUT.json": "cec05a20dc618496e8305f2c4a3ce4ef9522af87f61f0fa02dedd1974324857b"
+  }
+}

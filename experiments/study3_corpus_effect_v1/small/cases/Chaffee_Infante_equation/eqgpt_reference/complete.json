@@ -1,0 +1,19 @@
+{
+  "case": "Chaffee_Infante_equation",
+  "cohort": "small",
+  "arm": "eqgpt_reference",
+  "files": {
+    "cycle_1_trace.json": "eed1164ed711520088713e3b4b3b946efc78f97d715e94fbdb615fcf84e44e60",
+    "search.json": "fedc9c8fea1e4a4e6f3d307296073236a8b44c4255e554e3ae825cf5c8c5a47b",
+    "cycle_2.pt": "135e825b22d18967318aa29a734a3d494360877ddbd16ff3df57642e662cf523",
+    "mechanism.json": "9f1aef603f23db6b79fd9bbb233f70db659e2690cf1f3cc17cf90a551189a2fc",
+    "cycle_3_trace.json": "611015bd9fc142c88b3ec9855fcddf441e023f5ee62d6f92884736ccef24de7e",
+    "diagnostics.json": "fbffc2da63d009871c824c48c39e3e0bd4729c6e80889d7bb595d29d955cb22f",
+    "cycle_3.pt": "be98d82b0c683ae74e923d9853c7da2713a046fa1e15981ceff3027aa028c697",
+    "cycle_0.pt": "1ad506bba50a941d272b027dcbc2e3ecbf469ccac93bb91e6708ff6d920e448d",
+    "searched.pt": "be98d82b0c683ae74e923d9853c7da2713a046fa1e15981ceff3027aa028c697",
+    "cycle_1.pt": "e02c9f7c0aa3dd4fe6d3f2d778f58689c6186c361c12cd410afeb06f9cc41f14",
+    "cycle_2_trace.json": "07c09bf560bc0eef41f9a5ff7d4092c1f963e319f76df6c7adbb75087128055c",
+    "SEARCH_INPUT.json": "9085ffd68815e3c6d3b19f95d2d6b8df350029eb6cafc350f10f3cbdc5d900b1"
+  }
+}

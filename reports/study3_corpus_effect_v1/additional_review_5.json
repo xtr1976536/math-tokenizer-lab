@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "full_regression_tests": 89,
+  "code_sha256": "aefe17daac64829655eb041cf5eb6a88b0f09fedc492f88a21cb44d7a765b3e2",
+  "corpus_manifest_sha256": "e99e4de8a0aeafe90e8ec5cb93e51553ac4e69dd3fb90bacefc2b06b7878aedb",
+  "findings_fixed": [
+    "Overall per-arm equation-level rates added",
+    "Complete generation distinguished from truncated raw prefix",
+    "Selection success conditioned on scored-correct coverage",
+    "Each learned tokenizer backend verified different",
+    "All32 permutations uniqueness/balance audited"
+  ],
+  "corpus_structure_counts": {
+    "small": {
+      "records": 212,
+      "structure_ids": 185
+    },
+    "large": {
+      "records": 1100,
+      "structure_ids": 1073
+    }
+  },
+  "supported_claim": "Effect of this expanded training-corpus pipeline, including relearned Hard vocabularies and equal25epochs, on eight fixed PDE structure discovery tasks under a fixed search budget.",
+  "unsupported_claims": [
+    "Pure corpus-count effect independent of distribution, vocab or compute",
+    "Universal PDE discovery improvement",
+    "Numerical coefficient recovery",
+    "Statistically robust advantage from one seed"
+  ],
+  "formal_execution_started": false
+}

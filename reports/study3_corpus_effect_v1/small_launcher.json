@@ -1,0 +1,18 @@
+{
+  "phase": "small_only",
+  "pid": 18603,
+  "command": [
+    "/Users/xiao/Documents/ChatGPT/\u79d1\u7814\u5de5\u4f5c\uff08\u6e2f\u57ce\uff09/math_tokenizer_project_release/../math_tokenizer_project/.venv/bin/python",
+    "scripts/eqgpt/run_study3.py",
+    "--phase",
+    "all",
+    "--cohort",
+    "small",
+    "--device",
+    "mps",
+    "--execute-reviewed-protocol"
+  ],
+  "log": "/Users/xiao/Documents/ChatGPT/\u79d1\u7814\u5de5\u4f5c\uff08\u6e2f\u57ce\uff09/math_tokenizer_project_release/reports/study3_corpus_effect_v1/small_launcher.log",
+  "user_authorized": true,
+  "large_started": false
+}

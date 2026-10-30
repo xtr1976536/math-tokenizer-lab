@@ -1,0 +1,19 @@
+{
+  "case": "Chaffee_Infante_equation",
+  "cohort": "large",
+  "arm": "ast_bpe_350",
+  "files": {
+    "cycle_1_trace.json": "5784340cb48d264373e644d16e3dbc2e79aa89a8b403a64b98ae886347a555d9",
+    "search.json": "58c4e7e297e54fef02a1277d1aeb75027766d3c122b04449d4fea745e1202e1a",
+    "cycle_2.pt": "81d7499f517ea6c009e7d287891383357b1f631341da35c5d02bfab029fe711d",
+    "mechanism.json": "0195da08eacf4c3041d16876b26d1dac5121fe9a70384ad1bb24f0eb21fb0c07",
+    "cycle_3_trace.json": "6f1f9a9777e20a1e89f9909daee6a2061dbed927229e72aff0159baff7c2f7cb",
+    "diagnostics.json": "33247a93b4b85c41dd3a339f9bbeac33bd5cf56f54f825e5045436b4a6e82f29",
+    "cycle_3.pt": "eafe060483fda69d79e8021ffbc2ddbd0ef1382210ab814aa8ed1fc460ec2318",
+    "cycle_0.pt": "96ae90557feac7d62520de120472f2b7b79d51fef461f483b10f3e11549c86d3",
+    "searched.pt": "eafe060483fda69d79e8021ffbc2ddbd0ef1382210ab814aa8ed1fc460ec2318",
+    "cycle_1.pt": "3c7ce8e25a06076933ddf342942a1323538388d279ef57e83071c06d3d496c0a",
+    "cycle_2_trace.json": "66644a66f7e5dc467ee84aecbc3f762839a5a67be3176d755965fb8f9eac112f",
+    "SEARCH_INPUT.json": "7f475640b65e66a2606bb1feb5bb18e8dec938f4115a572e4f04c655c8f6ab1b"
+  }
+}

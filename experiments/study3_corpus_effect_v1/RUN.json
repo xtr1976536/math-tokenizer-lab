@@ -1,0 +1,40 @@
+{
+  "corpus_manifest_sha256": "e99e4de8a0aeafe90e8ec5cb93e51553ac4e69dd3fb90bacefc2b06b7878aedb",
+  "code_sha256": "aefe17daac64829655eb041cf5eb6a88b0f09fedc492f88a21cb44d7a765b3e2",
+  "settings": {
+    "seed": 525,
+    "layers": 3,
+    "epochs": 25,
+    "batch_size": 128,
+    "learning_rate": 0.0001,
+    "positions": 60,
+    "search_limit": 60,
+    "attempts": 200,
+    "cycles": 3,
+    "continuation_epochs": 2,
+    "continuation_lr": 1e-05,
+    "epi": 0.2,
+    "samples_per_source": 32,
+    "vocabulary_sizes": [
+      280,
+      315,
+      350
+    ],
+    "text": "coefficient-free GRE rendered with structure_to_latex",
+    "augmentation": "unique multiset rank sampling; original normalized variant +31; balanced repeat below32",
+    "budget": "equal epochs, not equal updates/tokens/FLOPs",
+    "tokenizer": "each cohort learns its own Hard vocabulary from its unaugmented GRE-rendered LaTeX",
+    "generation": "original EqGPT SAT and Hard unconstrained sampling; legacy search behavior retained"
+  },
+  "device": "mps",
+  "mlp_cache_sha256": {
+    "Wave_equation": "a763e9428d7251000e7a221f931f6e1fedf1666a663f30678671566a1988ea49",
+    "Convection_diffusion_equation": "1906b573c07da916ed6ffb56bf6387aa94124767a160bf4d6567f4b472018451",
+    "KG_equation": "6fc136605f08c3770ea40d90c3544feb4c5c4178bfc05c934bf9e63a14faa667",
+    "Burgers_equation": "97d80b0271ebd8a8944415c179f41a70bef768c5ad4c2e60fa1136779a940e9a",
+    "Eq_6_2_12": "ce274bf4abb7dee13ef16dbfa91ad0220ea0b3addc39fa1010bf1b9fe6ab0134",
+    "PDE_divide": "75f515a35c01bb7116cbc8fbd788fac6ad5642f8e035c8486fe9845e79ba3727",
+    "KdV_equation": "4505836f41303da1d0d41d7630ba0fe02c25f30243041c349b1edc0e24bd3d65",
+    "Chaffee_Infante_equation": "44b1f5ec9e2bfb349579f3f8b14ef4d5438a9ec5ae5e8ff198f3f67e8493dedc"
+  }
+}

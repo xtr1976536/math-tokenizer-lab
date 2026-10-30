@@ -1,0 +1,19 @@
+{
+  "case": "Convection_diffusion_equation",
+  "cohort": "small",
+  "arm": "ast_bpe_315",
+  "files": {
+    "cycle_1_trace.json": "4afc49894daf2e1a042840a3c4f0c63ce2873aee4cb37ecb2493352f2d7b4eb9",
+    "search.json": "33776c9a3168fbd819c5444858a29214baa8fcd8adf7a9a708e02a3f0f493209",
+    "cycle_2.pt": "9c4eb2314b56b8c0a42d1b37e403829fa5832c246f6ebfa34135c2a8d53f6990",
+    "mechanism.json": "b06b33f661742841a599c43bc2ecd928e0204750d526819bc52dfe7ac81682c6",
+    "cycle_3_trace.json": "b797af3f5dbeca0f5b88c339ba831ffc8509d43bc6baa0572603c813f6d42d0e",
+    "diagnostics.json": "3ddd4daa0d90b6008317fc13f06c04813e4d617e4108469c6eb1ce91ea4e2857",
+    "cycle_3.pt": "2efc209cccbc91d3583941f5139f2e96b2a8286933451a7f81cf4f27d41a449b",
+    "cycle_0.pt": "dfa5afb2a1300430eaf16a81335480658a7289920d61439b275eba1f5b31f489",
+    "searched.pt": "2efc209cccbc91d3583941f5139f2e96b2a8286933451a7f81cf4f27d41a449b",
+    "cycle_1.pt": "5826d0c083e6a7870d3ab2942114ac05cc9c58a4fef0b5602a4473f1b2b63205",
+    "cycle_2_trace.json": "06e2658c7e6bbdf3f2233779a9c24ceb388751d0196dcae478d34e756d3c1877",
+    "SEARCH_INPUT.json": "f5d05b87329f0c38f434b6141ad0bd2d591e54e26227f0709477678ad7a8908d"
+  }
+}

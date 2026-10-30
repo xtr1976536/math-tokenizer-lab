@@ -2,29 +2,30 @@
 
 我们研究数学公式分词器能否改善 PDE 方程发现的效果。仓库包含 Hard AST-BPE 分词器、上游分词实验，以及接入 EqGPT 的下游实验。下文的 equation-BPE 指 Hard AST-BPE。
 
-## 两套完整实验方案
+## 三套完整下游实验
 
-仓库围绕以下两套已完成方案组织；每套均含上游分词评估和下游八案例 PDE 发现。两套共用基础代码与部分原始数据，划分、词表、模型权重和结果分别保存。
+仓库保留两套完整“上游＋下游”研究方案，以及第三套独立的下游语料效应实验。三套共用基础代码、八案例数据和既有 MLP；语料、词表、容量、增强协议、权重和结果按方案分开保存。
 
-| 项目 | 方案一：三划分上游＋原 benchmark 下游 | 方案二：8:1:1 上游＋扩大语料 80-token 下游 |
-|---|---|---|
-| 上游 | 1500 条 PDE，三组轮换训练/测试及简单到复杂对照 | 完整 1500 条，1200/150/150，训练/验证/测试分组隔离 |
-| 上游基础表和容量 | 原 98 字符基础表；256-ID 主实验及 200–450-ID 扫描 | 6 种基础表协议×22 个容量（64–512）；132 个组合，78 个可训练验证配置 |
-| 上游文件 | [主实验](experiments/upstream_main/)、[容量扫描](experiments/upstream_vocab_size/)、[说明](reports/upstream/README.md) | [实验与词表](experiments/upstream_811/README.md)、[报告](reports/preparation_811/README.md) |
-| 下游训练来源 | 原 221 条手册公式排除八案例目标后 212 条 | 1643 条外部来源＋同一批 212 条＝1855 条 |
-| 下游增强样本 | 6784 条 | 59360 条 |
-| 下游容量 | 50 token | 80 token |
-| 下游文件 | [八案例](experiments/downstream/)、[汇总](reports/downstream/README.md) | [八案例与共享预训练](experiments/expanded_downstream_80_v1/README.md)、[汇总](reports/expanded_downstream_80_v1/README.md) |
+| 项目 | 实验一：三划分上游＋原 benchmark | 实验二：8:1:1 上游＋扩大语料 | 实验三：语料规模效应 |
+|---|---|---|---|---|
+| 上游 | 1500 条 PDE；三组轮换训练/测试及简单到复杂对照 | 完整 1500 条；1200/150/150 分组划分 | 无新增上游实验 |
+| 下游训练源公式 | 原 221 条手册，排除目标后 212 条 | 1643 条外部＋原 212 条＝1855 条 | 小组212条；大组1100条（原212＋外部888） |
+| Transformer 增强样本 | 6784 条 | 59360 条 | 小组6784；大组35200 |
+| Hard 词表训练文本 | 32倍增强后的 GRE 渲染 LaTeX | 未增强原始 LaTeX | 各组分别用本组未增强 GRE 渲染 LaTeX 学习 |
+| Hard 词表关系 | 每案例词表，280/315/350 ID | 新语料独立词表，280/315/350 ID | 小、大语料分别重学，容量相同但词表内容/ID映射不同 |
+| 增强 | 作者排列增强；原流程 EOS 行为 | 固定种子采样32个等价排列，EOS句尾，保留原始LaTeX | 仅交换加法项与乘法因子；32条配对样本，EOS句尾，统一GRE渲染LaTeX |
+| 训练/搜索容量 | 50 token | 80 token | 60 token |
+| 下游文件 | [八案例与汇总](reports/downstream/README.md) | [实验说明](experiments/expanded_downstream_80_v1/README.md) | [代码、设置、完整结果](reports/study3_corpus_effect_v1/README_实验协议与检查入口.md) |
 
-两套下游均使用 EqGPT GRE 57 ID、Hard AST-BPE 280/315/350 ID，3 层 Transformer、25 epoch、seed 525、每案例每组 3×200 次搜索、每轮 2 epoch continuation，复用相同八案例 MLP 缓存，不做最终 PINN 系数拟合。方案二的上游基础表选择不直接替代下游词表；其下游仍使用固定 98 基础字符、在新语料上重训的三套词表。上游的 8:1:1 划分也不是下游公式池的划分。
+三套下游均使用 EqGPT GRE、Hard AST-BPE 280/315/350、3层 Transformer、25 epoch、seed 525、八案例、每案例每arm 3×200 候选、每轮2 epoch continuation，并只读复用同一批八案例 MLP 缓存；均未做最终 PINN 系数拟合。实验三在本次单种子八案例评估中，小语料的 EqGPT/Hard280/315/350 Top1 为1/8、3/8、3/8、3/8；大语料为0/8。实验三的大语料同时改变训练语料数量/组成和 Hard 词表所学内容；25 epoch相同但更新步数不同，因此结果不是固定算力、纯数量的因果效应。
 
-两套的详细文件对应、运行命令、审计记录与保留范围见[实验总索引](reports/实验方案索引.md)。新外部 benchmark 的大部分记录是来源明确的参数/函数族实例，不应把结构数当作独立论文或独立 PDE 家族数。
+三套实验的详细对照、文件对应、权重和核验记录见[实验总索引](reports/实验方案索引.md)。新外部 benchmark 多数记录是来源明确的参数/函数族实例，不应把来源记录数当成独立论文或独立 PDE 家族数。
 
 ## 快速查看与使用
 
-只查看结论时，打开[两套实验索引](reports/实验方案索引.md)、[方案一下游结果](reports/downstream/对比结果.csv)、[方案二下游结果](reports/expanded_downstream_80_v1/report_zh.md)及[两轮对照与限制](reports/expanded_downstream_80_v1/comparison_previous_zh.md)，无需下载权重或重新训练。
+只查看结论时，打开[三套实验索引](reports/实验方案索引.md)、[实验一结果](reports/downstream/README.md)、[实验二结果](reports/expanded_downstream_80_v1/report_zh.md)和[实验三配对报告](reports/study3_corpus_effect_v1/study3_final_report_zh.md)，无需下载权重或重新训练。
 
-安装环境见[环境说明](ENVIRONMENT.md)。方案一模型使用见[50-token模型入口](scripts/eqgpt/README_权重.md)，方案二见[80-token模型入口](scripts/eqgpt/README_方案二模型使用.md)。两套下游各36份、共72份权重；权重文件、词表及位置容量必须配套。本次环境与入口维护的保护快照、独立环境和三轮核验见[维护记录](reports/repository_two_studies/maintenance/README.md)。
+安装环境见[环境说明](ENVIRONMENT.md)。方案一模型使用见[50-token模型入口](scripts/eqgpt/README_权重.md)，方案二见[80-token模型入口](scripts/eqgpt/README_方案二模型使用.md)，方案三见[Study 3 实验说明](experiments/study3_corpus_effect_v1/README.md)。三套权重均按独立 Release 分发；权重文件、词表及位置容量必须配套。本次环境与入口维护的保护快照、独立环境和三轮核验见[维护记录](reports/repository_two_studies/maintenance/README.md)。
 
 ## 目录用途
 
@@ -69,9 +70,11 @@ data/
 | `reports/preparation_811/` | 方案二上游报告、验证汇总和准备阶段审计。 |
 | `experiments/downstream/` | 方案一的原 benchmark 下游八案例实验。 |
 | `experiments/expanded_downstream_80_v1/` | 扩大语料下游八案例实验（独立版本，80 token 容量）。 |
+| `experiments/study3_corpus_effect_v1/` | 第三套语料规模效应实验的配置、词表绑定、逐候选结果、机制追踪和日志；`.pt` 权重由独立 Release 分发。 |
 | `reports/upstream/` | 上游结果汇总。 |
 | `reports/downstream/` | 下游结果汇总。 |
 | `reports/expanded_downstream_80_v1/` | 扩大语料实验结果、旧实验逐案例对照和完整性核验。 |
+| `reports/study3_corpus_effect_v1/` | 第三套大小语料配对结果、机制阶段统计、五轮复核和运行日志。 |
 | `reports/vocab_usage/` | token 使用统计。 |
 
 ## 分词器代码与词表

@@ -1,0 +1,62 @@
+{
+  "eqgpt_reference": {
+    "parameters": 19021881,
+    "trainable_parameters": 19021881,
+    "backbone_initial_sha256": "8b5013c7a9ce48014a9b716f3904ec6154ff4c9bb07d86c796fbfd331a56a4c3",
+    "input_shape": [
+      57,
+      768
+    ],
+    "output_shape": [
+      57,
+      768
+    ],
+    "positions": 60,
+    "pretrained_weights": false
+  },
+  "ast_bpe_280": {
+    "parameters": 19364632,
+    "trainable_parameters": 19364632,
+    "backbone_initial_sha256": "8b5013c7a9ce48014a9b716f3904ec6154ff4c9bb07d86c796fbfd331a56a4c3",
+    "input_shape": [
+      280,
+      768
+    ],
+    "output_shape": [
+      280,
+      768
+    ],
+    "positions": 60,
+    "pretrained_weights": false
+  },
+  "ast_bpe_315": {
+    "parameters": 19418427,
+    "trainable_parameters": 19418427,
+    "backbone_initial_sha256": "8b5013c7a9ce48014a9b716f3904ec6154ff4c9bb07d86c796fbfd331a56a4c3",
+    "input_shape": [
+      315,
+      768
+    ],
+    "output_shape": [
+      315,
+      768
+    ],
+    "positions": 60,
+    "pretrained_weights": false
+  },
+  "ast_bpe_350": {
+    "parameters": 19472222,
+    "trainable_parameters": 19472222,
+    "backbone_initial_sha256": "8b5013c7a9ce48014a9b716f3904ec6154ff4c9bb07d86c796fbfd331a56a4c3",
+    "input_shape": [
+      350,
+      768
+    ],
+    "output_shape": [
+      350,
+      768
+    ],
+    "positions": 60,
+    "pretrained_weights": false
+  }
+}

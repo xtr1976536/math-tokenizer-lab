@@ -2,7 +2,7 @@
 
 语料、八案例原始数据、MLP 缓存和模型权重统一放在这个目录。实验配置、日志和搜索结果保存在根目录的 `experiments/`；统计汇总保存在 `reports/`。
 
-两套完整方案见[实验总索引](../reports/实验方案索引.md)。上游均使用完整 1500 条 PDE；公式 benchmark 的目标排除只用于下游，不用于删减上游 8:1:1 语料。
+三套并列方案见[实验总索引](../reports/实验方案索引.md)。上游均使用完整 1500 条 PDE；公式 benchmark 的目标排除只用于下游，不用于删减上游 8:1:1 语料。第三套的大小语料、GRE 配对增强、独立 Hard 词表和来源审计保存在 `formulas/study3_corpus_effect_v1/`。
 
 ## 目录
 
@@ -13,6 +13,7 @@
 | [`formulas/eqgpt/augmented/`](formulas/eqgpt/augmented/) | 八案例下游实验实际使用的增强训练序列及目标排除记录，各案例分别保存。 |
 | [`formulas/gre_benchmark_filtered/`](formulas/gre_benchmark_filtered/) | 新的独立外部 PDE benchmark（2,045 条）；来源采集记录位于 `gre_external/`。 |
 | [`formulas/expanded_downstream_80_v1/`](formulas/expanded_downstream_80_v1/) | 新实验实际使用的 1,855 条共同训练来源及 59,360 条配对增强样本；含原 212 条非目标 EqGPT 公式和 1,643 条新 benchmark 公式。 |
+| [`formulas/study3_corpus_effect_v1/`](formulas/study3_corpus_effect_v1/) | 第三套小语料 212 条/6,784 样本与大语料 1,100 条/35,200 样本；两组独立未增强词表和配对增强清单。 |
 | [`formulas/experiment_inputs/`](formulas/experiment_inputs/) | 各次上游实验使用的公式。 |
 | [`cases/`](cases/) | 八个案例的原始 MAT、CSV、NPY 数据及作者的数据说明。 |
 | [`mlp_cache/`](mlp_cache/) | 各案例已拟合的 MLP、采样坐标、预测值和拟合质量记录。 |
@@ -53,6 +54,8 @@ PYTHONPATH=.:src python scripts/eqgpt/download_expanded_80_weights.py
 ```
 
 方案二权重保存到 `experiments/expanded_downstream_80_v1/shared_pretrain/` 和 `cases/<case>/<arm>/`，共36份；[清单](../experiments/expanded_downstream_80_v1/weight_manifest.json)与[使用说明](../scripts/eqgpt/README_方案二模型使用.md)独立于方案一。环境安装先看[环境说明](../ENVIRONMENT.md)。
+
+第三套权重保存到 `experiments/study3_corpus_effect_v1/` 对应的大小语料目录，共 136 个去重 checkpoint；[清单](../experiments/study3_corpus_effect_v1/weight_manifest.json)和[下载脚本](../scripts/eqgpt/download_study3_weights.py)独立于前两套。
 
 
 在已安装下游依赖的 Python 环境中，从仓库根目录运行：

@@ -1,0 +1,1220 @@
+{
+  "format": "study3-corpus-effect-v1-weights",
+  "release_tag": "study3-corpus-effect-v1-weights",
+  "description": "De-duplicated Study 3 pretrained and cycle_1/cycle_2 checkpoints. cycle_0, cycle_3 and searched.pt are local hard-link aliases.",
+  "files": [
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt",
+      "asset": "study3-small-pretrained-ast_bpe_280.pt",
+      "size_bytes": 77478343,
+      "sha256": "eeff8e6935c77701d5b8eb862c9318b920f6afacc95c1d6af5ef865d3b2e67a7"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt",
+      "asset": "study3-small-pretrained-ast_bpe_315.pt",
+      "size_bytes": 77693511,
+      "sha256": "dfa5afb2a1300430eaf16a81335480658a7289920d61439b275eba1f5b31f489"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt",
+      "asset": "study3-small-pretrained-ast_bpe_350.pt",
+      "size_bytes": 77908679,
+      "sha256": "c9ef1861b32d6ba3d3e61dc76e06a7780a35746161fe7cb000085c14aa531adf"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt",
+      "asset": "study3-small-pretrained-eqgpt_reference.pt",
+      "size_bytes": 76107335,
+      "sha256": "1ad506bba50a941d272b027dcbc2e3ecbf469ccac93bb91e6708ff6d920e448d"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-small-Burgers_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "b30257a444fbbf1cd338e30c25efe64e194dda12ebd97887060f072b973e03b6"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-small-Burgers_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "3ca5c5911d05cb166515e537b4eb85140304170b2304f32889b2d1982a48d346"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-small-Burgers_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "8da009c711f3a83feccb205117c4a55e375b34296c426175932f084940d347c0"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-small-Burgers_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "f3d0a16fd427a6748f881d6182dac9896199a86a7e6be2dca847afb498ada6f5"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-small-Burgers_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "ca6be42e40a64d78036c9e688775af1035b4932db3781f554e5cfefc5e8ff360"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-small-Burgers_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "79e19bc00609b4d083eddfa6a4e779935582619a5e63d6637a121792c18c2f39"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-small-Burgers_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "01f6fdc2e563a2240387aa462d9e1cb92a6b984e0f24854a0f7551d3a9cf1bd5"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-small-Burgers_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "81ff33da9513bfe8543fff62d684823b7f03105fedf57771d6907e899163f4a3"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-small-Chaffee_Infante_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "1723adb6cc4ba3562cded699adf21edb2a91fdd0f98cb06d1c14eb8ae51b0205"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-small-Chaffee_Infante_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "6f1467d25017627f0f603f3a1e7082030acd82d642acab65b10496c9fb0db537"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-small-Chaffee_Infante_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "8eadf8f0181920956d163ca8a6f5bbaf82fa104abacdc2520b119cfa96033fa3"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-small-Chaffee_Infante_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "4a0b578534c78b0f0451fa4bb594805330a3b35b84f315fd87b336d328cce0f7"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-small-Chaffee_Infante_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "e7a3c02a91559153f6686c6907682a4323d81081a8979880dd0f1f90058dd49c"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-small-Chaffee_Infante_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "817fe314c69a9170de410d8a42cdc761258f0a94fe8f5a2172c0d9281c2ada07"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-small-Chaffee_Infante_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "e02c9f7c0aa3dd4fe6d3f2d778f58689c6186c361c12cd410afeb06f9cc41f14"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-small-Chaffee_Infante_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "135e825b22d18967318aa29a734a3d494360877ddbd16ff3df57642e662cf523"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-small-Convection_diffusion_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "9f91505b3aa0aefc8ae27c3f8f519535d4dae0737d660f144f91008b97f470a6"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-small-Convection_diffusion_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "f893880f771c081162ffcc33aa6461a1ac7e6567775771f7d784f54c95932e27"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-small-Convection_diffusion_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "5826d0c083e6a7870d3ab2942114ac05cc9c58a4fef0b5602a4473f1b2b63205"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-small-Convection_diffusion_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "9c4eb2314b56b8c0a42d1b37e403829fa5832c246f6ebfa34135c2a8d53f6990"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-small-Convection_diffusion_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "7f47d2061e77f3cece2504728a3ae64ad9d53f8dd5a56eb51829b4ef23b6d8d2"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-small-Convection_diffusion_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "b3476a16b97a8ebfbc82ab19fc4706054a979d761ba24178238f6cab6fca8281"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-small-Convection_diffusion_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "2abf72b6b9150825a03563cf6f27a0a908206a5682fd1c3000bb1da67eaa7cb6"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-small-Convection_diffusion_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "9b1c576465adaebde5aec2b73fac347199cec02278de3e58dfe20364ea1ec809"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-small-Eq_6_2_12-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "d75c4bcd6990f045b0f3a8d84956f742e9cff8407715d0100631418b81211c04"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-small-Eq_6_2_12-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "05fb9388f91ce78fa1e0ec557f488445408ca1741b10d4c37f15388d038d1ff0"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-small-Eq_6_2_12-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "3cf819ff8ef1077392dc99b98cb934930a420b7b05b0cc40e743e8131d038839"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-small-Eq_6_2_12-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "ff5689a3834d4152d1a443ab4b0b08c16d8375310780989eb3d5bde973295c28"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-small-Eq_6_2_12-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "16a4d3c6cb846ea6a28bde901857a3756ddd0590fa06c5e5e9834e826f9d3fd6"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-small-Eq_6_2_12-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "7f0b6e201900cb3423bbba9931f781af82c588e93af892953a56d773ae7eb6bd"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-small-Eq_6_2_12-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "7a46fdca99ed4f0d7f2389e5f8632029d76a8f9bc4c81c777f12ad17d04968da"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-small-Eq_6_2_12-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "bbddbcd6a5aaa633d64d468a6ccad14b2c8bd620692b8e57696302b6d6e830dd"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-small-KG_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "3fb3db18e37b0f0edbd641e0e0730e07fc97464a82da49772414e34db26b7574"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-small-KG_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "e81922a61d7bc42b420f7a2e36bbac92a0b892ad07acfca0c43e4eea55b71666"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-small-KG_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "e30b49e011267a32fe2d6dc97dc88233442ae51a48d110984d35b8f6ed304722"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-small-KG_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "628b1406fb207a8d48aace61a030c6691337baab2b20d5c9876082a8037da0f7"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-small-KG_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "8243b49ab75b5da649605293f49f23235d3eb7d8c12a88ebc23dc3fd527a3bcf"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-small-KG_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "930730aa32cece11db432863c5949d8a9bfa320cd7bd407ee519378062b00d82"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-small-KG_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "61435e7cc2a5ed4e960a182019cf22ca73d7441bc78a0b3311c9e8e4e043f243"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-small-KG_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "a716ec2bed1824e84706426785c16de4573eec1fadd8ebf291345abc758d4814"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-small-KdV_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "9cdbdb54c1b2fe5e5aa4679c56a4c18f3f634ca0af8c6dbb9932d79938e989e9"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-small-KdV_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "79aaa5f95cf676e00714635bb30837585017c6077d3bf5d535faf05bba1b1991"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-small-KdV_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "5c93b0539ddefd52157a712712524e4cd7b9163d2321a564dd3289b4b7e4c8f4"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-small-KdV_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "d67566cb803fc96cb1b56e9821f41a12bb7c990a84550f85b8924a0c7859381b"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-small-KdV_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "d3661933be70b43d5b2bc546411acab497c591712086c4796c641c1d6d6771ce"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-small-KdV_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "2f4859dbd7c1c9b60e8020b3513fd7ac0a808aba9fa442589c9c892bcc0e0368"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-small-KdV_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "98823c6f761f261783a9f2ea2ba5285aa64cfa4176c1752fdc67585f7ef80621"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-small-KdV_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "064691c9d836bbdae5756f94ed20ee6385c05e3ba6c31c4f067f504149181469"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-small-PDE_divide-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "170261d374dce87a905b4f956f089f55e796ca65e7131532db790189ef00efef"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-small-PDE_divide-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "397eea119137503e77f553c092167d4ce67f1bc9349cf89b4fcd3c13cfbdc650"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-small-PDE_divide-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "a5c3cd677f8005b21cfd8769f9209550e1fd8282ea8e8e187ad55e0575a7072b"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-small-PDE_divide-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "9a8ee9e27617f1cbf1ddc97d681514ba23346030b4b6d14089fd9061816e1839"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-small-PDE_divide-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "050c72081efa6f4fec55ff750080933d275f02f2f49b85266e931e7a476b4c89"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-small-PDE_divide-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "36233f864c382bd0c2fd34c4010cc9943008cdf93646742b9d554b83bdf2c019"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-small-PDE_divide-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "a48b5764ca2fff9057143e85e0dcf407c812b88b7768d6ef48882048f495d74d"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-small-PDE_divide-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "9cc7fa6d30315e3741cb2c95a6e087828ac03b519e2f890422aed522685180f8"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-small-Wave_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "3a64141f1c98e360628cc49430a013a1093b50a505c527d10f41004cce7eab9f"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-small-Wave_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "80cc7be4fb336395898c9636d24433b3dfa5e1c06bfbf3868e40043e8bc542ec"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-small-Wave_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "f0c91d205f55c2b59f98d411bf15234aea70ba03ae043851d0c8df9a511e8141"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-small-Wave_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "b9b391c596a7a12fab61dc010854dacdd3d8819fe1eb4d59fb31a9919561c6d6"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-small-Wave_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "4915e183f302a39e4052b31bad8ca75511ad2427f346307296ff474cd6bb673b"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-small-Wave_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "1cf7bc19d29be7e2506ba60907bc6289845f805433ae5e521d84332fa0a6588f"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-small-Wave_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "2e2c6603c5962a3d7356f1e25ee5f334114d3e0749541636fe8b77dc220cc541"
+    },
+    {
+      "cohort": "small",
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-small-Wave_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "e749d45ac5c33716388a1292afed50de292d22ab936de9d5a3d4d6afa336e80f"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt",
+      "asset": "study3-large-pretrained-ast_bpe_280.pt",
+      "size_bytes": 77478343,
+      "sha256": "ff0de8429956c378477fabc7086d5e5b167645460819c01410016b14640f2dc1"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt",
+      "asset": "study3-large-pretrained-ast_bpe_315.pt",
+      "size_bytes": 77693511,
+      "sha256": "6fddb722aa73e1071b8a11b63f77f1b4d3be24bcf4bb5fd6cccb8f4d520cf3c3"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt",
+      "asset": "study3-large-pretrained-ast_bpe_350.pt",
+      "size_bytes": 77908679,
+      "sha256": "96ae90557feac7d62520de120472f2b7b79d51fef461f483b10f3e11549c86d3"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt",
+      "asset": "study3-large-pretrained-eqgpt_reference.pt",
+      "size_bytes": 76107335,
+      "sha256": "e6ad875aecd9eac115c13a92fb381a934ee7736ccaa944b328716613fc14ca6d"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-large-Burgers_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "ba495f6fc1ccb420e2c9c87c2c036018337bb0b165fbe00cb88a0877d682f6fc"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-large-Burgers_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "ef624ada869614463398eb4ab8be72d9163479edf123a3e8bbd5f9eb2dfffb23"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-large-Burgers_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "5494c7b025a660fcf0de8deaee513d1543260885c0d1be223dc724720305394f"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-large-Burgers_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "16e95cfa3b92582fa181466f3e5f62f041137ac94b5401c6ba717fb294d0eba4"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-large-Burgers_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "3babba742291c94de821effe35a7d8f9250d7a933baeedb2026eac501eb728ab"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-large-Burgers_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "3d4b7a2c03f2a2327d00acc6c563a138f2e77de09561077b6fedd27f00173bc6"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-large-Burgers_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "103e23c40bd196360e9dde6be6923352f0fa5e1c5ed40c354dd237ab635e9052"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-large-Burgers_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "adae4fdda81a8b84c5c952e615d5ebe2560d4b7eb2c6cd9e6cec10ffd23f88ca"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-large-Chaffee_Infante_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "9078ae439920eb4c446f894c8f846c1c5bc50d57f6821b9cd5c0448f924e3ac5"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-large-Chaffee_Infante_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "664e400bd4e136749f2d0b4c244bac1fdbfe9d84ead6690a748d417add82821b"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-large-Chaffee_Infante_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "cfe2f99432a08e9a90c289266a6ea5d1f4b90adcf3bcb66aadfec0f04d5abb82"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-large-Chaffee_Infante_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "9c0c22d44963444e0f8288c761a59035257ed7354db680a3aa120c5737e048c4"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-large-Chaffee_Infante_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "3c7ce8e25a06076933ddf342942a1323538388d279ef57e83071c06d3d496c0a"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-large-Chaffee_Infante_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "81d7499f517ea6c009e7d287891383357b1f631341da35c5d02bfab029fe711d"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-large-Chaffee_Infante_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "1de0d63da67acb046350de9655880ae2390de1749f6b56466bec96b6e06174d3"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-large-Chaffee_Infante_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "f4ea06396e37fafc793ec232d8e275b01b3604929de55488dc769e6376666f44"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-large-Convection_diffusion_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "a59d06d0d829f3c931b72f8bf3791bebd6a4469c79f8d972dc38210b82e20ff9"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-large-Convection_diffusion_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "96846f8f90064a73562956781695aaf7b6603912afa3cd570d8aba84d5ee8f53"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-large-Convection_diffusion_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "eca38005f5075c1acfbc26d95486b5ac8ff4273ff042182170d0fec00364069a"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-large-Convection_diffusion_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "d5b14f4b75ce16a2453bec9cc1cea00d0330c0cfd34ea87d1fc43abc90dc5e71"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-large-Convection_diffusion_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "916664419d4a06ee8b0d9a7f13c15341e260ea208daf8ba409a968bf38c927f4"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-large-Convection_diffusion_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "1d8e8972b3d061593b4199b2fa63414367911f7b5d193ae852fbaebc9ecd8eb0"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-large-Convection_diffusion_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "34ffd36bf58c93ec4875bbe8792d701645095ad4daef9ecc613e28a449a7e784"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-large-Convection_diffusion_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "d5a28e7b5a3150d901a61fce7fc93a6ebeb5f7543b1964416b3ef3c8a93f873a"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-large-Eq_6_2_12-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "dd1a93f7b815c89d06228957506b4aa0029bf0ebf4fd34095ed4a41b6817ec34"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-large-Eq_6_2_12-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "3682488b361712b6807d13395818b4ab7d70f9ed6eb74deb1b0f776c70927f28"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-large-Eq_6_2_12-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "6111484b78551cb978e94b6aa2506ada86f6af87251f151c4e224f335098cb1b"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-large-Eq_6_2_12-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "11ba002df53e1a1c996087f937f0d8f9947fe8b3f3bb781a23a6f54a4604d6d9"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-large-Eq_6_2_12-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "1b07b6fb6a5b540c4719f2a4c2378e254854212b19fb795da4fef026c700b8fd"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-large-Eq_6_2_12-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "9970acc4a982ae53b8f8e73a49c68de5aa03f340bb0a3f176aa942ee05f690fd"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-large-Eq_6_2_12-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "777fcacb835b77d02024ed391f167b226c110a75532bf30678497ff03c0b7820"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-large-Eq_6_2_12-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "086bcc088933f140b8b9eea19853eeee29ae0119ebcec37bab5926690c35fe72"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-large-KG_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "6ee79f4598a00713128ece0ab3529b516839e763c10c8410b7ad8037fc05ce13"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-large-KG_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "386bc0ed6dc53cd5b9512d8195017a3db84ba1c24bb91cb0f3a004f689c7ac3f"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-large-KG_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "75b98e3a119e5d497bfc266a5715e2a27e50e439b6b19e0634a54abb6a27d678"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-large-KG_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "b5537957cc2858ca719b788ac85f2f35e4c8b0dcf80445616c21635884a90e77"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-large-KG_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "1031e162e760c143a1f15fc4d80b8521108605b2ab094c09a9472b6fe2000878"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-large-KG_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "6b54d3dabc5a0cdbf0602e671e13bf804b808930c3142a28fbd2397d81d74c9a"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-large-KG_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "f69edd16cf8502af1ad81e70a3bb9f87c34b24594d7e6629dd9b8f19455e84d6"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-large-KG_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "a526a78c7fc5e817b3aa4231c64bde7c4c5435fbda7ab251993b58ddd09e6255"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-large-KdV_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "63b92dc9329fa2c79423522091363204f4656d1c84f6ac4b150d536c1abd3397"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-large-KdV_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "2a922499c73571f3b494ad3f3801d2781e48fd353b0fa0fde5bd969eb829dda3"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-large-KdV_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "e0d9fc088fffef299b2b14faf9603c7c3bb5f3f7e3bcb75db1208b00598cedd5"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-large-KdV_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "b983cdf2403fd3ece0f207c6d47d13b3d44cbaaec10ec1ff9c8c4683e5a7af1d"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-large-KdV_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "d52ed4dc9555349a154742eedce058c7408975f0b910f078ab06947a8b0a6be2"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-large-KdV_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "f7654181255a432f1c03fc34a8b22cbb79c96691e1cacdd19a4fb11ff95bef75"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-large-KdV_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "3cdd8bded2619e86856e8bee20d06851f6ef70d6452e2e1b9361252b58d4382f"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-large-KdV_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "be2e582e9cf67cf24eaf261d57c14cdf37e95fbba43834f4769307deeaf7da7b"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-large-PDE_divide-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "be3e92830a2fab88576da29320233120926fef4079c5bcfba56c92bea5d76fae"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-large-PDE_divide-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "c3b0f776b3e38f8ecd3d056fca39c0c25ecb21fcfa6ec44c18bf18097884b5a6"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-large-PDE_divide-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "4e4917bbdea35ef7c8acd76d927e63d4d6269567fa128af707599074aae3219a"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-large-PDE_divide-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "969c35d8b9fa5d0f61774c5f1cce819462c4b07e01826bbd5975280a99d7f379"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-large-PDE_divide-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "7ce3d4d94d57884f03e7ed5120235df4a9d7bff2c166b974b3492b8a4f1318ec"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-large-PDE_divide-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "0f1c9be29b519c24b22a79ab95415d52c38c75006349691a8a92223bb0785dcd"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-large-PDE_divide-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "3cef0266ad7165130e00789e25532eee91e9ed1a63d5fdc18e3c11e0eacc808e"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-large-PDE_divide-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "4a13897947e5eaf819c5b80da24748c162b693142fdba7fd55e8fd7a5437a4ac"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_280/cycle_1.pt",
+      "asset": "study3-large-Wave_equation-ast_bpe_280-cycle_1.pt",
+      "size_bytes": 77478343,
+      "sha256": "d55b4b92fbbfb3880c0aa8df47e91711bfefc04ad745789dc97eea5de8d8670f"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_280/cycle_2.pt",
+      "asset": "study3-large-Wave_equation-ast_bpe_280-cycle_2.pt",
+      "size_bytes": 77478343,
+      "sha256": "11ef9fa68c828756dab7784d60b75011378d0519c4c551ae1a245d7d8a2fe653"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_315/cycle_1.pt",
+      "asset": "study3-large-Wave_equation-ast_bpe_315-cycle_1.pt",
+      "size_bytes": 77693511,
+      "sha256": "70a9d29e96a0e9a38de9f7af6b7b10814b037cc4f2ba93ad4910e1b130033906"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_315/cycle_2.pt",
+      "asset": "study3-large-Wave_equation-ast_bpe_315-cycle_2.pt",
+      "size_bytes": 77693511,
+      "sha256": "715513e9837757fbe2102f37daf795c8fa71bd94cf2793c93eec59e7c2356b36"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_350/cycle_1.pt",
+      "asset": "study3-large-Wave_equation-ast_bpe_350-cycle_1.pt",
+      "size_bytes": 77908679,
+      "sha256": "fb7b4a3e49291b62d5f5ccf58d158c58922e47b07a4cdfb86ea002f33c2be963"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_350/cycle_2.pt",
+      "asset": "study3-large-Wave_equation-ast_bpe_350-cycle_2.pt",
+      "size_bytes": 77908679,
+      "sha256": "4e3b3778bbf5cd6df0f5d23717d63e733d57a32c9704f7d7e2c8f857d448784e"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/eqgpt_reference/cycle_1.pt",
+      "asset": "study3-large-Wave_equation-eqgpt_reference-cycle_1.pt",
+      "size_bytes": 76107335,
+      "sha256": "d8016962aeb1e97dda7135e6df2c63b9b193712056b7ce842e18010f820a9a6d"
+    },
+    {
+      "cohort": "large",
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/eqgpt_reference/cycle_2.pt",
+      "asset": "study3-large-Wave_equation-eqgpt_reference-cycle_2.pt",
+      "size_bytes": 76107335,
+      "sha256": "f533532ed2b563ea065caf82c5b2b6001bcbeec40c13334755e134fc0dd7ddc0"
+    }
+  ],
+  "aliases": [
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Burgers_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Convection_diffusion_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Eq_6_2_12/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KG_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/KdV_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/PDE_divide/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/large/cases/Wave_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/large/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Burgers_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Convection_diffusion_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Eq_6_2_12/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KG_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/KdV_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/PDE_divide/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_280/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_280/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_315/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_315/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/ast_bpe_350/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/ast_bpe_350/pretrained.pt"
+    },
+    {
+      "path": "experiments/study3_corpus_effect_v1/small/cases/Wave_equation/eqgpt_reference/cycle_0.pt",
+      "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt"
+    }
+  ],
+  "total_bytes": 10512387512,
+  "canonical_file_count": 136,
+  "local_path_count": 328
+}

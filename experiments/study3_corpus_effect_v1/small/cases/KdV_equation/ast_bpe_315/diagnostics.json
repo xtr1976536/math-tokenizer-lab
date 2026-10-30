@@ -1,0 +1,405 @@
+{
+  "truth_not_injected": true,
+  "executed_after_search": true,
+  "fixed_expression_reward_not_a_function_of_GPT_weights": true,
+  "order_effect": "author reward anchors first term; same structure can have different ordered rewards",
+  "probability_scope": "within arm and probe only; not cross-tokenizer or actual SAT sampling probability",
+  "scores": [
+    {
+      "probe": "truth_fixed",
+      "gre": [
+        5,
+        6,
+        2,
+        7,
+        3,
+        8,
+        2,
+        20,
+        1
+      ],
+      "structure_id": "d37cad741a8bc875d48389074e0dcdcd00613cc8c120ae1f0d073ee0692e6aa6",
+      "status": "evaluated",
+      "reward": 0.8915694932023495
+    },
+    {
+      "probe": "generated:[5, 20, 2, 6, 2, 8, 3, 7, 1]",
+      "gre": [
+        5,
+        20,
+        2,
+        6,
+        2,
+        8,
+        3,
+        7,
+        1
+      ],
+      "structure_id": "d37cad741a8bc875d48389074e0dcdcd00613cc8c120ae1f0d073ee0692e6aa6",
+      "status": "evaluated",
+      "reward": 0.903740996676225
+    },
+    {
+      "probe": "generated:[5, 7, 3, 8, 2, 20, 2, 6, 1]",
+      "gre": [
+        5,
+        7,
+        3,
+        8,
+        2,
+        20,
+        2,
+        6,
+        1
+      ],
+      "structure_id": "d37cad741a8bc875d48389074e0dcdcd00613cc8c120ae1f0d073ee0692e6aa6",
+      "status": "evaluated",
+      "reward": 0.9038236250453558
+    },
+    {
+      "probe": "generated:[5, 20, 2, 6, 2, 7, 3, 8, 1]",
+      "gre": [
+        5,
+        20,
+        2,
+        6,
+        2,
+        7,
+        3,
+        8,
+        1
+      ],
+      "structure_id": "d37cad741a8bc875d48389074e0dcdcd00613cc8c120ae1f0d073ee0692e6aa6",
+      "status": "evaluated",
+      "reward": 0.903740996676225
+    },
+    {
+      "probe": "generated:[5, 8, 3, 7, 2, 20, 2, 6, 1]",
+      "gre": [
+        5,
+        8,
+        3,
+        7,
+        2,
+        20,
+        2,
+        6,
+        1
+      ],
+      "structure_id": "d37cad741a8bc875d48389074e0dcdcd00613cc8c120ae1f0d073ee0692e6aa6",
+      "status": "evaluated",
+      "reward": 0.9038236250453558
+    },
+    {
+      "probe": "generated:[5, 8, 3, 7, 2, 6, 2, 20, 1]",
+      "gre": [
+        5,
+        8,
+        3,
+        7,
+        2,
+        6,
+        2,
+        20,
+        1
+      ],
+      "structure_id": "d37cad741a8bc875d48389074e0dcdcd00613cc8c120ae1f0d073ee0692e6aa6",
+      "status": "evaluated",
+      "reward": 0.9038236250453558
+    }
+  ],
+  "raw_text_probes": {
+    "raw_text:dd80259ce1089c922ec15f699cb26bc0c6fb431d7044ec4556b18fdbeeb9dffa": "(u_{xxx})+(u_{t})+(u_{x})\\cdot (u)=0",
+    "raw_text:dd51027c5b9247dcd2c127ebfea2da6db1f9903ef88f6c87253194492cc4ad87": "(u_{x})\\cdot (u)+(u_{t})+(u_{xxx})=0"
+  },
+  "probability_curves": [
+    {
+      "checkpoint": "pretrained_before_search",
+      "probe": "truth_fixed",
+      "status": "scored",
+      "sum_logp": -8.84007453918457,
+      "mean_logp": -2.2100186347961426,
+      "target_tokens": 4,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "pretrained_before_search",
+      "probe": "generated:[5, 20, 2, 6, 2, 8, 3, 7, 1]",
+      "status": "scored",
+      "sum_logp": -8.69837760925293,
+      "mean_logp": -1.2426253727504186,
+      "target_tokens": 7,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "pretrained_before_search",
+      "probe": "generated:[5, 7, 3, 8, 2, 20, 2, 6, 1]",
+      "status": "scored",
+      "sum_logp": -8.323817253112793,
+      "mean_logp": -1.6647634506225586,
+      "target_tokens": 5,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "pretrained_before_search",
+      "probe": "generated:[5, 20, 2, 6, 2, 7, 3, 8, 1]",
+      "status": "scored",
+      "sum_logp": -9.822431564331055,
+      "mean_logp": -1.964486312866211,
+      "target_tokens": 5,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "pretrained_before_search",
+      "probe": "generated:[5, 8, 3, 7, 2, 20, 2, 6, 1]",
+      "status": "scored",
+      "sum_logp": -8.306798934936523,
+      "mean_logp": -1.3844664891560872,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "pretrained_before_search",
+      "probe": "generated:[5, 8, 3, 7, 2, 6, 2, 20, 1]",
+      "status": "scored",
+      "sum_logp": -8.437918663024902,
+      "mean_logp": -1.4063197771708171,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "pretrained_before_search",
+      "probe": "raw_text:dd80259ce1089c922ec15f699cb26bc0c6fb431d7044ec4556b18fdbeeb9dffa",
+      "status": "scored",
+      "sum_logp": -8.69837760925293,
+      "mean_logp": -1.2426253727504186,
+      "target_tokens": 7,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "pretrained_before_search",
+      "probe": "raw_text:dd51027c5b9247dcd2c127ebfea2da6db1f9903ef88f6c87253194492cc4ad87",
+      "status": "scored",
+      "sum_logp": -8.437918663024902,
+      "mean_logp": -1.4063197771708171,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_1",
+      "probe": "truth_fixed",
+      "status": "scored",
+      "sum_logp": -8.524550437927246,
+      "mean_logp": -2.1311376094818115,
+      "target_tokens": 4,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_1",
+      "probe": "generated:[5, 20, 2, 6, 2, 8, 3, 7, 1]",
+      "status": "scored",
+      "sum_logp": -7.67980432510376,
+      "mean_logp": -1.0971149035862513,
+      "target_tokens": 7,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_1",
+      "probe": "generated:[5, 7, 3, 8, 2, 20, 2, 6, 1]",
+      "status": "scored",
+      "sum_logp": -7.511632442474365,
+      "mean_logp": -1.502326488494873,
+      "target_tokens": 5,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_1",
+      "probe": "generated:[5, 20, 2, 6, 2, 7, 3, 8, 1]",
+      "status": "scored",
+      "sum_logp": -9.433881759643555,
+      "mean_logp": -1.8867763519287108,
+      "target_tokens": 5,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_1",
+      "probe": "generated:[5, 8, 3, 7, 2, 20, 2, 6, 1]",
+      "status": "scored",
+      "sum_logp": -7.737419128417969,
+      "mean_logp": -1.2895698547363281,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_1",
+      "probe": "generated:[5, 8, 3, 7, 2, 6, 2, 20, 1]",
+      "status": "scored",
+      "sum_logp": -8.027958869934082,
+      "mean_logp": -1.3379931449890137,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_1",
+      "probe": "raw_text:dd80259ce1089c922ec15f699cb26bc0c6fb431d7044ec4556b18fdbeeb9dffa",
+      "status": "scored",
+      "sum_logp": -7.67980432510376,
+      "mean_logp": -1.0971149035862513,
+      "target_tokens": 7,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_1",
+      "probe": "raw_text:dd51027c5b9247dcd2c127ebfea2da6db1f9903ef88f6c87253194492cc4ad87",
+      "status": "scored",
+      "sum_logp": -8.027958869934082,
+      "mean_logp": -1.3379931449890137,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_2",
+      "probe": "truth_fixed",
+      "status": "scored",
+      "sum_logp": -8.254546165466309,
+      "mean_logp": -2.063636541366577,
+      "target_tokens": 4,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_2",
+      "probe": "generated:[5, 20, 2, 6, 2, 8, 3, 7, 1]",
+      "status": "scored",
+      "sum_logp": -6.919973373413086,
+      "mean_logp": -0.988567624773298,
+      "target_tokens": 7,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_2",
+      "probe": "generated:[5, 7, 3, 8, 2, 20, 2, 6, 1]",
+      "status": "scored",
+      "sum_logp": -6.814131736755371,
+      "mean_logp": -1.3628263473510742,
+      "target_tokens": 5,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_2",
+      "probe": "generated:[5, 20, 2, 6, 2, 7, 3, 8, 1]",
+      "status": "scored",
+      "sum_logp": -9.147826194763184,
+      "mean_logp": -1.8295652389526367,
+      "target_tokens": 5,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_2",
+      "probe": "generated:[5, 8, 3, 7, 2, 20, 2, 6, 1]",
+      "status": "scored",
+      "sum_logp": -7.247201442718506,
+      "mean_logp": -1.207866907119751,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_2",
+      "probe": "generated:[5, 8, 3, 7, 2, 6, 2, 20, 1]",
+      "status": "scored",
+      "sum_logp": -7.675787925720215,
+      "mean_logp": -1.2792979876200359,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_2",
+      "probe": "raw_text:dd80259ce1089c922ec15f699cb26bc0c6fb431d7044ec4556b18fdbeeb9dffa",
+      "status": "scored",
+      "sum_logp": -6.919973373413086,
+      "mean_logp": -0.988567624773298,
+      "target_tokens": 7,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_2",
+      "probe": "raw_text:dd51027c5b9247dcd2c127ebfea2da6db1f9903ef88f6c87253194492cc4ad87",
+      "status": "scored",
+      "sum_logp": -7.675787925720215,
+      "mean_logp": -1.2792979876200359,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_3",
+      "probe": "truth_fixed",
+      "status": "scored",
+      "sum_logp": -8.012155532836914,
+      "mean_logp": -2.0030388832092285,
+      "target_tokens": 4,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_3",
+      "probe": "generated:[5, 20, 2, 6, 2, 8, 3, 7, 1]",
+      "status": "scored",
+      "sum_logp": -6.36989164352417,
+      "mean_logp": -0.9099845205034528,
+      "target_tokens": 7,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_3",
+      "probe": "generated:[5, 7, 3, 8, 2, 20, 2, 6, 1]",
+      "status": "scored",
+      "sum_logp": -6.1619110107421875,
+      "mean_logp": -1.2323822021484374,
+      "target_tokens": 5,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_3",
+      "probe": "generated:[5, 20, 2, 6, 2, 7, 3, 8, 1]",
+      "status": "scored",
+      "sum_logp": -8.932085990905762,
+      "mean_logp": -1.7864171981811523,
+      "target_tokens": 5,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_3",
+      "probe": "generated:[5, 8, 3, 7, 2, 20, 2, 6, 1]",
+      "status": "scored",
+      "sum_logp": -6.815349578857422,
+      "mean_logp": -1.135891596476237,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_3",
+      "probe": "generated:[5, 8, 3, 7, 2, 6, 2, 20, 1]",
+      "status": "scored",
+      "sum_logp": -7.3798322677612305,
+      "mean_logp": -1.2299720446268718,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_3",
+      "probe": "raw_text:dd80259ce1089c922ec15f699cb26bc0c6fb431d7044ec4556b18fdbeeb9dffa",
+      "status": "scored",
+      "sum_logp": -6.36989164352417,
+      "mean_logp": -0.9099845205034528,
+      "target_tokens": 7,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    },
+    {
+      "checkpoint": "after_continuation_3",
+      "probe": "raw_text:dd51027c5b9247dcd2c127ebfea2da6db1f9903ef88f6c87253194492cc4ad87",
+      "status": "scored",
+      "sum_logp": -7.3798322677612305,
+      "mean_logp": -1.2299720446268718,
+      "target_tokens": 6,
+      "probability_kind": "raw teacher-forced softmax; excludes SAT/80:20 mixture"
+    }
+  ]
+}

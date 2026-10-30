@@ -1,0 +1,10 @@
+{
+  "samples": 35200,
+  "epochs": 25,
+  "arms": [
+    "eqgpt_reference",
+    "ast_bpe_280",
+    "ast_bpe_315",
+    "ast_bpe_350"
+  ]
+}

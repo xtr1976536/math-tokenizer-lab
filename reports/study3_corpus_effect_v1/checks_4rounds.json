@@ -1,0 +1,51 @@
+{
+  "version": "study3-corpus-effect-v1",
+  "revision": "60-separate-unaugmented-tokenizers-additional-review",
+  "status": "PASS",
+  "review_state": "AWAITING_USER_REVIEW",
+  "checked_at_utc": "2026-10-30T07:18:12.349526+00:00",
+  "code_sha256": "aefe17daac64829655eb041cf5eb6a88b0f09fedc492f88a21cb44d7a765b3e2",
+  "corpus_manifest_sha256": "e99e4de8a0aeafe90e8ec5cb93e51553ac4e69dd3fb90bacefc2b06b7878aedb",
+  "rounds": [
+    {
+      "round": 1,
+      "status": "PASS",
+      "scope": "Full corpus invariants, distinct permutations and independent tokenizer payload verification",
+      "evidence": {
+        "round5_data.json": "21bd1e589d8ebcaaa8e429fdf3271118525d65b86e2b1cab8916db9faaeb7ce4",
+        "round5_data.log": "21bd1e589d8ebcaaa8e429fdf3271118525d65b86e2b1cab8916db9faaeb7ce4"
+      }
+    },
+    {
+      "round": 2,
+      "status": "PASS",
+      "scope": "Mechanism and new equation-level aggregate metric regression",
+      "evidence": {
+        "round5_regression.log": "1c1b6f202bc1823be732b2985bda0b345c7f0e7f57935ac072c515756514995a"
+      }
+    },
+    {
+      "round": 3,
+      "status": "PASS",
+      "scope": "Read-only 60-position models and eight fitted MLP checks",
+      "evidence": {
+        "integration.json": "294866411806aa18d4516e8883da617e4601a1f9205e09761c66dbd6a37e3e3f",
+        "round5_integration.log": "0930f502fcb64bf5ea2ce312404cc76c96c3ca734ccf82fb00fa4e5f942b919e"
+      }
+    },
+    {
+      "round": 4,
+      "status": "PASS",
+      "scope": "Historical integrity, syntax and final full regression",
+      "evidence": {
+        "round5_safety.json": "6a5f09c9c58fb1e32a4f3c70d03ae55a9b810e69b355ec5d0a41fcc6f6d574cb",
+        "round5_regression.log": "1c1b6f202bc1823be732b2985bda0b345c7f0e7f57935ac072c515756514995a"
+      }
+    }
+  ],
+  "full_regression_tests": 89,
+  "additional_review_round": 5,
+  "formal_training_started": false,
+  "formal_candidate_search_started": false,
+  "historical_files_unchanged": 1423
+}

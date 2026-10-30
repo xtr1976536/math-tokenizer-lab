@@ -1,0 +1,774 @@
+STUDY3_CASE_COMPLETE small Wave_equation
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:209: RuntimeWarning: divide by zero encountered in divide
+  A_column /= value
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:209: RuntimeWarning: divide by zero encountered in divide
+  A_column /= value
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.90it/s]100%|██████████| 1/1 [00:00<00:00,  4.89it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.40it/s]
+STUDY3_CYCLE Convection_diffusion_equation eqgpt 1
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:213: RuntimeWarning: invalid value encountered in multiply
+  A_column *= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.13it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.51it/s]
+STUDY3_CYCLE Convection_diffusion_equation eqgpt 2
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 25.51it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.66it/s]
+STUDY3_CYCLE Convection_diffusion_equation eqgpt 3
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:209: RuntimeWarning: divide by zero encountered in divide
+  A_column /= value
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.87it/s]100%|██████████| 1/1 [00:00<00:00,  2.86it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.69s/it]100%|██████████| 1/1 [00:02<00:00,  2.69s/it]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 1
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 27.06it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.35it/s]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 2
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 45.17it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.48it/s]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 3
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.00it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.89it/s]100%|██████████| 1/1 [00:00<00:00,  2.89it/s]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 1
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 32.39it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.13it/s]100%|██████████| 1/1 [00:00<00:00,  1.13it/s]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 2
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 87.63it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.14it/s]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 3
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.79it/s]100%|██████████| 1/1 [00:00<00:00,  4.78it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.59s/it]100%|██████████| 1/1 [00:01<00:00,  1.59s/it]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 1
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 43.77it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.64it/s]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 2
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 34.45it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.83it/s]
+STUDY3_CYCLE Convection_diffusion_equation ast_bpe 3
+STUDY3_CASE_COMPLETE small Convection_diffusion_equation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 11.08it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 13.70it/s]
+STUDY3_CYCLE KG_equation eqgpt 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.34it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 17.49it/s]
+STUDY3_CYCLE KG_equation eqgpt 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 45.57it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  9.88it/s]100%|██████████| 1/1 [00:00<00:00,  9.86it/s]
+STUDY3_CYCLE KG_equation eqgpt 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  7.25it/s]100%|██████████| 1/1 [00:00<00:00,  7.24it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.40s/it]100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+STUDY3_CYCLE KG_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 12.47it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  9.74it/s]100%|██████████| 1/1 [00:00<00:00,  9.73it/s]
+STUDY3_CYCLE KG_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 65.97it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 11.77it/s]
+STUDY3_CYCLE KG_equation ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.13it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.95it/s]
+STUDY3_CYCLE KG_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.68it/s]100%|██████████| 1/1 [00:00<00:00,  2.67it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.08s/it]100%|██████████| 1/1 [00:02<00:00,  2.08s/it]
+STUDY3_CYCLE KG_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 70.54it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 18.85it/s]
+STUDY3_CYCLE KG_equation ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.41it/s]100%|██████████| 1/1 [00:00<00:00,  4.40it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.70s/it]100%|██████████| 1/1 [00:01<00:00,  1.70s/it]
+STUDY3_CYCLE KG_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 13.84it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.79it/s]
+STUDY3_CYCLE KG_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  8.32it/s]100%|██████████| 1/1 [00:00<00:00,  8.31it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.61it/s]100%|██████████| 1/1 [00:00<00:00,  2.61it/s]
+STUDY3_CYCLE KG_equation ast_bpe 3
+STUDY3_CASE_COMPLETE small KG_equation
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: invalid value encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  5.04it/s]100%|██████████| 1/1 [00:00<00:00,  5.03it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.47it/s]100%|██████████| 1/1 [00:00<00:00,  1.47it/s]
+STUDY3_CYCLE Burgers_equation eqgpt 1
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  9.66it/s]100%|██████████| 1/1 [00:00<00:00,  9.65it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.57it/s]
+STUDY3_CYCLE Burgers_equation eqgpt 2
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 70.37it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.69it/s]
+STUDY3_CYCLE Burgers_equation eqgpt 3
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:209: RuntimeWarning: divide by zero encountered in divide
+  A_column /= value
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.11it/s]100%|██████████| 1/1 [00:00<00:00,  2.11it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.33s/it]100%|██████████| 1/1 [00:01<00:00,  1.33s/it]
+STUDY3_CYCLE Burgers_equation ast_bpe 1
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 17.52it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 13.75it/s]
+STUDY3_CYCLE Burgers_equation ast_bpe 2
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 65.46it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 21.56it/s]
+STUDY3_CYCLE Burgers_equation ast_bpe 3
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  5.19it/s]100%|██████████| 1/1 [00:00<00:00,  5.19it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.45it/s]100%|██████████| 1/1 [00:00<00:00,  2.44it/s]
+STUDY3_CYCLE Burgers_equation ast_bpe 1
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 12.28it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.29s/it]100%|██████████| 1/1 [00:01<00:00,  1.29s/it]
+STUDY3_CYCLE Burgers_equation ast_bpe 2
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 80.65it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 25.09it/s]
+STUDY3_CYCLE Burgers_equation ast_bpe 3
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.80it/s]100%|██████████| 1/1 [00:00<00:00,  2.80it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.22it/s]100%|██████████| 1/1 [00:00<00:00,  1.22it/s]
+STUDY3_CYCLE Burgers_equation ast_bpe 1
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.01it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  9.48it/s]100%|██████████| 1/1 [00:00<00:00,  9.46it/s]
+STUDY3_CYCLE Burgers_equation ast_bpe 2
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+/Users/xiao/Documents/ChatGPT/科研工作（港城）/math_tokenizer_project_release/eqgpt_original/code/continue_train_GPT.py:215: RuntimeWarning: divide by zero encountered in divide
+  A_column /= words2value[word]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.73it/s]100%|██████████| 1/1 [00:00<00:00,  4.73it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.52it/s]100%|██████████| 1/1 [00:00<00:00,  2.52it/s]
+STUDY3_CYCLE Burgers_equation ast_bpe 3
+STUDY3_CASE_COMPLETE small Burgers_equation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.40it/s]100%|██████████| 1/1 [00:00<00:00,  1.40it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.18it/s]100%|██████████| 1/1 [00:00<00:00,  1.18it/s]
+STUDY3_CYCLE Eq_6_2_12 eqgpt 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 72.85it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 25.16it/s]
+STUDY3_CYCLE Eq_6_2_12 eqgpt 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 77.15it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 25.18it/s]
+STUDY3_CYCLE Eq_6_2_12 eqgpt 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.90it/s]100%|██████████| 1/1 [00:00<00:00,  4.90it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.44s/it]100%|██████████| 1/1 [00:01<00:00,  1.44s/it]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 20.25it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.06it/s]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 66.83it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 21.30it/s]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.61it/s]100%|██████████| 1/1 [00:00<00:00,  4.60it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.28it/s]100%|██████████| 1/1 [00:00<00:00,  2.28it/s]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  6.08it/s]100%|██████████| 1/1 [00:00<00:00,  6.07it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.65s/it]100%|██████████| 1/1 [00:01<00:00,  1.65s/it]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.25it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.79it/s]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  8.52it/s]100%|██████████| 1/1 [00:00<00:00,  8.51it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.11s/it]100%|██████████| 1/1 [00:01<00:00,  1.11s/it]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 55.02it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.07it/s]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 64.84it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 21.35it/s]
+STUDY3_CYCLE Eq_6_2_12 ast_bpe 3
+STUDY3_CASE_COMPLETE small Eq_6_2_12
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.95it/s]100%|██████████| 1/1 [00:00<00:00,  1.95it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.37it/s]100%|██████████| 1/1 [00:00<00:00,  1.37it/s]
+STUDY3_CYCLE PDE_divide eqgpt 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  9.43it/s]100%|██████████| 1/1 [00:00<00:00,  9.42it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 11.50it/s]
+STUDY3_CYCLE PDE_divide eqgpt 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 51.48it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.46it/s]
+STUDY3_CYCLE PDE_divide eqgpt 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  3.99it/s]100%|██████████| 1/1 [00:00<00:00,  3.99it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.21s/it]100%|██████████| 1/1 [00:01<00:00,  1.21s/it]
+STUDY3_CYCLE PDE_divide ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 19.72it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.31it/s]
+STUDY3_CYCLE PDE_divide ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 51.89it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 21.81it/s]
+STUDY3_CYCLE PDE_divide ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 26.39it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.47it/s]100%|██████████| 1/1 [00:00<00:00,  2.47it/s]
+STUDY3_CYCLE PDE_divide ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 81.18it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 21.46it/s]
+STUDY3_CYCLE PDE_divide ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.21it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.36s/it]100%|██████████| 1/1 [00:01<00:00,  1.36s/it]
+STUDY3_CYCLE PDE_divide ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.93it/s]100%|██████████| 1/1 [00:00<00:00,  2.93it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.43it/s]100%|██████████| 1/1 [00:00<00:00,  1.43it/s]
+STUDY3_CYCLE PDE_divide ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 20.33it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.82it/s]
+STUDY3_CYCLE PDE_divide ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 17.58it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 20.96it/s]
+STUDY3_CYCLE PDE_divide ast_bpe 3
+STUDY3_CASE_COMPLETE small PDE_divide
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 13.98it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.93it/s]100%|██████████| 1/1 [00:00<00:00,  2.93it/s]
+STUDY3_CYCLE KdV_equation eqgpt 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 30.09it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.97it/s]
+STUDY3_CYCLE KdV_equation eqgpt 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 82.03it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.90it/s]
+STUDY3_CYCLE KdV_equation eqgpt 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.13it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 20.25it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 63.76it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.15it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 60.00it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 21.18it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.02it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.12it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 38.76it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.67it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.45it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 17.35it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 72.81it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.98it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 38.22it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.97it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 76.64it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.11it/s]
+STUDY3_CYCLE KdV_equation ast_bpe 3
+STUDY3_CASE_COMPLETE small KdV_equation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  5.77it/s]100%|██████████| 1/1 [00:00<00:00,  5.76it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.66it/s]100%|██████████| 1/1 [00:00<00:00,  2.66it/s]
+STUDY3_CYCLE Chaffee_Infante_equation eqgpt 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 68.80it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 25.58it/s]
+STUDY3_CYCLE Chaffee_Infante_equation eqgpt 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 76.63it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.97it/s]
+STUDY3_CYCLE Chaffee_Infante_equation eqgpt 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.58it/s]100%|██████████| 1/1 [00:00<00:00,  4.57it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.23s/it]100%|██████████| 1/1 [00:01<00:00,  1.23s/it]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.43it/s]100%|██████████| 1/1 [00:00<00:00,  4.43it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.62it/s]100%|██████████| 1/1 [00:00<00:00,  1.62it/s]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 16.54it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.73it/s]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.98it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 17.32it/s]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 13.37it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.47s/it]100%|██████████| 1/1 [00:01<00:00,  1.47s/it]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 11.99it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14.58it/s]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  4.09it/s]100%|██████████| 1/1 [00:00<00:00,  4.09it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.05it/s]100%|██████████| 1/1 [00:00<00:00,  1.05it/s]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15.28it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 18.39it/s]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  9.70it/s]100%|██████████| 1/1 [00:00<00:00,  9.68it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 18.16it/s]
+STUDY3_CYCLE Chaffee_Infante_equation ast_bpe 3
+STUDY3_CASE_COMPLETE small Chaffee_Infante_equation

@@ -1,0 +1,5 @@
+{
+  "pretrained_sha256": "662e250dc7f4fdd109382d9fdabb62ea4abd69b87eea77767969bcef5103e0cc",
+  "mlp_sha256": "6fc136605f08c3770ea40d90c3544feb4c5c4178bfc05c934bf9e63a14faa667",
+  "cohort": "large"
+}

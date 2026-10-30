@@ -20,3 +20,5 @@ data/weights/.downloads/
 /scripts/build_newest_report.py
 # Preparation-stage logs before the final 80-token protocol; final audits retained.
 /reports/expanded_downstream_v2/
+# Study 3 checkpoints are distributed through a dedicated GitHub Release.
+/experiments/study3_corpus_effect_v1/**/*.pt

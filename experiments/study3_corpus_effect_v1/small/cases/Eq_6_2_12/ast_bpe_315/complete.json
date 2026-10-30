@@ -1,0 +1,19 @@
+{
+  "case": "Eq_6_2_12",
+  "cohort": "small",
+  "arm": "ast_bpe_315",
+  "files": {
+    "cycle_1_trace.json": "202bc09221f24cf70608602be37aa21bb914d06b14d1e9a0870b985b431cf30d",
+    "search.json": "01204b0cdf18132e946ea21951e214226795cfb175d1f0d697d23fcfaf2f6039",
+    "cycle_2.pt": "ff5689a3834d4152d1a443ab4b0b08c16d8375310780989eb3d5bde973295c28",
+    "mechanism.json": "86daebd81b8c8857d2b2384c660ae2748bac5b7b0a5a96da8939ab504de8b4d2",
+    "cycle_3_trace.json": "0364d4c73019ef360597c8148d1e9ec054065ef3db8e80a7114fe7d5981f01aa",
+    "diagnostics.json": "5cf237078c96eaaf49a512ff0946ca361ce2c604d5ae6276826162102bd445a3",
+    "cycle_3.pt": "f614a92dc0df82e3ea8932be2a9acd18b52c724d87de30ec954b8d102a6b996b",
+    "cycle_0.pt": "dfa5afb2a1300430eaf16a81335480658a7289920d61439b275eba1f5b31f489",
+    "searched.pt": "f614a92dc0df82e3ea8932be2a9acd18b52c724d87de30ec954b8d102a6b996b",
+    "cycle_1.pt": "3cf819ff8ef1077392dc99b98cb934930a420b7b05b0cc40e743e8131d038839",
+    "cycle_2_trace.json": "f022a72bb10c2809d762e29e3205caa73c8e3478f3f04c236c34ed1519fef233",
+    "SEARCH_INPUT.json": "930565b290dbec97d865cb652a7086980278b854a87c37c323d41e7950e45d69"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "large_search_groups": 32,
+  "candidates": 19200,
+  "pretrain_arms": 4,
+  "epochs_each": 25,
+  "samples_each": 35200,
+  "mlp_caches_unchanged": 8
+}

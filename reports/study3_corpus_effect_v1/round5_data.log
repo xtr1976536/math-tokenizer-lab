@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "cohorts": {
+    "small": {
+      "sources": 212,
+      "samples": 6784,
+      "maxima": {
+        "eqgpt_reference": 19,
+        "ast_bpe_280": 32,
+        "ast_bpe_315": 29,
+        "ast_bpe_350": 24
+      },
+      "source_kinds": {
+        "eqgpt_handbook_non_target": 212
+      }
+    },
+    "large": {
+      "sources": 1100,
+      "samples": 35200,
+      "maxima": {
+        "eqgpt_reference": 59,
+        "ast_bpe_280": 51,
+        "ast_bpe_315": 36,
+        "ast_bpe_350": 35
+      },
+      "source_kinds": {
+        "eqgpt_handbook_non_target": 212,
+        "external_benchmark": 888
+      }
+    }
+  },
+  "full_row_checks": true,
+  "exact_small_augmentation_subset": true,
+  "separate_unaugmented_tokenizer_corpora_verified": true,
+  "target_exclusion_scope": "upstream audited external exact/high-similarity exclusions + current exact structure recheck"
+}

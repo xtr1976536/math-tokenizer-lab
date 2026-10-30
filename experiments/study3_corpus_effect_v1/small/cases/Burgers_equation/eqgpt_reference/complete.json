@@ -1,0 +1,19 @@
+{
+  "case": "Burgers_equation",
+  "cohort": "small",
+  "arm": "eqgpt_reference",
+  "files": {
+    "cycle_1_trace.json": "cb9306db69b506296243489bc5ea19ded5107da469c291b6a39ddfb31d17db16",
+    "search.json": "ab1f11454599c9a5cf3c0ccc33338e00f84f5da497dd0ced3bf925be5bee0731",
+    "cycle_2.pt": "81ff33da9513bfe8543fff62d684823b7f03105fedf57771d6907e899163f4a3",
+    "mechanism.json": "233b313752bd69be78f1ba86dc1c3fa904ba7bc45d5c330723b7f7bc9b68473a",
+    "cycle_3_trace.json": "32d19ffe80b654a7574f827ea2970e0304100e4ddb59f17f09c0551bd48c1623",
+    "diagnostics.json": "7b4dafa9269a38302b29c71cecabc83abb494bf013909c55e1861dc2bf28714f",
+    "cycle_3.pt": "966d6c00a8c40b6f3232445092f763b6273f3515412f5252d2714f547c9db190",
+    "cycle_0.pt": "1ad506bba50a941d272b027dcbc2e3ecbf469ccac93bb91e6708ff6d920e448d",
+    "searched.pt": "966d6c00a8c40b6f3232445092f763b6273f3515412f5252d2714f547c9db190",
+    "cycle_1.pt": "01f6fdc2e563a2240387aa462d9e1cb92a6b984e0f24854a0f7551d3a9cf1bd5",
+    "cycle_2_trace.json": "c5304474c5d0e1e185416a732a2510435bf168c1c750bb59072ffb8e241ae285",
+    "SEARCH_INPUT.json": "8a9272d732b12b29ead5b35db5002c723dd889a876a64cbc190c72b807eaaf36"
+  }
+}

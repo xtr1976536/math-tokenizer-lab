@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "completed_searches": 32,
+  "candidates": 19200,
+  "pretrain_epochs": 25,
+  "pretrain_samples": 6784,
+  "mlp_caches_unchanged": 8,
+  "checks": [
+    {
+      "case": "Wave_equation",
+      "arm": "eqgpt_reference",
+      "status": "PASS"
+    },
+    {
+      "case": "Wave_equation",
+      "arm": "ast_bpe_280",
+      "status": "PASS"
+    },
+    {
+      "case": "Wave_equation",
+      "arm": "ast_bpe_315",
+      "status": "PASS"
+    },
+    {
+      "case": "Wave_equation",
+      "arm": "ast_bpe_350",
+      "status": "PASS"
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "arm": "eqgpt_reference",
+      "status": "PASS"
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "arm": "ast_bpe_280",
+      "status": "PASS"
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "arm": "ast_bpe_315",
+      "status": "PASS"
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "arm": "ast_bpe_350",
+      "status": "PASS"
+    },
+    {
+      "case": "KG_equation",
+      "arm": "eqgpt_reference",
+      "status": "PASS"
+    },
+    {
+      "case": "KG_equation",
+      "arm": "ast_bpe_280",
+      "status": "PASS"
+    },
+    {
+      "case": "KG_equation",
+      "arm": "ast_bpe_315",
+      "status": "PASS"
+    },
+    {
+      "case": "KG_equation",
+      "arm": "ast_bpe_350",
+      "status": "PASS"
+    },
+    {
+      "case": "Burgers_equation",
+      "arm": "eqgpt_reference",
+      "status": "PASS"
+    },
+    {
+      "case": "Burgers_equation",
+      "arm": "ast_bpe_280",
+      "status": "PASS"
+    },
+    {
+      "case": "Burgers_equation",
+      "arm": "ast_bpe_315",
+      "status": "PASS"
+    },
+    {
+      "case": "Burgers_equation",
+      "arm": "ast_bpe_350",
+      "status": "PASS"
+    },
+    {
+      "case": "Eq_6_2_12",
+      "arm": "eqgpt_reference",
+      "status": "PASS"
+    },
+    {
+      "case": "Eq_6_2_12",
+      "arm": "ast_bpe_280",
+      "status": "PASS"
+    },
+    {
+      "case": "Eq_6_2_12",
+      "arm": "ast_bpe_315",
+      "status": "PASS"
+    },
+    {
+      "case": "Eq_6_2_12",
+      "arm": "ast_bpe_350",
+      "status": "PASS"
+    },
+    {
+      "case": "PDE_divide",
+      "arm": "eqgpt_reference",
+      "status": "PASS"
+    },
+    {
+      "case": "PDE_divide",
+      "arm": "ast_bpe_280",
+      "status": "PASS"
+    },
+    {
+      "case": "PDE_divide",
+      "arm": "ast_bpe_315",
+      "status": "PASS"
+    },
+    {
+      "case": "PDE_divide",
+      "arm": "ast_bpe_350",
+      "status": "PASS"
+    },
+    {
+      "case": "KdV_equation",
+      "arm": "eqgpt_reference",
+      "status": "PASS"
+    },
+    {
+      "case": "KdV_equation",
+      "arm": "ast_bpe_280",
+      "status": "PASS"
+    },
+    {
+      "case": "KdV_equation",
+      "arm": "ast_bpe_315",
+      "status": "PASS"
+    },
+    {
+      "case": "KdV_equation",
+      "arm": "ast_bpe_350",
+      "status": "PASS"
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "arm": "eqgpt_reference",
+      "status": "PASS"
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "arm": "ast_bpe_280",
+      "status": "PASS"
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "arm": "ast_bpe_315",
+      "status": "PASS"
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "arm": "ast_bpe_350",
+      "status": "PASS"
+    }
+  ],
+  "large_started": false
+}

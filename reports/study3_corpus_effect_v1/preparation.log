@@ -1,0 +1,9 @@
+TOKENIZER_READY ast_bpe 280
+TOKENIZER_READY ast_bpe 315
+TOKENIZER_READY ast_bpe 350
+CLOSURE small 0 212 excluded 0
+TOKENIZER_READY ast_bpe 280
+TOKENIZER_READY ast_bpe 315
+TOKENIZER_READY ast_bpe 350
+CLOSURE large 0 1100 excluded 0
+PREPARED ONLY. No Transformer training or PDE search started.
