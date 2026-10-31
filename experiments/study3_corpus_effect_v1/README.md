@@ -15,21 +15,21 @@
 
 ## 权重
 
-`.pt` 文件不进入 Git 历史。当前目录中的 200 个本地 checkpoint 路径包含 136 个去重文件和硬链接别名；去重文件发布在 [Study 3 weights Release](https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/study3-corpus-effect-v1-weights)。`weight_manifest.json` 记录 Release asset、目标路径、字节数和 SHA-256，下载与校验：
+`.pt` 文件不进入 Git 历史。当前目录中的 328 个本地 checkpoint 路径包含 200 个去重文件和硬链接别名；去重文件发布在 [Study 3 weights Release](https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/study3-corpus-effect-v1-weights)。`weight_manifest.json` 记录 Release asset、目标路径、字节数和 SHA-256，下载与校验：
 
 ```bash
 PYTHONPATH=src python scripts/eqgpt/download_study3_weights.py
 PYTHONPATH=src python scripts/eqgpt/download_study3_weights.py --verify-only
 ```
 
-manifest 只发布共享预训练权重与每个搜索组的 `cycle_1.pt`、`cycle_2.pt`。`cycle_0.pt`、`cycle_3.pt` 和 `searched.pt` 是本地硬链接别名，避免重复上传；逐组的 `SEARCH_INPUT.json`、`search.json` 和 `complete.json` 记录了它们的哈希关系。
+manifest 只发布共享预训练权重与每个搜索组的 `cycle_1.pt`、`cycle_2.pt`、`cycle_3.pt`。`cycle_0.pt` 和 `searched.pt` 是本地硬链接别名，避免重复上传；逐组的 `SEARCH_INPUT.json`、`search.json` 和 `complete.json` 记录了它们的哈希关系。
 
 ## 复现与审计
 
 ```bash
 PYTHONPATH=src python scripts/eqgpt/run_study3.py --phase plan
-PYTHONPATH=src python scripts/audit_study3.py
-PYTHONPATH=src python scripts/check_study3_integration.py
+PYTHONPATH=src python scripts/audit_study3.py --mode data --output /tmp/study3_data_check.json
+# 运行前集成检查的既有结果：reports/study3_corpus_effect_v1/integration.json
 ```
 
 正式训练/搜索需要显式 `--execute-reviewed-protocol`，并由当前代码和语料哈希门控。四轮检查、第五轮补充复核、准备和运行日志集中在 `reports/study3_corpus_effect_v1/`。`superseded_50_shared_vocab/` 是早期 50 容量共享词表草稿，明确不属于本次正式结果。

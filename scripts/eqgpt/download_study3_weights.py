@@ -53,6 +53,20 @@ def main() -> None:
         print("Downloaded and verified", row["path"])
     if missing:
         raise SystemExit("Missing or invalid checkpoints:\n" + "\n".join(missing))
+    # Restore all original paths without downloading duplicate bytes.
+    import os
+    for alias in data["aliases"]:
+        if args.cohort != "both" and f"/{args.cohort}/" not in alias["path"]:
+            continue
+        target, source = ROOT / alias["path"], ROOT / alias["canonical_path"]
+        if target.exists():
+            if not os.path.samefile(target, source) and sha(target) != sha(source):
+                raise ValueError(f"Alias checksum mismatch: {target}")
+        elif not args.verify_only:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            os.link(source, target)
+        else:
+            raise SystemExit(f"Missing checkpoint alias: {target}")
     print(f"Verified {len(rows)} Study 3 checkpoints ({sum(row['size_bytes'] for row in rows)} bytes).")
 
 

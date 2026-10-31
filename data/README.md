@@ -55,7 +55,7 @@ PYTHONPATH=.:src python scripts/eqgpt/download_expanded_80_weights.py
 
 方案二权重保存到 `experiments/expanded_downstream_80_v1/shared_pretrain/` 和 `cases/<case>/<arm>/`，共36份；[清单](../experiments/expanded_downstream_80_v1/weight_manifest.json)与[使用说明](../scripts/eqgpt/README_方案二模型使用.md)独立于方案一。环境安装先看[环境说明](../ENVIRONMENT.md)。
 
-第三套权重保存到 `experiments/study3_corpus_effect_v1/` 对应的大小语料目录，共 136 个去重 checkpoint；[清单](../experiments/study3_corpus_effect_v1/weight_manifest.json)和[下载脚本](../scripts/eqgpt/download_study3_weights.py)独立于前两套。
+第三套权重保存到 `experiments/study3_corpus_effect_v1/` 对应的大小语料目录，共 200 个去重 checkpoint；[清单](../experiments/study3_corpus_effect_v1/weight_manifest.json)和[下载脚本](../scripts/eqgpt/download_study3_weights.py)独立于前两套。
 
 
 在已安装下游依赖的 Python 环境中，从仓库根目录运行：
