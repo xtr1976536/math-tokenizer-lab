@@ -1,0 +1,7 @@
+{
+  "rejected": "Learning a separate large-corpus tokenizer",
+  "reason": "An original212 source exceeded50 in the retrained large vocabulary",
+  "source_id": "eqgpt221:71dc34409e30c1dc4bb5c04c",
+  "final": "Use the small-corpus vocabulary for both cohorts, preserving all212 and isolating Transformer corpus changes",
+  "formal_training_during_preparation": false
+}

@@ -1,0 +1,9 @@
+READ_ONLY_MLP_CHECK Wave_equation
+READ_ONLY_MLP_CHECK Convection_diffusion_equation
+READ_ONLY_MLP_CHECK KG_equation
+READ_ONLY_MLP_CHECK Burgers_equation
+READ_ONLY_MLP_CHECK Eq_6_2_12
+READ_ONLY_MLP_CHECK PDE_divide
+READ_ONLY_MLP_CHECK KdV_equation
+READ_ONLY_MLP_CHECK Chaffee_Infante_equation
+INTEGRATION_PASS

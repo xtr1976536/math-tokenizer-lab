@@ -1,0 +1,57 @@
+{
+  "version": "study3-corpus-effect-v1",
+  "status": "PASS",
+  "review_state": "AWAITING_USER_REVIEW",
+  "checked_at_utc": "2026-10-30T06:49:58.034256+00:00",
+  "code_sha256": "8f76761b4e49b11dbf319bdc745e1663150e6e128f8ac75a78ffa6f44ecb89b4",
+  "corpus_manifest_sha256": "1e64921afbe0ebe029059655cb7083c8987f964ee4a5fc2a26a8b53d4ef9df01",
+  "rounds": [
+    {
+      "round": 1,
+      "status": "PASS",
+      "scope": "Augmentation invariants + exhaustive paired corpus/encoding audit",
+      "evidence": {
+        "round1_tests.log": "cf0aefb1149abc42de7d2c7d9fec9304cbd5e7921186cb64d05205a70631c410",
+        "data_audit.json": "a8251d7537cb5f84e1689c07acd2a799a8eaa13db6521c5930c8a87a276283f4"
+      }
+    },
+    {
+      "round": 2,
+      "status": "PASS",
+      "scope": "Lifecycle tracing, legacy selection parity, diagnostic isolation and execution gates",
+      "evidence": {
+        "round2_tests.log": "e26ca1fb2b4a780e85516313de06363bebc11adfc1db2e398257e565a2a91fc9"
+      }
+    },
+    {
+      "round": 3,
+      "status": "PASS",
+      "scope": "Eight real arm/cohort forward checks + eight read-only MLP fixed-input checks; no optimizer or candidate generation",
+      "evidence": {
+        "integration.json": "102f1ced4b3918ee704717fe1fea35c85a643c763e4f3318d7b9120bc92ff106",
+        "integration.log": "0930f502fcb64bf5ea2ce312404cc76c96c3ca734ccf82fb00fa4e5f942b919e",
+        "plan.json": "a7765d7b357789c14b43146c6cddb170a61911f9c766cf4d4d281afc657d62ac"
+      }
+    },
+    {
+      "round": 4,
+      "status": "PASS",
+      "scope": "Full 87-test regression + syntax of new modules + unchanged historical files and MLP hashes",
+      "evidence": {
+        "round4_regression.log": "fe0fa985aee70147cc0e4d2abf7dd94bd1bb6d13ecbcf9ee0a5bd09dec94005c",
+        "safety_audit.json": "4dda726b14952e54b2e5b9e56bb852b14c4da23d416b35801896b69b1ea6b334"
+      }
+    }
+  ],
+  "new_python_files_syntax_checked": 11,
+  "formal_training_started": false,
+  "formal_candidate_search_started": false,
+  "formal_experiment_directory_exists": false,
+  "historical_files_unchanged": 1423,
+  "test_counts": {
+    "round1": 13,
+    "round2": 14,
+    "round4_full_regression": 87
+  },
+  "user_authorization": "Code/data preparation and verification only; wait for explicit user instruction after review"
+}

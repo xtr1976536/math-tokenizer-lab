@@ -1,0 +1,117 @@
+{
+  "status": "AWAITING_USER_REVIEW",
+  "formal_training_started": false,
+  "settings": {
+    "seed": 525,
+    "layers": 3,
+    "epochs": 25,
+    "batch_size": 128,
+    "learning_rate": 0.0001,
+    "positions": 50,
+    "search_limit": 50,
+    "attempts": 200,
+    "cycles": 3,
+    "continuation_epochs": 2,
+    "continuation_lr": 1e-05,
+    "epi": 0.2,
+    "samples_per_source": 32,
+    "vocabulary_sizes": [
+      280,
+      315,
+      350
+    ],
+    "text": "coefficient-free GRE rendered with structure_to_latex",
+    "augmentation": "unique multiset rank sampling; original normalized variant +31; balanced repeat below32",
+    "budget": "equal epochs, not equal updates/tokens/FLOPs",
+    "tokenizer": "both cohorts use the same frozen Hard vocabulary learned ONLY from small paired augmented LaTeX",
+    "generation": "original EqGPT SAT and Hard unconstrained sampling; legacy search behavior retained"
+  },
+  "cohorts": {
+    "small": {
+      "sources": 212,
+      "samples": 6784,
+      "source_kinds": {
+        "eqgpt_handbook_non_target": 212
+      },
+      "paired_rows_sha256": "0c4af1786293c40a523e36ade69e94f49dc2ae3be8b72a2a5b19745e1cc0ca87",
+      "tokenizer_folder": "tokenizers_round_0",
+      "lengths": {
+        "eqgpt_reference": {
+          "min": 3,
+          "max": 19,
+          "mean": 9.481132075471699
+        },
+        "ast_bpe_280": {
+          "min": 4,
+          "max": 32,
+          "mean": 9.182045990566039
+        },
+        "ast_bpe_315": {
+          "min": 4,
+          "max": 26,
+          "mean": 8.40241745283019
+        },
+        "ast_bpe_350": {
+          "min": 3,
+          "max": 23,
+          "mean": 7.943396226415095
+        }
+      },
+      "unique_structures_note": "Source records, not a claim of independent structures",
+      "exclusions": 0
+    },
+    "large": {
+      "sources": 726,
+      "samples": 23232,
+      "source_kinds": {
+        "eqgpt_handbook_non_target": 212,
+        "external_benchmark": 514
+      },
+      "paired_rows_sha256": "2215b4bca7700bf9b5af6484014fb4ca77bd70b3d76407a70be6eb0dc2863b2a",
+      "tokenizer_folder": "tokenizers_round_0",
+      "lengths": {
+        "eqgpt_reference": {
+          "min": 3,
+          "max": 49,
+          "mean": 29.958677685950413
+        },
+        "ast_bpe_280": {
+          "min": 4,
+          "max": 35,
+          "mean": 20.917785812672175
+        },
+        "ast_bpe_315": {
+          "min": 4,
+          "max": 33,
+          "mean": 19.74801997245179
+        },
+        "ast_bpe_350": {
+          "min": 3,
+          "max": 32,
+          "mean": 19.28861053719008
+        }
+      },
+      "unique_structures_note": "Source records, not a claim of independent structures",
+      "exclusions": 0
+    }
+  },
+  "cases": [
+    "Wave_equation",
+    "Convection_diffusion_equation",
+    "KG_equation",
+    "Burgers_equation",
+    "Eq_6_2_12",
+    "PDE_divide",
+    "KdV_equation",
+    "Chaffee_Infante_equation"
+  ],
+  "arms": [
+    "eqgpt_reference",
+    "ast_bpe_280",
+    "ast_bpe_315",
+    "ast_bpe_350"
+  ],
+  "planned_pretrains": 8,
+  "planned_case_arm_searches": 64,
+  "no_final_pinn_or_independent_coefficient_fitting": true
+}

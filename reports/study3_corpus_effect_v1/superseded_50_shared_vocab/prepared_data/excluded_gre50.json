@@ -1,0 +1,7657 @@
+[
+  {
+    "source_id": "28acd96f7539e3ac9a0e3fff",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "df8a1d5da479f9d545affc6e",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "0a297833df358b82a77b5418",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "ba562c946d4c91042a0f22c2",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "f7ca1faf736ed0c4f2cba444",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "53116794f93fea75c7fe5c9e",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "a6b62475040140858d74b773",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "4f2df637529477c0b4357f91",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "d0a81bb10bbc568b053d5fa5",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "b9985273a24a8c6e4cfb8b5d",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "dec91fa8d4c5d489efb12676",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "68e7c7657d5c656d31926ce4",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "03c0f365e3593fb6a584f863",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "df2f2856d51cfbaa8c8d1df3",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "cea600b497c52900176a03ba",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "5cccef89ce7b787d216eacc2",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "f62d0fd3baf20da6b6ae0ff0",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "c12e6f651090d17a602d9006",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "583c3d345596b6a3a840e3cb",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "166274ee503b8397c34fac7e",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "e3b6f0b68916474e150de2a0",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "3210cc1b333939063420e3f8",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "ad5261340f9c522b390b3b8a",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "21676b49292a1fd6fbc3ca74",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "57202fa5bacf1a053048775a",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "7fa45ccf76ac31747f3f8c22",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "93f37cd958c369a73ac58525",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "5eb9d06becd25ff11c74763c",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "85761d1163f719bef2a3e1d2",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "398a7dab33bf5d0382c52f60",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "7759cf83b977c31543cc6eb5",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "c26d72303223b5f2431860a7",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "35b424c9b39e4c9ef5e06bb5",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "412c364b8f847a231ffdfce3",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "9c9f9e91d0f3e26baf42e21d",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "7c29386701de31403476ecf9",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "7e387b583652578285db7975",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "4af4cce62b369daf59dfbc06",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "3c80da0ed20aaa0e07f4cb3c",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "bf4fa4eed5b04097c22e065c",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "37c38e997da912abb7652d8f",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "03e533e1e4b05c5d2afe5d05",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "1bad1cf395b8a4dec42356e9",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "0e33d9dd81526f1543131da1",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "988ba825d18650bdd0980be0",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "34b3c684d67fabbdc0bf2c5f",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "8d2438f8230100410999ce98",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "e3bc8d32064eae0c43b3e1b5",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "c375b258cf3cc3d559068b44",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "74fa291e638f032233e94bb0",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "5122ad32157ce420e4e70b78",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "5dce9dc0f9ff9e2ed681ba40",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "f9336afe0ef51a4efcba324f",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "ffaf29d45ed20e16678ddddf",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "560e7ecc43b97770bbdaab14",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "5efae2e1eb883b6bf988979d",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "79666d257fe830a7776f4369",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "179e6b169925d1c7e8d74c4e",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "b68d68e09e7e1ba558a3ebf2",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "99c5a5da0f2132603df9c515",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "6f59cf175a574a0f29f83ee3",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "88c92087ce403f0a746999ad",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "65777c2e77423cec9f2f58fd",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "4fa260c68bffbe12ff87caa9",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "49337906972bbfa07a0f5c62",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "89aa356d60d8fbd92cb1151a",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "425ffe33712d1c9366c472ad",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "7f2cecc8b349d86550481b1f",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "64fd6a6f32be1a2d18312eba",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "baf2f7d19c1aa2ef068bbb05",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "052f99f42133f683dc29ab38",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "c9a95294dd77fe1ab65ecb54",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "f7a00d00c2def18bc3ec0eae",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "550289f8f0e2e32fcac7845b",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "ccee2c7488898ae6c79536c9",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "c1b5a1a22e977a6cda5d35ed",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "3558a2cc95c247e41a13b987",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "1c92ad753d9264e6fb37f373",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "f0f7e4d7d300e48fa71dde56",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "7c1cc00f65fa70e714801ddf",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "36ec591b482301ebb94dfda9",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "9c8fa9217ba6386135bc699e",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "839fb1e0c2ee994e89bef8f7",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "fa46e2bc88ed1a24bcc54142",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "eba4e71e6d8289798c088739",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "48a1b377b3ef1d02381575a5",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "8b4fe318fd1d10cb98694228",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "2912193512a8ed681b62a180",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "da8f4db9932753f80a345388",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "fc5f43e0db4fb153f74e1664",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "c4f27756bc3a6b0bc9b8c972",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "6d4b9f8da3add31c39c979b3",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "25a0da40dd3f9f452a8566c7",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "679d449fb5a41a4ff3e339d6",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "383413c6a9347af265854b4f",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "b8d3cc8fffe056cf57330003",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "148944a051a5c80c65654339",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "d1825f11d39c841cefd7553c",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "416d6bb479525cf269edc623",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "a0ee26c036723475ded8190d",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "1752a12612e76d56871093fd",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "4341d1a8f61e471554b05523",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "5c6df356475ccd77e30491e1",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "69074dc9255d6be91163df5c",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "c906cf08fd1f265e3cda5ffb",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "279e34afe3b9a17fb0db28f2",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "27fc27ae5602a7ad1b042ad1",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "871a8d6a25c15c31fe94801d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "f5ba93417feea983b093ce5c",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "4488157bd4e7614fab90fc15",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "abe494a5c5561b7af415fee2",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "b39057471066e1885ed3ee7a",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "9b4cc1a724cb6568d1e14383",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "810cb29cd9b34f4777dbb43a",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "7f7bbd551c6562091f3477fd",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "b610b23121dab1946c39390a",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "57788dec455ecfade803451c",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "003907563eca933c377b09c3",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "fedfffee7e257d4df52da91a",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "e563f6bfacb60533383e51f9",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "45a4235bd9110f2a7d495f19",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "93890e58f2e6f0c4230d59ec",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "fdf359c3796de88d052d845f",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "3a25b064eaf3d25ff4396055",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "484d78eeffc1d1030949c4f5",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "fa6cf57a0fa379ec7c085833",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "5178a8c086635eb7821f67b2",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "669736a6778231d9241d5dbd",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "c6da63f940717dc3f4f83e97",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "a5f4ebc3b31f9885e272d2fb",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "65742a313a64b21dbd05b58c",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "ed8f588c5afe7e7fb6986140",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "a7189e78790b20fb58e4a2cf",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "42c9060138a1b22cf3aecc49",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "6f79adc5241e5a21c6a0a1bf",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "87e60e301263b3c139ddc7f0",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "84ad479227d5e30314460c32",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "1e3b14208814efc0d65b2e5c",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "9486220598189c2a921cd7a4",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "fae0b4b11396314dc3feafd6",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "467e6c4515ffafd7c2c1a0ba",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "3d574819f47afb2ecb6a4dbe",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "9c10aa19a67b9c6531804479",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "58a137ad37629dd715656c6c",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "f46c8a7558ba9a5c01957668",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "3e755cfe494b8a56d943d5a6",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "642f53bd7b310b992165cc58",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "4c8f48d39466b89c28b6c893",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "0c9e0b0dde1d0ab13caffd05",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "bfe6d619f2dccb2bab5f03bc",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "1138025d86a7a8cd065e1e22",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "c4d0fae5032b410a72aa7149",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "f954fc68eac0bfa6ceef8e8c",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "c95199821489c115f7c7a6f6",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "6b5ae48255ab417c7a7fe2d7",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "13dd0f71546995121c85381d",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "1b617ea32f7308b1d4f09615",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "096134c24212a3328e232cc8",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "951e51a9d24d4d88fa48b01a",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "23b8445c3f02c7a1cc0e0670",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "45aa57b65563cb2b3af818b9",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "db29912360e9a403a9c57e91",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "fe3197b0f85d78cd7b808324",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "71dde4ac82ed0f975f3bc7f5",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "f930ded8cbb8605d91caefcd",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "f0c22573e5082b1cda1fca18",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "36c7b552b62e8f0e18245a36",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "546c16bab8d4b0c7d9458223",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "6cb4fef3f02a5ac10495f7d4",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "83e2ebf7a9625bc5f0616c69",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "8223b67d69cfe2c9dd5dc96f",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "34ff56b10b66ce49a935f6f9",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "32ed14641c3b5243026e8042",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "607cb0b148caf0490baf6f4e",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "8d36dda933440470d3cde39f",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "430df5622d21c49e4df2fee5",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "5d1cdb2b3d9094577e559eb5",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "b10dda2dab5fbcd36e7fb412",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "2057c81a85279833e51d05dd",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "667f98bca8b76cbfe0d3819c",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "f61a1eca3ee7992c94685bd4",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "313819a8147a83149f2a681e",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "c85900f84b311bb04c7f3059",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "1b0273661bf23e130dae9c08",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "6071c16136f02dfbbc9dc12d",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "c1d6b54fc795ad025dfb7bce",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "1212865c9f273dd87283394f",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "3bfbabeabb9e100c90e4eaa0",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "57ada8142022f24aa8ad0ffa",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "e1f7934757f307dae55e4165",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "afbb646f29f1502233ebb003",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "84d31236fbac72d3d825f0ae",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "191f1ae564bef3a81e2e0142",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "3e591552df0d0eca7fea9156",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "b4f49e51cdd7b79cf5c499f9",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "ed198dfa0303fa886cbba4b1",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "4733d8292d5549ff21293c8b",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "cd780160ebda92ce8720f952",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "7d584febd1da5c862cc71451",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "96dda086ca7f1178615c22cd",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "13cfef23e8e1104e63ec69d3",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "6981214e4ffd0506184b2ed3",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "158c699bda24db035904cd59",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "c435317beaf0e8cd7f476963",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "9b4521ba541b67770e022811",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "49fa50b5fe2bbd2fc5d3206b",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "bb2395844ce1cfb1c3e57462",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "81a56eccc0f04bfbb7e8f121",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "4f4afe187e5e66212c1deeb4",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "7329be014f65e82804aa7fbb",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "28e2be45610ca23cf34076ea",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "5af54387b5d1b58a53abab4f",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "9f99b799761efd4ef57a4a44",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "a59ae462aede3fdb8580c397",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "ee64575d3eab39a1d78248d1",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "98b8a10abd6b163860fa4da8",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "69aedd2988b78c30e0126de5",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "7bec4311a9f4374286e06638",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "b2ad1990c6545e9869ef0342",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "917817f48c2cfe08432d6d42",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "7137f72afb4fa7f7cc46f4ac",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "d8d842039a18ebae77183a12",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "2deb68923d926278bb05d297",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "59228e063d694dd111699617",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "58afcc0a118a456b4aa83f42",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "6657dac6862c4db94ffd80a2",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "0adb62391c3e78a7087589f1",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "ba3125ce84940d1b763cbcd0",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "3fb50c830d7cc89db22cc6dc",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "6f93f6d8ab1effbd73347323",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "7f3057db184acddddc5287b7",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "efe3980d57ee6ab0920f5167",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "2b3b6455ad27703a843b795b",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "bd49e9f8902d7be05dd0c729",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "eb423c531dc482444e40f551",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "ee13af78c3b660b645c52078",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "2ba590a353e6d43b327d0833",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "a7f259c582525ed4ab97d345",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "c2492b3fc5bf9293b5f1e72f",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "ba0c77799e7b5bedd9804d5a",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "d6bf7851a88ad2e6d0b50bff",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "416379f194eaf8fb262cfed5",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "b912639049e1f6b0f96de333",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "7abd9921ee96f7a103c4b325",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "aab06cf16d25e85e8b4345cd",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "8e8d4d6ef1adbf4965a741ee",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "119b96626f9490da14e04d34",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "2e0a43d1dbfe9162cb28aa2d",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "2c1736c7d0148c056cb373d8",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "2cb32ba96031784dd1a9925f",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "25b1935790a5602746d0b06e",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "64bbe24cfbcaa8b144b35f7a",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "0047be685669bb2571be61b1",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "60ba31c4dee57af690025a92",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "ee8ba71fe10f8079db3c0d69",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "1595702c5913b364b675fa17",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "543832e63c420f24241a2362",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "7016534785dfb9b9b860bf1c",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "a412d65d6fa04bbf55b1949e",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "4e9443bd4fcaf58acc5a8f6d",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "99c20324e361f6441e3f9b82",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "bcaea0cfd20f0010fe3baad5",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "f3054215579f2fa55612c47a",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "8241cd7b812c19a0660f0765",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "690f69713a0aceae30b57785",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "d18da600aee95b65c3c3493d",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "fe6e461159f03e2c4b71491e",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "fb0a5824b6a87d8f628882d5",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "b506a0fd2d3cb4a5911764b3",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "87d62763f9c597d0fb6ca179",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "3ff50eb34924c87fcf830797",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "cf9b5aa0936bb81688798f8d",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "1c7f9734e948928e81742116",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "ddee2663cb13428900f336aa",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "bbad0ae7af422d34c26e24ce",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "affb10c267e9b0e436457a1a",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "889201dc302bc42441e95f6e",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "a6cc006fc0748084b8731d86",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "6761a5811339b264869540e3",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "dce47424786fbcffe0cf59e9",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "f3e715fe457f6dd6a79aa50c",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "2526828e07dbd54c4b1d48a4",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "25bc59e84c66f54b704a9a8e",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "bc78b9e21437318a31803be8",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "eb5b3fcf9c47d3e5d055ed5b",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "208caddca036b61d1fad9193",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "94f887e09b1da5bab268f649",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "695f19d254a3e75ab1de42ed",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "bd76906851577cd2fa56d6bf",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "92c9bc198f227af1bc9139d7",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "32aa72b9db4def171aa9c1c3",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "712613d966affaf55ab80aff",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "01a520d404fbb14c4cd19248",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "95c7fedb02b6afa311cf5076",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "c90642a6a43db2b4d65f18f4",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "3c961a4f00933779e230f410",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "59f65b6352d2a17787246fb0",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "b8d1603113a6a4f75039ddce",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "0630906b9c05988ecb3cf0f0",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "70336d4574f6ff0ea30e5161",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "7758b00670c44c92190929b0",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "269341881873ce3eee6e4b21",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "c4ac91607812ba2dbc760ac1",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "077db29301303a29e1cf3955",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "c35bf27b6751919bdc99d24a",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "e6ee200bdd3db247c4e2b3b8",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "9cbe35563d3aee182bea4a53",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "614f0f874710d54a50eb583e",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "794de339eae0d491fa3781cf",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "6d826b989d003c233f796605",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "45fc61823bb8ec364af2c421",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "89cd2d7f58670beee63080b8",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "e0ecd840b53e88f10b33b38d",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "38bf02a75007c5f259224dad",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "060cfa25ac2820c151e6d981",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "8fcd8089ec932211e9852810",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "2149840f6aedf066c1ecc788",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "2525b7407a8b705884975dac",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "53d05a5e40946b1722936cee",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "dccc8503dae2531fdf69ed7c",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "a910545ea62af3ec9c4edb7b",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "71decb9a5df47b0616318ca2",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "4d25d93e418e0d5bb49f48f5",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "b241c872ae0c842db7ebb40e",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "6824d766393a8a365f3efdf2",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "62afccf3ba74e135b4f03e50",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "3f19621850f802e884cbfb81",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "236f2cbe51b787f5a381da99",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "5e9018dadeba3c149f144cc8",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "762ea78354d51908b072d2d1",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "2bbec226c4da2901e0479c2d",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "91d35a5a3f9a6191e24cf9e5",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "70372d9ac59f002eb8d887ee",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "4774e03fccd63b89128b03f1",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "a77ca4cd70a990a27eed1a59",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "19a6e02074d20777862a5019",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "1851295a15193734b7851483",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "cd8dcb36f8821758770291c1",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "0f6c0de542158620a854f2d9",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "904013e257ed7eb5fce29087",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "fbcb2d1839b22dca65a0f6c7",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "6938506466e2a82a350faf15",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "483512a16eeeb3f5acaa661c",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "492a8252af6eed97e8edf03b",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "8a6449ca9dfc6f3233c3ed13",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "0ae0d6f9ac9f70fb53e91b17",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "7e12ddddd938fca96ce16770",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "044592d15c0d3b877e313fd7",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "7952edd4f4a4ce76b8c418de",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "3f8190c38d7bfee0079efe89",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "1862cae1ca9df03038a4e581",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "ef8ae5fb0d10a391f9018c89",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "fbc66822dbe9b3b327c4fbcc",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "44921ede458929499af1da08",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "71eaa71ef6465726a0b3638b",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "5bd12598bdc6e3179e091608",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "c4e12d24de92b97ce64c8651",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "9cf406c24858c297dd22cbb5",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "3f8dba2d1f91d69855d48740",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "2a08b3c448a76915ef8958f5",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "e45cff88c8d4ae9355f1bc85",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "63fc45279f85e03708c8f3b0",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "e0a885098efee0367c2ab16d",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "4065116045f515ec72745f19",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "2a2bc975fb332095776ae64d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "3f163b9ad2640bf2f539a033",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "58159b61e569bc8f4ddfd826",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "d97feda946baadd1a1f87f6d",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "f9db46f96a9237585f053bb7",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "36a64191eaf08a3a070a84f2",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "e1f99b1d849cc165d83e3d46",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "ffc47c68639f5e1954fd2b07",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "20a0f33122b07d8f20fe613f",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "d36d8e68a06a386a4453a454",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "9f560ec81f1ac7617b2bda8f",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "202efda8c746294ac824c8cd",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "93665ca307cfc65787afac56",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "da24d74840519da29f641465",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "64ae8666a2d7d79f3aa9c1d0",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "1aa24624b5b6bea7563c2a4b",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "56556390a4fc22575c1e6dc1",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "6e16a2f17e4a186ba1c5d676",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "64efe3402b92c6ac589ae68c",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "1654ebb8ed6fdd0088320512",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "ffae21f003fde78a4f235098",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "d82e92ea4ee248aa957ddef9",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "b3607f17b00b65dfe94d4a7b",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "6ea9c58f46f84432ea87f782",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "d5f2c4ea078d5c3275728352",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "22ae56a0de05c07b01f5e739",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "8c095041ddc4e1f85335ef59",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "a9347d087ccdb740527d714b",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "bc1b9a384a25b8dec73fb13a",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "e522b3e5f7c8f2056ca5fa47",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "7ad651cfcaf7818459893624",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "523e26ea3527704492dcfda0",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "1439991aba5a5a5dc3ed1e1c",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "9552c0d8550456bc77d90b22",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "683e11b645638ebd09e036f6",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "7187f44094d89d6195656c10",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "8e80f380730c7cdb2550a0fe",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "8c8fb478ecd9a98239a99e0a",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "b4d395f5c03c78927a16b0f6",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "0b21e34965fee2c66ed47c7d",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "37ab1c6d0dc5425e070f1b00",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "05a41647c8963c8fec90a2ab",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "0e1a170442901e4684cc5b88",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "ccbd6e51d1d617c7d134959f",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "af00f37e83db1ebf66025fef",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "19b47b74c4b994d088f0af45",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "455441b8361bf29f050d38d5",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "ad88deb99a2d693b903abccc",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "018122812381da75c4bf3fd2",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "8eb5eb69f0a7ca6a1453de95",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "ee75a43ff33a964ef772ac32",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "f3dee45e17041cfbfc31f757",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "26e4a890e0bed171d5c42022",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "d0c1d947c5decbcbd971e9eb",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "4f50825a10740dde9fe59625",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "f399f35c6e75206c1808d206",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "4acabc75d066b81a7b85fde1",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "ed5850681723a56adc44bbb6",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "910978bfbbd0a736505fd7db",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "0c84d9823a25750c24ba1093",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "ab9975b1276e3951adcdc330",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "bf4d228910c23f63510ccdf2",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "fbddc1553da410e27ebecbbf",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "c7132ab44faeb3e57f5abade",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "cba34d9799435080be6a2011",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "5c748006882ca6e631b7b427",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "e9f6b9565f50fddba2416994",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "c0d499d1b57bc675ad37e7e9",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "a0357d18b043b90eed757dbd",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "8f9d1ce0a45892fc44945ce0",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "545c4ab6f656f387a2dcb4ac",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "60371858ecdeb90f75d3d1a0",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "3fcb14fef5626893341301ea",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "a34ddd98c6b90f13b6a99cf3",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "e852ab5d1b8aa9e188c2194d",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "2dfe44c7209625e2641b766b",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "be4b0b674b5ba92ad2464bf1",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "ec9bf18cb12e6f53f1a15d28",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "7d3633e333d19219390aae8b",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "e65ee7f805385f6300fc44d7",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "21c9d855046fc0db7d6cff49",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "155ed5961e7b0a54d3a95e63",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "e608261f0808d00ac5e48e16",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "cf9e15467f60f6c3a82a5c10",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "979b8c7f9b906a22aaaf26a3",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "d2144bcbc5bf4112c8307d69",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "4efa66d51c2d61d0f0dbd9b2",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "2c2888745e84e3abca7daf6b",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "17bb2e6b33c2f82cf4d82803",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "d2fac9b52e4113f6d26dad72",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "b31b4efb194d49b65fafc553",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "d626ea70db1c8d02a90d3172",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "b95828479920d5856ba45574",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "537bf21e88713b1d334e9eb9",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "e51f7fb385248183b1cb7a76",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "e821f62d02d70168b1d5403d",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "f83aeb7303ea8c989ba5acb5",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "569afb91a47529528dcddb74",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "1e946a2bd4a453a525d4ec44",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "2fd1b0d01477c498cb8da8fe",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "3ee18a87bb84c752ec3a2ff0",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "463c2df4132225dddba1df6d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "ccf6cbf27f181cbaacef2434",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "f8eb7124b4325d83cc14b6a8",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "e04efe8e20400a0a28b5575e",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "cd48d755a4f27bbdfe7a79cc",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "25a81e1cb72ca43cc98ac6a5",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "103fd215b6f7c0da6946f179",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "5bd0cb15e9bedde910db616b",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "d2a01c71547c61c17507a5fd",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "dc599bff77226eede6f2444a",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "a566a6e908f095f301fbb421",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "557eca92319da6ffe31dd0ad",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "e62ac41740540fcc72d1471f",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "6db2329d8ad3451520031e3c",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "8e2650296cb72487ed98efb4",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "67eb5842a915db3290dc1896",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "46aceaa4fe7507573e91e935",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "f044d5c866f72d05cf71f2fe",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "5ffe62cb1dc6b354007acd50",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "376319ff8a861af7ba6d9970",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "d0e55205198165670af171ef",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "a97e5612493c788b3e70b3f0",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "c728b2b173ba97aeabb56975",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "e0111e705a4d2a2702d789a4",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "90ee59186c045b896ed0baab",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "05ebe05ad1c431e16768537e",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "af7d7ffe4b271eca2203e0ee",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "90c81c264dca263fd662ec7e",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "3fc79fbf2514de6cedd3a910",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "eb23eb3c42de8a0d9f55c5c0",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "26ba9ea502e736ab5b436a3c",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "07fa1a00df8008a4f3ffd4bd",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "9bba02f11f72e14309046985",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "2509169a46c28cff6ef93cd2",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "40c2d5e29c0b82c413f7f9d6",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "9bc393963625be83832db23a",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "a6630861fede1e8e19eec2dc",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "0266d45b1971c08a6ea9783a",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "ebfc9c71be2ea4a981769bf8",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "9e9368dd2c340279641d76d4",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "b8d68dd7ea05973c81257455",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "a07fa12dfb5b0f7de41e61eb",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "50450fe3c4c665e66f7103d6",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "df7fe9475faae2e5d0e527f0",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "3faf2f34becab9f97ae18feb",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "e8b5199fa6bb4ba4ba5d99aa",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "1ba4f2940a7a1a327f2ccf04",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "6fbd024f78387834ab4caa24",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "e591432d2144c52371bb0ea4",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "f5af3b4849e35665f68d8b42",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "6b1137bbeee30dabc2ba5be3",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "c0be3b4540b6645f30ed6432",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "0905a4511c6ca4bd1fea92ba",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "9541ba85d3fe0680df79f04f",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "000929f3ac77c90a0610af94",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "a3840828c213e90c8d32b49e",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "1d941ed65fd9359482516585",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "a842f72b9696226ff54831fc",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "d54728ddc68474766ed3b1c4",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "684981f3e13658543a4fb2d0",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "c17e902837bcf9f026643d15",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "2c8dabf350a3491869959a2e",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "a8c95d67d5565c08ee5c9c26",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "91e7b967d0ded6860d1984b3",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "1bcb5ae1994608270e9922a7",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "7870c88552f9919c1368b5d6",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "4328c5fe7d4b99150cb80480",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "e37480e24449e276a660edd3",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "a26e4825932b8bb5ef4004b8",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "ccc8588a00655b12817be1c8",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "86bda5e1914c7780f2e74fe0",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "8fa0f0b67aceea2ac691c039",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "a50ef91a66931d3b4f18672a",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "8df5209e552ad88feea4cc6a",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "c80b96a9765873658ceea598",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "57061bd3388b6d0c844bc9b1",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "5edd9e03656498482f0b811d",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "6a5c4d010c9618fa470275ce",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "23bd7ab2caea4bdf9bb1d750",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "03fb512c0d887e5d9de1f25a",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "c46ba2f119f2b819c5d5a2d8",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "c38ac435532b9c58c27a4264",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "465dd4e45fede5d3555e024d",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "5666ccaafd3a4266b02109af",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "11c2cd3c91d178fd86452f2d",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "71db93d430aeb70e7b8c5487",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "dca5b6aa0c2bfbcfe25eb4eb",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "3cd2f45bc46fe388c7ebf5b2",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "0d180bfcf1593d4dd50ffed4",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "be1bfbf2b972fc36e295932c",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "df905b415562e6e06052529d",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "189e710cafa29f3bc6c08d91",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "c4badb2c2d8e60607ea58ee3",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "c9f35840068eda9c1de6796d",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "c3d24f64b8aad6c5535b7b60",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "cf2d646f7d5ff7acf5844022",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "7baba3d84d8d68b6cfe994d1",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "d03897a6e514c724c726188e",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "5d65fc9088bc239ba4f5fbeb",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "e43f82dbd0f8cfa2eeed8594",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "228dd15f0951c10e8ca88910",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "964930480c7ab65fffa76023",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "2c369c6d6128ae71e9152f2b",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "9cfb2daf313d9e7bc52de16d",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "9ca6e9229d9610710fb22ca3",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "98767a874e2be5c369928ddb",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "c22f1148e9df55331a394067",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "a7d30584bb4144aa8e8d4a2a",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "cb562ccafa523560ce6a8b8a",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "6d971446ca90406e29105028",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "ee5dd4602028e75aa1daa3c2",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "207424e679d818f695667979",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "0bd77985df3900a7107009a6",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "8918227f7cca25c6d72dec55",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "34d60d3e199262359bfb5bfb",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "35cbe72a4271f530e29fa59e",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "e6272a30bc9c6b2b3af7d2b2",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "d35b797e0b8edcbda2c89979",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "8d6f3ee880ca9f73a240e954",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "3b3a0a2d3a117a4a2991af76",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "208845edc1477b1476089850",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "40615419f6a8fcc7780600ef",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "e4cf98822c56fe886851d242",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "0696d8a51fb96a4047aa5f05",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "5244a643ae229e25497be1f2",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "cf639bcc2c3b84884bb6f279",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "2e2fc52720c8c6848d14da69",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "0adb02a1863b37ac21877c0e",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "39595abecb5b94b0750fa9de",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "6802525d4d27219b9772dbcf",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "b1414061a0268503433c3ccf",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "d15622e62fd7a70ccec2f34f",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "0ef255031fab6083887efb27",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "ac757cf8d78f4cfb581508e1",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "e6f483e4955e87886447e3a0",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "0c86d810d4457da47b9ace7b",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "03a21c538492dfa49d3cb999",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "4eb7734f0b07632d761c85eb",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "f4969ef4a2251a9c788f24f5",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "91b79049908d0e4e1673d58a",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "5d90b22935c24dd393bc6cc7",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "2d00efef674717a5b8f21a57",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "fc236eeffb37df0b833288ab",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "1deb3dae47fcf396c9465248",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "05ee13fe6070d975ad1fa609",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "ae9242ddc08069cd1c38afdc",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "1264a01b44649972e424052b",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "724d30af95fcf8679d7493f5",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "4e627b91e9b960725c038b51",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "e010b6fd64d1de3a1b8ff4ae",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "e1781ee14e12821e9899a199",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "a1dd5a37b438c059b0d1ca82",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "4135e8ac35e2af7ff1cd1d59",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "3e5a3f02eec9681d40835d7a",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "30aaeb699f118e432b4f3043",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "1a514c2892d16aa8d4583e34",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "e562326efde713ec01c67560",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "52d8abae4dae7fcd775fa31b",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "454f27a0a2eea32d4cac5b67",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "5b3765efb58ecc527494aa7f",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "ba1b1a7d5e33a978825a9d5b",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "e5b5429af2b78531ea4c5ae8",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "491b01383d3bbbd3d7143814",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "7d2434eb986edf3cbce3ef92",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "7672b7adb34f471044d43d63",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "c079e7f4adfddd4c8fac8ba5",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "28f4a8c814f2ae3ca63905d4",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "2866cdcfc16da027d1a7eb2b",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "74837f6ac361f6cf8bae4043",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "af776a6cbb76dc8497a86c8f",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "147c6049f9b70ef4e0a9383d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "ce2521d9f314b15bff4eba33",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "5dcf946824a7fe0b43416ff4",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "18d4d14de2ccba5e84265fd7",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "43e8a28aef76734275d331db",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "a8855f9420e18eddb5ff87e5",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "3fde5b88bd1526ba14531e6a",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "db298b2f1a24f001b8f94193",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "5a6d470d10470e096e0583b4",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "ebcacecf008c4e42cfbb3bd7",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "af2057d63f740bf44fa0ec75",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "8c67e76a17cd738e5e030202",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "961c647578a24a36db3bde93",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "ea2793eedd49ebb5e3ec37fd",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "8d1d4a7564c712fd3fe0bbf8",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "5da7e4fc425b6de22d48e997",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "ee131128890dc102f26f3ed1",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "cde4306847f529a98ac9dc5b",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "de059a9db59218f3bf0ff398",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "396d69ba9c3c53aee23ca43f",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "0bbde4afa7c82d59f5a2bb31",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "6181df345fb5b797c4f5568c",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "14618e6ba97a8cb0f6fdd4e9",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "00c4f92de4cbb67e89a4bf3a",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "54f2f589df0a29d52f04178b",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "c1695c26c30916b673bb19bd",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "2f377f406633cd6bfcd82b71",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "324dc21e47e09613d2fad225",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "856e152316c505a6362f2f13",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "3ce952a1de46d60e8ab106f7",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "f9d94188366198d32adc04a2",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "8533c48336014c21025f0758",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "e39a2a864700481a9d23ae1f",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "112c37befabcc4184620e316",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "9c83747a8f317965441bb9d8",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "ee1e4a1b92ba5577682e84d0",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "3843e5417d9e3255361d83f5",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "14f183fc541acb95b92b855e",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "b49b65a64300c87f08f05010",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "c26853370f3af9da1ae52a21",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "442b6e4f44231d0089a776be",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "fadb2a3661f234c8ef664b07",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "57eb98ae485ef8ea21e68b22",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "da420eea762e36baeb15c7bf",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "0e8bcdead0c16ea21199b964",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "1b95d5c5f1641ea2aeb05114",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "853dcc57bd92b0e8beb7f01b",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "f6f82eea26b860cb29cf0bec",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "988e2ae26fdda75ff90af642",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "9ba5e0c2cfa4d0d0dd4cfc34",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "1c0d317735c71c7c84b2f110",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "741be358c7e77ad7f12e3b58",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "42a68223d9de32b631bd5172",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "e462ed1d982436a672b17300",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "0a44f5f3c329bc09bf25a967",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "ec26c658113403d1b1b50e34",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "8bab17971a90300393364dfb",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "3694c99839cba103c3c469ed",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "f256b0f49a95e6aee3bff066",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "27c3154c00fd0c1831d41aae",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "1338da7068e446814d714411",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "df53092f76117a2ecf8ce421",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "c3917950fd0d9229b0f0d4a4",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "0c5e14a19a029b5e40bba188",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "f8c48de488bc4b4f122ba6fe",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "33f1c6ddc4ea9f82fdad8007",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "6df597ac36a9278089eb1de4",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "9fe4eeed5bcd5f1a4e80538e",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "5d533fd0cbcbbd7cdb65b5ed",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "86f0d57e92b2f8989ca17add",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "13b2fd54e865835c6f3a0a71",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "5a8c2a76dc3fd99982d2d6cc",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "3f062c53708c3a4de229a4b3",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "124d4be6e10d0a297cb40f73",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "7c52ec415d1f7d9bbc3e5687",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "8004bb884bd90c3574152fcd",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "d984758d0712067a3b5e4bc1",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "965c383e96fb23fb009e1a0d",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "2f68dfe129ebd0a20cdc8647",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "3c668300033219bb66cd4fb1",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "4d2da0077ea1384d2834efdf",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "345af4378393375f87c8b2c7",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "62dba1657ff7025f74ff0daf",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "855ecb7a0b2e39d5ed72aa4b",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "06e02448921522d1607947e9",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "ee640294fd953988127cce54",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "9ab652cc0c8186242b1f9d6c",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "3f307b16ba8bdd5a096b8944",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "2433baf655265d9430e5f666",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "2cbcb31aad6d6cde8a117722",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "b27d2fe96c31c8e528d59491",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "fc34ea4fa6e05d2e04071599",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "b9ad8abf24297b5681f8c93b",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "d795b5cd15ad638d19d9ca68",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "abf7edabafec804a59ead08a",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "4690b0789429eac390d29ebf",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "4566407637dd3acf74a3fa21",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "64442b8a773bc12bfd8b807f",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "400a618c8fa045e702f66b39",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "941e32e2fe805561cbf7a538",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "f9449215b590569402f89174",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "b2c37898009715afce3c3597",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "b58c1da8fe3e423094836dd3",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "7af63c1b9dd1518d34699295",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "9794d7fa5a2970a6b41df4d7",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "17ab6b37329efbd189eebc27",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "29c4a65287c678fecbf58af0",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "706c20d46102004fe54c5d9b",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "5a408f195ba226b70b7934e7",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "ae9182ea804fa0cf171bf517",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "caff351c3b0df907a4f73fb8",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "5604cb15dd400d7622f81a96",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "71e10f2774352aced2b60cdf",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "5e9e76ceee73949def622b04",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "46013aa93a1ccddfc5da29c5",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "936cb867aefccb6860da9341",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "56740b3eb9a9b91cf5a77537",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "8462bd7d2ef03be704927376",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "5fda0bdd987f88ff282a3fde",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "a7a0092d85ca92b170a01206",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "f8ab038c4182e0e0410d4639",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "a6d66023daa055f238bbc946",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "1bfc97b59a4732cc268b2f9a",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "ab223e68853ecc60085a8c69",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "dd20e3c92d1f4dbf092b4989",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "618eaa268f8b0e2d9a92feaa",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "f2f4c66d65522c9f26e72698",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "51366d483c6806cfd985c7a8",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "115c6dff95809f344a6d1f50",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "15c02078f91b4827db2cc393",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "a2c3bb4e6e8435a32be34c36",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "3afc8afedbaacb6c4db5eb13",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "1b71f58d3bb88fcd0d8a812d",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "eb082bff3caa423d34654b50",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "6976e94328d7fe14ad09f474",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "501bbc16cec611b6542f474e",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "32e8e9823c7b7544545959d4",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "432f5df80d1c0d6c528a6414",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "8ebe4b53ff45c3f3df5238da",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "dafc3453a5f7a802cdb76df1",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "c7248a0121595cc6ee93e794",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "db60ce41580ac912c74e9ec6",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "14a2f02423bd6430595ad441",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "e71369f897f300ca7063aa89",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "f49489f3ecd3b6c988642a26",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "36617fb90356fdaac75feba2",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "68a10f6a349ed6771a121984",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "ca3c024851d68c547cc8a6a3",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "03584d213a5e60672b075c0b",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "841d99c195dfeb1c5fac5162",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "82089794724c58007904b222",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "f3c431c1c9aa7cd01754de05",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "1caf1905032d65ba520ef635",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "d693245fed089b53eed46af5",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "05c53a3bea738a93010d68c5",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "458f05cc5669042b8041ee2f",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "ff183128b54d3ad54ed3df6d",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "2ad41ededdcf51eccf80d35c",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "6fdb74b5a33ec3c1035be4a2",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "aa8c15fa56bf50defc3ee4af",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "392f6c5a899c525ef421f999",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "6c1c11b3e07a291be910d9a4",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "b792545ae5504ae5f9fced51",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "d8738a935f2a7bf02e9c4b9c",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "b8a1c67bbb55cacf77f2e36a",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "24b5d1562c73c7807bc3d958",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "bd3ac08504a5aa2260d0179d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "c4eba6533f5dc4d5a36f0a74",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "b0c0facd87e48831d0c7176b",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "3911722bbc2e672ae796e370",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "a7b83dc47f331ad0215545ff",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "fb62bb7a8412555fd3112eca",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "b48120d6bcf1651c2d0cd8ab",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "9691e6e0c588844e66753da3",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "ab387aa3d11260e81f8d2918",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "bdf3b5c38fba91d502d43a9a",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "76cf9bfe2e3dfc4f0baf0186",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "e09ced1e3dc0f11fd96e7c46",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "308c6bf2a35c33c1f71cce66",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "dedb395f79b619b2d4989cba",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "ac1b85b78c2ad3af7f2d920c",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "0dc020478889ebc1a2f31c10",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "a27a469cf76707c171e47857",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "e1ce4e993cbd6ab5c26bc53d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "b25dca848f25030bce385422",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "9b2738589d11013e364168bd",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "b5b29a69762d2cf3071260d3",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "90f66b0e662e66a1456be103",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "fc9cedd80055ecf57e3b8364",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "644545645b9e5a3f77381f6f",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "41b5b96c9f2f488b5d3eb8ff",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "35a4fd100a219d811d23a4c0",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "d630103b60b60787d4a1baa2",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "ea43b2bcd5c686a1df00b545",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "19130aeaf08cf9167d0d9b51",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "eb89a4d36eca4b941d445f18",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "6773b7977f2e99c814c21c82",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "d412216dd8d7d16e8234e2df",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "c2653eac9abbda93154ffada",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "235127637f15c56604a4b1d3",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "00587f1ac479bec813875dc7",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "e03e30f85a306e6548255cae",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "a1a950651bd818988b830a26",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "dec17413a491bd662790708e",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "4a4b42ae2f6df3f56b74f972",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "415f7869e2c2cf6e78e79156",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "888f04d7b1fdd271c2a50554",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "b7e567bd1cfb99d490ea5d71",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "67c867e048e47673f9ebe71f",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "d71d9084b98b0357c36344b7",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "603ed480ff11a27ec7014f3b",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "31366d2720b001ad12843c78",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "0f56b164e295e53c5ff81ce7",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "03cbb5a153b1d060c2cde9bd",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "b3e1c49b0a0ab7abaccdb33e",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "e17d7ce04080c0bafd8ad99a",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "d4f06eb550ad0e988dc1ee48",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "bf7d4e730feec6dad4a4777e",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "aad0ace4291ab69c455169ba",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "6800bf9cf98d4fad93b05cb1",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "11f2d2bee956b20a894a9dec",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "441260dce10057118f9b89c6",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "63de1cbcab261ffb083ee5a1",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "d74426a4fdf19283cf4428da",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "be971efdce949c08dd7f3f0a",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "f09f9e79584622c38054d14c",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "2dfacde9628c6e8103d7f44f",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "572bff358e50e57cd4f98287",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "9d4b65a03991d22ea37bfa8e",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "988595d6482c72d7ad43b2b9",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "403739257f346bdc140c1ac8",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "085c32d0d5e2e721d7f34b22",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "79d4ee396b60876b931b8d6e",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "ba13b88dec7aab77369151f4",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "79d9fe10e8fc6b6710e5c59a",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "aa5453744b7acb8e7abf3a22",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "b00b6f35dfb915d01338f107",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "a976734118c94aaa0e250767",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "1d84ddfedab1b7ceec2eefe3",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "6a8bd2923bd53135a059e7e4",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "f93ce7daa3d1e39ac8ef88b1",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "955a79e7d5d1389fdc9ca9a2",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "f6f6546095e93b4d1bac5db9",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "38a32aa54b2c83e1bf289bdd",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "079bbdf5bf2b6a1ccf56d46c",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "fd6b827b76b337d44044eff6",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "37278269b4f6db1761d6f981",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "578d40c370c7edfe44f0d375",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "0d24f31af3a9661d26dc0ddc",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "56c4a1df08332e56cdf5b18c",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "69deaf79171500c96dc45cbf",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "2be42777cb4af741c9cd50a4",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "02a02287817bba4d01158567",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "3efe44900b30cc4b17f2bda1",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "78e7c3d53549887405680613",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "278df12c2deeeec3a6a37d42",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "10c6fdbe34a99db9092668cf",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "218588ba7caa2ce0bea7d820",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "b26f7130b32d6dcf78763c40",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "714520090cdb42c4c9802636",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "d742de553d457278aca49c67",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "c432ffeb258eece745486136",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "6878e15c7d801279d5177062",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "cc423bd1fc2f2ce67379ed2b",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "bacc9c29a732b83501c6b255",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "1984205370c50262247604f9",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "7243487340ce40b91a53167c",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "f0335fc2b1e4645826f6bd25",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "0ea45e0c2db817b28100a9af",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "d5714fdfa73ef581fe998ea5",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "1b0f7dcb3895c661d5512579",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "9ec53afe3c6605bc6da4afea",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "6d62d0b6f2d5ec8f10a43352",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "173fca5b120de8bbac0dd971",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "79e1e9398ebd36261989654d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "c5538b2013eb1ed58cd7ccb0",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "40b90e30c8a9d4973815d19c",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "4f3e96e53c0ff9357778af19",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "20c243cba7e125718ab96457",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "2b88a2eee228b95a36dd6bdb",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "9f4686a85ede4dd65a090972",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "181b5784fe2f514d29f98674",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "723b6fca7bc50edbdece4fb3",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "533bed0c0a00170c54442051",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "8a9a74cb2161d50a6fe765ef",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "caf7895c9dc1750ad6daa738",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "b552466ef426eca9700c1139",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "e83ec7fed2c704f3665cd7db",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "d682f2262515a062426b7927",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "8b43bc37c09b806d44604d1d",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "c847038015507ca89e0c3a05",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "6fc845ce5ae75cdcbb95b6d1",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "65e6a5bad13a7c9088140deb",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "82e6ffeb6717819689ef3d6e",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "f86178b49163cf913f5661e6",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "7e557a536762777ad6280a35",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "2c0cea648b900b4dbef3c1df",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "834f12ad2103846038284266",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "6de057d5c7ae49e613c2d4c2",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "324ce16578ce967d0e936e1a",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "89a2feda5ad4558fc4a2337b",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "430c8305b3238c7a51c7a657",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "403fa19c7b8e869090bd4102",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "b910b87f196def39ad1c82a0",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "d654b8a1b66a7a0fa098b9e4",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "af951da7508db53b2affd45e",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "b690a79b90a77e14044aea97",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "2596c96cd9899b3638df4f90",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "ae0e0d5db6be463268e128dd",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "b0438b0fb904f6fbba4b9c61",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "b5d642ad2f42fa6fda29d157",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "cb5cd8bc3dd177170cf6eac5",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "faba662025ec4147986c1052",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "be639d3b41ec6a4cc18e6dbf",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "7c0f93d5e8acc7fd98aea4f9",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "22838aa9e47f30ecc86fdc7f",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "8a95fc6029cbd53fae1b8a7f",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "ca9e6934e042a261dcd5645d",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "2b5f6bf1a6650c262b2d70a8",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "d0f8318c7988b2f91d889f7c",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "f28fb8cfccaa3528cb969c34",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "38f928107fd0f2ac5ec1b2ab",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "e22e4fecd3f82f674b1551a4",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "51837f9f862618b14a44c789",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "d705558301994853b620e271",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "922108dbec8addae5d1107ff",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "0a64fa1905c1f8a30248cd76",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "a5d87220ae1ff3d243d194c4",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "a523dc79e36c02911f39e02a",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "46aec541396516b08ab4cb74",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "4a262c2a0f72be6d1f10501b",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "b6d057a3a18bcd5de48aa830",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "16ed25feb135d26839945e02",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "eeabef1037d030e4ad82f17e",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "b558ddd31de655e4495373da",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "47e9da203edacdd9bd038bd5",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "3a2366dbbacca7c8c601c2e7",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "91c65aca2ef3015852b77920",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "388610ba6ddad9c4ce576a92",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "6c3d5fecce88d463aef1a856",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "5abc6f9e3c5d418ffd67af56",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "c95c45453697fa7c201e1b90",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "0c80fe3cc5502c2da7ac55cb",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "22adb173cf9253bb163bcd23",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "faee3cbe901b4bf7f777232f",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "b48eefa65d5d123d230885b4",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "19747683a07ddb5f1693ff50",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "5d10f72dc488419507ea13d6",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "2f3631629eb77a65888ea58a",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "1dd16b835cae752ffe944d8a",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "a9e722355c3076515e0bdcd3",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "61ba3000a8129f0a815e7976",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "e8ff4a987e488c906339638d",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "04d19047571801c8d616cc23",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "5ffd338a14c2165bd4ce5119",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "3ac46499e8a71cae456dcd67",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "101597ffb07929ed0597d220",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "5b3edc8622e238ea8a3ee12d",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "6c6a7da29187ed2970ed96d7",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "2aab7b5f8f2bbeb123ccfad0",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "5ba2b9934e6fb1209088e7ae",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "c5317d05773ebe7cac5d415a",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "c751caf44ab6f089f71c49c9",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "836dbe3233e893102a0e354c",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "8785ea0c0c8b870e83f1e02d",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "892b3871b571a9535434f608",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "8c04e0a7be5eaf268a7cae06",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "ba4730deef502f3f13420c5d",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "899732721a1fd6671f525902",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "bbc775aeb22d8688d7ae29de",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "64656eb5d659bf70bc4eb3e8",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "35d80d831658e25e61dd5833",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "2369afb317d02556b7b42eb7",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "6fad88b82ecba009b5d11b2f",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "fd55db27f92d515b01e0ae53",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "c48881a03e9de84139b7cbca",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "1cdf990b1b7e85c2ddc9e695",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "cd18e01facd940643509fd40",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "e59f0d142f6fdecfedb4902c",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "9ac15bc9e668ec8d0d5a293f",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "94afff7212606e4618cd1705",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "17e9942a87bed5e9a1d47460",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "2db2cb7e14ca4c448335704d",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "1c5160fb3205c71eb7283741",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "7b42a843102a64a80c77adbd",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "7855b202da956d1a7757f053",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "5e51b502a910b961925ca9b6",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "806609b53022200ef8cb0d99",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "268bd780f16b320f789b96eb",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "d95859dbe13c903741731a8c",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "066fec83786303c2bcf86d05",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "0358e2f3e99db42300587766",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "785557b44845e487f35e30b9",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "2d839d493dfc96cd2a4091a5",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "73de90803586bae7ba3dc9e2",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "09fb318eca7672bfc1664019",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "2e8d9ecea7eb87b2b795ba9a",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "6e8aa2e99165b789e8fc06bd",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "77d3e21d34288eb1d1f8adc7",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "cb64d2bcb78a8e540d1d8287",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "71c133fdafe5b39969d0ac92",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "d41024c0cff195429ecfa9ee",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "7dca304d956a7f76020508bb",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "7c30b8f3ac2935ccf19f2979",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "05c8ff349ba07c5d05a6ffe7",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "e8125746f930898ca3af2606",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "369766c8e888d870fb1f31c9",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "4d15219f3ed17c05c2402668",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "fe3b5745ff0fa256efaca86a",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "636005f5524f0d7402ede7b8",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "495d86c3018fc7c92e86c928",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "03cc4b6e7e171bbaf2e51d2a",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "e301c95cb08ac7e22cdcc626",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "aee49d5e561fd63186e386bc",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "97f85d4ea483e333ca760c62",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "bc052d92eb06b35ea06fc576",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "3d536aac7ec7134ab7c07fa7",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "b23c27e6ad3e0059c24bc7b5",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "7ad0fab79ab12f80c3494e10",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "162ba9b9e0380eded8d987a2",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "3dfb165dd0a5f28e84ffb3b7",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "f5383845c7ff059f3450947d",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "4da0083b2ab7c4ed6d480197",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "55f88d9c6ea35bd00cfe4aa1",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "28071525e79b534d92801861",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "1eb47576097be96a33c9f868",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "7846ba56991fa952ca3c7b96",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "cdf28c746a32f75ecfd6c120",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "c2972d44f76a4867d19b5d8d",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "0af547748c70a589a6d82170",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "415d87da46034a9b6655f96e",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "e599daed5750ef9c0175a595",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "6f38db1ceb4b22bdddde0363",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "918ec14f78626121a961525a",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "fbd3012876e697ee5fcb8788",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "74b5362be07b8df354ce1f78",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "19ef7180d8d5b0285b863c51",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "686398245716b392980751dd",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "997758ec30a62438bb4ef653",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "634e984e0f4b2a1ee3a01213",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "d109a1c2971bdf6e430d68ac",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "278d6d643de7a42e59846415",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "2fd4c62c4467654dbe02b020",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "f3d189ae05dc08ac9ef5df6d",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "264a35b977a7ddbab2beadd3",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "845fc87ad51ae153e2a5111c",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "ccf9a9c9cd8c54187a7e57ab",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "107ffcdd05928e0475b9aba7",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "0fcbf59f25881ab18713f31a",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "f417c8ef617975dc27a07d04",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "0382dc88fae7ce555cdc547e",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "cd10ab51a00742a821d18abe",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "fa91df08e8f89dd3cc63020a",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "3ac3fb0df28a03fc2e614584",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "16e612a0610cf7e82fdfb31c",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "d6f51568a89e6c891d2c61a7",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "5465a5b50c4e86463ff88853",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "e64404b9fd8a4059fa6ec5b2",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "43b9ca7e55544325b5bb4469",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "7140a7d80cd6a3b2bca2b12b",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "fd117f1b1ad32dbe8560c089",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "d29af0cd29b9dbf0c2f282ee",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "8c0346133d1eefaa94e1b7d4",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "98935f937c73bedee8ba1beb",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "c9b101157440c83a2a2585f6",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "b0d587a35e5b02a13c9cc315",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "8959e0b36e15b114b8e031ac",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "c9eca0a1dd281867431cea2c",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "2410014fa1bef4f9b997a763",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "7f1cd21b9879a2dc798290d7",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "9c0dc49f89d072ee081d49f8",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "a6e5de60a019738fa89f05e4",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "83a338e9c2caa47d4f5b60f0",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "1efc6a2ed0ef7a72e589bdaf",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "a9e0258aad13b4bc33be66ce",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "d5a32990bd0009de7f72fc1a",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "b3ad2362888bfc8b468abd82",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "bf8ec77439f6df287fc316f0",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "71414600c4e54457fcbcafe2",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "71ef36f999faf56aba07fac8",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "f7e19a65ac8737a9487a9e72",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "3669c8c3b7830c59cd2954d2",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "fa4d2f4d27a660927784e050",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "b883db519b1ebd65e7a19397",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "51f90a0e33328efb3f41bdab",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "da62a372be367803e1c720da",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "3091c0b799085e4cad3890be",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "16279b42bd56aadf60e67455",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "ba5d8cd9e4754dbc48cb75e0",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "5f9ba3c87a55ef9d597ed27f",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "0bc7433f70d586e1b8d180ea",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "3e15e36e83dce5b5738c8c1d",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "0a1fc34f8be6ed83084fcab1",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "3a230bee8afeebff9b6797f8",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "7047822e57cbfd633464294a",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "62f0526d2542e23613aeeac6",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "89abdb0464400ccb8dfaa0e5",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "2afa48d05a400ce7e5fe0a97",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "44a86033e57034ce342ce1ce",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "9ee48a85c6c5e05cc6eb206c",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "ac1b7afaee8c41b2423ee4d3",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "6c46a49a5e9511eb0eda1291",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "cbe3700304b93f5650194262",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "297fbb63bd051fdca51e8ca9",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "f504423cdcdf6b80cf792702",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "ad249a811392bb6927d005d3",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "4946acd21ea3db7a51b0f1fe",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "3a8cd551102c446f9dbb2c80",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "3271ab2d238ee261c9d2e999",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "4a4cd42e1c0d1c8f790dca7d",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "699cac0360080bb4f311c803",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "40919a299d3d2befdfddb39f",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "0d986fdb4f404e93aadf2b03",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "3d4d171f66afe9024856f7cf",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "55ee2eda2ee119a078a2c249",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "c4f4bbddb6ef7141536b149d",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "6d88d6aa19171dce3a7eba39",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "61f262fcc18eea78cd72ffdc",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "b95231bbb28b78ccfb525b54",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "b461d8f867bbfd87a87ff14b",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "318542020874d37de8ec332f",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "b13ef62e59b57eb86c90551b",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "90faa157f0d1e59cffdd5146",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "33d7861d506ad042366d3cb6",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "f40c35cecdbaed67feed4356",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "389dfee18b4fe503afd99642",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "aee38aa776bd812ab4949999",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "b582c4c50587ae3c1ef05a9e",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "344f08b162415ff5450e10be",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "75184beeee2aefd1e81d59ab",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "9baaeb07b3f91aadf08e243b",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "d2ad0ae4e59c055d9c0e9ab3",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "076bfd6a1624680727e2a87f",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "4971361546c2f68997668c84",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "eec8c450520095bfe7c3179b",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "d26b97ca0ed1461e2c878e09",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "7723fc30d870f491dd427b07",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "b3de20e79027ca1579dec52b",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "b34641a1db84f1100ad56e3d",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "a836831458b153ccc1149921",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "5a56ba853cffa8e0a9d61e87",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "d3bcb6194cf7c704ed675c87",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "5cac22413c4205a5e52386e3",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "cecf50ca60c4704944290a28",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "02f26c884a05c11112c60571",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "3a2e81f4d1f948460a4c6f6d",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "61c81aac210f2b6fa2a60e96",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "6a492cb0f5d57ce4f9cfbd3f",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "4f73183fc1a3ede5ccc835b6",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "6b37a56290e0740a9f59d2d8",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "580c17e1005c951e5ae10f10",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "1abec60f30e35822ba44260c",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "9bc273df9fd08ff8915fe0ae",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "a9827d2a2a29ff3594cff29b",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "9ee9e4d62845be8c23fad5b2",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "1f493e712400f04023ac53b4",
+    "reason": "GRE exceeds50",
+    "length": 105
+  },
+  {
+    "source_id": "0d7bd13d027f6c73a8401b2d",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "79821cf54803822c0489a779",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "017f4bcaa951d1459bba9b7d",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "8087a56049a1332cbfbb2c58",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "e8cdc9b93b796328600671bf",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "d88410764e81dc94ae3eb64d",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "09d2f31861b679045ac3b691",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "425b259045871fc622cc9992",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "eebb210c24308185363054cb",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "fcd9520978b1d890e62c1a83",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "98eb9ec47f8e4e202a69413c",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "f5e7e0cd7e6a37a1e2367e21",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "3649e88ae6c7ffb1da56478c",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "72ab1842de2aa0769c6bf273",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "e1312a1c8f35998d1030f76d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "757acd4840bf8b1999f9c3e1",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "3a67e1881c6704384de0f562",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "2f26519ff9a84a546a7f196c",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "6a4605a1ceeece14c78f09ff",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "2e1fd0f66ed810c547a7746e",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "73f2def1a7dcf2aa338e2f05",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "be9a671704bb99a1e615533a",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "fff5252e65210aada15b35df",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "5b36939bc12cb06499b211d5",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "5c8f3f92381229d7df2162ed",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "8f38b4cd8711f837e072e436",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "35ff16ffce1e26100bc8b20a",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "c1afa711b965dc6e0669e3e5",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "675473dd2a2b419fdc0cd57c",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "8b3aa9420d9c82e74b18b6a6",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "11f9bc72d47a12f48cae9f4b",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "6a9c22245d696832abed5655",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "b34e4a98856ab437c37c51a8",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "45cd34b106c8dee530ca9fe0",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "602d7047f13baa84fbd18823",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "e34a7439978d94b1d3b037b2",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "46e8df317b84da25744760f7",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "180a7e2a7e386591f86b4336",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "5c806a42de36c430924760eb",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "426ca7992df37ecf19bd6cc3",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "93b904f063e287dd03cd885d",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "159cffd02efb002b7e4acb2a",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "5aee385d4d56b970c5251cc9",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "54b2bdb8f5f50d4564f2626f",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "ed084184b5675813fa0960d0",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "07cfbc1197344ff586cc6f80",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "37ac34f3454333286ef1ef6a",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "9e2fb5170744352b820b38e7",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "2c49895f74a49e41421628c4",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "dbdfd82a06cc382ac7085704",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "2835326316daa69d857eaf57",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "4ca54610ed59dea2b3487a05",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "3b08e012805ac5df865dce6d",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "47521dd2fe0c9430e7b0ee76",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "608e7e061af9062172587be5",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "4a8d761b7abc12fab2d4e7a4",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "0a35ac4f38f0efa786360926",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "1fed5bfe4d195e8f807872a3",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "bede6aa52481ce37a3b4f46f",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "037e2f67b6ebaf97724df02a",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "2a21b3cf866c77b3634caf8b",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "0e2c04b1cabcfbdbc993a45e",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "360a1107f8ade74a4632b289",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "7a950cca0e4309094aa0d6bb",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "4a4494c9cdacb069b36cd37e",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "a3b17691d67b39fe4a257241",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "6a6500dd9008168a1e62e87f",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "7809c83f375a0c3ee70ec661",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "7f8fabaf7825b992b3f11077",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "f4883fb7dfb86c2a4bc17298",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "1b81df50fe3953112a3c23a6",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "cdaec78ae9bd8460809f48cb",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "7791c38c1e47a528da201659",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "3654eba6313035ced838a03a",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "33518ba6afbcf11b82503acd",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "e4dea9d88a357bc40aeedfe3",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "0c89235613c281bd4762d137",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "95617e58ab6a254a655a6170",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "4e3531eada51b4038f84f74c",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "67af5d46f9d2e5134498bcfa",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "fb63d1eb8d2e270b96640003",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "2cf6d2bd8900ed5672c7c18a",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "ad510ca1e57e588b6db35949",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "dbd73954eb03ca487e5000db",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "4fa33b444fe4823629a1361e",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "bd60b4a73ff726f4e5d8cd14",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "a47c3408080b3de3f8de2e19",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "6afb175becfbb676418c3552",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "fe33022a6490164edc0d8ddd",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "8a61afdfa9c161dcbb2dbdef",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "d505c0a569c689a4a08574f2",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "93ea1742422a9290c3eede12",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "9866846f5c8bc763af3394cb",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "121898ccd2a3116ed9048316",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "831d2c5e95359fd65ba2647d",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "ae5bf8d698391bafaead9323",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "c7d630a9ed1fd760b91cfde5",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "d81bf7593705de61be77fa51",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "1a03b21e1c90bf922348248a",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "4cba9452577d5c09baa0d9d7",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "56a481373a373b605344301d",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "2ec7c218fbe944c56c856174",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "70734cb3384ab92d253fca8b",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "ed2e273604d737f68d1aa99d",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "0ab1e8700e7917de3e6c30b8",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "0d36e44e0c886a0f9a84c0b8",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "de7a39ee36e212eee7d9ab70",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "791767eb5161fc7b9fead8e3",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "108bd86a1a49ccb8dd884461",
+    "reason": "GRE exceeds50",
+    "length": 105
+  },
+  {
+    "source_id": "7232e855cca1b129ba290233",
+    "reason": "GRE exceeds50",
+    "length": 107
+  },
+  {
+    "source_id": "9e2d01e73b9b641343aca4c2",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "b14cb6916471f950bcb57780",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "c083ba96331d3b0fed0a17a6",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "cc73bd4be1f1571027fa9a1d",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "26ccf4d5cf2922ac0b5e64d3",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "9a1668be161dab6cd4e548fc",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "141d46f5b878abae94e3257b",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "65d4cc21911a55528e7c528f",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "19490b73fd21ec295e8595fd",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "f47720776e0a8cb8c4d1727d",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "d4cb643007897b7f58e8c908",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "ca2121a43c1d95e7b6db5703",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "97b2e79b48a6f8f1baa5baf6",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "72a536ec85ce764deb5e7e14",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "0ebd44b2c90bda4ed4710129",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "9c09d13979e3bac927c3ee02",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "eb0c782382f0d7e40e1bc508",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "961287060b6a652976e6c15b",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "f13f86df1fa18ae761f7e1ea",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "d51fb862961bfb116b56fef7",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "ba04a6fad9b70146791032de",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "27d7bb4dd60dfa085835e9a0",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "8bf71a81b697a2709c301ba6",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "64b34701771faad94423a167",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "fc1dba674e4b85546abe7f1a",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "1541192992198ddf78b73ca3",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "049cd565f7c231fac88656b8",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "1d4a8aee08abe43cb90c0808",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "688036017d9c31215898c38f",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "f2fa4d3aeea554fa214d6453",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "e7973eb841270c7f9823c6ef",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "e3bec8067c97629b2fcdd09f",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "911002905e3b1b0ae8d3b372",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "1296ec044ce406d9138388a5",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "77745875c5ccb9904825861f",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "c12cf1917abeca18d76cb3dd",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "bb920a6c9f39eb6dd6cc664d",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "e70e835d112c0411eceb21f6",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "204e23ad211601cf65af277b",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "da42327089d9517bcdf266c5",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "f7541f4e6e8cfd1b4f856b99",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "d789d07cbc4c24d2d28b037d",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "c6787ab898cc7da50f4bdbd9",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "14d2cae77ced4dd4c3910f6a",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "77da52fd4f4b94ecf81ba182",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "035c498054f193b06559bb70",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "ceed5a29c0cd7f169e3bfd80",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "874337351b90e51915695d9e",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "dba646a4ae09e086f2cdf7d4",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "477f5c3f102f6b5957b1f523",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "c137240e6b88e54d844ea3ca",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "e8916bc276ece041a9e88978",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "e3f7924d42200441efc54a22",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "b92ea394b7b9a1d33363fbb2",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "25096200c406a188baf3d877",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "5f40d99efe1de6ebd0326cfb",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "fe9c179ccd6751e1b1013533",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "ae7726c5296b8bb121e2e4d6",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "e6f12e829e5faf59a3db5621",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "ecb1a5d440858f46da4487d4",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "06da7f853c3b0f44d626a079",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "9c359d37152fe3b39de79706",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "c8f71384a50c21f9b8fb442a",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "267df2a34f04f953068a6cbb",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "f220aa61ee031fb1fcb0ba91",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "0b43f84dd73061b0a13b80e3",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "7f3f789ec68c1a1c329b45e5",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "0281b17a280fa2052892c117",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "bec99e06b695087b18a2aa54",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "373551428c07cca20567ce2e",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "a11d25d70799d474e6c4e6a4",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "aef95057d8d96f252e4a7689",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "9e7d8a083e2bd4f4afcf9f9e",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "432af14a7e484c807ad9117b",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "f9e48f0ee8eeee50ee03656e",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "ef2550896664b973f14ed029",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "625013c98e6ecdcb868891fe",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "ecf6bb96c3a5c7ea09865c0a",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "70a4402f7665bfd3a87284f0",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "96f85d6a586fe7d29d6a317e",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "9ccefceee8cf19c71d6fc50f",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "6e743acbb6b32f6641a52245",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "ce507804b77f8dd594d9f5b9",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "28c46a5b05d64bebe2edaee6",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "1004b8262685c6ba58ec0ee6",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "2d793e31d5016b84815e4b87",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "6d022cf3b7c3cf14fc4647a6",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "659e840236cea1db7486dde8",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "917be380050d176b8b04d00c",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "5c88041dc2e4bbe7f79b6c9e",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "aa7188d3d3450fb22194a20d",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "32f90e6df88ae25cba76dbea",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "3da4ac5a11b9eacf4403be27",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "eebd42765fe789490497276e",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "e9a688d76467171eee2262e3",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "7d90bdaf7aaea15c9ff82cae",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "9a202fc6d2c579c6cf863a0e",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "388eaa01ff1a91683a73d121",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "3c8ebf55c5bfb4ef067c3328",
+    "reason": "GRE exceeds50",
+    "length": 105
+  },
+  {
+    "source_id": "f88ecaa6d18712a60806130a",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "fdac584e6b3e5544ed3e40ef",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "8dc6e1f8b7a9a49ab00a19be",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "d2b277969a49f6e04ce70a40",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "8b1555494dfa28a4f497305a",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "0ac5564c7d6e79e34aab39e2",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "f3471c212391e9b58149c02d",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "1a3981edd798e5be5ce3c9f5",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "a8741d39dd5d1233ec851dde",
+    "reason": "GRE exceeds50",
+    "length": 105
+  },
+  {
+    "source_id": "ef5d5d89a2b0c2fa940a338c",
+    "reason": "GRE exceeds50",
+    "length": 107
+  },
+  {
+    "source_id": "b1f5edc856526468da1c3008",
+    "reason": "GRE exceeds50",
+    "length": 109
+  },
+  {
+    "source_id": "6a2d25c9dbcdaa4cc7a26a6e",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "cd1c5062a9471c7e5b8b233a",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "445e13fedc241a4e4b87435d",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "598058a1440b619c4b06a41f",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "ee8c29585150a5a16a62a73d",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "0d0e5b27072d4fcb0fe58796",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "d1b902ea43ba3f5d4c1178d4",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "83d132fb5538e2c0b216b706",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "1f9c1bff378b96f90accb0de",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "09d9b8a393180fda0be1852a",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "06d15ecdfeb8ed1c5ef39965",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "4cf8b8cceb14bceb1eae37e0",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "ab56d8928967099e511afed1",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "9426e134690f2e4e4e3186ed",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "a9466b19763964cdfab212d3",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "5a10e322531e6303ff2a9b41",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "af88bb3e51182e7f07431293",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "6bb4fd7d54e06ef559332e20",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "a0e3f18936b2489cc8481fa1",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "9dd4ed55f53c295990629e44",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "5b7f06bde198a1bb8eaf4779",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "3185dc7b6d759dd56b7e4bce",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "3c5db7ba1b549bf7e74dff99",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "27dd6fa756299eb0a9f99030",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "540de24d87025f3e657d6317",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "23b2ea7179bddfaa1cc9479b",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "8d2df79dd87304b07f2121aa",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "95bd14ff3165744a99def349",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "8cfe17188e9acc2c363b1f0c",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "ab9f3d77f7bf4ca967cafbae",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "154f18c6687241e6afdf2a5b",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "2f7cdcd4aa6a0e24024b3f82",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "560e1898a3a0141cb7289ad5",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "efc522cad86fa34a194ff41f",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "34310faa01e4d8ebd770637e",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "3796b898a9ff67144fc62435",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "318d38f84a3aad213c222c90",
+    "reason": "GRE exceeds50",
+    "length": 69
+  },
+  {
+    "source_id": "7d48cbad9bcfd5f340d22e17",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "8d8449eddfb3c8ab150cb30e",
+    "reason": "GRE exceeds50",
+    "length": 73
+  },
+  {
+    "source_id": "5076844210032786bf7da4ec",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "ef8bada20eb3948f5e294311",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "6d8dc8b509ec7469db82cdf9",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "f9841100768fc1e66aaf88ef",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "ae06d102d38369ea9db1f007",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "1f4a3dc2ac9a1e11e3d1a867",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "94d98666189f73f8890a02d5",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "ec6ce817033146f6f67b4f3a",
+    "reason": "GRE exceeds50",
+    "length": 71
+  },
+  {
+    "source_id": "17017c5ec42afeb38941888d",
+    "reason": "GRE exceeds50",
+    "length": 77
+  },
+  {
+    "source_id": "b71f442e0f2d5adb348f2ebf",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "df91f10a9dc3ed5bc5928eab",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "ffc6d15822d442c93b536cdd",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "26594957d14e0f509e4431bf",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "fa1d1db60b4262cb8f8e4ca0",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "d29b37622f8774058ef6d55f",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "ecdaa5c9e3ab36d155328a79",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "a6d9622ba2ba33afd3f08475",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "67d8a64e10d5a2fb005195bf",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "953696abacc17468d2028e5c",
+    "reason": "GRE exceeds50",
+    "length": 75
+  },
+  {
+    "source_id": "d128edefeb2046f25f8dde50",
+    "reason": "GRE exceeds50",
+    "length": 81
+  },
+  {
+    "source_id": "0b2e68bcbc72597a27d94b92",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "c94367e25dfd1bcd3d20cb61",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "6070519ed10ef3a2ec7e26bc",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "fb9582358823ee4576edda99",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "fd7d1462606c85fd93e16072",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "3c30ea63d94b8699fec5c48b",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "bd05724b0307568403a80ed6",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "69edd18b4384c48b77e1a10a",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "d765ffcdbf64c41fb5bdecff",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "a24b34ca6c405743a3559c05",
+    "reason": "GRE exceeds50",
+    "length": 79
+  },
+  {
+    "source_id": "146c9271f97879f7b183afb1",
+    "reason": "GRE exceeds50",
+    "length": 85
+  },
+  {
+    "source_id": "ec67b1f4da906883dd972860",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "d74421e47bd5c322701a556c",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "af060030ee1619a9aa13c200",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "5d25396a3aff078f25f0449c",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "6fafc4ae3843e0d2b997deef",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "e09583f8f48a5a06bbe7fbb4",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "afdc6cc20b1d7fec7ecbee9f",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "65ad7eb8735c43875aa3a17a",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "55035542ca892b78aa44749e",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "11bd3df85f3ec13901ebf78b",
+    "reason": "GRE exceeds50",
+    "length": 83
+  },
+  {
+    "source_id": "0af83ca0a15a0efda0082699",
+    "reason": "GRE exceeds50",
+    "length": 89
+  },
+  {
+    "source_id": "791d103816f662941af21fff",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "9ea3e2a2435df274758117a8",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "b3dc245762f73829f4672e74",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "486d061430d35c60e5baf10d",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "212dd7e7ba2d1d5af15096c2",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "7f41a713ce2b5348e70bb167",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "9d1e9ba332f6a7397e5ef374",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "d89c8eaa0cb7883b78f9128a",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "5d9258055b15bdedbfba7098",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "44a3e0bfd5a9c4c004861baa",
+    "reason": "GRE exceeds50",
+    "length": 87
+  },
+  {
+    "source_id": "1dd201c7001943e2f0d51505",
+    "reason": "GRE exceeds50",
+    "length": 93
+  },
+  {
+    "source_id": "dbc053e258d28422792a1922",
+    "reason": "GRE exceeds50",
+    "length": 95
+  },
+  {
+    "source_id": "27a5717d1987ec562daa9710",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "d5d7b1387f0a5370ab42aea7",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "f70805aec6db5f24a05cffee",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "cd0e458e0c38b3527b88d2ad",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "c9bcd1070e076b0951f6a118",
+    "reason": "GRE exceeds50",
+    "length": 105
+  },
+  {
+    "source_id": "48d22f83b2feef9572df26e5",
+    "reason": "GRE exceeds50",
+    "length": 107
+  },
+  {
+    "source_id": "14b586cfa658832ca7bfd9df",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "01cf0c680bb2750fbafc0c73",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "708d79288f2387ff3a02aa6d",
+    "reason": "GRE exceeds50",
+    "length": 91
+  },
+  {
+    "source_id": "468816db965838622c5d8b7b",
+    "reason": "GRE exceeds50",
+    "length": 97
+  },
+  {
+    "source_id": "a6069d84259fb521a8a0a7fa",
+    "reason": "GRE exceeds50",
+    "length": 99
+  },
+  {
+    "source_id": "88d69c562261f3e7d9451122",
+    "reason": "GRE exceeds50",
+    "length": 101
+  },
+  {
+    "source_id": "8e454459c0b11b2538972301",
+    "reason": "GRE exceeds50",
+    "length": 103
+  },
+  {
+    "source_id": "bf977bc0086c70c90971f68d",
+    "reason": "GRE exceeds50",
+    "length": 105
+  },
+  {
+    "source_id": "b0d172d9fc36a67f1f65653a",
+    "reason": "GRE exceeds50",
+    "length": 107
+  },
+  {
+    "source_id": "845e852b1f4b4e3a50235cf2",
+    "reason": "GRE exceeds50",
+    "length": 109
+  },
+  {
+    "source_id": "31ef2f0dc0b757636915ee63",
+    "reason": "GRE exceeds50",
+    "length": 111
+  },
+  {
+    "source_id": "c1c1b1d25253316fc4e50f7d",
+    "reason": "GRE exceeds50",
+    "length": 51
+  },
+  {
+    "source_id": "0b4077ac92d3f3f1f5ebb6e2",
+    "reason": "GRE exceeds50",
+    "length": 53
+  },
+  {
+    "source_id": "025d17e790eafaba49e707d5",
+    "reason": "GRE exceeds50",
+    "length": 55
+  },
+  {
+    "source_id": "1b01df18cd0ff18cee86c4f7",
+    "reason": "GRE exceeds50",
+    "length": 57
+  },
+  {
+    "source_id": "65608a8a60d7fe72febb3427",
+    "reason": "GRE exceeds50",
+    "length": 59
+  },
+  {
+    "source_id": "864570b516c9e738a78e537b",
+    "reason": "GRE exceeds50",
+    "length": 61
+  },
+  {
+    "source_id": "43a441e7a38a9759da066747",
+    "reason": "GRE exceeds50",
+    "length": 63
+  },
+  {
+    "source_id": "4787beece27c83d4ed090736",
+    "reason": "GRE exceeds50",
+    "length": 65
+  },
+  {
+    "source_id": "71c4dad2f392b93ec3ce0c34",
+    "reason": "GRE exceeds50",
+    "length": 67
+  },
+  {
+    "source_id": "6e66905c8db631b34aa71e1b",
+    "reason": "GRE exceeds50",
+    "length": 69
+  }
+]

@@ -33,3 +33,5 @@ PYTHONPATH=src python scripts/audit_study3.py --mode data --output /tmp/study3_d
 ```
 
 正式训练/搜索需要显式 `--execute-reviewed-protocol`，并由当前代码和语料哈希门控。四轮检查、第五轮补充复核、准备和运行日志集中在 `reports/study3_corpus_effect_v1/`。`superseded_50_shared_vocab/` 是早期 50 容量共享词表草稿，明确不属于本次正式结果。
+
+历史准备稿、中断现场与启动前检查的适用范围见[归档边界说明](../../reports/study3_corpus_effect_v1/README_归档边界.md)。

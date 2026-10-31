@@ -1,0 +1,34 @@
+{
+  "sources": 726,
+  "samples": 23232,
+  "source_kinds": {
+    "eqgpt_handbook_non_target": 212,
+    "external_benchmark": 514
+  },
+  "paired_rows_sha256": "2215b4bca7700bf9b5af6484014fb4ca77bd70b3d76407a70be6eb0dc2863b2a",
+  "tokenizer_folder": "tokenizers_round_0",
+  "lengths": {
+    "eqgpt_reference": {
+      "min": 3,
+      "max": 49,
+      "mean": 29.958677685950413
+    },
+    "ast_bpe_280": {
+      "min": 4,
+      "max": 35,
+      "mean": 20.917785812672175
+    },
+    "ast_bpe_315": {
+      "min": 4,
+      "max": 33,
+      "mean": 19.74801997245179
+    },
+    "ast_bpe_350": {
+      "min": 3,
+      "max": 32,
+      "mean": 19.28861053719008
+    }
+  },
+  "unique_structures_note": "Source records, not a claim of independent structures",
+  "exclusions": 0
+}

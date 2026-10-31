@@ -1,0 +1,55 @@
+{
+  "version": "study3-corpus-effect-v1",
+  "revision": "60-separate-unaugmented-tokenizers",
+  "status": "PASS",
+  "review_state": "AWAITING_USER_REVIEW",
+  "checked_at_utc": "2026-10-30T07:10:50.510647+00:00",
+  "code_sha256": "b740ade76b00f6c68034a3ef54b44e8a168b5969c1625aa493e3c9e659b91bb9",
+  "corpus_manifest_sha256": "e99e4de8a0aeafe90e8ec5cb93e51553ac4e69dd3fb90bacefc2b06b7878aedb",
+  "rounds": [
+    {
+      "round": 1,
+      "status": "PASS",
+      "scope": "60-capacity full paired data audit; independent unaugmented tokenizer fingerprints",
+      "evidence": {
+        "round1_tests.log": "5ceea94d0bc274b4cae475ad6f32427e3a1c0c4422a677b63c0719b16aaf3047",
+        "data_audit.json": "21bd1e589d8ebcaaa8e429fdf3271118525d65b86e2b1cab8916db9faaeb7ce4"
+      }
+    },
+    {
+      "round": 2,
+      "status": "PASS",
+      "scope": "Mechanism tracing, selection parity and run gates",
+      "evidence": {
+        "round2_tests.log": "600edcb2ec81956cf2848c6dc21898d9ba2457c0f8ea7661b10856d5c39454cd"
+      }
+    },
+    {
+      "round": 3,
+      "status": "PASS",
+      "scope": "60-position real model forward and eight read-only MLP checks",
+      "evidence": {
+        "integration.json": "294866411806aa18d4516e8883da617e4601a1f9205e09761c66dbd6a37e3e3f",
+        "integration.log": "0930f502fcb64bf5ea2ce312404cc76c96c3ca734ccf82fb00fa4e5f942b919e",
+        "plan.json": "e6ad1a922f76e22bfbe90d439bd814af7f95f7b3d775505b0c6d9e91cf271384"
+      }
+    },
+    {
+      "round": 4,
+      "status": "PASS",
+      "scope": "87-test regression, syntax, historical assets and cache integrity",
+      "evidence": {
+        "round4_regression.log": "f7157bd0fbea3afd359cff836a960feae799788b47ae2687d1a822e36d5adcce",
+        "safety_audit.json": "c1efa152cbede3aa4d6e7ca4e38007d090804a67e9a13e62fbaaeee944bf06f1"
+      }
+    }
+  ],
+  "test_counts": {
+    "round1": 13,
+    "round2": 14,
+    "round4_full_regression": 87
+  },
+  "formal_training_started": false,
+  "formal_candidate_search_started": false,
+  "historical_files_unchanged": 1423
+}

@@ -1,0 +1,60 @@
+{
+  "version": "study3-corpus-effect-v1",
+  "settings": {
+    "seed": 525,
+    "layers": 3,
+    "epochs": 25,
+    "batch_size": 128,
+    "learning_rate": 0.0001,
+    "positions": 50,
+    "search_limit": 50,
+    "attempts": 200,
+    "cycles": 3,
+    "continuation_epochs": 2,
+    "continuation_lr": 1e-05,
+    "epi": 0.2,
+    "samples_per_source": 32,
+    "vocabulary_sizes": [
+      280,
+      315,
+      350
+    ],
+    "text": "coefficient-free GRE rendered with structure_to_latex",
+    "augmentation": "unique multiset rank sampling; original normalized variant +31; balanced repeat below32",
+    "budget": "equal epochs, not equal updates/tokens/FLOPs",
+    "tokenizer": "both cohorts use the same frozen Hard vocabulary learned ONLY from small paired augmented LaTeX",
+    "generation": "original EqGPT SAT and Hard unconstrained sampling; legacy search behavior retained"
+  },
+  "files": {
+    "excluded_gre50.json": "b1fe96429f1ab22e392262dc67679c626b5d594534d052d9a16b47892483f1d7",
+    "large/excluded.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "large/manifest.json": "9cacaffc912bc3aaf485a3a92f4ddc8a2d3522199f5c9196036ed51df22e7e98",
+    "large/paired.jsonl.gz": "5759a0cee2367210fd5e486315229a85517775e85696100ecb9440a57cb9a151",
+    "large/sources.jsonl": "1a5bb7e4b2489caa483d5fed3524bd892f40ce2927d5b3d7f80a5971a698a7ed",
+    "large/tokenizers_round_0/ast_bpe_280.model.backend.json": "9a2afefc09ee46d0bbfc0fde8ea73fff4b8ccbb5b91e356f157cb7ed610e76a9",
+    "large/tokenizers_round_0/ast_bpe_280.model.json": "d8503a8b6607fe7c2e1c00bc8990dc0702210505f5a1b39d522fce715b4fe7c3",
+    "large/tokenizers_round_0/ast_bpe_315.model.backend.json": "de12759613e5d9c1cf015188a99e785d3ddc22cbe650d08a71a98a787a495bd9",
+    "large/tokenizers_round_0/ast_bpe_315.model.json": "2ef7b697a3bddba88f5a0139e8aad9fcf0a228f5519977c64bdd61d7761ef67f",
+    "large/tokenizers_round_0/ast_bpe_350.model.backend.json": "f67ad85ac84f5040f2e615d1d72c133a3369c4ca6007a74069f2f8bbaf0fab5a",
+    "large/tokenizers_round_0/ast_bpe_350.model.json": "3e7b82a5919d5ce33be9f675119cdc379bbb52f8ea7dc21d3bc03a07bd8d1e54",
+    "large/tokenizers_round_0/manifest.json": "5b8bb90f27912cd55f6e03b7aece95c6429db0d0d6c5c48027aca514bc0c3e04",
+    "small/excluded.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "small/manifest.json": "286929915e1557b3d8b82195cbd43f546b56a944fbde6a19346f7b70e672cbc7",
+    "small/paired.jsonl.gz": "dae6bf41565bb1bda42fb91df226a523bb2163346066f60fa1f710d9dd225a81",
+    "small/sources.jsonl": "c61ec8a429b732ee8a785ba90151402d50dcd58b7fd4668a18b124d913147b09",
+    "small/tokenizers_round_0/ast_bpe_280.model.backend.json": "9a2afefc09ee46d0bbfc0fde8ea73fff4b8ccbb5b91e356f157cb7ed610e76a9",
+    "small/tokenizers_round_0/ast_bpe_280.model.json": "d8503a8b6607fe7c2e1c00bc8990dc0702210505f5a1b39d522fce715b4fe7c3",
+    "small/tokenizers_round_0/ast_bpe_315.model.backend.json": "de12759613e5d9c1cf015188a99e785d3ddc22cbe650d08a71a98a787a495bd9",
+    "small/tokenizers_round_0/ast_bpe_315.model.json": "2ef7b697a3bddba88f5a0139e8aad9fcf0a228f5519977c64bdd61d7761ef67f",
+    "small/tokenizers_round_0/ast_bpe_350.model.backend.json": "f67ad85ac84f5040f2e615d1d72c133a3369c4ca6007a74069f2f8bbaf0fab5a",
+    "small/tokenizers_round_0/ast_bpe_350.model.json": "3e7b82a5919d5ce33be9f675119cdc379bbb52f8ea7dc21d3bc03a07bd8d1e54",
+    "small/tokenizers_round_0/manifest.json": "5b8bb90f27912cd55f6e03b7aece95c6429db0d0d6c5c48027aca514bc0c3e04"
+  },
+  "inputs": {
+    "data/formulas/gre_benchmark_filtered/benchmark.jsonl": "568200a773fcdb93d9d924b3385ede435cbe3e86dc88f0e128d155950ebff2f7",
+    "data/formulas/gre_benchmark_audit_v2/eqgpt_221_after_target_exclusion.jsonl": "8a6a30ed73222a91d1c6544069ec369717750e5437efae565c4438266fe1a9e0"
+  },
+  "small_rows_exact_subset": true,
+  "status": "PREPARED_NOT_AUTHORIZED_TO_RUN",
+  "formal_training_started": false
+}

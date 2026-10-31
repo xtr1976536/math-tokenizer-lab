@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "no_optimizer_steps": true,
+  "no_candidate_generation": true,
+  "cohorts_identical_initial_weights": true,
+  "forwards": [
+    {
+      "cohort": "small",
+      "arm": "eqgpt_reference",
+      "longest_training_sequence": 19,
+      "max_position_forward_finite": true,
+      "weights_unchanged": true
+    },
+    {
+      "cohort": "small",
+      "arm": "ast_bpe_280",
+      "longest_training_sequence": 32,
+      "max_position_forward_finite": true,
+      "weights_unchanged": true
+    },
+    {
+      "cohort": "small",
+      "arm": "ast_bpe_315",
+      "longest_training_sequence": 26,
+      "max_position_forward_finite": true,
+      "weights_unchanged": true
+    },
+    {
+      "cohort": "small",
+      "arm": "ast_bpe_350",
+      "longest_training_sequence": 23,
+      "max_position_forward_finite": true,
+      "weights_unchanged": true
+    },
+    {
+      "cohort": "large",
+      "arm": "eqgpt_reference",
+      "longest_training_sequence": 49,
+      "max_position_forward_finite": true,
+      "weights_unchanged": true
+    },
+    {
+      "cohort": "large",
+      "arm": "ast_bpe_280",
+      "longest_training_sequence": 35,
+      "max_position_forward_finite": true,
+      "weights_unchanged": true
+    },
+    {
+      "cohort": "large",
+      "arm": "ast_bpe_315",
+      "longest_training_sequence": 33,
+      "max_position_forward_finite": true,
+      "weights_unchanged": true
+    },
+    {
+      "cohort": "large",
+      "arm": "ast_bpe_350",
+      "longest_training_sequence": 32,
+      "max_position_forward_finite": true,
+      "weights_unchanged": true
+    }
+  ],
+  "numerical": [
+    {
+      "case": "Wave_equation",
+      "existing_cache_verified": true,
+      "no_fit": true,
+      "target_order_reward": 0.9315067155140354,
+      "reversed_order_reward": 0.9315066034792359,
+      "note": "Preflight fixed-input check only, not a discovery result"
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "existing_cache_verified": true,
+      "no_fit": true,
+      "target_order_reward": 0.8948442762134959,
+      "reversed_order_reward": 0.8822596524559363,
+      "note": "Preflight fixed-input check only, not a discovery result"
+    },
+    {
+      "case": "KG_equation",
+      "existing_cache_verified": true,
+      "no_fit": true,
+      "target_order_reward": 0.9032492162810386,
+      "reversed_order_reward": 0.8855304923493728,
+      "note": "Preflight fixed-input check only, not a discovery result"
+    },
+    {
+      "case": "Burgers_equation",
+      "existing_cache_verified": true,
+      "no_fit": true,
+      "target_order_reward": 0.8775504888851999,
+      "reversed_order_reward": 0.8966834107764787,
+      "note": "Preflight fixed-input check only, not a discovery result"
+    },
+    {
+      "case": "Eq_6_2_12",
+      "existing_cache_verified": true,
+      "no_fit": true,
+      "target_order_reward": 0.9005609027979445,
+      "reversed_order_reward": 0.8999261211633566,
+      "note": "Preflight fixed-input check only, not a discovery result"
+    },
+    {
+      "case": "PDE_divide",
+      "existing_cache_verified": true,
+      "no_fit": true,
+      "target_order_reward": 0.9026964933873547,
+      "reversed_order_reward": 0.9033800630976049,
+      "note": "Preflight fixed-input check only, not a discovery result"
+    },
+    {
+      "case": "KdV_equation",
+      "existing_cache_verified": true,
+      "no_fit": true,
+      "target_order_reward": 0.8915695042244658,
+      "reversed_order_reward": 0.9037409973549235,
+      "note": "Preflight fixed-input check only, not a discovery result"
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "existing_cache_verified": true,
+      "no_fit": true,
+      "target_order_reward": 0.8763047816046359,
+      "reversed_order_reward": 0.8788905485703123,
+      "note": "Preflight fixed-input check only, not a discovery result"
+    }
+  ],
+  "formal_run_directory_absent": true
+}

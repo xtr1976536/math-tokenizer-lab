@@ -1,0 +1,6 @@
+{
+  "path": "reports/study3_corpus_effect_v1/interrupted_before_cycle1/Convection_diffusion_eqgpt_reference/cycle_0.pt",
+  "canonical_path": "experiments/study3_corpus_effect_v1/small/shared_pretrain/eqgpt_reference/pretrained.pt",
+  "sha256": "1ad506bba50a941d272b027dcbc2e3ecbf469ccac93bb91e6708ff6d920e448d",
+  "reason": "Interrupted before cycle 1; identical to formal pretrained checkpoint"
+}
