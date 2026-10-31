@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "release_url": "https://github.com/xtr1976536/math-tokenizer-lab/releases/tag/study3-corpus-effect-v1-weights",
+  "canonical_checkpoints": 200,
+  "aliases": 128,
+  "total_weight_bytes": 15459393400,
+  "all_remote_sizes_and_sha256_match": true,
+  "completed_search_groups": 64,
+  "candidates": 38400,
+  "unit_tests_passed": 89
+}
